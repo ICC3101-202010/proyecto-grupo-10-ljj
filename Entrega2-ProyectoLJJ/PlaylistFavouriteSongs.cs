@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace entrega_2_proyecto
+namespace Entrega2ProyectoLJJ
 {
     class PlaylistFavouritesSongs
     {
@@ -22,7 +22,7 @@ namespace entrega_2_proyecto
         }
         public void showSongs()
         {
-            if(songs.Count != 0)
+            if (songs.Count != 0)
             {
                 Console.WriteLine("las canciones de favoritos son:");
                 for (int i = 0; i < songs.Count; i++)

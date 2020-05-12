@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using WMPLib;
 namespace Entrega2ProyectoLJJ
 {
     public class Profile
@@ -58,13 +59,19 @@ namespace Entrega2ProyectoLJJ
         {
             privacy = newprivacy;
         }
-        public void SuggestionMovie()
+        public List<string> SuggestionMovie()
         {
-
+            return FollowActor;
         }
-        public void SuggestionSong()
+        public List<string> SuggestionSong()
         {
-
+            return FollowArtist;
+        }
+        public void JoinParty(string url)
+        {
+            WindowsMediaPlayer wmp = new WindowsMediaPlayer();
+            wmp.URL = url;
+            wmp.controls.play();
         }
     }
 }

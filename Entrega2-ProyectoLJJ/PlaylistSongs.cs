@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace entrega_2_proyecto
+namespace Entrega2ProyectoLJJ
 {
     class PlaylistSongs
     {
         private string name;
         private string privacy;
         public List<Songs> songs = new List<Songs>();
-        public PlaylistSongs(string name, string privacy,List<Songs> songs)
+        public PlaylistSongs(string name, string privacy, List<Songs> songs)
         {
             this.name = name;
             this.privacy = privacy;

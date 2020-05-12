@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace entrega_2_proyecto
+namespace Entrega2ProyectoLJJ
 {
     class Artist
     {
@@ -13,7 +13,7 @@ namespace entrega_2_proyecto
         private string gender;
         private int age;
 
-        public Artist(string name, string bio, string gender, int age,List<Album> albums, List<Songs> songs)
+        public Artist(string name, string bio, string gender, int age, List<Album> albums, List<Songs> songs)
         {
             this.name = name;
             this.bio = bio;

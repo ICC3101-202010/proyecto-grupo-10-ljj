@@ -40,6 +40,10 @@ namespace Entrega2ProyectoLJJ
         {
             return ListOfProfiles;
         }
+        public List<User> GetListOfUser()
+        {
+            return ListOfUser;
+        }
         public void Quit()
         {
 

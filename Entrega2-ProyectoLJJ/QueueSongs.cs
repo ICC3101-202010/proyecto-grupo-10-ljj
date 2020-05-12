@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Text;
 
-namespace entrega_2_proyecto
+namespace Entrega2ProyectoLJJ
 {
     class QueueSongs
     {
@@ -34,5 +34,5 @@ namespace entrega_2_proyecto
         }
 
     }
-    
+
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Text;
 
-namespace entrega_2_proyecto
+namespace Entrega2ProyectoLJJ
 {
     class Songs : Controller
     {
@@ -25,7 +25,7 @@ namespace entrega_2_proyecto
 
 
         public Songs(string gender, string name, string artist, string composer, string discography, string studio, int year, string lyrics,
-            int duration, bool download,bool favourite)
+            int duration, bool download, bool favourite)
         {
             this.gender = gender;
             this.name = name;
@@ -58,10 +58,10 @@ namespace entrega_2_proyecto
             {
                 Console.WriteLine("la cancion: " + name + " no esta disponible para descargar");
             }
-        } 
-        public override void search()
-        {
-            Console.WriteLine("las busquedas se estan implementando, en la suiguiente actualizacion estaran disponibles");
+        }
+        public override string Search()
+        { 
+            return "las busquedas se estan implementando, en la siguiente actualizacion estaran disponibles";
         }
         public void getDuration()
         {
@@ -69,7 +69,7 @@ namespace entrega_2_proyecto
         }
         public void Reproduction(int reproduction)
         {
-            this.reproduction = reproduction ;
+            this.reproduction = reproduction;
         }
         public void NumberOfReproduction()
         {
@@ -90,12 +90,8 @@ namespace entrega_2_proyecto
         public int Qualification(int qualific)
         {
             qualificationCount = qualificationCount + 1;
-            qualification = (qualification + qualific)/qualificationCount;
+            qualification = (qualification + qualific) / qualificationCount;
             return qualification;
         }
-
-        //AddImage()
-        //import()
-       
     }
 }

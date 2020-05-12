@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace entrega_2_proyecto
+namespace Entrega2ProyectoLJJ
 {
     class Album
     {
