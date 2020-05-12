@@ -5,7 +5,7 @@ using System.Text;
 
 namespace entrega_2_proyecto
 {
-    class Songs
+    class Songs : Controller
     {
         private string gender;
         private string name;
@@ -59,9 +59,9 @@ namespace entrega_2_proyecto
                 Console.WriteLine("la cancion: " + name + " no esta disponible para descargar");
             }
         } 
-        public void search(string criterio)
+        public override void search()
         {
-            // video artista,edad,genero,composer,year,calificacion
+            Console.WriteLine("las busquedas se estan implementando, en la suiguiente actualizacion estaran disponibles");
         }
         public void getDuration()
         {

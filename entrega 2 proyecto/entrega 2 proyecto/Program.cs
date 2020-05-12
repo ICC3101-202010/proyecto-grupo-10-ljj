@@ -17,12 +17,24 @@ namespace entrega_2_proyecto
             List<Album> l_album = new List<Album>();
             List<Songs> l_songs = new List<Songs>();
             List<PlaylistSongs> l_pl = new List<PlaylistSongs>();
+            //creamos playlist de favoritos
+            Console.WriteLine("diga el nombre que quiera ponerle a su playlist de favoritos");
+            string plfname = Console.ReadLine();
+            Console.WriteLine("diga la privacidad de la playlist[publica] o [privada]");
+            string plfprivacy = Console.ReadLine();
+            List<Songs> songs = new List<Songs>();
+            PlaylistFavouritesSongs playlistFavouritesSongs = new PlaylistFavouritesSongs(plfname, plfprivacy, songs);
+            //creamos objeto de en cola
+            List<Songs> Qsongs = new List<Songs>();
+            QueueSongs queueSongs = new QueueSongs(Qsongs);
 
             bool exec = true;
             while (exec)
             {
                 // Pedimos al usuario una de las opciones
-                string chosen = ShowOptions(new List<string>() { "Agregar artista", "agregar cancion", "agregar album", "crear playlist","calificar cancion", "salir" });
+                string chosen = ShowOptions(new List<string>() { "Agregar artista", "agregar cancion", "agregar album", "crear playlist","calificar cancion",
+                    "Buscar cancion", "Descargar cancion", "agregar cancion a playlist", "selccionar cancion como favorito",
+                    "agregar cancion a en cola","ver playlist","ver favoritos","ver en cola","reproducir cancion", "salir" });
                 switch (chosen)
                 {
                     case "Agregar artista":
@@ -70,12 +82,28 @@ namespace entrega_2_proyecto
                             bool Sdownload = true;
                             Songs song = new Songs(Sgender, Sname, Sartist, Scomposer, Sdiscography, Sstudio, Syear, Slyrics, Sduration, Sdownload, false);
                             l_songs.Add(song);
+                            //agregar canciones del artista al artista
+                            for (int j = 0; l_artist.Count > j; j++)
+                            {
+                                if (l_artist[j].getName() == song.getArtist())
+                                {
+                                    l_artist[j].AddSong(song);
+                                }
+                            }
                         }
                         if (respuesta == "no")
                         {
                             bool Sdownload = false;
                             Songs song = new Songs(Sgender, Sname, Sartist, Scomposer, Sdiscography, Sstudio, Syear, Slyrics, Sduration, Sdownload, false);
                             l_songs.Add(song);
+                            //agregar canciones del artista al artista
+                            for (int j = 0; l_artist.Count > j; j++)
+                            {
+                                if (l_artist[j].getName() == song.getArtist())
+                                {
+                                    l_artist[j].AddSong(song);
+                                }
+                            }
                         }
                         break;
                     case "agregar album":
@@ -89,6 +117,14 @@ namespace entrega_2_proyecto
                         int Ayear = Int16.Parse(ayear);
                         Album album = new Album(Aname, Aart, Ayear);
                         l_album.Add(album);
+                        //agregar albumes del artista al artista
+                        for (int j = 0; l_artist.Count > j; j++)
+                        {
+                            if (l_artist[j].getName() == album.getArtist())
+                            {
+                                l_artist[j].AddAlbums(album);
+                            }
+                        }
                         break;
                     case "crear playlist":
                         Console.Clear();
@@ -100,61 +136,27 @@ namespace entrega_2_proyecto
                         PlaylistSongs playlist = new PlaylistSongs(PLname, PLprivacy, PLsongs);
                         l_pl.Add(playlist);
                         break;
-                    case "salir":
-                        exec = false;
+                    case "calificar cancion":
+                        Console.Clear();
+                        Console.WriteLine("diga el nombre de la cancion");
+                        string caname = Console.ReadLine();
+                        Console.WriteLine("diga el artista de la cancion");
+                        string caart = Console.ReadLine();
+                        for (int i = 0; l_songs.Count > i; i++)
+                        {
+                            if (caname == l_songs[i].getName() && caart == l_songs[i].getArtist())
+                            {
+                                Console.WriteLine("de la calificacion");
+                                string cal = Console.ReadLine();
+                                int Cal = Int16.Parse(cal);
+                                l_songs[i].Qualification(Cal);
+                                break;
+                            }
+                        }
                         break;
-                }
-                Thread.Sleep(2000);
-                Console.Clear();
-            }
-            //creamos playlist de favoritos
-            Console.WriteLine("diga el nombre que quiera ponerle a su playlist de favoritos");
-            string plfname = Console.ReadLine();
-            Console.WriteLine("diga la privacidad de la playlist[publica] o [privada]");
-            string plfprivacy = Console.ReadLine();
-            List<Songs> songs = new List<Songs>();
-            PlaylistFavouritesSongs playlistFavouritesSongs = new PlaylistFavouritesSongs(plfname, plfprivacy, songs);
-
-            //creamos objeto de en cola
-            List<Songs> Qsongs = new List<Songs>();
-            QueueSongs queueSongs = new QueueSongs(Qsongs);
-
-            //agregar albumes del artista al artista
-            for (int i = 0; l_album.Count > i; i++)
-            {
-                for (int j = 0; l_artist.Count > j; j++)
-                {
-                    if (l_artist[j].getName() == l_album[i].getArtist())
-                    {
-                        l_artist[j].AddAlbums(l_album[i]);
-                    }
-                }
-            }
-            //agregar canciones del artista al artista
-            for (int i = 0; l_songs.Count > i; i++)
-            {
-                for (int j = 0; l_artist.Count > j; j++)
-                {
-                    if (l_artist[j].getName() == l_songs[i].getArtist())
-                    {
-                        l_artist[j].AddSong(l_songs[i]);
-                    }
-                }
-            }
-            for (int j = 0; l_artist.Count > j; j++)
-            {
-                l_artist[j].ShowAlbums();
-            }
-            bool exec2 = true;
-            while (exec2)
-            {
-                // Pedimos al usuario una de las opciones
-                string chosen = ShowOptions(new List<string>() { "Buscar cancion", "Descargar cancion", "agregar cancion a playlist"
-                            , "selccionar cancion como favorito", "agregar cancion a en cola","ver playlist","ver favoritos","ver en cola","reproducir cancion","Salir" });
-                switch (chosen)
-                {
                     case "Buscar cancion":
                         Console.Clear();
+                        l_songs[0].search();
                         break;
                     case "Descargar cancion":
                         Console.Clear();
@@ -174,14 +176,14 @@ namespace entrega_2_proyecto
                     case "agregar cancion a playlist":
                         Console.Clear();
                         Console.WriteLine("diga el nombre de la cancion que quiera agregar a una playlist");
-                        string PLname = Console.ReadLine();
+                        string Plname = Console.ReadLine();
                         Console.WriteLine("diga el nombre del artista de la cancion");
                         string PLart = Console.ReadLine();
                         Console.WriteLine("diga el nombre de la playlist que quiere agregar");
                         string PLpl = Console.ReadLine();
                         for (int i = 0; l_songs.Count > i; i++)
                         {
-                            if (PLname == l_songs[i].getName() && PLart == l_songs[i].getArtist())
+                            if (Plname == l_songs[i].getName() && PLart == l_songs[i].getArtist())
                             {
                                 for (int j = 0; l_pl.Count > j; j++)
                                 {
@@ -224,9 +226,9 @@ namespace entrega_2_proyecto
                                 break;
                             }
                         }
-                        Console.WriteLine("no se encontro la cancion");
                         break;
                     case "ver playlist":
+                        Console.Clear();
                         Console.WriteLine("diga el nombre de la playlist que desea ver");
                         string plname = Console.ReadLine();
                         for (int i = 0; l_pl.Count > i; i++)
@@ -237,8 +239,6 @@ namespace entrega_2_proyecto
                                 break;
                             }
                         }
-                        Console.WriteLine("no se encontro la playlist");
-                        Console.Clear();
                         break;
                     case "ver favoritos":
                         Console.Clear();
@@ -257,12 +257,12 @@ namespace entrega_2_proyecto
                             if (Rname == l_songs[i].getName())
                             {
                                 l_songs[i].NumberOfUser();
-                                bool exec3 = true;
-                                while (exec3)
+                                bool exec2 = true;
+                                while (exec2)
                                 {
                                     WindowsMediaPlayer wmp = new WindowsMediaPlayer();
                                     wmp.URL = l_songs[i] + ".wav";
-                                    string chosen2 = ShowOptions(new List<string>() { "reproducir", "pausar","adelantar","retroceder","stop", "salir" });
+                                    string chosen2 = ShowOptions(new List<string>() { "reproducir", "pausar", "adelantar", "retroceder", "stop", "salir" });
                                     switch (chosen2)
                                     {
 
@@ -273,7 +273,7 @@ namespace entrega_2_proyecto
                                             break;
                                         case "pausar":
                                             Console.Clear();
-                                            wmp.controls.pause();            
+                                            wmp.controls.pause();
                                             break;
                                         case "adelantar":
                                             Console.Clear();
@@ -296,14 +296,13 @@ namespace entrega_2_proyecto
                             }
                         }
                         break;
-                    case "Salir":
-                        exec2 = false;
+                    case "salir":
+                        exec = false;
                         break;
                 }
-                Thread.Sleep(5000);
+                Thread.Sleep(2000);
                 Console.Clear();
-            }
-            Console.WriteLine(l_songs[0].getUsers());
+            }           
         }
 
         private static string ShowOptions(List<string> options)
