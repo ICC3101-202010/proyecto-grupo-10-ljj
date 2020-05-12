@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading;
 using System.Collections.Generic;
-using System.Media;
 namespace Entrega2ProyectoLJJ
 {
     class MainClass
@@ -12,10 +11,6 @@ namespace Entrega2ProyectoLJJ
             Profile profile = new Profile("", true);
             Dictionary <string, List<Profile>> Users = new Dictionary<string, List<Profile>>();
             Console.WriteLine("Bienvenido al nuevo Spotflix!");
-            SoundPlayer player = new SoundPlayer();
-            player.SoundLocation = AppDomain.CurrentDomain.BaseDirectory + "\\C90.wav";
-            player.Load();
-            player.Play();
             bool exec = true;
             while (exec)
             {
@@ -159,8 +154,18 @@ namespace Entrega2ProyectoLJJ
                         }
                         break;
                     case "Sugerencias inteligentes":
-                        
-                        Console.Clear();
+                        string chosen2 = ShowOptions(new List<string>() { "Sugerencias de Peliculas", "Sugerencias de Canciones" });
+                        switch (chosen2)
+                        {
+                            case "Sugerencias de Peliculas":
+                                Console.WriteLine("En base a lo que usted sigue y ha visto, esta es una lista de peliculas que podrian gustarle:");
+                                Console.Clear();
+                                break;
+                            case "Sugerencias de Canciones":
+                                Console.WriteLine("En base a lo que usted sigue y ha visto, esta es una lista de canciones que podrian gustarle:");
+                                Console.Clear();
+                                break;
+                        }
                         break;
                     case "Unirme a una party":
                         Console.Clear();

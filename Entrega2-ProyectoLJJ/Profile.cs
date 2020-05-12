@@ -13,8 +13,6 @@ namespace Entrega2ProyectoLJJ
         private List<string> FollowAlbum = new List<string>();
         private List<string> FollowArtist = new List<string>();
         private List<string> FollowActor = new List<string>();
-     //   private List<Song> ListenTo = new List<Song>();
-     //   private List<Movie> WatchTo = new List<Movie>();
         public Profile(string username, bool privacy)
         {
             this.username = username;
@@ -48,14 +46,6 @@ namespace Entrega2ProyectoLJJ
         {
             return privacy;
         }
-      //  public void AddListenTo(Songs songs)
-      //  {
-
-      //  }
-      //  public void AddWatchTo(Movies movies)
-      //  {
-
-       // }
         public string GetUserName()
         {
             return username;
@@ -67,6 +57,14 @@ namespace Entrega2ProyectoLJJ
         public void ChangePrivacy(bool newprivacy)
         {
             privacy = newprivacy;
+        }
+        public void SuggestionMovie()
+        {
+
+        }
+        public void SuggestionSong()
+        {
+
         }
     }
 }

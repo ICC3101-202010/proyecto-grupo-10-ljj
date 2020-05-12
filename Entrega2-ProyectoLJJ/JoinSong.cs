@@ -4,7 +4,6 @@ namespace Entrega2ProyectoLJJ
     public class JoinSong
     {
         //private file
-
         public JoinSong()
         {
         }
