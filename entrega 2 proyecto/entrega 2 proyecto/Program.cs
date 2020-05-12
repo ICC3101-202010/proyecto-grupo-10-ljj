@@ -22,7 +22,7 @@ namespace entrega_2_proyecto
             while (exec)
             {
                 // Pedimos al usuario una de las opciones
-                string chosen = ShowOptions(new List<string>() { "Agregar artista", "agregar cancion", "agregar album", "crear playlist", "salir" });
+                string chosen = ShowOptions(new List<string>() { "Agregar artista", "agregar cancion", "agregar album", "crear playlist","calificar cancion", "salir" });
                 switch (chosen)
                 {
                     case "Agregar artista":
@@ -104,7 +104,7 @@ namespace entrega_2_proyecto
                         exec = false;
                         break;
                 }
-                Thread.Sleep(8000);
+                Thread.Sleep(2000);
                 Console.Clear();
             }
             //creamos playlist de favoritos
@@ -150,7 +150,7 @@ namespace entrega_2_proyecto
             {
                 // Pedimos al usuario una de las opciones
                 string chosen = ShowOptions(new List<string>() { "Buscar cancion", "Descargar cancion", "agregar cancion a playlist"
-                        , "selccionar cancion como favorito", "agregar cancion a en cola","ver playlist","ver favoritos","ver en cola","reproducir cancion","Salir" });
+                            , "selccionar cancion como favorito", "agregar cancion a en cola","ver playlist","ver favoritos","ver en cola","reproducir cancion","Salir" });
                 switch (chosen)
                 {
                     case "Buscar cancion":
@@ -170,7 +170,6 @@ namespace entrega_2_proyecto
                                 break;
                             }
                         }
-                        Console.WriteLine("no se encontro la cancion");
                         break;
                     case "agregar cancion a playlist":
                         Console.Clear();
@@ -194,7 +193,6 @@ namespace entrega_2_proyecto
                                 }
                             }
                         }
-                        Console.WriteLine("no se escontro la cancion o la playlist");
                         break;
                     case "selccionar cancion como favorito":
                         Console.Clear();
@@ -211,7 +209,6 @@ namespace entrega_2_proyecto
                                 break;
                             }
                         }
-                        Console.WriteLine("no se encontro la cancion");
                         break;
                     case "agregar cancion a en cola":
                         Console.Clear();
@@ -253,18 +250,38 @@ namespace entrega_2_proyecto
                         break;
                     case "reproducir cancion":
                         Console.Clear();
-                        Console.WriteLine("diga el nombre de la cancion que quiera agregar a favoritos");
+                        Console.WriteLine("diga el nombre de la cancion que quiera escuchar");
                         string Rname = Console.ReadLine();
-                        Console.WriteLine("diga el nombre del artista de la cancion");
-                        string Rart = Console.ReadLine();
                         for (int i = 0; l_songs.Count > i; i++)
                         {
-                            if (Rname == l_songs[i].getName() && Rart == l_songs[i].getArtist())
+                            if (Rname == l_songs[i].getName())
                             {
-                                WindowsMediaPlayer wmp = new WindowsMediaPlayer();
-                                wmp.URL = l_songs[i] + ".wav";
-                                wmp.controls.play();
-                                break;
+                                l_songs[i].NumberOfUser();
+                                bool exec3 = true;
+                                while (exec3)
+                                {
+                                    string chosen2 = ShowOptions(new List<string>() { "reproducir", "pausar", "salir" });
+                                    switch (chosen2)
+                                    {
+
+                                        case "repruducir":
+                                            Console.Clear();
+                                            WindowsMediaPlayer wmp = new WindowsMediaPlayer();
+                                            wmp.URL = l_songs[i] + ".wav";
+                                            wmp.controls.play();
+                                            break;
+                                        case "pausar":
+                                            Console.Clear();
+                                            WindowsMediaPlayer wmp2 = new WindowsMediaPlayer();
+                                            wmp2.URL = l_songs[i] + ".wav";
+                                            wmp2.controls.pause();
+                                            break;
+                                        case "salir":
+                                            Console.Clear();
+                                            exec3 = false;
+                                            break;
+                                    }
+                                }
                             }
                         }
                         break;
@@ -272,9 +289,10 @@ namespace entrega_2_proyecto
                         exec2 = false;
                         break;
                 }
-                Thread.Sleep(8000);
+                Thread.Sleep(5000);
                 Console.Clear();
             }
+            Console.WriteLine(l_songs[0].getUsers());
         }
 
         private static string ShowOptions(List<string> options)
@@ -289,5 +307,5 @@ namespace entrega_2_proyecto
             return options[Convert.ToInt16(Console.ReadLine())];
         }
     }
-    }   
+       
 }

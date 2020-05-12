@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Text;
 
 namespace entrega_2_proyecto
@@ -16,7 +17,7 @@ namespace entrega_2_proyecto
         private string lyrics;
         private int duration;
         private int reproduction;
-        private int users;
+        private int users = 0;
         private int qualification;
         private bool favourite;
         private bool download;
@@ -77,7 +78,14 @@ namespace entrega_2_proyecto
         {
             favourite = true;
         }
-        //NumberOfUser()
+        public void NumberOfUser()
+        {
+            users = users + 1;
+        }
+        public int getUsers()
+        {
+            return users;
+        }
         //Qualification()
         //AddImage()
         //NextSong()
