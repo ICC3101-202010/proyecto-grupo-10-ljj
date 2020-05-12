@@ -260,21 +260,32 @@ namespace entrega_2_proyecto
                                 bool exec3 = true;
                                 while (exec3)
                                 {
-                                    string chosen2 = ShowOptions(new List<string>() { "reproducir", "pausar", "salir" });
+                                    WindowsMediaPlayer wmp = new WindowsMediaPlayer();
+                                    wmp.URL = l_songs[i] + ".wav";
+                                    string chosen2 = ShowOptions(new List<string>() { "reproducir", "pausar","adelantar","retroceder","stop", "salir" });
                                     switch (chosen2)
                                     {
 
+
                                         case "repruducir":
                                             Console.Clear();
-                                            WindowsMediaPlayer wmp = new WindowsMediaPlayer();
-                                            wmp.URL = l_songs[i] + ".wav";
                                             wmp.controls.play();
                                             break;
                                         case "pausar":
                                             Console.Clear();
-                                            WindowsMediaPlayer wmp2 = new WindowsMediaPlayer();
-                                            wmp2.URL = l_songs[i] + ".wav";
-                                            wmp2.controls.pause();
+                                            wmp.controls.pause();            
+                                            break;
+                                        case "adelantar":
+                                            Console.Clear();
+                                            wmp.controls.fastForward();
+                                            break;
+                                        case "retroceder":
+                                            Console.Clear();
+                                            wmp.controls.fastReverse();
+                                            break;
+                                        case "stop":
+                                            Console.Clear();
+                                            wmp.controls.stop();
                                             break;
                                         case "salir":
                                             Console.Clear();
