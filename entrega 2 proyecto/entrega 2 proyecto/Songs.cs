@@ -18,7 +18,8 @@ namespace entrega_2_proyecto
         private int duration;
         private int reproduction;
         private int users = 0;
-        private int qualification;
+        private int qualification = 0;
+        private int qualificationCount = 0;
         private bool favourite;
         private bool download;
 
@@ -68,7 +69,7 @@ namespace entrega_2_proyecto
         }
         public void Reproduction(int reproduction)
         {
-            this.reproduction = reproduction;
+            this.reproduction = reproduction ;
         }
         public void NumberOfReproduction()
         {
@@ -86,13 +87,15 @@ namespace entrega_2_proyecto
         {
             return users;
         }
-        //Qualification()
+        public int Qualification(int qualific)
+        {
+            qualificationCount = qualificationCount + 1;
+            qualification = (qualification + qualific)/qualificationCount;
+            return qualification;
+        }
+
         //AddImage()
-        //NextSong()
-        //GoForward()
-        //GoBackward()
         //import()
-        //Play()
-        //Stop()
+       
     }
 }
