@@ -10,21 +10,19 @@ namespace Entrega2ProyectoLJJ
         {
             User user = new User("", "", "");
             Profile profile = new Profile("", true);
-            Dictionary <string, List<Profile>> Users = new Dictionary<string, List<Profile>>();
+            Dictionary<string, List<Profile>> Users = new Dictionary<string, List<Profile>>();
             Console.WriteLine("Bienvenido al nuevo Spotflix!");
             List<Artist> l_artist = new List<Artist>();
             List<Album> l_album = new List<Album>();
             List<Songs> l_songs = new List<Songs>();
+            List<Movies> l_movies = new List<Movies>();
             List<PlaylistSongs> l_pl = new List<PlaylistSongs>();
+            List<PlaylistMovies> l_pl1 = new List<PlaylistMovies>();
             List<string> movielist = new List<string>();
             List<List<string>> PL = new List<List<string>>();
             //creamos playlist de favoritos
-            Console.WriteLine("Primero diga el nombre que quiera ponerle a su futura playlist de favoritos");
-            string plfname = Console.ReadLine();
-            Console.WriteLine("diga la privacidad de la playlist[publica] o [privada]");
-            string plfprivacy = Console.ReadLine();
             List<Songs> songs = new List<Songs>();
-            PlaylistFavouritesSongs playlistFavouritesSongs = new PlaylistFavouritesSongs(plfname, plfprivacy, songs);
+            PlaylistFavouritesSongs playlistFavouritesSongs = new PlaylistFavouritesSongs("favourite", "privada", songs);
             //creamos objeto de en cola
             List<Songs> Qsongs = new List<Songs>();
             QueueSongs queueSongs = new QueueSongs(Qsongs);
@@ -37,7 +35,7 @@ namespace Entrega2ProyectoLJJ
                     case "Crear Usuario":
                         Console.WriteLine("Ingrese mail:");
                         string email = Console.ReadLine();
-                        Console.WriteLine("Que plan desea para este usuario)(premium or free)");
+                        Console.WriteLine("Que plan desea para este usuario(premium o free)");
                         string plan = Console.ReadLine();
                         Console.WriteLine("Ingrese contraseña:");
                         string password = Console.ReadLine();
@@ -68,7 +66,7 @@ namespace Entrega2ProyectoLJJ
                                     Profile profile1 = new Profile(username, privacy);
                                     a.Value.Add(profile1);
                                 }
-                         
+
                             }
                             Console.WriteLine("Perfil creado con exito");
                         }
@@ -82,25 +80,25 @@ namespace Entrega2ProyectoLJJ
                         string perfil1 = Console.ReadLine();
                         Console.WriteLine("Que desea modificar del perfil?(username or privacy)");
                         string answer = Console.ReadLine();
-                        foreach(KeyValuePair<string, List<Profile>> a in Users)
+                        foreach (KeyValuePair<string, List<Profile>> a in Users)
                         {
-                            if(a.Key == email2)
+                            if (a.Key == email2)
                             {
-                                if(answer == "username")
+                                if (answer == "username")
                                 {
                                     Console.WriteLine("Cual seria el nuevo username?");
                                     string username3 = Console.ReadLine();
-                                    foreach(Profile b in a.Value)
+                                    foreach (Profile b in a.Value)
                                     {
                                         b.ChangeUsername(username3);
                                     }
                                     Console.WriteLine("Se ha cambiado el username correctamente");
                                     Thread.Sleep(1000);
-                              
+
                                 }
-                                if(answer == "privacy")
+                                if (answer == "privacy")
                                 {
-                                   
+
                                     Console.WriteLine("Desea que el perfil sea privado?(true or false)");
                                     bool privacy3 = Convert.ToBoolean(Console.ReadLine());
                                     foreach (Profile b in a.Value)
@@ -108,7 +106,7 @@ namespace Entrega2ProyectoLJJ
                                         b.ChangePrivacy(privacy3);
                                     }
                                     Console.WriteLine("Se ha cambiado la privacidad correctamente");
-                                    Thread.Sleep(1000);    
+                                    Thread.Sleep(1000);
                                 }
                             }
                         }
@@ -119,9 +117,9 @@ namespace Entrega2ProyectoLJJ
                         foreach (string a in Users.Keys)
                         {
                             Console.WriteLine(a);
-                            foreach(List<Profile> b in Users.Values)
+                            foreach (List<Profile> b in Users.Values)
                             {
-                                foreach(Profile d in b)
+                                foreach (Profile d in b)
                                 {
                                     Console.WriteLine($"Username: {d.GetUserName()}, Privacidad: {d.GetPrivacy()}");
                                 }
@@ -130,7 +128,7 @@ namespace Entrega2ProyectoLJJ
                         Thread.Sleep(2000);
                         break;
                     case "Seguir":
-                        string chosen1 = ShowOptions(new List<string>() { "Seguir un perfil", "Seguir una playlist de canciones", "Seguir una playlist de peliculas", "Seguir un album", "Seguir un artista", "Seguir un actor"});
+                        string chosen1 = ShowOptions(new List<string>() { "Seguir un perfil", "Seguir una playlist de canciones", "Seguir una playlist de peliculas", "Seguir un album", "Seguir un artista", "Seguir un actor" });
                         switch (chosen1)
                         {
                             case "Seguir un perfil":
@@ -178,7 +176,7 @@ namespace Entrega2ProyectoLJJ
                             case "Sugerencias de Peliculas":
                                 Console.Clear();
                                 Console.WriteLine("En base a lo que usted sigue y ha visto, esta es una lista de peliculas que podrian gustarle:");
-                                foreach(string a in profile.SuggestionMovie())
+                                foreach (string a in profile.SuggestionMovie())
                                 {
                                     Console.WriteLine(a);
                                 }
@@ -209,6 +207,7 @@ namespace Entrega2ProyectoLJJ
                                 string stop = Console.ReadLine();
                                 if (stop == "stop")
                                 {
+                                    WindowsMediaPlayer wmp = new WindowsMediaPlayer();
                                     wmp.controls.stop();
                                     break;
                                 }
@@ -221,6 +220,7 @@ namespace Entrega2ProyectoLJJ
                                 string stop1 = Console.ReadLine();
                                 if (stop1 == "stop")
                                 {
+                                    WindowsMediaPlayer wmp = new WindowsMediaPlayer();
                                     wmp.controls.stop();
                                     break;
                                 }
@@ -233,6 +233,7 @@ namespace Entrega2ProyectoLJJ
                                 string stop2 = Console.ReadLine();
                                 if (stop2 == "stop")
                                 {
+                                    WindowsMediaPlayer wmp = new WindowsMediaPlayer();
                                     wmp.controls.stop();
                                     break;
                                 }
@@ -269,7 +270,7 @@ namespace Entrega2ProyectoLJJ
                                     Console.Clear();
                                     Console.WriteLine("diga el genero de la cancion");
                                     string Sgender = Console.ReadLine();
-                                    Console.WriteLine("diga el nombre de la cancion");
+                                    Console.WriteLine("diga el nombre de la cancion (recuerde que debe tener el mismo nombre que aparece en el archivo)");
                                     string Sname = Console.ReadLine();
                                     Console.WriteLine("diga el artista de la cancion");
                                     string Sartist = Console.ReadLine();
@@ -408,7 +409,7 @@ namespace Entrega2ProyectoLJJ
                                         }
                                     }
                                     break;
-                                case "selccionar cancion como favorito":
+                                case "seleccionar cancion como favorito":
                                     Console.Clear();
                                     Console.WriteLine("diga el nombre de la cancion que quiera agregar a favoritos");
                                     string Fname = Console.ReadLine();
@@ -424,7 +425,7 @@ namespace Entrega2ProyectoLJJ
                                         }
                                     }
                                     break;
-                                case "agregar cancion a en cola":
+                                case "agregar cancion en cola":
                                     Console.Clear();
                                     Console.WriteLine("diga el nombre de la cancion que quiera agregar a en cola");
                                     string Qname = Console.ReadLine();
@@ -473,14 +474,11 @@ namespace Entrega2ProyectoLJJ
                                             while (exec2)
                                             {
                                                 WindowsMediaPlayer wmp = new WindowsMediaPlayer();
-                                                wmp.URL = l_songs[i] + ".wav";
-                                                string chosen7 = ShowOptions(new List<string>() { "reproducir", "pausar", "adelantar", "retroceder", "stop", "salir" });
+                                                wmp.URL = l_songs[i].getName() + ".wav";
+                                                wmp.controls.play();
+                                                string chosen7 = ShowOptions(new List<string>() { "pausar", "adelantar", "retroceder", "stop", "salir" });
                                                 switch (chosen7)
                                                 {
-                                                    case "repruducir":
-                                                        Console.Clear();
-                                                        wmp.controls.play();
-                                                        break;
                                                     case "pausar":
                                                         Console.Clear();
                                                         wmp.controls.pause();
@@ -501,6 +499,7 @@ namespace Entrega2ProyectoLJJ
                                                         Console.Clear();
                                                         exec2 = false;
                                                         break;
+
                                                 }
                                             }
                                         }
@@ -518,68 +517,117 @@ namespace Entrega2ProyectoLJJ
                         {
                             string chosen6 = ShowOptions(new List<string>() {"Agregar película", "Reproducir película",
                     "Ver listado de películas", "Buscar películas por filtros", "Agregar películas a la cola", "Crear playlist",
-                    "Crear playlist de favoritos", "Salir de la plataforma" });
+                    "Crear playlist de favoritos","Ver playlist", "Salir de la plataforma" });
                             switch (chosen6)
                             {
                                 case "Agregar película":
-                                    Console.WriteLine("¿Qué película desea agregar?");
-                                    string movie = Console.ReadLine();
+                                    List<string> l_categories = new List<string>();
+                                    List<string> l_Aparticipation = new List<string>();
+                                    List<Actor> l_actors = new List<Actor>();
+                                    Console.WriteLine("Nombre de la apelícula:");
+                                    string Mname = Console.ReadLine();
+                                    Console.WriteLine("Categoría(s) a la(s) que pertenece:");
+                                    string Mcategorie = Console.ReadLine();
+                                    l_categories.Add(Mcategorie);
+                                    Console.WriteLine("Ingrese más categorías si así lo desea (presione ENTER solamente para terminar");
                                     while (true)
                                     {
-                                        if (movielist.Contains(movie) == true)
+                                        string Mcategorie2 = Console.ReadLine();
+                                        if (Mcategorie2 == "")
                                         {
-                                            Console.WriteLine("ERROR. La película solicitada ya está en la plataforma.");
+                                            break;
                                         }
                                         else
                                         {
-                                            movielist.Add(movie);
+                                            l_categories.Add(Mcategorie2);
+                                        }
+                                    }
+                                    Console.WriteLine("Género al que pertenece:");
+                                    string Mgender = Console.ReadLine();
+                                    Console.WriteLine("Actor(es) que participa(n) en la película:");
+                                    Console.WriteLine("Nombre del actor:");
+                                    string Aname = Console.ReadLine();
+                                    Console.WriteLine("Breve biografía del actor:");
+                                    string Abiography = Console.ReadLine();
+                                    Console.WriteLine("Película(s) en las que ha participado:");
+                                    string Amovie = Console.ReadLine();
+                                    Console.WriteLine("Ingrese más películas en caso de ser necesario (presione ENTER solamente para terminar)");
+                                    while (true)
+                                    {
+                                        string Amovie2 = Console.ReadLine();
+                                        if (Amovie2 == "")
+                                        {
                                             break;
                                         }
-                                    }
-                                    break;
-                                case "Reproducir película":
-                                    Console.WriteLine("Ingrese el nombre de la película:");
-                                    string xd = Console.ReadLine() + ".wav";
-                                    WindowsMediaPlayer wmp = new WMPLib.WindowsMediaPlayer();
-                                    wmp.URL = xd;
-                                    bool exec10 = true;
-                                    while (exec10)
-                                    {
-                                        string answer3 = Movies.ShowOptions(new List<string>() { "reproducir", "pausar", "adelantar", "retroceder", "stop", "salir" });
-                                        switch (answer3)
+                                        else
                                         {
-                                            case "repruducir":
-                                                Console.Clear();
-                                                wmp.controls.play();
-                                                break;
-                                            case "pausar":
-                                                Console.Clear();
-                                                wmp.controls.pause();
-                                                break;
-                                            case "adelantar":
-                                                Console.Clear();
-                                                wmp.controls.fastForward();
-                                                break;
-                                            case "retroceder":
-                                                Console.Clear();
-                                                wmp.controls.fastReverse();
-                                                break;
-                                            case "stop":
-                                                Console.Clear();
-                                                wmp.controls.stop();
-                                                break;
-                                            case "salir":
-                                                Console.Clear();
-                                                exec10 = false;
-                                                break;
+                                            l_Aparticipation.Add(Amovie2);
                                         }
                                     }
+                                    Console.WriteLine("Género en el que trabaja el actor:");
+                                    string Agender = Console.ReadLine();
+                                    Console.WriteLine("Edad del actor:");
+                                    int Aage = Convert.ToInt32(Console.ReadLine());
+                                    Actor actor = new Actor(Aname, Abiography, l_Aparticipation, Agender, Aage);
+                                    l_actors.Add(actor);
+                                    Console.WriteLine("¿hay más actores en esta película? [si]/[no]");
+                                    while (true)
+                                    {
+                                        string actor2 = Console.ReadLine();
+                                        if (actor2 == "no")
+                                        {
+                                            break;
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("Nombre del actor:");
+                                            string Aname2 = Console.ReadLine();
+                                            Console.WriteLine("Breve biografía del actor:");
+                                            string Abiography2 = Console.ReadLine();
+                                            Console.WriteLine("Película(s) en las que ha participado:");
+                                            string Amovie2 = Console.ReadLine();
+                                            Console.WriteLine("Ingrese más películas en caso de ser necesario (presione ENTER solamente para terminar)");
+                                            while (true)
+                                            {
+                                                string Amovie3 = Console.ReadLine();
+                                                if (Amovie3 == "")
+                                                {
+                                                    break;
+                                                }
+                                                else
+                                                {
+                                                    l_Aparticipation.Add(Amovie3);
+                                                }
+                                            }
+                                            Console.WriteLine("Género en el que trabaja el actor:");
+                                            string Agender2 = Console.ReadLine();
+                                            Console.WriteLine("Edad del actor:");
+                                            int Aage2 = Convert.ToInt32(Console.ReadLine());
+                                            Actor Actor = new Actor(Aname, Abiography, l_Aparticipation, Agender, Aage);
+                                            l_actors.Add(Actor);
+                                        }
+                                    }
+                                    Console.WriteLine("Estudio que realizó la película:");
+                                    string Mstudio = Console.ReadLine();
+                                    Console.WriteLine("Año en que se terminó de producir la película:");
+                                    int Myear = Convert.ToInt32(Console.ReadLine());
+                                    Console.WriteLine("Breve descripción de la película:");
+                                    string Mdescription = Console.ReadLine();
+                                    Console.WriteLine("Duración [en segundos] de la película:");
+                                    int Mduration = Convert.ToInt32(Console.ReadLine());
+                                    Movies pelicula = new Movies(Mname, l_categories, Mgender, l_actors, Mstudio, Myear, Mdescription, Mduration);
+                                    l_movies.Add(pelicula);
+                                    break;
+                                case "Reproducir película":
+                                    Console.WriteLine("Ingrese el nombre de la película (recuerde que la película debe tener el mismo nombre que el archivo multimedia de la carpeta Debug:");
+                                    string mov = Console.ReadLine() + ".mp4";
+                                    System.Diagnostics.Process.Start(mov);
                                     break;
                                 case "Ver listado de películas":
                                     Console.WriteLine("Películas disponibles para ver:");
-                                    foreach (string Movie in movielist)
+                                    foreach (Movies Movie in l_movies)
                                     {
-                                        Console.WriteLine(Movie);
+                                        Console.WriteLine(Movie.GetName());
                                     }
                                     break;
                                 case "Buscar películas por filtros":
@@ -603,7 +651,8 @@ namespace Entrega2ProyectoLJJ
                                             filter.Add(choice2);
                                         }
                                     }
-                                    Movies.Search(filter);
+                                    Movies M = new Movies("name", filter, "gender", new List<Actor>(), "studio", 3, "description", 10);
+                                    M.Search();
                                     break;
                                 case "Agregar películas a la cola":
                                     List<string> queue = new List<string>();
@@ -624,25 +673,14 @@ namespace Entrega2ProyectoLJJ
                                     }
                                     break;
                                 case "Crear playlist":
-                                    Console.WriteLine("Nombre de la playlist:");
-                                    string name = Console.ReadLine();
-                                    Console.WriteLine("Privacidad de la playlist: pública/privada");
-                                    string privacy5 = Console.ReadLine();
-                                    Console.WriteLine("Películas que desea agregar:");
-                                    List<string> m = new List<string>();
-                                    while (true)
-                                    {
-                                        string respuesta = Console.ReadLine();
-                                        if (respuesta == "")
-                                        {
-                                            break;
-                                        }
-                                        else
-                                        {
-                                            m.Add(respuesta);
-                                        }
-                                    }
-                                    PL.Add(m);
+                                    Console.Clear();
+                                    Console.WriteLine("diga el nombre de la playlist");
+                                    string PLname1 = Console.ReadLine();
+                                    Console.WriteLine("diga la privacidad de la playlist[publica] o [privada]");
+                                    string PLprivacy1 = Console.ReadLine();
+                                    List<Movies> PLmovies1 = new List<Movies>();
+                                    PlaylistMovies playlist1 = new PlaylistMovies(PLname1, PLprivacy1, PLmovies1);
+                                    l_pl1.Add(playlist1);
                                     break;
                                 case "Crear playlist de favoritos":
                                     Console.WriteLine("Nombre de la playlist:");
@@ -661,6 +699,19 @@ namespace Entrega2ProyectoLJJ
                                         else
                                         {
                                             mf.Add(respuesta);
+                                        }
+                                    }
+                                    break;
+                                case "Ver playlist":
+                                    Console.Clear();
+                                    Console.WriteLine("diga el nombre de la playlist que desea ver");
+                                    string plname = Console.ReadLine();
+                                    for (int i = 0; l_pl1.Count > i; i++)
+                                    {
+                                        if (plname == l_pl1[i].GetName())
+                                        {
+                                            l_pl1[i].showMovies();
+                                            break;
                                         }
                                     }
                                     break;

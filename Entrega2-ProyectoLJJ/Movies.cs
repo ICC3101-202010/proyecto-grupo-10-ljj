@@ -17,7 +17,7 @@ namespace Entrega2ProyectoLJJ
         private string description;
         private List<int> qualification;
         private int duration;
-        private int reproduction;
+        private int reproduction = 0;
         private int users;
         private bool favourite;
         //falta image y file
@@ -36,35 +36,23 @@ namespace Entrega2ProyectoLJJ
         {
             return name;
         }
-        //Import(file)
-        //public List<Movies> Search(string filter)
-        //{
-        //    List<Movies> filterlist = new List<Movies>();
-        //    if (filter == "categoria" || filter == "categoría")
-        //    {
-        //        foreach (Movies movie in )
-        //    }
-        //}
-        //Stop(file)
         public int GetDuration()
         {
             return duration;
         }
-        //NumberOfReproduction(reproduction)
-        //NumberOfUsers(users)
+        public void NumberOfReproduction()
+        {
+            reproduction += 1;
+        }
         public void Qualification(Movies m, int q)
         {
             qualification.Add(q);
             Console.WriteLine("La película " + m.GetName() + "se calificó con un " + qualification);
         }
-        //AddImage(image)
         public void AddActors(Actor actor)
         {
             actors.Add(actor);
         }
-        //NextMovie(file)
-        //GoForward(file)
-        //GoBackwards(file)
         public static string ShowOptions(List<string> options)
         {
             int i = 0;

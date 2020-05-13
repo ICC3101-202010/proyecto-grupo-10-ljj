@@ -31,6 +31,21 @@ namespace Entrega2ProyectoLJJ
                 Console.WriteLine("ERROR. La privacidad ingresada no es válida.\n");
             }
         }
+        public void showMovies()
+        {
+            if (movies.Count != 0)
+            {
+                Console.WriteLine("las películas de la playlist: " + name + "son:");
+                for (int i = 0; i < movies.Count; i++)
+                {
+                    Console.WriteLine(movies[i].GetName());
+                }
+            }
+            else
+            {
+                Console.WriteLine("no se han añadido películas a:" + name);
+            }
+        }
         public PlaylistMovies(string name, string privacy, List<Movies> movies)
         {
             this.name = name;

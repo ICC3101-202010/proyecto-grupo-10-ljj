@@ -44,5 +44,8 @@
     <Compile Include="PlaylistMovies.cs" />
     <Compile Include="QueueMovies.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
