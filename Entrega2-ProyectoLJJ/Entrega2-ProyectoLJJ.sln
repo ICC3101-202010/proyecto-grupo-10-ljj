@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entrega2-ProyectoLJJ", "Entrega2-ProyectoLJJ.csproj", "{AE030445-2331-4A3A-AB6C-9083910AE2FC}"
 EndProject
 Global
@@ -9,9 +10,15 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AE030445-2331-4A3A-AB6C-9083910AE2FC}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{AE030445-2331-4A3A-AB6C-9083910AE2FC}.Debug|anycpu.Build.0 = Debug|anycpu
-		{AE030445-2331-4A3A-AB6C-9083910AE2FC}.Release|anycpu.ActiveCfg = Release|anycpu
-		{AE030445-2331-4A3A-AB6C-9083910AE2FC}.Release|anycpu.Build.0 = Release|anycpu
+		{AE030445-2331-4A3A-AB6C-9083910AE2FC}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{AE030445-2331-4A3A-AB6C-9083910AE2FC}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{AE030445-2331-4A3A-AB6C-9083910AE2FC}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{AE030445-2331-4A3A-AB6C-9083910AE2FC}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74184867-48F2-46FB-8A1F-15D346ED61D5}
 	EndGlobalSection
 EndGlobal
