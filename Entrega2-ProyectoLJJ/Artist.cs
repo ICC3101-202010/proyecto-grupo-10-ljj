@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entrega2ProyectoLJJ
 {
-    class Artist
+    public class Artist
     {
         private string name;
         private string bio;
@@ -54,6 +54,14 @@ namespace Entrega2ProyectoLJJ
         public string getName()
         {
             return name;
+        }
+        public int getAge()
+        {
+            return age;
+        }
+        public string getGender()
+        {
+            return gender;
         }
 
     }

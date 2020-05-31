@@ -5,33 +5,31 @@ using System.Text;
 
 namespace Entrega2ProyectoLJJ
 {
-    class Songs : Controller
+    public class Songs
     {
         private string gender;
         private string name;
         private string artist;
         private string composer;
-        private string discography;
         private string studio;
         private int year;
         private string lyrics;
-        private int duration;
-        private int reproduction;
+        private string duration;
+        private int reproduction = 0;
         private int users = 0;
-        private int qualification = 0;
+        private double qualification = 0;
         private int qualificationCount = 0;
         private bool favourite;
         private bool download;
 
 
-        public Songs(string gender, string name, string artist, string composer, string discography, string studio, int year, string lyrics,
-            int duration, bool download, bool favourite)
+        public Songs(string name, string artist, string composer, string gender, string studio, int year, string lyrics,
+            string duration, bool download, bool favourite)
         {
-            this.gender = gender;
             this.name = name;
             this.artist = artist;
             this.composer = composer;
-            this.discography = discography;
+            this.gender = gender;
             this.studio = studio;
             this.year = year;
             this.lyrics = lyrics;
@@ -59,17 +57,17 @@ namespace Entrega2ProyectoLJJ
                 Console.WriteLine("la cancion: " + name + " no esta disponible para descargar");
             }
         }
-        public override string Search()
-        { 
-            return "las busquedas se estan implementando, en la siguiente actualizacion estaran disponibles";
-        }
-        public void getDuration()
+        //public override void search()
+        //{
+        //    Console.WriteLine("las busquedas se estan implementando, en la suiguiente actualizacion estaran disponibles");
+        //}
+        public string getDuration()
         {
-            Console.WriteLine("la cancion:" + name + "/nduración: " + duration + " segundos");
+            return duration;
         }
-        public void Reproduction(int reproduction)
+        public void Reproduction()
         {
-            this.reproduction = reproduction;
+            reproduction = reproduction + 1;
         }
         public void NumberOfReproduction()
         {
@@ -87,11 +85,39 @@ namespace Entrega2ProyectoLJJ
         {
             return users;
         }
-        public int Qualification(int qualific)
+        public void Qualification(int qualific)
         {
             qualificationCount = qualificationCount + 1;
             qualification = (qualification + qualific) / qualificationCount;
+        }
+        public string getGender()
+        {
+            return gender;
+        }
+        public string getCompose()
+        {
+            return composer;
+        }
+        public string getStudio()
+        {
+            return studio;
+        }
+        public string getLyrics()
+        {
+            return lyrics;
+        }
+        public int getYear()
+        {
+            return year;
+        }
+        public double getQualification()
+        {
             return qualification;
         }
+        public int getReproductions()
+        {
+            return reproduction;
+        }
+
     }
 }

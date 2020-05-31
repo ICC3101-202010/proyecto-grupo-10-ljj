@@ -8,12 +8,22 @@ namespace Entrega2ProyectoLJJ
 {
     public class PlaylistFavouriteMovies
     {
-        private string name;
-        private string privacy;
-        private List<Movies> favourite;
+        private string namef;
+        private string privacyf;
+        private List<Movies> moviesf;
+        public PlaylistFavouriteMovies(string namef, string privacyf, List<Movies> moviesf)
+        {
+            this.namef = namef;
+            this.privacyf = privacyf;
+            this.moviesf = moviesf;
+        }
+        public string GetName()
+        {
+            return namef;
+        }
         public void AddFavourite(Movies movie)
         {
-            favourite.Add(movie);
+            moviesf.Add(movie);
         }
     }
 }

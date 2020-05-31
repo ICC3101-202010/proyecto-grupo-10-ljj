@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Entrega2ProyectoLJJ
 {
-    class QueueSongs
+    public class QueueSongs
     {
         private List<Songs> songs = new List<Songs>();
         public QueueSongs(List<Songs> songs)

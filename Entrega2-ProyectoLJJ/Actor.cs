@@ -24,5 +24,25 @@ namespace Entrega2ProyectoLJJ
             this.gender = gender;
             this.age = age;
         }
+        public string GetName()
+        {
+            return name;
+        }
+        public string GetBiography()
+        {
+            return biography;
+        }
+        public List<string> GetParticipation()
+        {
+            return participation;
+        }
+        public string GetGender()
+        {
+            return gender;
+        }
+        public int GetAge()
+        {
+            return age;
+        }
     }
 }

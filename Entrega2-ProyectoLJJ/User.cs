@@ -8,7 +8,6 @@ namespace Entrega2ProyectoLJJ
         private string plan;
         private string email;
         private string password;
-        private List<Profile> ListOfProfiles = new List<Profile>();
         private List<User> ListOfUser = new List<User>();
         public User(string plan, string email, string password)
         {
@@ -29,24 +28,18 @@ namespace Entrega2ProyectoLJJ
             Console.WriteLine("Usuario creado con exito");
             Thread.Sleep(1000);
         }
-        public void CreateProfile(string username, bool privacy)
-        {
-            Profile profile = new Profile(username, privacy);
-            ListOfProfiles.Add(profile);
-            Console.WriteLine("Perfil creado con exito");
-            Thread.Sleep(1000);
-        }
-        public List<Profile> GetListOfProfiles()
-        {
-            return ListOfProfiles;
-        }
         public List<User> GetListOfUser()
         {
             return ListOfUser;
         }
-        public void Quit()
+        public string GetEmail()
         {
-
+            return email;
         }
+        public string GetPassword()
+        {
+            return password;
+        }
+
     }
 }

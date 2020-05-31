@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entrega2ProyectoLJJ
 {
-    class Album
+    public class Album
     {
         private string name;
         private string artist;

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Entrega2ProyectoLJJ
 {
-    class PlaylistFavouritesSongs
+    public class PlaylistFavouritesSongs
     {
         private string name;
         private string privacy;
