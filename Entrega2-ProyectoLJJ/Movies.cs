@@ -14,7 +14,8 @@ namespace Entrega2ProyectoLJJ
         private string studio;
         private int year;
         private string description;
-        private List<int> qualification;
+        private double qualification = 0;
+        private int qualificationCount = 0;
         private int duration;
         private int reproduction;
         private int users;
@@ -35,8 +36,28 @@ namespace Entrega2ProyectoLJJ
         {
             return name;
         }
+        public void addFavourite()
+        {
+            favourite = true;
+        }
+        public string GetDescription()
+        {
+            return description;
+        }
+        public int GetYear()
+        {
+            return year;
+        }
+        public int GetReproductions()
+        {
+            return reproduction;
+        }
         //Import(file)
         //Stop(file)
+        public string GetStudio()
+        {
+            return studio;
+        }
         public int GetDuration()
         {
             return duration;
@@ -55,19 +76,24 @@ namespace Entrega2ProyectoLJJ
         }
         //NumberOfReproduction(reproduction)
         //NumberOfUsers(users)
-        public void Qualification(Movies m, int q)
+        public void Qualification(int q)
         {
-            qualification.Add(q);
-            Console.WriteLine("La película " + m.GetName() + "se calificó con un " + qualification);
+            qualificationCount = qualificationCount + 1;
+            qualification = (qualification + q) / qualificationCount;
+            Console.WriteLine("La película " + name + " se calificó con un " + q);
         }
         public double GetQualification()
         {
-            return qualification.Average();
+            return qualification;
         }
         //AddImage(image)
         public void AddActors(Actor actor)
         {
             actors.Add(actor);
+        }
+        public void Reproduction()
+        {
+            reproduction = reproduction + 1;
         }
         //NextMovie(file)
         //GoForward(file)
@@ -297,4 +323,5 @@ namespace Entrega2ProyectoLJJ
             return moviesSearched;
         }
     }
+
 }

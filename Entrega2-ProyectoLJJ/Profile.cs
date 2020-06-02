@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-//using WMPLib;
+using WMPLib;
 namespace Entrega2ProyectoLJJ
 {
     public class Profile

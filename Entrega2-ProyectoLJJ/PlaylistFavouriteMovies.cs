@@ -24,6 +24,22 @@ namespace Entrega2ProyectoLJJ
         public void AddFavourite(Movies movie)
         {
             moviesf.Add(movie);
+            Console.WriteLine("se añadio cancion: " + movie.GetName() + " a favoritos");
+        }
+        public void showMovies()
+        {
+            if (moviesf.Count != 0)
+            {
+                Console.WriteLine("las peliculas de favoritos son:");
+                for (int i = 0; i < moviesf.Count; i++)
+                {
+                    Console.WriteLine(moviesf[i].GetName());
+                }
+            }
+            else
+            {
+                Console.WriteLine("no se han añadido peliculas a favoritos");
+            }
         }
     }
 }

@@ -58,8 +58,14 @@ namespace Entrega2ProyectoLJJ
             QueueSongs queueSongs = new QueueSongs(Qsongs);
             //REQUISITOS MOVIES
             List<Movies> movielist = new List<Movies>();
-            List<PlaylistMovies> PL = new List<PlaylistMovies>();
+            List<PlaylistMovies> l_plm = new List<PlaylistMovies>();
             List<Actor> actors = new List<Actor>();
+            //creamos playlist de favoritos
+            List<Movies> movies = new List<Movies>();
+            PlaylistFavouriteMovies playlistFavouritesMovies = new PlaylistFavouriteMovies("favoritos", "privada", movies);
+            //creamos objeto de en cola
+            List<Movies> Qmovies = new List<Movies>();
+            QueueMovies queueMovies = new QueueMovies(Qmovies);
             //PARTICIPACIÓN DE ACTORES
             List<string> DonaldGloverP = new List<string>();
             List<string> BeyonceP = new List<string>();
@@ -114,11 +120,15 @@ namespace Entrega2ProyectoLJJ
             Movies TheLionKing = new Movies("The Lion King", categoriesL, actorsL, "Walt Disney Pictures", 2019, "En la Roca del Rey, el rey Mufasa y la reina Sarabi presentan a su hijo recién nacido, Simba, a sus súbditos.Después de la ceremonia, el hermano menor de Mufasa, Scar, se lamenta de que ya no está en la segunda fila para el trono.El mayordomo de Mufasa, Zazú, llega al lugar, anunciando la llegada del rey.Scar intenta comerse a Zazú, pero se ve frustrado por la llegada de Mufasa, quien le pregunta a Scar por qué estuvo ausente en la presentación de Simba, a la que Scar finge habérsele olvidado.Los hermanos tienen una breve discusión, en la que Scar socava la autoridad de Mufasa, pero deja en claro que no desafiará el liderazgo del rey.Eventualmente, Scar se retira del lugar y Zazú le sugiere a Mufasa que por qué no lo exilia del reino antes de que cause problemas, pero Mufasa se niega a hacer tal cosa, ya que Scar es su hermano.", 108);
             Movies AvengersEndgame = new Movies("Avengers: Endgame", categoriesA, actorsA, "Marvel Studios", 2019, "Veintitrés días después de que Thanos hubiera usado el Guantelete del Infinito para desintegrar la mitad de toda la vida en el universo, Capitana Marvel rescata a Tony Stark y Nebula, quienes estaban varados en el espacio exterior en la nave Milano I del fallecido Quill y los lleva de regreso a la Tierra hasta el complejo de Los Vengadores, donde los esperan Natasha Romanoff, Bruce Banner, Steve Rogers, Rocket Raccoon, Thor, Pepper Potts y James Rhodes.Mientras estabilizan a Stark y lo ponen al corriente sobre los eventos que sucedieron mientras estuvo en el espacio exterior, el resto de Los Vengadores localizan por medio de Nebula a un Thanos malherido en un planeta al que este llama 'El Jardín' y deciden ir en su búsqueda con el objetivo de recuperar las Gemas del Infinito y revertir los efectos del chasquido.Consiguen reducirlo pero descubren que las gemas ya no están.Thanos revela que destruyó las gemas para evitar que fueran usadas nuevamente.Thor, enfurecido, lo decapita con la Stormbreaker.", 146);
             Movies BlackWidow = new Movies("Black Widow", categoriesB, actorsB, "Marvel Studios", 2019, "Situada 1 año después de los sucesos de Capitán América: Civil War y antes de Avengers: Infinity War, Natasha Romanoff se encuentra sola y obligada a enfrentar una peligrosa conspiración con lazos con su pasado mientras es buscada por la ley.Perseguida por una fuerza que no se detendrá ante nada para derribarla, Romanoff debe lidiar con su historia como espía y las relaciones rotas que dejó a su paso mucho antes de convertirse en Vengadora.", 144);
+            movielist.Add(TheLionKing);
+            movielist.Add(AvengersEndgame);
+            movielist.Add(BlackWidow);
+
             int asw = 0;
             bool exec10 = true;
             while (exec10)
             {
-                string chosen10 = ShowOptions(new List<string>() { "Iniciar sesion", "Iniciar sesion como administrador", "Administracion de Cuentas", "Salir"});
+                string chosen10 = ShowOptions(new List<string>() { "Iniciar sesion", "Iniciar sesion como administrador", "Administracion de Cuentas", "Salir" });
                 switch (chosen10)
                 {
                     case "Iniciar sesion":
@@ -135,11 +145,11 @@ namespace Entrega2ProyectoLJJ
                                     asw = 1;
                                     Console.WriteLine($"Bienvenido {email22}!");
                                     Console.WriteLine($"Cual perfil desearia utilizar: (Responda con el nombre del perfil)");
-                                    foreach(KeyValuePair<string, List<Profile>> h in Users)
+                                    foreach (KeyValuePair<string, List<Profile>> h in Users)
                                     {
-                                        if(h.Key == email22)
+                                        if (h.Key == email22)
                                         {
-                                            foreach(Profile profile2 in h.Value)
+                                            foreach (Profile profile2 in h.Value)
                                             {
                                                 Console.WriteLine(profile2.GetUserName());
                                             }
@@ -149,7 +159,7 @@ namespace Entrega2ProyectoLJJ
                                     int number1 = 0;
                                     foreach (KeyValuePair<string, List<Profile>> h in Users)
                                     {
-                                        foreach(Profile profile3 in h.Value)
+                                        foreach (Profile profile3 in h.Value)
                                         {
                                             if (profile3.GetUserName() == asw5)
                                             {
@@ -160,7 +170,7 @@ namespace Entrega2ProyectoLJJ
                                             }
                                         }
                                     }
-                                    if(number1 == 0)
+                                    if (number1 == 0)
                                     {
                                         Console.WriteLine("Perfil no valido.");
                                         Thread.Sleep(2000);
@@ -227,7 +237,7 @@ namespace Entrega2ProyectoLJJ
                                                         Console.WriteLine("Que playlist desea seguir?");
                                                         string playlistmovie = Console.ReadLine();
                                                         int f = 0;
-                                                        foreach (PlaylistMovies playlistMovies in PL)
+                                                        foreach (PlaylistMovies playlistMovies in l_plm)
                                                         {
                                                             if (playlistMovies.GetName() == playlistmovie)
                                                             {
@@ -296,14 +306,14 @@ namespace Entrega2ProyectoLJJ
                                                         int b = 0;
                                                         foreach (Actor actor2 in actors)
                                                         {
-                                                           if (actor2.GetName() == actor)
-                                                           {
+                                                            if (actor2.GetName() == actor)
+                                                            {
                                                                 b = 1;
                                                                 profile.AddActor(actor2);
                                                                 Console.WriteLine("Actor seguido con exito");
                                                                 Thread.Sleep(2000);
                                                                 break;
-                                                           }
+                                                            }
                                                         }
                                                         if (b == 0)
                                                         {
@@ -315,7 +325,7 @@ namespace Entrega2ProyectoLJJ
                                                 }
                                                 break;
                                             case "Sugerencias inteligentes":
-                                                string chosen2 = ShowOptions(new List<string>() {"Sugerencias de Peliculas", "Sugerencias de Canciones"});
+                                                string chosen2 = ShowOptions(new List<string>() { "Sugerencias de Peliculas", "Sugerencias de Canciones" });
                                                 switch (chosen2)
                                                 {
                                                     case "Sugerencias de Peliculas":
@@ -332,7 +342,7 @@ namespace Entrega2ProyectoLJJ
                                                                 }
                                                             }
                                                         }
-                                                        
+
                                                         Thread.Sleep(4000);
                                                         break;
                                                     case "Sugerencias de Canciones":
@@ -367,7 +377,7 @@ namespace Entrega2ProyectoLJJ
                                                         {
                                                             nombresprofiles.Add(f.GetUserName());
                                                         }
-                                                        Console.WriteLine("A que usuario quiere unirse? (Responda con su username)");
+                                                        Console.WriteLine("A que perfil quiere unirse? (Responda con su username)");
                                                         foreach (string y in nombresprofiles)
                                                         {
                                                             Console.WriteLine($"({t}) {y}");
@@ -410,7 +420,7 @@ namespace Entrega2ProyectoLJJ
                                                         {
                                                             nombresprofiles.Add(f.GetUserName());
                                                         }
-                                                        Console.WriteLine("A que usuario quiere unirse? (Responda con su username)");
+                                                        Console.WriteLine("A que perfil quiere unirse? (Responda con su username)");
                                                         foreach (string y in nombresprofiles)
                                                         {
                                                             Console.WriteLine($"({t}) {y}");
@@ -454,7 +464,7 @@ namespace Entrega2ProyectoLJJ
                                                     // Pedimos al usuario una de las opciones
                                                     string chosen5 = ShowOptions(new List<string>() { "crear playlist","calificar cancion",
                     "Buscar cancion", "Descargar cancion", "agregar cancion a playlist", "selccionar cancion como favorito",
-                    "agregar cancion a en cola","ver playlist","ver favoritos","ver en cola","Información","reproducir cancion", "salir" });
+                    "agregar cancion a la cola","ver playlist","ver favoritos","ver en cola","Información","reproducir cancion", "salir" });
                                                     switch (chosen5)
                                                     {
                                                         case "crear playlist":
@@ -477,7 +487,7 @@ namespace Entrega2ProyectoLJJ
                                                             {
                                                                 if (caname == l_songs[i].getName() && caart == l_songs[i].getArtist())
                                                                 {
-                                                                    Console.WriteLine("de la calificacion");
+                                                                    Console.WriteLine("de la calificacion (1-10)");
                                                                     string cal = Console.ReadLine();
                                                                     int Cal = Int16.Parse(cal);
                                                                     l_songs[i].Qualification(Cal);
@@ -495,9 +505,9 @@ namespace Entrega2ProyectoLJJ
                                                                 {
                                                                     case "Por palabras clave":
                                                                         Console.WriteLine("Ingrese palabras clave");
-                                                                        string Keys = Console.ReadLine();
-                                                                        string[] words = Keys.Split(' ');
-                                                                        foreach (var word in words)
+                                                                        string Keysss = Console.ReadLine();
+                                                                        string[] wordss = Keysss.Split(' ');
+                                                                        foreach (var word in wordss)
                                                                         {
                                                                             //if(word == ||)
                                                                         }
@@ -508,30 +518,50 @@ namespace Entrega2ProyectoLJJ
                                                                         bool exec5 = true;
                                                                         while (exec5)
                                                                         {
-                                                                            string chosen3 = ShowOptions(new List<string>() { "Por edad", "Genero musical", "nombre", "salir" });
+                                                                            string chosen3 = ShowOptions(new List<string>() { "Por edad", "Genero musical", "salir" });
                                                                             switch (chosen3)
                                                                             {
                                                                                 case "Por edad":
                                                                                     Console.Clear();
-                                                                                    Console.WriteLine("ingrese busqueda");
+                                                                                    Console.WriteLine("ingrese busqueda: ");
                                                                                     string edad = Console.ReadLine();
                                                                                     int edad2 = Int16.Parse(edad);
+                                                                                    int ba = 0;
                                                                                     foreach (var artist in l_artist)
                                                                                     {
                                                                                         if (artist.getAge() == edad2)
                                                                                         {
                                                                                             Console.WriteLine("tiene esa edad el artista: " + artist.getName());
+                                                                                            ba = 1;
                                                                                         }
-                                                                                        else
+                                                                                    }
+                                                                                    if (ba == 0)
+                                                                                    {
+                                                                                        Console.WriteLine("No se encontro un artista");
+                                                                                    }
+                                                                                    break;
+                                                                                case "Genero musical":
+                                                                                    Console.Clear();
+                                                                                    Console.WriteLine("ingrese busqueda: ");
+                                                                                    string gene = Console.ReadLine();
+                                                                                    int be = 0;
+                                                                                    foreach (var artist in l_artist)
+                                                                                    {
+                                                                                        if (artist.getGender() == gene)
                                                                                         {
-                                                                                            Console.WriteLine("Ningun resultado coincide con su busqueda");
+                                                                                            Console.WriteLine("El artista: " + artist.getName());
+                                                                                            be = 1;
 
                                                                                         }
+                                                                                    }
+                                                                                    if (be == 0)
+                                                                                    {
+                                                                                        Console.WriteLine("No se encontro un artista");
                                                                                     }
                                                                                     break;
                                                                                 case "salir":
                                                                                     Console.Clear();
-                                                                                    exec13 = false;
+                                                                                    exec5 = false;
                                                                                     break;
                                                                             }
                                                                         }
@@ -540,63 +570,78 @@ namespace Entrega2ProyectoLJJ
                                                                         Console.Clear();
                                                                         Console.WriteLine("diga la nota que quira ingresar como parametro y si quiere buscar" +
                                                                             " mayores, menores o iguales(EJ, 2 mayores)");
-                                                                        string phr = Console.ReadLine();
-                                                                        string[] w = phr.Split(' ');
-                                                                        int val = Int16.Parse(w[0]);
-                                                                        string crt = w[1];
-                                                                        if (crt == "mayores")
+                                                                        string phrq = Console.ReadLine();
+                                                                        string[] wq = phrq.Split(' ');
+                                                                        int vall = Int16.Parse(wq[0]);
+                                                                        string crtt = wq[1];
+                                                                        int ax = 0;
+                                                                        if (crtt == "mayores")
                                                                         {
                                                                             foreach (var song in l_songs)
                                                                             {
-                                                                                if (song.getQualification() > val)
+                                                                                if (song.getQualification() > vall)
                                                                                 {
                                                                                     Console.WriteLine(song.getName() + " " + song.getQualification());
+                                                                                    ax = 1;
                                                                                 }
                                                                             }
                                                                         }
-                                                                        if (crt == "menores")
+                                                                        if (crtt == "menores")
                                                                         {
                                                                             foreach (var song in l_songs)
                                                                             {
-                                                                                if (song.getQualification() < val)
+                                                                                if (song.getQualification() < vall)
                                                                                 {
                                                                                     Console.WriteLine(song.getName() + " " + song.getQualification());
+                                                                                    ax = 1;
                                                                                 }
                                                                             }
                                                                         }
-                                                                        if (crt == "iguales")
+                                                                        if (crtt == "iguales")
                                                                         {
                                                                             foreach (var song in l_songs)
                                                                             {
-                                                                                if (song.getQualification() == val)
+                                                                                if (song.getQualification() == vall)
                                                                                 {
                                                                                     Console.WriteLine(song.getName() + " " + song.getQualification());
+                                                                                    ax = 1;
                                                                                 }
                                                                             }
+                                                                        }
+                                                                        if (ax == 0)
+                                                                        {
+                                                                            Console.WriteLine("Su busqueda no coincide");
                                                                         }
                                                                         break;
                                                                     case "Por categoria":
                                                                         Console.Clear();
                                                                         Console.WriteLine("Ingrese el genero musical");
-                                                                        string categ = Console.ReadLine();
+                                                                        string catego = Console.ReadLine();
+                                                                        int ab = 0;
                                                                         foreach (var song in l_songs)
                                                                         {
-                                                                            if (song.getGender() == categ)
+                                                                            if (song.getGender() == catego)
                                                                             {
                                                                                 Console.WriteLine(song.getName());
+                                                                                ab = 1;
                                                                             }
                                                                         }
                                                                         foreach (var artist in l_artist)
                                                                         {
-                                                                            if (artist.getGender() == categ)
+                                                                            if (artist.getGender() == catego)
                                                                             {
                                                                                 Console.WriteLine(artist.getName());
+                                                                                ab = 1;
                                                                             }
+                                                                        }
+                                                                        if (ab == 0)
+                                                                        {
+                                                                            Console.WriteLine("Su busqueda no coincide");
                                                                         }
                                                                         break;
                                                                     case "salir":
                                                                         Console.Clear();
-                                                                        exec4 = false;
+                                                                        exec13 = false;
                                                                         break;
                                                                 }
                                                             }
@@ -655,7 +700,7 @@ namespace Entrega2ProyectoLJJ
                                                                 }
                                                             }
                                                             break;
-                                                        case "agregar cancion a en cola":
+                                                        case "agregar cancion a la cola":
                                                             Console.Clear();
                                                             Console.WriteLine("diga el nombre de la cancion que quiera agregar a en cola");
                                                             string Qname = Console.ReadLine();
@@ -732,11 +777,11 @@ namespace Entrega2ProyectoLJJ
                                                                                 break;
                                                                             case "Calificacion":
                                                                                 Console.Clear();
-                                                                                Console.WriteLine("El artista es: " + l_songs[i].getQualification());
+                                                                                Console.WriteLine("La calificacion es : " + l_songs[i].getQualification());
                                                                                 break;
                                                                             case "Reproducciones":
                                                                                 Console.Clear();
-                                                                                Console.WriteLine("La Calificacion es: " + l_songs[i].getReproductions());
+                                                                                Console.WriteLine("Tiene : " + l_songs[i].getReproductions() + " Reproducciones");
                                                                                 break;
                                                                             case "Duracion":
                                                                                 Console.Clear();
@@ -821,35 +866,35 @@ namespace Entrega2ProyectoLJJ
                                                 while (exec8)
                                                 {
                                                     string option = Movies.ShowOptions(new List<string>() { "Reproducir película",
-                    "Ver listado de películas", "Buscar películas por filtros", "Agregar películas a la cola", "Crear playlist",
-                    "Crear playlist de favoritos", "Salir de la plataforma"});
+                    "Ver listado de películas","Informacion","Buscar películas por filtros", "Agregar películas a la cola", "Crear playlist",
+                     "agregar peliculas a playlist", "selccionar pelicula como favorito"
+                    ,"ver playlist","ver favoritos","ver en cola","Calificar pelicula", "Salir de la plataforma"});
                                                     switch (option)
                                                     {
                                                         case "Reproducir película":
+                                                            Console.Clear();
                                                             Console.WriteLine("Ingrese el nombre de la película con extensión .mp4:");
-                                                            string mov = Console.ReadLine() + ".mp4";
-                                                            foreach (KeyValuePair<string, List<Profile>> h in Users)
+                                                            string mov = Console.ReadLine();
+                                                            foreach (var movie in movielist)
                                                             {
-                                                                foreach (Profile profile3 in h.Value)
+                                                                if (movie.GetName() == mov)
                                                                 {
-                                                                    if (profile3.GetUserName() == asw5)
+                                                                    movie.Reproduction();
+                                                                    try
                                                                     {
-                                                                        profile3.Vista(mov);
-                                                                        break;
+                                                                        System.Diagnostics.Process.Start(mov + ".mp4");
+                                                                    }
+                                                                    catch
+                                                                    {
+                                                                        Console.WriteLine("Hubo un error y no fue posible reproducir el video");
                                                                     }
                                                                 }
                                                             }
-                                                            try
-                                                            {
-                                                                System.Diagnostics.Process.Start(mov);
-                                                            }
-                                                            catch
-                                                            {
-                                                                Console.WriteLine("Hubo un error y no fue posible reproducir el video");
-                                                            }
+
                                                             break;
 
                                                         case "Ver listado de películas":
+                                                            Console.Clear();
                                                             Console.WriteLine("Películas disponibles para ver:");
                                                             int i = 0;
                                                             foreach (Movies Movie in movielist)
@@ -858,8 +903,73 @@ namespace Entrega2ProyectoLJJ
                                                                 i += 1;
                                                             }
                                                             break;
+                                                        case "Informacion":
+                                                            Console.Clear();
+                                                            Console.WriteLine("diga el nombre de pelicula que quiera ver la información: ");
+                                                            string movi = Console.ReadLine();
+                                                            foreach (var movie in movielist)
+                                                            {
+                                                                if (movi == movie.GetName())
+                                                                {
+                                                                    bool exec3 = true;
+                                                                    while (exec3)
+                                                                    {
+                                                                        string chosen14 = ShowOptions(new List<string>() { "Actores","Categorias","Estudio","Año","Descripcion",
+                                        "Calificacion","Reproducciones","Duracion", "salir" });
+                                                                        switch (chosen14)
+                                                                        {
+                                                                            case "Actores":
+                                                                                Console.Clear();
+                                                                                Console.WriteLine("Los actores son: ");
+                                                                                foreach (var a in movie.GetActors())
+                                                                                {
+                                                                                    Console.WriteLine(a.GetName());
+                                                                                }
+                                                                                break;
+                                                                            case "Categorias":
+                                                                                Console.Clear();
+                                                                                Console.WriteLine("Las categorias son: ");
+                                                                                foreach (var a in movie.GetCategories())
+                                                                                {
+                                                                                    Console.WriteLine(a);
+                                                                                }
+                                                                                break;
+                                                                            case "Estudio":
+                                                                                Console.Clear();
+                                                                                Console.WriteLine("El Estudio es: " + movie.GetStudio());
+                                                                                break;
+                                                                            case "Año":
+                                                                                Console.Clear();
+                                                                                Console.WriteLine("El año es: " + movie.GetYear());
+                                                                                break;
+                                                                            case "Descripcion":
+                                                                                Console.Clear();
+                                                                                Console.WriteLine("La descripcion es: " + movie.GetDescription());
+                                                                                break;
+                                                                            case "Calificacion":
+                                                                                Console.Clear();
+                                                                                Console.WriteLine("La calificacion es : " + movie.GetQualification());
+                                                                                break;
+                                                                            case "Reproducciones":
+                                                                                Console.Clear();
+                                                                                Console.WriteLine("Tiene : " + movie.GetReproductions() + " reproducciones");
+                                                                                break;
+                                                                            case "Duracion":
+                                                                                Console.Clear();
+                                                                                Console.WriteLine("La Duracion es: " + movie.GetDuration() + "Minutos");
+                                                                                break;
+                                                                            case "salir":
+                                                                                Console.Clear();
+                                                                                exec3 = false;
+                                                                                break;
+                                                                        }
+                                                                    }
 
+                                                                }
+                                                            }
+                                                            break;
                                                         case "Buscar películas por filtros":
+                                                            Console.Clear();
                                                             List<string> filter = new List<string>();
                                                             Console.WriteLine("¿Qué filtro desea aplicar?");
                                                             string choice = Movies.ShowOptions(new List<string>() { "Palabras clave", "Persona",
@@ -884,126 +994,116 @@ namespace Entrega2ProyectoLJJ
                                                             break;
 
                                                         case "Agregar películas a la cola":
-                                                            List<Movies> queue = new List<Movies>();
-                                                            Console.WriteLine("¿Qué película desea agregar a la cola de reproducción?");
-                                                            string election = Console.ReadLine();
-                                                            foreach (Movies movie in movielist)
+                                                            Console.Clear();
+                                                            Console.WriteLine("diga el nombre de la pelicula que quiera agregar a en cola");
+                                                            string Qname = Console.ReadLine();
+
+                                                            for (int j = 0; movielist.Count > j; j++)
                                                             {
-                                                                if (election == movie.GetName())
+                                                                if (Qname == movielist[j].GetName())
                                                                 {
-                                                                    if (queue.Contains(movie))
-                                                                    {
-                                                                        Console.WriteLine("Esta película ya se encuentra en la cola de reprodución.");
-                                                                    }
-                                                                    else
-                                                                    {
-                                                                        queue.Add(movie);
-                                                                    }
-                                                                }
-                                                            }
-                                                            bool t = true;
-                                                            while (t)
-                                                            {
-                                                                Console.WriteLine("¿Desea agregar otra película a la cola? presione solamente ENTER para terminar.");
-                                                                string election2 = Console.ReadLine();
-                                                                if (election2 == "")
-                                                                {
-                                                                    t = false;
-                                                                }
-                                                                else
-                                                                {
-                                                                    foreach (Movies movie in movielist)
-                                                                    {
-                                                                        if (queue.Contains(movie))
-                                                                        {
-                                                                            Console.WriteLine("Esta película ya se encuentra en la cola de reprodución.");
-                                                                        }
-                                                                        else
-                                                                        {
-                                                                            queue.Add(movie);
-                                                                        }
-                                                                    }
+                                                                    queueMovies.AddMovies(movielist[j]);
+                                                                    break;
                                                                 }
                                                             }
                                                             break;
 
                                                         case "Crear playlist":
+                                                            Console.Clear();
                                                             Console.WriteLine("Nombre de la playlist:");
                                                             string name = Console.ReadLine();
                                                             Console.WriteLine("Privacidad de la playlist: pública/privada");
                                                             string privacy = Console.ReadLine();
-                                                            Console.WriteLine("Películas que desea agregar (para terminar, presione ENTER solamente):");
-                                                            List<Movies> movies = new List<Movies>();
-                                                            bool c = true;
-                                                            while (c)
+                                                            List<Movies> PLmovies = new List<Movies>();
+                                                            PlaylistMovies playlist = new PlaylistMovies(name, privacy, PLmovies);
+                                                            l_plm.Add(playlist);
+                                                            break;
+                                                        case "agregar peliculas a playlist":
+                                                            Console.Clear();
+                                                            Console.WriteLine("diga el nombre de la pelicula que quiera agregar a una playlist");
+                                                            string Plname = Console.ReadLine();
+                                                            Console.WriteLine("diga el nombre de la playlist que quiere agregar");
+                                                            string PLpl = Console.ReadLine();
+                                                            for (int k = 0; movielist.Count > k; k++)
                                                             {
-                                                                string movieName = Console.ReadLine();
-                                                                if (movieName == "")
+                                                                if (Plname == movielist[k].GetName())
                                                                 {
-                                                                    c = false;
-                                                                }
-                                                                else
-                                                                {
-                                                                    foreach (Movies movie in movielist)
+                                                                    for (int j = 0; l_plm.Count > j; j++)
                                                                     {
-                                                                        if (movieName == movie.GetName())
+                                                                        if (PLpl == l_plm[j].GetName())
                                                                         {
-                                                                            if (movies.Contains(movie))
-                                                                            {
-                                                                                Console.WriteLine("Esta película ya se encuentra en la playlist. Intente con otra.");
-                                                                            }
-                                                                            else
-                                                                            {
-                                                                                movies.Add(movie);
-                                                                            }
+                                                                            l_plm[j].AddMovies(movielist[k]);
+                                                                            break;
                                                                         }
                                                                     }
                                                                 }
                                                             }
-                                                            PlaylistMovies playlist = new PlaylistMovies(name, privacy, movies);
-                                                            Console.WriteLine("La playlist " + playlist.GetName() + " se ha creado con éxito.");
-                                                            PL.Add(playlist);
                                                             break;
-
-                                                        case "Crear playlist de favoritos":
-                                                            Console.WriteLine("Nombre de la playlist:");
-                                                            string namef = Console.ReadLine();
-                                                            Console.WriteLine("Privacidad de la playlist: pública/privada");
-                                                            string privacyf = Console.ReadLine();
-                                                            Console.WriteLine("Películas que desea agregar (para terminar, presione ENTER solamente):");
-                                                            List<Movies> moviesf = new List<Movies>();
-                                                            bool d = true;
-                                                            while (d)
+                                                        case "selccionar pelicula como favorito":
+                                                            Console.Clear();
+                                                            Console.WriteLine("diga el nombre de la pelicula que quiera agregar a favoritos");
+                                                            string Fname = Console.ReadLine();
+                                                            for (int j = 0; movielist.Count > j; j++)
                                                             {
-                                                                string respuesta = Console.ReadLine();
-                                                                if (respuesta == "")
+                                                                if (Fname == movielist[j].GetName())
                                                                 {
-                                                                    d = false;
-                                                                }
-                                                                else
-                                                                {
-                                                                    foreach (Movies movie in movielist)
-                                                                    {
-                                                                        if (respuesta == movie.GetName())
-                                                                        {
-                                                                            if (moviesf.Contains(movie))
-                                                                            {
-                                                                                Console.WriteLine("Esta película ya se encuentra en la playlist. Intente con otra.");
-                                                                            }
-                                                                            else
-                                                                            {
-                                                                                moviesf.Add(movie);
-                                                                            }
-                                                                        }
-                                                                    }
+                                                                    playlistFavouritesMovies.AddFavourite(movielist[j]);
+                                                                    movielist[j].addFavourite();
+                                                                    break;
                                                                 }
                                                             }
-                                                            PlaylistFavouriteMovies playlistfavourite = new PlaylistFavouriteMovies(namef, privacyf, moviesf);
-                                                            Console.WriteLine("La playlist de favoritos " + playlistfavourite.GetName() + " se ha creado con éxito.");
                                                             break;
-
+                                                        case "ver playlist":
+                                                            Console.Clear();
+                                                            Console.WriteLine("diga el nombre de la playlist que desea ver");
+                                                            string plname = Console.ReadLine();
+                                                            int ac = 0;
+                                                            for (int j = 0; l_plm.Count > j; j++)
+                                                            {
+                                                                if (plname == l_plm[j].GetName())
+                                                                {
+                                                                    l_plm[j].showMovies();
+                                                                    ac = 1;
+                                                                    break;
+                                                                }
+                                                            }
+                                                            if (ac == 0)
+                                                            {
+                                                                Console.WriteLine("No se encontro la playlist");
+                                                            }
+                                                            break;
+                                                        case "ver favoritos":
+                                                            Console.Clear();
+                                                            playlistFavouritesMovies.showMovies();
+                                                            break;
+                                                        case "ver en cola":
+                                                            Console.Clear();
+                                                            queueMovies.ShowMovies();
+                                                            break;
+                                                        case "Calificar pelicula":
+                                                            Console.Clear();
+                                                            Console.WriteLine("diga que pelicula quiere calificar: ");
+                                                            string pel = Console.ReadLine();
+                                                            int aa = 0;
+                                                            foreach (var movie in movielist)
+                                                            {
+                                                                if (movie.GetName() == pel)
+                                                                {
+                                                                    aa = 1;
+                                                                    Console.WriteLine("Diga la calificacion que le quiere asignar (1-10)");
+                                                                    string cal = Console.ReadLine();
+                                                                    int cal2 = Int16.Parse(cal);
+                                                                    movie.Qualification(cal2);
+                                                                }
+                                                            }
+                                                            if (aa == 0)
+                                                            {
+                                                                Console.WriteLine("No se encontro la pelicula");
+                                                            }
+                                                            break;
                                                         case "Salir de la plataforma":
-                                                            exec = false;
+                                                            Console.Clear();
+                                                            exec8 = false;
                                                             break;
                                                     }
                                                 }
@@ -1015,7 +1115,6 @@ namespace Entrega2ProyectoLJJ
                                         Thread.Sleep(2000);
                                         Console.Clear();
                                     }
-
                                 }
                             }
                             if (asw == 0)
@@ -1095,7 +1194,7 @@ namespace Entrega2ProyectoLJJ
                                             Console.WriteLine("Que playlist desea seguir?");
                                             string playlistmovie = Console.ReadLine();
                                             int f = 0;
-                                            foreach (PlaylistMovies playlistMovies in PL)
+                                            foreach (PlaylistMovies playlistMovies in l_plm)
                                             {
                                                 if (playlistMovies.GetName() == playlistmovie)
                                                 {
@@ -1214,7 +1313,7 @@ namespace Entrega2ProyectoLJJ
                                             {
                                                 nombresprofiles.Add(f.GetUserName());
                                             }
-                                            Console.WriteLine("A que usuario quiere unirse? (Responda con su username)");
+                                            Console.WriteLine("A que perfil quiere unirse? (Responda con su username)");
                                             foreach (string y in nombresprofiles)
                                             {
                                                 Console.WriteLine($"({t}) {y}");
@@ -1257,7 +1356,7 @@ namespace Entrega2ProyectoLJJ
                                             {
                                                 nombresprofiles.Add(f.GetUserName());
                                             }
-                                            Console.WriteLine("A que usuario quiere unirse? (Responda con su username)");
+                                            Console.WriteLine("A que perfil quiere unirse? (Responda con su username)");
                                             foreach (string y in nombresprofiles)
                                             {
                                                 Console.WriteLine($"({t}) {y}");
@@ -1301,7 +1400,7 @@ namespace Entrega2ProyectoLJJ
                                         // Pedimos al usuario una de las opciones
                                         string chosen5 = ShowOptions(new List<string>() { "crear playlist","calificar cancion",
                     "Buscar cancion", "Descargar cancion", "agregar cancion a playlist", "selccionar cancion como favorito",
-                    "agregar cancion a en cola","ver playlist","ver favoritos","ver en cola","Información","reproducir cancion", "salir" });
+                    "agregar cancion a la cola","ver playlist","ver favoritos","ver en cola","Información","reproducir cancion", "salir" });
                                         switch (chosen5)
                                         {
                                             case "crear playlist":
@@ -1324,7 +1423,7 @@ namespace Entrega2ProyectoLJJ
                                                 {
                                                     if (caname == l_songs[i].getName() && caart == l_songs[i].getArtist())
                                                     {
-                                                        Console.WriteLine("de la calificacion");
+                                                        Console.WriteLine("de la calificacion (1-10)");
                                                         string cal = Console.ReadLine();
                                                         int Cal = Int16.Parse(cal);
                                                         l_songs[i].Qualification(Cal);
@@ -1334,17 +1433,17 @@ namespace Entrega2ProyectoLJJ
                                                 break;
                                             case "Buscar cancion":
                                                 Console.Clear();
-                                                bool exec13 = true;
-                                                while (exec13)
+                                                bool exec12 = true;
+                                                while (exec12)
                                                 {
-                                                    string chosen13 = ShowOptions(new List<string>() { "Por palabras clave", "Por Artista", "Por evaluación", "Por categoria", "salir" });
-                                                    switch (chosen13)
+                                                    string chosen22 = ShowOptions(new List<string>() { "Por palabras clave", "Por Artista", "Por evaluación", "Por categoria", "salir" });
+                                                    switch (chosen22)
                                                     {
                                                         case "Por palabras clave":
                                                             Console.WriteLine("Ingrese palabras clave");
-                                                            string Keys = Console.ReadLine();
-                                                            string[] words = Keys.Split(' ');
-                                                            foreach (var word in words)
+                                                            string Keysss = Console.ReadLine();
+                                                            string[] wordss = Keysss.Split(' ');
+                                                            foreach (var word in wordss)
                                                             {
                                                                 //if(word == ||)
                                                             }
@@ -1355,30 +1454,50 @@ namespace Entrega2ProyectoLJJ
                                                             bool exec5 = true;
                                                             while (exec5)
                                                             {
-                                                                string chosen3 = ShowOptions(new List<string>() { "Por edad", "Genero musical", "nombre", "salir" });
+                                                                string chosen3 = ShowOptions(new List<string>() { "Por edad", "Genero musical", "salir" });
                                                                 switch (chosen3)
                                                                 {
                                                                     case "Por edad":
                                                                         Console.Clear();
-                                                                        Console.WriteLine("ingrese busqueda");
+                                                                        Console.WriteLine("ingrese busqueda: ");
                                                                         string edad = Console.ReadLine();
                                                                         int edad2 = Int16.Parse(edad);
+                                                                        int ba = 0;
                                                                         foreach (var artist in l_artist)
                                                                         {
                                                                             if (artist.getAge() == edad2)
                                                                             {
                                                                                 Console.WriteLine("tiene esa edad el artista: " + artist.getName());
+                                                                                ba = 1;
                                                                             }
-                                                                            else
+                                                                        }
+                                                                        if (ba == 0)
+                                                                        {
+                                                                            Console.WriteLine("No se encontro un artista");
+                                                                        }
+                                                                        break;
+                                                                    case "Genero musical":
+                                                                        Console.Clear();
+                                                                        Console.WriteLine("ingrese busqueda: ");
+                                                                        string gene = Console.ReadLine();
+                                                                        int be = 0;
+                                                                        foreach (var artist in l_artist)
+                                                                        {
+                                                                            if (artist.getGender() == gene)
                                                                             {
-                                                                                Console.WriteLine("Ningun resultado coincide con su busqueda");
+                                                                                Console.WriteLine("El artista: " + artist.getName());
+                                                                                be = 1;
 
                                                                             }
+                                                                        }
+                                                                        if (be == 0)
+                                                                        {
+                                                                            Console.WriteLine("No se encontro un artista");
                                                                         }
                                                                         break;
                                                                     case "salir":
                                                                         Console.Clear();
-                                                                        exec13 = false;
+                                                                        exec5 = false;
                                                                         break;
                                                                 }
                                                             }
@@ -1387,63 +1506,78 @@ namespace Entrega2ProyectoLJJ
                                                             Console.Clear();
                                                             Console.WriteLine("diga la nota que quira ingresar como parametro y si quiere buscar" +
                                                                 " mayores, menores o iguales(EJ, 2 mayores)");
-                                                            string phr = Console.ReadLine();
-                                                            string[] w = phr.Split(' ');
-                                                            int val = Int16.Parse(w[0]);
-                                                            string crt = w[1];
-                                                            if (crt == "mayores")
+                                                            string phrq = Console.ReadLine();
+                                                            string[] wq = phrq.Split(' ');
+                                                            int vall = Int16.Parse(wq[0]);
+                                                            string crtt = wq[1];
+                                                            int ax = 0;
+                                                            if (crtt == "mayores")
                                                             {
                                                                 foreach (var song in l_songs)
                                                                 {
-                                                                    if (song.getQualification() > val)
+                                                                    if (song.getQualification() > vall)
                                                                     {
                                                                         Console.WriteLine(song.getName() + " " + song.getQualification());
+                                                                        ax = 1;
                                                                     }
                                                                 }
                                                             }
-                                                            if (crt == "menores")
+                                                            if (crtt == "menores")
                                                             {
                                                                 foreach (var song in l_songs)
                                                                 {
-                                                                    if (song.getQualification() < val)
+                                                                    if (song.getQualification() < vall)
                                                                     {
                                                                         Console.WriteLine(song.getName() + " " + song.getQualification());
+                                                                        ax = 1;
                                                                     }
                                                                 }
                                                             }
-                                                            if (crt == "iguales")
+                                                            if (crtt == "iguales")
                                                             {
                                                                 foreach (var song in l_songs)
                                                                 {
-                                                                    if (song.getQualification() == val)
+                                                                    if (song.getQualification() == vall)
                                                                     {
                                                                         Console.WriteLine(song.getName() + " " + song.getQualification());
+                                                                        ax = 1;
                                                                     }
                                                                 }
+                                                            }
+                                                            if (ax == 0)
+                                                            {
+                                                                Console.WriteLine("Su busqueda no coincide");
                                                             }
                                                             break;
                                                         case "Por categoria":
                                                             Console.Clear();
                                                             Console.WriteLine("Ingrese el genero musical");
-                                                            string categ = Console.ReadLine();
+                                                            string catego = Console.ReadLine();
+                                                            int ab = 0;
                                                             foreach (var song in l_songs)
                                                             {
-                                                                if (song.getGender() == categ)
+                                                                if (song.getGender() == catego)
                                                                 {
                                                                     Console.WriteLine(song.getName());
+                                                                    ab = 1;
                                                                 }
                                                             }
                                                             foreach (var artist in l_artist)
                                                             {
-                                                                if (artist.getGender() == categ)
+                                                                if (artist.getGender() == catego)
                                                                 {
                                                                     Console.WriteLine(artist.getName());
+                                                                    ab = 1;
                                                                 }
+                                                            }
+                                                            if (ab == 0)
+                                                            {
+                                                                Console.WriteLine("Su busqueda no coincide");
                                                             }
                                                             break;
                                                         case "salir":
                                                             Console.Clear();
-                                                            exec4 = false;
+                                                            exec12 = false;
                                                             break;
                                                     }
                                                 }
@@ -1502,7 +1636,7 @@ namespace Entrega2ProyectoLJJ
                                                     }
                                                 }
                                                 break;
-                                            case "agregar cancion a en cola":
+                                            case "agregar cancion a la cola":
                                                 Console.Clear();
                                                 Console.WriteLine("diga el nombre de la cancion que quiera agregar a en cola");
                                                 string Qname = Console.ReadLine();
@@ -1579,11 +1713,11 @@ namespace Entrega2ProyectoLJJ
                                                                     break;
                                                                 case "Calificacion":
                                                                     Console.Clear();
-                                                                    Console.WriteLine("El artista es: " + l_songs[i].getQualification());
+                                                                    Console.WriteLine("La calificacion es : " + l_songs[i].getQualification());
                                                                     break;
                                                                 case "Reproducciones":
                                                                     Console.Clear();
-                                                                    Console.WriteLine("La Calificacion es: " + l_songs[i].getReproductions());
+                                                                    Console.WriteLine("Tiene : " + l_songs[i].getReproductions() + " Reproducciones");
                                                                     break;
                                                                 case "Duracion":
                                                                     Console.Clear();
@@ -1612,30 +1746,30 @@ namespace Entrega2ProyectoLJJ
                                                         bool exec2 = true;
                                                         while (exec2)
                                                         {
-                                                              WindowsMediaPlayer wmp = new WindowsMediaPlayer();
-                                                              wmp.URL = l_songs[i] + ".wav";
+                                                            WindowsMediaPlayer wmp = new WindowsMediaPlayer();
+                                                            wmp.URL = l_songs[i] + ".wav";
                                                             string chosen15 = ShowOptions(new List<string>() { "reproducir", "pausar", "adelantar", "retroceder", "stop", "salir" });
                                                             switch (chosen15)
                                                             {
                                                                 case "repruducir":
                                                                     Console.Clear();
-                                                                             wmp.controls.play();
+                                                                    wmp.controls.play();
                                                                     break;
                                                                 case "pausar":
                                                                     Console.Clear();
-                                                                            wmp.controls.pause();
+                                                                    wmp.controls.pause();
                                                                     break;
                                                                 case "adelantar":
                                                                     Console.Clear();
-                                                                            wmp.controls.fastForward();
+                                                                    wmp.controls.fastForward();
                                                                     break;
                                                                 case "retroceder":
                                                                     Console.Clear();
-                                                                             wmp.controls.fastReverse();
+                                                                    wmp.controls.fastReverse();
                                                                     break;
                                                                 case "stop":
                                                                     Console.Clear();
-                                                                             wmp.controls.stop();
+                                                                    wmp.controls.stop();
                                                                     break;
                                                                 case "salir":
                                                                     Console.Clear();
@@ -1657,24 +1791,35 @@ namespace Entrega2ProyectoLJJ
                                     while (exec8)
                                     {
                                         string option = Movies.ShowOptions(new List<string>() { "Reproducir película",
-                    "Ver listado de películas", "Buscar películas por filtros", "Agregar películas a la cola", "Crear playlist",
-                    "Crear playlist de favoritos", "Salir de la plataforma"});
+                    "Ver listado de películas","Informacion","Buscar películas por filtros", "Agregar películas a la cola", "Crear playlist",
+                     "agregar peliculas a playlist", "selccionar pelicula como favorito"
+                    ,"ver playlist","ver favoritos","ver en cola","Calificar pelicula", "Salir de la plataforma"});
                                         switch (option)
                                         {
                                             case "Reproducir película":
+                                                Console.Clear();
                                                 Console.WriteLine("Ingrese el nombre de la película con extensión .mp4:");
-                                                string mov = Console.ReadLine() + ".mp4";
-                                                try
+                                                string mov = Console.ReadLine();
+                                                foreach (var movie in movielist)
                                                 {
-                                                    System.Diagnostics.Process.Start(mov);
+                                                    if (movie.GetName() == mov)
+                                                    {
+                                                        movie.Reproduction();
+                                                        try
+                                                        {
+                                                            System.Diagnostics.Process.Start(mov + ".mp4");
+                                                        }
+                                                        catch
+                                                        {
+                                                            Console.WriteLine("Hubo un error y no fue posible reproducir el video");
+                                                        }
+                                                    }
                                                 }
-                                                catch
-                                                {
-                                                    Console.WriteLine("Hubo un error y no fue posible reproducir el video");
-                                                }
+
                                                 break;
 
                                             case "Ver listado de películas":
+                                                Console.Clear();
                                                 Console.WriteLine("Películas disponibles para ver:");
                                                 int i = 0;
                                                 foreach (Movies Movie in movielist)
@@ -1683,8 +1828,73 @@ namespace Entrega2ProyectoLJJ
                                                     i += 1;
                                                 }
                                                 break;
+                                            case "Informacion":
+                                                Console.Clear();
+                                                Console.WriteLine("diga el nombre de pelicula que quiera ver la información: ");
+                                                string movi = Console.ReadLine();
+                                                foreach (var movie in movielist)
+                                                {
+                                                    if (movi == movie.GetName())
+                                                    {
+                                                        bool exec3 = true;
+                                                        while (exec3)
+                                                        {
+                                                            string chosen14 = ShowOptions(new List<string>() { "Actores","Categorias","Estudio","Año","Descripcion",
+                                        "Calificacion","Reproducciones","Duracion", "salir" });
+                                                            switch (chosen14)
+                                                            {
+                                                                case "Actores":
+                                                                    Console.Clear();
+                                                                    Console.WriteLine("Los actores son: ");
+                                                                    foreach (var a in movie.GetActors())
+                                                                    {
+                                                                        Console.WriteLine(a.GetName());
+                                                                    }
+                                                                    break;
+                                                                case "Categorias":
+                                                                    Console.Clear();
+                                                                    Console.WriteLine("Las categorias son: ");
+                                                                    foreach (var a in movie.GetCategories())
+                                                                    {
+                                                                        Console.WriteLine(a);
+                                                                    }
+                                                                    break;
+                                                                case "Estudio":
+                                                                    Console.Clear();
+                                                                    Console.WriteLine("El Estudio es: " + movie.GetStudio());
+                                                                    break;
+                                                                case "Año":
+                                                                    Console.Clear();
+                                                                    Console.WriteLine("El año es: " + movie.GetYear());
+                                                                    break;
+                                                                case "Descripcion":
+                                                                    Console.Clear();
+                                                                    Console.WriteLine("La descripcion es: " + movie.GetDescription());
+                                                                    break;
+                                                                case "Calificacion":
+                                                                    Console.Clear();
+                                                                    Console.WriteLine("La calificacion es : " + movie.GetQualification());
+                                                                    break;
+                                                                case "Reproducciones":
+                                                                    Console.Clear();
+                                                                    Console.WriteLine("Tiene : " + movie.GetReproductions() + " reproducciones");
+                                                                    break;
+                                                                case "Duracion":
+                                                                    Console.Clear();
+                                                                    Console.WriteLine("La Duracion es: " + movie.GetDuration() + "Minutos");
+                                                                    break;
+                                                                case "salir":
+                                                                    Console.Clear();
+                                                                    exec3 = false;
+                                                                    break;
+                                                            }
+                                                        }
 
+                                                    }
+                                                }
+                                                break;
                                             case "Buscar películas por filtros":
+                                                Console.Clear();
                                                 List<string> filter = new List<string>();
                                                 Console.WriteLine("¿Qué filtro desea aplicar?");
                                                 string choice = Movies.ShowOptions(new List<string>() { "Palabras clave", "Persona",
@@ -1709,125 +1919,115 @@ namespace Entrega2ProyectoLJJ
                                                 break;
 
                                             case "Agregar películas a la cola":
-                                                List<Movies> queue = new List<Movies>();
-                                                Console.WriteLine("¿Qué película desea agregar a la cola de reproducción?");
-                                                string election = Console.ReadLine();
-                                                foreach (Movies movie in movielist)
+                                                Console.Clear();
+                                                Console.WriteLine("diga el nombre de la pelicula que quiera agregar a en cola");
+                                                string Qname = Console.ReadLine();
+
+                                                for (int j = 0; movielist.Count > j; j++)
                                                 {
-                                                    if (election == movie.GetName())
+                                                    if (Qname == movielist[j].GetName())
                                                     {
-                                                        if (queue.Contains(movie))
-                                                        {
-                                                            Console.WriteLine("Esta película ya se encuentra en la cola de reprodución.");
-                                                        }
-                                                        else
-                                                        {
-                                                            queue.Add(movie);
-                                                        }
-                                                    }
-                                                }
-                                                bool t = true;
-                                                while (t)
-                                                {
-                                                    Console.WriteLine("¿Desea agregar otra película a la cola? presione solamente ENTER para terminar.");
-                                                    string election2 = Console.ReadLine();
-                                                    if (election2 == "")
-                                                    {
-                                                        t = false;
-                                                    }
-                                                    else
-                                                    {
-                                                        foreach (Movies movie in movielist)
-                                                        {
-                                                            if (queue.Contains(movie))
-                                                            {
-                                                                Console.WriteLine("Esta película ya se encuentra en la cola de reprodución.");
-                                                            }
-                                                            else
-                                                            {
-                                                                queue.Add(movie);
-                                                            }
-                                                        }
+                                                        queueMovies.AddMovies(movielist[j]);
+                                                        break;
                                                     }
                                                 }
                                                 break;
 
                                             case "Crear playlist":
+                                                Console.Clear();
                                                 Console.WriteLine("Nombre de la playlist:");
                                                 string name = Console.ReadLine();
                                                 Console.WriteLine("Privacidad de la playlist: pública/privada");
                                                 string privacy = Console.ReadLine();
-                                                Console.WriteLine("Películas que desea agregar (para terminar, presione ENTER solamente):");
-                                                List<Movies> movies = new List<Movies>();
-                                                bool c = true;
-                                                while (c)
+                                                List<Movies> PLmovies = new List<Movies>();
+                                                PlaylistMovies playlist = new PlaylistMovies(name, privacy, PLmovies);
+                                                l_plm.Add(playlist);
+                                                break;
+                                            case "agregar peliculas a playlist":
+                                                Console.Clear();
+                                                Console.WriteLine("diga el nombre de la pelicula que quiera agregar a una playlist");
+                                                string Plname = Console.ReadLine();
+                                                Console.WriteLine("diga el nombre de la playlist que quiere agregar");
+                                                string PLpl = Console.ReadLine();
+                                                for (int k = 0; movielist.Count > k; k++)
                                                 {
-                                                    string movieName = Console.ReadLine();
-                                                    if (movieName == "")
+                                                    if (Plname == movielist[k].GetName())
                                                     {
-                                                        c = false;
-                                                    }
-                                                    else
-                                                    {
-                                                        foreach (Movies movie in movielist)
+                                                        for (int j = 0; l_plm.Count > j; j++)
                                                         {
-                                                            if (movieName == movie.GetName())
+                                                            if (PLpl == l_plm[j].GetName())
                                                             {
-                                                                if (movies.Contains(movie))
-                                                                {
-                                                                    Console.WriteLine("Esta película ya se encuentra en la playlist. Intente con otra.");
-                                                                }
-                                                                else
-                                                                {
-                                                                    movies.Add(movie);
-                                                                }
+                                                                l_plm[j].AddMovies(movielist[k]);
+                                                                break;
                                                             }
                                                         }
                                                     }
                                                 }
-                                                PlaylistMovies playlist = new PlaylistMovies(name, privacy, movies);
-                                                Console.WriteLine("La playlist " + playlist.GetName() + " se ha creado con éxito.");
-                                                PL.Add(playlist);
                                                 break;
-
-                                            case "Crear playlist de favoritos":
-                                                Console.WriteLine("Nombre de la playlist:");
-                                                string namef = Console.ReadLine();
-                                                Console.WriteLine("Privacidad de la playlist: pública/privada");
-                                                string privacyf = Console.ReadLine();
-                                                Console.WriteLine("Películas que desea agregar (para terminar, presione ENTER solamente):");
-                                                List<Movies> moviesf = new List<Movies>();
-                                                bool d = true;
-                                                while (d)
+                                            case "selccionar pelicula como favorito":
+                                                Console.Clear();
+                                                Console.WriteLine("diga el nombre de la pelicula que quiera agregar a favoritos");
+                                                string Fname = Console.ReadLine();
+                                                for (int j = 0; movielist.Count > j; j++)
                                                 {
-                                                    string respuesta = Console.ReadLine();
-                                                    if (respuesta == "")
+                                                    if (Fname == movielist[j].GetName())
                                                     {
-                                                        d = false;
-                                                    }
-                                                    else
-                                                    {
-                                                        foreach (Movies movie in movielist)
-                                                        {
-                                                            if (respuesta == movie.GetName())
-                                                            {
-                                                                if (moviesf.Contains(movie))
-                                                                {
-                                                                    Console.WriteLine("Esta película ya se encuentra en la playlist. Intente con otra.");
-                                                                }
-                                                                else
-                                                                {
-                                                                    moviesf.Add(movie);
-                                                                }
-                                                            }
-                                                        }
+                                                        playlistFavouritesMovies.AddFavourite(movielist[j]);
+                                                        movielist[j].addFavourite();
+                                                        break;
                                                     }
                                                 }
-                                                PlaylistFavouriteMovies playlistfavourite = new PlaylistFavouriteMovies(namef, privacyf, moviesf);
-                                                Console.WriteLine("La playlist de favoritos " + playlistfavourite.GetName() + " se ha creado con éxito.");
                                                 break;
-
+                                            case "ver playlist":
+                                                Console.Clear();
+                                                Console.WriteLine("diga el nombre de la playlist que desea ver");
+                                                string plname = Console.ReadLine();
+                                                int ac = 0;
+                                                for (int j = 0; l_plm.Count > j; j++)
+                                                {
+                                                    if (plname == l_plm[j].GetName())
+                                                    {
+                                                        l_plm[j].showMovies();
+                                                        ac = 1;
+                                                        break;
+                                                    }
+                                                }
+                                                if (ac == 0)
+                                                {
+                                                    Console.WriteLine("No se encontro la playlist");
+                                                }
+                                                break;
+                                            case "ver favoritos":
+                                                Console.Clear();
+                                                playlistFavouritesMovies.showMovies();
+                                                break;
+                                            case "ver en cola":
+                                                Console.Clear();
+                                                queueMovies.ShowMovies();
+                                                break;
+                                            case "Calificar pelicula":
+                                                Console.Clear();
+                                                Console.WriteLine("diga que pelicula quiere calificar: ");
+                                                string pel = Console.ReadLine();
+                                                int aa = 0;
+                                                foreach (var movie in movielist)
+                                                {
+                                                    if (movie.GetName() == pel)
+                                                    {
+                                                        aa = 1;
+                                                        Console.WriteLine("Diga la calificacion que le quiere asignar (1-10)");
+                                                        string cal = Console.ReadLine();
+                                                        int cal2 = Int16.Parse(cal);
+                                                        movie.Qualification(cal2);
+                                                    }
+                                                }
+                                                if (aa == 0)
+                                                {
+                                                    Console.WriteLine("No se encontro la pelicula");
+                                                }
+                                                break;
                                             case "Salir de la plataforma":
+                                                Console.Clear();
                                                 exec8 = false;
                                                 break;
                                         }
@@ -1973,9 +2173,9 @@ namespace Entrega2ProyectoLJJ
                     case "Salir":
                         exec10 = false;
                         break;
-                        
+
                 }
-            Console.Clear();
+                Console.Clear();
             }
         }
         private static string ShowOptions(List<string> options)
