@@ -5,7 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
+using WMPLib;
 using System.Windows.Forms;
 
 namespace Interfaz_Gráfica_Entrega_3
@@ -993,6 +994,20 @@ namespace Interfaz_Gráfica_Entrega_3
             if (b.Text == "Volver")
             {
                 SeeProfilespanel.Hide();
+            }
+        }
+
+        private void CreateUbutton_Click(object sender, EventArgs e)
+        {
+            string username = "";
+            string password = "";
+            string privacy = "";
+            Button b = (Button)sender;
+            if (b.Text == "Crear")
+            {
+                username = InsertUserMailtextBox.Text;
+                password = InsertUserPasswordtextBox.Text;
+                privacy = InsertPlanTypetextBox.Text;
             }
         }
     }
