@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace Interfaz_Gráfica_Entrega_3
 {
@@ -28,8 +29,8 @@ namespace Interfaz_Gráfica_Entrega_3
         {
             User user = new User(plan, email, password);
             ListOfUser.Add(user);
+            
             Console.WriteLine("Usuario creado con exito");
-            Thread.Sleep(1000);
         }
         public List<User> GetListOfUser()
         {
