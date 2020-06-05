@@ -35,6 +35,8 @@
             this.BackSeeProfilesbutton = new System.Windows.Forms.Button();
             this.SeeProfileslabel = new System.Windows.Forms.Label();
             this.ChangeProfilepanel = new System.Windows.Forms.Panel();
+            this.ChangeProfileSearchbutton = new System.Windows.Forms.Button();
+            this.FailProfileChangelabel = new System.Windows.Forms.Label();
             this.PrivacyChangedChangeProfilelabel = new System.Windows.Forms.Label();
             this.UseranemChangedChangeProfilelabel = new System.Windows.Forms.Label();
             this.ChangePbutton = new System.Windows.Forms.Button();
@@ -62,6 +64,8 @@
             this.InsertUserCreateProfilelabel = new System.Windows.Forms.Label();
             this.Createprofilelabel = new System.Windows.Forms.Label();
             this.CreateUserpanel = new System.Windows.Forms.Panel();
+            this.CreateUserAviso2label1 = new System.Windows.Forms.Label();
+            this.CreateUserAvisolabel = new System.Windows.Forms.Label();
             this.BackCreateUserbutton = new System.Windows.Forms.Button();
             this.CreateUbutton = new System.Windows.Forms.Button();
             this.InsertPlanTypetextBox = new System.Windows.Forms.TextBox();
@@ -431,10 +435,6 @@
             this.ADCbutton = new System.Windows.Forms.Button();
             this.Loginbutton = new System.Windows.Forms.Button();
             this.WelcomeLabel = new System.Windows.Forms.Label();
-            this.CreateUserAvisolabel = new System.Windows.Forms.Label();
-            this.CreateUserAviso2label1 = new System.Windows.Forms.Label();
-            this.FailProfileChangelabel = new System.Windows.Forms.Label();
-            this.ChangeProfileSearchbutton = new System.Windows.Forms.Button();
             this.WelcomePanel.SuspendLayout();
             this.ADCpanel.SuspendLayout();
             this.SeeProfilespanel.SuspendLayout();
@@ -493,7 +493,6 @@
             // 
             this.WelcomePanel.BackColor = System.Drawing.SystemColors.ControlText;
             this.WelcomePanel.Controls.Add(this.ADCpanel);
-            this.WelcomePanel.Controls.Add(this.MainMenupanel);
             this.WelcomePanel.Controls.Add(this.LoginSesionpanel);
             this.WelcomePanel.Controls.Add(this.LoginAdminbutton);
             this.WelcomePanel.Controls.Add(this.ADCbutton);
@@ -518,10 +517,10 @@
             this.ADCpanel.Controls.Add(this.CreareProfilebutton);
             this.ADCpanel.Controls.Add(this.CreateUserbutton);
             this.ADCpanel.Controls.Add(this.ADClabel);
-            this.ADCpanel.Location = new System.Drawing.Point(33, 47);
+            this.ADCpanel.Location = new System.Drawing.Point(35, 47);
             this.ADCpanel.Margin = new System.Windows.Forms.Padding(2);
             this.ADCpanel.Name = "ADCpanel";
-            this.ADCpanel.Size = new System.Drawing.Size(55, 40);
+            this.ADCpanel.Size = new System.Drawing.Size(72, 57);
             this.ADCpanel.TabIndex = 5;
             // 
             // SeeProfilespanel
@@ -529,10 +528,10 @@
             this.SeeProfilespanel.Controls.Add(this.SeeProfilesrichTextBox);
             this.SeeProfilespanel.Controls.Add(this.BackSeeProfilesbutton);
             this.SeeProfilespanel.Controls.Add(this.SeeProfileslabel);
-            this.SeeProfilespanel.Location = new System.Drawing.Point(486, 66);
+            this.SeeProfilespanel.Location = new System.Drawing.Point(484, 40);
             this.SeeProfilespanel.Margin = new System.Windows.Forms.Padding(2);
             this.SeeProfilespanel.Name = "SeeProfilespanel";
-            this.SeeProfilespanel.Size = new System.Drawing.Size(74, 65);
+            this.SeeProfilespanel.Size = new System.Drawing.Size(67, 71);
             this.SeeProfilespanel.TabIndex = 15;
             // 
             // SeeProfilesrichTextBox
@@ -592,6 +591,27 @@
             this.ChangeProfilepanel.Name = "ChangeProfilepanel";
             this.ChangeProfilepanel.Size = new System.Drawing.Size(32, 22);
             this.ChangeProfilepanel.TabIndex = 11;
+            // 
+            // ChangeProfileSearchbutton
+            // 
+            this.ChangeProfileSearchbutton.Location = new System.Drawing.Point(340, 189);
+            this.ChangeProfileSearchbutton.Name = "ChangeProfileSearchbutton";
+            this.ChangeProfileSearchbutton.Size = new System.Drawing.Size(75, 23);
+            this.ChangeProfileSearchbutton.TabIndex = 16;
+            this.ChangeProfileSearchbutton.Text = "Buscar perfil";
+            this.ChangeProfileSearchbutton.UseVisualStyleBackColor = true;
+            this.ChangeProfileSearchbutton.Click += new System.EventHandler(this.ChangePbutton_Click);
+            // 
+            // FailProfileChangelabel
+            // 
+            this.FailProfileChangelabel.AutoSize = true;
+            this.FailProfileChangelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.FailProfileChangelabel.Location = new System.Drawing.Point(281, 339);
+            this.FailProfileChangelabel.Name = "FailProfileChangelabel";
+            this.FailProfileChangelabel.Size = new System.Drawing.Size(105, 13);
+            this.FailProfileChangelabel.TabIndex = 15;
+            this.FailProfileChangelabel.Text = "No existe dicho perfil";
+            this.FailProfileChangelabel.Visible = false;
             // 
             // PrivacyChangedChangeProfilelabel
             // 
@@ -891,6 +911,28 @@
             this.CreateUserpanel.Size = new System.Drawing.Size(42, 36);
             this.CreateUserpanel.TabIndex = 6;
             // 
+            // CreateUserAviso2label1
+            // 
+            this.CreateUserAviso2label1.AutoSize = true;
+            this.CreateUserAviso2label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.CreateUserAviso2label1.Location = new System.Drawing.Point(271, 282);
+            this.CreateUserAviso2label1.Name = "CreateUserAviso2label1";
+            this.CreateUserAviso2label1.Size = new System.Drawing.Size(258, 13);
+            this.CreateUserAviso2label1.TabIndex = 10;
+            this.CreateUserAviso2label1.Text = "Para poder utilizar esta cuenta, debe crearle un perfil.";
+            this.CreateUserAviso2label1.Visible = false;
+            // 
+            // CreateUserAvisolabel
+            // 
+            this.CreateUserAvisolabel.AutoSize = true;
+            this.CreateUserAvisolabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.CreateUserAvisolabel.Location = new System.Drawing.Point(268, 260);
+            this.CreateUserAvisolabel.Name = "CreateUserAvisolabel";
+            this.CreateUserAvisolabel.Size = new System.Drawing.Size(128, 13);
+            this.CreateUserAvisolabel.TabIndex = 9;
+            this.CreateUserAvisolabel.Text = "Usuario creado con exito!";
+            this.CreateUserAvisolabel.Visible = false;
+            // 
             // BackCreateUserbutton
             // 
             this.BackCreateUserbutton.Location = new System.Drawing.Point(535, 337);
@@ -1065,10 +1107,10 @@
             this.MainMenupanel.Controls.Add(this.FollowMainMenubutton);
             this.MainMenupanel.Controls.Add(this.MainMenulabel2);
             this.MainMenupanel.Controls.Add(this.MainMenulabel1);
-            this.MainMenupanel.Location = new System.Drawing.Point(508, 292);
+            this.MainMenupanel.Location = new System.Drawing.Point(506, 304);
             this.MainMenupanel.Margin = new System.Windows.Forms.Padding(2);
             this.MainMenupanel.Name = "MainMenupanel";
-            this.MainMenupanel.Size = new System.Drawing.Size(79, 48);
+            this.MainMenupanel.Size = new System.Drawing.Size(85, 66);
             this.MainMenupanel.TabIndex = 4;
             // 
             // SuggestionsSongspanel
@@ -4838,24 +4880,25 @@
             this.LoginSesionpanel.Controls.Add(this.InsertPasswordLoginSesionlabel);
             this.LoginSesionpanel.Controls.Add(this.InsertMailLoginSesionlabel);
             this.LoginSesionpanel.Controls.Add(this.LoginSesionlabel);
-            this.LoginSesionpanel.Location = new System.Drawing.Point(528, 32);
+            this.LoginSesionpanel.Location = new System.Drawing.Point(11, 11);
             this.LoginSesionpanel.Margin = new System.Windows.Forms.Padding(2);
             this.LoginSesionpanel.Name = "LoginSesionpanel";
-            this.LoginSesionpanel.Size = new System.Drawing.Size(36, 37);
+            this.LoginSesionpanel.Size = new System.Drawing.Size(605, 383);
             this.LoginSesionpanel.TabIndex = 4;
             this.LoginSesionpanel.Visible = false;
             // 
             // LoginSesionProfilepanel
             // 
             this.LoginSesionProfilepanel.Controls.Add(this.BackLoginSesionProfilebutton);
+            this.LoginSesionProfilepanel.Controls.Add(this.MainMenupanel);
             this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilebutton);
             this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilelabel2);
             this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilelabel1);
             this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionInsertProfilecomboBox);
-            this.LoginSesionProfilepanel.Location = new System.Drawing.Point(517, 33);
+            this.LoginSesionProfilepanel.Location = new System.Drawing.Point(76, 269);
             this.LoginSesionProfilepanel.Margin = new System.Windows.Forms.Padding(2);
             this.LoginSesionProfilepanel.Name = "LoginSesionProfilepanel";
-            this.LoginSesionProfilepanel.Size = new System.Drawing.Size(46, 41);
+            this.LoginSesionProfilepanel.Size = new System.Drawing.Size(30, 44);
             this.LoginSesionProfilepanel.TabIndex = 9;
             // 
             // BackLoginSesionProfilebutton
@@ -4878,7 +4921,7 @@
             this.LoginSesionProfilebutton.TabIndex = 2;
             this.LoginSesionProfilebutton.Text = "Ingresar";
             this.LoginSesionProfilebutton.UseVisualStyleBackColor = true;
-            this.LoginSesionProfilebutton.Click += new System.EventHandler(this.LoginSesionProfilebutton_Click);
+            this.LoginSesionProfilebutton.Click += new System.EventHandler(this.LoginSesionbutton_Click);
             // 
             // LoginSesionProfilelabel2
             // 
@@ -4922,6 +4965,7 @@
             this.FailedLoginSesionlabel.Size = new System.Drawing.Size(138, 13);
             this.FailedLoginSesionlabel.TabIndex = 8;
             this.FailedLoginSesionlabel.Text = "Mail o contraseña inválidos.";
+            this.FailedLoginSesionlabel.Visible = false;
             // 
             // BackLoginSesionbutton
             // 
@@ -4939,9 +4983,9 @@
             this.LoginSesionbutton.Location = new System.Drawing.Point(304, 214);
             this.LoginSesionbutton.Margin = new System.Windows.Forms.Padding(2);
             this.LoginSesionbutton.Name = "LoginSesionbutton";
-            this.LoginSesionbutton.Size = new System.Drawing.Size(56, 27);
+            this.LoginSesionbutton.Size = new System.Drawing.Size(89, 27);
             this.LoginSesionbutton.TabIndex = 5;
-            this.LoginSesionbutton.Text = "Ingresar";
+            this.LoginSesionbutton.Text = "Iniciar Sesión";
             this.LoginSesionbutton.UseVisualStyleBackColor = true;
             this.LoginSesionbutton.Click += new System.EventHandler(this.LoginSesionbutton_Click);
             // 
@@ -5022,7 +5066,7 @@
             // Loginbutton
             // 
             this.Loginbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loginbutton.Location = new System.Drawing.Point(192, 127);
+            this.Loginbutton.Location = new System.Drawing.Point(186, 117);
             this.Loginbutton.Margin = new System.Windows.Forms.Padding(2);
             this.Loginbutton.Name = "Loginbutton";
             this.Loginbutton.Size = new System.Drawing.Size(179, 59);
@@ -5042,49 +5086,6 @@
             this.WelcomeLabel.Size = new System.Drawing.Size(340, 39);
             this.WelcomeLabel.TabIndex = 0;
             this.WelcomeLabel.Text = "Bienvenido a Spotflix";
-            // 
-            // CreateUserAvisolabel
-            // 
-            this.CreateUserAvisolabel.AutoSize = true;
-            this.CreateUserAvisolabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.CreateUserAvisolabel.Location = new System.Drawing.Point(268, 260);
-            this.CreateUserAvisolabel.Name = "CreateUserAvisolabel";
-            this.CreateUserAvisolabel.Size = new System.Drawing.Size(128, 13);
-            this.CreateUserAvisolabel.TabIndex = 9;
-            this.CreateUserAvisolabel.Text = "Usuario creado con exito!";
-            this.CreateUserAvisolabel.Visible = false;
-            // 
-            // CreateUserAviso2label1
-            // 
-            this.CreateUserAviso2label1.AutoSize = true;
-            this.CreateUserAviso2label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.CreateUserAviso2label1.Location = new System.Drawing.Point(271, 282);
-            this.CreateUserAviso2label1.Name = "CreateUserAviso2label1";
-            this.CreateUserAviso2label1.Size = new System.Drawing.Size(258, 13);
-            this.CreateUserAviso2label1.TabIndex = 10;
-            this.CreateUserAviso2label1.Text = "Para poder utilizar esta cuenta, debe crearle un perfil.";
-            this.CreateUserAviso2label1.Visible = false;
-            // 
-            // FailProfileChangelabel
-            // 
-            this.FailProfileChangelabel.AutoSize = true;
-            this.FailProfileChangelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.FailProfileChangelabel.Location = new System.Drawing.Point(281, 339);
-            this.FailProfileChangelabel.Name = "FailProfileChangelabel";
-            this.FailProfileChangelabel.Size = new System.Drawing.Size(105, 13);
-            this.FailProfileChangelabel.TabIndex = 15;
-            this.FailProfileChangelabel.Text = "No existe dicho perfil";
-            this.FailProfileChangelabel.Visible = false;
-            // 
-            // ChangeProfileSearchbutton
-            // 
-            this.ChangeProfileSearchbutton.Location = new System.Drawing.Point(340, 189);
-            this.ChangeProfileSearchbutton.Name = "ChangeProfileSearchbutton";
-            this.ChangeProfileSearchbutton.Size = new System.Drawing.Size(75, 23);
-            this.ChangeProfileSearchbutton.TabIndex = 16;
-            this.ChangeProfileSearchbutton.Text = "Buscar perfil";
-            this.ChangeProfileSearchbutton.UseVisualStyleBackColor = true;
-            this.ChangeProfileSearchbutton.Click += new System.EventHandler(this.ChangePbutton_Click);
             // 
             // SpotflixForm
             // 

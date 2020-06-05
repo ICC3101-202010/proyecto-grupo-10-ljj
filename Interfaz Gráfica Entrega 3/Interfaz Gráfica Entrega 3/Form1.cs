@@ -166,12 +166,67 @@ namespace Interfaz_Gráfica_Entrega_3
 
         private void LoginSesionbutton_Click(object sender, EventArgs e)
         {
+            string asw5 = "";
+            int asw = 0;
             Button b = (Button)sender;
+            if (b.Text == "Iniciar Sesión")
+            {
+                if (user.GetListOfUser().Count > 0)
+                {
+                    string email22 = "";
+                    string password22 = "";
+                    email22 = InsertMailLoginSesiontextBox.Text;
+                    password22 = InsertPasswordLoginSesiontextBox.Text;
+                    foreach (User u in user.GetListOfUser())
+                    {
+                        if (email22 == u.GetEmail() && password22 == u.GetPassword())
+                        {
+                            asw = 1;
+                            FailedLoginSesionlabel.Hide();
+                            LoginSesionProfilepanel.Show();
+                            LoginSesionProfilepanel.BringToFront();
+                            LoginSesionProfilepanel.Dock = DockStyle.Fill;
+                            LoginSesionProfilelabel1.Text += " " + email22;
+                            foreach (KeyValuePair<string, List<Profile>> h in Users)
+                            {
+                                if (h.Key == email22)
+                                {
+                                    foreach (Profile profile2 in h.Value)
+                                    {
+                                        LoginSesionInsertProfilecomboBox.Items.Add(profile2.GetUserName());
+                                    }
+                                }
+                            }
+                            
+
+                           
+                        }
+
+                    }
+                }
+            }
+            if (asw == 0)
+            {
+                FailedLoginSesionlabel.Show();
+            }
             if (b.Text == "Ingresar")
             {
-                LoginSesionProfilepanel.Show();
-                LoginSesionProfilepanel.BringToFront();
-                LoginSesionProfilepanel.Dock = DockStyle.Fill;
+                asw5 = LoginSesionInsertProfilecomboBox.Text;
+                MainMenupanel.Show();
+                MainMenupanel.BringToFront();
+                MainMenupanel.Dock = DockStyle.Fill;
+
+                foreach (KeyValuePair<string, List<Profile>> h in Users)
+                {
+                    foreach (Profile profile3 in h.Value)
+                    {
+                        if (profile3.GetUserName() == asw5)
+                        {
+                            MainMenulabel1.Text += " " + asw5;
+                            break;
+                        }
+                    }
+                }
             }
         }
 
@@ -181,17 +236,6 @@ namespace Interfaz_Gráfica_Entrega_3
             if (b.Text == "Volver")
             {
                 LoginSesionpanel.Hide();
-            }
-        }
-
-        private void LoginSesionProfilebutton_Click(object sender, EventArgs e)
-        {
-            Button b = (Button)sender;
-            if (b.Text == "Ingresar")
-            {
-                MainMenupanel.Show();
-                MainMenupanel.BringToFront();
-                MainMenupanel.Dock = DockStyle.Fill;
             }
         }
 
