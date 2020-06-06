@@ -81,12 +81,142 @@
             this.CreareProfilebutton = new System.Windows.Forms.Button();
             this.CreateUserbutton = new System.Windows.Forms.Button();
             this.ADClabel = new System.Windows.Forms.Label();
-            this.MainMenupanel = new System.Windows.Forms.Panel();
+            this.LoginSesionpanel = new System.Windows.Forms.Panel();
+            this.LoginSesionProfilepanel = new System.Windows.Forms.Panel();
+            this.Songspanel = new System.Windows.Forms.Panel();
+            this.PlaySongspanel = new System.Windows.Forms.Panel();
+            this.StopPlaySongsbutton = new System.Windows.Forms.Button();
+            this.PlayPlaySongsbutton = new System.Windows.Forms.Button();
+            this.InsertNamePlaySongscomboBox = new System.Windows.Forms.ComboBox();
+            this.InsertSongNamePlaySongslabel = new System.Windows.Forms.Label();
+            this.BackPlaySongsbutton = new System.Windows.Forms.Button();
+            this.PlaySongslabel = new System.Windows.Forms.Label();
+            this.SeeQueueSongspanel = new System.Windows.Forms.Panel();
+            this.ResultSeeQueueSongsrichTextBox = new System.Windows.Forms.RichTextBox();
+            this.SeeQueueSongslabel = new System.Windows.Forms.Label();
+            this.BackSeeQueueSongsbutton = new System.Windows.Forms.Button();
+            this.AddToQueueSongspanel = new System.Windows.Forms.Panel();
+            this.MessageAddToQueueSongslabel = new System.Windows.Forms.Label();
+            this.AddAddToQueueSongsbutton = new System.Windows.Forms.Button();
+            this.InsertSongNameAddToQueueSongslabel = new System.Windows.Forms.Label();
+            this.InsertSongNameAddToQueueSongscomboBox = new System.Windows.Forms.ComboBox();
+            this.BackAddToQueueSongsbutton = new System.Windows.Forms.Button();
+            this.AddToQueueSongslabel = new System.Windows.Forms.Label();
+            this.SearchSongspanel = new System.Windows.Forms.Panel();
+            this.Genderpanel = new System.Windows.Forms.Panel();
+            this.MessageGenderlabel = new System.Windows.Forms.Label();
+            this.SearchGenderbutton = new System.Windows.Forms.Button();
+            this.ResultGenderrichTextBox = new System.Windows.Forms.RichTextBox();
+            this.InsertGenderGendertextBox = new System.Windows.Forms.TextBox();
+            this.InsertGenderGenderlabel = new System.Windows.Forms.Label();
+            this.BackGenderbutton = new System.Windows.Forms.Button();
+            this.Genderlabel = new System.Windows.Forms.Label();
+            this.Evaluationpanel = new System.Windows.Forms.Panel();
+            this.InsertSignEvaluationlabel = new System.Windows.Forms.Label();
+            this.InformationSongspanel = new System.Windows.Forms.Panel();
+            this.DurationInformationSongsbutton = new System.Windows.Forms.Button();
+            this.ReproductionsInformationSongsbutton = new System.Windows.Forms.Button();
+            this.QualificationInformationSongsbutton = new System.Windows.Forms.Button();
+            this.YearInformationSongsbutton = new System.Windows.Forms.Button();
+            this.LyricsInformationSongsbutton = new System.Windows.Forms.Button();
+            this.StudioInformationSongsbutton = new System.Windows.Forms.Button();
+            this.CompositorInformationSongsbutton = new System.Windows.Forms.Button();
+            this.GenderInformationSongsbutton = new System.Windows.Forms.Button();
+            this.ResultInformationSongsrichTextBox = new System.Windows.Forms.RichTextBox();
+            this.BackInformationSongsbutton = new System.Windows.Forms.Button();
+            this.ArtistInformationSongsbutton = new System.Windows.Forms.Button();
+            this.InsertSongNameInformationSongscomboBox = new System.Windows.Forms.ComboBox();
+            this.InsertSongNameInformationSongslabel = new System.Windows.Forms.Label();
+            this.InformationSongslabel = new System.Windows.Forms.Label();
+            this.InsertQualificationEvaluationlabel = new System.Windows.Forms.Label();
+            this.ResultEvaluationrichTextBox = new System.Windows.Forms.RichTextBox();
+            this.InsertSignEvaluationcomboBox = new System.Windows.Forms.ComboBox();
+            this.InsertQualificationEvaluationcomboBox = new System.Windows.Forms.ComboBox();
+            this.SearchEvaluationbutton = new System.Windows.Forms.Button();
+            this.BackEvaluationbutton = new System.Windows.Forms.Button();
+            this.Evaluationlabel = new System.Windows.Forms.Label();
+            this.Artistpanel = new System.Windows.Forms.Panel();
+            this.Message2label = new System.Windows.Forms.Label();
+            this.Message1label = new System.Windows.Forms.Label();
+            this.InsertAnswerArtisttextBox = new System.Windows.Forms.TextBox();
+            this.ResultArtistrichTextBox = new System.Windows.Forms.RichTextBox();
+            this.GenderArtistbutton = new System.Windows.Forms.Button();
+            this.AgeArtistbutton = new System.Windows.Forms.Button();
+            this.BackArtistbutton = new System.Windows.Forms.Button();
+            this.Artistlabel = new System.Windows.Forms.Label();
+            this.SeePlaylistSongspanel = new System.Windows.Forms.Panel();
+            this.SeeSeePlaylistSongsbutton = new System.Windows.Forms.Button();
+            this.ResultSeePlaylistSongsrichTextBox = new System.Windows.Forms.RichTextBox();
+            this.InsertPlaylistNameSeePlaylistSongscomboBox = new System.Windows.Forms.ComboBox();
+            this.InsertPlaylistNameSeePlaylistSongslabel = new System.Windows.Forms.Label();
+            this.SeePlaylistSongslabel = new System.Windows.Forms.Label();
+            this.BackSeePlaylistSongsbutton = new System.Windows.Forms.Button();
+            this.SeeFavouriteSongspanel = new System.Windows.Forms.Panel();
+            this.ResultSeeFavouriteSongsrichTextBox = new System.Windows.Forms.RichTextBox();
+            this.SeeFavouriteSongslabel = new System.Windows.Forms.Label();
+            this.BackSeeFavouriteSongsbutton = new System.Windows.Forms.Button();
+            this.Keywordpanel = new System.Windows.Forms.Panel();
+            this.Keywordlabel = new System.Windows.Forms.Label();
+            this.BackKeywordbutton = new System.Windows.Forms.Button();
+            this.CategoriesSearchSongsbutton = new System.Windows.Forms.Button();
+            this.EvaluationSearchSongsbutton = new System.Windows.Forms.Button();
+            this.ArtistSearchSongsbutton = new System.Windows.Forms.Button();
+            this.KeywordSearchSongsbutton = new System.Windows.Forms.Button();
+            this.BackSearchSongsbutton = new System.Windows.Forms.Button();
+            this.SearchSongslabel = new System.Windows.Forms.Label();
+            this.QualifySongspanel = new System.Windows.Forms.Panel();
+            this.InsertSongNameQualifySongscomboBox = new System.Windows.Forms.ComboBox();
+            this.InsertQualificationQualifySongscomboBox = new System.Windows.Forms.ComboBox();
+            this.QualifyQualifySongsbutton = new System.Windows.Forms.Button();
+            this.InsertQualificationQualifySongslabel = new System.Windows.Forms.Label();
+            this.InsertSongNameQualifySongslabel = new System.Windows.Forms.Label();
+            this.BackQualifySongsbutton = new System.Windows.Forms.Button();
+            this.QualifySongslabel = new System.Windows.Forms.Label();
+            this.AddToPlaylistSongspanel = new System.Windows.Forms.Panel();
+            this.InsertSongNameAddToPlaylistSongscomboBox = new System.Windows.Forms.ComboBox();
+            this.InsertPlaylistNameAddToPlaylistSongscomboBox = new System.Windows.Forms.ComboBox();
+            this.MessageAddToPlaylistSongslabel = new System.Windows.Forms.Label();
+            this.AddAddToPlaylistSongsbutton = new System.Windows.Forms.Button();
+            this.InsertPlaylistNameAddToPlaylistSongslabel = new System.Windows.Forms.Label();
+            this.InsertSongNameAddToPlaylistSongslabel = new System.Windows.Forms.Label();
+            this.AddToPlaylistSongslabel = new System.Windows.Forms.Label();
+            this.BackAddToPlaylistSongsbutton = new System.Windows.Forms.Button();
+            this.AddToFavouriteSongspanel = new System.Windows.Forms.Panel();
+            this.MessageAddToFavouriteSongslabel = new System.Windows.Forms.Label();
+            this.AddAddToFavouriteSongsbutton = new System.Windows.Forms.Button();
+            this.InsertSongNameAddToFavouriteSongslabel = new System.Windows.Forms.Label();
+            this.InsertSongNameAddToFavouriteSongscomboBox = new System.Windows.Forms.ComboBox();
+            this.BackAddToFavouriteSongsbutton = new System.Windows.Forms.Button();
+            this.AddToFavouriteSongslabe = new System.Windows.Forms.Label();
+            this.CreatePlaylistSongspanel = new System.Windows.Forms.Panel();
+            this.MessageCreatePlaylistSongslabel = new System.Windows.Forms.Label();
+            this.CreateCreatePlaylistSongsbutton = new System.Windows.Forms.Button();
+            this.InsertPlaylistNameCreatePlaylistSongstextBox = new System.Windows.Forms.TextBox();
+            this.InsertPrivacyCreatePlaylistSongscomboBox = new System.Windows.Forms.ComboBox();
+            this.InsertPrivacyCreatePlaylistSongslabel = new System.Windows.Forms.Label();
+            this.InsertPlaylistNameCreatePlaylistSongslabel = new System.Windows.Forms.Label();
+            this.CreatePlaylistSongslabel = new System.Windows.Forms.Label();
+            this.BackCreatePlaylistSongsbutton = new System.Windows.Forms.Button();
+            this.BackSongsbutton = new System.Windows.Forms.Button();
+            this.PlaySongsbutton = new System.Windows.Forms.Button();
+            this.InformationSongsbutton = new System.Windows.Forms.Button();
+            this.SeeQueueSongsbutton = new System.Windows.Forms.Button();
+            this.SeeFavouriteSongsbutton = new System.Windows.Forms.Button();
+            this.SeePlaylistSongsbutton = new System.Windows.Forms.Button();
+            this.AddToQueueSongsbutton = new System.Windows.Forms.Button();
+            this.SelectFavouriteSongsbutton = new System.Windows.Forms.Button();
+            this.QualifySongsbutton = new System.Windows.Forms.Button();
+            this.AddToPlaylistSongsbutton = new System.Windows.Forms.Button();
+            this.SearchSongsbutton = new System.Windows.Forms.Button();
+            this.CreatePlaylistSongsbutton = new System.Windows.Forms.Button();
+            this.Songslabel = new System.Windows.Forms.Label();
             this.SuggestionsSongspanel = new System.Windows.Forms.Panel();
             this.BackSuggestionsSongsbutton = new System.Windows.Forms.Button();
             this.SuggestionsSongsrichTextBox = new System.Windows.Forms.RichTextBox();
             this.SuggestionsSongslabel2 = new System.Windows.Forms.Label();
             this.SuggestionsSongslabel1 = new System.Windows.Forms.Label();
+            this.BackLoginSesionProfilebutton = new System.Windows.Forms.Button();
+            this.MainMenupanel = new System.Windows.Forms.Panel();
             this.MoviesMainMenupanel = new System.Windows.Forms.Panel();
             this.SeeQueueMoviespanel = new System.Windows.Forms.Panel();
             this.ResultSeeQueueMoviesrichTextBox = new System.Windows.Forms.RichTextBox();
@@ -183,147 +313,6 @@
             this.PlayMoviesbutton = new System.Windows.Forms.Button();
             this.BackMoviesMainMenubutton = new System.Windows.Forms.Button();
             this.MoviesMainMenulabel = new System.Windows.Forms.Label();
-            this.Songspanel = new System.Windows.Forms.Panel();
-            this.PlaySongspanel = new System.Windows.Forms.Panel();
-            this.StopPlaySongsbutton = new System.Windows.Forms.Button();
-            this.PlayPlaySongsbutton = new System.Windows.Forms.Button();
-            this.InsertNamePlaySongscomboBox = new System.Windows.Forms.ComboBox();
-            this.InsertSongNamePlaySongslabel = new System.Windows.Forms.Label();
-            this.BackPlaySongsbutton = new System.Windows.Forms.Button();
-            this.PlaySongslabel = new System.Windows.Forms.Label();
-            this.InformationSongspanel = new System.Windows.Forms.Panel();
-            this.DurationInformationSongsbutton = new System.Windows.Forms.Button();
-            this.ReproductionsInformationSongsbutton = new System.Windows.Forms.Button();
-            this.QualificationInformationSongsbutton = new System.Windows.Forms.Button();
-            this.YearInformationSongsbutton = new System.Windows.Forms.Button();
-            this.LyricsInformationSongsbutton = new System.Windows.Forms.Button();
-            this.StudioInformationSongsbutton = new System.Windows.Forms.Button();
-            this.CompositorInformationSongsbutton = new System.Windows.Forms.Button();
-            this.GenderInformationSongsbutton = new System.Windows.Forms.Button();
-            this.ResultInformationSongsrichTextBox = new System.Windows.Forms.RichTextBox();
-            this.BackInformationSongsbutton = new System.Windows.Forms.Button();
-            this.ArtistInformationSongsbutton = new System.Windows.Forms.Button();
-            this.InsertSongNameInformationSongscomboBox = new System.Windows.Forms.ComboBox();
-            this.InsertSongNameInformationSongslabel = new System.Windows.Forms.Label();
-            this.InformationSongslabel = new System.Windows.Forms.Label();
-            this.SeeQueueSongspanel = new System.Windows.Forms.Panel();
-            this.ResultSeeQueueSongsrichTextBox = new System.Windows.Forms.RichTextBox();
-            this.SeeQueueSongslabel = new System.Windows.Forms.Label();
-            this.BackSeeQueueSongsbutton = new System.Windows.Forms.Button();
-            this.SeeFavouriteSongspanel = new System.Windows.Forms.Panel();
-            this.ResultSeeFavouriteSongsrichTextBox = new System.Windows.Forms.RichTextBox();
-            this.SeeFavouriteSongslabel = new System.Windows.Forms.Label();
-            this.BackSeeFavouriteSongsbutton = new System.Windows.Forms.Button();
-            this.SeePlaylistSongspanel = new System.Windows.Forms.Panel();
-            this.SeeSeePlaylistSongsbutton = new System.Windows.Forms.Button();
-            this.ResultSeePlaylistSongsrichTextBox = new System.Windows.Forms.RichTextBox();
-            this.InsertPlaylistNameSeePlaylistSongscomboBox = new System.Windows.Forms.ComboBox();
-            this.InsertPlaylistNameSeePlaylistSongslabel = new System.Windows.Forms.Label();
-            this.SeePlaylistSongslabel = new System.Windows.Forms.Label();
-            this.BackSeePlaylistSongsbutton = new System.Windows.Forms.Button();
-            this.AddToQueueSongspanel = new System.Windows.Forms.Panel();
-            this.MessageAddToQueueSongslabel = new System.Windows.Forms.Label();
-            this.AddAddToQueueSongsbutton = new System.Windows.Forms.Button();
-            this.InsertSongNameAddToQueueSongslabel = new System.Windows.Forms.Label();
-            this.InsertSongNameAddToQueueSongscomboBox = new System.Windows.Forms.ComboBox();
-            this.BackAddToQueueSongsbutton = new System.Windows.Forms.Button();
-            this.AddToQueueSongslabel = new System.Windows.Forms.Label();
-            this.SearchSongspanel = new System.Windows.Forms.Panel();
-            this.Genderpanel = new System.Windows.Forms.Panel();
-            this.MessageGenderlabel = new System.Windows.Forms.Label();
-            this.SearchGenderbutton = new System.Windows.Forms.Button();
-            this.ResultGenderrichTextBox = new System.Windows.Forms.RichTextBox();
-            this.InsertGenderGendertextBox = new System.Windows.Forms.TextBox();
-            this.InsertGenderGenderlabel = new System.Windows.Forms.Label();
-            this.BackGenderbutton = new System.Windows.Forms.Button();
-            this.Genderlabel = new System.Windows.Forms.Label();
-            this.Evaluationpanel = new System.Windows.Forms.Panel();
-            this.InsertSignEvaluationlabel = new System.Windows.Forms.Label();
-            this.InsertQualificationEvaluationlabel = new System.Windows.Forms.Label();
-            this.ResultEvaluationrichTextBox = new System.Windows.Forms.RichTextBox();
-            this.InsertSignEvaluationcomboBox = new System.Windows.Forms.ComboBox();
-            this.InsertQualificationEvaluationcomboBox = new System.Windows.Forms.ComboBox();
-            this.SearchEvaluationbutton = new System.Windows.Forms.Button();
-            this.BackEvaluationbutton = new System.Windows.Forms.Button();
-            this.Evaluationlabel = new System.Windows.Forms.Label();
-            this.Artistpanel = new System.Windows.Forms.Panel();
-            this.SearchArtistbutton = new System.Windows.Forms.Button();
-            this.Message2label = new System.Windows.Forms.Label();
-            this.Message1label = new System.Windows.Forms.Label();
-            this.InsertAnswerArtisttextBox = new System.Windows.Forms.TextBox();
-            this.ResultArtistrichTextBox = new System.Windows.Forms.RichTextBox();
-            this.GenderArtistbutton = new System.Windows.Forms.Button();
-            this.AgeArtistbutton = new System.Windows.Forms.Button();
-            this.BackArtistbutton = new System.Windows.Forms.Button();
-            this.Artistlabel = new System.Windows.Forms.Label();
-            this.Keywordpanel = new System.Windows.Forms.Panel();
-            this.Keywordlabel = new System.Windows.Forms.Label();
-            this.BackKeywordbutton = new System.Windows.Forms.Button();
-            this.CategoriesSearchSongsbutton = new System.Windows.Forms.Button();
-            this.EvaluationSearchSongsbutton = new System.Windows.Forms.Button();
-            this.ArtistSearchSongsbutton = new System.Windows.Forms.Button();
-            this.KeywordSearchSongsbutton = new System.Windows.Forms.Button();
-            this.BackSearchSongsbutton = new System.Windows.Forms.Button();
-            this.SearchSongslabel = new System.Windows.Forms.Label();
-            this.AddToPlaylistSongspanel = new System.Windows.Forms.Panel();
-            this.MessageAddToPlaylistSongslabel = new System.Windows.Forms.Label();
-            this.AddAddToPlaylistSongsbutton = new System.Windows.Forms.Button();
-            this.InsertPlaylistNameAddToPlaylistSongstextBox = new System.Windows.Forms.TextBox();
-            this.InsertArtistNameAddToPlaylistSongstextBox = new System.Windows.Forms.TextBox();
-            this.InsertSongNameAddToPlaylistSongstextBox = new System.Windows.Forms.TextBox();
-            this.InsertPlaylistNameAddToPlaylistSongslabel = new System.Windows.Forms.Label();
-            this.InsertArtistnameAddToPlaylistSongslabel = new System.Windows.Forms.Label();
-            this.InsertSongNameAddToPlaylistSongslabel = new System.Windows.Forms.Label();
-            this.AddToPlaylistSongslabel = new System.Windows.Forms.Label();
-            this.BackAddToPlaylistSongsbutton = new System.Windows.Forms.Button();
-            this.AddToFavouriteSongspanel = new System.Windows.Forms.Panel();
-            this.MessageAddToFavouriteSongslabel = new System.Windows.Forms.Label();
-            this.AddAddToFavouriteSongsbutton = new System.Windows.Forms.Button();
-            this.InsertSongNameAddToFavouriteSongslabel = new System.Windows.Forms.Label();
-            this.InsertSongNameAddToFavouriteSongscomboBox = new System.Windows.Forms.ComboBox();
-            this.BackAddToFavouriteSongsbutton = new System.Windows.Forms.Button();
-            this.AddToFavouriteSongslabe = new System.Windows.Forms.Label();
-            this.DownloadSongspanel = new System.Windows.Forms.Panel();
-            this.DownloadDownloadSongsbutton = new System.Windows.Forms.Button();
-            this.InsertArtistNameDownloadSongstextBox = new System.Windows.Forms.TextBox();
-            this.InsertSongNameDownloadSongstextBox = new System.Windows.Forms.TextBox();
-            this.InsertArtistNameDownloadSongslabel = new System.Windows.Forms.Label();
-            this.InsertNameSongDownloadSongslabel = new System.Windows.Forms.Label();
-            this.BackDownloadSongsbutton = new System.Windows.Forms.Button();
-            this.DownloadSongslabel = new System.Windows.Forms.Label();
-            this.QualifySongspanel = new System.Windows.Forms.Panel();
-            this.InsertSongNameQualifySongstextBox = new System.Windows.Forms.TextBox();
-            this.InsertArtistNameQualifySongstextBox = new System.Windows.Forms.TextBox();
-            this.InsertQualificationQualifySongscomboBox = new System.Windows.Forms.ComboBox();
-            this.QualifyQualifySongsbutton = new System.Windows.Forms.Button();
-            this.InsertQualificationQualifySongslabel = new System.Windows.Forms.Label();
-            this.InsertSongNameQualifySongslabel = new System.Windows.Forms.Label();
-            this.InsertArtistNameQualifySongslabel = new System.Windows.Forms.Label();
-            this.BackQualifySongsbutton = new System.Windows.Forms.Button();
-            this.QualifySongslabel = new System.Windows.Forms.Label();
-            this.CreatePlaylistSongspanel = new System.Windows.Forms.Panel();
-            this.MessageCreatePlaylistSongslabel = new System.Windows.Forms.Label();
-            this.CreateCreatePlaylistSongsbutton = new System.Windows.Forms.Button();
-            this.InsertPlaylistNameCreatePlaylistSongstextBox = new System.Windows.Forms.TextBox();
-            this.InsertPrivacyCreatePlaylistSongscomboBox = new System.Windows.Forms.ComboBox();
-            this.InsertPrivacyCreatePlaylistSongslabel = new System.Windows.Forms.Label();
-            this.InsertPlaylistNameCreatePlaylistSongslabel = new System.Windows.Forms.Label();
-            this.CreatePlaylistSongslabel = new System.Windows.Forms.Label();
-            this.BackCreatePlaylistSongsbutton = new System.Windows.Forms.Button();
-            this.BackSongsbutton = new System.Windows.Forms.Button();
-            this.PlaySongsbutton = new System.Windows.Forms.Button();
-            this.InformationSongsbutton = new System.Windows.Forms.Button();
-            this.SeeQueueSongsbutton = new System.Windows.Forms.Button();
-            this.SeeFavouriteSongsbutton = new System.Windows.Forms.Button();
-            this.SeePlaylistSongsbutton = new System.Windows.Forms.Button();
-            this.AddToQueueSongsbutton = new System.Windows.Forms.Button();
-            this.SelectFavouriteSongsbutton = new System.Windows.Forms.Button();
-            this.QualifySongsbutton = new System.Windows.Forms.Button();
-            this.AddToPlaylistSongsbutton = new System.Windows.Forms.Button();
-            this.SearchSongsbutton = new System.Windows.Forms.Button();
-            this.DownloadSongsbutton = new System.Windows.Forms.Button();
-            this.CreatePlaylistSongsbutton = new System.Windows.Forms.Button();
-            this.Songslabel = new System.Windows.Forms.Label();
             this.JoinPartypanel = new System.Windows.Forms.Panel();
             this.PartyMoviespanel = new System.Windows.Forms.Panel();
             this.Message2PartyMovieslabel = new System.Windows.Forms.Label();
@@ -416,9 +405,6 @@
             this.FollowMainMenubutton = new System.Windows.Forms.Button();
             this.MainMenulabel2 = new System.Windows.Forms.Label();
             this.MainMenulabel1 = new System.Windows.Forms.Label();
-            this.LoginSesionpanel = new System.Windows.Forms.Panel();
-            this.LoginSesionProfilepanel = new System.Windows.Forms.Panel();
-            this.BackLoginSesionProfilebutton = new System.Windows.Forms.Button();
             this.LoginSesionProfilebutton = new System.Windows.Forms.Button();
             this.LoginSesionProfilelabel2 = new System.Windows.Forms.Label();
             this.LoginSesionProfilelabel1 = new System.Windows.Forms.Label();
@@ -441,8 +427,26 @@
             this.ChangeProfilepanel.SuspendLayout();
             this.CreateProfilepanel.SuspendLayout();
             this.CreateUserpanel.SuspendLayout();
-            this.MainMenupanel.SuspendLayout();
+            this.LoginSesionpanel.SuspendLayout();
+            this.LoginSesionProfilepanel.SuspendLayout();
+            this.Songspanel.SuspendLayout();
+            this.PlaySongspanel.SuspendLayout();
+            this.SeeQueueSongspanel.SuspendLayout();
+            this.AddToQueueSongspanel.SuspendLayout();
+            this.SearchSongspanel.SuspendLayout();
+            this.Genderpanel.SuspendLayout();
+            this.Evaluationpanel.SuspendLayout();
+            this.InformationSongspanel.SuspendLayout();
+            this.Artistpanel.SuspendLayout();
+            this.SeePlaylistSongspanel.SuspendLayout();
+            this.SeeFavouriteSongspanel.SuspendLayout();
+            this.Keywordpanel.SuspendLayout();
+            this.QualifySongspanel.SuspendLayout();
+            this.AddToPlaylistSongspanel.SuspendLayout();
+            this.AddToFavouriteSongspanel.SuspendLayout();
+            this.CreatePlaylistSongspanel.SuspendLayout();
             this.SuggestionsSongspanel.SuspendLayout();
+            this.MainMenupanel.SuspendLayout();
             this.MoviesMainMenupanel.SuspendLayout();
             this.SeeQueueMoviespanel.SuspendLayout();
             this.SelectFavouriteMoviespanel.SuspendLayout();
@@ -456,23 +460,6 @@
             this.InformationMoviespanel.SuspendLayout();
             this.QualifyMoviespanel.SuspendLayout();
             this.PlayMoviespanel.SuspendLayout();
-            this.Songspanel.SuspendLayout();
-            this.PlaySongspanel.SuspendLayout();
-            this.InformationSongspanel.SuspendLayout();
-            this.SeeQueueSongspanel.SuspendLayout();
-            this.SeeFavouriteSongspanel.SuspendLayout();
-            this.SeePlaylistSongspanel.SuspendLayout();
-            this.AddToQueueSongspanel.SuspendLayout();
-            this.SearchSongspanel.SuspendLayout();
-            this.Genderpanel.SuspendLayout();
-            this.Evaluationpanel.SuspendLayout();
-            this.Artistpanel.SuspendLayout();
-            this.Keywordpanel.SuspendLayout();
-            this.AddToPlaylistSongspanel.SuspendLayout();
-            this.AddToFavouriteSongspanel.SuspendLayout();
-            this.DownloadSongspanel.SuspendLayout();
-            this.QualifySongspanel.SuspendLayout();
-            this.CreatePlaylistSongspanel.SuspendLayout();
             this.JoinPartypanel.SuspendLayout();
             this.PartyMoviespanel.SuspendLayout();
             this.PartySongspanel.SuspendLayout();
@@ -485,8 +472,6 @@
             this.FollowPlaylistMoviespanel.SuspendLayout();
             this.FollowPlaylistSongspanel.SuspendLayout();
             this.FollowProfilepanel.SuspendLayout();
-            this.LoginSesionpanel.SuspendLayout();
-            this.LoginSesionProfilepanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // WelcomePanel
@@ -502,8 +487,9 @@
             this.WelcomePanel.Location = new System.Drawing.Point(0, 0);
             this.WelcomePanel.Margin = new System.Windows.Forms.Padding(2);
             this.WelcomePanel.Name = "WelcomePanel";
-            this.WelcomePanel.Size = new System.Drawing.Size(598, 388);
+            this.WelcomePanel.Size = new System.Drawing.Size(753, 445);
             this.WelcomePanel.TabIndex = 0;
+            this.WelcomePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.WelcomePanel_Paint);
             // 
             // ADCpanel
             // 
@@ -517,10 +503,10 @@
             this.ADCpanel.Controls.Add(this.CreareProfilebutton);
             this.ADCpanel.Controls.Add(this.CreateUserbutton);
             this.ADCpanel.Controls.Add(this.ADClabel);
-            this.ADCpanel.Location = new System.Drawing.Point(35, 47);
+            this.ADCpanel.Location = new System.Drawing.Point(37, 33);
             this.ADCpanel.Margin = new System.Windows.Forms.Padding(2);
             this.ADCpanel.Name = "ADCpanel";
-            this.ADCpanel.Size = new System.Drawing.Size(72, 57);
+            this.ADCpanel.Size = new System.Drawing.Size(52, 43);
             this.ADCpanel.TabIndex = 5;
             // 
             // SeeProfilespanel
@@ -586,10 +572,10 @@
             this.ChangeProfilepanel.Controls.Add(this.InsertProfileChangeProfilelabel);
             this.ChangeProfilepanel.Controls.Add(this.InsertUsernameChangeProfilelabel);
             this.ChangeProfilepanel.Controls.Add(this.ChangeProfilelabel);
-            this.ChangeProfilepanel.Location = new System.Drawing.Point(39, 40);
+            this.ChangeProfilepanel.Location = new System.Drawing.Point(51, 33);
             this.ChangeProfilepanel.Margin = new System.Windows.Forms.Padding(2);
             this.ChangeProfilepanel.Name = "ChangeProfilepanel";
-            this.ChangeProfilepanel.Size = new System.Drawing.Size(32, 22);
+            this.ChangeProfilepanel.Size = new System.Drawing.Size(19, 24);
             this.ChangeProfilepanel.TabIndex = 11;
             // 
             // ChangeProfileSearchbutton
@@ -1091,27 +1077,1490 @@
             this.ADClabel.TabIndex = 0;
             this.ADClabel.Text = "Administración de Cuentas";
             // 
-            // MainMenupanel
+            // LoginSesionpanel
             // 
-            this.MainMenupanel.Controls.Add(this.SuggestionsSongspanel);
-            this.MainMenupanel.Controls.Add(this.MoviesMainMenupanel);
-            this.MainMenupanel.Controls.Add(this.Songspanel);
-            this.MainMenupanel.Controls.Add(this.JoinPartypanel);
-            this.MainMenupanel.Controls.Add(this.InteligentSuggestionspanel);
-            this.MainMenupanel.Controls.Add(this.Followpanel);
-            this.MainMenupanel.Controls.Add(this.LogoutMainMenubutton);
-            this.MainMenupanel.Controls.Add(this.MoviesMainMenubutton);
-            this.MainMenupanel.Controls.Add(this.SongsMainMenubutton);
-            this.MainMenupanel.Controls.Add(this.JoinPartyMainMenubutton);
-            this.MainMenupanel.Controls.Add(this.SuggestionsMainMenubutton);
-            this.MainMenupanel.Controls.Add(this.FollowMainMenubutton);
-            this.MainMenupanel.Controls.Add(this.MainMenulabel2);
-            this.MainMenupanel.Controls.Add(this.MainMenulabel1);
-            this.MainMenupanel.Location = new System.Drawing.Point(506, 304);
-            this.MainMenupanel.Margin = new System.Windows.Forms.Padding(2);
-            this.MainMenupanel.Name = "MainMenupanel";
-            this.MainMenupanel.Size = new System.Drawing.Size(85, 66);
-            this.MainMenupanel.TabIndex = 4;
+            this.LoginSesionpanel.Controls.Add(this.LoginSesionProfilepanel);
+            this.LoginSesionpanel.Controls.Add(this.FailedLoginSesionlabel);
+            this.LoginSesionpanel.Controls.Add(this.BackLoginSesionbutton);
+            this.LoginSesionpanel.Controls.Add(this.LoginSesionbutton);
+            this.LoginSesionpanel.Controls.Add(this.InsertPasswordLoginSesiontextBox);
+            this.LoginSesionpanel.Controls.Add(this.InsertMailLoginSesiontextBox);
+            this.LoginSesionpanel.Controls.Add(this.InsertPasswordLoginSesionlabel);
+            this.LoginSesionpanel.Controls.Add(this.InsertMailLoginSesionlabel);
+            this.LoginSesionpanel.Controls.Add(this.LoginSesionlabel);
+            this.LoginSesionpanel.Location = new System.Drawing.Point(524, 208);
+            this.LoginSesionpanel.Margin = new System.Windows.Forms.Padding(2);
+            this.LoginSesionpanel.Name = "LoginSesionpanel";
+            this.LoginSesionpanel.Size = new System.Drawing.Size(96, 95);
+            this.LoginSesionpanel.TabIndex = 4;
+            this.LoginSesionpanel.Visible = false;
+            // 
+            // LoginSesionProfilepanel
+            // 
+            this.LoginSesionProfilepanel.Controls.Add(this.BackLoginSesionProfilebutton);
+            this.LoginSesionProfilepanel.Controls.Add(this.MainMenupanel);
+            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilebutton);
+            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilelabel2);
+            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilelabel1);
+            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionInsertProfilecomboBox);
+            this.LoginSesionProfilepanel.Location = new System.Drawing.Point(257, 286);
+            this.LoginSesionProfilepanel.Margin = new System.Windows.Forms.Padding(2);
+            this.LoginSesionProfilepanel.Name = "LoginSesionProfilepanel";
+            this.LoginSesionProfilepanel.Size = new System.Drawing.Size(61, 70);
+            this.LoginSesionProfilepanel.TabIndex = 9;
+            // 
+            // Songspanel
+            // 
+            this.Songspanel.Controls.Add(this.PlaySongspanel);
+            this.Songspanel.Controls.Add(this.InformationSongspanel);
+            this.Songspanel.Controls.Add(this.SeeQueueSongspanel);
+            this.Songspanel.Controls.Add(this.AddToQueueSongspanel);
+            this.Songspanel.Controls.Add(this.SeeFavouriteSongspanel);
+            this.Songspanel.Controls.Add(this.SeePlaylistSongspanel);
+            this.Songspanel.Controls.Add(this.SearchSongspanel);
+            this.Songspanel.Controls.Add(this.QualifySongspanel);
+            this.Songspanel.Controls.Add(this.AddToPlaylistSongspanel);
+            this.Songspanel.Controls.Add(this.AddToFavouriteSongspanel);
+            this.Songspanel.Controls.Add(this.CreatePlaylistSongspanel);
+            this.Songspanel.Controls.Add(this.BackSongsbutton);
+            this.Songspanel.Controls.Add(this.PlaySongsbutton);
+            this.Songspanel.Controls.Add(this.InformationSongsbutton);
+            this.Songspanel.Controls.Add(this.SeeQueueSongsbutton);
+            this.Songspanel.Controls.Add(this.SeeFavouriteSongsbutton);
+            this.Songspanel.Controls.Add(this.SeePlaylistSongsbutton);
+            this.Songspanel.Controls.Add(this.AddToQueueSongsbutton);
+            this.Songspanel.Controls.Add(this.SelectFavouriteSongsbutton);
+            this.Songspanel.Controls.Add(this.QualifySongsbutton);
+            this.Songspanel.Controls.Add(this.AddToPlaylistSongsbutton);
+            this.Songspanel.Controls.Add(this.SearchSongsbutton);
+            this.Songspanel.Controls.Add(this.CreatePlaylistSongsbutton);
+            this.Songspanel.Controls.Add(this.Songslabel);
+            this.Songspanel.Controls.Add(this.SuggestionsSongspanel);
+            this.Songspanel.Location = new System.Drawing.Point(113, 247);
+            this.Songspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.Songspanel.Name = "Songspanel";
+            this.Songspanel.Size = new System.Drawing.Size(50, 54);
+            this.Songspanel.TabIndex = 15;
+            this.Songspanel.Paint += new System.Windows.Forms.PaintEventHandler(this.Songspanel_Paint);
+            // 
+            // PlaySongspanel
+            // 
+            this.PlaySongspanel.Controls.Add(this.StopPlaySongsbutton);
+            this.PlaySongspanel.Controls.Add(this.PlayPlaySongsbutton);
+            this.PlaySongspanel.Controls.Add(this.InsertNamePlaySongscomboBox);
+            this.PlaySongspanel.Controls.Add(this.InsertSongNamePlaySongslabel);
+            this.PlaySongspanel.Controls.Add(this.BackPlaySongsbutton);
+            this.PlaySongspanel.Controls.Add(this.PlaySongslabel);
+            this.PlaySongspanel.Location = new System.Drawing.Point(487, 271);
+            this.PlaySongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.PlaySongspanel.Name = "PlaySongspanel";
+            this.PlaySongspanel.Size = new System.Drawing.Size(45, 40);
+            this.PlaySongspanel.TabIndex = 22;
+            // 
+            // StopPlaySongsbutton
+            // 
+            this.StopPlaySongsbutton.Location = new System.Drawing.Point(349, 184);
+            this.StopPlaySongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.StopPlaySongsbutton.Name = "StopPlaySongsbutton";
+            this.StopPlaySongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.StopPlaySongsbutton.TabIndex = 5;
+            this.StopPlaySongsbutton.Text = "Parar";
+            this.StopPlaySongsbutton.UseVisualStyleBackColor = true;
+            this.StopPlaySongsbutton.Click += new System.EventHandler(this.StopPlaySongsbutton_Click);
+            // 
+            // PlayPlaySongsbutton
+            // 
+            this.PlayPlaySongsbutton.Location = new System.Drawing.Point(265, 183);
+            this.PlayPlaySongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.PlayPlaySongsbutton.Name = "PlayPlaySongsbutton";
+            this.PlayPlaySongsbutton.Size = new System.Drawing.Size(66, 19);
+            this.PlayPlaySongsbutton.TabIndex = 4;
+            this.PlayPlaySongsbutton.Text = "Reproducir";
+            this.PlayPlaySongsbutton.UseVisualStyleBackColor = true;
+            this.PlayPlaySongsbutton.Click += new System.EventHandler(this.PlayPlaySongsbutton_Click);
+            // 
+            // InsertNamePlaySongscomboBox
+            // 
+            this.InsertNamePlaySongscomboBox.FormattingEnabled = true;
+            this.InsertNamePlaySongscomboBox.Location = new System.Drawing.Point(265, 124);
+            this.InsertNamePlaySongscomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertNamePlaySongscomboBox.Name = "InsertNamePlaySongscomboBox";
+            this.InsertNamePlaySongscomboBox.Size = new System.Drawing.Size(141, 21);
+            this.InsertNamePlaySongscomboBox.TabIndex = 3;
+            // 
+            // InsertSongNamePlaySongslabel
+            // 
+            this.InsertSongNamePlaySongslabel.AutoSize = true;
+            this.InsertSongNamePlaySongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertSongNamePlaySongslabel.Location = new System.Drawing.Point(114, 127);
+            this.InsertSongNamePlaySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertSongNamePlaySongslabel.Name = "InsertSongNamePlaySongslabel";
+            this.InsertSongNamePlaySongslabel.Size = new System.Drawing.Size(114, 13);
+            this.InsertSongNamePlaySongslabel.TabIndex = 2;
+            this.InsertSongNamePlaySongslabel.Text = "Nombre de la canción:";
+            // 
+            // BackPlaySongsbutton
+            // 
+            this.BackPlaySongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackPlaySongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackPlaySongsbutton.Name = "BackPlaySongsbutton";
+            this.BackPlaySongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackPlaySongsbutton.TabIndex = 1;
+            this.BackPlaySongsbutton.Text = "Volver";
+            this.BackPlaySongsbutton.UseVisualStyleBackColor = true;
+            this.BackPlaySongsbutton.Click += new System.EventHandler(this.BackPlaySongsbutton_Click);
+            // 
+            // PlaySongslabel
+            // 
+            this.PlaySongslabel.AutoSize = true;
+            this.PlaySongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlaySongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.PlaySongslabel.Location = new System.Drawing.Point(181, 16);
+            this.PlaySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PlaySongslabel.Name = "PlaySongslabel";
+            this.PlaySongslabel.Size = new System.Drawing.Size(254, 31);
+            this.PlaySongslabel.TabIndex = 0;
+            this.PlaySongslabel.Text = "Reproducir Canción";
+            // 
+            // SeeQueueSongspanel
+            // 
+            this.SeeQueueSongspanel.Controls.Add(this.ResultSeeQueueSongsrichTextBox);
+            this.SeeQueueSongspanel.Controls.Add(this.SeeQueueSongslabel);
+            this.SeeQueueSongspanel.Controls.Add(this.BackSeeQueueSongsbutton);
+            this.SeeQueueSongspanel.Location = new System.Drawing.Point(39, 59);
+            this.SeeQueueSongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.SeeQueueSongspanel.Name = "SeeQueueSongspanel";
+            this.SeeQueueSongspanel.Size = new System.Drawing.Size(51, 74);
+            this.SeeQueueSongspanel.TabIndex = 3;
+            // 
+            // ResultSeeQueueSongsrichTextBox
+            // 
+            this.ResultSeeQueueSongsrichTextBox.Location = new System.Drawing.Point(173, 80);
+            this.ResultSeeQueueSongsrichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ResultSeeQueueSongsrichTextBox.Name = "ResultSeeQueueSongsrichTextBox";
+            this.ResultSeeQueueSongsrichTextBox.Size = new System.Drawing.Size(223, 198);
+            this.ResultSeeQueueSongsrichTextBox.TabIndex = 2;
+            this.ResultSeeQueueSongsrichTextBox.Text = "";
+            // 
+            // SeeQueueSongslabel
+            // 
+            this.SeeQueueSongslabel.AutoSize = true;
+            this.SeeQueueSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeeQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.SeeQueueSongslabel.Location = new System.Drawing.Point(187, 18);
+            this.SeeQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SeeQueueSongslabel.Name = "SeeQueueSongslabel";
+            this.SeeQueueSongslabel.Size = new System.Drawing.Size(221, 31);
+            this.SeeQueueSongslabel.TabIndex = 1;
+            this.SeeQueueSongslabel.Text = "Ver Lista en Cola";
+            // 
+            // BackSeeQueueSongsbutton
+            // 
+            this.BackSeeQueueSongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackSeeQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackSeeQueueSongsbutton.Name = "BackSeeQueueSongsbutton";
+            this.BackSeeQueueSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackSeeQueueSongsbutton.TabIndex = 0;
+            this.BackSeeQueueSongsbutton.Text = "Volver";
+            this.BackSeeQueueSongsbutton.UseVisualStyleBackColor = true;
+            this.BackSeeQueueSongsbutton.Click += new System.EventHandler(this.BackSeeQueueSongsbutton_Click);
+            // 
+            // AddToQueueSongspanel
+            // 
+            this.AddToQueueSongspanel.Controls.Add(this.MessageAddToQueueSongslabel);
+            this.AddToQueueSongspanel.Controls.Add(this.AddAddToQueueSongsbutton);
+            this.AddToQueueSongspanel.Controls.Add(this.InsertSongNameAddToQueueSongslabel);
+            this.AddToQueueSongspanel.Controls.Add(this.InsertSongNameAddToQueueSongscomboBox);
+            this.AddToQueueSongspanel.Controls.Add(this.BackAddToQueueSongsbutton);
+            this.AddToQueueSongspanel.Controls.Add(this.AddToQueueSongslabel);
+            this.AddToQueueSongspanel.Location = new System.Drawing.Point(444, 13);
+            this.AddToQueueSongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.AddToQueueSongspanel.Name = "AddToQueueSongspanel";
+            this.AddToQueueSongspanel.Size = new System.Drawing.Size(40, 49);
+            this.AddToQueueSongspanel.TabIndex = 6;
+            // 
+            // MessageAddToQueueSongslabel
+            // 
+            this.MessageAddToQueueSongslabel.AutoSize = true;
+            this.MessageAddToQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.MessageAddToQueueSongslabel.Location = new System.Drawing.Point(211, 243);
+            this.MessageAddToQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MessageAddToQueueSongslabel.Name = "MessageAddToQueueSongslabel";
+            this.MessageAddToQueueSongslabel.Size = new System.Drawing.Size(183, 13);
+            this.MessageAddToQueueSongslabel.TabIndex = 11;
+            this.MessageAddToQueueSongslabel.Text = "La canción se añadió correctamente.";
+            this.MessageAddToQueueSongslabel.Visible = false;
+            // 
+            // AddAddToQueueSongsbutton
+            // 
+            this.AddAddToQueueSongsbutton.Location = new System.Drawing.Point(276, 186);
+            this.AddAddToQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.AddAddToQueueSongsbutton.Name = "AddAddToQueueSongsbutton";
+            this.AddAddToQueueSongsbutton.Size = new System.Drawing.Size(60, 24);
+            this.AddAddToQueueSongsbutton.TabIndex = 10;
+            this.AddAddToQueueSongsbutton.Text = "Agregar";
+            this.AddAddToQueueSongsbutton.UseVisualStyleBackColor = true;
+            this.AddAddToQueueSongsbutton.Click += new System.EventHandler(this.AddAddToQueueSongsbutton_Click);
+            // 
+            // InsertSongNameAddToQueueSongslabel
+            // 
+            this.InsertSongNameAddToQueueSongslabel.AutoSize = true;
+            this.InsertSongNameAddToQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertSongNameAddToQueueSongslabel.Location = new System.Drawing.Point(185, 134);
+            this.InsertSongNameAddToQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertSongNameAddToQueueSongslabel.Name = "InsertSongNameAddToQueueSongslabel";
+            this.InsertSongNameAddToQueueSongslabel.Size = new System.Drawing.Size(114, 13);
+            this.InsertSongNameAddToQueueSongslabel.TabIndex = 9;
+            this.InsertSongNameAddToQueueSongslabel.Text = "Nombre de la canción:";
+            // 
+            // InsertSongNameAddToQueueSongscomboBox
+            // 
+            this.InsertSongNameAddToQueueSongscomboBox.FormattingEnabled = true;
+            this.InsertSongNameAddToQueueSongscomboBox.Location = new System.Drawing.Point(321, 134);
+            this.InsertSongNameAddToQueueSongscomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertSongNameAddToQueueSongscomboBox.Name = "InsertSongNameAddToQueueSongscomboBox";
+            this.InsertSongNameAddToQueueSongscomboBox.Size = new System.Drawing.Size(92, 21);
+            this.InsertSongNameAddToQueueSongscomboBox.TabIndex = 8;
+            // 
+            // BackAddToQueueSongsbutton
+            // 
+            this.BackAddToQueueSongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackAddToQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackAddToQueueSongsbutton.Name = "BackAddToQueueSongsbutton";
+            this.BackAddToQueueSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackAddToQueueSongsbutton.TabIndex = 7;
+            this.BackAddToQueueSongsbutton.Text = "Volver";
+            this.BackAddToQueueSongsbutton.UseVisualStyleBackColor = true;
+            this.BackAddToQueueSongsbutton.Click += new System.EventHandler(this.BackAddToQueueSongsbutton_Click);
+            // 
+            // AddToQueueSongslabel
+            // 
+            this.AddToQueueSongslabel.AutoSize = true;
+            this.AddToQueueSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddToQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.AddToQueueSongslabel.Location = new System.Drawing.Point(135, 16);
+            this.AddToQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.AddToQueueSongslabel.Name = "AddToQueueSongslabel";
+            this.AddToQueueSongslabel.Size = new System.Drawing.Size(386, 31);
+            this.AddToQueueSongslabel.TabIndex = 6;
+            this.AddToQueueSongslabel.Text = "Añadir Canción a Lista en Cola";
+            // 
+            // SearchSongspanel
+            // 
+            this.SearchSongspanel.Controls.Add(this.Genderpanel);
+            this.SearchSongspanel.Controls.Add(this.Evaluationpanel);
+            this.SearchSongspanel.Controls.Add(this.Artistpanel);
+            this.SearchSongspanel.Controls.Add(this.Keywordpanel);
+            this.SearchSongspanel.Controls.Add(this.CategoriesSearchSongsbutton);
+            this.SearchSongspanel.Controls.Add(this.EvaluationSearchSongsbutton);
+            this.SearchSongspanel.Controls.Add(this.ArtistSearchSongsbutton);
+            this.SearchSongspanel.Controls.Add(this.KeywordSearchSongsbutton);
+            this.SearchSongspanel.Controls.Add(this.BackSearchSongsbutton);
+            this.SearchSongspanel.Controls.Add(this.SearchSongslabel);
+            this.SearchSongspanel.Location = new System.Drawing.Point(49, 164);
+            this.SearchSongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.SearchSongspanel.Name = "SearchSongspanel";
+            this.SearchSongspanel.Size = new System.Drawing.Size(53, 56);
+            this.SearchSongspanel.TabIndex = 9;
+            // 
+            // Genderpanel
+            // 
+            this.Genderpanel.Controls.Add(this.MessageGenderlabel);
+            this.Genderpanel.Controls.Add(this.SearchGenderbutton);
+            this.Genderpanel.Controls.Add(this.ResultGenderrichTextBox);
+            this.Genderpanel.Controls.Add(this.InsertGenderGendertextBox);
+            this.Genderpanel.Controls.Add(this.InsertGenderGenderlabel);
+            this.Genderpanel.Controls.Add(this.BackGenderbutton);
+            this.Genderpanel.Controls.Add(this.Genderlabel);
+            this.Genderpanel.Location = new System.Drawing.Point(168, 251);
+            this.Genderpanel.Margin = new System.Windows.Forms.Padding(2);
+            this.Genderpanel.Name = "Genderpanel";
+            this.Genderpanel.Size = new System.Drawing.Size(50, 46);
+            this.Genderpanel.TabIndex = 8;
+            // 
+            // MessageGenderlabel
+            // 
+            this.MessageGenderlabel.AutoSize = true;
+            this.MessageGenderlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.MessageGenderlabel.Location = new System.Drawing.Point(91, 260);
+            this.MessageGenderlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MessageGenderlabel.Name = "MessageGenderlabel";
+            this.MessageGenderlabel.Size = new System.Drawing.Size(178, 13);
+            this.MessageGenderlabel.TabIndex = 6;
+            this.MessageGenderlabel.Text = "El género ingresado no se encontró.";
+            this.MessageGenderlabel.Visible = false;
+            // 
+            // SearchGenderbutton
+            // 
+            this.SearchGenderbutton.Location = new System.Drawing.Point(130, 180);
+            this.SearchGenderbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.SearchGenderbutton.Name = "SearchGenderbutton";
+            this.SearchGenderbutton.Size = new System.Drawing.Size(101, 40);
+            this.SearchGenderbutton.TabIndex = 5;
+            this.SearchGenderbutton.Text = "Buscar";
+            this.SearchGenderbutton.UseVisualStyleBackColor = true;
+            this.SearchGenderbutton.Click += new System.EventHandler(this.SearchGenderbutton_Click);
+            // 
+            // ResultGenderrichTextBox
+            // 
+            this.ResultGenderrichTextBox.Location = new System.Drawing.Point(360, 106);
+            this.ResultGenderrichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ResultGenderrichTextBox.Name = "ResultGenderrichTextBox";
+            this.ResultGenderrichTextBox.Size = new System.Drawing.Size(144, 183);
+            this.ResultGenderrichTextBox.TabIndex = 4;
+            this.ResultGenderrichTextBox.Text = "";
+            // 
+            // InsertGenderGendertextBox
+            // 
+            this.InsertGenderGendertextBox.Location = new System.Drawing.Point(192, 120);
+            this.InsertGenderGendertextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertGenderGendertextBox.Name = "InsertGenderGendertextBox";
+            this.InsertGenderGendertextBox.Size = new System.Drawing.Size(76, 20);
+            this.InsertGenderGendertextBox.TabIndex = 3;
+            // 
+            // InsertGenderGenderlabel
+            // 
+            this.InsertGenderGenderlabel.AutoSize = true;
+            this.InsertGenderGenderlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertGenderGenderlabel.Location = new System.Drawing.Point(40, 124);
+            this.InsertGenderGenderlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertGenderGenderlabel.Name = "InsertGenderGenderlabel";
+            this.InsertGenderGenderlabel.Size = new System.Drawing.Size(130, 13);
+            this.InsertGenderGenderlabel.TabIndex = 2;
+            this.InsertGenderGenderlabel.Text = "Ingrese el género musical:";
+            // 
+            // BackGenderbutton
+            // 
+            this.BackGenderbutton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BackGenderbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackGenderbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackGenderbutton.Name = "BackGenderbutton";
+            this.BackGenderbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackGenderbutton.TabIndex = 1;
+            this.BackGenderbutton.Text = "Volver";
+            this.BackGenderbutton.UseVisualStyleBackColor = true;
+            this.BackGenderbutton.Click += new System.EventHandler(this.BackGenderbutton_Click);
+            // 
+            // Genderlabel
+            // 
+            this.Genderlabel.AutoSize = true;
+            this.Genderlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Genderlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.Genderlabel.Location = new System.Drawing.Point(197, 16);
+            this.Genderlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Genderlabel.Name = "Genderlabel";
+            this.Genderlabel.Size = new System.Drawing.Size(203, 31);
+            this.Genderlabel.TabIndex = 0;
+            this.Genderlabel.Text = "Género Musical";
+            // 
+            // Evaluationpanel
+            // 
+            this.Evaluationpanel.Controls.Add(this.InsertSignEvaluationlabel);
+            this.Evaluationpanel.Controls.Add(this.InsertQualificationEvaluationlabel);
+            this.Evaluationpanel.Controls.Add(this.ResultEvaluationrichTextBox);
+            this.Evaluationpanel.Controls.Add(this.InsertSignEvaluationcomboBox);
+            this.Evaluationpanel.Controls.Add(this.InsertQualificationEvaluationcomboBox);
+            this.Evaluationpanel.Controls.Add(this.SearchEvaluationbutton);
+            this.Evaluationpanel.Controls.Add(this.BackEvaluationbutton);
+            this.Evaluationpanel.Controls.Add(this.Evaluationlabel);
+            this.Evaluationpanel.Location = new System.Drawing.Point(56, 240);
+            this.Evaluationpanel.Margin = new System.Windows.Forms.Padding(2);
+            this.Evaluationpanel.Name = "Evaluationpanel";
+            this.Evaluationpanel.Size = new System.Drawing.Size(101, 50);
+            this.Evaluationpanel.TabIndex = 9;
+            // 
+            // InsertSignEvaluationlabel
+            // 
+            this.InsertSignEvaluationlabel.AutoSize = true;
+            this.InsertSignEvaluationlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertSignEvaluationlabel.Location = new System.Drawing.Point(34, 191);
+            this.InsertSignEvaluationlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertSignEvaluationlabel.Name = "InsertSignEvaluationlabel";
+            this.InsertSignEvaluationlabel.Size = new System.Drawing.Size(326, 13);
+            this.InsertSignEvaluationlabel.TabIndex = 7;
+            this.InsertSignEvaluationlabel.Text = "Indique si la evaluación debe ser mayor, menor o igual al parámetro:";
+            // 
+            // InformationSongspanel
+            // 
+            this.InformationSongspanel.Controls.Add(this.DurationInformationSongsbutton);
+            this.InformationSongspanel.Controls.Add(this.ReproductionsInformationSongsbutton);
+            this.InformationSongspanel.Controls.Add(this.QualificationInformationSongsbutton);
+            this.InformationSongspanel.Controls.Add(this.YearInformationSongsbutton);
+            this.InformationSongspanel.Controls.Add(this.LyricsInformationSongsbutton);
+            this.InformationSongspanel.Controls.Add(this.StudioInformationSongsbutton);
+            this.InformationSongspanel.Controls.Add(this.CompositorInformationSongsbutton);
+            this.InformationSongspanel.Controls.Add(this.GenderInformationSongsbutton);
+            this.InformationSongspanel.Controls.Add(this.ResultInformationSongsrichTextBox);
+            this.InformationSongspanel.Controls.Add(this.BackInformationSongsbutton);
+            this.InformationSongspanel.Controls.Add(this.ArtistInformationSongsbutton);
+            this.InformationSongspanel.Controls.Add(this.InsertSongNameInformationSongscomboBox);
+            this.InformationSongspanel.Controls.Add(this.InsertSongNameInformationSongslabel);
+            this.InformationSongspanel.Controls.Add(this.InformationSongslabel);
+            this.InformationSongspanel.Location = new System.Drawing.Point(106, 291);
+            this.InformationSongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.InformationSongspanel.Name = "InformationSongspanel";
+            this.InformationSongspanel.Size = new System.Drawing.Size(52, 70);
+            this.InformationSongspanel.TabIndex = 3;
+            // 
+            // DurationInformationSongsbutton
+            // 
+            this.DurationInformationSongsbutton.Location = new System.Drawing.Point(222, 291);
+            this.DurationInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.DurationInformationSongsbutton.Name = "DurationInformationSongsbutton";
+            this.DurationInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.DurationInformationSongsbutton.TabIndex = 21;
+            this.DurationInformationSongsbutton.Text = "Duración";
+            this.DurationInformationSongsbutton.UseVisualStyleBackColor = true;
+            this.DurationInformationSongsbutton.Click += new System.EventHandler(this.DurationInformationSongsbutton_Click);
+            // 
+            // ReproductionsInformationSongsbutton
+            // 
+            this.ReproductionsInformationSongsbutton.Location = new System.Drawing.Point(130, 291);
+            this.ReproductionsInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.ReproductionsInformationSongsbutton.Name = "ReproductionsInformationSongsbutton";
+            this.ReproductionsInformationSongsbutton.Size = new System.Drawing.Size(78, 19);
+            this.ReproductionsInformationSongsbutton.TabIndex = 20;
+            this.ReproductionsInformationSongsbutton.Text = "Reproducciones";
+            this.ReproductionsInformationSongsbutton.UseVisualStyleBackColor = true;
+            this.ReproductionsInformationSongsbutton.Click += new System.EventHandler(this.ReproductionsInformationSongsbutton_Click);
+            // 
+            // QualificationInformationSongsbutton
+            // 
+            this.QualificationInformationSongsbutton.Location = new System.Drawing.Point(40, 291);
+            this.QualificationInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.QualificationInformationSongsbutton.Name = "QualificationInformationSongsbutton";
+            this.QualificationInformationSongsbutton.Size = new System.Drawing.Size(67, 19);
+            this.QualificationInformationSongsbutton.TabIndex = 19;
+            this.QualificationInformationSongsbutton.Text = "Calificación";
+            this.QualificationInformationSongsbutton.UseVisualStyleBackColor = true;
+            this.QualificationInformationSongsbutton.Click += new System.EventHandler(this.QualificationInformationSongsbutton_Click);
+            // 
+            // YearInformationSongsbutton
+            // 
+            this.YearInformationSongsbutton.Location = new System.Drawing.Point(222, 230);
+            this.YearInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.YearInformationSongsbutton.Name = "YearInformationSongsbutton";
+            this.YearInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.YearInformationSongsbutton.TabIndex = 18;
+            this.YearInformationSongsbutton.Text = "Año";
+            this.YearInformationSongsbutton.UseVisualStyleBackColor = true;
+            this.YearInformationSongsbutton.Click += new System.EventHandler(this.YearInformationSongsbutton_Click);
+            // 
+            // LyricsInformationSongsbutton
+            // 
+            this.LyricsInformationSongsbutton.Location = new System.Drawing.Point(130, 230);
+            this.LyricsInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.LyricsInformationSongsbutton.Name = "LyricsInformationSongsbutton";
+            this.LyricsInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.LyricsInformationSongsbutton.TabIndex = 17;
+            this.LyricsInformationSongsbutton.Text = "Letra";
+            this.LyricsInformationSongsbutton.UseVisualStyleBackColor = true;
+            this.LyricsInformationSongsbutton.Click += new System.EventHandler(this.LyricsInformationSongsbutton_Click);
+            // 
+            // StudioInformationSongsbutton
+            // 
+            this.StudioInformationSongsbutton.Location = new System.Drawing.Point(40, 230);
+            this.StudioInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.StudioInformationSongsbutton.Name = "StudioInformationSongsbutton";
+            this.StudioInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.StudioInformationSongsbutton.TabIndex = 16;
+            this.StudioInformationSongsbutton.Text = "Estudio";
+            this.StudioInformationSongsbutton.UseVisualStyleBackColor = true;
+            this.StudioInformationSongsbutton.Click += new System.EventHandler(this.StudioInformationSongsbutton_Click);
+            // 
+            // CompositorInformationSongsbutton
+            // 
+            this.CompositorInformationSongsbutton.Location = new System.Drawing.Point(222, 175);
+            this.CompositorInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.CompositorInformationSongsbutton.Name = "CompositorInformationSongsbutton";
+            this.CompositorInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.CompositorInformationSongsbutton.TabIndex = 15;
+            this.CompositorInformationSongsbutton.Text = "Compositor";
+            this.CompositorInformationSongsbutton.UseVisualStyleBackColor = true;
+            this.CompositorInformationSongsbutton.Click += new System.EventHandler(this.CompositorInformationSongsbutton_Click);
+            // 
+            // GenderInformationSongsbutton
+            // 
+            this.GenderInformationSongsbutton.Location = new System.Drawing.Point(130, 175);
+            this.GenderInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.GenderInformationSongsbutton.Name = "GenderInformationSongsbutton";
+            this.GenderInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.GenderInformationSongsbutton.TabIndex = 14;
+            this.GenderInformationSongsbutton.Text = "Género";
+            this.GenderInformationSongsbutton.UseVisualStyleBackColor = true;
+            this.GenderInformationSongsbutton.Click += new System.EventHandler(this.GenderInformationSongsbutton_Click);
+            // 
+            // ResultInformationSongsrichTextBox
+            // 
+            this.ResultInformationSongsrichTextBox.Location = new System.Drawing.Point(321, 110);
+            this.ResultInformationSongsrichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ResultInformationSongsrichTextBox.Name = "ResultInformationSongsrichTextBox";
+            this.ResultInformationSongsrichTextBox.Size = new System.Drawing.Size(195, 200);
+            this.ResultInformationSongsrichTextBox.TabIndex = 13;
+            this.ResultInformationSongsrichTextBox.Text = "";
+            // 
+            // BackInformationSongsbutton
+            // 
+            this.BackInformationSongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackInformationSongsbutton.Name = "BackInformationSongsbutton";
+            this.BackInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackInformationSongsbutton.TabIndex = 12;
+            this.BackInformationSongsbutton.Text = "Volver";
+            this.BackInformationSongsbutton.UseVisualStyleBackColor = true;
+            this.BackInformationSongsbutton.Click += new System.EventHandler(this.BackInformationSongsbutton_Click);
+            // 
+            // ArtistInformationSongsbutton
+            // 
+            this.ArtistInformationSongsbutton.Location = new System.Drawing.Point(40, 175);
+            this.ArtistInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.ArtistInformationSongsbutton.Name = "ArtistInformationSongsbutton";
+            this.ArtistInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.ArtistInformationSongsbutton.TabIndex = 3;
+            this.ArtistInformationSongsbutton.Text = "Artista";
+            this.ArtistInformationSongsbutton.UseVisualStyleBackColor = true;
+            this.ArtistInformationSongsbutton.Click += new System.EventHandler(this.ArtistInformationSongsbutton_Click);
+            // 
+            // InsertSongNameInformationSongscomboBox
+            // 
+            this.InsertSongNameInformationSongscomboBox.FormattingEnabled = true;
+            this.InsertSongNameInformationSongscomboBox.Location = new System.Drawing.Point(188, 110);
+            this.InsertSongNameInformationSongscomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertSongNameInformationSongscomboBox.Name = "InsertSongNameInformationSongscomboBox";
+            this.InsertSongNameInformationSongscomboBox.Size = new System.Drawing.Size(92, 21);
+            this.InsertSongNameInformationSongscomboBox.TabIndex = 2;
+            // 
+            // InsertSongNameInformationSongslabel
+            // 
+            this.InsertSongNameInformationSongslabel.AutoSize = true;
+            this.InsertSongNameInformationSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertSongNameInformationSongslabel.Location = new System.Drawing.Point(38, 113);
+            this.InsertSongNameInformationSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertSongNameInformationSongslabel.Name = "InsertSongNameInformationSongslabel";
+            this.InsertSongNameInformationSongslabel.Size = new System.Drawing.Size(114, 13);
+            this.InsertSongNameInformationSongslabel.TabIndex = 1;
+            this.InsertSongNameInformationSongslabel.Text = "Nombre de la canción:";
+            // 
+            // InformationSongslabel
+            // 
+            this.InformationSongslabel.AutoSize = true;
+            this.InformationSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InformationSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InformationSongslabel.Location = new System.Drawing.Point(334, 167);
+            this.InformationSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InformationSongslabel.Name = "InformationSongslabel";
+            this.InformationSongslabel.Size = new System.Drawing.Size(156, 31);
+            this.InformationSongslabel.TabIndex = 0;
+            this.InformationSongslabel.Text = "Información";
+            // 
+            // InsertQualificationEvaluationlabel
+            // 
+            this.InsertQualificationEvaluationlabel.AutoSize = true;
+            this.InsertQualificationEvaluationlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertQualificationEvaluationlabel.Location = new System.Drawing.Point(34, 97);
+            this.InsertQualificationEvaluationlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertQualificationEvaluationlabel.Name = "InsertQualificationEvaluationlabel";
+            this.InsertQualificationEvaluationlabel.Size = new System.Drawing.Size(191, 13);
+            this.InsertQualificationEvaluationlabel.TabIndex = 6;
+            this.InsertQualificationEvaluationlabel.Text = "Ingrese la nota a usar como parámetro:";
+            // 
+            // ResultEvaluationrichTextBox
+            // 
+            this.ResultEvaluationrichTextBox.Location = new System.Drawing.Point(382, 76);
+            this.ResultEvaluationrichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ResultEvaluationrichTextBox.Name = "ResultEvaluationrichTextBox";
+            this.ResultEvaluationrichTextBox.Size = new System.Drawing.Size(200, 171);
+            this.ResultEvaluationrichTextBox.TabIndex = 5;
+            this.ResultEvaluationrichTextBox.Text = "";
+            // 
+            // InsertSignEvaluationcomboBox
+            // 
+            this.InsertSignEvaluationcomboBox.FormattingEnabled = true;
+            this.InsertSignEvaluationcomboBox.Location = new System.Drawing.Point(36, 225);
+            this.InsertSignEvaluationcomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertSignEvaluationcomboBox.Name = "InsertSignEvaluationcomboBox";
+            this.InsertSignEvaluationcomboBox.Size = new System.Drawing.Size(92, 21);
+            this.InsertSignEvaluationcomboBox.TabIndex = 4;
+            // 
+            // InsertQualificationEvaluationcomboBox
+            // 
+            this.InsertQualificationEvaluationcomboBox.FormattingEnabled = true;
+            this.InsertQualificationEvaluationcomboBox.Location = new System.Drawing.Point(36, 140);
+            this.InsertQualificationEvaluationcomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertQualificationEvaluationcomboBox.Name = "InsertQualificationEvaluationcomboBox";
+            this.InsertQualificationEvaluationcomboBox.Size = new System.Drawing.Size(92, 21);
+            this.InsertQualificationEvaluationcomboBox.TabIndex = 3;
+            this.InsertQualificationEvaluationcomboBox.SelectedIndexChanged += new System.EventHandler(this.InsertQualificationEvaluationcomboBox_SelectedIndexChanged);
+            // 
+            // SearchEvaluationbutton
+            // 
+            this.SearchEvaluationbutton.Location = new System.Drawing.Point(410, 252);
+            this.SearchEvaluationbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.SearchEvaluationbutton.Name = "SearchEvaluationbutton";
+            this.SearchEvaluationbutton.Size = new System.Drawing.Size(117, 43);
+            this.SearchEvaluationbutton.TabIndex = 2;
+            this.SearchEvaluationbutton.Text = "Buscar";
+            this.SearchEvaluationbutton.UseVisualStyleBackColor = true;
+            this.SearchEvaluationbutton.Click += new System.EventHandler(this.SearchEvaluationbutton_Click);
+            // 
+            // BackEvaluationbutton
+            // 
+            this.BackEvaluationbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackEvaluationbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackEvaluationbutton.Name = "BackEvaluationbutton";
+            this.BackEvaluationbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackEvaluationbutton.TabIndex = 1;
+            this.BackEvaluationbutton.Text = "Volver";
+            this.BackEvaluationbutton.UseVisualStyleBackColor = true;
+            this.BackEvaluationbutton.Click += new System.EventHandler(this.BackEvaluationbutton_Click);
+            // 
+            // Evaluationlabel
+            // 
+            this.Evaluationlabel.AutoSize = true;
+            this.Evaluationlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Evaluationlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.Evaluationlabel.Location = new System.Drawing.Point(218, 18);
+            this.Evaluationlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Evaluationlabel.Name = "Evaluationlabel";
+            this.Evaluationlabel.Size = new System.Drawing.Size(147, 31);
+            this.Evaluationlabel.TabIndex = 0;
+            this.Evaluationlabel.Text = "Evaluación";
+            // 
+            // Artistpanel
+            // 
+            this.Artistpanel.Controls.Add(this.Message2label);
+            this.Artistpanel.Controls.Add(this.Message1label);
+            this.Artistpanel.Controls.Add(this.InsertAnswerArtisttextBox);
+            this.Artistpanel.Controls.Add(this.ResultArtistrichTextBox);
+            this.Artistpanel.Controls.Add(this.GenderArtistbutton);
+            this.Artistpanel.Controls.Add(this.AgeArtistbutton);
+            this.Artistpanel.Controls.Add(this.BackArtistbutton);
+            this.Artistpanel.Controls.Add(this.Artistlabel);
+            this.Artistpanel.Location = new System.Drawing.Point(309, 266);
+            this.Artistpanel.Margin = new System.Windows.Forms.Padding(2);
+            this.Artistpanel.Name = "Artistpanel";
+            this.Artistpanel.Size = new System.Drawing.Size(102, 38);
+            this.Artistpanel.TabIndex = 2;
+            // 
+            // Message2label
+            // 
+            this.Message2label.AutoSize = true;
+            this.Message2label.ForeColor = System.Drawing.SystemColors.Window;
+            this.Message2label.Location = new System.Drawing.Point(166, 220);
+            this.Message2label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Message2label.Name = "Message2label";
+            this.Message2label.Size = new System.Drawing.Size(193, 13);
+            this.Message2label.TabIndex = 7;
+            this.Message2label.Text = "Ingrese el género solicitado aquí arriba:";
+            // 
+            // Message1label
+            // 
+            this.Message1label.AutoSize = true;
+            this.Message1label.ForeColor = System.Drawing.SystemColors.Window;
+            this.Message1label.Location = new System.Drawing.Point(166, 120);
+            this.Message1label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Message1label.Name = "Message1label";
+            this.Message1label.Size = new System.Drawing.Size(184, 13);
+            this.Message1label.TabIndex = 6;
+            this.Message1label.Text = "Ingrese la edad solicitada aquí abajo:";
+            // 
+            // InsertAnswerArtisttextBox
+            // 
+            this.InsertAnswerArtisttextBox.Location = new System.Drawing.Point(169, 166);
+            this.InsertAnswerArtisttextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertAnswerArtisttextBox.Name = "InsertAnswerArtisttextBox";
+            this.InsertAnswerArtisttextBox.Size = new System.Drawing.Size(181, 20);
+            this.InsertAnswerArtisttextBox.TabIndex = 5;
+            // 
+            // ResultArtistrichTextBox
+            // 
+            this.ResultArtistrichTextBox.Location = new System.Drawing.Point(392, 72);
+            this.ResultArtistrichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ResultArtistrichTextBox.Name = "ResultArtistrichTextBox";
+            this.ResultArtistrichTextBox.Size = new System.Drawing.Size(170, 201);
+            this.ResultArtistrichTextBox.TabIndex = 4;
+            this.ResultArtistrichTextBox.Text = "";
+            // 
+            // GenderArtistbutton
+            // 
+            this.GenderArtistbutton.Location = new System.Drawing.Point(75, 206);
+            this.GenderArtistbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.GenderArtistbutton.Name = "GenderArtistbutton";
+            this.GenderArtistbutton.Size = new System.Drawing.Size(72, 39);
+            this.GenderArtistbutton.TabIndex = 3;
+            this.GenderArtistbutton.Text = "Por género musical";
+            this.GenderArtistbutton.UseVisualStyleBackColor = true;
+            this.GenderArtistbutton.Click += new System.EventHandler(this.GenderArtistbutton_Click);
+            // 
+            // AgeArtistbutton
+            // 
+            this.AgeArtistbutton.Location = new System.Drawing.Point(75, 110);
+            this.AgeArtistbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.AgeArtistbutton.Name = "AgeArtistbutton";
+            this.AgeArtistbutton.Size = new System.Drawing.Size(69, 37);
+            this.AgeArtistbutton.TabIndex = 2;
+            this.AgeArtistbutton.Text = "Por edad";
+            this.AgeArtistbutton.UseVisualStyleBackColor = true;
+            this.AgeArtistbutton.Click += new System.EventHandler(this.AgeArtistbutton_Click);
+            // 
+            // BackArtistbutton
+            // 
+            this.BackArtistbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackArtistbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackArtistbutton.Name = "BackArtistbutton";
+            this.BackArtistbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackArtistbutton.TabIndex = 1;
+            this.BackArtistbutton.Text = "Volver";
+            this.BackArtistbutton.UseVisualStyleBackColor = true;
+            this.BackArtistbutton.Click += new System.EventHandler(this.BackArtistbutton_Click);
+            // 
+            // Artistlabel
+            // 
+            this.Artistlabel.AutoSize = true;
+            this.Artistlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Artistlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.Artistlabel.Location = new System.Drawing.Point(239, 18);
+            this.Artistlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Artistlabel.Name = "Artistlabel";
+            this.Artistlabel.Size = new System.Drawing.Size(92, 31);
+            this.Artistlabel.TabIndex = 0;
+            this.Artistlabel.Text = "Artista";
+            // 
+            // SeePlaylistSongspanel
+            // 
+            this.SeePlaylistSongspanel.Controls.Add(this.SeeSeePlaylistSongsbutton);
+            this.SeePlaylistSongspanel.Controls.Add(this.ResultSeePlaylistSongsrichTextBox);
+            this.SeePlaylistSongspanel.Controls.Add(this.InsertPlaylistNameSeePlaylistSongscomboBox);
+            this.SeePlaylistSongspanel.Controls.Add(this.InsertPlaylistNameSeePlaylistSongslabel);
+            this.SeePlaylistSongspanel.Controls.Add(this.SeePlaylistSongslabel);
+            this.SeePlaylistSongspanel.Controls.Add(this.BackSeePlaylistSongsbutton);
+            this.SeePlaylistSongspanel.Location = new System.Drawing.Point(409, 317);
+            this.SeePlaylistSongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.SeePlaylistSongspanel.Name = "SeePlaylistSongspanel";
+            this.SeePlaylistSongspanel.Size = new System.Drawing.Size(57, 48);
+            this.SeePlaylistSongspanel.TabIndex = 12;
+            // 
+            // SeeSeePlaylistSongsbutton
+            // 
+            this.SeeSeePlaylistSongsbutton.Location = new System.Drawing.Point(130, 210);
+            this.SeeSeePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.SeeSeePlaylistSongsbutton.Name = "SeeSeePlaylistSongsbutton";
+            this.SeeSeePlaylistSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.SeeSeePlaylistSongsbutton.TabIndex = 5;
+            this.SeeSeePlaylistSongsbutton.Text = "Ver";
+            this.SeeSeePlaylistSongsbutton.UseVisualStyleBackColor = true;
+            this.SeeSeePlaylistSongsbutton.Click += new System.EventHandler(this.SeeSeePlaylistSongsbutton_Click);
+            // 
+            // ResultSeePlaylistSongsrichTextBox
+            // 
+            this.ResultSeePlaylistSongsrichTextBox.Location = new System.Drawing.Point(364, 89);
+            this.ResultSeePlaylistSongsrichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ResultSeePlaylistSongsrichTextBox.Name = "ResultSeePlaylistSongsrichTextBox";
+            this.ResultSeePlaylistSongsrichTextBox.Size = new System.Drawing.Size(181, 184);
+            this.ResultSeePlaylistSongsrichTextBox.TabIndex = 4;
+            this.ResultSeePlaylistSongsrichTextBox.Text = "";
+            // 
+            // InsertPlaylistNameSeePlaylistSongscomboBox
+            // 
+            this.InsertPlaylistNameSeePlaylistSongscomboBox.FormattingEnabled = true;
+            this.InsertPlaylistNameSeePlaylistSongscomboBox.Location = new System.Drawing.Point(165, 162);
+            this.InsertPlaylistNameSeePlaylistSongscomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertPlaylistNameSeePlaylistSongscomboBox.Name = "InsertPlaylistNameSeePlaylistSongscomboBox";
+            this.InsertPlaylistNameSeePlaylistSongscomboBox.Size = new System.Drawing.Size(92, 21);
+            this.InsertPlaylistNameSeePlaylistSongscomboBox.TabIndex = 3;
+            // 
+            // InsertPlaylistNameSeePlaylistSongslabel
+            // 
+            this.InsertPlaylistNameSeePlaylistSongslabel.AutoSize = true;
+            this.InsertPlaylistNameSeePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertPlaylistNameSeePlaylistSongslabel.Location = new System.Drawing.Point(42, 165);
+            this.InsertPlaylistNameSeePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertPlaylistNameSeePlaylistSongslabel.Name = "InsertPlaylistNameSeePlaylistSongslabel";
+            this.InsertPlaylistNameSeePlaylistSongslabel.Size = new System.Drawing.Size(108, 13);
+            this.InsertPlaylistNameSeePlaylistSongslabel.TabIndex = 2;
+            this.InsertPlaylistNameSeePlaylistSongslabel.Text = "Nombre de la Playlist:";
+            // 
+            // SeePlaylistSongslabel
+            // 
+            this.SeePlaylistSongslabel.AutoSize = true;
+            this.SeePlaylistSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.SeePlaylistSongslabel.Location = new System.Drawing.Point(229, 15);
+            this.SeePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SeePlaylistSongslabel.Name = "SeePlaylistSongslabel";
+            this.SeePlaylistSongslabel.Size = new System.Drawing.Size(150, 31);
+            this.SeePlaylistSongslabel.TabIndex = 1;
+            this.SeePlaylistSongslabel.Text = "Ver Playlist";
+            // 
+            // BackSeePlaylistSongsbutton
+            // 
+            this.BackSeePlaylistSongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackSeePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackSeePlaylistSongsbutton.Name = "BackSeePlaylistSongsbutton";
+            this.BackSeePlaylistSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackSeePlaylistSongsbutton.TabIndex = 0;
+            this.BackSeePlaylistSongsbutton.Text = "Volver";
+            this.BackSeePlaylistSongsbutton.UseVisualStyleBackColor = true;
+            this.BackSeePlaylistSongsbutton.Click += new System.EventHandler(this.BackSeePlaylistSongsbutton_Click);
+            // 
+            // SeeFavouriteSongspanel
+            // 
+            this.SeeFavouriteSongspanel.Controls.Add(this.ResultSeeFavouriteSongsrichTextBox);
+            this.SeeFavouriteSongspanel.Controls.Add(this.SeeFavouriteSongslabel);
+            this.SeeFavouriteSongspanel.Controls.Add(this.BackSeeFavouriteSongsbutton);
+            this.SeeFavouriteSongspanel.Location = new System.Drawing.Point(426, 89);
+            this.SeeFavouriteSongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.SeeFavouriteSongspanel.Name = "SeeFavouriteSongspanel";
+            this.SeeFavouriteSongspanel.Size = new System.Drawing.Size(91, 44);
+            this.SeeFavouriteSongspanel.TabIndex = 6;
+            // 
+            // ResultSeeFavouriteSongsrichTextBox
+            // 
+            this.ResultSeeFavouriteSongsrichTextBox.Location = new System.Drawing.Point(171, 75);
+            this.ResultSeeFavouriteSongsrichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ResultSeeFavouriteSongsrichTextBox.Name = "ResultSeeFavouriteSongsrichTextBox";
+            this.ResultSeeFavouriteSongsrichTextBox.Size = new System.Drawing.Size(266, 204);
+            this.ResultSeeFavouriteSongsrichTextBox.TabIndex = 2;
+            this.ResultSeeFavouriteSongsrichTextBox.Text = "";
+            // 
+            // SeeFavouriteSongslabel
+            // 
+            this.SeeFavouriteSongslabel.AutoSize = true;
+            this.SeeFavouriteSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeeFavouriteSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.SeeFavouriteSongslabel.Location = new System.Drawing.Point(218, 18);
+            this.SeeFavouriteSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SeeFavouriteSongslabel.Name = "SeeFavouriteSongslabel";
+            this.SeeFavouriteSongslabel.Size = new System.Drawing.Size(176, 31);
+            this.SeeFavouriteSongslabel.TabIndex = 1;
+            this.SeeFavouriteSongslabel.Text = "Ver Favoritos";
+            // 
+            // BackSeeFavouriteSongsbutton
+            // 
+            this.BackSeeFavouriteSongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackSeeFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackSeeFavouriteSongsbutton.Name = "BackSeeFavouriteSongsbutton";
+            this.BackSeeFavouriteSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackSeeFavouriteSongsbutton.TabIndex = 0;
+            this.BackSeeFavouriteSongsbutton.Text = "Volver";
+            this.BackSeeFavouriteSongsbutton.UseVisualStyleBackColor = true;
+            this.BackSeeFavouriteSongsbutton.Click += new System.EventHandler(this.BackSeeFavouriteSongsbutton_Click);
+            // 
+            // Keywordpanel
+            // 
+            this.Keywordpanel.Controls.Add(this.Keywordlabel);
+            this.Keywordpanel.Controls.Add(this.BackKeywordbutton);
+            this.Keywordpanel.Location = new System.Drawing.Point(433, 233);
+            this.Keywordpanel.Margin = new System.Windows.Forms.Padding(2);
+            this.Keywordpanel.Name = "Keywordpanel";
+            this.Keywordpanel.Size = new System.Drawing.Size(56, 68);
+            this.Keywordpanel.TabIndex = 7;
+            // 
+            // Keywordlabel
+            // 
+            this.Keywordlabel.AutoSize = true;
+            this.Keywordlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Keywordlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.Keywordlabel.Location = new System.Drawing.Point(208, 18);
+            this.Keywordlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Keywordlabel.Name = "Keywordlabel";
+            this.Keywordlabel.Size = new System.Drawing.Size(198, 31);
+            this.Keywordlabel.TabIndex = 1;
+            this.Keywordlabel.Text = "Palabras Clave";
+            // 
+            // BackKeywordbutton
+            // 
+            this.BackKeywordbutton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BackKeywordbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackKeywordbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackKeywordbutton.Name = "BackKeywordbutton";
+            this.BackKeywordbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackKeywordbutton.TabIndex = 0;
+            this.BackKeywordbutton.Text = "Volver";
+            this.BackKeywordbutton.UseVisualStyleBackColor = true;
+            this.BackKeywordbutton.Click += new System.EventHandler(this.BackKeywordbutton_Click);
+            // 
+            // CategoriesSearchSongsbutton
+            // 
+            this.CategoriesSearchSongsbutton.Location = new System.Drawing.Point(294, 199);
+            this.CategoriesSearchSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.CategoriesSearchSongsbutton.Name = "CategoriesSearchSongsbutton";
+            this.CategoriesSearchSongsbutton.Size = new System.Drawing.Size(71, 40);
+            this.CategoriesSearchSongsbutton.TabIndex = 6;
+            this.CategoriesSearchSongsbutton.Text = "Por Categoría";
+            this.CategoriesSearchSongsbutton.UseVisualStyleBackColor = true;
+            this.CategoriesSearchSongsbutton.Click += new System.EventHandler(this.CategoriesSearchSongsbutton_Click);
+            // 
+            // EvaluationSearchSongsbutton
+            // 
+            this.EvaluationSearchSongsbutton.Location = new System.Drawing.Point(192, 202);
+            this.EvaluationSearchSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.EvaluationSearchSongsbutton.Name = "EvaluationSearchSongsbutton";
+            this.EvaluationSearchSongsbutton.Size = new System.Drawing.Size(69, 40);
+            this.EvaluationSearchSongsbutton.TabIndex = 5;
+            this.EvaluationSearchSongsbutton.Text = "Por Evaluación";
+            this.EvaluationSearchSongsbutton.UseVisualStyleBackColor = true;
+            this.EvaluationSearchSongsbutton.Click += new System.EventHandler(this.EvaluationSearchSongsbutton_Click);
+            // 
+            // ArtistSearchSongsbutton
+            // 
+            this.ArtistSearchSongsbutton.Location = new System.Drawing.Point(298, 124);
+            this.ArtistSearchSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.ArtistSearchSongsbutton.Name = "ArtistSearchSongsbutton";
+            this.ArtistSearchSongsbutton.Size = new System.Drawing.Size(57, 40);
+            this.ArtistSearchSongsbutton.TabIndex = 4;
+            this.ArtistSearchSongsbutton.Text = "Por Artista";
+            this.ArtistSearchSongsbutton.UseVisualStyleBackColor = true;
+            this.ArtistSearchSongsbutton.Click += new System.EventHandler(this.ArtistSearchSongsbutton_Click);
+            // 
+            // KeywordSearchSongsbutton
+            // 
+            this.KeywordSearchSongsbutton.Location = new System.Drawing.Point(192, 128);
+            this.KeywordSearchSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.KeywordSearchSongsbutton.Name = "KeywordSearchSongsbutton";
+            this.KeywordSearchSongsbutton.Size = new System.Drawing.Size(75, 35);
+            this.KeywordSearchSongsbutton.TabIndex = 3;
+            this.KeywordSearchSongsbutton.Text = "Por palabras clave";
+            this.KeywordSearchSongsbutton.UseVisualStyleBackColor = true;
+            this.KeywordSearchSongsbutton.Click += new System.EventHandler(this.KeywordSearchSongsbutton_Click);
+            // 
+            // BackSearchSongsbutton
+            // 
+            this.BackSearchSongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackSearchSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackSearchSongsbutton.Name = "BackSearchSongsbutton";
+            this.BackSearchSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackSearchSongsbutton.TabIndex = 1;
+            this.BackSearchSongsbutton.Text = "Volver";
+            this.BackSearchSongsbutton.UseVisualStyleBackColor = true;
+            this.BackSearchSongsbutton.Click += new System.EventHandler(this.BackSearchSongsbutton_Click);
+            // 
+            // SearchSongslabel
+            // 
+            this.SearchSongslabel.AutoSize = true;
+            this.SearchSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.SearchSongslabel.Location = new System.Drawing.Point(187, 18);
+            this.SearchSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SearchSongslabel.Name = "SearchSongslabel";
+            this.SearchSongslabel.Size = new System.Drawing.Size(206, 31);
+            this.SearchSongslabel.TabIndex = 0;
+            this.SearchSongslabel.Text = "Buscar Canción";
+            // 
+            // QualifySongspanel
+            // 
+            this.QualifySongspanel.Controls.Add(this.InsertSongNameQualifySongscomboBox);
+            this.QualifySongspanel.Controls.Add(this.InsertQualificationQualifySongscomboBox);
+            this.QualifySongspanel.Controls.Add(this.QualifyQualifySongsbutton);
+            this.QualifySongspanel.Controls.Add(this.InsertQualificationQualifySongslabel);
+            this.QualifySongspanel.Controls.Add(this.InsertSongNameQualifySongslabel);
+            this.QualifySongspanel.Controls.Add(this.BackQualifySongsbutton);
+            this.QualifySongspanel.Controls.Add(this.QualifySongslabel);
+            this.QualifySongspanel.Location = new System.Drawing.Point(106, 75);
+            this.QualifySongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.QualifySongspanel.Name = "QualifySongspanel";
+            this.QualifySongspanel.Size = new System.Drawing.Size(49, 61);
+            this.QualifySongspanel.TabIndex = 8;
+            // 
+            // InsertSongNameQualifySongscomboBox
+            // 
+            this.InsertSongNameQualifySongscomboBox.FormattingEnabled = true;
+            this.InsertSongNameQualifySongscomboBox.Location = new System.Drawing.Point(279, 120);
+            this.InsertSongNameQualifySongscomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertSongNameQualifySongscomboBox.Name = "InsertSongNameQualifySongscomboBox";
+            this.InsertSongNameQualifySongscomboBox.Size = new System.Drawing.Size(92, 21);
+            this.InsertSongNameQualifySongscomboBox.TabIndex = 9;
+            // 
+            // InsertQualificationQualifySongscomboBox
+            // 
+            this.InsertQualificationQualifySongscomboBox.FormattingEnabled = true;
+            this.InsertQualificationQualifySongscomboBox.Location = new System.Drawing.Point(279, 180);
+            this.InsertQualificationQualifySongscomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertQualificationQualifySongscomboBox.Name = "InsertQualificationQualifySongscomboBox";
+            this.InsertQualificationQualifySongscomboBox.Size = new System.Drawing.Size(92, 21);
+            this.InsertQualificationQualifySongscomboBox.TabIndex = 6;
+            // 
+            // QualifyQualifySongsbutton
+            // 
+            this.QualifyQualifySongsbutton.Location = new System.Drawing.Point(274, 254);
+            this.QualifyQualifySongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.QualifyQualifySongsbutton.Name = "QualifyQualifySongsbutton";
+            this.QualifyQualifySongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.QualifyQualifySongsbutton.TabIndex = 5;
+            this.QualifyQualifySongsbutton.Text = "Calificar";
+            this.QualifyQualifySongsbutton.UseVisualStyleBackColor = true;
+            this.QualifyQualifySongsbutton.Click += new System.EventHandler(this.QualifyQualifySongsbutton_Click);
+            // 
+            // InsertQualificationQualifySongslabel
+            // 
+            this.InsertQualificationQualifySongslabel.AutoSize = true;
+            this.InsertQualificationQualifySongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertQualificationQualifySongslabel.Location = new System.Drawing.Point(160, 181);
+            this.InsertQualificationQualifySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertQualificationQualifySongslabel.Name = "InsertQualificationQualifySongslabel";
+            this.InsertQualificationQualifySongslabel.Size = new System.Drawing.Size(94, 13);
+            this.InsertQualificationQualifySongslabel.TabIndex = 4;
+            this.InsertQualificationQualifySongslabel.Text = "Calificación (1-10):";
+            // 
+            // InsertSongNameQualifySongslabel
+            // 
+            this.InsertSongNameQualifySongslabel.AutoSize = true;
+            this.InsertSongNameQualifySongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertSongNameQualifySongslabel.Location = new System.Drawing.Point(160, 122);
+            this.InsertSongNameQualifySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertSongNameQualifySongslabel.Name = "InsertSongNameQualifySongslabel";
+            this.InsertSongNameQualifySongslabel.Size = new System.Drawing.Size(94, 13);
+            this.InsertSongNameQualifySongslabel.TabIndex = 3;
+            this.InsertSongNameQualifySongslabel.Text = "Escoja la canción:";
+            // 
+            // BackQualifySongsbutton
+            // 
+            this.BackQualifySongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackQualifySongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackQualifySongsbutton.Name = "BackQualifySongsbutton";
+            this.BackQualifySongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackQualifySongsbutton.TabIndex = 1;
+            this.BackQualifySongsbutton.Text = "Volver";
+            this.BackQualifySongsbutton.UseVisualStyleBackColor = true;
+            this.BackQualifySongsbutton.Click += new System.EventHandler(this.BackQualifySongsbutton_Click);
+            // 
+            // QualifySongslabel
+            // 
+            this.QualifySongslabel.AutoSize = true;
+            this.QualifySongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QualifySongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.QualifySongslabel.Location = new System.Drawing.Point(181, 18);
+            this.QualifySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.QualifySongslabel.Name = "QualifySongslabel";
+            this.QualifySongslabel.Size = new System.Drawing.Size(220, 31);
+            this.QualifySongslabel.TabIndex = 0;
+            this.QualifySongslabel.Text = "Calificar Canción";
+            // 
+            // AddToPlaylistSongspanel
+            // 
+            this.AddToPlaylistSongspanel.Controls.Add(this.InsertSongNameAddToPlaylistSongscomboBox);
+            this.AddToPlaylistSongspanel.Controls.Add(this.InsertPlaylistNameAddToPlaylistSongscomboBox);
+            this.AddToPlaylistSongspanel.Controls.Add(this.MessageAddToPlaylistSongslabel);
+            this.AddToPlaylistSongspanel.Controls.Add(this.AddAddToPlaylistSongsbutton);
+            this.AddToPlaylistSongspanel.Controls.Add(this.InsertPlaylistNameAddToPlaylistSongslabel);
+            this.AddToPlaylistSongspanel.Controls.Add(this.InsertSongNameAddToPlaylistSongslabel);
+            this.AddToPlaylistSongspanel.Controls.Add(this.AddToPlaylistSongslabel);
+            this.AddToPlaylistSongspanel.Controls.Add(this.BackAddToPlaylistSongsbutton);
+            this.AddToPlaylistSongspanel.Location = new System.Drawing.Point(449, 147);
+            this.AddToPlaylistSongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.AddToPlaylistSongspanel.Name = "AddToPlaylistSongspanel";
+            this.AddToPlaylistSongspanel.Size = new System.Drawing.Size(56, 81);
+            this.AddToPlaylistSongspanel.TabIndex = 7;
+            // 
+            // InsertSongNameAddToPlaylistSongscomboBox
+            // 
+            this.InsertSongNameAddToPlaylistSongscomboBox.FormattingEnabled = true;
+            this.InsertSongNameAddToPlaylistSongscomboBox.Location = new System.Drawing.Point(289, 141);
+            this.InsertSongNameAddToPlaylistSongscomboBox.Name = "InsertSongNameAddToPlaylistSongscomboBox";
+            this.InsertSongNameAddToPlaylistSongscomboBox.Size = new System.Drawing.Size(121, 21);
+            this.InsertSongNameAddToPlaylistSongscomboBox.TabIndex = 11;
+            // 
+            // InsertPlaylistNameAddToPlaylistSongscomboBox
+            // 
+            this.InsertPlaylistNameAddToPlaylistSongscomboBox.FormattingEnabled = true;
+            this.InsertPlaylistNameAddToPlaylistSongscomboBox.Location = new System.Drawing.Point(289, 170);
+            this.InsertPlaylistNameAddToPlaylistSongscomboBox.Name = "InsertPlaylistNameAddToPlaylistSongscomboBox";
+            this.InsertPlaylistNameAddToPlaylistSongscomboBox.Size = new System.Drawing.Size(121, 21);
+            this.InsertPlaylistNameAddToPlaylistSongscomboBox.TabIndex = 10;
+            // 
+            // MessageAddToPlaylistSongslabel
+            // 
+            this.MessageAddToPlaylistSongslabel.AutoSize = true;
+            this.MessageAddToPlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.MessageAddToPlaylistSongslabel.Location = new System.Drawing.Point(228, 271);
+            this.MessageAddToPlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MessageAddToPlaylistSongslabel.Name = "MessageAddToPlaylistSongslabel";
+            this.MessageAddToPlaylistSongslabel.Size = new System.Drawing.Size(164, 13);
+            this.MessageAddToPlaylistSongslabel.TabIndex = 9;
+            this.MessageAddToPlaylistSongslabel.Text = "Se añadio la canción a la playlist.";
+            this.MessageAddToPlaylistSongslabel.Visible = false;
+            // 
+            // AddAddToPlaylistSongsbutton
+            // 
+            this.AddAddToPlaylistSongsbutton.Location = new System.Drawing.Point(298, 214);
+            this.AddAddToPlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.AddAddToPlaylistSongsbutton.Name = "AddAddToPlaylistSongsbutton";
+            this.AddAddToPlaylistSongsbutton.Size = new System.Drawing.Size(64, 26);
+            this.AddAddToPlaylistSongsbutton.TabIndex = 8;
+            this.AddAddToPlaylistSongsbutton.Text = "Agregar";
+            this.AddAddToPlaylistSongsbutton.UseVisualStyleBackColor = true;
+            this.AddAddToPlaylistSongsbutton.Click += new System.EventHandler(this.AddAddToPlaylistSongsbutton_Click);
+            // 
+            // InsertPlaylistNameAddToPlaylistSongslabel
+            // 
+            this.InsertPlaylistNameAddToPlaylistSongslabel.AutoSize = true;
+            this.InsertPlaylistNameAddToPlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertPlaylistNameAddToPlaylistSongslabel.Location = new System.Drawing.Point(140, 173);
+            this.InsertPlaylistNameAddToPlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertPlaylistNameAddToPlaylistSongslabel.Name = "InsertPlaylistNameAddToPlaylistSongslabel";
+            this.InsertPlaylistNameAddToPlaylistSongslabel.Size = new System.Drawing.Size(107, 13);
+            this.InsertPlaylistNameAddToPlaylistSongslabel.TabIndex = 4;
+            this.InsertPlaylistNameAddToPlaylistSongslabel.Text = "Nombre de la playlist:";
+            // 
+            // InsertSongNameAddToPlaylistSongslabel
+            // 
+            this.InsertSongNameAddToPlaylistSongslabel.AutoSize = true;
+            this.InsertSongNameAddToPlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertSongNameAddToPlaylistSongslabel.Location = new System.Drawing.Point(140, 144);
+            this.InsertSongNameAddToPlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertSongNameAddToPlaylistSongslabel.Name = "InsertSongNameAddToPlaylistSongslabel";
+            this.InsertSongNameAddToPlaylistSongslabel.Size = new System.Drawing.Size(114, 13);
+            this.InsertSongNameAddToPlaylistSongslabel.TabIndex = 2;
+            this.InsertSongNameAddToPlaylistSongslabel.Text = "Nombre de la canción:";
+            // 
+            // AddToPlaylistSongslabel
+            // 
+            this.AddToPlaylistSongslabel.AutoSize = true;
+            this.AddToPlaylistSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddToPlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.AddToPlaylistSongslabel.Location = new System.Drawing.Point(135, 18);
+            this.AddToPlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.AddToPlaylistSongslabel.Name = "AddToPlaylistSongslabel";
+            this.AddToPlaylistSongslabel.Size = new System.Drawing.Size(333, 31);
+            this.AddToPlaylistSongslabel.TabIndex = 1;
+            this.AddToPlaylistSongslabel.Text = "Agregar Canción a Playlist";
+            // 
+            // BackAddToPlaylistSongsbutton
+            // 
+            this.BackAddToPlaylistSongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackAddToPlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackAddToPlaylistSongsbutton.Name = "BackAddToPlaylistSongsbutton";
+            this.BackAddToPlaylistSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackAddToPlaylistSongsbutton.TabIndex = 0;
+            this.BackAddToPlaylistSongsbutton.Text = "Volver";
+            this.BackAddToPlaylistSongsbutton.UseVisualStyleBackColor = true;
+            this.BackAddToPlaylistSongsbutton.Click += new System.EventHandler(this.BackAddToPlaylistSongsbutton_Click);
+            // 
+            // AddToFavouriteSongspanel
+            // 
+            this.AddToFavouriteSongspanel.Controls.Add(this.MessageAddToFavouriteSongslabel);
+            this.AddToFavouriteSongspanel.Controls.Add(this.AddAddToFavouriteSongsbutton);
+            this.AddToFavouriteSongspanel.Controls.Add(this.InsertSongNameAddToFavouriteSongslabel);
+            this.AddToFavouriteSongspanel.Controls.Add(this.InsertSongNameAddToFavouriteSongscomboBox);
+            this.AddToFavouriteSongspanel.Controls.Add(this.BackAddToFavouriteSongsbutton);
+            this.AddToFavouriteSongspanel.Controls.Add(this.AddToFavouriteSongslabe);
+            this.AddToFavouriteSongspanel.Location = new System.Drawing.Point(17, 275);
+            this.AddToFavouriteSongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.AddToFavouriteSongspanel.Name = "AddToFavouriteSongspanel";
+            this.AddToFavouriteSongspanel.Size = new System.Drawing.Size(67, 76);
+            this.AddToFavouriteSongspanel.TabIndex = 10;
+            // 
+            // MessageAddToFavouriteSongslabel
+            // 
+            this.MessageAddToFavouriteSongslabel.AutoSize = true;
+            this.MessageAddToFavouriteSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.MessageAddToFavouriteSongslabel.Location = new System.Drawing.Point(211, 243);
+            this.MessageAddToFavouriteSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MessageAddToFavouriteSongslabel.Name = "MessageAddToFavouriteSongslabel";
+            this.MessageAddToFavouriteSongslabel.Size = new System.Drawing.Size(183, 13);
+            this.MessageAddToFavouriteSongslabel.TabIndex = 5;
+            this.MessageAddToFavouriteSongslabel.Text = "La canción se añadió correctamente.";
+            this.MessageAddToFavouriteSongslabel.Visible = false;
+            // 
+            // AddAddToFavouriteSongsbutton
+            // 
+            this.AddAddToFavouriteSongsbutton.Location = new System.Drawing.Point(276, 186);
+            this.AddAddToFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.AddAddToFavouriteSongsbutton.Name = "AddAddToFavouriteSongsbutton";
+            this.AddAddToFavouriteSongsbutton.Size = new System.Drawing.Size(60, 24);
+            this.AddAddToFavouriteSongsbutton.TabIndex = 4;
+            this.AddAddToFavouriteSongsbutton.Text = "Agregar";
+            this.AddAddToFavouriteSongsbutton.UseVisualStyleBackColor = true;
+            this.AddAddToFavouriteSongsbutton.Click += new System.EventHandler(this.AddAddToFavouriteSongsbutton_Click);
+            // 
+            // InsertSongNameAddToFavouriteSongslabel
+            // 
+            this.InsertSongNameAddToFavouriteSongslabel.AutoSize = true;
+            this.InsertSongNameAddToFavouriteSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertSongNameAddToFavouriteSongslabel.Location = new System.Drawing.Point(185, 134);
+            this.InsertSongNameAddToFavouriteSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertSongNameAddToFavouriteSongslabel.Name = "InsertSongNameAddToFavouriteSongslabel";
+            this.InsertSongNameAddToFavouriteSongslabel.Size = new System.Drawing.Size(114, 13);
+            this.InsertSongNameAddToFavouriteSongslabel.TabIndex = 3;
+            this.InsertSongNameAddToFavouriteSongslabel.Text = "Nombre de la canción:";
+            // 
+            // InsertSongNameAddToFavouriteSongscomboBox
+            // 
+            this.InsertSongNameAddToFavouriteSongscomboBox.FormattingEnabled = true;
+            this.InsertSongNameAddToFavouriteSongscomboBox.Location = new System.Drawing.Point(321, 134);
+            this.InsertSongNameAddToFavouriteSongscomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertSongNameAddToFavouriteSongscomboBox.Name = "InsertSongNameAddToFavouriteSongscomboBox";
+            this.InsertSongNameAddToFavouriteSongscomboBox.Size = new System.Drawing.Size(92, 21);
+            this.InsertSongNameAddToFavouriteSongscomboBox.TabIndex = 2;
+            // 
+            // BackAddToFavouriteSongsbutton
+            // 
+            this.BackAddToFavouriteSongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackAddToFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackAddToFavouriteSongsbutton.Name = "BackAddToFavouriteSongsbutton";
+            this.BackAddToFavouriteSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackAddToFavouriteSongsbutton.TabIndex = 1;
+            this.BackAddToFavouriteSongsbutton.Text = "Volver";
+            this.BackAddToFavouriteSongsbutton.UseVisualStyleBackColor = true;
+            this.BackAddToFavouriteSongsbutton.Click += new System.EventHandler(this.BackAddToFavouriteSongsbutton_Click);
+            // 
+            // AddToFavouriteSongslabe
+            // 
+            this.AddToFavouriteSongslabe.AutoSize = true;
+            this.AddToFavouriteSongslabe.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddToFavouriteSongslabe.ForeColor = System.Drawing.SystemColors.Window;
+            this.AddToFavouriteSongslabe.Location = new System.Drawing.Point(135, 16);
+            this.AddToFavouriteSongslabe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.AddToFavouriteSongslabe.Name = "AddToFavouriteSongslabe";
+            this.AddToFavouriteSongslabe.Size = new System.Drawing.Size(341, 31);
+            this.AddToFavouriteSongslabe.TabIndex = 0;
+            this.AddToFavouriteSongslabe.Text = "Añadir Canción a Favoritos";
+            // 
+            // CreatePlaylistSongspanel
+            // 
+            this.CreatePlaylistSongspanel.Controls.Add(this.MessageCreatePlaylistSongslabel);
+            this.CreatePlaylistSongspanel.Controls.Add(this.CreateCreatePlaylistSongsbutton);
+            this.CreatePlaylistSongspanel.Controls.Add(this.InsertPlaylistNameCreatePlaylistSongstextBox);
+            this.CreatePlaylistSongspanel.Controls.Add(this.InsertPrivacyCreatePlaylistSongscomboBox);
+            this.CreatePlaylistSongspanel.Controls.Add(this.InsertPrivacyCreatePlaylistSongslabel);
+            this.CreatePlaylistSongspanel.Controls.Add(this.InsertPlaylistNameCreatePlaylistSongslabel);
+            this.CreatePlaylistSongspanel.Controls.Add(this.CreatePlaylistSongslabel);
+            this.CreatePlaylistSongspanel.Controls.Add(this.BackCreatePlaylistSongsbutton);
+            this.CreatePlaylistSongspanel.Location = new System.Drawing.Point(420, 241);
+            this.CreatePlaylistSongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.CreatePlaylistSongspanel.Name = "CreatePlaylistSongspanel";
+            this.CreatePlaylistSongspanel.Size = new System.Drawing.Size(59, 47);
+            this.CreatePlaylistSongspanel.TabIndex = 14;
+            // 
+            // MessageCreatePlaylistSongslabel
+            // 
+            this.MessageCreatePlaylistSongslabel.AutoSize = true;
+            this.MessageCreatePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.MessageCreatePlaylistSongslabel.Location = new System.Drawing.Point(272, 245);
+            this.MessageCreatePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MessageCreatePlaylistSongslabel.Name = "MessageCreatePlaylistSongslabel";
+            this.MessageCreatePlaylistSongslabel.Size = new System.Drawing.Size(124, 13);
+            this.MessageCreatePlaylistSongslabel.TabIndex = 7;
+            this.MessageCreatePlaylistSongslabel.Text = "Playlist creada con éxito.";
+            this.MessageCreatePlaylistSongslabel.Visible = false;
+            // 
+            // CreateCreatePlaylistSongsbutton
+            // 
+            this.CreateCreatePlaylistSongsbutton.Location = new System.Drawing.Point(304, 198);
+            this.CreateCreatePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.CreateCreatePlaylistSongsbutton.Name = "CreateCreatePlaylistSongsbutton";
+            this.CreateCreatePlaylistSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.CreateCreatePlaylistSongsbutton.TabIndex = 6;
+            this.CreateCreatePlaylistSongsbutton.Text = "Crear";
+            this.CreateCreatePlaylistSongsbutton.UseVisualStyleBackColor = true;
+            this.CreateCreatePlaylistSongsbutton.Click += new System.EventHandler(this.CreateCreatePlaylistSongsbutton_Click);
+            // 
+            // InsertPlaylistNameCreatePlaylistSongstextBox
+            // 
+            this.InsertPlaylistNameCreatePlaylistSongstextBox.Location = new System.Drawing.Point(296, 122);
+            this.InsertPlaylistNameCreatePlaylistSongstextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertPlaylistNameCreatePlaylistSongstextBox.Name = "InsertPlaylistNameCreatePlaylistSongstextBox";
+            this.InsertPlaylistNameCreatePlaylistSongstextBox.Size = new System.Drawing.Size(76, 20);
+            this.InsertPlaylistNameCreatePlaylistSongstextBox.TabIndex = 5;
+            this.InsertPlaylistNameCreatePlaylistSongstextBox.TextChanged += new System.EventHandler(this.InsertPlaylistNameCreatePlaylistSongstextBox_TextChanged);
+            // 
+            // InsertPrivacyCreatePlaylistSongscomboBox
+            // 
+            this.InsertPrivacyCreatePlaylistSongscomboBox.FormattingEnabled = true;
+            this.InsertPrivacyCreatePlaylistSongscomboBox.Location = new System.Drawing.Point(294, 156);
+            this.InsertPrivacyCreatePlaylistSongscomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertPrivacyCreatePlaylistSongscomboBox.Name = "InsertPrivacyCreatePlaylistSongscomboBox";
+            this.InsertPrivacyCreatePlaylistSongscomboBox.Size = new System.Drawing.Size(92, 21);
+            this.InsertPrivacyCreatePlaylistSongscomboBox.TabIndex = 4;
+            // 
+            // InsertPrivacyCreatePlaylistSongslabel
+            // 
+            this.InsertPrivacyCreatePlaylistSongslabel.AutoSize = true;
+            this.InsertPrivacyCreatePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertPrivacyCreatePlaylistSongslabel.Location = new System.Drawing.Point(166, 155);
+            this.InsertPrivacyCreatePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertPrivacyCreatePlaylistSongslabel.Name = "InsertPrivacyCreatePlaylistSongslabel";
+            this.InsertPrivacyCreatePlaylistSongslabel.Size = new System.Drawing.Size(60, 13);
+            this.InsertPrivacyCreatePlaylistSongslabel.TabIndex = 3;
+            this.InsertPrivacyCreatePlaylistSongslabel.Text = "Privacidad:";
+            // 
+            // InsertPlaylistNameCreatePlaylistSongslabel
+            // 
+            this.InsertPlaylistNameCreatePlaylistSongslabel.AutoSize = true;
+            this.InsertPlaylistNameCreatePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertPlaylistNameCreatePlaylistSongslabel.Location = new System.Drawing.Point(166, 124);
+            this.InsertPlaylistNameCreatePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertPlaylistNameCreatePlaylistSongslabel.Name = "InsertPlaylistNameCreatePlaylistSongslabel";
+            this.InsertPlaylistNameCreatePlaylistSongslabel.Size = new System.Drawing.Size(108, 13);
+            this.InsertPlaylistNameCreatePlaylistSongslabel.TabIndex = 2;
+            this.InsertPlaylistNameCreatePlaylistSongslabel.Text = "Nombre de la Playlist:";
+            // 
+            // CreatePlaylistSongslabel
+            // 
+            this.CreatePlaylistSongslabel.AutoSize = true;
+            this.CreatePlaylistSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreatePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.CreatePlaylistSongslabel.Location = new System.Drawing.Point(213, 15);
+            this.CreatePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CreatePlaylistSongslabel.Name = "CreatePlaylistSongslabel";
+            this.CreatePlaylistSongslabel.Size = new System.Drawing.Size(176, 31);
+            this.CreatePlaylistSongslabel.TabIndex = 1;
+            this.CreatePlaylistSongslabel.Text = "Crear Playlist";
+            // 
+            // BackCreatePlaylistSongsbutton
+            // 
+            this.BackCreatePlaylistSongsbutton.Location = new System.Drawing.Point(535, 337);
+            this.BackCreatePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackCreatePlaylistSongsbutton.Name = "BackCreatePlaylistSongsbutton";
+            this.BackCreatePlaylistSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackCreatePlaylistSongsbutton.TabIndex = 0;
+            this.BackCreatePlaylistSongsbutton.Text = "Volver";
+            this.BackCreatePlaylistSongsbutton.UseVisualStyleBackColor = true;
+            this.BackCreatePlaylistSongsbutton.Click += new System.EventHandler(this.BackCreatePlaylistSongsbutton_Click);
+            // 
+            // BackSongsbutton
+            // 
+            this.BackSongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackSongsbutton.Name = "BackSongsbutton";
+            this.BackSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackSongsbutton.TabIndex = 13;
+            this.BackSongsbutton.Text = "Volver";
+            this.BackSongsbutton.UseVisualStyleBackColor = true;
+            this.BackSongsbutton.Click += new System.EventHandler(this.BackSongsbutton_Click);
+            // 
+            // PlaySongsbutton
+            // 
+            this.PlaySongsbutton.Location = new System.Drawing.Point(285, 321);
+            this.PlaySongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.PlaySongsbutton.Name = "PlaySongsbutton";
+            this.PlaySongsbutton.Size = new System.Drawing.Size(78, 35);
+            this.PlaySongsbutton.TabIndex = 12;
+            this.PlaySongsbutton.Text = "Reproducir Canción";
+            this.PlaySongsbutton.UseVisualStyleBackColor = true;
+            this.PlaySongsbutton.Click += new System.EventHandler(this.PlaySongsbutton_Click);
+            // 
+            // InformationSongsbutton
+            // 
+            this.InformationSongsbutton.Location = new System.Drawing.Point(169, 311);
+            this.InformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.InformationSongsbutton.Name = "InformationSongsbutton";
+            this.InformationSongsbutton.Size = new System.Drawing.Size(80, 29);
+            this.InformationSongsbutton.TabIndex = 11;
+            this.InformationSongsbutton.Text = "Información";
+            this.InformationSongsbutton.UseVisualStyleBackColor = true;
+            this.InformationSongsbutton.Click += new System.EventHandler(this.InformationSongsbutton_Click);
+            // 
+            // SeeQueueSongsbutton
+            // 
+            this.SeeQueueSongsbutton.Location = new System.Drawing.Point(286, 280);
+            this.SeeQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.SeeQueueSongsbutton.Name = "SeeQueueSongsbutton";
+            this.SeeQueueSongsbutton.Size = new System.Drawing.Size(76, 32);
+            this.SeeQueueSongsbutton.TabIndex = 10;
+            this.SeeQueueSongsbutton.Text = "Ver en Cola";
+            this.SeeQueueSongsbutton.UseVisualStyleBackColor = true;
+            this.SeeQueueSongsbutton.Click += new System.EventHandler(this.SeeQueueSongsbutton_Click);
+            // 
+            // SeeFavouriteSongsbutton
+            // 
+            this.SeeFavouriteSongsbutton.Location = new System.Drawing.Point(169, 280);
+            this.SeeFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.SeeFavouriteSongsbutton.Name = "SeeFavouriteSongsbutton";
+            this.SeeFavouriteSongsbutton.Size = new System.Drawing.Size(83, 32);
+            this.SeeFavouriteSongsbutton.TabIndex = 9;
+            this.SeeFavouriteSongsbutton.Text = "Ver Favoritos";
+            this.SeeFavouriteSongsbutton.UseVisualStyleBackColor = true;
+            this.SeeFavouriteSongsbutton.Click += new System.EventHandler(this.SeeFavouriteSongsbutton_Click);
+            // 
+            // SeePlaylistSongsbutton
+            // 
+            this.SeePlaylistSongsbutton.Location = new System.Drawing.Point(286, 244);
+            this.SeePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.SeePlaylistSongsbutton.Name = "SeePlaylistSongsbutton";
+            this.SeePlaylistSongsbutton.Size = new System.Drawing.Size(72, 26);
+            this.SeePlaylistSongsbutton.TabIndex = 8;
+            this.SeePlaylistSongsbutton.Text = "Ver Playlist";
+            this.SeePlaylistSongsbutton.UseVisualStyleBackColor = true;
+            this.SeePlaylistSongsbutton.Click += new System.EventHandler(this.SeePlaylistSongsbutton_Click);
+            // 
+            // AddToQueueSongsbutton
+            // 
+            this.AddToQueueSongsbutton.Location = new System.Drawing.Point(158, 229);
+            this.AddToQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.AddToQueueSongsbutton.Name = "AddToQueueSongsbutton";
+            this.AddToQueueSongsbutton.Size = new System.Drawing.Size(94, 45);
+            this.AddToQueueSongsbutton.TabIndex = 7;
+            this.AddToQueueSongsbutton.Text = "Agregar Canción a la Cola";
+            this.AddToQueueSongsbutton.UseVisualStyleBackColor = true;
+            this.AddToQueueSongsbutton.Click += new System.EventHandler(this.AddToQueueSongsbutton_Click);
+            // 
+            // SelectFavouriteSongsbutton
+            // 
+            this.SelectFavouriteSongsbutton.Location = new System.Drawing.Point(277, 182);
+            this.SelectFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.SelectFavouriteSongsbutton.Name = "SelectFavouriteSongsbutton";
+            this.SelectFavouriteSongsbutton.Size = new System.Drawing.Size(114, 36);
+            this.SelectFavouriteSongsbutton.TabIndex = 6;
+            this.SelectFavouriteSongsbutton.Text = "Seleccionar Canción como Favorito";
+            this.SelectFavouriteSongsbutton.UseVisualStyleBackColor = true;
+            this.SelectFavouriteSongsbutton.Click += new System.EventHandler(this.SelectFavouriteSongsbutton_Click);
+            // 
+            // QualifySongsbutton
+            // 
+            this.QualifySongsbutton.Location = new System.Drawing.Point(300, 67);
+            this.QualifySongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.QualifySongsbutton.Name = "QualifySongsbutton";
+            this.QualifySongsbutton.Size = new System.Drawing.Size(56, 34);
+            this.QualifySongsbutton.TabIndex = 5;
+            this.QualifySongsbutton.Text = "Calificar Canción";
+            this.QualifySongsbutton.UseVisualStyleBackColor = true;
+            this.QualifySongsbutton.Click += new System.EventHandler(this.QualifySongsbutton_Click);
+            // 
+            // AddToPlaylistSongsbutton
+            // 
+            this.AddToPlaylistSongsbutton.Location = new System.Drawing.Point(169, 171);
+            this.AddToPlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.AddToPlaylistSongsbutton.Name = "AddToPlaylistSongsbutton";
+            this.AddToPlaylistSongsbutton.Size = new System.Drawing.Size(83, 53);
+            this.AddToPlaylistSongsbutton.TabIndex = 4;
+            this.AddToPlaylistSongsbutton.Text = "Agregar Canción a una Playlist";
+            this.AddToPlaylistSongsbutton.UseVisualStyleBackColor = true;
+            this.AddToPlaylistSongsbutton.Click += new System.EventHandler(this.AddToPlaylistSongsbutton_Click);
+            // 
+            // SearchSongsbutton
+            // 
+            this.SearchSongsbutton.Location = new System.Drawing.Point(289, 122);
+            this.SearchSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.SearchSongsbutton.Name = "SearchSongsbutton";
+            this.SearchSongsbutton.Size = new System.Drawing.Size(83, 41);
+            this.SearchSongsbutton.TabIndex = 3;
+            this.SearchSongsbutton.Text = "Buscar Canción";
+            this.SearchSongsbutton.UseVisualStyleBackColor = true;
+            this.SearchSongsbutton.Click += new System.EventHandler(this.SearchSongsbutton_Click);
+            // 
+            // CreatePlaylistSongsbutton
+            // 
+            this.CreatePlaylistSongsbutton.Location = new System.Drawing.Point(192, 75);
+            this.CreatePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.CreatePlaylistSongsbutton.Name = "CreatePlaylistSongsbutton";
+            this.CreatePlaylistSongsbutton.Size = new System.Drawing.Size(67, 47);
+            this.CreatePlaylistSongsbutton.TabIndex = 1;
+            this.CreatePlaylistSongsbutton.Text = "Crear Playlist";
+            this.CreatePlaylistSongsbutton.UseVisualStyleBackColor = true;
+            this.CreatePlaylistSongsbutton.Click += new System.EventHandler(this.CreatePlaylistSongsbutton_Click);
+            // 
+            // Songslabel
+            // 
+            this.Songslabel.AutoSize = true;
+            this.Songslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Songslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.Songslabel.Location = new System.Drawing.Point(213, 15);
+            this.Songslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Songslabel.Name = "Songslabel";
+            this.Songslabel.Size = new System.Drawing.Size(143, 31);
+            this.Songslabel.TabIndex = 0;
+            this.Songslabel.Text = "Canciones";
             // 
             // SuggestionsSongspanel
             // 
@@ -1119,10 +2568,10 @@
             this.SuggestionsSongspanel.Controls.Add(this.SuggestionsSongsrichTextBox);
             this.SuggestionsSongspanel.Controls.Add(this.SuggestionsSongslabel2);
             this.SuggestionsSongspanel.Controls.Add(this.SuggestionsSongslabel1);
-            this.SuggestionsSongspanel.Location = new System.Drawing.Point(26, 15);
+            this.SuggestionsSongspanel.Location = new System.Drawing.Point(94, 33);
             this.SuggestionsSongspanel.Margin = new System.Windows.Forms.Padding(2);
             this.SuggestionsSongspanel.Name = "SuggestionsSongspanel";
-            this.SuggestionsSongspanel.Size = new System.Drawing.Size(61, 52);
+            this.SuggestionsSongspanel.Size = new System.Drawing.Size(26, 29);
             this.SuggestionsSongspanel.TabIndex = 4;
             // 
             // BackSuggestionsSongsbutton
@@ -1170,6 +2619,38 @@
             this.SuggestionsSongslabel1.TabIndex = 4;
             this.SuggestionsSongslabel1.Text = "Sugerencias de Canciones";
             // 
+            // BackLoginSesionProfilebutton
+            // 
+            this.BackLoginSesionProfilebutton.Location = new System.Drawing.Point(535, 337);
+            this.BackLoginSesionProfilebutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackLoginSesionProfilebutton.Name = "BackLoginSesionProfilebutton";
+            this.BackLoginSesionProfilebutton.Size = new System.Drawing.Size(56, 19);
+            this.BackLoginSesionProfilebutton.TabIndex = 3;
+            this.BackLoginSesionProfilebutton.Text = "Volver";
+            this.BackLoginSesionProfilebutton.UseVisualStyleBackColor = true;
+            this.BackLoginSesionProfilebutton.Click += new System.EventHandler(this.BackLoginSesionProfilebutton_Click);
+            // 
+            // MainMenupanel
+            // 
+            this.MainMenupanel.Controls.Add(this.Songspanel);
+            this.MainMenupanel.Controls.Add(this.MoviesMainMenupanel);
+            this.MainMenupanel.Controls.Add(this.JoinPartypanel);
+            this.MainMenupanel.Controls.Add(this.InteligentSuggestionspanel);
+            this.MainMenupanel.Controls.Add(this.Followpanel);
+            this.MainMenupanel.Controls.Add(this.LogoutMainMenubutton);
+            this.MainMenupanel.Controls.Add(this.MoviesMainMenubutton);
+            this.MainMenupanel.Controls.Add(this.SongsMainMenubutton);
+            this.MainMenupanel.Controls.Add(this.JoinPartyMainMenubutton);
+            this.MainMenupanel.Controls.Add(this.SuggestionsMainMenubutton);
+            this.MainMenupanel.Controls.Add(this.FollowMainMenubutton);
+            this.MainMenupanel.Controls.Add(this.MainMenulabel2);
+            this.MainMenupanel.Controls.Add(this.MainMenulabel1);
+            this.MainMenupanel.Location = new System.Drawing.Point(345, 270);
+            this.MainMenupanel.Margin = new System.Windows.Forms.Padding(2);
+            this.MainMenupanel.Name = "MainMenupanel";
+            this.MainMenupanel.Size = new System.Drawing.Size(66, 71);
+            this.MainMenupanel.TabIndex = 4;
+            // 
             // MoviesMainMenupanel
             // 
             this.MoviesMainMenupanel.Controls.Add(this.SeeQueueMoviespanel);
@@ -1198,10 +2679,10 @@
             this.MoviesMainMenupanel.Controls.Add(this.PlayMoviesbutton);
             this.MoviesMainMenupanel.Controls.Add(this.BackMoviesMainMenubutton);
             this.MoviesMainMenupanel.Controls.Add(this.MoviesMainMenulabel);
-            this.MoviesMainMenupanel.Location = new System.Drawing.Point(511, 95);
+            this.MoviesMainMenupanel.Location = new System.Drawing.Point(490, 60);
             this.MoviesMainMenupanel.Margin = new System.Windows.Forms.Padding(2);
             this.MoviesMainMenupanel.Name = "MoviesMainMenupanel";
-            this.MoviesMainMenupanel.Size = new System.Drawing.Size(79, 80);
+            this.MoviesMainMenupanel.Size = new System.Drawing.Size(25, 35);
             this.MoviesMainMenupanel.TabIndex = 6;
             // 
             // SeeQueueMoviespanel
@@ -2248,1580 +3729,6 @@
             this.MoviesMainMenulabel.TabIndex = 0;
             this.MoviesMainMenulabel.Text = "Películas";
             // 
-            // Songspanel
-            // 
-            this.Songspanel.Controls.Add(this.PlaySongspanel);
-            this.Songspanel.Controls.Add(this.InformationSongspanel);
-            this.Songspanel.Controls.Add(this.SeeQueueSongspanel);
-            this.Songspanel.Controls.Add(this.SeeFavouriteSongspanel);
-            this.Songspanel.Controls.Add(this.SeePlaylistSongspanel);
-            this.Songspanel.Controls.Add(this.AddToQueueSongspanel);
-            this.Songspanel.Controls.Add(this.SearchSongspanel);
-            this.Songspanel.Controls.Add(this.AddToPlaylistSongspanel);
-            this.Songspanel.Controls.Add(this.AddToFavouriteSongspanel);
-            this.Songspanel.Controls.Add(this.DownloadSongspanel);
-            this.Songspanel.Controls.Add(this.QualifySongspanel);
-            this.Songspanel.Controls.Add(this.CreatePlaylistSongspanel);
-            this.Songspanel.Controls.Add(this.BackSongsbutton);
-            this.Songspanel.Controls.Add(this.PlaySongsbutton);
-            this.Songspanel.Controls.Add(this.InformationSongsbutton);
-            this.Songspanel.Controls.Add(this.SeeQueueSongsbutton);
-            this.Songspanel.Controls.Add(this.SeeFavouriteSongsbutton);
-            this.Songspanel.Controls.Add(this.SeePlaylistSongsbutton);
-            this.Songspanel.Controls.Add(this.AddToQueueSongsbutton);
-            this.Songspanel.Controls.Add(this.SelectFavouriteSongsbutton);
-            this.Songspanel.Controls.Add(this.QualifySongsbutton);
-            this.Songspanel.Controls.Add(this.AddToPlaylistSongsbutton);
-            this.Songspanel.Controls.Add(this.SearchSongsbutton);
-            this.Songspanel.Controls.Add(this.DownloadSongsbutton);
-            this.Songspanel.Controls.Add(this.CreatePlaylistSongsbutton);
-            this.Songspanel.Controls.Add(this.Songslabel);
-            this.Songspanel.Location = new System.Drawing.Point(26, 158);
-            this.Songspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.Songspanel.Name = "Songspanel";
-            this.Songspanel.Size = new System.Drawing.Size(66, 76);
-            this.Songspanel.TabIndex = 15;
-            // 
-            // PlaySongspanel
-            // 
-            this.PlaySongspanel.Controls.Add(this.StopPlaySongsbutton);
-            this.PlaySongspanel.Controls.Add(this.PlayPlaySongsbutton);
-            this.PlaySongspanel.Controls.Add(this.InsertNamePlaySongscomboBox);
-            this.PlaySongspanel.Controls.Add(this.InsertSongNamePlaySongslabel);
-            this.PlaySongspanel.Controls.Add(this.BackPlaySongsbutton);
-            this.PlaySongspanel.Controls.Add(this.PlaySongslabel);
-            this.PlaySongspanel.Location = new System.Drawing.Point(67, 259);
-            this.PlaySongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.PlaySongspanel.Name = "PlaySongspanel";
-            this.PlaySongspanel.Size = new System.Drawing.Size(52, 52);
-            this.PlaySongspanel.TabIndex = 22;
-            // 
-            // StopPlaySongsbutton
-            // 
-            this.StopPlaySongsbutton.Location = new System.Drawing.Point(349, 184);
-            this.StopPlaySongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.StopPlaySongsbutton.Name = "StopPlaySongsbutton";
-            this.StopPlaySongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.StopPlaySongsbutton.TabIndex = 5;
-            this.StopPlaySongsbutton.Text = "Parar";
-            this.StopPlaySongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // PlayPlaySongsbutton
-            // 
-            this.PlayPlaySongsbutton.Location = new System.Drawing.Point(265, 183);
-            this.PlayPlaySongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.PlayPlaySongsbutton.Name = "PlayPlaySongsbutton";
-            this.PlayPlaySongsbutton.Size = new System.Drawing.Size(66, 19);
-            this.PlayPlaySongsbutton.TabIndex = 4;
-            this.PlayPlaySongsbutton.Text = "Reproducir";
-            this.PlayPlaySongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // InsertNamePlaySongscomboBox
-            // 
-            this.InsertNamePlaySongscomboBox.FormattingEnabled = true;
-            this.InsertNamePlaySongscomboBox.Location = new System.Drawing.Point(265, 124);
-            this.InsertNamePlaySongscomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertNamePlaySongscomboBox.Name = "InsertNamePlaySongscomboBox";
-            this.InsertNamePlaySongscomboBox.Size = new System.Drawing.Size(141, 21);
-            this.InsertNamePlaySongscomboBox.TabIndex = 3;
-            // 
-            // InsertSongNamePlaySongslabel
-            // 
-            this.InsertSongNamePlaySongslabel.AutoSize = true;
-            this.InsertSongNamePlaySongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertSongNamePlaySongslabel.Location = new System.Drawing.Point(114, 127);
-            this.InsertSongNamePlaySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertSongNamePlaySongslabel.Name = "InsertSongNamePlaySongslabel";
-            this.InsertSongNamePlaySongslabel.Size = new System.Drawing.Size(114, 13);
-            this.InsertSongNamePlaySongslabel.TabIndex = 2;
-            this.InsertSongNamePlaySongslabel.Text = "Nombre de la canción:";
-            // 
-            // BackPlaySongsbutton
-            // 
-            this.BackPlaySongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackPlaySongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackPlaySongsbutton.Name = "BackPlaySongsbutton";
-            this.BackPlaySongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackPlaySongsbutton.TabIndex = 1;
-            this.BackPlaySongsbutton.Text = "Volver";
-            this.BackPlaySongsbutton.UseVisualStyleBackColor = true;
-            this.BackPlaySongsbutton.Click += new System.EventHandler(this.BackPlaySongsbutton_Click);
-            // 
-            // PlaySongslabel
-            // 
-            this.PlaySongslabel.AutoSize = true;
-            this.PlaySongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlaySongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.PlaySongslabel.Location = new System.Drawing.Point(181, 16);
-            this.PlaySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.PlaySongslabel.Name = "PlaySongslabel";
-            this.PlaySongslabel.Size = new System.Drawing.Size(254, 31);
-            this.PlaySongslabel.TabIndex = 0;
-            this.PlaySongslabel.Text = "Reproducir Canción";
-            // 
-            // InformationSongspanel
-            // 
-            this.InformationSongspanel.Controls.Add(this.DurationInformationSongsbutton);
-            this.InformationSongspanel.Controls.Add(this.ReproductionsInformationSongsbutton);
-            this.InformationSongspanel.Controls.Add(this.QualificationInformationSongsbutton);
-            this.InformationSongspanel.Controls.Add(this.YearInformationSongsbutton);
-            this.InformationSongspanel.Controls.Add(this.LyricsInformationSongsbutton);
-            this.InformationSongspanel.Controls.Add(this.StudioInformationSongsbutton);
-            this.InformationSongspanel.Controls.Add(this.CompositorInformationSongsbutton);
-            this.InformationSongspanel.Controls.Add(this.GenderInformationSongsbutton);
-            this.InformationSongspanel.Controls.Add(this.ResultInformationSongsrichTextBox);
-            this.InformationSongspanel.Controls.Add(this.BackInformationSongsbutton);
-            this.InformationSongspanel.Controls.Add(this.ArtistInformationSongsbutton);
-            this.InformationSongspanel.Controls.Add(this.InsertSongNameInformationSongscomboBox);
-            this.InformationSongspanel.Controls.Add(this.InsertSongNameInformationSongslabel);
-            this.InformationSongspanel.Controls.Add(this.InformationSongslabel);
-            this.InformationSongspanel.Location = new System.Drawing.Point(13, 216);
-            this.InformationSongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.InformationSongspanel.Name = "InformationSongspanel";
-            this.InformationSongspanel.Size = new System.Drawing.Size(41, 37);
-            this.InformationSongspanel.TabIndex = 3;
-            // 
-            // DurationInformationSongsbutton
-            // 
-            this.DurationInformationSongsbutton.Location = new System.Drawing.Point(222, 291);
-            this.DurationInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.DurationInformationSongsbutton.Name = "DurationInformationSongsbutton";
-            this.DurationInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.DurationInformationSongsbutton.TabIndex = 21;
-            this.DurationInformationSongsbutton.Text = "Duración";
-            this.DurationInformationSongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // ReproductionsInformationSongsbutton
-            // 
-            this.ReproductionsInformationSongsbutton.Location = new System.Drawing.Point(130, 291);
-            this.ReproductionsInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.ReproductionsInformationSongsbutton.Name = "ReproductionsInformationSongsbutton";
-            this.ReproductionsInformationSongsbutton.Size = new System.Drawing.Size(78, 19);
-            this.ReproductionsInformationSongsbutton.TabIndex = 20;
-            this.ReproductionsInformationSongsbutton.Text = "Reproducciones";
-            this.ReproductionsInformationSongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // QualificationInformationSongsbutton
-            // 
-            this.QualificationInformationSongsbutton.Location = new System.Drawing.Point(40, 291);
-            this.QualificationInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.QualificationInformationSongsbutton.Name = "QualificationInformationSongsbutton";
-            this.QualificationInformationSongsbutton.Size = new System.Drawing.Size(67, 19);
-            this.QualificationInformationSongsbutton.TabIndex = 19;
-            this.QualificationInformationSongsbutton.Text = "Calificación";
-            this.QualificationInformationSongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // YearInformationSongsbutton
-            // 
-            this.YearInformationSongsbutton.Location = new System.Drawing.Point(222, 230);
-            this.YearInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.YearInformationSongsbutton.Name = "YearInformationSongsbutton";
-            this.YearInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.YearInformationSongsbutton.TabIndex = 18;
-            this.YearInformationSongsbutton.Text = "Año";
-            this.YearInformationSongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // LyricsInformationSongsbutton
-            // 
-            this.LyricsInformationSongsbutton.Location = new System.Drawing.Point(130, 230);
-            this.LyricsInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.LyricsInformationSongsbutton.Name = "LyricsInformationSongsbutton";
-            this.LyricsInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.LyricsInformationSongsbutton.TabIndex = 17;
-            this.LyricsInformationSongsbutton.Text = "Letra";
-            this.LyricsInformationSongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // StudioInformationSongsbutton
-            // 
-            this.StudioInformationSongsbutton.Location = new System.Drawing.Point(40, 230);
-            this.StudioInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.StudioInformationSongsbutton.Name = "StudioInformationSongsbutton";
-            this.StudioInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.StudioInformationSongsbutton.TabIndex = 16;
-            this.StudioInformationSongsbutton.Text = "Estudio";
-            this.StudioInformationSongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // CompositorInformationSongsbutton
-            // 
-            this.CompositorInformationSongsbutton.Location = new System.Drawing.Point(222, 175);
-            this.CompositorInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.CompositorInformationSongsbutton.Name = "CompositorInformationSongsbutton";
-            this.CompositorInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.CompositorInformationSongsbutton.TabIndex = 15;
-            this.CompositorInformationSongsbutton.Text = "Compositor";
-            this.CompositorInformationSongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // GenderInformationSongsbutton
-            // 
-            this.GenderInformationSongsbutton.Location = new System.Drawing.Point(130, 175);
-            this.GenderInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.GenderInformationSongsbutton.Name = "GenderInformationSongsbutton";
-            this.GenderInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.GenderInformationSongsbutton.TabIndex = 14;
-            this.GenderInformationSongsbutton.Text = "Género";
-            this.GenderInformationSongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // ResultInformationSongsrichTextBox
-            // 
-            this.ResultInformationSongsrichTextBox.Location = new System.Drawing.Point(321, 110);
-            this.ResultInformationSongsrichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ResultInformationSongsrichTextBox.Name = "ResultInformationSongsrichTextBox";
-            this.ResultInformationSongsrichTextBox.Size = new System.Drawing.Size(195, 200);
-            this.ResultInformationSongsrichTextBox.TabIndex = 13;
-            this.ResultInformationSongsrichTextBox.Text = "";
-            // 
-            // BackInformationSongsbutton
-            // 
-            this.BackInformationSongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackInformationSongsbutton.Name = "BackInformationSongsbutton";
-            this.BackInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackInformationSongsbutton.TabIndex = 12;
-            this.BackInformationSongsbutton.Text = "Volver";
-            this.BackInformationSongsbutton.UseVisualStyleBackColor = true;
-            this.BackInformationSongsbutton.Click += new System.EventHandler(this.BackInformationSongsbutton_Click);
-            // 
-            // ArtistInformationSongsbutton
-            // 
-            this.ArtistInformationSongsbutton.Location = new System.Drawing.Point(40, 175);
-            this.ArtistInformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.ArtistInformationSongsbutton.Name = "ArtistInformationSongsbutton";
-            this.ArtistInformationSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.ArtistInformationSongsbutton.TabIndex = 3;
-            this.ArtistInformationSongsbutton.Text = "Artista";
-            this.ArtistInformationSongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // InsertSongNameInformationSongscomboBox
-            // 
-            this.InsertSongNameInformationSongscomboBox.FormattingEnabled = true;
-            this.InsertSongNameInformationSongscomboBox.Location = new System.Drawing.Point(188, 110);
-            this.InsertSongNameInformationSongscomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertSongNameInformationSongscomboBox.Name = "InsertSongNameInformationSongscomboBox";
-            this.InsertSongNameInformationSongscomboBox.Size = new System.Drawing.Size(92, 21);
-            this.InsertSongNameInformationSongscomboBox.TabIndex = 2;
-            // 
-            // InsertSongNameInformationSongslabel
-            // 
-            this.InsertSongNameInformationSongslabel.AutoSize = true;
-            this.InsertSongNameInformationSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertSongNameInformationSongslabel.Location = new System.Drawing.Point(38, 113);
-            this.InsertSongNameInformationSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertSongNameInformationSongslabel.Name = "InsertSongNameInformationSongslabel";
-            this.InsertSongNameInformationSongslabel.Size = new System.Drawing.Size(114, 13);
-            this.InsertSongNameInformationSongslabel.TabIndex = 1;
-            this.InsertSongNameInformationSongslabel.Text = "Nombre de la canción:";
-            // 
-            // InformationSongslabel
-            // 
-            this.InformationSongslabel.AutoSize = true;
-            this.InformationSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InformationSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InformationSongslabel.Location = new System.Drawing.Point(208, 18);
-            this.InformationSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InformationSongslabel.Name = "InformationSongslabel";
-            this.InformationSongslabel.Size = new System.Drawing.Size(156, 31);
-            this.InformationSongslabel.TabIndex = 0;
-            this.InformationSongslabel.Text = "Información";
-            // 
-            // SeeQueueSongspanel
-            // 
-            this.SeeQueueSongspanel.Controls.Add(this.ResultSeeQueueSongsrichTextBox);
-            this.SeeQueueSongspanel.Controls.Add(this.SeeQueueSongslabel);
-            this.SeeQueueSongspanel.Controls.Add(this.BackSeeQueueSongsbutton);
-            this.SeeQueueSongspanel.Location = new System.Drawing.Point(9, 171);
-            this.SeeQueueSongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.SeeQueueSongspanel.Name = "SeeQueueSongspanel";
-            this.SeeQueueSongspanel.Size = new System.Drawing.Size(39, 41);
-            this.SeeQueueSongspanel.TabIndex = 3;
-            // 
-            // ResultSeeQueueSongsrichTextBox
-            // 
-            this.ResultSeeQueueSongsrichTextBox.Location = new System.Drawing.Point(173, 80);
-            this.ResultSeeQueueSongsrichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ResultSeeQueueSongsrichTextBox.Name = "ResultSeeQueueSongsrichTextBox";
-            this.ResultSeeQueueSongsrichTextBox.Size = new System.Drawing.Size(223, 198);
-            this.ResultSeeQueueSongsrichTextBox.TabIndex = 2;
-            this.ResultSeeQueueSongsrichTextBox.Text = "";
-            // 
-            // SeeQueueSongslabel
-            // 
-            this.SeeQueueSongslabel.AutoSize = true;
-            this.SeeQueueSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeeQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.SeeQueueSongslabel.Location = new System.Drawing.Point(187, 18);
-            this.SeeQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SeeQueueSongslabel.Name = "SeeQueueSongslabel";
-            this.SeeQueueSongslabel.Size = new System.Drawing.Size(221, 31);
-            this.SeeQueueSongslabel.TabIndex = 1;
-            this.SeeQueueSongslabel.Text = "Ver Lista en Cola";
-            // 
-            // BackSeeQueueSongsbutton
-            // 
-            this.BackSeeQueueSongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackSeeQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackSeeQueueSongsbutton.Name = "BackSeeQueueSongsbutton";
-            this.BackSeeQueueSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackSeeQueueSongsbutton.TabIndex = 0;
-            this.BackSeeQueueSongsbutton.Text = "Volver";
-            this.BackSeeQueueSongsbutton.UseVisualStyleBackColor = true;
-            this.BackSeeQueueSongsbutton.Click += new System.EventHandler(this.BackSeeQueueSongsbutton_Click);
-            // 
-            // SeeFavouriteSongspanel
-            // 
-            this.SeeFavouriteSongspanel.Controls.Add(this.ResultSeeFavouriteSongsrichTextBox);
-            this.SeeFavouriteSongspanel.Controls.Add(this.SeeFavouriteSongslabel);
-            this.SeeFavouriteSongspanel.Controls.Add(this.BackSeeFavouriteSongsbutton);
-            this.SeeFavouriteSongspanel.Location = new System.Drawing.Point(22, 120);
-            this.SeeFavouriteSongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.SeeFavouriteSongspanel.Name = "SeeFavouriteSongspanel";
-            this.SeeFavouriteSongspanel.Size = new System.Drawing.Size(42, 47);
-            this.SeeFavouriteSongspanel.TabIndex = 6;
-            // 
-            // ResultSeeFavouriteSongsrichTextBox
-            // 
-            this.ResultSeeFavouriteSongsrichTextBox.Location = new System.Drawing.Point(171, 75);
-            this.ResultSeeFavouriteSongsrichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ResultSeeFavouriteSongsrichTextBox.Name = "ResultSeeFavouriteSongsrichTextBox";
-            this.ResultSeeFavouriteSongsrichTextBox.Size = new System.Drawing.Size(266, 204);
-            this.ResultSeeFavouriteSongsrichTextBox.TabIndex = 2;
-            this.ResultSeeFavouriteSongsrichTextBox.Text = "";
-            // 
-            // SeeFavouriteSongslabel
-            // 
-            this.SeeFavouriteSongslabel.AutoSize = true;
-            this.SeeFavouriteSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeeFavouriteSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.SeeFavouriteSongslabel.Location = new System.Drawing.Point(218, 18);
-            this.SeeFavouriteSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SeeFavouriteSongslabel.Name = "SeeFavouriteSongslabel";
-            this.SeeFavouriteSongslabel.Size = new System.Drawing.Size(176, 31);
-            this.SeeFavouriteSongslabel.TabIndex = 1;
-            this.SeeFavouriteSongslabel.Text = "Ver Favoritos";
-            // 
-            // BackSeeFavouriteSongsbutton
-            // 
-            this.BackSeeFavouriteSongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackSeeFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackSeeFavouriteSongsbutton.Name = "BackSeeFavouriteSongsbutton";
-            this.BackSeeFavouriteSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackSeeFavouriteSongsbutton.TabIndex = 0;
-            this.BackSeeFavouriteSongsbutton.Text = "Volver";
-            this.BackSeeFavouriteSongsbutton.UseVisualStyleBackColor = true;
-            this.BackSeeFavouriteSongsbutton.Click += new System.EventHandler(this.BackSeeFavouriteSongsbutton_Click);
-            // 
-            // SeePlaylistSongspanel
-            // 
-            this.SeePlaylistSongspanel.Controls.Add(this.SeeSeePlaylistSongsbutton);
-            this.SeePlaylistSongspanel.Controls.Add(this.ResultSeePlaylistSongsrichTextBox);
-            this.SeePlaylistSongspanel.Controls.Add(this.InsertPlaylistNameSeePlaylistSongscomboBox);
-            this.SeePlaylistSongspanel.Controls.Add(this.InsertPlaylistNameSeePlaylistSongslabel);
-            this.SeePlaylistSongspanel.Controls.Add(this.SeePlaylistSongslabel);
-            this.SeePlaylistSongspanel.Controls.Add(this.BackSeePlaylistSongsbutton);
-            this.SeePlaylistSongspanel.Location = new System.Drawing.Point(22, 63);
-            this.SeePlaylistSongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.SeePlaylistSongspanel.Name = "SeePlaylistSongspanel";
-            this.SeePlaylistSongspanel.Size = new System.Drawing.Size(42, 47);
-            this.SeePlaylistSongspanel.TabIndex = 12;
-            // 
-            // SeeSeePlaylistSongsbutton
-            // 
-            this.SeeSeePlaylistSongsbutton.Location = new System.Drawing.Point(130, 210);
-            this.SeeSeePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.SeeSeePlaylistSongsbutton.Name = "SeeSeePlaylistSongsbutton";
-            this.SeeSeePlaylistSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.SeeSeePlaylistSongsbutton.TabIndex = 5;
-            this.SeeSeePlaylistSongsbutton.Text = "Ver";
-            this.SeeSeePlaylistSongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // ResultSeePlaylistSongsrichTextBox
-            // 
-            this.ResultSeePlaylistSongsrichTextBox.Location = new System.Drawing.Point(364, 89);
-            this.ResultSeePlaylistSongsrichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ResultSeePlaylistSongsrichTextBox.Name = "ResultSeePlaylistSongsrichTextBox";
-            this.ResultSeePlaylistSongsrichTextBox.Size = new System.Drawing.Size(181, 184);
-            this.ResultSeePlaylistSongsrichTextBox.TabIndex = 4;
-            this.ResultSeePlaylistSongsrichTextBox.Text = "";
-            // 
-            // InsertPlaylistNameSeePlaylistSongscomboBox
-            // 
-            this.InsertPlaylistNameSeePlaylistSongscomboBox.FormattingEnabled = true;
-            this.InsertPlaylistNameSeePlaylistSongscomboBox.Location = new System.Drawing.Point(165, 162);
-            this.InsertPlaylistNameSeePlaylistSongscomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertPlaylistNameSeePlaylistSongscomboBox.Name = "InsertPlaylistNameSeePlaylistSongscomboBox";
-            this.InsertPlaylistNameSeePlaylistSongscomboBox.Size = new System.Drawing.Size(92, 21);
-            this.InsertPlaylistNameSeePlaylistSongscomboBox.TabIndex = 3;
-            // 
-            // InsertPlaylistNameSeePlaylistSongslabel
-            // 
-            this.InsertPlaylistNameSeePlaylistSongslabel.AutoSize = true;
-            this.InsertPlaylistNameSeePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertPlaylistNameSeePlaylistSongslabel.Location = new System.Drawing.Point(42, 165);
-            this.InsertPlaylistNameSeePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertPlaylistNameSeePlaylistSongslabel.Name = "InsertPlaylistNameSeePlaylistSongslabel";
-            this.InsertPlaylistNameSeePlaylistSongslabel.Size = new System.Drawing.Size(108, 13);
-            this.InsertPlaylistNameSeePlaylistSongslabel.TabIndex = 2;
-            this.InsertPlaylistNameSeePlaylistSongslabel.Text = "Nombre de la Playlist:";
-            // 
-            // SeePlaylistSongslabel
-            // 
-            this.SeePlaylistSongslabel.AutoSize = true;
-            this.SeePlaylistSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.SeePlaylistSongslabel.Location = new System.Drawing.Point(229, 15);
-            this.SeePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SeePlaylistSongslabel.Name = "SeePlaylistSongslabel";
-            this.SeePlaylistSongslabel.Size = new System.Drawing.Size(150, 31);
-            this.SeePlaylistSongslabel.TabIndex = 1;
-            this.SeePlaylistSongslabel.Text = "Ver Playlist";
-            // 
-            // BackSeePlaylistSongsbutton
-            // 
-            this.BackSeePlaylistSongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackSeePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackSeePlaylistSongsbutton.Name = "BackSeePlaylistSongsbutton";
-            this.BackSeePlaylistSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackSeePlaylistSongsbutton.TabIndex = 0;
-            this.BackSeePlaylistSongsbutton.Text = "Volver";
-            this.BackSeePlaylistSongsbutton.UseVisualStyleBackColor = true;
-            this.BackSeePlaylistSongsbutton.Click += new System.EventHandler(this.BackSeePlaylistSongsbutton_Click);
-            // 
-            // AddToQueueSongspanel
-            // 
-            this.AddToQueueSongspanel.Controls.Add(this.MessageAddToQueueSongslabel);
-            this.AddToQueueSongspanel.Controls.Add(this.AddAddToQueueSongsbutton);
-            this.AddToQueueSongspanel.Controls.Add(this.InsertSongNameAddToQueueSongslabel);
-            this.AddToQueueSongspanel.Controls.Add(this.InsertSongNameAddToQueueSongscomboBox);
-            this.AddToQueueSongspanel.Controls.Add(this.BackAddToQueueSongsbutton);
-            this.AddToQueueSongspanel.Controls.Add(this.AddToQueueSongslabel);
-            this.AddToQueueSongspanel.Location = new System.Drawing.Point(20, 14);
-            this.AddToQueueSongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.AddToQueueSongspanel.Name = "AddToQueueSongspanel";
-            this.AddToQueueSongspanel.Size = new System.Drawing.Size(34, 44);
-            this.AddToQueueSongspanel.TabIndex = 6;
-            // 
-            // MessageAddToQueueSongslabel
-            // 
-            this.MessageAddToQueueSongslabel.AutoSize = true;
-            this.MessageAddToQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.MessageAddToQueueSongslabel.Location = new System.Drawing.Point(211, 243);
-            this.MessageAddToQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.MessageAddToQueueSongslabel.Name = "MessageAddToQueueSongslabel";
-            this.MessageAddToQueueSongslabel.Size = new System.Drawing.Size(183, 13);
-            this.MessageAddToQueueSongslabel.TabIndex = 11;
-            this.MessageAddToQueueSongslabel.Text = "La canción se añadió correctamente.";
-            // 
-            // AddAddToQueueSongsbutton
-            // 
-            this.AddAddToQueueSongsbutton.Location = new System.Drawing.Point(276, 186);
-            this.AddAddToQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.AddAddToQueueSongsbutton.Name = "AddAddToQueueSongsbutton";
-            this.AddAddToQueueSongsbutton.Size = new System.Drawing.Size(60, 24);
-            this.AddAddToQueueSongsbutton.TabIndex = 10;
-            this.AddAddToQueueSongsbutton.Text = "Agregar";
-            this.AddAddToQueueSongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // InsertSongNameAddToQueueSongslabel
-            // 
-            this.InsertSongNameAddToQueueSongslabel.AutoSize = true;
-            this.InsertSongNameAddToQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertSongNameAddToQueueSongslabel.Location = new System.Drawing.Point(185, 134);
-            this.InsertSongNameAddToQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertSongNameAddToQueueSongslabel.Name = "InsertSongNameAddToQueueSongslabel";
-            this.InsertSongNameAddToQueueSongslabel.Size = new System.Drawing.Size(114, 13);
-            this.InsertSongNameAddToQueueSongslabel.TabIndex = 9;
-            this.InsertSongNameAddToQueueSongslabel.Text = "Nombre de la canción:";
-            // 
-            // InsertSongNameAddToQueueSongscomboBox
-            // 
-            this.InsertSongNameAddToQueueSongscomboBox.FormattingEnabled = true;
-            this.InsertSongNameAddToQueueSongscomboBox.Location = new System.Drawing.Point(321, 134);
-            this.InsertSongNameAddToQueueSongscomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertSongNameAddToQueueSongscomboBox.Name = "InsertSongNameAddToQueueSongscomboBox";
-            this.InsertSongNameAddToQueueSongscomboBox.Size = new System.Drawing.Size(92, 21);
-            this.InsertSongNameAddToQueueSongscomboBox.TabIndex = 8;
-            // 
-            // BackAddToQueueSongsbutton
-            // 
-            this.BackAddToQueueSongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackAddToQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackAddToQueueSongsbutton.Name = "BackAddToQueueSongsbutton";
-            this.BackAddToQueueSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackAddToQueueSongsbutton.TabIndex = 7;
-            this.BackAddToQueueSongsbutton.Text = "Volver";
-            this.BackAddToQueueSongsbutton.UseVisualStyleBackColor = true;
-            this.BackAddToQueueSongsbutton.Click += new System.EventHandler(this.BackAddToQueueSongsbutton_Click);
-            // 
-            // AddToQueueSongslabel
-            // 
-            this.AddToQueueSongslabel.AutoSize = true;
-            this.AddToQueueSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddToQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.AddToQueueSongslabel.Location = new System.Drawing.Point(135, 16);
-            this.AddToQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.AddToQueueSongslabel.Name = "AddToQueueSongslabel";
-            this.AddToQueueSongslabel.Size = new System.Drawing.Size(386, 31);
-            this.AddToQueueSongslabel.TabIndex = 6;
-            this.AddToQueueSongslabel.Text = "Añadir Canción a Lista en Cola";
-            // 
-            // SearchSongspanel
-            // 
-            this.SearchSongspanel.Controls.Add(this.Genderpanel);
-            this.SearchSongspanel.Controls.Add(this.Evaluationpanel);
-            this.SearchSongspanel.Controls.Add(this.Artistpanel);
-            this.SearchSongspanel.Controls.Add(this.Keywordpanel);
-            this.SearchSongspanel.Controls.Add(this.CategoriesSearchSongsbutton);
-            this.SearchSongspanel.Controls.Add(this.EvaluationSearchSongsbutton);
-            this.SearchSongspanel.Controls.Add(this.ArtistSearchSongsbutton);
-            this.SearchSongspanel.Controls.Add(this.KeywordSearchSongsbutton);
-            this.SearchSongspanel.Controls.Add(this.BackSearchSongsbutton);
-            this.SearchSongspanel.Controls.Add(this.SearchSongslabel);
-            this.SearchSongspanel.Location = new System.Drawing.Point(497, 147);
-            this.SearchSongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.SearchSongspanel.Name = "SearchSongspanel";
-            this.SearchSongspanel.Size = new System.Drawing.Size(77, 51);
-            this.SearchSongspanel.TabIndex = 9;
-            // 
-            // Genderpanel
-            // 
-            this.Genderpanel.Controls.Add(this.MessageGenderlabel);
-            this.Genderpanel.Controls.Add(this.SearchGenderbutton);
-            this.Genderpanel.Controls.Add(this.ResultGenderrichTextBox);
-            this.Genderpanel.Controls.Add(this.InsertGenderGendertextBox);
-            this.Genderpanel.Controls.Add(this.InsertGenderGenderlabel);
-            this.Genderpanel.Controls.Add(this.BackGenderbutton);
-            this.Genderpanel.Controls.Add(this.Genderlabel);
-            this.Genderpanel.Location = new System.Drawing.Point(526, 225);
-            this.Genderpanel.Margin = new System.Windows.Forms.Padding(2);
-            this.Genderpanel.Name = "Genderpanel";
-            this.Genderpanel.Size = new System.Drawing.Size(48, 47);
-            this.Genderpanel.TabIndex = 8;
-            // 
-            // MessageGenderlabel
-            // 
-            this.MessageGenderlabel.AutoSize = true;
-            this.MessageGenderlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.MessageGenderlabel.Location = new System.Drawing.Point(91, 260);
-            this.MessageGenderlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.MessageGenderlabel.Name = "MessageGenderlabel";
-            this.MessageGenderlabel.Size = new System.Drawing.Size(178, 13);
-            this.MessageGenderlabel.TabIndex = 6;
-            this.MessageGenderlabel.Text = "El género ingresado no se encontró.";
-            // 
-            // SearchGenderbutton
-            // 
-            this.SearchGenderbutton.Location = new System.Drawing.Point(130, 180);
-            this.SearchGenderbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.SearchGenderbutton.Name = "SearchGenderbutton";
-            this.SearchGenderbutton.Size = new System.Drawing.Size(101, 40);
-            this.SearchGenderbutton.TabIndex = 5;
-            this.SearchGenderbutton.Text = "Buscar";
-            this.SearchGenderbutton.UseVisualStyleBackColor = true;
-            // 
-            // ResultGenderrichTextBox
-            // 
-            this.ResultGenderrichTextBox.Location = new System.Drawing.Point(360, 106);
-            this.ResultGenderrichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ResultGenderrichTextBox.Name = "ResultGenderrichTextBox";
-            this.ResultGenderrichTextBox.Size = new System.Drawing.Size(144, 183);
-            this.ResultGenderrichTextBox.TabIndex = 4;
-            this.ResultGenderrichTextBox.Text = "";
-            // 
-            // InsertGenderGendertextBox
-            // 
-            this.InsertGenderGendertextBox.Location = new System.Drawing.Point(192, 120);
-            this.InsertGenderGendertextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertGenderGendertextBox.Name = "InsertGenderGendertextBox";
-            this.InsertGenderGendertextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertGenderGendertextBox.TabIndex = 3;
-            // 
-            // InsertGenderGenderlabel
-            // 
-            this.InsertGenderGenderlabel.AutoSize = true;
-            this.InsertGenderGenderlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertGenderGenderlabel.Location = new System.Drawing.Point(40, 124);
-            this.InsertGenderGenderlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertGenderGenderlabel.Name = "InsertGenderGenderlabel";
-            this.InsertGenderGenderlabel.Size = new System.Drawing.Size(130, 13);
-            this.InsertGenderGenderlabel.TabIndex = 2;
-            this.InsertGenderGenderlabel.Text = "Ingrese el género musical:";
-            // 
-            // BackGenderbutton
-            // 
-            this.BackGenderbutton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BackGenderbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackGenderbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackGenderbutton.Name = "BackGenderbutton";
-            this.BackGenderbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackGenderbutton.TabIndex = 1;
-            this.BackGenderbutton.Text = "Volver";
-            this.BackGenderbutton.UseVisualStyleBackColor = true;
-            this.BackGenderbutton.Click += new System.EventHandler(this.BackGenderbutton_Click);
-            // 
-            // Genderlabel
-            // 
-            this.Genderlabel.AutoSize = true;
-            this.Genderlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Genderlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.Genderlabel.Location = new System.Drawing.Point(197, 16);
-            this.Genderlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Genderlabel.Name = "Genderlabel";
-            this.Genderlabel.Size = new System.Drawing.Size(203, 31);
-            this.Genderlabel.TabIndex = 0;
-            this.Genderlabel.Text = "Género Musical";
-            // 
-            // Evaluationpanel
-            // 
-            this.Evaluationpanel.Controls.Add(this.InsertSignEvaluationlabel);
-            this.Evaluationpanel.Controls.Add(this.InsertQualificationEvaluationlabel);
-            this.Evaluationpanel.Controls.Add(this.ResultEvaluationrichTextBox);
-            this.Evaluationpanel.Controls.Add(this.InsertSignEvaluationcomboBox);
-            this.Evaluationpanel.Controls.Add(this.InsertQualificationEvaluationcomboBox);
-            this.Evaluationpanel.Controls.Add(this.SearchEvaluationbutton);
-            this.Evaluationpanel.Controls.Add(this.BackEvaluationbutton);
-            this.Evaluationpanel.Controls.Add(this.Evaluationlabel);
-            this.Evaluationpanel.Location = new System.Drawing.Point(528, 157);
-            this.Evaluationpanel.Margin = new System.Windows.Forms.Padding(2);
-            this.Evaluationpanel.Name = "Evaluationpanel";
-            this.Evaluationpanel.Size = new System.Drawing.Size(45, 48);
-            this.Evaluationpanel.TabIndex = 9;
-            // 
-            // InsertSignEvaluationlabel
-            // 
-            this.InsertSignEvaluationlabel.AutoSize = true;
-            this.InsertSignEvaluationlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertSignEvaluationlabel.Location = new System.Drawing.Point(34, 191);
-            this.InsertSignEvaluationlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertSignEvaluationlabel.Name = "InsertSignEvaluationlabel";
-            this.InsertSignEvaluationlabel.Size = new System.Drawing.Size(326, 13);
-            this.InsertSignEvaluationlabel.TabIndex = 7;
-            this.InsertSignEvaluationlabel.Text = "Indique si la evaluación debe ser mayor, menor o igual al parámetro:";
-            // 
-            // InsertQualificationEvaluationlabel
-            // 
-            this.InsertQualificationEvaluationlabel.AutoSize = true;
-            this.InsertQualificationEvaluationlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertQualificationEvaluationlabel.Location = new System.Drawing.Point(34, 97);
-            this.InsertQualificationEvaluationlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertQualificationEvaluationlabel.Name = "InsertQualificationEvaluationlabel";
-            this.InsertQualificationEvaluationlabel.Size = new System.Drawing.Size(191, 13);
-            this.InsertQualificationEvaluationlabel.TabIndex = 6;
-            this.InsertQualificationEvaluationlabel.Text = "Ingrese la nota a usar como parámetro:";
-            // 
-            // ResultEvaluationrichTextBox
-            // 
-            this.ResultEvaluationrichTextBox.Location = new System.Drawing.Point(382, 76);
-            this.ResultEvaluationrichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ResultEvaluationrichTextBox.Name = "ResultEvaluationrichTextBox";
-            this.ResultEvaluationrichTextBox.Size = new System.Drawing.Size(200, 171);
-            this.ResultEvaluationrichTextBox.TabIndex = 5;
-            this.ResultEvaluationrichTextBox.Text = "";
-            // 
-            // InsertSignEvaluationcomboBox
-            // 
-            this.InsertSignEvaluationcomboBox.FormattingEnabled = true;
-            this.InsertSignEvaluationcomboBox.Location = new System.Drawing.Point(36, 225);
-            this.InsertSignEvaluationcomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertSignEvaluationcomboBox.Name = "InsertSignEvaluationcomboBox";
-            this.InsertSignEvaluationcomboBox.Size = new System.Drawing.Size(92, 21);
-            this.InsertSignEvaluationcomboBox.TabIndex = 4;
-            // 
-            // InsertQualificationEvaluationcomboBox
-            // 
-            this.InsertQualificationEvaluationcomboBox.FormattingEnabled = true;
-            this.InsertQualificationEvaluationcomboBox.Location = new System.Drawing.Point(36, 140);
-            this.InsertQualificationEvaluationcomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertQualificationEvaluationcomboBox.Name = "InsertQualificationEvaluationcomboBox";
-            this.InsertQualificationEvaluationcomboBox.Size = new System.Drawing.Size(92, 21);
-            this.InsertQualificationEvaluationcomboBox.TabIndex = 3;
-            // 
-            // SearchEvaluationbutton
-            // 
-            this.SearchEvaluationbutton.Location = new System.Drawing.Point(428, 256);
-            this.SearchEvaluationbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.SearchEvaluationbutton.Name = "SearchEvaluationbutton";
-            this.SearchEvaluationbutton.Size = new System.Drawing.Size(117, 43);
-            this.SearchEvaluationbutton.TabIndex = 2;
-            this.SearchEvaluationbutton.Text = "Buscar";
-            this.SearchEvaluationbutton.UseVisualStyleBackColor = true;
-            // 
-            // BackEvaluationbutton
-            // 
-            this.BackEvaluationbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackEvaluationbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackEvaluationbutton.Name = "BackEvaluationbutton";
-            this.BackEvaluationbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackEvaluationbutton.TabIndex = 1;
-            this.BackEvaluationbutton.Text = "Volver";
-            this.BackEvaluationbutton.UseVisualStyleBackColor = true;
-            this.BackEvaluationbutton.Click += new System.EventHandler(this.BackEvaluationbutton_Click);
-            // 
-            // Evaluationlabel
-            // 
-            this.Evaluationlabel.AutoSize = true;
-            this.Evaluationlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Evaluationlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.Evaluationlabel.Location = new System.Drawing.Point(218, 18);
-            this.Evaluationlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Evaluationlabel.Name = "Evaluationlabel";
-            this.Evaluationlabel.Size = new System.Drawing.Size(147, 31);
-            this.Evaluationlabel.TabIndex = 0;
-            this.Evaluationlabel.Text = "Evaluación";
-            // 
-            // Artistpanel
-            // 
-            this.Artistpanel.Controls.Add(this.SearchArtistbutton);
-            this.Artistpanel.Controls.Add(this.Message2label);
-            this.Artistpanel.Controls.Add(this.Message1label);
-            this.Artistpanel.Controls.Add(this.InsertAnswerArtisttextBox);
-            this.Artistpanel.Controls.Add(this.ResultArtistrichTextBox);
-            this.Artistpanel.Controls.Add(this.GenderArtistbutton);
-            this.Artistpanel.Controls.Add(this.AgeArtistbutton);
-            this.Artistpanel.Controls.Add(this.BackArtistbutton);
-            this.Artistpanel.Controls.Add(this.Artistlabel);
-            this.Artistpanel.Location = new System.Drawing.Point(526, 89);
-            this.Artistpanel.Margin = new System.Windows.Forms.Padding(2);
-            this.Artistpanel.Name = "Artistpanel";
-            this.Artistpanel.Size = new System.Drawing.Size(44, 48);
-            this.Artistpanel.TabIndex = 2;
-            // 
-            // SearchArtistbutton
-            // 
-            this.SearchArtistbutton.Location = new System.Drawing.Point(421, 284);
-            this.SearchArtistbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.SearchArtistbutton.Name = "SearchArtistbutton";
-            this.SearchArtistbutton.Size = new System.Drawing.Size(114, 32);
-            this.SearchArtistbutton.TabIndex = 8;
-            this.SearchArtistbutton.Text = "Buscar";
-            this.SearchArtistbutton.UseVisualStyleBackColor = true;
-            // 
-            // Message2label
-            // 
-            this.Message2label.AutoSize = true;
-            this.Message2label.ForeColor = System.Drawing.SystemColors.Window;
-            this.Message2label.Location = new System.Drawing.Point(166, 220);
-            this.Message2label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Message2label.Name = "Message2label";
-            this.Message2label.Size = new System.Drawing.Size(193, 13);
-            this.Message2label.TabIndex = 7;
-            this.Message2label.Text = "Ingrese el género solicitado aquí arriba:";
-            // 
-            // Message1label
-            // 
-            this.Message1label.AutoSize = true;
-            this.Message1label.ForeColor = System.Drawing.SystemColors.Window;
-            this.Message1label.Location = new System.Drawing.Point(166, 120);
-            this.Message1label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Message1label.Name = "Message1label";
-            this.Message1label.Size = new System.Drawing.Size(184, 13);
-            this.Message1label.TabIndex = 6;
-            this.Message1label.Text = "Ingrese la edad solicitada aquí abajo:";
-            // 
-            // InsertAnswerArtisttextBox
-            // 
-            this.InsertAnswerArtisttextBox.Location = new System.Drawing.Point(169, 166);
-            this.InsertAnswerArtisttextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertAnswerArtisttextBox.Name = "InsertAnswerArtisttextBox";
-            this.InsertAnswerArtisttextBox.Size = new System.Drawing.Size(181, 20);
-            this.InsertAnswerArtisttextBox.TabIndex = 5;
-            // 
-            // ResultArtistrichTextBox
-            // 
-            this.ResultArtistrichTextBox.Location = new System.Drawing.Point(392, 72);
-            this.ResultArtistrichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ResultArtistrichTextBox.Name = "ResultArtistrichTextBox";
-            this.ResultArtistrichTextBox.Size = new System.Drawing.Size(170, 201);
-            this.ResultArtistrichTextBox.TabIndex = 4;
-            this.ResultArtistrichTextBox.Text = "";
-            // 
-            // GenderArtistbutton
-            // 
-            this.GenderArtistbutton.Location = new System.Drawing.Point(75, 206);
-            this.GenderArtistbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.GenderArtistbutton.Name = "GenderArtistbutton";
-            this.GenderArtistbutton.Size = new System.Drawing.Size(72, 39);
-            this.GenderArtistbutton.TabIndex = 3;
-            this.GenderArtistbutton.Text = "Por género musical";
-            this.GenderArtistbutton.UseVisualStyleBackColor = true;
-            // 
-            // AgeArtistbutton
-            // 
-            this.AgeArtistbutton.Location = new System.Drawing.Point(75, 110);
-            this.AgeArtistbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.AgeArtistbutton.Name = "AgeArtistbutton";
-            this.AgeArtistbutton.Size = new System.Drawing.Size(69, 37);
-            this.AgeArtistbutton.TabIndex = 2;
-            this.AgeArtistbutton.Text = "Por edad";
-            this.AgeArtistbutton.UseVisualStyleBackColor = true;
-            // 
-            // BackArtistbutton
-            // 
-            this.BackArtistbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackArtistbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackArtistbutton.Name = "BackArtistbutton";
-            this.BackArtistbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackArtistbutton.TabIndex = 1;
-            this.BackArtistbutton.Text = "Volver";
-            this.BackArtistbutton.UseVisualStyleBackColor = true;
-            this.BackArtistbutton.Click += new System.EventHandler(this.BackArtistbutton_Click);
-            // 
-            // Artistlabel
-            // 
-            this.Artistlabel.AutoSize = true;
-            this.Artistlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Artistlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.Artistlabel.Location = new System.Drawing.Point(239, 18);
-            this.Artistlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Artistlabel.Name = "Artistlabel";
-            this.Artistlabel.Size = new System.Drawing.Size(92, 31);
-            this.Artistlabel.TabIndex = 0;
-            this.Artistlabel.Text = "Artista";
-            // 
-            // Keywordpanel
-            // 
-            this.Keywordpanel.Controls.Add(this.Keywordlabel);
-            this.Keywordpanel.Controls.Add(this.BackKeywordbutton);
-            this.Keywordpanel.Location = new System.Drawing.Point(528, 13);
-            this.Keywordpanel.Margin = new System.Windows.Forms.Padding(2);
-            this.Keywordpanel.Name = "Keywordpanel";
-            this.Keywordpanel.Size = new System.Drawing.Size(42, 49);
-            this.Keywordpanel.TabIndex = 7;
-            // 
-            // Keywordlabel
-            // 
-            this.Keywordlabel.AutoSize = true;
-            this.Keywordlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Keywordlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.Keywordlabel.Location = new System.Drawing.Point(208, 18);
-            this.Keywordlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Keywordlabel.Name = "Keywordlabel";
-            this.Keywordlabel.Size = new System.Drawing.Size(198, 31);
-            this.Keywordlabel.TabIndex = 1;
-            this.Keywordlabel.Text = "Palabras Clave";
-            // 
-            // BackKeywordbutton
-            // 
-            this.BackKeywordbutton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BackKeywordbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackKeywordbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackKeywordbutton.Name = "BackKeywordbutton";
-            this.BackKeywordbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackKeywordbutton.TabIndex = 0;
-            this.BackKeywordbutton.Text = "Volver";
-            this.BackKeywordbutton.UseVisualStyleBackColor = true;
-            this.BackKeywordbutton.Click += new System.EventHandler(this.BackKeywordbutton_Click);
-            // 
-            // CategoriesSearchSongsbutton
-            // 
-            this.CategoriesSearchSongsbutton.Location = new System.Drawing.Point(294, 199);
-            this.CategoriesSearchSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.CategoriesSearchSongsbutton.Name = "CategoriesSearchSongsbutton";
-            this.CategoriesSearchSongsbutton.Size = new System.Drawing.Size(71, 40);
-            this.CategoriesSearchSongsbutton.TabIndex = 6;
-            this.CategoriesSearchSongsbutton.Text = "Por Categoría";
-            this.CategoriesSearchSongsbutton.UseVisualStyleBackColor = true;
-            this.CategoriesSearchSongsbutton.Click += new System.EventHandler(this.CategoriesSearchSongsbutton_Click);
-            // 
-            // EvaluationSearchSongsbutton
-            // 
-            this.EvaluationSearchSongsbutton.Location = new System.Drawing.Point(192, 202);
-            this.EvaluationSearchSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.EvaluationSearchSongsbutton.Name = "EvaluationSearchSongsbutton";
-            this.EvaluationSearchSongsbutton.Size = new System.Drawing.Size(69, 40);
-            this.EvaluationSearchSongsbutton.TabIndex = 5;
-            this.EvaluationSearchSongsbutton.Text = "Por Evaluación";
-            this.EvaluationSearchSongsbutton.UseVisualStyleBackColor = true;
-            this.EvaluationSearchSongsbutton.Click += new System.EventHandler(this.EvaluationSearchSongsbutton_Click);
-            // 
-            // ArtistSearchSongsbutton
-            // 
-            this.ArtistSearchSongsbutton.Location = new System.Drawing.Point(298, 124);
-            this.ArtistSearchSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.ArtistSearchSongsbutton.Name = "ArtistSearchSongsbutton";
-            this.ArtistSearchSongsbutton.Size = new System.Drawing.Size(57, 40);
-            this.ArtistSearchSongsbutton.TabIndex = 4;
-            this.ArtistSearchSongsbutton.Text = "Por Artista";
-            this.ArtistSearchSongsbutton.UseVisualStyleBackColor = true;
-            this.ArtistSearchSongsbutton.Click += new System.EventHandler(this.ArtistSearchSongsbutton_Click);
-            // 
-            // KeywordSearchSongsbutton
-            // 
-            this.KeywordSearchSongsbutton.Location = new System.Drawing.Point(192, 128);
-            this.KeywordSearchSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.KeywordSearchSongsbutton.Name = "KeywordSearchSongsbutton";
-            this.KeywordSearchSongsbutton.Size = new System.Drawing.Size(75, 35);
-            this.KeywordSearchSongsbutton.TabIndex = 3;
-            this.KeywordSearchSongsbutton.Text = "Por palabras clave";
-            this.KeywordSearchSongsbutton.UseVisualStyleBackColor = true;
-            this.KeywordSearchSongsbutton.Click += new System.EventHandler(this.KeywordSearchSongsbutton_Click);
-            // 
-            // BackSearchSongsbutton
-            // 
-            this.BackSearchSongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackSearchSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackSearchSongsbutton.Name = "BackSearchSongsbutton";
-            this.BackSearchSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackSearchSongsbutton.TabIndex = 1;
-            this.BackSearchSongsbutton.Text = "Volver";
-            this.BackSearchSongsbutton.UseVisualStyleBackColor = true;
-            this.BackSearchSongsbutton.Click += new System.EventHandler(this.BackSearchSongsbutton_Click);
-            // 
-            // SearchSongslabel
-            // 
-            this.SearchSongslabel.AutoSize = true;
-            this.SearchSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.SearchSongslabel.Location = new System.Drawing.Point(187, 18);
-            this.SearchSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SearchSongslabel.Name = "SearchSongslabel";
-            this.SearchSongslabel.Size = new System.Drawing.Size(206, 31);
-            this.SearchSongslabel.TabIndex = 0;
-            this.SearchSongslabel.Text = "Buscar Canción";
-            // 
-            // AddToPlaylistSongspanel
-            // 
-            this.AddToPlaylistSongspanel.Controls.Add(this.MessageAddToPlaylistSongslabel);
-            this.AddToPlaylistSongspanel.Controls.Add(this.AddAddToPlaylistSongsbutton);
-            this.AddToPlaylistSongspanel.Controls.Add(this.InsertPlaylistNameAddToPlaylistSongstextBox);
-            this.AddToPlaylistSongspanel.Controls.Add(this.InsertArtistNameAddToPlaylistSongstextBox);
-            this.AddToPlaylistSongspanel.Controls.Add(this.InsertSongNameAddToPlaylistSongstextBox);
-            this.AddToPlaylistSongspanel.Controls.Add(this.InsertPlaylistNameAddToPlaylistSongslabel);
-            this.AddToPlaylistSongspanel.Controls.Add(this.InsertArtistnameAddToPlaylistSongslabel);
-            this.AddToPlaylistSongspanel.Controls.Add(this.InsertSongNameAddToPlaylistSongslabel);
-            this.AddToPlaylistSongspanel.Controls.Add(this.AddToPlaylistSongslabel);
-            this.AddToPlaylistSongspanel.Controls.Add(this.BackAddToPlaylistSongsbutton);
-            this.AddToPlaylistSongspanel.Location = new System.Drawing.Point(487, 287);
-            this.AddToPlaylistSongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.AddToPlaylistSongspanel.Name = "AddToPlaylistSongspanel";
-            this.AddToPlaylistSongspanel.Size = new System.Drawing.Size(42, 48);
-            this.AddToPlaylistSongspanel.TabIndex = 7;
-            // 
-            // MessageAddToPlaylistSongslabel
-            // 
-            this.MessageAddToPlaylistSongslabel.AutoSize = true;
-            this.MessageAddToPlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.MessageAddToPlaylistSongslabel.Location = new System.Drawing.Point(228, 271);
-            this.MessageAddToPlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.MessageAddToPlaylistSongslabel.Name = "MessageAddToPlaylistSongslabel";
-            this.MessageAddToPlaylistSongslabel.Size = new System.Drawing.Size(216, 13);
-            this.MessageAddToPlaylistSongslabel.TabIndex = 9;
-            this.MessageAddToPlaylistSongslabel.Text = "No fue posible añadir la canción a la playlist.";
-            // 
-            // AddAddToPlaylistSongsbutton
-            // 
-            this.AddAddToPlaylistSongsbutton.Location = new System.Drawing.Point(298, 214);
-            this.AddAddToPlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.AddAddToPlaylistSongsbutton.Name = "AddAddToPlaylistSongsbutton";
-            this.AddAddToPlaylistSongsbutton.Size = new System.Drawing.Size(64, 26);
-            this.AddAddToPlaylistSongsbutton.TabIndex = 8;
-            this.AddAddToPlaylistSongsbutton.Text = "Agregar";
-            this.AddAddToPlaylistSongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // InsertPlaylistNameAddToPlaylistSongstextBox
-            // 
-            this.InsertPlaylistNameAddToPlaylistSongstextBox.Location = new System.Drawing.Point(293, 171);
-            this.InsertPlaylistNameAddToPlaylistSongstextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertPlaylistNameAddToPlaylistSongstextBox.Name = "InsertPlaylistNameAddToPlaylistSongstextBox";
-            this.InsertPlaylistNameAddToPlaylistSongstextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertPlaylistNameAddToPlaylistSongstextBox.TabIndex = 7;
-            // 
-            // InsertArtistNameAddToPlaylistSongstextBox
-            // 
-            this.InsertArtistNameAddToPlaylistSongstextBox.Location = new System.Drawing.Point(293, 135);
-            this.InsertArtistNameAddToPlaylistSongstextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertArtistNameAddToPlaylistSongstextBox.Name = "InsertArtistNameAddToPlaylistSongstextBox";
-            this.InsertArtistNameAddToPlaylistSongstextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertArtistNameAddToPlaylistSongstextBox.TabIndex = 6;
-            // 
-            // InsertSongNameAddToPlaylistSongstextBox
-            // 
-            this.InsertSongNameAddToPlaylistSongstextBox.Location = new System.Drawing.Point(293, 98);
-            this.InsertSongNameAddToPlaylistSongstextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertSongNameAddToPlaylistSongstextBox.Name = "InsertSongNameAddToPlaylistSongstextBox";
-            this.InsertSongNameAddToPlaylistSongstextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertSongNameAddToPlaylistSongstextBox.TabIndex = 5;
-            // 
-            // InsertPlaylistNameAddToPlaylistSongslabel
-            // 
-            this.InsertPlaylistNameAddToPlaylistSongslabel.AutoSize = true;
-            this.InsertPlaylistNameAddToPlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertPlaylistNameAddToPlaylistSongslabel.Location = new System.Drawing.Point(140, 173);
-            this.InsertPlaylistNameAddToPlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertPlaylistNameAddToPlaylistSongslabel.Name = "InsertPlaylistNameAddToPlaylistSongslabel";
-            this.InsertPlaylistNameAddToPlaylistSongslabel.Size = new System.Drawing.Size(107, 13);
-            this.InsertPlaylistNameAddToPlaylistSongslabel.TabIndex = 4;
-            this.InsertPlaylistNameAddToPlaylistSongslabel.Text = "Nombre de la playlist:";
-            // 
-            // InsertArtistnameAddToPlaylistSongslabel
-            // 
-            this.InsertArtistnameAddToPlaylistSongslabel.AutoSize = true;
-            this.InsertArtistnameAddToPlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertArtistnameAddToPlaylistSongslabel.Location = new System.Drawing.Point(140, 138);
-            this.InsertArtistnameAddToPlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertArtistnameAddToPlaylistSongslabel.Name = "InsertArtistnameAddToPlaylistSongslabel";
-            this.InsertArtistnameAddToPlaylistSongslabel.Size = new System.Drawing.Size(95, 13);
-            this.InsertArtistnameAddToPlaylistSongslabel.TabIndex = 3;
-            this.InsertArtistnameAddToPlaylistSongslabel.Text = "Nombre del artista:";
-            // 
-            // InsertSongNameAddToPlaylistSongslabel
-            // 
-            this.InsertSongNameAddToPlaylistSongslabel.AutoSize = true;
-            this.InsertSongNameAddToPlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertSongNameAddToPlaylistSongslabel.Location = new System.Drawing.Point(140, 100);
-            this.InsertSongNameAddToPlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertSongNameAddToPlaylistSongslabel.Name = "InsertSongNameAddToPlaylistSongslabel";
-            this.InsertSongNameAddToPlaylistSongslabel.Size = new System.Drawing.Size(114, 13);
-            this.InsertSongNameAddToPlaylistSongslabel.TabIndex = 2;
-            this.InsertSongNameAddToPlaylistSongslabel.Text = "Nombre de la canción:";
-            // 
-            // AddToPlaylistSongslabel
-            // 
-            this.AddToPlaylistSongslabel.AutoSize = true;
-            this.AddToPlaylistSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddToPlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.AddToPlaylistSongslabel.Location = new System.Drawing.Point(135, 18);
-            this.AddToPlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.AddToPlaylistSongslabel.Name = "AddToPlaylistSongslabel";
-            this.AddToPlaylistSongslabel.Size = new System.Drawing.Size(333, 31);
-            this.AddToPlaylistSongslabel.TabIndex = 1;
-            this.AddToPlaylistSongslabel.Text = "Agregar Canción a Playlist";
-            // 
-            // BackAddToPlaylistSongsbutton
-            // 
-            this.BackAddToPlaylistSongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackAddToPlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackAddToPlaylistSongsbutton.Name = "BackAddToPlaylistSongsbutton";
-            this.BackAddToPlaylistSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackAddToPlaylistSongsbutton.TabIndex = 0;
-            this.BackAddToPlaylistSongsbutton.Text = "Volver";
-            this.BackAddToPlaylistSongsbutton.UseVisualStyleBackColor = true;
-            this.BackAddToPlaylistSongsbutton.Click += new System.EventHandler(this.BackAddToPlaylistSongsbutton_Click);
-            // 
-            // AddToFavouriteSongspanel
-            // 
-            this.AddToFavouriteSongspanel.Controls.Add(this.MessageAddToFavouriteSongslabel);
-            this.AddToFavouriteSongspanel.Controls.Add(this.AddAddToFavouriteSongsbutton);
-            this.AddToFavouriteSongspanel.Controls.Add(this.InsertSongNameAddToFavouriteSongslabel);
-            this.AddToFavouriteSongspanel.Controls.Add(this.InsertSongNameAddToFavouriteSongscomboBox);
-            this.AddToFavouriteSongspanel.Controls.Add(this.BackAddToFavouriteSongsbutton);
-            this.AddToFavouriteSongspanel.Controls.Add(this.AddToFavouriteSongslabe);
-            this.AddToFavouriteSongspanel.Location = new System.Drawing.Point(7, 307);
-            this.AddToFavouriteSongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.AddToFavouriteSongspanel.Name = "AddToFavouriteSongspanel";
-            this.AddToFavouriteSongspanel.Size = new System.Drawing.Size(41, 51);
-            this.AddToFavouriteSongspanel.TabIndex = 10;
-            // 
-            // MessageAddToFavouriteSongslabel
-            // 
-            this.MessageAddToFavouriteSongslabel.AutoSize = true;
-            this.MessageAddToFavouriteSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.MessageAddToFavouriteSongslabel.Location = new System.Drawing.Point(211, 243);
-            this.MessageAddToFavouriteSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.MessageAddToFavouriteSongslabel.Name = "MessageAddToFavouriteSongslabel";
-            this.MessageAddToFavouriteSongslabel.Size = new System.Drawing.Size(183, 13);
-            this.MessageAddToFavouriteSongslabel.TabIndex = 5;
-            this.MessageAddToFavouriteSongslabel.Text = "La canción se añadió correctamente.";
-            // 
-            // AddAddToFavouriteSongsbutton
-            // 
-            this.AddAddToFavouriteSongsbutton.Location = new System.Drawing.Point(276, 186);
-            this.AddAddToFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.AddAddToFavouriteSongsbutton.Name = "AddAddToFavouriteSongsbutton";
-            this.AddAddToFavouriteSongsbutton.Size = new System.Drawing.Size(60, 24);
-            this.AddAddToFavouriteSongsbutton.TabIndex = 4;
-            this.AddAddToFavouriteSongsbutton.Text = "Agregar";
-            this.AddAddToFavouriteSongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // InsertSongNameAddToFavouriteSongslabel
-            // 
-            this.InsertSongNameAddToFavouriteSongslabel.AutoSize = true;
-            this.InsertSongNameAddToFavouriteSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertSongNameAddToFavouriteSongslabel.Location = new System.Drawing.Point(185, 134);
-            this.InsertSongNameAddToFavouriteSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertSongNameAddToFavouriteSongslabel.Name = "InsertSongNameAddToFavouriteSongslabel";
-            this.InsertSongNameAddToFavouriteSongslabel.Size = new System.Drawing.Size(114, 13);
-            this.InsertSongNameAddToFavouriteSongslabel.TabIndex = 3;
-            this.InsertSongNameAddToFavouriteSongslabel.Text = "Nombre de la canción:";
-            // 
-            // InsertSongNameAddToFavouriteSongscomboBox
-            // 
-            this.InsertSongNameAddToFavouriteSongscomboBox.FormattingEnabled = true;
-            this.InsertSongNameAddToFavouriteSongscomboBox.Location = new System.Drawing.Point(321, 134);
-            this.InsertSongNameAddToFavouriteSongscomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertSongNameAddToFavouriteSongscomboBox.Name = "InsertSongNameAddToFavouriteSongscomboBox";
-            this.InsertSongNameAddToFavouriteSongscomboBox.Size = new System.Drawing.Size(92, 21);
-            this.InsertSongNameAddToFavouriteSongscomboBox.TabIndex = 2;
-            // 
-            // BackAddToFavouriteSongsbutton
-            // 
-            this.BackAddToFavouriteSongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackAddToFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackAddToFavouriteSongsbutton.Name = "BackAddToFavouriteSongsbutton";
-            this.BackAddToFavouriteSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackAddToFavouriteSongsbutton.TabIndex = 1;
-            this.BackAddToFavouriteSongsbutton.Text = "Volver";
-            this.BackAddToFavouriteSongsbutton.UseVisualStyleBackColor = true;
-            this.BackAddToFavouriteSongsbutton.Click += new System.EventHandler(this.BackAddToFavouriteSongsbutton_Click);
-            // 
-            // AddToFavouriteSongslabe
-            // 
-            this.AddToFavouriteSongslabe.AutoSize = true;
-            this.AddToFavouriteSongslabe.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddToFavouriteSongslabe.ForeColor = System.Drawing.SystemColors.Window;
-            this.AddToFavouriteSongslabe.Location = new System.Drawing.Point(135, 16);
-            this.AddToFavouriteSongslabe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.AddToFavouriteSongslabe.Name = "AddToFavouriteSongslabe";
-            this.AddToFavouriteSongslabe.Size = new System.Drawing.Size(341, 31);
-            this.AddToFavouriteSongslabe.TabIndex = 0;
-            this.AddToFavouriteSongslabe.Text = "Añadir Canción a Favoritos";
-            // 
-            // DownloadSongspanel
-            // 
-            this.DownloadSongspanel.Controls.Add(this.DownloadDownloadSongsbutton);
-            this.DownloadSongspanel.Controls.Add(this.InsertArtistNameDownloadSongstextBox);
-            this.DownloadSongspanel.Controls.Add(this.InsertSongNameDownloadSongstextBox);
-            this.DownloadSongspanel.Controls.Add(this.InsertArtistNameDownloadSongslabel);
-            this.DownloadSongspanel.Controls.Add(this.InsertNameSongDownloadSongslabel);
-            this.DownloadSongspanel.Controls.Add(this.BackDownloadSongsbutton);
-            this.DownloadSongspanel.Controls.Add(this.DownloadSongslabel);
-            this.DownloadSongspanel.Location = new System.Drawing.Point(500, 212);
-            this.DownloadSongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.DownloadSongspanel.Name = "DownloadSongspanel";
-            this.DownloadSongspanel.Size = new System.Drawing.Size(67, 64);
-            this.DownloadSongspanel.TabIndex = 7;
-            // 
-            // DownloadDownloadSongsbutton
-            // 
-            this.DownloadDownloadSongsbutton.Location = new System.Drawing.Point(274, 207);
-            this.DownloadDownloadSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.DownloadDownloadSongsbutton.Name = "DownloadDownloadSongsbutton";
-            this.DownloadDownloadSongsbutton.Size = new System.Drawing.Size(68, 33);
-            this.DownloadDownloadSongsbutton.TabIndex = 6;
-            this.DownloadDownloadSongsbutton.Text = "Descargar";
-            this.DownloadDownloadSongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // InsertArtistNameDownloadSongstextBox
-            // 
-            this.InsertArtistNameDownloadSongstextBox.Location = new System.Drawing.Point(272, 158);
-            this.InsertArtistNameDownloadSongstextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertArtistNameDownloadSongstextBox.Name = "InsertArtistNameDownloadSongstextBox";
-            this.InsertArtistNameDownloadSongstextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertArtistNameDownloadSongstextBox.TabIndex = 5;
-            // 
-            // InsertSongNameDownloadSongstextBox
-            // 
-            this.InsertSongNameDownloadSongstextBox.Location = new System.Drawing.Point(272, 113);
-            this.InsertSongNameDownloadSongstextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertSongNameDownloadSongstextBox.Name = "InsertSongNameDownloadSongstextBox";
-            this.InsertSongNameDownloadSongstextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertSongNameDownloadSongstextBox.TabIndex = 4;
-            // 
-            // InsertArtistNameDownloadSongslabel
-            // 
-            this.InsertArtistNameDownloadSongslabel.AutoSize = true;
-            this.InsertArtistNameDownloadSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertArtistNameDownloadSongslabel.Location = new System.Drawing.Point(73, 160);
-            this.InsertArtistNameDownloadSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertArtistNameDownloadSongslabel.Name = "InsertArtistNameDownloadSongslabel";
-            this.InsertArtistNameDownloadSongslabel.Size = new System.Drawing.Size(162, 13);
-            this.InsertArtistNameDownloadSongslabel.TabIndex = 3;
-            this.InsertArtistNameDownloadSongslabel.Text = "Nombre del artista de la canción:";
-            // 
-            // InsertNameSongDownloadSongslabel
-            // 
-            this.InsertNameSongDownloadSongslabel.AutoSize = true;
-            this.InsertNameSongDownloadSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertNameSongDownloadSongslabel.Location = new System.Drawing.Point(72, 115);
-            this.InsertNameSongDownloadSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertNameSongDownloadSongslabel.Name = "InsertNameSongDownloadSongslabel";
-            this.InsertNameSongDownloadSongslabel.Size = new System.Drawing.Size(173, 13);
-            this.InsertNameSongDownloadSongslabel.TabIndex = 2;
-            this.InsertNameSongDownloadSongslabel.Text = "Nombre de la canción a descargar:";
-            // 
-            // BackDownloadSongsbutton
-            // 
-            this.BackDownloadSongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackDownloadSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackDownloadSongsbutton.Name = "BackDownloadSongsbutton";
-            this.BackDownloadSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackDownloadSongsbutton.TabIndex = 1;
-            this.BackDownloadSongsbutton.Text = "Volver";
-            this.BackDownloadSongsbutton.UseVisualStyleBackColor = true;
-            this.BackDownloadSongsbutton.Click += new System.EventHandler(this.BackDownloadSongsbutton_Click);
-            // 
-            // DownloadSongslabel
-            // 
-            this.DownloadSongslabel.AutoSize = true;
-            this.DownloadSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DownloadSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.DownloadSongslabel.Location = new System.Drawing.Point(168, 7);
-            this.DownloadSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.DownloadSongslabel.Name = "DownloadSongslabel";
-            this.DownloadSongslabel.Size = new System.Drawing.Size(247, 31);
-            this.DownloadSongslabel.TabIndex = 0;
-            this.DownloadSongslabel.Text = "Descargar Canción";
-            // 
-            // QualifySongspanel
-            // 
-            this.QualifySongspanel.Controls.Add(this.InsertSongNameQualifySongstextBox);
-            this.QualifySongspanel.Controls.Add(this.InsertArtistNameQualifySongstextBox);
-            this.QualifySongspanel.Controls.Add(this.InsertQualificationQualifySongscomboBox);
-            this.QualifySongspanel.Controls.Add(this.QualifyQualifySongsbutton);
-            this.QualifySongspanel.Controls.Add(this.InsertQualificationQualifySongslabel);
-            this.QualifySongspanel.Controls.Add(this.InsertSongNameQualifySongslabel);
-            this.QualifySongspanel.Controls.Add(this.InsertArtistNameQualifySongslabel);
-            this.QualifySongspanel.Controls.Add(this.BackQualifySongsbutton);
-            this.QualifySongspanel.Controls.Add(this.QualifySongslabel);
-            this.QualifySongspanel.Location = new System.Drawing.Point(500, 75);
-            this.QualifySongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.QualifySongspanel.Name = "QualifySongspanel";
-            this.QualifySongspanel.Size = new System.Drawing.Size(60, 54);
-            this.QualifySongspanel.TabIndex = 8;
-            // 
-            // InsertSongNameQualifySongstextBox
-            // 
-            this.InsertSongNameQualifySongstextBox.Location = new System.Drawing.Point(316, 158);
-            this.InsertSongNameQualifySongstextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertSongNameQualifySongstextBox.Name = "InsertSongNameQualifySongstextBox";
-            this.InsertSongNameQualifySongstextBox.Size = new System.Drawing.Size(92, 20);
-            this.InsertSongNameQualifySongstextBox.TabIndex = 8;
-            // 
-            // InsertArtistNameQualifySongstextBox
-            // 
-            this.InsertArtistNameQualifySongstextBox.Location = new System.Drawing.Point(316, 113);
-            this.InsertArtistNameQualifySongstextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertArtistNameQualifySongstextBox.Name = "InsertArtistNameQualifySongstextBox";
-            this.InsertArtistNameQualifySongstextBox.Size = new System.Drawing.Size(91, 20);
-            this.InsertArtistNameQualifySongstextBox.TabIndex = 7;
-            // 
-            // InsertQualificationQualifySongscomboBox
-            // 
-            this.InsertQualificationQualifySongscomboBox.FormattingEnabled = true;
-            this.InsertQualificationQualifySongscomboBox.Location = new System.Drawing.Point(316, 202);
-            this.InsertQualificationQualifySongscomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertQualificationQualifySongscomboBox.Name = "InsertQualificationQualifySongscomboBox";
-            this.InsertQualificationQualifySongscomboBox.Size = new System.Drawing.Size(92, 21);
-            this.InsertQualificationQualifySongscomboBox.TabIndex = 6;
-            // 
-            // QualifyQualifySongsbutton
-            // 
-            this.QualifyQualifySongsbutton.Location = new System.Drawing.Point(274, 254);
-            this.QualifyQualifySongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.QualifyQualifySongsbutton.Name = "QualifyQualifySongsbutton";
-            this.QualifyQualifySongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.QualifyQualifySongsbutton.TabIndex = 5;
-            this.QualifyQualifySongsbutton.Text = "Calificar";
-            this.QualifyQualifySongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // InsertQualificationQualifySongslabel
-            // 
-            this.InsertQualificationQualifySongslabel.AutoSize = true;
-            this.InsertQualificationQualifySongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertQualificationQualifySongslabel.Location = new System.Drawing.Point(132, 205);
-            this.InsertQualificationQualifySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertQualificationQualifySongslabel.Name = "InsertQualificationQualifySongslabel";
-            this.InsertQualificationQualifySongslabel.Size = new System.Drawing.Size(94, 13);
-            this.InsertQualificationQualifySongslabel.TabIndex = 4;
-            this.InsertQualificationQualifySongslabel.Text = "Calificación (1-10):";
-            // 
-            // InsertSongNameQualifySongslabel
-            // 
-            this.InsertSongNameQualifySongslabel.AutoSize = true;
-            this.InsertSongNameQualifySongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertSongNameQualifySongslabel.Location = new System.Drawing.Point(132, 161);
-            this.InsertSongNameQualifySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertSongNameQualifySongslabel.Name = "InsertSongNameQualifySongslabel";
-            this.InsertSongNameQualifySongslabel.Size = new System.Drawing.Size(114, 13);
-            this.InsertSongNameQualifySongslabel.TabIndex = 3;
-            this.InsertSongNameQualifySongslabel.Text = "Nombre de la canción:";
-            // 
-            // InsertArtistNameQualifySongslabel
-            // 
-            this.InsertArtistNameQualifySongslabel.AutoSize = true;
-            this.InsertArtistNameQualifySongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertArtistNameQualifySongslabel.Location = new System.Drawing.Point(132, 115);
-            this.InsertArtistNameQualifySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertArtistNameQualifySongslabel.Name = "InsertArtistNameQualifySongslabel";
-            this.InsertArtistNameQualifySongslabel.Size = new System.Drawing.Size(162, 13);
-            this.InsertArtistNameQualifySongslabel.TabIndex = 2;
-            this.InsertArtistNameQualifySongslabel.Text = "Nombre del artista de la canción:";
-            // 
-            // BackQualifySongsbutton
-            // 
-            this.BackQualifySongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackQualifySongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackQualifySongsbutton.Name = "BackQualifySongsbutton";
-            this.BackQualifySongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackQualifySongsbutton.TabIndex = 1;
-            this.BackQualifySongsbutton.Text = "Volver";
-            this.BackQualifySongsbutton.UseVisualStyleBackColor = true;
-            this.BackQualifySongsbutton.Click += new System.EventHandler(this.BackQualifySongsbutton_Click);
-            // 
-            // QualifySongslabel
-            // 
-            this.QualifySongslabel.AutoSize = true;
-            this.QualifySongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QualifySongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.QualifySongslabel.Location = new System.Drawing.Point(181, 18);
-            this.QualifySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.QualifySongslabel.Name = "QualifySongslabel";
-            this.QualifySongslabel.Size = new System.Drawing.Size(220, 31);
-            this.QualifySongslabel.TabIndex = 0;
-            this.QualifySongslabel.Text = "Calificar Canción";
-            // 
-            // CreatePlaylistSongspanel
-            // 
-            this.CreatePlaylistSongspanel.Controls.Add(this.MessageCreatePlaylistSongslabel);
-            this.CreatePlaylistSongspanel.Controls.Add(this.CreateCreatePlaylistSongsbutton);
-            this.CreatePlaylistSongspanel.Controls.Add(this.InsertPlaylistNameCreatePlaylistSongstextBox);
-            this.CreatePlaylistSongspanel.Controls.Add(this.InsertPrivacyCreatePlaylistSongscomboBox);
-            this.CreatePlaylistSongspanel.Controls.Add(this.InsertPrivacyCreatePlaylistSongslabel);
-            this.CreatePlaylistSongspanel.Controls.Add(this.InsertPlaylistNameCreatePlaylistSongslabel);
-            this.CreatePlaylistSongspanel.Controls.Add(this.CreatePlaylistSongslabel);
-            this.CreatePlaylistSongspanel.Controls.Add(this.BackCreatePlaylistSongsbutton);
-            this.CreatePlaylistSongspanel.Location = new System.Drawing.Point(500, 6);
-            this.CreatePlaylistSongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.CreatePlaylistSongspanel.Name = "CreatePlaylistSongspanel";
-            this.CreatePlaylistSongspanel.Size = new System.Drawing.Size(73, 61);
-            this.CreatePlaylistSongspanel.TabIndex = 14;
-            // 
-            // MessageCreatePlaylistSongslabel
-            // 
-            this.MessageCreatePlaylistSongslabel.AutoSize = true;
-            this.MessageCreatePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.MessageCreatePlaylistSongslabel.Location = new System.Drawing.Point(272, 245);
-            this.MessageCreatePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.MessageCreatePlaylistSongslabel.Name = "MessageCreatePlaylistSongslabel";
-            this.MessageCreatePlaylistSongslabel.Size = new System.Drawing.Size(124, 13);
-            this.MessageCreatePlaylistSongslabel.TabIndex = 7;
-            this.MessageCreatePlaylistSongslabel.Text = "Playlist creada con éxito.";
-            // 
-            // CreateCreatePlaylistSongsbutton
-            // 
-            this.CreateCreatePlaylistSongsbutton.Location = new System.Drawing.Point(304, 198);
-            this.CreateCreatePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.CreateCreatePlaylistSongsbutton.Name = "CreateCreatePlaylistSongsbutton";
-            this.CreateCreatePlaylistSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.CreateCreatePlaylistSongsbutton.TabIndex = 6;
-            this.CreateCreatePlaylistSongsbutton.Text = "Crear";
-            this.CreateCreatePlaylistSongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // InsertPlaylistNameCreatePlaylistSongstextBox
-            // 
-            this.InsertPlaylistNameCreatePlaylistSongstextBox.Location = new System.Drawing.Point(296, 122);
-            this.InsertPlaylistNameCreatePlaylistSongstextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertPlaylistNameCreatePlaylistSongstextBox.Name = "InsertPlaylistNameCreatePlaylistSongstextBox";
-            this.InsertPlaylistNameCreatePlaylistSongstextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertPlaylistNameCreatePlaylistSongstextBox.TabIndex = 5;
-            // 
-            // InsertPrivacyCreatePlaylistSongscomboBox
-            // 
-            this.InsertPrivacyCreatePlaylistSongscomboBox.FormattingEnabled = true;
-            this.InsertPrivacyCreatePlaylistSongscomboBox.Location = new System.Drawing.Point(294, 156);
-            this.InsertPrivacyCreatePlaylistSongscomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertPrivacyCreatePlaylistSongscomboBox.Name = "InsertPrivacyCreatePlaylistSongscomboBox";
-            this.InsertPrivacyCreatePlaylistSongscomboBox.Size = new System.Drawing.Size(92, 21);
-            this.InsertPrivacyCreatePlaylistSongscomboBox.TabIndex = 4;
-            // 
-            // InsertPrivacyCreatePlaylistSongslabel
-            // 
-            this.InsertPrivacyCreatePlaylistSongslabel.AutoSize = true;
-            this.InsertPrivacyCreatePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertPrivacyCreatePlaylistSongslabel.Location = new System.Drawing.Point(166, 155);
-            this.InsertPrivacyCreatePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertPrivacyCreatePlaylistSongslabel.Name = "InsertPrivacyCreatePlaylistSongslabel";
-            this.InsertPrivacyCreatePlaylistSongslabel.Size = new System.Drawing.Size(60, 13);
-            this.InsertPrivacyCreatePlaylistSongslabel.TabIndex = 3;
-            this.InsertPrivacyCreatePlaylistSongslabel.Text = "Privacidad:";
-            // 
-            // InsertPlaylistNameCreatePlaylistSongslabel
-            // 
-            this.InsertPlaylistNameCreatePlaylistSongslabel.AutoSize = true;
-            this.InsertPlaylistNameCreatePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertPlaylistNameCreatePlaylistSongslabel.Location = new System.Drawing.Point(166, 124);
-            this.InsertPlaylistNameCreatePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertPlaylistNameCreatePlaylistSongslabel.Name = "InsertPlaylistNameCreatePlaylistSongslabel";
-            this.InsertPlaylistNameCreatePlaylistSongslabel.Size = new System.Drawing.Size(108, 13);
-            this.InsertPlaylistNameCreatePlaylistSongslabel.TabIndex = 2;
-            this.InsertPlaylistNameCreatePlaylistSongslabel.Text = "Nombre de la Playlist:";
-            // 
-            // CreatePlaylistSongslabel
-            // 
-            this.CreatePlaylistSongslabel.AutoSize = true;
-            this.CreatePlaylistSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreatePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.CreatePlaylistSongslabel.Location = new System.Drawing.Point(213, 15);
-            this.CreatePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.CreatePlaylistSongslabel.Name = "CreatePlaylistSongslabel";
-            this.CreatePlaylistSongslabel.Size = new System.Drawing.Size(176, 31);
-            this.CreatePlaylistSongslabel.TabIndex = 1;
-            this.CreatePlaylistSongslabel.Text = "Crear Playlist";
-            // 
-            // BackCreatePlaylistSongsbutton
-            // 
-            this.BackCreatePlaylistSongsbutton.Location = new System.Drawing.Point(535, 337);
-            this.BackCreatePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackCreatePlaylistSongsbutton.Name = "BackCreatePlaylistSongsbutton";
-            this.BackCreatePlaylistSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackCreatePlaylistSongsbutton.TabIndex = 0;
-            this.BackCreatePlaylistSongsbutton.Text = "Volver";
-            this.BackCreatePlaylistSongsbutton.UseVisualStyleBackColor = true;
-            this.BackCreatePlaylistSongsbutton.Click += new System.EventHandler(this.BackCreatePlaylistSongsbutton_Click);
-            // 
-            // BackSongsbutton
-            // 
-            this.BackSongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackSongsbutton.Name = "BackSongsbutton";
-            this.BackSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackSongsbutton.TabIndex = 13;
-            this.BackSongsbutton.Text = "Volver";
-            this.BackSongsbutton.UseVisualStyleBackColor = true;
-            this.BackSongsbutton.Click += new System.EventHandler(this.BackSongsbutton_Click);
-            // 
-            // PlaySongsbutton
-            // 
-            this.PlaySongsbutton.Location = new System.Drawing.Point(285, 321);
-            this.PlaySongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.PlaySongsbutton.Name = "PlaySongsbutton";
-            this.PlaySongsbutton.Size = new System.Drawing.Size(78, 35);
-            this.PlaySongsbutton.TabIndex = 12;
-            this.PlaySongsbutton.Text = "Reproducir Canción";
-            this.PlaySongsbutton.UseVisualStyleBackColor = true;
-            this.PlaySongsbutton.Click += new System.EventHandler(this.PlaySongsbutton_Click);
-            // 
-            // InformationSongsbutton
-            // 
-            this.InformationSongsbutton.Location = new System.Drawing.Point(169, 317);
-            this.InformationSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.InformationSongsbutton.Name = "InformationSongsbutton";
-            this.InformationSongsbutton.Size = new System.Drawing.Size(83, 23);
-            this.InformationSongsbutton.TabIndex = 11;
-            this.InformationSongsbutton.Text = "Información";
-            this.InformationSongsbutton.UseVisualStyleBackColor = true;
-            this.InformationSongsbutton.Click += new System.EventHandler(this.InformationSongsbutton_Click);
-            // 
-            // SeeQueueSongsbutton
-            // 
-            this.SeeQueueSongsbutton.Location = new System.Drawing.Point(286, 280);
-            this.SeeQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.SeeQueueSongsbutton.Name = "SeeQueueSongsbutton";
-            this.SeeQueueSongsbutton.Size = new System.Drawing.Size(76, 32);
-            this.SeeQueueSongsbutton.TabIndex = 10;
-            this.SeeQueueSongsbutton.Text = "Ver en Cola";
-            this.SeeQueueSongsbutton.UseVisualStyleBackColor = true;
-            this.SeeQueueSongsbutton.Click += new System.EventHandler(this.SeeQueueSongsbutton_Click);
-            // 
-            // SeeFavouriteSongsbutton
-            // 
-            this.SeeFavouriteSongsbutton.Location = new System.Drawing.Point(169, 280);
-            this.SeeFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.SeeFavouriteSongsbutton.Name = "SeeFavouriteSongsbutton";
-            this.SeeFavouriteSongsbutton.Size = new System.Drawing.Size(83, 32);
-            this.SeeFavouriteSongsbutton.TabIndex = 9;
-            this.SeeFavouriteSongsbutton.Text = "Ver Favoritos";
-            this.SeeFavouriteSongsbutton.UseVisualStyleBackColor = true;
-            this.SeeFavouriteSongsbutton.Click += new System.EventHandler(this.SeeFavouriteSongsbutton_Click);
-            // 
-            // SeePlaylistSongsbutton
-            // 
-            this.SeePlaylistSongsbutton.Location = new System.Drawing.Point(286, 244);
-            this.SeePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.SeePlaylistSongsbutton.Name = "SeePlaylistSongsbutton";
-            this.SeePlaylistSongsbutton.Size = new System.Drawing.Size(72, 26);
-            this.SeePlaylistSongsbutton.TabIndex = 8;
-            this.SeePlaylistSongsbutton.Text = "Ver Playlist";
-            this.SeePlaylistSongsbutton.UseVisualStyleBackColor = true;
-            this.SeePlaylistSongsbutton.Click += new System.EventHandler(this.SeePlaylistSongsbutton_Click);
-            // 
-            // AddToQueueSongsbutton
-            // 
-            this.AddToQueueSongsbutton.Location = new System.Drawing.Point(158, 229);
-            this.AddToQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.AddToQueueSongsbutton.Name = "AddToQueueSongsbutton";
-            this.AddToQueueSongsbutton.Size = new System.Drawing.Size(94, 45);
-            this.AddToQueueSongsbutton.TabIndex = 7;
-            this.AddToQueueSongsbutton.Text = "Agregar Canción a la Cola";
-            this.AddToQueueSongsbutton.UseVisualStyleBackColor = true;
-            this.AddToQueueSongsbutton.Click += new System.EventHandler(this.AddToQueueSongsbutton_Click);
-            // 
-            // SelectFavouriteSongsbutton
-            // 
-            this.SelectFavouriteSongsbutton.Location = new System.Drawing.Point(277, 182);
-            this.SelectFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.SelectFavouriteSongsbutton.Name = "SelectFavouriteSongsbutton";
-            this.SelectFavouriteSongsbutton.Size = new System.Drawing.Size(114, 36);
-            this.SelectFavouriteSongsbutton.TabIndex = 6;
-            this.SelectFavouriteSongsbutton.Text = "Seleccionar Canción como Favorito";
-            this.SelectFavouriteSongsbutton.UseVisualStyleBackColor = true;
-            this.SelectFavouriteSongsbutton.Click += new System.EventHandler(this.SelectFavouriteSongsbutton_Click);
-            // 
-            // QualifySongsbutton
-            // 
-            this.QualifySongsbutton.Location = new System.Drawing.Point(300, 67);
-            this.QualifySongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.QualifySongsbutton.Name = "QualifySongsbutton";
-            this.QualifySongsbutton.Size = new System.Drawing.Size(56, 34);
-            this.QualifySongsbutton.TabIndex = 5;
-            this.QualifySongsbutton.Text = "Calificar Canción";
-            this.QualifySongsbutton.UseVisualStyleBackColor = true;
-            this.QualifySongsbutton.Click += new System.EventHandler(this.QualifySongsbutton_Click);
-            // 
-            // AddToPlaylistSongsbutton
-            // 
-            this.AddToPlaylistSongsbutton.Location = new System.Drawing.Point(169, 171);
-            this.AddToPlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.AddToPlaylistSongsbutton.Name = "AddToPlaylistSongsbutton";
-            this.AddToPlaylistSongsbutton.Size = new System.Drawing.Size(83, 53);
-            this.AddToPlaylistSongsbutton.TabIndex = 4;
-            this.AddToPlaylistSongsbutton.Text = "Agregar Canción a una Playlist";
-            this.AddToPlaylistSongsbutton.UseVisualStyleBackColor = true;
-            this.AddToPlaylistSongsbutton.Click += new System.EventHandler(this.AddToPlaylistSongsbutton_Click);
-            // 
-            // SearchSongsbutton
-            // 
-            this.SearchSongsbutton.Location = new System.Drawing.Point(289, 122);
-            this.SearchSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.SearchSongsbutton.Name = "SearchSongsbutton";
-            this.SearchSongsbutton.Size = new System.Drawing.Size(83, 41);
-            this.SearchSongsbutton.TabIndex = 3;
-            this.SearchSongsbutton.Text = "Buscar Canción";
-            this.SearchSongsbutton.UseVisualStyleBackColor = true;
-            this.SearchSongsbutton.Click += new System.EventHandler(this.SearchSongsbutton_Click);
-            // 
-            // DownloadSongsbutton
-            // 
-            this.DownloadSongsbutton.Location = new System.Drawing.Point(182, 127);
-            this.DownloadSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.DownloadSongsbutton.Name = "DownloadSongsbutton";
-            this.DownloadSongsbutton.Size = new System.Drawing.Size(68, 41);
-            this.DownloadSongsbutton.TabIndex = 2;
-            this.DownloadSongsbutton.Text = "Descargar Canción";
-            this.DownloadSongsbutton.UseVisualStyleBackColor = true;
-            this.DownloadSongsbutton.Click += new System.EventHandler(this.DownloadSongsbutton_Click);
-            // 
-            // CreatePlaylistSongsbutton
-            // 
-            this.CreatePlaylistSongsbutton.Location = new System.Drawing.Point(192, 75);
-            this.CreatePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.CreatePlaylistSongsbutton.Name = "CreatePlaylistSongsbutton";
-            this.CreatePlaylistSongsbutton.Size = new System.Drawing.Size(67, 47);
-            this.CreatePlaylistSongsbutton.TabIndex = 1;
-            this.CreatePlaylistSongsbutton.Text = "Crear Playlist";
-            this.CreatePlaylistSongsbutton.UseVisualStyleBackColor = true;
-            this.CreatePlaylistSongsbutton.Click += new System.EventHandler(this.CreatePlaylistSongsbutton_Click);
-            // 
-            // Songslabel
-            // 
-            this.Songslabel.AutoSize = true;
-            this.Songslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Songslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.Songslabel.Location = new System.Drawing.Point(213, 15);
-            this.Songslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Songslabel.Name = "Songslabel";
-            this.Songslabel.Size = new System.Drawing.Size(143, 31);
-            this.Songslabel.TabIndex = 0;
-            this.Songslabel.Text = "Canciones";
-            // 
             // JoinPartypanel
             // 
             this.JoinPartypanel.Controls.Add(this.PartyMoviespanel);
@@ -3830,10 +3737,10 @@
             this.JoinPartypanel.Controls.Add(this.JoinPartySongsbutton);
             this.JoinPartypanel.Controls.Add(this.JoinPartyMoviesbutton);
             this.JoinPartypanel.Controls.Add(this.JoinPartylabel);
-            this.JoinPartypanel.Location = new System.Drawing.Point(28, 81);
+            this.JoinPartypanel.Location = new System.Drawing.Point(104, 162);
             this.JoinPartypanel.Margin = new System.Windows.Forms.Padding(2);
             this.JoinPartypanel.Name = "JoinPartypanel";
-            this.JoinPartypanel.Size = new System.Drawing.Size(52, 61);
+            this.JoinPartypanel.Size = new System.Drawing.Size(45, 31);
             this.JoinPartypanel.TabIndex = 8;
             // 
             // PartyMoviespanel
@@ -4080,7 +3987,7 @@
             this.InteligentSuggestionspanel.Controls.Add(this.SongsInteligentSuggestionsbutton);
             this.InteligentSuggestionspanel.Controls.Add(this.MoviesInteligentSuggestionsbutton);
             this.InteligentSuggestionspanel.Controls.Add(this.InteligentSuggestionslabel);
-            this.InteligentSuggestionspanel.Location = new System.Drawing.Point(452, 225);
+            this.InteligentSuggestionspanel.Location = new System.Drawing.Point(413, 172);
             this.InteligentSuggestionspanel.Margin = new System.Windows.Forms.Padding(2);
             this.InteligentSuggestionspanel.Name = "InteligentSuggestionspanel";
             this.InteligentSuggestionspanel.Size = new System.Drawing.Size(63, 55);
@@ -4204,10 +4111,10 @@
             this.Followpanel.Controls.Add(this.FollowPlaylistSongsFollowbutton);
             this.Followpanel.Controls.Add(this.FollowProfileFollowbutton);
             this.Followpanel.Controls.Add(this.Followlabel);
-            this.Followpanel.Location = new System.Drawing.Point(431, 117);
+            this.Followpanel.Location = new System.Drawing.Point(482, 122);
             this.Followpanel.Margin = new System.Windows.Forms.Padding(2);
             this.Followpanel.Name = "Followpanel";
-            this.Followpanel.Size = new System.Drawing.Size(54, 49);
+            this.Followpanel.Size = new System.Drawing.Size(42, 33);
             this.Followpanel.TabIndex = 8;
             // 
             // FollowActorpanel
@@ -4869,49 +4776,6 @@
             this.MainMenulabel1.TabIndex = 0;
             this.MainMenulabel1.Text = "Bienvenido";
             // 
-            // LoginSesionpanel
-            // 
-            this.LoginSesionpanel.Controls.Add(this.LoginSesionProfilepanel);
-            this.LoginSesionpanel.Controls.Add(this.FailedLoginSesionlabel);
-            this.LoginSesionpanel.Controls.Add(this.BackLoginSesionbutton);
-            this.LoginSesionpanel.Controls.Add(this.LoginSesionbutton);
-            this.LoginSesionpanel.Controls.Add(this.InsertPasswordLoginSesiontextBox);
-            this.LoginSesionpanel.Controls.Add(this.InsertMailLoginSesiontextBox);
-            this.LoginSesionpanel.Controls.Add(this.InsertPasswordLoginSesionlabel);
-            this.LoginSesionpanel.Controls.Add(this.InsertMailLoginSesionlabel);
-            this.LoginSesionpanel.Controls.Add(this.LoginSesionlabel);
-            this.LoginSesionpanel.Location = new System.Drawing.Point(11, 11);
-            this.LoginSesionpanel.Margin = new System.Windows.Forms.Padding(2);
-            this.LoginSesionpanel.Name = "LoginSesionpanel";
-            this.LoginSesionpanel.Size = new System.Drawing.Size(605, 383);
-            this.LoginSesionpanel.TabIndex = 4;
-            this.LoginSesionpanel.Visible = false;
-            // 
-            // LoginSesionProfilepanel
-            // 
-            this.LoginSesionProfilepanel.Controls.Add(this.BackLoginSesionProfilebutton);
-            this.LoginSesionProfilepanel.Controls.Add(this.MainMenupanel);
-            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilebutton);
-            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilelabel2);
-            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilelabel1);
-            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionInsertProfilecomboBox);
-            this.LoginSesionProfilepanel.Location = new System.Drawing.Point(76, 269);
-            this.LoginSesionProfilepanel.Margin = new System.Windows.Forms.Padding(2);
-            this.LoginSesionProfilepanel.Name = "LoginSesionProfilepanel";
-            this.LoginSesionProfilepanel.Size = new System.Drawing.Size(30, 44);
-            this.LoginSesionProfilepanel.TabIndex = 9;
-            // 
-            // BackLoginSesionProfilebutton
-            // 
-            this.BackLoginSesionProfilebutton.Location = new System.Drawing.Point(535, 337);
-            this.BackLoginSesionProfilebutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackLoginSesionProfilebutton.Name = "BackLoginSesionProfilebutton";
-            this.BackLoginSesionProfilebutton.Size = new System.Drawing.Size(56, 19);
-            this.BackLoginSesionProfilebutton.TabIndex = 3;
-            this.BackLoginSesionProfilebutton.Text = "Volver";
-            this.BackLoginSesionProfilebutton.UseVisualStyleBackColor = true;
-            this.BackLoginSesionProfilebutton.Click += new System.EventHandler(this.BackLoginSesionProfilebutton_Click);
-            // 
             // LoginSesionProfilebutton
             // 
             this.LoginSesionProfilebutton.Location = new System.Drawing.Point(268, 197);
@@ -5091,7 +4955,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(598, 388);
+            this.ClientSize = new System.Drawing.Size(753, 445);
             this.Controls.Add(this.WelcomePanel);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SpotflixForm";
@@ -5108,10 +4972,46 @@
             this.CreateProfilepanel.PerformLayout();
             this.CreateUserpanel.ResumeLayout(false);
             this.CreateUserpanel.PerformLayout();
-            this.MainMenupanel.ResumeLayout(false);
-            this.MainMenupanel.PerformLayout();
+            this.LoginSesionpanel.ResumeLayout(false);
+            this.LoginSesionpanel.PerformLayout();
+            this.LoginSesionProfilepanel.ResumeLayout(false);
+            this.LoginSesionProfilepanel.PerformLayout();
+            this.Songspanel.ResumeLayout(false);
+            this.Songspanel.PerformLayout();
+            this.PlaySongspanel.ResumeLayout(false);
+            this.PlaySongspanel.PerformLayout();
+            this.SeeQueueSongspanel.ResumeLayout(false);
+            this.SeeQueueSongspanel.PerformLayout();
+            this.AddToQueueSongspanel.ResumeLayout(false);
+            this.AddToQueueSongspanel.PerformLayout();
+            this.SearchSongspanel.ResumeLayout(false);
+            this.SearchSongspanel.PerformLayout();
+            this.Genderpanel.ResumeLayout(false);
+            this.Genderpanel.PerformLayout();
+            this.Evaluationpanel.ResumeLayout(false);
+            this.Evaluationpanel.PerformLayout();
+            this.InformationSongspanel.ResumeLayout(false);
+            this.InformationSongspanel.PerformLayout();
+            this.Artistpanel.ResumeLayout(false);
+            this.Artistpanel.PerformLayout();
+            this.SeePlaylistSongspanel.ResumeLayout(false);
+            this.SeePlaylistSongspanel.PerformLayout();
+            this.SeeFavouriteSongspanel.ResumeLayout(false);
+            this.SeeFavouriteSongspanel.PerformLayout();
+            this.Keywordpanel.ResumeLayout(false);
+            this.Keywordpanel.PerformLayout();
+            this.QualifySongspanel.ResumeLayout(false);
+            this.QualifySongspanel.PerformLayout();
+            this.AddToPlaylistSongspanel.ResumeLayout(false);
+            this.AddToPlaylistSongspanel.PerformLayout();
+            this.AddToFavouriteSongspanel.ResumeLayout(false);
+            this.AddToFavouriteSongspanel.PerformLayout();
+            this.CreatePlaylistSongspanel.ResumeLayout(false);
+            this.CreatePlaylistSongspanel.PerformLayout();
             this.SuggestionsSongspanel.ResumeLayout(false);
             this.SuggestionsSongspanel.PerformLayout();
+            this.MainMenupanel.ResumeLayout(false);
+            this.MainMenupanel.PerformLayout();
             this.MoviesMainMenupanel.ResumeLayout(false);
             this.MoviesMainMenupanel.PerformLayout();
             this.SeeQueueMoviespanel.ResumeLayout(false);
@@ -5138,40 +5038,6 @@
             this.QualifyMoviespanel.PerformLayout();
             this.PlayMoviespanel.ResumeLayout(false);
             this.PlayMoviespanel.PerformLayout();
-            this.Songspanel.ResumeLayout(false);
-            this.Songspanel.PerformLayout();
-            this.PlaySongspanel.ResumeLayout(false);
-            this.PlaySongspanel.PerformLayout();
-            this.InformationSongspanel.ResumeLayout(false);
-            this.InformationSongspanel.PerformLayout();
-            this.SeeQueueSongspanel.ResumeLayout(false);
-            this.SeeQueueSongspanel.PerformLayout();
-            this.SeeFavouriteSongspanel.ResumeLayout(false);
-            this.SeeFavouriteSongspanel.PerformLayout();
-            this.SeePlaylistSongspanel.ResumeLayout(false);
-            this.SeePlaylistSongspanel.PerformLayout();
-            this.AddToQueueSongspanel.ResumeLayout(false);
-            this.AddToQueueSongspanel.PerformLayout();
-            this.SearchSongspanel.ResumeLayout(false);
-            this.SearchSongspanel.PerformLayout();
-            this.Genderpanel.ResumeLayout(false);
-            this.Genderpanel.PerformLayout();
-            this.Evaluationpanel.ResumeLayout(false);
-            this.Evaluationpanel.PerformLayout();
-            this.Artistpanel.ResumeLayout(false);
-            this.Artistpanel.PerformLayout();
-            this.Keywordpanel.ResumeLayout(false);
-            this.Keywordpanel.PerformLayout();
-            this.AddToPlaylistSongspanel.ResumeLayout(false);
-            this.AddToPlaylistSongspanel.PerformLayout();
-            this.AddToFavouriteSongspanel.ResumeLayout(false);
-            this.AddToFavouriteSongspanel.PerformLayout();
-            this.DownloadSongspanel.ResumeLayout(false);
-            this.DownloadSongspanel.PerformLayout();
-            this.QualifySongspanel.ResumeLayout(false);
-            this.QualifySongspanel.PerformLayout();
-            this.CreatePlaylistSongspanel.ResumeLayout(false);
-            this.CreatePlaylistSongspanel.PerformLayout();
             this.JoinPartypanel.ResumeLayout(false);
             this.JoinPartypanel.PerformLayout();
             this.PartyMoviespanel.ResumeLayout(false);
@@ -5196,10 +5062,6 @@
             this.FollowPlaylistSongspanel.PerformLayout();
             this.FollowProfilepanel.ResumeLayout(false);
             this.FollowProfilepanel.PerformLayout();
-            this.LoginSesionpanel.ResumeLayout(false);
-            this.LoginSesionpanel.PerformLayout();
-            this.LoginSesionProfilepanel.ResumeLayout(false);
-            this.LoginSesionProfilepanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -5383,7 +5245,6 @@
         private System.Windows.Forms.Button QualifySongsbutton;
         private System.Windows.Forms.Button AddToPlaylistSongsbutton;
         private System.Windows.Forms.Button SearchSongsbutton;
-        private System.Windows.Forms.Button DownloadSongsbutton;
         private System.Windows.Forms.Button CreatePlaylistSongsbutton;
         private System.Windows.Forms.Label Songslabel;
         private System.Windows.Forms.Panel CreatePlaylistSongspanel;
@@ -5401,10 +5262,7 @@
         private System.Windows.Forms.Button QualifyQualifySongsbutton;
         private System.Windows.Forms.Label InsertQualificationQualifySongslabel;
         private System.Windows.Forms.Label InsertSongNameQualifySongslabel;
-        private System.Windows.Forms.Label InsertArtistNameQualifySongslabel;
         private System.Windows.Forms.Button BackQualifySongsbutton;
-        private System.Windows.Forms.TextBox InsertSongNameQualifySongstextBox;
-        private System.Windows.Forms.TextBox InsertArtistNameQualifySongstextBox;
         private System.Windows.Forms.Panel SearchSongspanel;
         private System.Windows.Forms.Button CategoriesSearchSongsbutton;
         private System.Windows.Forms.Button EvaluationSearchSongsbutton;
@@ -5424,7 +5282,6 @@
         private System.Windows.Forms.Label Message2label;
         private System.Windows.Forms.Label Message1label;
         private System.Windows.Forms.TextBox InsertAnswerArtisttextBox;
-        private System.Windows.Forms.Button SearchArtistbutton;
         private System.Windows.Forms.Panel Evaluationpanel;
         private System.Windows.Forms.Button BackEvaluationbutton;
         private System.Windows.Forms.Label Evaluationlabel;
@@ -5442,25 +5299,13 @@
         private System.Windows.Forms.Label InsertGenderGenderlabel;
         private System.Windows.Forms.Button BackGenderbutton;
         private System.Windows.Forms.Label Genderlabel;
-        private System.Windows.Forms.Panel DownloadSongspanel;
-        private System.Windows.Forms.Label DownloadSongslabel;
-        private System.Windows.Forms.Button BackDownloadSongsbutton;
-        private System.Windows.Forms.Button DownloadDownloadSongsbutton;
-        private System.Windows.Forms.TextBox InsertArtistNameDownloadSongstextBox;
-        private System.Windows.Forms.TextBox InsertSongNameDownloadSongstextBox;
-        private System.Windows.Forms.Label InsertArtistNameDownloadSongslabel;
-        private System.Windows.Forms.Label InsertNameSongDownloadSongslabel;
         private System.Windows.Forms.Panel AddToPlaylistSongspanel;
         private System.Windows.Forms.Label AddToPlaylistSongslabel;
         private System.Windows.Forms.Button BackAddToPlaylistSongsbutton;
         private System.Windows.Forms.Label InsertPlaylistNameAddToPlaylistSongslabel;
-        private System.Windows.Forms.Label InsertArtistnameAddToPlaylistSongslabel;
         private System.Windows.Forms.Label InsertSongNameAddToPlaylistSongslabel;
         private System.Windows.Forms.Label MessageAddToPlaylistSongslabel;
         private System.Windows.Forms.Button AddAddToPlaylistSongsbutton;
-        private System.Windows.Forms.TextBox InsertPlaylistNameAddToPlaylistSongstextBox;
-        private System.Windows.Forms.TextBox InsertArtistNameAddToPlaylistSongstextBox;
-        private System.Windows.Forms.TextBox InsertSongNameAddToPlaylistSongstextBox;
         private System.Windows.Forms.Panel AddToFavouriteSongspanel;
         private System.Windows.Forms.Label MessageAddToFavouriteSongslabel;
         private System.Windows.Forms.Button AddAddToFavouriteSongsbutton;
@@ -5613,6 +5458,9 @@
         private System.Windows.Forms.Label CreateUserAvisolabel;
         private System.Windows.Forms.Label FailProfileChangelabel;
         private System.Windows.Forms.Button ChangeProfileSearchbutton;
+        private System.Windows.Forms.ComboBox InsertSongNameQualifySongscomboBox;
+        private System.Windows.Forms.ComboBox InsertSongNameAddToPlaylistSongscomboBox;
+        private System.Windows.Forms.ComboBox InsertPlaylistNameAddToPlaylistSongscomboBox;
     }
 }
 

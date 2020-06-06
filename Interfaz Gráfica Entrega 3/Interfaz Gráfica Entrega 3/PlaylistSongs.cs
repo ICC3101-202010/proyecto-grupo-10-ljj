@@ -21,25 +21,25 @@ namespace Interfaz_Gráfica_Entrega_3
         public void AddSongs(Songs song)
         {
             songs.Add(song);
-            Console.WriteLine("se añadio cancion: " + song.getName() + " a:" + name);
         }
         public string getName()
         {
             return name;
         }
-        public void showSongs()
+        public string showSongs()
         {
+            string a = "";
             if (songs.Count != 0)
             {
-                Console.WriteLine("las canciones de la playlist: " + name + "son:");
-                for (int i = 0; i < songs.Count; i++)
+                foreach(var song in songs)
                 {
-                    Console.WriteLine(songs[i].getName());
+                    a += song.getName() + "\n";
                 }
+                return a;
             }
             else
             {
-                Console.WriteLine("no se han añadido canciones a:" + name);
+                return "Esta playlist aun no tiene canciones";
             }
         }
     }

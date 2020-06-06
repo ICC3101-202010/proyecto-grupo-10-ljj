@@ -25,11 +25,7 @@ namespace Interfaz_Gráfica_Entrega_3
             this.songs = songs;
 
         }
-        public void Information()
-        {
-            Console.WriteLine("nombre: " + name + "\n" + "biografia: " + bio + "\n" + "edad: "
-                + age + "\n" + "genero musical: " + gender);
-        }
+
         public void AddSong(Songs song)
         {
             songs.Add(song);

@@ -16,7 +16,7 @@ namespace Interfaz_Gráfica_Entrega_3
         public void AddSongs(Songs song)
         {
             songs.Add(song);
-            Console.WriteLine("se añadio cancion: " + song.getName() + " a en cola");
+            
         }
         public void showSongs()
         {

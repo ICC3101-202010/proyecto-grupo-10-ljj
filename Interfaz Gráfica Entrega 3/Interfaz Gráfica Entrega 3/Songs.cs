@@ -70,10 +70,6 @@ namespace Interfaz_Gráfica_Entrega_3
         {
             reproduction = reproduction + 1;
         }
-        public void NumberOfReproduction()
-        {
-            Console.WriteLine("esta cancion tiene: " + reproduction + " reproducciones");
-        }
         public void addFavourite()
         {
             favourite = true;
@@ -88,14 +84,14 @@ namespace Interfaz_Gráfica_Entrega_3
         }
         public void Qualification(int qualific)
         {
-            qualificationCount = qualificationCount + 1;
-            qualification = (qualification + qualific) / qualificationCount;
+            qualificationCount += 1;
+            qualification += qualific ;
         }
         public string getGender()
         {
             return gender;
         }
-        public string getCompose()
+        public string getComposer()
         {
             return composer;
         }
@@ -113,7 +109,7 @@ namespace Interfaz_Gráfica_Entrega_3
         }
         public double getQualification()
         {
-            return qualification;
+            return (qualification/qualificationCount);
         }
         public int getReproductions()
         {

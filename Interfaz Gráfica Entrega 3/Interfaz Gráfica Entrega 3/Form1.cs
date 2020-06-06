@@ -37,7 +37,7 @@ namespace Interfaz_Gráfica_Entrega_3
         List<Album> Calbums = new List<Album>();
         List<Songs> Csongs = new List<Songs>();
         //creamos playlist de favoritos
-        List<Songs> songs = new List<Songs>();
+        List<Songs> Fsongs = new List<Songs>();
         //creamos objeto de en cola
         List<Songs> Qsongs = new List<Songs>();
         //REQUISITOS MOVIES
@@ -62,9 +62,10 @@ namespace Interfaz_Gráfica_Entrega_3
         List<Actor> actorsL = new List<Actor>();
         List<Actor> actorsA = new List<Actor>();
         List<Actor> actorsB = new List<Actor>();
-       
+        
         public SpotflixForm()
         {
+
             l_songs.Add(CiudadDeLaFuria);
             l_songs.Add(MelonVino);
             l_songs.Add(LetItBe);
@@ -83,7 +84,7 @@ namespace Interfaz_Gráfica_Entrega_3
             l_artist.Add(Wos);
             Artist TheBeatles = new Artist("The Beatles", "The Beatles fue una banda de rock inglesa activa durante la década de 1960,\n y reconocida como la más exitosa comercialmente y la más alabada\n por la crítica en la historia de la música popular y de la música rock.", "Rock", 63, Calbums, Csongs);
             l_artist.Add(TheBeatles);
-            PlaylistFavouritesSongs playlistFavouritesSongs = new PlaylistFavouritesSongs("favoritos", "privada", songs);
+            PlaylistFavouritesSongs playlistFavouritesSongs = new PlaylistFavouritesSongs("favoritos", "privada", Fsongs);
             QueueSongs queueSongs = new QueueSongs(Qsongs);
             QueueMovies queueMovies = new QueueMovies(Qmovies);
             Actor DonaldGlover = new Actor("Donald Glover", "Actor, cantante, guionista, director de TV, comediante estadounidense", DonaldGloverP, "Hombre", 36);
@@ -542,6 +543,12 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Crear Playlist")
             {
+
+                MessageCreatePlaylistSongslabel.Hide();
+                InsertPlaylistNameCreatePlaylistSongstextBox.Clear();
+                InsertPrivacyCreatePlaylistSongscomboBox.Items.Clear();
+                InsertPrivacyCreatePlaylistSongscomboBox.Items.Add("publica");
+                InsertPrivacyCreatePlaylistSongscomboBox.Items.Add("privada");
                 CreatePlaylistSongspanel.Show();
                 CreatePlaylistSongspanel.BringToFront();
                 CreatePlaylistSongspanel.Dock = DockStyle.Fill;
@@ -562,6 +569,23 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Calificar Canción")
             {
+                
+                InsertQualificationQualifySongscomboBox.Items.Clear();
+                InsertQualificationQualifySongscomboBox.Items.Add("1");
+                InsertQualificationQualifySongscomboBox.Items.Add("2");
+                InsertQualificationQualifySongscomboBox.Items.Add("3");
+                InsertQualificationQualifySongscomboBox.Items.Add("4");
+                InsertQualificationQualifySongscomboBox.Items.Add("5");
+                InsertQualificationQualifySongscomboBox.Items.Add("6");
+                InsertQualificationQualifySongscomboBox.Items.Add("7");
+                InsertQualificationQualifySongscomboBox.Items.Add("8");
+                InsertQualificationQualifySongscomboBox.Items.Add("9");
+                InsertQualificationQualifySongscomboBox.Items.Add("10");
+                InsertSongNameQualifySongscomboBox.Items.Clear();
+                foreach (var song in l_songs)
+                {
+                    InsertSongNameQualifySongscomboBox.Items.Add(song.getName());
+                }
                 QualifySongspanel.Show();
                 QualifySongspanel.BringToFront();
                 QualifySongspanel.Dock = DockStyle.Fill;
@@ -577,31 +601,13 @@ namespace Interfaz_Gráfica_Entrega_3
             }
         }
 
-        private void DownloadSongsbutton_Click(object sender, EventArgs e)
-        {
-            Button b = (Button)sender;
-            if (b.Text == "Descargar Canción")
-            {
-                DownloadSongspanel.Show();
-                DownloadSongspanel.BringToFront();
-                DownloadSongspanel.Dock = DockStyle.Fill;
-            }
-        }
-
-        private void BackDownloadSongsbutton_Click(object sender, EventArgs e)
-        {
-            Button b = (Button)sender;
-            if (b.Text == "Volver")
-            {
-                DownloadSongspanel.Hide();
-            }
-        }
-
         private void SearchSongsbutton_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
             if (b.Text == "Buscar Canción")
             {
+                InsertQualificationEvaluationcomboBox.Items.Clear();
+                InsertSignEvaluationcomboBox.Items.Clear();
                 SearchSongspanel.Show();
                 SearchSongspanel.BringToFront();
                 SearchSongspanel.Dock = DockStyle.Fill;
@@ -643,6 +649,8 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Por Artista")
             {
+                InsertAnswerArtisttextBox.Clear();
+                ResultArtistrichTextBox.Clear();
                 Artistpanel.Show();
                 Artistpanel.BringToFront();
                 Artistpanel.Dock = DockStyle.Fill;
@@ -663,6 +671,21 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Por Evaluación")
             {
+                InsertQualificationEvaluationcomboBox.Items.Clear();
+                InsertSignEvaluationcomboBox.Items.Clear();
+                InsertQualificationEvaluationcomboBox.Items.Add("1");
+                InsertQualificationEvaluationcomboBox.Items.Add("2");
+                InsertQualificationEvaluationcomboBox.Items.Add("3");
+                InsertQualificationEvaluationcomboBox.Items.Add("4");
+                InsertQualificationEvaluationcomboBox.Items.Add("5");
+                InsertQualificationEvaluationcomboBox.Items.Add("6");
+                InsertQualificationEvaluationcomboBox.Items.Add("7");
+                InsertQualificationEvaluationcomboBox.Items.Add("8");
+                InsertQualificationEvaluationcomboBox.Items.Add("9");
+                InsertQualificationEvaluationcomboBox.Items.Add("10");
+                InsertSignEvaluationcomboBox.Items.Add("mayores");
+                InsertSignEvaluationcomboBox.Items.Add("menores");
+                InsertSignEvaluationcomboBox.Items.Add("iguales");
                 Evaluationpanel.Show();
                 Evaluationpanel.BringToFront();
                 Evaluationpanel.Dock = DockStyle.Fill;
@@ -683,6 +706,9 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Por Categoría")
             {
+                InsertGenderGendertextBox.Clear();
+                MessageGenderlabel.Hide();
+                InsertSignEvaluationcomboBox.Items.Clear();
                 Genderpanel.Show();
                 Genderpanel.BringToFront();
                 Genderpanel.Dock = DockStyle.Fill;
@@ -703,6 +729,16 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Agregar Canción a una Playlist")
             {
+                InsertSongNameAddToPlaylistSongscomboBox.Items.Clear();
+                InsertPlaylistNameAddToPlaylistSongscomboBox.Items.Clear();
+                foreach (var song in l_songs)
+                {
+                    InsertSongNameAddToPlaylistSongscomboBox.Items.Add(song.getName());
+                }
+                foreach(var pl in l_pl)
+                {
+                    InsertPlaylistNameAddToPlaylistSongscomboBox.Items.Add(pl.getName());
+                }
                 AddToPlaylistSongspanel.Show();
                 AddToPlaylistSongspanel.BringToFront();
                 AddToPlaylistSongspanel.Dock = DockStyle.Fill;
@@ -723,6 +759,11 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Seleccionar Canción como Favorito")
             {
+                InsertSongNameAddToFavouriteSongscomboBox.Items.Clear();
+                foreach (var song in l_songs)
+                {
+                    InsertSongNameAddToFavouriteSongscomboBox.Items.Add(song.getName());
+                }
                 AddToFavouriteSongspanel.Show();
                 AddToFavouriteSongspanel.BringToFront();
                 AddToFavouriteSongspanel.Dock = DockStyle.Fill;
@@ -743,6 +784,12 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Agregar Canción a la Cola")
             {
+
+                InsertSongNameAddToQueueSongscomboBox.Items.Clear();
+                foreach (var song in l_songs)
+                {
+                    InsertSongNameAddToQueueSongscomboBox.Items.Add(song.getName());
+                }
                 AddToQueueSongspanel.Show();
                 AddToQueueSongspanel.BringToFront();
                 AddToQueueSongspanel.Dock = DockStyle.Fill;
@@ -763,6 +810,11 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Ver Playlist")
             {
+                InsertPlaylistNameSeePlaylistSongscomboBox.Items.Clear();
+                foreach (var pl in l_pl)
+                {
+                    InsertPlaylistNameSeePlaylistSongscomboBox.Items.Add(pl.getName());
+                }
                 SeePlaylistSongspanel.Show();
                 SeePlaylistSongspanel.BringToFront();
                 SeePlaylistSongspanel.Dock = DockStyle.Fill;
@@ -786,6 +838,16 @@ namespace Interfaz_Gráfica_Entrega_3
                 SeeFavouriteSongspanel.Show();
                 SeeFavouriteSongspanel.BringToFront();
                 SeeFavouriteSongspanel.Dock = DockStyle.Fill;
+                string a = "";
+                foreach (var q in Fsongs)
+                {
+                    a += q.getName() + "\n";
+                }
+                ResultSeeFavouriteSongsrichTextBox.Text = a;
+                if (Fsongs.Count() == 0)
+                {
+                    ResultSeeFavouriteSongsrichTextBox.Text = "no se han añadido canciones a favoritos";
+                }
             }
         }
 
@@ -806,6 +868,16 @@ namespace Interfaz_Gráfica_Entrega_3
                 SeeQueueSongspanel.Show();
                 SeeQueueSongspanel.BringToFront();
                 SeeQueueSongspanel.Dock = DockStyle.Fill;
+                string a = "";
+                foreach(var q in Qsongs)
+                {
+                    a += q.getName()+"\n";
+                }
+                ResultSeeQueueSongsrichTextBox.Text = a;
+                if (Qsongs.Count() == 0)
+                {
+                    ResultSeeQueueSongsrichTextBox.Text = "no se han añadido canciones a la cola";
+                }
             }
         }
 
@@ -823,6 +895,11 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Información")
             {
+                InsertSongNameInformationSongscomboBox.Items.Clear();
+                foreach (var song in l_songs)
+                {
+                    InsertSongNameInformationSongscomboBox.Items.Add(song.getName());
+                } 
                 InformationSongspanel.Show();
                 InformationSongspanel.BringToFront();
                 InformationSongspanel.Dock = DockStyle.Fill;
@@ -843,6 +920,11 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Reproducir Canción")
             {
+                InsertNamePlaySongscomboBox.Items.Clear();
+                foreach (var song in l_songs)
+                {
+                    InsertNamePlaySongscomboBox.Items.Add(song.getName());
+                }
                 PlaySongspanel.Show();
                 PlaySongspanel.BringToFront();
                 PlaySongspanel.Dock = DockStyle.Fill;
@@ -1341,6 +1423,441 @@ namespace Interfaz_Gráfica_Entrega_3
                     }
                 }
             }
+        }
+
+        private void WelcomePanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void CreateCreatePlaylistSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Crear")
+            {
+                string PLname = InsertPlaylistNameCreatePlaylistSongstextBox.Text;          
+                string PLprivacy = InsertPrivacyCreatePlaylistSongscomboBox.Text;
+                List<Songs> PLsongs = new List<Songs>();
+                PlaylistSongs playlist = new PlaylistSongs(PLname, PLprivacy, PLsongs);
+                l_pl.Add(playlist);
+                MessageCreatePlaylistSongslabel.Show();
+            }
+        }
+
+        private void Songspanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void QualifyQualifySongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Calificar")
+            {
+                foreach (var song in l_songs)
+                {
+                    if(song.getName() == InsertSongNameQualifySongscomboBox.Text)
+                    {
+                        string cal = InsertQualificationQualifySongscomboBox.Text;
+                        int Cal = Int16.Parse(cal);
+                        song.Qualification(Cal);
+                    }
+                }        
+            }
+        }
+
+        private void AddAddToQueueSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Agregar")
+            {
+                MessageAddToQueueSongslabel.Hide();
+                foreach (var song in l_songs)
+                {
+                    if (song.getName() == InsertSongNameAddToQueueSongscomboBox.Text)
+                    {
+                        Qsongs.Add(song);
+                        MessageAddToQueueSongslabel.Show();
+                    }
+                }
+            }
+        }
+
+        private void AddAddToPlaylistSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Agregar")
+            {
+                MessageAddToPlaylistSongslabel.Hide();
+                foreach (var song in l_songs)
+                {
+                    foreach(var pl in l_pl)
+                    {
+                        if (song.getName() == InsertSongNameAddToPlaylistSongscomboBox.Text && pl.getName() == InsertPlaylistNameAddToPlaylistSongscomboBox.Text)
+                        {
+                            pl.AddSongs(song);
+                            MessageAddToPlaylistSongslabel.Show();
+                        }
+                    }
+                }
+            }
+        }
+
+        private void SeeSeePlaylistSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Ver")
+            {
+                foreach (var pl in l_pl)
+                {
+                    if (pl.getName() == InsertPlaylistNameSeePlaylistSongscomboBox.Text)
+                    {
+                        ResultSeePlaylistSongsrichTextBox.Text = pl.showSongs();
+                    }
+                }
+            }
+        }
+
+        private void AddAddToFavouriteSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Agregar")
+            {
+                MessageAddToFavouriteSongslabel.Hide();
+                foreach (var song in l_songs)
+                {
+                    if (song.getName() == InsertSongNameAddToFavouriteSongscomboBox.Text)
+                    {
+                        Fsongs.Add(song);
+                        MessageAddToFavouriteSongslabel.Show();
+                    }
+                }
+            }
+        }
+
+        private void PlayPlaySongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Reproducir")
+            {
+                foreach (var song in l_songs)
+                {
+                    if (InsertNamePlaySongscomboBox.Text == song.getName())
+                    {
+                        song.NumberOfUser();
+                        song.Reproduction();
+                        WindowsMediaPlayer wmp = new WindowsMediaPlayer();
+                        wmp.URL = song.getName() + ".wav";
+                        wmp.controls.play();
+                    }
+                }
+            }
+
+        }
+        private void StopPlaySongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Parar")
+            {
+                foreach (var song in l_songs)
+                {
+                    if (InsertNamePlaySongscomboBox.Text == song.getName())
+                    {
+                        song.NumberOfUser();
+                        song.Reproduction();
+                        WindowsMediaPlayer wmp = new WindowsMediaPlayer();
+                        wmp.URL = song.getName() + ".wav";
+                        wmp.controls.stop();
+                    }
+                }
+            }
+        }
+
+        private void ArtistInformationSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Artista")
+            {
+                foreach (var song in l_songs)
+                {
+                    if (song.getName() == InsertSongNameInformationSongscomboBox.Text)
+                    {
+                        ResultInformationSongsrichTextBox.Text = song.getArtist();
+                    }
+                }
+            }
+        }
+
+        private void GenderInformationSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Género")
+            {
+                foreach (var song in l_songs)
+                {
+                    if (song.getName() == InsertSongNameInformationSongscomboBox.Text)
+                    {
+                        ResultInformationSongsrichTextBox.Text = song.getGender();
+                    }
+                }
+            }
+        }
+
+        private void CompositorInformationSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Compositor")
+            {
+                foreach (var song in l_songs)
+                {
+                    if (song.getName() == InsertSongNameInformationSongscomboBox.Text)
+                    {
+                        ResultInformationSongsrichTextBox.Text = song.getComposer();
+                    }
+                }
+            }
+        }
+
+        private void StudioInformationSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Estudio")
+            {
+                foreach (var song in l_songs)
+                {
+                    if (song.getName() == InsertSongNameInformationSongscomboBox.Text)
+                    {
+                        ResultInformationSongsrichTextBox.Text = song.getStudio();
+                    }
+                }
+            }
+        }
+
+        private void LyricsInformationSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Letra")
+            {
+                foreach (var song in l_songs)
+                {
+                    if (song.getName() == InsertSongNameInformationSongscomboBox.Text)
+                    {
+                        ResultInformationSongsrichTextBox.Text = song.getLyrics();
+                    }
+                }
+            }
+        }
+
+        private void YearInformationSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Año")
+            {
+                foreach (var song in l_songs)
+                {
+                    if (song.getName() == InsertSongNameInformationSongscomboBox.Text)
+                    {
+                        string a = song.getYear().ToString();
+                        ResultInformationSongsrichTextBox.Text = a;
+                    }
+                }
+            }
+        }
+
+        private void QualificationInformationSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Calificación")
+            {
+                foreach (var song in l_songs)
+                {
+                    if (song.getName() == InsertSongNameInformationSongscomboBox.Text)
+                    {
+                        string a = song.getQualification().ToString();
+                        ResultInformationSongsrichTextBox.Text = a;
+                    }
+                }
+            }
+        }
+
+        private void ReproductionsInformationSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Reproducciones")
+            {
+                foreach (var song in l_songs)
+                {
+                    if (song.getName() == InsertSongNameInformationSongscomboBox.Text)
+                    {
+                        string a = song.getReproductions().ToString();
+                        ResultInformationSongsrichTextBox.Text = a;
+                    }
+                }
+            }
+        }
+
+        private void DurationInformationSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Duración")
+            {
+                foreach (var song in l_songs)
+                {
+                    if (song.getName() == InsertSongNameInformationSongscomboBox.Text)
+                    { 
+                        ResultInformationSongsrichTextBox.Text = song.getDuration();
+                    }
+                }
+            }
+        }
+
+        private void SearchGenderbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Buscar")
+            {
+                MessageGenderlabel.Hide();
+                string catego = InsertGenderGendertextBox.Text;
+                int ab = 0;
+                string a = "";
+                foreach (var song in l_songs)
+                {
+                    if (song.getGender() == catego)
+                    {
+                        a += song.getName() + "\n";
+                        ab = 1;
+                    }
+                }
+                foreach (var artist in l_artist)
+                {
+                    if (artist.getGender() == catego)
+                    {
+                        a += artist.getName() + "\n";
+                        ab = 1;
+                    }
+                }
+                ResultGenderrichTextBox.Text = a;
+                if (ab == 0)
+                {
+                    MessageGenderlabel.Show();
+                }
+            }
+        }
+
+        private void SearchEvaluationbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Buscar")
+            {
+                
+                InsertSignEvaluationcomboBox.Items.Clear();
+                string wq = InsertQualificationEvaluationcomboBox.Text;
+                int vall = Int16.Parse(wq);
+                string crtt = InsertSignEvaluationcomboBox.Text;
+                int ax = 0;
+                string a = "";
+                if (crtt == "mayores")
+                {
+                    foreach (var song in l_songs)
+                    {
+                        if (song.getQualification() > vall)
+                        {
+                            a += song.getName() + " " + song.getQualification()+"\n";
+                            ResultEvaluationrichTextBox.Text = a;
+                            ax = 1;
+                        }
+                    }
+                }
+                if (crtt == "menores")
+                {
+                    foreach (var song in l_songs)
+                    {
+                        if (song.getQualification() < vall)
+                        {
+                            a += song.getName() + " " + song.getQualification() + "\n";
+                            ResultEvaluationrichTextBox.Text = a;
+                            ax = 1;
+                        }
+                    }
+                }
+                if (crtt == "iguales")
+                {
+                    foreach (var song in l_songs)
+                    {
+                        if (song.getQualification() == vall)
+                        {
+                            a += song.getName() + " " + song.getQualification() + "\n";
+                            ResultEvaluationrichTextBox.Text = a;
+                            ax = 1;
+                        }
+                    }
+                }
+                if (ax == 0)
+                {
+                    ResultEvaluationrichTextBox.Text = "Su busqueda no coincide";
+                }
+            }
+        }
+
+        private void InsertQualificationEvaluationcomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AgeArtistbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Por edad")
+            {
+
+                string edad = InsertAnswerArtisttextBox.Text;
+                int edad2 = Int16.Parse(edad);
+                int ba = 0;
+                string a = "";
+                foreach (var artist in l_artist)
+                {
+                    if (artist.getAge() == edad2)
+                    {
+                        a += "tiene esa edad el artista: " + artist.getName();
+                        ResultArtistrichTextBox.Text = a;
+                        ba = 1;
+                    }
+                }
+                if (ba == 0)
+                {
+                    ResultArtistrichTextBox.Text = "No se encontro un artista";
+                }
+            }
+        }
+
+        private void GenderArtistbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Por género musical")
+            {
+                string gene = InsertAnswerArtisttextBox.Text;
+                int be = 0;
+                string a = "";
+                foreach (var artist in l_artist)
+                {
+                    if (artist.getGender() == gene)
+                    {
+                        a += "ese genero lo toca : " + artist.getName();
+                        ResultArtistrichTextBox.Text = a;
+                        be = 1;
+
+                    }
+                }
+                if (be == 0)
+                {
+                    ResultArtistrichTextBox.Text = "No se encontro un artista";
+                }
+            }
+        }
+
+        private void InsertPlaylistNameCreatePlaylistSongstextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
