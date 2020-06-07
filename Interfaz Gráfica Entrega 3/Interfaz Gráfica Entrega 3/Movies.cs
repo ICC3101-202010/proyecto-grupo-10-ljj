@@ -78,13 +78,12 @@ namespace Interfaz_Gráfica_Entrega_3
         //NumberOfUsers(users)
         public void Qualification(int q)
         {
-            qualificationCount = qualificationCount + 1;
-            qualification = (qualification + q) / qualificationCount;
-            Console.WriteLine("La película " + name + " se calificó con un " + q);
+            qualificationCount += 1;
+            qualification += q;
         }
         public double GetQualification()
         {
-            return qualification;
+            return qualification / qualificationCount;
         }
         //AddImage(image)
         public void AddActors(Actor actor)

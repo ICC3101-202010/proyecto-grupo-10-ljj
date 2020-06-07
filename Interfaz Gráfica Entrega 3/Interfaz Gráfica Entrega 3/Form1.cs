@@ -45,7 +45,7 @@ namespace Interfaz_Gráfica_Entrega_3
         List<PlaylistMovies> l_plm = new List<PlaylistMovies>();
         List<Actor> actors = new List<Actor>();
         //creamos playlist de favoritos
-        List<Movies> movies = new List<Movies>();
+        List<Movies> Fmovies = new List<Movies>();
         //creamos objeto de en cola
         List<Movies> Qmovies = new List<Movies>();
         //PARTICIPACIÓN DE ACTORES
@@ -92,7 +92,7 @@ namespace Interfaz_Gráfica_Entrega_3
             Actor ScarlettJohansson = new Actor("Scarlett Johannson", "Actriz de cine, cantante, modelo estadounidense", ScarlettJohannsonP, "Mujer", 35);
             Actor RobertDownley = new Actor("Robert Downley Jr.", "Actor, productor, cantante estadounidense", RobertDownleyP, "Hombre", 55);
             Actor FlorencePugh = new Actor("Florence Pugh", "Actriz", FlorencePughP, "Mujer", 24);
-            PlaylistFavouriteMovies playlistFavouritesMovies = new PlaylistFavouriteMovies("favoritos", "privada", movies);
+            PlaylistFavouriteMovies playlistFavouritesMovies = new PlaylistFavouriteMovies("favoritos", "privada", Fmovies);
             DonaldGloverP.Add("Community");
             DonaldGloverP.Add("30 Rock");
             DonaldGloverP.Add("Atlanta");
@@ -729,6 +729,7 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Agregar Canción a una Playlist")
             {
+                MessageAddToPlaylistSongslabel.Hide();
                 InsertSongNameAddToPlaylistSongscomboBox.Items.Clear();
                 InsertPlaylistNameAddToPlaylistSongscomboBox.Items.Clear();
                 foreach (var song in l_songs)
@@ -759,6 +760,7 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Seleccionar Canción como Favorito")
             {
+                MessageAddToFavouriteSongslabel.Hide();
                 InsertSongNameAddToFavouriteSongscomboBox.Items.Clear();
                 foreach (var song in l_songs)
                 {
@@ -784,7 +786,7 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Agregar Canción a la Cola")
             {
-
+                MessageAddToQueueSongslabel.Hide();
                 InsertSongNameAddToQueueSongscomboBox.Items.Clear();
                 foreach (var song in l_songs)
                 {
@@ -965,6 +967,10 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Reproducir Películas")
             {
+                foreach (var movie in movielist)
+                {
+                    InsertMovieNamePlayMoviescomboBox.Items.Add(movie.GetName());
+                }
                 PlayMoviespanel.Show();
                 PlayMoviespanel.BringToFront();
                 PlayMoviespanel.Dock = DockStyle.Fill;
@@ -985,6 +991,23 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Calificar Película")
             {
+
+                InsertQualificationQualifyMoviescomboBox.Items.Clear();
+                InsertQualificationQualifyMoviescomboBox.Items.Add("1");
+                InsertQualificationQualifyMoviescomboBox.Items.Add("2");
+                InsertQualificationQualifyMoviescomboBox.Items.Add("3");
+                InsertQualificationQualifyMoviescomboBox.Items.Add("4");
+                InsertQualificationQualifyMoviescomboBox.Items.Add("5");
+                InsertQualificationQualifyMoviescomboBox.Items.Add("6");
+                InsertQualificationQualifyMoviescomboBox.Items.Add("7");
+                InsertQualificationQualifyMoviescomboBox.Items.Add("8");
+                InsertQualificationQualifyMoviescomboBox.Items.Add("9");
+                InsertQualificationQualifyMoviescomboBox.Items.Add("10");
+                InsertMovieNameQualifyMoviescomboBox.Items.Clear();
+                foreach (var movie in movielist)
+                {
+                    InsertMovieNameQualifyMoviescomboBox.Items.Add(movie.GetName());
+                }
                 QualifyMoviespanel.Show();
                 QualifyMoviespanel.BringToFront();
                 QualifyMoviespanel.Dock = DockStyle.Fill;
@@ -1005,6 +1028,11 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Información")
             {
+                InsertMovieNameInformationMoviescomboBox.Items.Clear();
+                foreach (var movie in movielist)
+                {
+                    InsertMovieNameInformationMoviescomboBox.Items.Add(movie.GetName());
+                }
                 InformationMoviespanel.Show();
                 InformationMoviespanel.BringToFront();
                 InformationMoviespanel.Dock = DockStyle.Fill;
@@ -1025,6 +1053,16 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Agregar Películas a una Playlist")
             {
+                InsertMovieNameAddPlaylistMoviescomboBox.Items.Clear();
+                InsertPlaylistNameAddPlaylistMoviescomboBox.Items.Clear();
+                foreach (var movie in movielist)
+                {
+                    InsertMovieNameAddPlaylistMoviescomboBox.Items.Add(movie.GetName());
+                }
+                foreach (var pl in l_plm)
+                {
+                    InsertPlaylistNameAddPlaylistMoviescomboBox.Items.Add(pl.GetName());
+                }
                 AddPlaylistMoviespanel.Show();
                 AddPlaylistMoviespanel.BringToFront();
                 AddPlaylistMoviespanel.Dock = DockStyle.Fill;
@@ -1045,6 +1083,11 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Crear Playlist")
             {
+                MessageCreatePlaylistMovieslabel.Hide();
+                InsertPlaylistNameCreatePlaylistMoviestextBox.Clear();
+                InsertPlaylistPrivacyCreatePlaylistMoviescomboBox.Items.Clear();
+                InsertPlaylistPrivacyCreatePlaylistMoviescomboBox.Items.Add("publica");
+                InsertPlaylistPrivacyCreatePlaylistMoviescomboBox.Items.Add("privada");
                 CreatePlaylistMoviespanel.Show();
                 CreatePlaylistMoviespanel.BringToFront();
                 CreatePlaylistMoviespanel.Dock = DockStyle.Fill;
@@ -1065,6 +1108,12 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Ver Listado de Películas")
             {
+                string a = "";
+                foreach (var movie in movielist)
+                {
+                    a += movie.GetName()+ "\n";
+                }
+                SeeMoviesrichTextBox.Text = a;
                 SeeMoviespanel.Show();
                 SeeMoviespanel.BringToFront();
                 SeeMoviespanel.Dock = DockStyle.Fill;
@@ -1105,6 +1154,11 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Ver Playlist")
             {
+                InsertPlaylistNameSeePlaylistMoviescomboBox.Items.Clear();
+                foreach (var pl in l_plm)
+                {
+                    InsertPlaylistNameSeePlaylistMoviescomboBox.Items.Add(pl.GetName());
+                }
                 SeePlaylistMoviespanel.Show();
                 SeePlaylistMoviespanel.BringToFront();
                 SeePlaylistMoviespanel.Dock = DockStyle.Fill;
@@ -1125,6 +1179,11 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Agregar Películas a la Cola")
             {
+                InsertMovienameAddQueueMoviescomboBox.Items.Clear();
+                foreach (var movie in movielist)
+                {
+                    InsertMovienameAddQueueMoviescomboBox.Items.Add(movie.GetName());
+                }
                 AddQueueMoviespanel.Show();
                 AddQueueMoviespanel.BringToFront();
                 AddQueueMoviespanel.Dock = DockStyle.Fill;
@@ -1145,6 +1204,16 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Ver Favoritos")
             {
+                string a = "";
+                foreach (var q in Fmovies)
+                {
+                    a += q.GetName() + "\n";
+                }
+                ResultSeeFavouriteMoviesrichTextBox.Text = a;
+                if (Fmovies.Count() == 0)
+                {
+                    ResultSeeFavouriteMoviesrichTextBox.Text = "no se han añadido peliculas a favoritos";
+                }
                 SeeFavouriteMoviespanel.Show();
                 SeeFavouriteMoviespanel.BringToFront();
                 SeeFavouriteMoviespanel.Dock = DockStyle.Fill;
@@ -1165,6 +1234,12 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Seleccionar Película como Favorito")
             {
+                MessageSelectFavouriteMovieslabel.Hide();
+                InsertMovieNameSelectFavouriteMoviescomboBox.Items.Clear();
+                foreach (var movie in movielist)
+                {
+                    InsertMovieNameSelectFavouriteMoviescomboBox.Items.Add(movie.GetName());
+                }
                 SelectFavouriteMoviespanel.Show();
                 SelectFavouriteMoviespanel.BringToFront();
                 SelectFavouriteMoviespanel.Dock = DockStyle.Fill;
@@ -1185,6 +1260,16 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Ver Lista en Cola")
             {
+                string a = "";
+                foreach (var q in Qmovies)
+                {
+                    a += q.GetName() + "\n";
+                }
+                ResultSeeQueueMoviesrichTextBox.Text = a;
+                if (Qmovies.Count() == 0)
+                {
+                    ResultSeeQueueMoviesrichTextBox.Text = "no se han añadido canciones a la cola";
+                }
                 SeeQueueMoviespanel.Show();
                 SeeQueueMoviespanel.BringToFront();
                 SeeQueueMoviespanel.Dock = DockStyle.Fill;
@@ -1858,6 +1943,269 @@ namespace Interfaz_Gráfica_Entrega_3
         private void InsertPlaylistNameCreatePlaylistSongstextBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void CreateCreatePlaylistMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Crear")
+            {
+                string PLname = InsertPlaylistNameCreatePlaylistMoviestextBox.Text;
+                string PLprivacy = InsertPlaylistPrivacyCreatePlaylistMoviescomboBox.Text;
+                List<Movies> PLmovie = new List<Movies>();
+                PlaylistMovies playlist = new PlaylistMovies(PLname, PLprivacy, PLmovie);
+                l_plm.Add(playlist);
+                MessageCreatePlaylistMovieslabel.Show();
+            }
+        }
+
+        private void QualifyQualifyMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Calificar")
+            {
+                foreach (var movie in movielist)
+                {
+                    if (movie.GetName() == InsertMovieNameQualifyMoviescomboBox.Text)
+                    {
+                        string cal = InsertQualificationQualifyMoviescomboBox.Text;
+                        int Cal = Int16.Parse(cal);
+                        movie.Qualification(Cal);
+                    }
+                }
+            }
+        }
+
+        private void ActorInformationMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Actores")
+            {
+                string a = "";
+                foreach(var movie in movielist)
+                {
+                    if (movie.GetName() == InsertMovieNameInformationMoviescomboBox.Text)
+                    {
+                        foreach (var c in movie.GetActors())
+                        {
+                            a += c.GetName()+"\n";
+                        }
+                    }
+                }
+                ResultInformationMoviesrichTextBox.Text = a;
+            }
+        }
+
+        private void DurationInformationMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Duración")
+            {
+                string a = "";
+                foreach (var movie in movielist)
+                {
+                    if (movie.GetName() == InsertMovieNameInformationMoviescomboBox.Text)
+                    {
+                        int c = movie.GetDuration();
+                        a += c.ToString() + " minutos";
+                    }
+                }
+                ResultInformationMoviesrichTextBox.Text = a;
+            }
+        }
+
+        private void ReproductionsInformationMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Reproducciones")
+            {
+                string a = "";
+                foreach (var movie in movielist)
+                {
+                    if (movie.GetName() == InsertMovieNameInformationMoviescomboBox.Text)
+                    {
+                        int c = movie.GetReproductions();
+                        a += c.ToString();
+                    }
+                }
+                ResultInformationMoviesrichTextBox.Text = a;
+            }
+        }
+
+        private void YearInformationMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Año")
+            {
+                string a = "";
+                foreach (var movie in movielist)
+                {
+                    if (movie.GetName() == InsertMovieNameInformationMoviescomboBox.Text)
+                    {
+                        int c = movie.GetYear();
+                        a += c.ToString();
+                    }
+                }
+                ResultInformationMoviesrichTextBox.Text = a;
+            }
+        }
+
+        private void QualificationInformationMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Calificación")
+            {
+                string a = "";
+                foreach (var movie in movielist)
+                {
+                    if (movie.GetName() == InsertMovieNameInformationMoviescomboBox.Text)
+                    {
+                        double c = movie.GetQualification();
+                        a += c.ToString();
+                    }
+                }
+                ResultInformationMoviesrichTextBox.Text = a;
+            }
+        }
+
+        private void DescriptionInformationMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Descripción")
+            {
+                foreach (var movie in movielist)
+                {
+                    if (movie.GetName() == InsertMovieNameInformationMoviescomboBox.Text)
+                    {
+                        ResultInformationMoviesrichTextBox.Text = movie.GetDescription();
+                    }
+                }
+            }
+        }
+
+        private void CategoriesInformationMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Categorías")
+            {
+                string a = "";
+                foreach (var movie in movielist)
+                {
+                    if (movie.GetName() == InsertMovieNameInformationMoviescomboBox.Text)
+                    {
+                        foreach (var c in movie.GetCategories())
+                        {
+                            a += c + "\n";
+                        }
+                    }
+                }
+                ResultInformationMoviesrichTextBox.Text = a;
+            }
+        }
+
+        private void StudioInformationMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Estudio")
+            {
+                foreach (var movie in movielist)
+                {
+                    if (movie.GetName() == InsertMovieNameInformationMoviescomboBox.Text)
+                    {
+                        ResultInformationMoviesrichTextBox.Text = movie.GetStudio();
+                    }
+                }
+            }
+        }
+
+        private void AddAddPlaylistMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Agregar")
+            {
+                foreach (var movie in movielist)
+                {
+                    foreach (var pl in l_plm)
+                    {
+                        if (movie.GetName() == InsertMovieNameAddPlaylistMoviescomboBox.Text && pl.GetName() == InsertPlaylistNameAddPlaylistMoviescomboBox.Text)
+                        {
+                            pl.AddMovies(movie);
+                        }
+                    }
+                }
+            }
+        }
+
+        private void SeeSeePlaylistMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Ver")
+            {
+                foreach (var pl in l_plm)
+                {
+                    if (pl.GetName() == InsertPlaylistNameSeePlaylistMoviescomboBox.Text)
+                    {
+                        ResultSeePlaylistMoviesrichTextBox.Text = pl.showSongs();
+                    }
+                }
+            }
+        }
+
+        private void AddAddQueueMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Agregar")
+            {
+                foreach (var movie in movielist)
+                {
+                    if (movie.GetName() == InsertMovienameAddQueueMoviescomboBox.Text)
+                    {
+                        Qmovies.Add(movie);
+                    }
+                }
+            }
+        }
+
+        private void SelectSelectFavouriteMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Seleccionar")
+            {
+                MessageSelectFavouriteMovieslabel.Hide();
+                foreach (var movie in movielist)
+                {
+                    if (movie.GetName() == InsertMovieNameSelectFavouriteMoviescomboBox.Text)
+                    {
+                        Fmovies.Add(movie);
+                        MessageSelectFavouriteMovieslabel.Show();
+                    }
+                }
+            }
+        }
+
+        private void InsertMovieNameSelectFavouriteMoviescomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PlayPlayMoviesbutton_Click(object sender, EventArgs e)
+        {
+            string mov = InsertMovieNamePlayMoviescomboBox.Text;
+            foreach (var movie in movielist)
+            {
+                if (movie.GetName() == mov)
+                {
+                    movie.Reproduction();
+                    try
+                    {
+                        System.Diagnostics.Process.Start(mov + ".mp4");
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+            }
         }
     }
 }

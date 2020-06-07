@@ -25,21 +25,21 @@ namespace Interfaz_Gráfica_Entrega_3
         public void AddMovies(Movies movie)
         {
             movies.Add(movie);
-            Console.WriteLine("se añadio la pelicula: " + movie.GetName() + " a favoritos");
         }
-        public void showMovies()
+        public string showSongs()
         {
+            string a = "";
             if (movies.Count != 0)
             {
-                Console.WriteLine("las peliculas de " + name + " son:");
-                for (int i = 0; i < movies.Count; i++)
+                foreach (var movie in movies)
                 {
-                    Console.WriteLine(movies[i].GetName());
+                    a += movie.GetName() + "\n";
                 }
+                return a;
             }
             else
             {
-                Console.WriteLine("no se han añadido peliculas a " + name);
+                return "Esta playlist aun no tiene peliculas";
             }
         }
     }

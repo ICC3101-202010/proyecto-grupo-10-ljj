@@ -29,60 +29,11 @@
         private void InitializeComponent()
         {
             this.WelcomePanel = new System.Windows.Forms.Panel();
-            this.ADCpanel = new System.Windows.Forms.Panel();
-            this.SeeProfilespanel = new System.Windows.Forms.Panel();
-            this.SeeProfilesrichTextBox = new System.Windows.Forms.RichTextBox();
-            this.BackSeeProfilesbutton = new System.Windows.Forms.Button();
-            this.SeeProfileslabel = new System.Windows.Forms.Label();
-            this.ChangeProfilepanel = new System.Windows.Forms.Panel();
-            this.ChangeProfileSearchbutton = new System.Windows.Forms.Button();
-            this.FailProfileChangelabel = new System.Windows.Forms.Label();
-            this.PrivacyChangedChangeProfilelabel = new System.Windows.Forms.Label();
-            this.UseranemChangedChangeProfilelabel = new System.Windows.Forms.Label();
-            this.ChangePbutton = new System.Windows.Forms.Button();
-            this.BackChangeProfilebutton = new System.Windows.Forms.Button();
-            this.InsertNewPrivacyChangeProfiletextBox = new System.Windows.Forms.TextBox();
-            this.InsertNewUsernameChangeProfiletextBox = new System.Windows.Forms.TextBox();
-            this.InsertChooseChangeProfiletextBox = new System.Windows.Forms.TextBox();
-            this.InsertProfileChangeProfiletextBox = new System.Windows.Forms.TextBox();
-            this.InsertUsernameChangeProfiletextBox = new System.Windows.Forms.TextBox();
-            this.InsertNewPrivacyChangeProfilelabel = new System.Windows.Forms.Label();
-            this.InsertNewUsernameChangeProfilelabel = new System.Windows.Forms.Label();
-            this.InsertChooseChangeProfilelabel = new System.Windows.Forms.Label();
-            this.InsertProfileChangeProfilelabel = new System.Windows.Forms.Label();
-            this.InsertUsernameChangeProfilelabel = new System.Windows.Forms.Label();
-            this.ChangeProfilelabel = new System.Windows.Forms.Label();
-            this.CreateProfilepanel = new System.Windows.Forms.Panel();
-            this.ProfileCreatedlabel = new System.Windows.Forms.Label();
-            this.PrivacyProfileCreateProfilelabel = new System.Windows.Forms.Label();
-            this.BackCreateProfilebutton = new System.Windows.Forms.Button();
-            this.CreatePbutton = new System.Windows.Forms.Button();
-            this.PrivacyProfileCreateProfiletextBox = new System.Windows.Forms.TextBox();
-            this.InsertUsernameCreateProfiletextBox = new System.Windows.Forms.TextBox();
-            this.InsertUserCreateProfiletextBox = new System.Windows.Forms.TextBox();
-            this.InsertUsernameCreateProfilelabel = new System.Windows.Forms.Label();
-            this.InsertUserCreateProfilelabel = new System.Windows.Forms.Label();
-            this.Createprofilelabel = new System.Windows.Forms.Label();
-            this.CreateUserpanel = new System.Windows.Forms.Panel();
-            this.CreateUserAviso2label1 = new System.Windows.Forms.Label();
-            this.CreateUserAvisolabel = new System.Windows.Forms.Label();
-            this.BackCreateUserbutton = new System.Windows.Forms.Button();
-            this.CreateUbutton = new System.Windows.Forms.Button();
-            this.InsertPlanTypetextBox = new System.Windows.Forms.TextBox();
-            this.InsertUserPasswordtextBox = new System.Windows.Forms.TextBox();
-            this.InsertUserMailtextBox = new System.Windows.Forms.TextBox();
-            this.InsertPlanTypelabel = new System.Windows.Forms.Label();
-            this.InsertPasswordUserlabel = new System.Windows.Forms.Label();
-            this.InsertUserMaillabel = new System.Windows.Forms.Label();
-            this.CreateUserlabel = new System.Windows.Forms.Label();
-            this.ExitADCbutton = new System.Windows.Forms.Button();
-            this.ViewProfilesbutton = new System.Windows.Forms.Button();
-            this.ChangeProfilebutton = new System.Windows.Forms.Button();
-            this.CreareProfilebutton = new System.Windows.Forms.Button();
-            this.CreateUserbutton = new System.Windows.Forms.Button();
-            this.ADClabel = new System.Windows.Forms.Label();
             this.LoginSesionpanel = new System.Windows.Forms.Panel();
             this.LoginSesionProfilepanel = new System.Windows.Forms.Panel();
+            this.BackLoginSesionProfilebutton = new System.Windows.Forms.Button();
+            this.MainMenupanel = new System.Windows.Forms.Panel();
+            this.MoviesMainMenupanel = new System.Windows.Forms.Panel();
             this.Songspanel = new System.Windows.Forms.Panel();
             this.PlaySongspanel = new System.Windows.Forms.Panel();
             this.StopPlaySongsbutton = new System.Windows.Forms.Button();
@@ -91,28 +42,6 @@
             this.InsertSongNamePlaySongslabel = new System.Windows.Forms.Label();
             this.BackPlaySongsbutton = new System.Windows.Forms.Button();
             this.PlaySongslabel = new System.Windows.Forms.Label();
-            this.SeeQueueSongspanel = new System.Windows.Forms.Panel();
-            this.ResultSeeQueueSongsrichTextBox = new System.Windows.Forms.RichTextBox();
-            this.SeeQueueSongslabel = new System.Windows.Forms.Label();
-            this.BackSeeQueueSongsbutton = new System.Windows.Forms.Button();
-            this.AddToQueueSongspanel = new System.Windows.Forms.Panel();
-            this.MessageAddToQueueSongslabel = new System.Windows.Forms.Label();
-            this.AddAddToQueueSongsbutton = new System.Windows.Forms.Button();
-            this.InsertSongNameAddToQueueSongslabel = new System.Windows.Forms.Label();
-            this.InsertSongNameAddToQueueSongscomboBox = new System.Windows.Forms.ComboBox();
-            this.BackAddToQueueSongsbutton = new System.Windows.Forms.Button();
-            this.AddToQueueSongslabel = new System.Windows.Forms.Label();
-            this.SearchSongspanel = new System.Windows.Forms.Panel();
-            this.Genderpanel = new System.Windows.Forms.Panel();
-            this.MessageGenderlabel = new System.Windows.Forms.Label();
-            this.SearchGenderbutton = new System.Windows.Forms.Button();
-            this.ResultGenderrichTextBox = new System.Windows.Forms.RichTextBox();
-            this.InsertGenderGendertextBox = new System.Windows.Forms.TextBox();
-            this.InsertGenderGenderlabel = new System.Windows.Forms.Label();
-            this.BackGenderbutton = new System.Windows.Forms.Button();
-            this.Genderlabel = new System.Windows.Forms.Label();
-            this.Evaluationpanel = new System.Windows.Forms.Panel();
-            this.InsertSignEvaluationlabel = new System.Windows.Forms.Label();
             this.InformationSongspanel = new System.Windows.Forms.Panel();
             this.DurationInformationSongsbutton = new System.Windows.Forms.Button();
             this.ReproductionsInformationSongsbutton = new System.Windows.Forms.Button();
@@ -128,6 +57,39 @@
             this.InsertSongNameInformationSongscomboBox = new System.Windows.Forms.ComboBox();
             this.InsertSongNameInformationSongslabel = new System.Windows.Forms.Label();
             this.InformationSongslabel = new System.Windows.Forms.Label();
+            this.SeeQueueSongspanel = new System.Windows.Forms.Panel();
+            this.ResultSeeQueueSongsrichTextBox = new System.Windows.Forms.RichTextBox();
+            this.SeeQueueSongslabel = new System.Windows.Forms.Label();
+            this.BackSeeQueueSongsbutton = new System.Windows.Forms.Button();
+            this.AddToQueueSongspanel = new System.Windows.Forms.Panel();
+            this.MessageAddToQueueSongslabel = new System.Windows.Forms.Label();
+            this.AddAddToQueueSongsbutton = new System.Windows.Forms.Button();
+            this.InsertSongNameAddToQueueSongslabel = new System.Windows.Forms.Label();
+            this.InsertSongNameAddToQueueSongscomboBox = new System.Windows.Forms.ComboBox();
+            this.BackAddToQueueSongsbutton = new System.Windows.Forms.Button();
+            this.AddToQueueSongslabel = new System.Windows.Forms.Label();
+            this.SeeFavouriteSongspanel = new System.Windows.Forms.Panel();
+            this.ResultSeeFavouriteSongsrichTextBox = new System.Windows.Forms.RichTextBox();
+            this.SeeFavouriteSongslabel = new System.Windows.Forms.Label();
+            this.BackSeeFavouriteSongsbutton = new System.Windows.Forms.Button();
+            this.SeePlaylistSongspanel = new System.Windows.Forms.Panel();
+            this.SeeSeePlaylistSongsbutton = new System.Windows.Forms.Button();
+            this.ResultSeePlaylistSongsrichTextBox = new System.Windows.Forms.RichTextBox();
+            this.InsertPlaylistNameSeePlaylistSongscomboBox = new System.Windows.Forms.ComboBox();
+            this.InsertPlaylistNameSeePlaylistSongslabel = new System.Windows.Forms.Label();
+            this.SeePlaylistSongslabel = new System.Windows.Forms.Label();
+            this.BackSeePlaylistSongsbutton = new System.Windows.Forms.Button();
+            this.SearchSongspanel = new System.Windows.Forms.Panel();
+            this.Genderpanel = new System.Windows.Forms.Panel();
+            this.MessageGenderlabel = new System.Windows.Forms.Label();
+            this.SearchGenderbutton = new System.Windows.Forms.Button();
+            this.ResultGenderrichTextBox = new System.Windows.Forms.RichTextBox();
+            this.InsertGenderGendertextBox = new System.Windows.Forms.TextBox();
+            this.InsertGenderGenderlabel = new System.Windows.Forms.Label();
+            this.BackGenderbutton = new System.Windows.Forms.Button();
+            this.Genderlabel = new System.Windows.Forms.Label();
+            this.Evaluationpanel = new System.Windows.Forms.Panel();
+            this.InsertSignEvaluationlabel = new System.Windows.Forms.Label();
             this.InsertQualificationEvaluationlabel = new System.Windows.Forms.Label();
             this.ResultEvaluationrichTextBox = new System.Windows.Forms.RichTextBox();
             this.InsertSignEvaluationcomboBox = new System.Windows.Forms.ComboBox();
@@ -144,17 +106,6 @@
             this.AgeArtistbutton = new System.Windows.Forms.Button();
             this.BackArtistbutton = new System.Windows.Forms.Button();
             this.Artistlabel = new System.Windows.Forms.Label();
-            this.SeePlaylistSongspanel = new System.Windows.Forms.Panel();
-            this.SeeSeePlaylistSongsbutton = new System.Windows.Forms.Button();
-            this.ResultSeePlaylistSongsrichTextBox = new System.Windows.Forms.RichTextBox();
-            this.InsertPlaylistNameSeePlaylistSongscomboBox = new System.Windows.Forms.ComboBox();
-            this.InsertPlaylistNameSeePlaylistSongslabel = new System.Windows.Forms.Label();
-            this.SeePlaylistSongslabel = new System.Windows.Forms.Label();
-            this.BackSeePlaylistSongsbutton = new System.Windows.Forms.Button();
-            this.SeeFavouriteSongspanel = new System.Windows.Forms.Panel();
-            this.ResultSeeFavouriteSongsrichTextBox = new System.Windows.Forms.RichTextBox();
-            this.SeeFavouriteSongslabel = new System.Windows.Forms.Label();
-            this.BackSeeFavouriteSongsbutton = new System.Windows.Forms.Button();
             this.Keywordpanel = new System.Windows.Forms.Panel();
             this.Keywordlabel = new System.Windows.Forms.Label();
             this.BackKeywordbutton = new System.Windows.Forms.Button();
@@ -215,9 +166,6 @@
             this.SuggestionsSongsrichTextBox = new System.Windows.Forms.RichTextBox();
             this.SuggestionsSongslabel2 = new System.Windows.Forms.Label();
             this.SuggestionsSongslabel1 = new System.Windows.Forms.Label();
-            this.BackLoginSesionProfilebutton = new System.Windows.Forms.Button();
-            this.MainMenupanel = new System.Windows.Forms.Panel();
-            this.MoviesMainMenupanel = new System.Windows.Forms.Panel();
             this.SeeQueueMoviespanel = new System.Windows.Forms.Panel();
             this.ResultSeeQueueMoviesrichTextBox = new System.Windows.Forms.RichTextBox();
             this.BackSeeQueueMoviesbutton = new System.Windows.Forms.Button();
@@ -421,33 +369,80 @@
             this.ADCbutton = new System.Windows.Forms.Button();
             this.Loginbutton = new System.Windows.Forms.Button();
             this.WelcomeLabel = new System.Windows.Forms.Label();
+            this.ADCpanel = new System.Windows.Forms.Panel();
+            this.SeeProfilespanel = new System.Windows.Forms.Panel();
+            this.SeeProfilesrichTextBox = new System.Windows.Forms.RichTextBox();
+            this.BackSeeProfilesbutton = new System.Windows.Forms.Button();
+            this.SeeProfileslabel = new System.Windows.Forms.Label();
+            this.ChangeProfilepanel = new System.Windows.Forms.Panel();
+            this.ChangeProfileSearchbutton = new System.Windows.Forms.Button();
+            this.FailProfileChangelabel = new System.Windows.Forms.Label();
+            this.PrivacyChangedChangeProfilelabel = new System.Windows.Forms.Label();
+            this.UseranemChangedChangeProfilelabel = new System.Windows.Forms.Label();
+            this.ChangePbutton = new System.Windows.Forms.Button();
+            this.BackChangeProfilebutton = new System.Windows.Forms.Button();
+            this.InsertNewPrivacyChangeProfiletextBox = new System.Windows.Forms.TextBox();
+            this.InsertNewUsernameChangeProfiletextBox = new System.Windows.Forms.TextBox();
+            this.InsertChooseChangeProfiletextBox = new System.Windows.Forms.TextBox();
+            this.InsertProfileChangeProfiletextBox = new System.Windows.Forms.TextBox();
+            this.InsertUsernameChangeProfiletextBox = new System.Windows.Forms.TextBox();
+            this.InsertNewPrivacyChangeProfilelabel = new System.Windows.Forms.Label();
+            this.InsertNewUsernameChangeProfilelabel = new System.Windows.Forms.Label();
+            this.InsertChooseChangeProfilelabel = new System.Windows.Forms.Label();
+            this.InsertProfileChangeProfilelabel = new System.Windows.Forms.Label();
+            this.InsertUsernameChangeProfilelabel = new System.Windows.Forms.Label();
+            this.ChangeProfilelabel = new System.Windows.Forms.Label();
+            this.CreateProfilepanel = new System.Windows.Forms.Panel();
+            this.ProfileCreatedlabel = new System.Windows.Forms.Label();
+            this.PrivacyProfileCreateProfilelabel = new System.Windows.Forms.Label();
+            this.BackCreateProfilebutton = new System.Windows.Forms.Button();
+            this.CreatePbutton = new System.Windows.Forms.Button();
+            this.PrivacyProfileCreateProfiletextBox = new System.Windows.Forms.TextBox();
+            this.InsertUsernameCreateProfiletextBox = new System.Windows.Forms.TextBox();
+            this.InsertUserCreateProfiletextBox = new System.Windows.Forms.TextBox();
+            this.InsertUsernameCreateProfilelabel = new System.Windows.Forms.Label();
+            this.InsertUserCreateProfilelabel = new System.Windows.Forms.Label();
+            this.Createprofilelabel = new System.Windows.Forms.Label();
+            this.CreateUserpanel = new System.Windows.Forms.Panel();
+            this.CreateUserAviso2label1 = new System.Windows.Forms.Label();
+            this.CreateUserAvisolabel = new System.Windows.Forms.Label();
+            this.BackCreateUserbutton = new System.Windows.Forms.Button();
+            this.CreateUbutton = new System.Windows.Forms.Button();
+            this.InsertPlanTypetextBox = new System.Windows.Forms.TextBox();
+            this.InsertUserPasswordtextBox = new System.Windows.Forms.TextBox();
+            this.InsertUserMailtextBox = new System.Windows.Forms.TextBox();
+            this.InsertPlanTypelabel = new System.Windows.Forms.Label();
+            this.InsertPasswordUserlabel = new System.Windows.Forms.Label();
+            this.InsertUserMaillabel = new System.Windows.Forms.Label();
+            this.CreateUserlabel = new System.Windows.Forms.Label();
+            this.ExitADCbutton = new System.Windows.Forms.Button();
+            this.ViewProfilesbutton = new System.Windows.Forms.Button();
+            this.ChangeProfilebutton = new System.Windows.Forms.Button();
+            this.CreareProfilebutton = new System.Windows.Forms.Button();
+            this.CreateUserbutton = new System.Windows.Forms.Button();
+            this.ADClabel = new System.Windows.Forms.Label();
             this.WelcomePanel.SuspendLayout();
-            this.ADCpanel.SuspendLayout();
-            this.SeeProfilespanel.SuspendLayout();
-            this.ChangeProfilepanel.SuspendLayout();
-            this.CreateProfilepanel.SuspendLayout();
-            this.CreateUserpanel.SuspendLayout();
             this.LoginSesionpanel.SuspendLayout();
             this.LoginSesionProfilepanel.SuspendLayout();
+            this.MainMenupanel.SuspendLayout();
+            this.MoviesMainMenupanel.SuspendLayout();
             this.Songspanel.SuspendLayout();
             this.PlaySongspanel.SuspendLayout();
+            this.InformationSongspanel.SuspendLayout();
             this.SeeQueueSongspanel.SuspendLayout();
             this.AddToQueueSongspanel.SuspendLayout();
+            this.SeeFavouriteSongspanel.SuspendLayout();
+            this.SeePlaylistSongspanel.SuspendLayout();
             this.SearchSongspanel.SuspendLayout();
             this.Genderpanel.SuspendLayout();
             this.Evaluationpanel.SuspendLayout();
-            this.InformationSongspanel.SuspendLayout();
             this.Artistpanel.SuspendLayout();
-            this.SeePlaylistSongspanel.SuspendLayout();
-            this.SeeFavouriteSongspanel.SuspendLayout();
             this.Keywordpanel.SuspendLayout();
             this.QualifySongspanel.SuspendLayout();
             this.AddToPlaylistSongspanel.SuspendLayout();
             this.AddToFavouriteSongspanel.SuspendLayout();
             this.CreatePlaylistSongspanel.SuspendLayout();
             this.SuggestionsSongspanel.SuspendLayout();
-            this.MainMenupanel.SuspendLayout();
-            this.MoviesMainMenupanel.SuspendLayout();
             this.SeeQueueMoviespanel.SuspendLayout();
             this.SelectFavouriteMoviespanel.SuspendLayout();
             this.SeeFavouriteMoviespanel.SuspendLayout();
@@ -472,610 +467,29 @@
             this.FollowPlaylistMoviespanel.SuspendLayout();
             this.FollowPlaylistSongspanel.SuspendLayout();
             this.FollowProfilepanel.SuspendLayout();
+            this.ADCpanel.SuspendLayout();
+            this.SeeProfilespanel.SuspendLayout();
+            this.ChangeProfilepanel.SuspendLayout();
+            this.CreateProfilepanel.SuspendLayout();
+            this.CreateUserpanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // WelcomePanel
             // 
             this.WelcomePanel.BackColor = System.Drawing.SystemColors.ControlText;
-            this.WelcomePanel.Controls.Add(this.ADCpanel);
             this.WelcomePanel.Controls.Add(this.LoginSesionpanel);
             this.WelcomePanel.Controls.Add(this.LoginAdminbutton);
             this.WelcomePanel.Controls.Add(this.ADCbutton);
             this.WelcomePanel.Controls.Add(this.Loginbutton);
             this.WelcomePanel.Controls.Add(this.WelcomeLabel);
+            this.WelcomePanel.Controls.Add(this.ADCpanel);
             this.WelcomePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.WelcomePanel.Location = new System.Drawing.Point(0, 0);
             this.WelcomePanel.Margin = new System.Windows.Forms.Padding(2);
             this.WelcomePanel.Name = "WelcomePanel";
-            this.WelcomePanel.Size = new System.Drawing.Size(753, 445);
+            this.WelcomePanel.Size = new System.Drawing.Size(631, 445);
             this.WelcomePanel.TabIndex = 0;
             this.WelcomePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.WelcomePanel_Paint);
-            // 
-            // ADCpanel
-            // 
-            this.ADCpanel.Controls.Add(this.SeeProfilespanel);
-            this.ADCpanel.Controls.Add(this.ChangeProfilepanel);
-            this.ADCpanel.Controls.Add(this.CreateProfilepanel);
-            this.ADCpanel.Controls.Add(this.CreateUserpanel);
-            this.ADCpanel.Controls.Add(this.ExitADCbutton);
-            this.ADCpanel.Controls.Add(this.ViewProfilesbutton);
-            this.ADCpanel.Controls.Add(this.ChangeProfilebutton);
-            this.ADCpanel.Controls.Add(this.CreareProfilebutton);
-            this.ADCpanel.Controls.Add(this.CreateUserbutton);
-            this.ADCpanel.Controls.Add(this.ADClabel);
-            this.ADCpanel.Location = new System.Drawing.Point(37, 33);
-            this.ADCpanel.Margin = new System.Windows.Forms.Padding(2);
-            this.ADCpanel.Name = "ADCpanel";
-            this.ADCpanel.Size = new System.Drawing.Size(52, 43);
-            this.ADCpanel.TabIndex = 5;
-            // 
-            // SeeProfilespanel
-            // 
-            this.SeeProfilespanel.Controls.Add(this.SeeProfilesrichTextBox);
-            this.SeeProfilespanel.Controls.Add(this.BackSeeProfilesbutton);
-            this.SeeProfilespanel.Controls.Add(this.SeeProfileslabel);
-            this.SeeProfilespanel.Location = new System.Drawing.Point(484, 40);
-            this.SeeProfilespanel.Margin = new System.Windows.Forms.Padding(2);
-            this.SeeProfilespanel.Name = "SeeProfilespanel";
-            this.SeeProfilespanel.Size = new System.Drawing.Size(67, 71);
-            this.SeeProfilespanel.TabIndex = 15;
-            // 
-            // SeeProfilesrichTextBox
-            // 
-            this.SeeProfilesrichTextBox.Location = new System.Drawing.Point(169, 98);
-            this.SeeProfilesrichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SeeProfilesrichTextBox.Name = "SeeProfilesrichTextBox";
-            this.SeeProfilesrichTextBox.Size = new System.Drawing.Size(256, 168);
-            this.SeeProfilesrichTextBox.TabIndex = 3;
-            this.SeeProfilesrichTextBox.Text = "";
-            this.SeeProfilesrichTextBox.Click += new System.EventHandler(this.ViewProfilesbutton_Click);
-            // 
-            // BackSeeProfilesbutton
-            // 
-            this.BackSeeProfilesbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackSeeProfilesbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackSeeProfilesbutton.Name = "BackSeeProfilesbutton";
-            this.BackSeeProfilesbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackSeeProfilesbutton.TabIndex = 1;
-            this.BackSeeProfilesbutton.Text = "Volver";
-            this.BackSeeProfilesbutton.UseVisualStyleBackColor = true;
-            this.BackSeeProfilesbutton.Click += new System.EventHandler(this.BackSeeProfilesbutton_Click);
-            // 
-            // SeeProfileslabel
-            // 
-            this.SeeProfileslabel.AutoSize = true;
-            this.SeeProfileslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeeProfileslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.SeeProfileslabel.Location = new System.Drawing.Point(177, 15);
-            this.SeeProfileslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SeeProfileslabel.Name = "SeeProfileslabel";
-            this.SeeProfileslabel.Size = new System.Drawing.Size(252, 31);
-            this.SeeProfileslabel.TabIndex = 0;
-            this.SeeProfileslabel.Text = "Perfiles por Usuario";
-            // 
-            // ChangeProfilepanel
-            // 
-            this.ChangeProfilepanel.Controls.Add(this.ChangeProfileSearchbutton);
-            this.ChangeProfilepanel.Controls.Add(this.FailProfileChangelabel);
-            this.ChangeProfilepanel.Controls.Add(this.PrivacyChangedChangeProfilelabel);
-            this.ChangeProfilepanel.Controls.Add(this.UseranemChangedChangeProfilelabel);
-            this.ChangeProfilepanel.Controls.Add(this.ChangePbutton);
-            this.ChangeProfilepanel.Controls.Add(this.BackChangeProfilebutton);
-            this.ChangeProfilepanel.Controls.Add(this.InsertNewPrivacyChangeProfiletextBox);
-            this.ChangeProfilepanel.Controls.Add(this.InsertNewUsernameChangeProfiletextBox);
-            this.ChangeProfilepanel.Controls.Add(this.InsertChooseChangeProfiletextBox);
-            this.ChangeProfilepanel.Controls.Add(this.InsertProfileChangeProfiletextBox);
-            this.ChangeProfilepanel.Controls.Add(this.InsertUsernameChangeProfiletextBox);
-            this.ChangeProfilepanel.Controls.Add(this.InsertNewPrivacyChangeProfilelabel);
-            this.ChangeProfilepanel.Controls.Add(this.InsertNewUsernameChangeProfilelabel);
-            this.ChangeProfilepanel.Controls.Add(this.InsertChooseChangeProfilelabel);
-            this.ChangeProfilepanel.Controls.Add(this.InsertProfileChangeProfilelabel);
-            this.ChangeProfilepanel.Controls.Add(this.InsertUsernameChangeProfilelabel);
-            this.ChangeProfilepanel.Controls.Add(this.ChangeProfilelabel);
-            this.ChangeProfilepanel.Location = new System.Drawing.Point(51, 33);
-            this.ChangeProfilepanel.Margin = new System.Windows.Forms.Padding(2);
-            this.ChangeProfilepanel.Name = "ChangeProfilepanel";
-            this.ChangeProfilepanel.Size = new System.Drawing.Size(19, 24);
-            this.ChangeProfilepanel.TabIndex = 11;
-            // 
-            // ChangeProfileSearchbutton
-            // 
-            this.ChangeProfileSearchbutton.Location = new System.Drawing.Point(340, 189);
-            this.ChangeProfileSearchbutton.Name = "ChangeProfileSearchbutton";
-            this.ChangeProfileSearchbutton.Size = new System.Drawing.Size(75, 23);
-            this.ChangeProfileSearchbutton.TabIndex = 16;
-            this.ChangeProfileSearchbutton.Text = "Buscar perfil";
-            this.ChangeProfileSearchbutton.UseVisualStyleBackColor = true;
-            this.ChangeProfileSearchbutton.Click += new System.EventHandler(this.ChangePbutton_Click);
-            // 
-            // FailProfileChangelabel
-            // 
-            this.FailProfileChangelabel.AutoSize = true;
-            this.FailProfileChangelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.FailProfileChangelabel.Location = new System.Drawing.Point(281, 339);
-            this.FailProfileChangelabel.Name = "FailProfileChangelabel";
-            this.FailProfileChangelabel.Size = new System.Drawing.Size(105, 13);
-            this.FailProfileChangelabel.TabIndex = 15;
-            this.FailProfileChangelabel.Text = "No existe dicho perfil";
-            this.FailProfileChangelabel.Visible = false;
-            // 
-            // PrivacyChangedChangeProfilelabel
-            // 
-            this.PrivacyChangedChangeProfilelabel.AutoSize = true;
-            this.PrivacyChangedChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.PrivacyChangedChangeProfilelabel.Location = new System.Drawing.Point(281, 318);
-            this.PrivacyChangedChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.PrivacyChangedChangeProfilelabel.Name = "PrivacyChangedChangeProfilelabel";
-            this.PrivacyChangedChangeProfilelabel.Size = new System.Drawing.Size(160, 13);
-            this.PrivacyChangedChangeProfilelabel.TabIndex = 14;
-            this.PrivacyChangedChangeProfilelabel.Text = "Privacidad modificada con éxito.";
-            this.PrivacyChangedChangeProfilelabel.Visible = false;
-            // 
-            // UseranemChangedChangeProfilelabel
-            // 
-            this.UseranemChangedChangeProfilelabel.AutoSize = true;
-            this.UseranemChangedChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.UseranemChangedChangeProfilelabel.Location = new System.Drawing.Point(281, 294);
-            this.UseranemChangedChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.UseranemChangedChangeProfilelabel.Name = "UseranemChangedChangeProfilelabel";
-            this.UseranemChangedChangeProfilelabel.Size = new System.Drawing.Size(199, 13);
-            this.UseranemChangedChangeProfilelabel.TabIndex = 13;
-            this.UseranemChangedChangeProfilelabel.Text = "Nombre de usuario modificado con éxito.";
-            this.UseranemChangedChangeProfilelabel.Visible = false;
-            // 
-            // ChangePbutton
-            // 
-            this.ChangePbutton.Location = new System.Drawing.Point(339, 266);
-            this.ChangePbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.ChangePbutton.Name = "ChangePbutton";
-            this.ChangePbutton.Size = new System.Drawing.Size(68, 19);
-            this.ChangePbutton.TabIndex = 12;
-            this.ChangePbutton.Text = "Modificar";
-            this.ChangePbutton.UseVisualStyleBackColor = true;
-            this.ChangePbutton.Visible = false;
-            this.ChangePbutton.Click += new System.EventHandler(this.ChangePbutton_Click);
-            // 
-            // BackChangeProfilebutton
-            // 
-            this.BackChangeProfilebutton.Location = new System.Drawing.Point(535, 337);
-            this.BackChangeProfilebutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackChangeProfilebutton.Name = "BackChangeProfilebutton";
-            this.BackChangeProfilebutton.Size = new System.Drawing.Size(56, 19);
-            this.BackChangeProfilebutton.TabIndex = 11;
-            this.BackChangeProfilebutton.Text = "Volver";
-            this.BackChangeProfilebutton.UseVisualStyleBackColor = true;
-            this.BackChangeProfilebutton.Click += new System.EventHandler(this.BackChangeProfilebutton_Click);
-            // 
-            // InsertNewPrivacyChangeProfiletextBox
-            // 
-            this.InsertNewPrivacyChangeProfiletextBox.Location = new System.Drawing.Point(339, 241);
-            this.InsertNewPrivacyChangeProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertNewPrivacyChangeProfiletextBox.Name = "InsertNewPrivacyChangeProfiletextBox";
-            this.InsertNewPrivacyChangeProfiletextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertNewPrivacyChangeProfiletextBox.TabIndex = 10;
-            this.InsertNewPrivacyChangeProfiletextBox.Visible = false;
-            // 
-            // InsertNewUsernameChangeProfiletextBox
-            // 
-            this.InsertNewUsernameChangeProfiletextBox.Location = new System.Drawing.Point(339, 217);
-            this.InsertNewUsernameChangeProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertNewUsernameChangeProfiletextBox.Name = "InsertNewUsernameChangeProfiletextBox";
-            this.InsertNewUsernameChangeProfiletextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertNewUsernameChangeProfiletextBox.TabIndex = 9;
-            this.InsertNewUsernameChangeProfiletextBox.Visible = false;
-            // 
-            // InsertChooseChangeProfiletextBox
-            // 
-            this.InsertChooseChangeProfiletextBox.Location = new System.Drawing.Point(339, 161);
-            this.InsertChooseChangeProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertChooseChangeProfiletextBox.Name = "InsertChooseChangeProfiletextBox";
-            this.InsertChooseChangeProfiletextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertChooseChangeProfiletextBox.TabIndex = 8;
-            // 
-            // InsertProfileChangeProfiletextBox
-            // 
-            this.InsertProfileChangeProfiletextBox.Location = new System.Drawing.Point(339, 132);
-            this.InsertProfileChangeProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertProfileChangeProfiletextBox.Name = "InsertProfileChangeProfiletextBox";
-            this.InsertProfileChangeProfiletextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertProfileChangeProfiletextBox.TabIndex = 7;
-            // 
-            // InsertUsernameChangeProfiletextBox
-            // 
-            this.InsertUsernameChangeProfiletextBox.Location = new System.Drawing.Point(339, 106);
-            this.InsertUsernameChangeProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertUsernameChangeProfiletextBox.Name = "InsertUsernameChangeProfiletextBox";
-            this.InsertUsernameChangeProfiletextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertUsernameChangeProfiletextBox.TabIndex = 6;
-            // 
-            // InsertNewPrivacyChangeProfilelabel
-            // 
-            this.InsertNewPrivacyChangeProfilelabel.AutoSize = true;
-            this.InsertNewPrivacyChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertNewPrivacyChangeProfilelabel.Location = new System.Drawing.Point(100, 245);
-            this.InsertNewPrivacyChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertNewPrivacyChangeProfilelabel.Name = "InsertNewPrivacyChangeProfilelabel";
-            this.InsertNewPrivacyChangeProfilelabel.Size = new System.Drawing.Size(130, 13);
-            this.InsertNewPrivacyChangeProfilelabel.TabIndex = 5;
-            this.InsertNewPrivacyChangeProfilelabel.Text = "¿Será privado?(true/false)";
-            this.InsertNewPrivacyChangeProfilelabel.Visible = false;
-            // 
-            // InsertNewUsernameChangeProfilelabel
-            // 
-            this.InsertNewUsernameChangeProfilelabel.AutoSize = true;
-            this.InsertNewUsernameChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertNewUsernameChangeProfilelabel.Location = new System.Drawing.Point(100, 220);
-            this.InsertNewUsernameChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertNewUsernameChangeProfilelabel.Name = "InsertNewUsernameChangeProfilelabel";
-            this.InsertNewUsernameChangeProfilelabel.Size = new System.Drawing.Size(188, 13);
-            this.InsertNewUsernameChangeProfilelabel.TabIndex = 4;
-            this.InsertNewUsernameChangeProfilelabel.Text = "¿Cuál es el nuevo nombre de usuario?";
-            this.InsertNewUsernameChangeProfilelabel.Visible = false;
-            // 
-            // InsertChooseChangeProfilelabel
-            // 
-            this.InsertChooseChangeProfilelabel.AutoSize = true;
-            this.InsertChooseChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertChooseChangeProfilelabel.Location = new System.Drawing.Point(97, 164);
-            this.InsertChooseChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertChooseChangeProfilelabel.Name = "InsertChooseChangeProfilelabel";
-            this.InsertChooseChangeProfilelabel.Size = new System.Drawing.Size(216, 13);
-            this.InsertChooseChangeProfilelabel.TabIndex = 3;
-            this.InsertChooseChangeProfilelabel.Text = "¿Qué desea modificar? (Usuario/Privacidad)";
-            // 
-            // InsertProfileChangeProfilelabel
-            // 
-            this.InsertProfileChangeProfilelabel.AutoSize = true;
-            this.InsertProfileChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertProfileChangeProfilelabel.Location = new System.Drawing.Point(100, 134);
-            this.InsertProfileChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertProfileChangeProfilelabel.Name = "InsertProfileChangeProfilelabel";
-            this.InsertProfileChangeProfilelabel.Size = new System.Drawing.Size(141, 13);
-            this.InsertProfileChangeProfilelabel.TabIndex = 2;
-            this.InsertProfileChangeProfilelabel.Text = "¿Qué perfil desea modificar?";
-            // 
-            // InsertUsernameChangeProfilelabel
-            // 
-            this.InsertUsernameChangeProfilelabel.AutoSize = true;
-            this.InsertUsernameChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertUsernameChangeProfilelabel.Location = new System.Drawing.Point(100, 110);
-            this.InsertUsernameChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertUsernameChangeProfilelabel.Name = "InsertUsernameChangeProfilelabel";
-            this.InsertUsernameChangeProfilelabel.Size = new System.Drawing.Size(205, 13);
-            this.InsertUsernameChangeProfilelabel.TabIndex = 1;
-            this.InsertUsernameChangeProfilelabel.Text = "¿A qué usuario desea modificarle el perfil?";
-            // 
-            // ChangeProfilelabel
-            // 
-            this.ChangeProfilelabel.AutoSize = true;
-            this.ChangeProfilelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.ChangeProfilelabel.Location = new System.Drawing.Point(200, 18);
-            this.ChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ChangeProfilelabel.Name = "ChangeProfilelabel";
-            this.ChangeProfilelabel.Size = new System.Drawing.Size(193, 31);
-            this.ChangeProfilelabel.TabIndex = 0;
-            this.ChangeProfilelabel.Text = "Modificar Perfil";
-            // 
-            // CreateProfilepanel
-            // 
-            this.CreateProfilepanel.Controls.Add(this.ProfileCreatedlabel);
-            this.CreateProfilepanel.Controls.Add(this.PrivacyProfileCreateProfilelabel);
-            this.CreateProfilepanel.Controls.Add(this.BackCreateProfilebutton);
-            this.CreateProfilepanel.Controls.Add(this.CreatePbutton);
-            this.CreateProfilepanel.Controls.Add(this.PrivacyProfileCreateProfiletextBox);
-            this.CreateProfilepanel.Controls.Add(this.InsertUsernameCreateProfiletextBox);
-            this.CreateProfilepanel.Controls.Add(this.InsertUserCreateProfiletextBox);
-            this.CreateProfilepanel.Controls.Add(this.InsertUsernameCreateProfilelabel);
-            this.CreateProfilepanel.Controls.Add(this.InsertUserCreateProfilelabel);
-            this.CreateProfilepanel.Controls.Add(this.Createprofilelabel);
-            this.CreateProfilepanel.Location = new System.Drawing.Point(91, 315);
-            this.CreateProfilepanel.Margin = new System.Windows.Forms.Padding(2);
-            this.CreateProfilepanel.Name = "CreateProfilepanel";
-            this.CreateProfilepanel.Size = new System.Drawing.Size(56, 37);
-            this.CreateProfilepanel.TabIndex = 0;
-            // 
-            // ProfileCreatedlabel
-            // 
-            this.ProfileCreatedlabel.AutoSize = true;
-            this.ProfileCreatedlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.ProfileCreatedlabel.Location = new System.Drawing.Point(310, 298);
-            this.ProfileCreatedlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ProfileCreatedlabel.Name = "ProfileCreatedlabel";
-            this.ProfileCreatedlabel.Size = new System.Drawing.Size(115, 13);
-            this.ProfileCreatedlabel.TabIndex = 10;
-            this.ProfileCreatedlabel.Text = "Perfil creado con éxito.";
-            this.ProfileCreatedlabel.Visible = false;
-            // 
-            // PrivacyProfileCreateProfilelabel
-            // 
-            this.PrivacyProfileCreateProfilelabel.AutoSize = true;
-            this.PrivacyProfileCreateProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.PrivacyProfileCreateProfilelabel.Location = new System.Drawing.Point(87, 211);
-            this.PrivacyProfileCreateProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.PrivacyProfileCreateProfilelabel.Name = "PrivacyProfileCreateProfilelabel";
-            this.PrivacyProfileCreateProfilelabel.Size = new System.Drawing.Size(173, 13);
-            this.PrivacyProfileCreateProfilelabel.TabIndex = 9;
-            this.PrivacyProfileCreateProfilelabel.Text = "¿Será un perfil privado? (true/false)";
-            // 
-            // BackCreateProfilebutton
-            // 
-            this.BackCreateProfilebutton.Location = new System.Drawing.Point(535, 337);
-            this.BackCreateProfilebutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackCreateProfilebutton.Name = "BackCreateProfilebutton";
-            this.BackCreateProfilebutton.Size = new System.Drawing.Size(56, 19);
-            this.BackCreateProfilebutton.TabIndex = 8;
-            this.BackCreateProfilebutton.Text = "Volver";
-            this.BackCreateProfilebutton.UseVisualStyleBackColor = true;
-            this.BackCreateProfilebutton.Click += new System.EventHandler(this.BackCreateProfilebutton_Click);
-            // 
-            // CreatePbutton
-            // 
-            this.CreatePbutton.Location = new System.Drawing.Point(339, 254);
-            this.CreatePbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.CreatePbutton.Name = "CreatePbutton";
-            this.CreatePbutton.Size = new System.Drawing.Size(56, 19);
-            this.CreatePbutton.TabIndex = 7;
-            this.CreatePbutton.Text = "Crear";
-            this.CreatePbutton.UseVisualStyleBackColor = true;
-            this.CreatePbutton.Click += new System.EventHandler(this.CreatePbutton_Click);
-            // 
-            // PrivacyProfileCreateProfiletextBox
-            // 
-            this.PrivacyProfileCreateProfiletextBox.Location = new System.Drawing.Point(328, 209);
-            this.PrivacyProfileCreateProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.PrivacyProfileCreateProfiletextBox.Name = "PrivacyProfileCreateProfiletextBox";
-            this.PrivacyProfileCreateProfiletextBox.Size = new System.Drawing.Size(76, 20);
-            this.PrivacyProfileCreateProfiletextBox.TabIndex = 6;
-            // 
-            // InsertUsernameCreateProfiletextBox
-            // 
-            this.InsertUsernameCreateProfiletextBox.Location = new System.Drawing.Point(328, 180);
-            this.InsertUsernameCreateProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertUsernameCreateProfiletextBox.Name = "InsertUsernameCreateProfiletextBox";
-            this.InsertUsernameCreateProfiletextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertUsernameCreateProfiletextBox.TabIndex = 5;
-            // 
-            // InsertUserCreateProfiletextBox
-            // 
-            this.InsertUserCreateProfiletextBox.Location = new System.Drawing.Point(328, 153);
-            this.InsertUserCreateProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertUserCreateProfiletextBox.Name = "InsertUserCreateProfiletextBox";
-            this.InsertUserCreateProfiletextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertUserCreateProfiletextBox.TabIndex = 4;
-            // 
-            // InsertUsernameCreateProfilelabel
-            // 
-            this.InsertUsernameCreateProfilelabel.AutoSize = true;
-            this.InsertUsernameCreateProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertUsernameCreateProfilelabel.Location = new System.Drawing.Point(87, 182);
-            this.InsertUsernameCreateProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertUsernameCreateProfilelabel.Name = "InsertUsernameCreateProfilelabel";
-            this.InsertUsernameCreateProfilelabel.Size = new System.Drawing.Size(221, 13);
-            this.InsertUsernameCreateProfilelabel.TabIndex = 2;
-            this.InsertUsernameCreateProfilelabel.Text = "¿Cuál será el Username de este nuevo perfil?";
-            // 
-            // InsertUserCreateProfilelabel
-            // 
-            this.InsertUserCreateProfilelabel.AutoSize = true;
-            this.InsertUserCreateProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertUserCreateProfilelabel.Location = new System.Drawing.Point(87, 153);
-            this.InsertUserCreateProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertUserCreateProfilelabel.Name = "InsertUserCreateProfilelabel";
-            this.InsertUserCreateProfilelabel.Size = new System.Drawing.Size(191, 13);
-            this.InsertUserCreateProfilelabel.TabIndex = 1;
-            this.InsertUserCreateProfilelabel.Text = "¿A qué usuario quiere crearle un perfil?";
-            // 
-            // Createprofilelabel
-            // 
-            this.Createprofilelabel.AutoSize = true;
-            this.Createprofilelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Createprofilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.Createprofilelabel.Location = new System.Drawing.Point(200, 18);
-            this.Createprofilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Createprofilelabel.Name = "Createprofilelabel";
-            this.Createprofilelabel.Size = new System.Drawing.Size(151, 31);
-            this.Createprofilelabel.TabIndex = 0;
-            this.Createprofilelabel.Text = "Crear Perfil";
-            // 
-            // CreateUserpanel
-            // 
-            this.CreateUserpanel.Controls.Add(this.CreateUserAviso2label1);
-            this.CreateUserpanel.Controls.Add(this.CreateUserAvisolabel);
-            this.CreateUserpanel.Controls.Add(this.BackCreateUserbutton);
-            this.CreateUserpanel.Controls.Add(this.CreateUbutton);
-            this.CreateUserpanel.Controls.Add(this.InsertPlanTypetextBox);
-            this.CreateUserpanel.Controls.Add(this.InsertUserPasswordtextBox);
-            this.CreateUserpanel.Controls.Add(this.InsertUserMailtextBox);
-            this.CreateUserpanel.Controls.Add(this.InsertPlanTypelabel);
-            this.CreateUserpanel.Controls.Add(this.InsertPasswordUserlabel);
-            this.CreateUserpanel.Controls.Add(this.InsertUserMaillabel);
-            this.CreateUserpanel.Controls.Add(this.CreateUserlabel);
-            this.CreateUserpanel.Location = new System.Drawing.Point(541, 334);
-            this.CreateUserpanel.Margin = new System.Windows.Forms.Padding(2);
-            this.CreateUserpanel.Name = "CreateUserpanel";
-            this.CreateUserpanel.Size = new System.Drawing.Size(42, 36);
-            this.CreateUserpanel.TabIndex = 6;
-            // 
-            // CreateUserAviso2label1
-            // 
-            this.CreateUserAviso2label1.AutoSize = true;
-            this.CreateUserAviso2label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.CreateUserAviso2label1.Location = new System.Drawing.Point(271, 282);
-            this.CreateUserAviso2label1.Name = "CreateUserAviso2label1";
-            this.CreateUserAviso2label1.Size = new System.Drawing.Size(258, 13);
-            this.CreateUserAviso2label1.TabIndex = 10;
-            this.CreateUserAviso2label1.Text = "Para poder utilizar esta cuenta, debe crearle un perfil.";
-            this.CreateUserAviso2label1.Visible = false;
-            // 
-            // CreateUserAvisolabel
-            // 
-            this.CreateUserAvisolabel.AutoSize = true;
-            this.CreateUserAvisolabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.CreateUserAvisolabel.Location = new System.Drawing.Point(268, 260);
-            this.CreateUserAvisolabel.Name = "CreateUserAvisolabel";
-            this.CreateUserAvisolabel.Size = new System.Drawing.Size(128, 13);
-            this.CreateUserAvisolabel.TabIndex = 9;
-            this.CreateUserAvisolabel.Text = "Usuario creado con exito!";
-            this.CreateUserAvisolabel.Visible = false;
-            // 
-            // BackCreateUserbutton
-            // 
-            this.BackCreateUserbutton.Location = new System.Drawing.Point(535, 337);
-            this.BackCreateUserbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackCreateUserbutton.Name = "BackCreateUserbutton";
-            this.BackCreateUserbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackCreateUserbutton.TabIndex = 8;
-            this.BackCreateUserbutton.Text = "Volver";
-            this.BackCreateUserbutton.UseVisualStyleBackColor = true;
-            this.BackCreateUserbutton.Click += new System.EventHandler(this.BackCreateUserbutton_Click);
-            // 
-            // CreateUbutton
-            // 
-            this.CreateUbutton.Location = new System.Drawing.Point(328, 223);
-            this.CreateUbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.CreateUbutton.Name = "CreateUbutton";
-            this.CreateUbutton.Size = new System.Drawing.Size(56, 19);
-            this.CreateUbutton.TabIndex = 7;
-            this.CreateUbutton.Text = "Crear";
-            this.CreateUbutton.UseVisualStyleBackColor = true;
-            this.CreateUbutton.Click += new System.EventHandler(this.CreateUbutton_Click);
-            // 
-            // InsertPlanTypetextBox
-            // 
-            this.InsertPlanTypetextBox.Location = new System.Drawing.Point(320, 183);
-            this.InsertPlanTypetextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertPlanTypetextBox.Name = "InsertPlanTypetextBox";
-            this.InsertPlanTypetextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertPlanTypetextBox.TabIndex = 6;
-            // 
-            // InsertUserPasswordtextBox
-            // 
-            this.InsertUserPasswordtextBox.Location = new System.Drawing.Point(320, 162);
-            this.InsertUserPasswordtextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertUserPasswordtextBox.Name = "InsertUserPasswordtextBox";
-            this.InsertUserPasswordtextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertUserPasswordtextBox.TabIndex = 5;
-            // 
-            // InsertUserMailtextBox
-            // 
-            this.InsertUserMailtextBox.Location = new System.Drawing.Point(320, 141);
-            this.InsertUserMailtextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertUserMailtextBox.Name = "InsertUserMailtextBox";
-            this.InsertUserMailtextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertUserMailtextBox.TabIndex = 4;
-            // 
-            // InsertPlanTypelabel
-            // 
-            this.InsertPlanTypelabel.AutoSize = true;
-            this.InsertPlanTypelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertPlanTypelabel.Location = new System.Drawing.Point(70, 188);
-            this.InsertPlanTypelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertPlanTypelabel.Name = "InsertPlanTypelabel";
-            this.InsertPlanTypelabel.Size = new System.Drawing.Size(246, 13);
-            this.InsertPlanTypelabel.TabIndex = 3;
-            this.InsertPlanTypelabel.Text = "¿Qué plan desea para este usuario?(premium/free)";
-            // 
-            // InsertPasswordUserlabel
-            // 
-            this.InsertPasswordUserlabel.AutoSize = true;
-            this.InsertPasswordUserlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertPasswordUserlabel.Location = new System.Drawing.Point(128, 164);
-            this.InsertPasswordUserlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertPasswordUserlabel.Name = "InsertPasswordUserlabel";
-            this.InsertPasswordUserlabel.Size = new System.Drawing.Size(112, 13);
-            this.InsertPasswordUserlabel.TabIndex = 2;
-            this.InsertPasswordUserlabel.Text = "Ingrese la contraseña:";
-            // 
-            // InsertUserMaillabel
-            // 
-            this.InsertUserMaillabel.AutoSize = true;
-            this.InsertUserMaillabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertUserMaillabel.Location = new System.Drawing.Point(128, 144);
-            this.InsertUserMaillabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertUserMaillabel.Name = "InsertUserMaillabel";
-            this.InsertUserMaillabel.Size = new System.Drawing.Size(131, 13);
-            this.InsertUserMaillabel.TabIndex = 1;
-            this.InsertUserMaillabel.Text = "Ingrese el mail del usuario:";
-            // 
-            // CreateUserlabel
-            // 
-            this.CreateUserlabel.AutoSize = true;
-            this.CreateUserlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateUserlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.CreateUserlabel.Location = new System.Drawing.Point(200, 15);
-            this.CreateUserlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.CreateUserlabel.Name = "CreateUserlabel";
-            this.CreateUserlabel.Size = new System.Drawing.Size(183, 31);
-            this.CreateUserlabel.TabIndex = 0;
-            this.CreateUserlabel.Text = "Crear Usuario";
-            // 
-            // ExitADCbutton
-            // 
-            this.ExitADCbutton.Location = new System.Drawing.Point(248, 273);
-            this.ExitADCbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.ExitADCbutton.Name = "ExitADCbutton";
-            this.ExitADCbutton.Size = new System.Drawing.Size(84, 26);
-            this.ExitADCbutton.TabIndex = 5;
-            this.ExitADCbutton.Text = "Salir";
-            this.ExitADCbutton.UseVisualStyleBackColor = true;
-            this.ExitADCbutton.Click += new System.EventHandler(this.ExitADCbutton_Click);
-            // 
-            // ViewProfilesbutton
-            // 
-            this.ViewProfilesbutton.Location = new System.Drawing.Point(248, 230);
-            this.ViewProfilesbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.ViewProfilesbutton.Name = "ViewProfilesbutton";
-            this.ViewProfilesbutton.Size = new System.Drawing.Size(84, 35);
-            this.ViewProfilesbutton.TabIndex = 4;
-            this.ViewProfilesbutton.Text = "Ver Perfiles por Usuario";
-            this.ViewProfilesbutton.UseVisualStyleBackColor = true;
-            this.ViewProfilesbutton.Click += new System.EventHandler(this.ViewProfilesbutton_Click);
-            // 
-            // ChangeProfilebutton
-            // 
-            this.ChangeProfilebutton.Location = new System.Drawing.Point(248, 199);
-            this.ChangeProfilebutton.Margin = new System.Windows.Forms.Padding(2);
-            this.ChangeProfilebutton.Name = "ChangeProfilebutton";
-            this.ChangeProfilebutton.Size = new System.Drawing.Size(84, 26);
-            this.ChangeProfilebutton.TabIndex = 3;
-            this.ChangeProfilebutton.Text = "Modificar Perfil";
-            this.ChangeProfilebutton.UseVisualStyleBackColor = true;
-            this.ChangeProfilebutton.Click += new System.EventHandler(this.ChangeProfilebutton_Click);
-            // 
-            // CreareProfilebutton
-            // 
-            this.CreareProfilebutton.Location = new System.Drawing.Point(248, 168);
-            this.CreareProfilebutton.Margin = new System.Windows.Forms.Padding(2);
-            this.CreareProfilebutton.Name = "CreareProfilebutton";
-            this.CreareProfilebutton.Size = new System.Drawing.Size(84, 26);
-            this.CreareProfilebutton.TabIndex = 2;
-            this.CreareProfilebutton.Text = "Crear Perfil";
-            this.CreareProfilebutton.UseVisualStyleBackColor = true;
-            this.CreareProfilebutton.Click += new System.EventHandler(this.CreareProfilebutton_Click);
-            // 
-            // CreateUserbutton
-            // 
-            this.CreateUserbutton.Location = new System.Drawing.Point(248, 137);
-            this.CreateUserbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.CreateUserbutton.Name = "CreateUserbutton";
-            this.CreateUserbutton.Size = new System.Drawing.Size(84, 26);
-            this.CreateUserbutton.TabIndex = 1;
-            this.CreateUserbutton.Text = "Crear Usuario";
-            this.CreateUserbutton.UseVisualStyleBackColor = true;
-            this.CreateUserbutton.Click += new System.EventHandler(this.CreateUserbutton_Click);
-            // 
-            // ADClabel
-            // 
-            this.ADClabel.AutoSize = true;
-            this.ADClabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ADClabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.ADClabel.Location = new System.Drawing.Point(125, 7);
-            this.ADClabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ADClabel.Name = "ADClabel";
-            this.ADClabel.Size = new System.Drawing.Size(338, 31);
-            this.ADClabel.TabIndex = 0;
-            this.ADClabel.Text = "Administración de Cuentas";
             // 
             // LoginSesionpanel
             // 
@@ -1088,10 +502,10 @@
             this.LoginSesionpanel.Controls.Add(this.InsertPasswordLoginSesionlabel);
             this.LoginSesionpanel.Controls.Add(this.InsertMailLoginSesionlabel);
             this.LoginSesionpanel.Controls.Add(this.LoginSesionlabel);
-            this.LoginSesionpanel.Location = new System.Drawing.Point(524, 208);
+            this.LoginSesionpanel.Location = new System.Drawing.Point(467, 210);
             this.LoginSesionpanel.Margin = new System.Windows.Forms.Padding(2);
             this.LoginSesionpanel.Name = "LoginSesionpanel";
-            this.LoginSesionpanel.Size = new System.Drawing.Size(96, 95);
+            this.LoginSesionpanel.Size = new System.Drawing.Size(75, 88);
             this.LoginSesionpanel.TabIndex = 4;
             this.LoginSesionpanel.Visible = false;
             // 
@@ -1103,11 +517,77 @@
             this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilelabel2);
             this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilelabel1);
             this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionInsertProfilecomboBox);
-            this.LoginSesionProfilepanel.Location = new System.Drawing.Point(257, 286);
+            this.LoginSesionProfilepanel.Location = new System.Drawing.Point(489, 135);
             this.LoginSesionProfilepanel.Margin = new System.Windows.Forms.Padding(2);
             this.LoginSesionProfilepanel.Name = "LoginSesionProfilepanel";
-            this.LoginSesionProfilepanel.Size = new System.Drawing.Size(61, 70);
+            this.LoginSesionProfilepanel.Size = new System.Drawing.Size(77, 86);
             this.LoginSesionProfilepanel.TabIndex = 9;
+            // 
+            // BackLoginSesionProfilebutton
+            // 
+            this.BackLoginSesionProfilebutton.Location = new System.Drawing.Point(535, 337);
+            this.BackLoginSesionProfilebutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackLoginSesionProfilebutton.Name = "BackLoginSesionProfilebutton";
+            this.BackLoginSesionProfilebutton.Size = new System.Drawing.Size(56, 19);
+            this.BackLoginSesionProfilebutton.TabIndex = 3;
+            this.BackLoginSesionProfilebutton.Text = "Volver";
+            this.BackLoginSesionProfilebutton.UseVisualStyleBackColor = true;
+            this.BackLoginSesionProfilebutton.Click += new System.EventHandler(this.BackLoginSesionProfilebutton_Click);
+            // 
+            // MainMenupanel
+            // 
+            this.MainMenupanel.Controls.Add(this.MoviesMainMenupanel);
+            this.MainMenupanel.Controls.Add(this.JoinPartypanel);
+            this.MainMenupanel.Controls.Add(this.InteligentSuggestionspanel);
+            this.MainMenupanel.Controls.Add(this.Followpanel);
+            this.MainMenupanel.Controls.Add(this.LogoutMainMenubutton);
+            this.MainMenupanel.Controls.Add(this.MoviesMainMenubutton);
+            this.MainMenupanel.Controls.Add(this.SongsMainMenubutton);
+            this.MainMenupanel.Controls.Add(this.JoinPartyMainMenubutton);
+            this.MainMenupanel.Controls.Add(this.SuggestionsMainMenubutton);
+            this.MainMenupanel.Controls.Add(this.FollowMainMenubutton);
+            this.MainMenupanel.Controls.Add(this.MainMenulabel2);
+            this.MainMenupanel.Controls.Add(this.MainMenulabel1);
+            this.MainMenupanel.Location = new System.Drawing.Point(416, 255);
+            this.MainMenupanel.Margin = new System.Windows.Forms.Padding(2);
+            this.MainMenupanel.Name = "MainMenupanel";
+            this.MainMenupanel.Size = new System.Drawing.Size(61, 69);
+            this.MainMenupanel.TabIndex = 4;
+            // 
+            // MoviesMainMenupanel
+            // 
+            this.MoviesMainMenupanel.Controls.Add(this.Songspanel);
+            this.MoviesMainMenupanel.Controls.Add(this.SeeQueueMoviespanel);
+            this.MoviesMainMenupanel.Controls.Add(this.SelectFavouriteMoviespanel);
+            this.MoviesMainMenupanel.Controls.Add(this.SeeFavouriteMoviespanel);
+            this.MoviesMainMenupanel.Controls.Add(this.AddQueueMoviespanel);
+            this.MoviesMainMenupanel.Controls.Add(this.SeePlaylistMoviespanel);
+            this.MoviesMainMenupanel.Controls.Add(this.SearchMoviespanel);
+            this.MoviesMainMenupanel.Controls.Add(this.SeeMoviespanel);
+            this.MoviesMainMenupanel.Controls.Add(this.CreatePlaylistMoviespanel);
+            this.MoviesMainMenupanel.Controls.Add(this.AddPlaylistMoviespanel);
+            this.MoviesMainMenupanel.Controls.Add(this.InformationMoviespanel);
+            this.MoviesMainMenupanel.Controls.Add(this.QualifyMoviespanel);
+            this.MoviesMainMenupanel.Controls.Add(this.PlayMoviespanel);
+            this.MoviesMainMenupanel.Controls.Add(this.QualifyMoviesbutton);
+            this.MoviesMainMenupanel.Controls.Add(this.SeeQueueMoviesbutton);
+            this.MoviesMainMenupanel.Controls.Add(this.SeeFavouriteMoviesbutton);
+            this.MoviesMainMenupanel.Controls.Add(this.SeePlaylistMoviesbutton);
+            this.MoviesMainMenupanel.Controls.Add(this.SelectFavouriteMoviesbutton);
+            this.MoviesMainMenupanel.Controls.Add(this.AddToPlaylistMoviesbutton);
+            this.MoviesMainMenupanel.Controls.Add(this.CreatePlaylistMoviesbutton);
+            this.MoviesMainMenupanel.Controls.Add(this.AddQueueMoviesbutton);
+            this.MoviesMainMenupanel.Controls.Add(this.SearchMoviesbutton);
+            this.MoviesMainMenupanel.Controls.Add(this.InformationMoviesbutton);
+            this.MoviesMainMenupanel.Controls.Add(this.SeeMoviesbutton);
+            this.MoviesMainMenupanel.Controls.Add(this.PlayMoviesbutton);
+            this.MoviesMainMenupanel.Controls.Add(this.BackMoviesMainMenubutton);
+            this.MoviesMainMenupanel.Controls.Add(this.MoviesMainMenulabel);
+            this.MoviesMainMenupanel.Location = new System.Drawing.Point(104, 310);
+            this.MoviesMainMenupanel.Margin = new System.Windows.Forms.Padding(2);
+            this.MoviesMainMenupanel.Name = "MoviesMainMenupanel";
+            this.MoviesMainMenupanel.Size = new System.Drawing.Size(50, 50);
+            this.MoviesMainMenupanel.TabIndex = 6;
             // 
             // Songspanel
             // 
@@ -1136,10 +616,10 @@
             this.Songspanel.Controls.Add(this.CreatePlaylistSongsbutton);
             this.Songspanel.Controls.Add(this.Songslabel);
             this.Songspanel.Controls.Add(this.SuggestionsSongspanel);
-            this.Songspanel.Location = new System.Drawing.Point(113, 247);
+            this.Songspanel.Location = new System.Drawing.Point(193, 320);
             this.Songspanel.Margin = new System.Windows.Forms.Padding(2);
             this.Songspanel.Name = "Songspanel";
-            this.Songspanel.Size = new System.Drawing.Size(50, 54);
+            this.Songspanel.Size = new System.Drawing.Size(54, 62);
             this.Songspanel.TabIndex = 15;
             this.Songspanel.Paint += new System.Windows.Forms.PaintEventHandler(this.Songspanel_Paint);
             // 
@@ -1221,264 +701,6 @@
             this.PlaySongslabel.Size = new System.Drawing.Size(254, 31);
             this.PlaySongslabel.TabIndex = 0;
             this.PlaySongslabel.Text = "Reproducir Canción";
-            // 
-            // SeeQueueSongspanel
-            // 
-            this.SeeQueueSongspanel.Controls.Add(this.ResultSeeQueueSongsrichTextBox);
-            this.SeeQueueSongspanel.Controls.Add(this.SeeQueueSongslabel);
-            this.SeeQueueSongspanel.Controls.Add(this.BackSeeQueueSongsbutton);
-            this.SeeQueueSongspanel.Location = new System.Drawing.Point(39, 59);
-            this.SeeQueueSongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.SeeQueueSongspanel.Name = "SeeQueueSongspanel";
-            this.SeeQueueSongspanel.Size = new System.Drawing.Size(51, 74);
-            this.SeeQueueSongspanel.TabIndex = 3;
-            // 
-            // ResultSeeQueueSongsrichTextBox
-            // 
-            this.ResultSeeQueueSongsrichTextBox.Location = new System.Drawing.Point(173, 80);
-            this.ResultSeeQueueSongsrichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ResultSeeQueueSongsrichTextBox.Name = "ResultSeeQueueSongsrichTextBox";
-            this.ResultSeeQueueSongsrichTextBox.Size = new System.Drawing.Size(223, 198);
-            this.ResultSeeQueueSongsrichTextBox.TabIndex = 2;
-            this.ResultSeeQueueSongsrichTextBox.Text = "";
-            // 
-            // SeeQueueSongslabel
-            // 
-            this.SeeQueueSongslabel.AutoSize = true;
-            this.SeeQueueSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeeQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.SeeQueueSongslabel.Location = new System.Drawing.Point(187, 18);
-            this.SeeQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SeeQueueSongslabel.Name = "SeeQueueSongslabel";
-            this.SeeQueueSongslabel.Size = new System.Drawing.Size(221, 31);
-            this.SeeQueueSongslabel.TabIndex = 1;
-            this.SeeQueueSongslabel.Text = "Ver Lista en Cola";
-            // 
-            // BackSeeQueueSongsbutton
-            // 
-            this.BackSeeQueueSongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackSeeQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackSeeQueueSongsbutton.Name = "BackSeeQueueSongsbutton";
-            this.BackSeeQueueSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackSeeQueueSongsbutton.TabIndex = 0;
-            this.BackSeeQueueSongsbutton.Text = "Volver";
-            this.BackSeeQueueSongsbutton.UseVisualStyleBackColor = true;
-            this.BackSeeQueueSongsbutton.Click += new System.EventHandler(this.BackSeeQueueSongsbutton_Click);
-            // 
-            // AddToQueueSongspanel
-            // 
-            this.AddToQueueSongspanel.Controls.Add(this.MessageAddToQueueSongslabel);
-            this.AddToQueueSongspanel.Controls.Add(this.AddAddToQueueSongsbutton);
-            this.AddToQueueSongspanel.Controls.Add(this.InsertSongNameAddToQueueSongslabel);
-            this.AddToQueueSongspanel.Controls.Add(this.InsertSongNameAddToQueueSongscomboBox);
-            this.AddToQueueSongspanel.Controls.Add(this.BackAddToQueueSongsbutton);
-            this.AddToQueueSongspanel.Controls.Add(this.AddToQueueSongslabel);
-            this.AddToQueueSongspanel.Location = new System.Drawing.Point(444, 13);
-            this.AddToQueueSongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.AddToQueueSongspanel.Name = "AddToQueueSongspanel";
-            this.AddToQueueSongspanel.Size = new System.Drawing.Size(40, 49);
-            this.AddToQueueSongspanel.TabIndex = 6;
-            // 
-            // MessageAddToQueueSongslabel
-            // 
-            this.MessageAddToQueueSongslabel.AutoSize = true;
-            this.MessageAddToQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.MessageAddToQueueSongslabel.Location = new System.Drawing.Point(211, 243);
-            this.MessageAddToQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.MessageAddToQueueSongslabel.Name = "MessageAddToQueueSongslabel";
-            this.MessageAddToQueueSongslabel.Size = new System.Drawing.Size(183, 13);
-            this.MessageAddToQueueSongslabel.TabIndex = 11;
-            this.MessageAddToQueueSongslabel.Text = "La canción se añadió correctamente.";
-            this.MessageAddToQueueSongslabel.Visible = false;
-            // 
-            // AddAddToQueueSongsbutton
-            // 
-            this.AddAddToQueueSongsbutton.Location = new System.Drawing.Point(276, 186);
-            this.AddAddToQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.AddAddToQueueSongsbutton.Name = "AddAddToQueueSongsbutton";
-            this.AddAddToQueueSongsbutton.Size = new System.Drawing.Size(60, 24);
-            this.AddAddToQueueSongsbutton.TabIndex = 10;
-            this.AddAddToQueueSongsbutton.Text = "Agregar";
-            this.AddAddToQueueSongsbutton.UseVisualStyleBackColor = true;
-            this.AddAddToQueueSongsbutton.Click += new System.EventHandler(this.AddAddToQueueSongsbutton_Click);
-            // 
-            // InsertSongNameAddToQueueSongslabel
-            // 
-            this.InsertSongNameAddToQueueSongslabel.AutoSize = true;
-            this.InsertSongNameAddToQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertSongNameAddToQueueSongslabel.Location = new System.Drawing.Point(185, 134);
-            this.InsertSongNameAddToQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertSongNameAddToQueueSongslabel.Name = "InsertSongNameAddToQueueSongslabel";
-            this.InsertSongNameAddToQueueSongslabel.Size = new System.Drawing.Size(114, 13);
-            this.InsertSongNameAddToQueueSongslabel.TabIndex = 9;
-            this.InsertSongNameAddToQueueSongslabel.Text = "Nombre de la canción:";
-            // 
-            // InsertSongNameAddToQueueSongscomboBox
-            // 
-            this.InsertSongNameAddToQueueSongscomboBox.FormattingEnabled = true;
-            this.InsertSongNameAddToQueueSongscomboBox.Location = new System.Drawing.Point(321, 134);
-            this.InsertSongNameAddToQueueSongscomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertSongNameAddToQueueSongscomboBox.Name = "InsertSongNameAddToQueueSongscomboBox";
-            this.InsertSongNameAddToQueueSongscomboBox.Size = new System.Drawing.Size(92, 21);
-            this.InsertSongNameAddToQueueSongscomboBox.TabIndex = 8;
-            // 
-            // BackAddToQueueSongsbutton
-            // 
-            this.BackAddToQueueSongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackAddToQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackAddToQueueSongsbutton.Name = "BackAddToQueueSongsbutton";
-            this.BackAddToQueueSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackAddToQueueSongsbutton.TabIndex = 7;
-            this.BackAddToQueueSongsbutton.Text = "Volver";
-            this.BackAddToQueueSongsbutton.UseVisualStyleBackColor = true;
-            this.BackAddToQueueSongsbutton.Click += new System.EventHandler(this.BackAddToQueueSongsbutton_Click);
-            // 
-            // AddToQueueSongslabel
-            // 
-            this.AddToQueueSongslabel.AutoSize = true;
-            this.AddToQueueSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddToQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.AddToQueueSongslabel.Location = new System.Drawing.Point(135, 16);
-            this.AddToQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.AddToQueueSongslabel.Name = "AddToQueueSongslabel";
-            this.AddToQueueSongslabel.Size = new System.Drawing.Size(386, 31);
-            this.AddToQueueSongslabel.TabIndex = 6;
-            this.AddToQueueSongslabel.Text = "Añadir Canción a Lista en Cola";
-            // 
-            // SearchSongspanel
-            // 
-            this.SearchSongspanel.Controls.Add(this.Genderpanel);
-            this.SearchSongspanel.Controls.Add(this.Evaluationpanel);
-            this.SearchSongspanel.Controls.Add(this.Artistpanel);
-            this.SearchSongspanel.Controls.Add(this.Keywordpanel);
-            this.SearchSongspanel.Controls.Add(this.CategoriesSearchSongsbutton);
-            this.SearchSongspanel.Controls.Add(this.EvaluationSearchSongsbutton);
-            this.SearchSongspanel.Controls.Add(this.ArtistSearchSongsbutton);
-            this.SearchSongspanel.Controls.Add(this.KeywordSearchSongsbutton);
-            this.SearchSongspanel.Controls.Add(this.BackSearchSongsbutton);
-            this.SearchSongspanel.Controls.Add(this.SearchSongslabel);
-            this.SearchSongspanel.Location = new System.Drawing.Point(49, 164);
-            this.SearchSongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.SearchSongspanel.Name = "SearchSongspanel";
-            this.SearchSongspanel.Size = new System.Drawing.Size(53, 56);
-            this.SearchSongspanel.TabIndex = 9;
-            // 
-            // Genderpanel
-            // 
-            this.Genderpanel.Controls.Add(this.MessageGenderlabel);
-            this.Genderpanel.Controls.Add(this.SearchGenderbutton);
-            this.Genderpanel.Controls.Add(this.ResultGenderrichTextBox);
-            this.Genderpanel.Controls.Add(this.InsertGenderGendertextBox);
-            this.Genderpanel.Controls.Add(this.InsertGenderGenderlabel);
-            this.Genderpanel.Controls.Add(this.BackGenderbutton);
-            this.Genderpanel.Controls.Add(this.Genderlabel);
-            this.Genderpanel.Location = new System.Drawing.Point(168, 251);
-            this.Genderpanel.Margin = new System.Windows.Forms.Padding(2);
-            this.Genderpanel.Name = "Genderpanel";
-            this.Genderpanel.Size = new System.Drawing.Size(50, 46);
-            this.Genderpanel.TabIndex = 8;
-            // 
-            // MessageGenderlabel
-            // 
-            this.MessageGenderlabel.AutoSize = true;
-            this.MessageGenderlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.MessageGenderlabel.Location = new System.Drawing.Point(91, 260);
-            this.MessageGenderlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.MessageGenderlabel.Name = "MessageGenderlabel";
-            this.MessageGenderlabel.Size = new System.Drawing.Size(178, 13);
-            this.MessageGenderlabel.TabIndex = 6;
-            this.MessageGenderlabel.Text = "El género ingresado no se encontró.";
-            this.MessageGenderlabel.Visible = false;
-            // 
-            // SearchGenderbutton
-            // 
-            this.SearchGenderbutton.Location = new System.Drawing.Point(130, 180);
-            this.SearchGenderbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.SearchGenderbutton.Name = "SearchGenderbutton";
-            this.SearchGenderbutton.Size = new System.Drawing.Size(101, 40);
-            this.SearchGenderbutton.TabIndex = 5;
-            this.SearchGenderbutton.Text = "Buscar";
-            this.SearchGenderbutton.UseVisualStyleBackColor = true;
-            this.SearchGenderbutton.Click += new System.EventHandler(this.SearchGenderbutton_Click);
-            // 
-            // ResultGenderrichTextBox
-            // 
-            this.ResultGenderrichTextBox.Location = new System.Drawing.Point(360, 106);
-            this.ResultGenderrichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ResultGenderrichTextBox.Name = "ResultGenderrichTextBox";
-            this.ResultGenderrichTextBox.Size = new System.Drawing.Size(144, 183);
-            this.ResultGenderrichTextBox.TabIndex = 4;
-            this.ResultGenderrichTextBox.Text = "";
-            // 
-            // InsertGenderGendertextBox
-            // 
-            this.InsertGenderGendertextBox.Location = new System.Drawing.Point(192, 120);
-            this.InsertGenderGendertextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertGenderGendertextBox.Name = "InsertGenderGendertextBox";
-            this.InsertGenderGendertextBox.Size = new System.Drawing.Size(76, 20);
-            this.InsertGenderGendertextBox.TabIndex = 3;
-            // 
-            // InsertGenderGenderlabel
-            // 
-            this.InsertGenderGenderlabel.AutoSize = true;
-            this.InsertGenderGenderlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertGenderGenderlabel.Location = new System.Drawing.Point(40, 124);
-            this.InsertGenderGenderlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertGenderGenderlabel.Name = "InsertGenderGenderlabel";
-            this.InsertGenderGenderlabel.Size = new System.Drawing.Size(130, 13);
-            this.InsertGenderGenderlabel.TabIndex = 2;
-            this.InsertGenderGenderlabel.Text = "Ingrese el género musical:";
-            // 
-            // BackGenderbutton
-            // 
-            this.BackGenderbutton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BackGenderbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackGenderbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackGenderbutton.Name = "BackGenderbutton";
-            this.BackGenderbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackGenderbutton.TabIndex = 1;
-            this.BackGenderbutton.Text = "Volver";
-            this.BackGenderbutton.UseVisualStyleBackColor = true;
-            this.BackGenderbutton.Click += new System.EventHandler(this.BackGenderbutton_Click);
-            // 
-            // Genderlabel
-            // 
-            this.Genderlabel.AutoSize = true;
-            this.Genderlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Genderlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.Genderlabel.Location = new System.Drawing.Point(197, 16);
-            this.Genderlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Genderlabel.Name = "Genderlabel";
-            this.Genderlabel.Size = new System.Drawing.Size(203, 31);
-            this.Genderlabel.TabIndex = 0;
-            this.Genderlabel.Text = "Género Musical";
-            // 
-            // Evaluationpanel
-            // 
-            this.Evaluationpanel.Controls.Add(this.InsertSignEvaluationlabel);
-            this.Evaluationpanel.Controls.Add(this.InsertQualificationEvaluationlabel);
-            this.Evaluationpanel.Controls.Add(this.ResultEvaluationrichTextBox);
-            this.Evaluationpanel.Controls.Add(this.InsertSignEvaluationcomboBox);
-            this.Evaluationpanel.Controls.Add(this.InsertQualificationEvaluationcomboBox);
-            this.Evaluationpanel.Controls.Add(this.SearchEvaluationbutton);
-            this.Evaluationpanel.Controls.Add(this.BackEvaluationbutton);
-            this.Evaluationpanel.Controls.Add(this.Evaluationlabel);
-            this.Evaluationpanel.Location = new System.Drawing.Point(56, 240);
-            this.Evaluationpanel.Margin = new System.Windows.Forms.Padding(2);
-            this.Evaluationpanel.Name = "Evaluationpanel";
-            this.Evaluationpanel.Size = new System.Drawing.Size(101, 50);
-            this.Evaluationpanel.TabIndex = 9;
-            // 
-            // InsertSignEvaluationlabel
-            // 
-            this.InsertSignEvaluationlabel.AutoSize = true;
-            this.InsertSignEvaluationlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertSignEvaluationlabel.Location = new System.Drawing.Point(34, 191);
-            this.InsertSignEvaluationlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertSignEvaluationlabel.Name = "InsertSignEvaluationlabel";
-            this.InsertSignEvaluationlabel.Size = new System.Drawing.Size(326, 13);
-            this.InsertSignEvaluationlabel.TabIndex = 7;
-            this.InsertSignEvaluationlabel.Text = "Indique si la evaluación debe ser mayor, menor o igual al parámetro:";
             // 
             // InformationSongspanel
             // 
@@ -1653,6 +875,384 @@
             this.InformationSongslabel.TabIndex = 0;
             this.InformationSongslabel.Text = "Información";
             // 
+            // SeeQueueSongspanel
+            // 
+            this.SeeQueueSongspanel.Controls.Add(this.ResultSeeQueueSongsrichTextBox);
+            this.SeeQueueSongspanel.Controls.Add(this.SeeQueueSongslabel);
+            this.SeeQueueSongspanel.Controls.Add(this.BackSeeQueueSongsbutton);
+            this.SeeQueueSongspanel.Location = new System.Drawing.Point(39, 59);
+            this.SeeQueueSongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.SeeQueueSongspanel.Name = "SeeQueueSongspanel";
+            this.SeeQueueSongspanel.Size = new System.Drawing.Size(51, 74);
+            this.SeeQueueSongspanel.TabIndex = 3;
+            // 
+            // ResultSeeQueueSongsrichTextBox
+            // 
+            this.ResultSeeQueueSongsrichTextBox.Location = new System.Drawing.Point(173, 80);
+            this.ResultSeeQueueSongsrichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ResultSeeQueueSongsrichTextBox.Name = "ResultSeeQueueSongsrichTextBox";
+            this.ResultSeeQueueSongsrichTextBox.Size = new System.Drawing.Size(223, 198);
+            this.ResultSeeQueueSongsrichTextBox.TabIndex = 2;
+            this.ResultSeeQueueSongsrichTextBox.Text = "";
+            // 
+            // SeeQueueSongslabel
+            // 
+            this.SeeQueueSongslabel.AutoSize = true;
+            this.SeeQueueSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeeQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.SeeQueueSongslabel.Location = new System.Drawing.Point(187, 18);
+            this.SeeQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SeeQueueSongslabel.Name = "SeeQueueSongslabel";
+            this.SeeQueueSongslabel.Size = new System.Drawing.Size(221, 31);
+            this.SeeQueueSongslabel.TabIndex = 1;
+            this.SeeQueueSongslabel.Text = "Ver Lista en Cola";
+            // 
+            // BackSeeQueueSongsbutton
+            // 
+            this.BackSeeQueueSongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackSeeQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackSeeQueueSongsbutton.Name = "BackSeeQueueSongsbutton";
+            this.BackSeeQueueSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackSeeQueueSongsbutton.TabIndex = 0;
+            this.BackSeeQueueSongsbutton.Text = "Volver";
+            this.BackSeeQueueSongsbutton.UseVisualStyleBackColor = true;
+            this.BackSeeQueueSongsbutton.Click += new System.EventHandler(this.BackSeeQueueSongsbutton_Click);
+            // 
+            // AddToQueueSongspanel
+            // 
+            this.AddToQueueSongspanel.Controls.Add(this.MessageAddToQueueSongslabel);
+            this.AddToQueueSongspanel.Controls.Add(this.AddAddToQueueSongsbutton);
+            this.AddToQueueSongspanel.Controls.Add(this.InsertSongNameAddToQueueSongslabel);
+            this.AddToQueueSongspanel.Controls.Add(this.InsertSongNameAddToQueueSongscomboBox);
+            this.AddToQueueSongspanel.Controls.Add(this.BackAddToQueueSongsbutton);
+            this.AddToQueueSongspanel.Controls.Add(this.AddToQueueSongslabel);
+            this.AddToQueueSongspanel.Location = new System.Drawing.Point(444, 13);
+            this.AddToQueueSongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.AddToQueueSongspanel.Name = "AddToQueueSongspanel";
+            this.AddToQueueSongspanel.Size = new System.Drawing.Size(40, 49);
+            this.AddToQueueSongspanel.TabIndex = 6;
+            // 
+            // MessageAddToQueueSongslabel
+            // 
+            this.MessageAddToQueueSongslabel.AutoSize = true;
+            this.MessageAddToQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.MessageAddToQueueSongslabel.Location = new System.Drawing.Point(211, 243);
+            this.MessageAddToQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MessageAddToQueueSongslabel.Name = "MessageAddToQueueSongslabel";
+            this.MessageAddToQueueSongslabel.Size = new System.Drawing.Size(183, 13);
+            this.MessageAddToQueueSongslabel.TabIndex = 11;
+            this.MessageAddToQueueSongslabel.Text = "La canción se añadió correctamente.";
+            this.MessageAddToQueueSongslabel.Visible = false;
+            // 
+            // AddAddToQueueSongsbutton
+            // 
+            this.AddAddToQueueSongsbutton.Location = new System.Drawing.Point(276, 186);
+            this.AddAddToQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.AddAddToQueueSongsbutton.Name = "AddAddToQueueSongsbutton";
+            this.AddAddToQueueSongsbutton.Size = new System.Drawing.Size(60, 24);
+            this.AddAddToQueueSongsbutton.TabIndex = 10;
+            this.AddAddToQueueSongsbutton.Text = "Agregar";
+            this.AddAddToQueueSongsbutton.UseVisualStyleBackColor = true;
+            this.AddAddToQueueSongsbutton.Click += new System.EventHandler(this.AddAddToQueueSongsbutton_Click);
+            // 
+            // InsertSongNameAddToQueueSongslabel
+            // 
+            this.InsertSongNameAddToQueueSongslabel.AutoSize = true;
+            this.InsertSongNameAddToQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertSongNameAddToQueueSongslabel.Location = new System.Drawing.Point(185, 134);
+            this.InsertSongNameAddToQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertSongNameAddToQueueSongslabel.Name = "InsertSongNameAddToQueueSongslabel";
+            this.InsertSongNameAddToQueueSongslabel.Size = new System.Drawing.Size(114, 13);
+            this.InsertSongNameAddToQueueSongslabel.TabIndex = 9;
+            this.InsertSongNameAddToQueueSongslabel.Text = "Nombre de la canción:";
+            // 
+            // InsertSongNameAddToQueueSongscomboBox
+            // 
+            this.InsertSongNameAddToQueueSongscomboBox.FormattingEnabled = true;
+            this.InsertSongNameAddToQueueSongscomboBox.Location = new System.Drawing.Point(321, 134);
+            this.InsertSongNameAddToQueueSongscomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertSongNameAddToQueueSongscomboBox.Name = "InsertSongNameAddToQueueSongscomboBox";
+            this.InsertSongNameAddToQueueSongscomboBox.Size = new System.Drawing.Size(92, 21);
+            this.InsertSongNameAddToQueueSongscomboBox.TabIndex = 8;
+            // 
+            // BackAddToQueueSongsbutton
+            // 
+            this.BackAddToQueueSongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackAddToQueueSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackAddToQueueSongsbutton.Name = "BackAddToQueueSongsbutton";
+            this.BackAddToQueueSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackAddToQueueSongsbutton.TabIndex = 7;
+            this.BackAddToQueueSongsbutton.Text = "Volver";
+            this.BackAddToQueueSongsbutton.UseVisualStyleBackColor = true;
+            this.BackAddToQueueSongsbutton.Click += new System.EventHandler(this.BackAddToQueueSongsbutton_Click);
+            // 
+            // AddToQueueSongslabel
+            // 
+            this.AddToQueueSongslabel.AutoSize = true;
+            this.AddToQueueSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddToQueueSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.AddToQueueSongslabel.Location = new System.Drawing.Point(135, 16);
+            this.AddToQueueSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.AddToQueueSongslabel.Name = "AddToQueueSongslabel";
+            this.AddToQueueSongslabel.Size = new System.Drawing.Size(386, 31);
+            this.AddToQueueSongslabel.TabIndex = 6;
+            this.AddToQueueSongslabel.Text = "Añadir Canción a Lista en Cola";
+            // 
+            // SeeFavouriteSongspanel
+            // 
+            this.SeeFavouriteSongspanel.Controls.Add(this.ResultSeeFavouriteSongsrichTextBox);
+            this.SeeFavouriteSongspanel.Controls.Add(this.SeeFavouriteSongslabel);
+            this.SeeFavouriteSongspanel.Controls.Add(this.BackSeeFavouriteSongsbutton);
+            this.SeeFavouriteSongspanel.Location = new System.Drawing.Point(426, 89);
+            this.SeeFavouriteSongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.SeeFavouriteSongspanel.Name = "SeeFavouriteSongspanel";
+            this.SeeFavouriteSongspanel.Size = new System.Drawing.Size(91, 44);
+            this.SeeFavouriteSongspanel.TabIndex = 6;
+            // 
+            // ResultSeeFavouriteSongsrichTextBox
+            // 
+            this.ResultSeeFavouriteSongsrichTextBox.Location = new System.Drawing.Point(171, 75);
+            this.ResultSeeFavouriteSongsrichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ResultSeeFavouriteSongsrichTextBox.Name = "ResultSeeFavouriteSongsrichTextBox";
+            this.ResultSeeFavouriteSongsrichTextBox.Size = new System.Drawing.Size(266, 204);
+            this.ResultSeeFavouriteSongsrichTextBox.TabIndex = 2;
+            this.ResultSeeFavouriteSongsrichTextBox.Text = "";
+            // 
+            // SeeFavouriteSongslabel
+            // 
+            this.SeeFavouriteSongslabel.AutoSize = true;
+            this.SeeFavouriteSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeeFavouriteSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.SeeFavouriteSongslabel.Location = new System.Drawing.Point(218, 18);
+            this.SeeFavouriteSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SeeFavouriteSongslabel.Name = "SeeFavouriteSongslabel";
+            this.SeeFavouriteSongslabel.Size = new System.Drawing.Size(176, 31);
+            this.SeeFavouriteSongslabel.TabIndex = 1;
+            this.SeeFavouriteSongslabel.Text = "Ver Favoritos";
+            // 
+            // BackSeeFavouriteSongsbutton
+            // 
+            this.BackSeeFavouriteSongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackSeeFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackSeeFavouriteSongsbutton.Name = "BackSeeFavouriteSongsbutton";
+            this.BackSeeFavouriteSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackSeeFavouriteSongsbutton.TabIndex = 0;
+            this.BackSeeFavouriteSongsbutton.Text = "Volver";
+            this.BackSeeFavouriteSongsbutton.UseVisualStyleBackColor = true;
+            this.BackSeeFavouriteSongsbutton.Click += new System.EventHandler(this.BackSeeFavouriteSongsbutton_Click);
+            // 
+            // SeePlaylistSongspanel
+            // 
+            this.SeePlaylistSongspanel.Controls.Add(this.SeeSeePlaylistSongsbutton);
+            this.SeePlaylistSongspanel.Controls.Add(this.ResultSeePlaylistSongsrichTextBox);
+            this.SeePlaylistSongspanel.Controls.Add(this.InsertPlaylistNameSeePlaylistSongscomboBox);
+            this.SeePlaylistSongspanel.Controls.Add(this.InsertPlaylistNameSeePlaylistSongslabel);
+            this.SeePlaylistSongspanel.Controls.Add(this.SeePlaylistSongslabel);
+            this.SeePlaylistSongspanel.Controls.Add(this.BackSeePlaylistSongsbutton);
+            this.SeePlaylistSongspanel.Location = new System.Drawing.Point(409, 317);
+            this.SeePlaylistSongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.SeePlaylistSongspanel.Name = "SeePlaylistSongspanel";
+            this.SeePlaylistSongspanel.Size = new System.Drawing.Size(57, 48);
+            this.SeePlaylistSongspanel.TabIndex = 12;
+            // 
+            // SeeSeePlaylistSongsbutton
+            // 
+            this.SeeSeePlaylistSongsbutton.Location = new System.Drawing.Point(130, 210);
+            this.SeeSeePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.SeeSeePlaylistSongsbutton.Name = "SeeSeePlaylistSongsbutton";
+            this.SeeSeePlaylistSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.SeeSeePlaylistSongsbutton.TabIndex = 5;
+            this.SeeSeePlaylistSongsbutton.Text = "Ver";
+            this.SeeSeePlaylistSongsbutton.UseVisualStyleBackColor = true;
+            this.SeeSeePlaylistSongsbutton.Click += new System.EventHandler(this.SeeSeePlaylistSongsbutton_Click);
+            // 
+            // ResultSeePlaylistSongsrichTextBox
+            // 
+            this.ResultSeePlaylistSongsrichTextBox.Location = new System.Drawing.Point(364, 89);
+            this.ResultSeePlaylistSongsrichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ResultSeePlaylistSongsrichTextBox.Name = "ResultSeePlaylistSongsrichTextBox";
+            this.ResultSeePlaylistSongsrichTextBox.Size = new System.Drawing.Size(181, 184);
+            this.ResultSeePlaylistSongsrichTextBox.TabIndex = 4;
+            this.ResultSeePlaylistSongsrichTextBox.Text = "";
+            // 
+            // InsertPlaylistNameSeePlaylistSongscomboBox
+            // 
+            this.InsertPlaylistNameSeePlaylistSongscomboBox.FormattingEnabled = true;
+            this.InsertPlaylistNameSeePlaylistSongscomboBox.Location = new System.Drawing.Point(165, 162);
+            this.InsertPlaylistNameSeePlaylistSongscomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertPlaylistNameSeePlaylistSongscomboBox.Name = "InsertPlaylistNameSeePlaylistSongscomboBox";
+            this.InsertPlaylistNameSeePlaylistSongscomboBox.Size = new System.Drawing.Size(92, 21);
+            this.InsertPlaylistNameSeePlaylistSongscomboBox.TabIndex = 3;
+            // 
+            // InsertPlaylistNameSeePlaylistSongslabel
+            // 
+            this.InsertPlaylistNameSeePlaylistSongslabel.AutoSize = true;
+            this.InsertPlaylistNameSeePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertPlaylistNameSeePlaylistSongslabel.Location = new System.Drawing.Point(42, 165);
+            this.InsertPlaylistNameSeePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertPlaylistNameSeePlaylistSongslabel.Name = "InsertPlaylistNameSeePlaylistSongslabel";
+            this.InsertPlaylistNameSeePlaylistSongslabel.Size = new System.Drawing.Size(108, 13);
+            this.InsertPlaylistNameSeePlaylistSongslabel.TabIndex = 2;
+            this.InsertPlaylistNameSeePlaylistSongslabel.Text = "Nombre de la Playlist:";
+            // 
+            // SeePlaylistSongslabel
+            // 
+            this.SeePlaylistSongslabel.AutoSize = true;
+            this.SeePlaylistSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.SeePlaylistSongslabel.Location = new System.Drawing.Point(229, 15);
+            this.SeePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SeePlaylistSongslabel.Name = "SeePlaylistSongslabel";
+            this.SeePlaylistSongslabel.Size = new System.Drawing.Size(150, 31);
+            this.SeePlaylistSongslabel.TabIndex = 1;
+            this.SeePlaylistSongslabel.Text = "Ver Playlist";
+            // 
+            // BackSeePlaylistSongsbutton
+            // 
+            this.BackSeePlaylistSongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackSeePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackSeePlaylistSongsbutton.Name = "BackSeePlaylistSongsbutton";
+            this.BackSeePlaylistSongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackSeePlaylistSongsbutton.TabIndex = 0;
+            this.BackSeePlaylistSongsbutton.Text = "Volver";
+            this.BackSeePlaylistSongsbutton.UseVisualStyleBackColor = true;
+            this.BackSeePlaylistSongsbutton.Click += new System.EventHandler(this.BackSeePlaylistSongsbutton_Click);
+            // 
+            // SearchSongspanel
+            // 
+            this.SearchSongspanel.Controls.Add(this.Genderpanel);
+            this.SearchSongspanel.Controls.Add(this.Evaluationpanel);
+            this.SearchSongspanel.Controls.Add(this.Artistpanel);
+            this.SearchSongspanel.Controls.Add(this.Keywordpanel);
+            this.SearchSongspanel.Controls.Add(this.CategoriesSearchSongsbutton);
+            this.SearchSongspanel.Controls.Add(this.EvaluationSearchSongsbutton);
+            this.SearchSongspanel.Controls.Add(this.ArtistSearchSongsbutton);
+            this.SearchSongspanel.Controls.Add(this.KeywordSearchSongsbutton);
+            this.SearchSongspanel.Controls.Add(this.BackSearchSongsbutton);
+            this.SearchSongspanel.Controls.Add(this.SearchSongslabel);
+            this.SearchSongspanel.Location = new System.Drawing.Point(49, 164);
+            this.SearchSongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.SearchSongspanel.Name = "SearchSongspanel";
+            this.SearchSongspanel.Size = new System.Drawing.Size(53, 56);
+            this.SearchSongspanel.TabIndex = 9;
+            // 
+            // Genderpanel
+            // 
+            this.Genderpanel.Controls.Add(this.MessageGenderlabel);
+            this.Genderpanel.Controls.Add(this.SearchGenderbutton);
+            this.Genderpanel.Controls.Add(this.ResultGenderrichTextBox);
+            this.Genderpanel.Controls.Add(this.InsertGenderGendertextBox);
+            this.Genderpanel.Controls.Add(this.InsertGenderGenderlabel);
+            this.Genderpanel.Controls.Add(this.BackGenderbutton);
+            this.Genderpanel.Controls.Add(this.Genderlabel);
+            this.Genderpanel.Location = new System.Drawing.Point(168, 251);
+            this.Genderpanel.Margin = new System.Windows.Forms.Padding(2);
+            this.Genderpanel.Name = "Genderpanel";
+            this.Genderpanel.Size = new System.Drawing.Size(50, 46);
+            this.Genderpanel.TabIndex = 8;
+            // 
+            // MessageGenderlabel
+            // 
+            this.MessageGenderlabel.AutoSize = true;
+            this.MessageGenderlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.MessageGenderlabel.Location = new System.Drawing.Point(91, 260);
+            this.MessageGenderlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MessageGenderlabel.Name = "MessageGenderlabel";
+            this.MessageGenderlabel.Size = new System.Drawing.Size(178, 13);
+            this.MessageGenderlabel.TabIndex = 6;
+            this.MessageGenderlabel.Text = "El género ingresado no se encontró.";
+            this.MessageGenderlabel.Visible = false;
+            // 
+            // SearchGenderbutton
+            // 
+            this.SearchGenderbutton.Location = new System.Drawing.Point(130, 180);
+            this.SearchGenderbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.SearchGenderbutton.Name = "SearchGenderbutton";
+            this.SearchGenderbutton.Size = new System.Drawing.Size(101, 40);
+            this.SearchGenderbutton.TabIndex = 5;
+            this.SearchGenderbutton.Text = "Buscar";
+            this.SearchGenderbutton.UseVisualStyleBackColor = true;
+            this.SearchGenderbutton.Click += new System.EventHandler(this.SearchGenderbutton_Click);
+            // 
+            // ResultGenderrichTextBox
+            // 
+            this.ResultGenderrichTextBox.Location = new System.Drawing.Point(360, 106);
+            this.ResultGenderrichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ResultGenderrichTextBox.Name = "ResultGenderrichTextBox";
+            this.ResultGenderrichTextBox.Size = new System.Drawing.Size(144, 183);
+            this.ResultGenderrichTextBox.TabIndex = 4;
+            this.ResultGenderrichTextBox.Text = "";
+            // 
+            // InsertGenderGendertextBox
+            // 
+            this.InsertGenderGendertextBox.Location = new System.Drawing.Point(192, 120);
+            this.InsertGenderGendertextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertGenderGendertextBox.Name = "InsertGenderGendertextBox";
+            this.InsertGenderGendertextBox.Size = new System.Drawing.Size(76, 20);
+            this.InsertGenderGendertextBox.TabIndex = 3;
+            // 
+            // InsertGenderGenderlabel
+            // 
+            this.InsertGenderGenderlabel.AutoSize = true;
+            this.InsertGenderGenderlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertGenderGenderlabel.Location = new System.Drawing.Point(40, 124);
+            this.InsertGenderGenderlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertGenderGenderlabel.Name = "InsertGenderGenderlabel";
+            this.InsertGenderGenderlabel.Size = new System.Drawing.Size(130, 13);
+            this.InsertGenderGenderlabel.TabIndex = 2;
+            this.InsertGenderGenderlabel.Text = "Ingrese el género musical:";
+            // 
+            // BackGenderbutton
+            // 
+            this.BackGenderbutton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.BackGenderbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackGenderbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackGenderbutton.Name = "BackGenderbutton";
+            this.BackGenderbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackGenderbutton.TabIndex = 1;
+            this.BackGenderbutton.Text = "Volver";
+            this.BackGenderbutton.UseVisualStyleBackColor = true;
+            this.BackGenderbutton.Click += new System.EventHandler(this.BackGenderbutton_Click);
+            // 
+            // Genderlabel
+            // 
+            this.Genderlabel.AutoSize = true;
+            this.Genderlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Genderlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.Genderlabel.Location = new System.Drawing.Point(197, 16);
+            this.Genderlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Genderlabel.Name = "Genderlabel";
+            this.Genderlabel.Size = new System.Drawing.Size(203, 31);
+            this.Genderlabel.TabIndex = 0;
+            this.Genderlabel.Text = "Género Musical";
+            // 
+            // Evaluationpanel
+            // 
+            this.Evaluationpanel.Controls.Add(this.InsertSignEvaluationlabel);
+            this.Evaluationpanel.Controls.Add(this.InsertQualificationEvaluationlabel);
+            this.Evaluationpanel.Controls.Add(this.ResultEvaluationrichTextBox);
+            this.Evaluationpanel.Controls.Add(this.InsertSignEvaluationcomboBox);
+            this.Evaluationpanel.Controls.Add(this.InsertQualificationEvaluationcomboBox);
+            this.Evaluationpanel.Controls.Add(this.SearchEvaluationbutton);
+            this.Evaluationpanel.Controls.Add(this.BackEvaluationbutton);
+            this.Evaluationpanel.Controls.Add(this.Evaluationlabel);
+            this.Evaluationpanel.Location = new System.Drawing.Point(56, 240);
+            this.Evaluationpanel.Margin = new System.Windows.Forms.Padding(2);
+            this.Evaluationpanel.Name = "Evaluationpanel";
+            this.Evaluationpanel.Size = new System.Drawing.Size(101, 50);
+            this.Evaluationpanel.TabIndex = 9;
+            // 
+            // InsertSignEvaluationlabel
+            // 
+            this.InsertSignEvaluationlabel.AutoSize = true;
+            this.InsertSignEvaluationlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertSignEvaluationlabel.Location = new System.Drawing.Point(34, 191);
+            this.InsertSignEvaluationlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertSignEvaluationlabel.Name = "InsertSignEvaluationlabel";
+            this.InsertSignEvaluationlabel.Size = new System.Drawing.Size(326, 13);
+            this.InsertSignEvaluationlabel.TabIndex = 7;
+            this.InsertSignEvaluationlabel.Text = "Indique si la evaluación debe ser mayor, menor o igual al parámetro:";
+            // 
             // InsertQualificationEvaluationlabel
             // 
             this.InsertQualificationEvaluationlabel.AutoSize = true;
@@ -1825,126 +1425,6 @@
             this.Artistlabel.Size = new System.Drawing.Size(92, 31);
             this.Artistlabel.TabIndex = 0;
             this.Artistlabel.Text = "Artista";
-            // 
-            // SeePlaylistSongspanel
-            // 
-            this.SeePlaylistSongspanel.Controls.Add(this.SeeSeePlaylistSongsbutton);
-            this.SeePlaylistSongspanel.Controls.Add(this.ResultSeePlaylistSongsrichTextBox);
-            this.SeePlaylistSongspanel.Controls.Add(this.InsertPlaylistNameSeePlaylistSongscomboBox);
-            this.SeePlaylistSongspanel.Controls.Add(this.InsertPlaylistNameSeePlaylistSongslabel);
-            this.SeePlaylistSongspanel.Controls.Add(this.SeePlaylistSongslabel);
-            this.SeePlaylistSongspanel.Controls.Add(this.BackSeePlaylistSongsbutton);
-            this.SeePlaylistSongspanel.Location = new System.Drawing.Point(409, 317);
-            this.SeePlaylistSongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.SeePlaylistSongspanel.Name = "SeePlaylistSongspanel";
-            this.SeePlaylistSongspanel.Size = new System.Drawing.Size(57, 48);
-            this.SeePlaylistSongspanel.TabIndex = 12;
-            // 
-            // SeeSeePlaylistSongsbutton
-            // 
-            this.SeeSeePlaylistSongsbutton.Location = new System.Drawing.Point(130, 210);
-            this.SeeSeePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.SeeSeePlaylistSongsbutton.Name = "SeeSeePlaylistSongsbutton";
-            this.SeeSeePlaylistSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.SeeSeePlaylistSongsbutton.TabIndex = 5;
-            this.SeeSeePlaylistSongsbutton.Text = "Ver";
-            this.SeeSeePlaylistSongsbutton.UseVisualStyleBackColor = true;
-            this.SeeSeePlaylistSongsbutton.Click += new System.EventHandler(this.SeeSeePlaylistSongsbutton_Click);
-            // 
-            // ResultSeePlaylistSongsrichTextBox
-            // 
-            this.ResultSeePlaylistSongsrichTextBox.Location = new System.Drawing.Point(364, 89);
-            this.ResultSeePlaylistSongsrichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ResultSeePlaylistSongsrichTextBox.Name = "ResultSeePlaylistSongsrichTextBox";
-            this.ResultSeePlaylistSongsrichTextBox.Size = new System.Drawing.Size(181, 184);
-            this.ResultSeePlaylistSongsrichTextBox.TabIndex = 4;
-            this.ResultSeePlaylistSongsrichTextBox.Text = "";
-            // 
-            // InsertPlaylistNameSeePlaylistSongscomboBox
-            // 
-            this.InsertPlaylistNameSeePlaylistSongscomboBox.FormattingEnabled = true;
-            this.InsertPlaylistNameSeePlaylistSongscomboBox.Location = new System.Drawing.Point(165, 162);
-            this.InsertPlaylistNameSeePlaylistSongscomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertPlaylistNameSeePlaylistSongscomboBox.Name = "InsertPlaylistNameSeePlaylistSongscomboBox";
-            this.InsertPlaylistNameSeePlaylistSongscomboBox.Size = new System.Drawing.Size(92, 21);
-            this.InsertPlaylistNameSeePlaylistSongscomboBox.TabIndex = 3;
-            // 
-            // InsertPlaylistNameSeePlaylistSongslabel
-            // 
-            this.InsertPlaylistNameSeePlaylistSongslabel.AutoSize = true;
-            this.InsertPlaylistNameSeePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertPlaylistNameSeePlaylistSongslabel.Location = new System.Drawing.Point(42, 165);
-            this.InsertPlaylistNameSeePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertPlaylistNameSeePlaylistSongslabel.Name = "InsertPlaylistNameSeePlaylistSongslabel";
-            this.InsertPlaylistNameSeePlaylistSongslabel.Size = new System.Drawing.Size(108, 13);
-            this.InsertPlaylistNameSeePlaylistSongslabel.TabIndex = 2;
-            this.InsertPlaylistNameSeePlaylistSongslabel.Text = "Nombre de la Playlist:";
-            // 
-            // SeePlaylistSongslabel
-            // 
-            this.SeePlaylistSongslabel.AutoSize = true;
-            this.SeePlaylistSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeePlaylistSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.SeePlaylistSongslabel.Location = new System.Drawing.Point(229, 15);
-            this.SeePlaylistSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SeePlaylistSongslabel.Name = "SeePlaylistSongslabel";
-            this.SeePlaylistSongslabel.Size = new System.Drawing.Size(150, 31);
-            this.SeePlaylistSongslabel.TabIndex = 1;
-            this.SeePlaylistSongslabel.Text = "Ver Playlist";
-            // 
-            // BackSeePlaylistSongsbutton
-            // 
-            this.BackSeePlaylistSongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackSeePlaylistSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackSeePlaylistSongsbutton.Name = "BackSeePlaylistSongsbutton";
-            this.BackSeePlaylistSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackSeePlaylistSongsbutton.TabIndex = 0;
-            this.BackSeePlaylistSongsbutton.Text = "Volver";
-            this.BackSeePlaylistSongsbutton.UseVisualStyleBackColor = true;
-            this.BackSeePlaylistSongsbutton.Click += new System.EventHandler(this.BackSeePlaylistSongsbutton_Click);
-            // 
-            // SeeFavouriteSongspanel
-            // 
-            this.SeeFavouriteSongspanel.Controls.Add(this.ResultSeeFavouriteSongsrichTextBox);
-            this.SeeFavouriteSongspanel.Controls.Add(this.SeeFavouriteSongslabel);
-            this.SeeFavouriteSongspanel.Controls.Add(this.BackSeeFavouriteSongsbutton);
-            this.SeeFavouriteSongspanel.Location = new System.Drawing.Point(426, 89);
-            this.SeeFavouriteSongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.SeeFavouriteSongspanel.Name = "SeeFavouriteSongspanel";
-            this.SeeFavouriteSongspanel.Size = new System.Drawing.Size(91, 44);
-            this.SeeFavouriteSongspanel.TabIndex = 6;
-            // 
-            // ResultSeeFavouriteSongsrichTextBox
-            // 
-            this.ResultSeeFavouriteSongsrichTextBox.Location = new System.Drawing.Point(171, 75);
-            this.ResultSeeFavouriteSongsrichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.ResultSeeFavouriteSongsrichTextBox.Name = "ResultSeeFavouriteSongsrichTextBox";
-            this.ResultSeeFavouriteSongsrichTextBox.Size = new System.Drawing.Size(266, 204);
-            this.ResultSeeFavouriteSongsrichTextBox.TabIndex = 2;
-            this.ResultSeeFavouriteSongsrichTextBox.Text = "";
-            // 
-            // SeeFavouriteSongslabel
-            // 
-            this.SeeFavouriteSongslabel.AutoSize = true;
-            this.SeeFavouriteSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeeFavouriteSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.SeeFavouriteSongslabel.Location = new System.Drawing.Point(218, 18);
-            this.SeeFavouriteSongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SeeFavouriteSongslabel.Name = "SeeFavouriteSongslabel";
-            this.SeeFavouriteSongslabel.Size = new System.Drawing.Size(176, 31);
-            this.SeeFavouriteSongslabel.TabIndex = 1;
-            this.SeeFavouriteSongslabel.Text = "Ver Favoritos";
-            // 
-            // BackSeeFavouriteSongsbutton
-            // 
-            this.BackSeeFavouriteSongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackSeeFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackSeeFavouriteSongsbutton.Name = "BackSeeFavouriteSongsbutton";
-            this.BackSeeFavouriteSongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackSeeFavouriteSongsbutton.TabIndex = 0;
-            this.BackSeeFavouriteSongsbutton.Text = "Volver";
-            this.BackSeeFavouriteSongsbutton.UseVisualStyleBackColor = true;
-            this.BackSeeFavouriteSongsbutton.Click += new System.EventHandler(this.BackSeeFavouriteSongsbutton_Click);
             // 
             // Keywordpanel
             // 
@@ -2619,81 +2099,15 @@
             this.SuggestionsSongslabel1.TabIndex = 4;
             this.SuggestionsSongslabel1.Text = "Sugerencias de Canciones";
             // 
-            // BackLoginSesionProfilebutton
-            // 
-            this.BackLoginSesionProfilebutton.Location = new System.Drawing.Point(535, 337);
-            this.BackLoginSesionProfilebutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackLoginSesionProfilebutton.Name = "BackLoginSesionProfilebutton";
-            this.BackLoginSesionProfilebutton.Size = new System.Drawing.Size(56, 19);
-            this.BackLoginSesionProfilebutton.TabIndex = 3;
-            this.BackLoginSesionProfilebutton.Text = "Volver";
-            this.BackLoginSesionProfilebutton.UseVisualStyleBackColor = true;
-            this.BackLoginSesionProfilebutton.Click += new System.EventHandler(this.BackLoginSesionProfilebutton_Click);
-            // 
-            // MainMenupanel
-            // 
-            this.MainMenupanel.Controls.Add(this.Songspanel);
-            this.MainMenupanel.Controls.Add(this.MoviesMainMenupanel);
-            this.MainMenupanel.Controls.Add(this.JoinPartypanel);
-            this.MainMenupanel.Controls.Add(this.InteligentSuggestionspanel);
-            this.MainMenupanel.Controls.Add(this.Followpanel);
-            this.MainMenupanel.Controls.Add(this.LogoutMainMenubutton);
-            this.MainMenupanel.Controls.Add(this.MoviesMainMenubutton);
-            this.MainMenupanel.Controls.Add(this.SongsMainMenubutton);
-            this.MainMenupanel.Controls.Add(this.JoinPartyMainMenubutton);
-            this.MainMenupanel.Controls.Add(this.SuggestionsMainMenubutton);
-            this.MainMenupanel.Controls.Add(this.FollowMainMenubutton);
-            this.MainMenupanel.Controls.Add(this.MainMenulabel2);
-            this.MainMenupanel.Controls.Add(this.MainMenulabel1);
-            this.MainMenupanel.Location = new System.Drawing.Point(345, 270);
-            this.MainMenupanel.Margin = new System.Windows.Forms.Padding(2);
-            this.MainMenupanel.Name = "MainMenupanel";
-            this.MainMenupanel.Size = new System.Drawing.Size(66, 71);
-            this.MainMenupanel.TabIndex = 4;
-            // 
-            // MoviesMainMenupanel
-            // 
-            this.MoviesMainMenupanel.Controls.Add(this.SeeQueueMoviespanel);
-            this.MoviesMainMenupanel.Controls.Add(this.SelectFavouriteMoviespanel);
-            this.MoviesMainMenupanel.Controls.Add(this.SeeFavouriteMoviespanel);
-            this.MoviesMainMenupanel.Controls.Add(this.AddQueueMoviespanel);
-            this.MoviesMainMenupanel.Controls.Add(this.SeePlaylistMoviespanel);
-            this.MoviesMainMenupanel.Controls.Add(this.SearchMoviespanel);
-            this.MoviesMainMenupanel.Controls.Add(this.SeeMoviespanel);
-            this.MoviesMainMenupanel.Controls.Add(this.CreatePlaylistMoviespanel);
-            this.MoviesMainMenupanel.Controls.Add(this.AddPlaylistMoviespanel);
-            this.MoviesMainMenupanel.Controls.Add(this.InformationMoviespanel);
-            this.MoviesMainMenupanel.Controls.Add(this.QualifyMoviespanel);
-            this.MoviesMainMenupanel.Controls.Add(this.PlayMoviespanel);
-            this.MoviesMainMenupanel.Controls.Add(this.QualifyMoviesbutton);
-            this.MoviesMainMenupanel.Controls.Add(this.SeeQueueMoviesbutton);
-            this.MoviesMainMenupanel.Controls.Add(this.SeeFavouriteMoviesbutton);
-            this.MoviesMainMenupanel.Controls.Add(this.SeePlaylistMoviesbutton);
-            this.MoviesMainMenupanel.Controls.Add(this.SelectFavouriteMoviesbutton);
-            this.MoviesMainMenupanel.Controls.Add(this.AddToPlaylistMoviesbutton);
-            this.MoviesMainMenupanel.Controls.Add(this.CreatePlaylistMoviesbutton);
-            this.MoviesMainMenupanel.Controls.Add(this.AddQueueMoviesbutton);
-            this.MoviesMainMenupanel.Controls.Add(this.SearchMoviesbutton);
-            this.MoviesMainMenupanel.Controls.Add(this.InformationMoviesbutton);
-            this.MoviesMainMenupanel.Controls.Add(this.SeeMoviesbutton);
-            this.MoviesMainMenupanel.Controls.Add(this.PlayMoviesbutton);
-            this.MoviesMainMenupanel.Controls.Add(this.BackMoviesMainMenubutton);
-            this.MoviesMainMenupanel.Controls.Add(this.MoviesMainMenulabel);
-            this.MoviesMainMenupanel.Location = new System.Drawing.Point(490, 60);
-            this.MoviesMainMenupanel.Margin = new System.Windows.Forms.Padding(2);
-            this.MoviesMainMenupanel.Name = "MoviesMainMenupanel";
-            this.MoviesMainMenupanel.Size = new System.Drawing.Size(25, 35);
-            this.MoviesMainMenupanel.TabIndex = 6;
-            // 
             // SeeQueueMoviespanel
             // 
             this.SeeQueueMoviespanel.Controls.Add(this.ResultSeeQueueMoviesrichTextBox);
             this.SeeQueueMoviespanel.Controls.Add(this.BackSeeQueueMoviesbutton);
             this.SeeQueueMoviespanel.Controls.Add(this.SeeQueueMovieslabel);
-            this.SeeQueueMoviespanel.Location = new System.Drawing.Point(535, 123);
+            this.SeeQueueMoviespanel.Location = new System.Drawing.Point(522, 123);
             this.SeeQueueMoviespanel.Margin = new System.Windows.Forms.Padding(2);
             this.SeeQueueMoviespanel.Name = "SeeQueueMoviespanel";
-            this.SeeQueueMoviespanel.Size = new System.Drawing.Size(42, 34);
+            this.SeeQueueMoviespanel.Size = new System.Drawing.Size(55, 58);
             this.SeeQueueMoviespanel.TabIndex = 20;
             // 
             // ResultSeeQueueMoviesrichTextBox
@@ -2736,10 +2150,10 @@
             this.SelectFavouriteMoviespanel.Controls.Add(this.InsertMovieNameSelectFavouriteMovieslabel);
             this.SelectFavouriteMoviespanel.Controls.Add(this.SelectFavouriteMovieslabel);
             this.SelectFavouriteMoviespanel.Controls.Add(this.BackSelectFavouriteMoviesbutton);
-            this.SelectFavouriteMoviespanel.Location = new System.Drawing.Point(535, 69);
+            this.SelectFavouriteMoviespanel.Location = new System.Drawing.Point(16, 196);
             this.SelectFavouriteMoviespanel.Margin = new System.Windows.Forms.Padding(2);
             this.SelectFavouriteMoviespanel.Name = "SelectFavouriteMoviespanel";
-            this.SelectFavouriteMoviespanel.Size = new System.Drawing.Size(41, 39);
+            this.SelectFavouriteMoviespanel.Size = new System.Drawing.Size(39, 53);
             this.SelectFavouriteMoviespanel.TabIndex = 17;
             // 
             // MessageSelectFavouriteMovieslabel
@@ -2752,6 +2166,7 @@
             this.MessageSelectFavouriteMovieslabel.Size = new System.Drawing.Size(184, 13);
             this.MessageSelectFavouriteMovieslabel.TabIndex = 5;
             this.MessageSelectFavouriteMovieslabel.Text = "La película se agregó correctamente.";
+            this.MessageSelectFavouriteMovieslabel.Visible = false;
             // 
             // SelectSelectFavouriteMoviesbutton
             // 
@@ -2762,6 +2177,7 @@
             this.SelectSelectFavouriteMoviesbutton.TabIndex = 4;
             this.SelectSelectFavouriteMoviesbutton.Text = "Seleccionar";
             this.SelectSelectFavouriteMoviesbutton.UseVisualStyleBackColor = true;
+            this.SelectSelectFavouriteMoviesbutton.Click += new System.EventHandler(this.SelectSelectFavouriteMoviesbutton_Click);
             // 
             // InsertMovieNameSelectFavouriteMoviescomboBox
             // 
@@ -2771,6 +2187,7 @@
             this.InsertMovieNameSelectFavouriteMoviescomboBox.Name = "InsertMovieNameSelectFavouriteMoviescomboBox";
             this.InsertMovieNameSelectFavouriteMoviescomboBox.Size = new System.Drawing.Size(92, 21);
             this.InsertMovieNameSelectFavouriteMoviescomboBox.TabIndex = 3;
+            this.InsertMovieNameSelectFavouriteMoviescomboBox.SelectedIndexChanged += new System.EventHandler(this.InsertMovieNameSelectFavouriteMoviescomboBox_SelectedIndexChanged);
             // 
             // InsertMovieNameSelectFavouriteMovieslabel
             // 
@@ -2811,10 +2228,10 @@
             this.SeeFavouriteMoviespanel.Controls.Add(this.ResultSeeFavouriteMoviesrichTextBox);
             this.SeeFavouriteMoviespanel.Controls.Add(this.BackSeeFavouriteMoviesbutton);
             this.SeeFavouriteMoviespanel.Controls.Add(this.SeeFavouriteMovieslabel);
-            this.SeeFavouriteMoviespanel.Location = new System.Drawing.Point(535, 15);
+            this.SeeFavouriteMoviespanel.Location = new System.Drawing.Point(517, 23);
             this.SeeFavouriteMoviespanel.Margin = new System.Windows.Forms.Padding(2);
             this.SeeFavouriteMoviespanel.Name = "SeeFavouriteMoviespanel";
-            this.SeeFavouriteMoviespanel.Size = new System.Drawing.Size(38, 44);
+            this.SeeFavouriteMoviespanel.Size = new System.Drawing.Size(55, 63);
             this.SeeFavouriteMoviespanel.TabIndex = 19;
             // 
             // ResultSeeFavouriteMoviesrichTextBox
@@ -2856,10 +2273,10 @@
             this.AddQueueMoviespanel.Controls.Add(this.InsertMovieNameAddQueueMovieslabel);
             this.AddQueueMoviespanel.Controls.Add(this.BackAddQueueMoviesbutton);
             this.AddQueueMoviespanel.Controls.Add(this.AddQueueMovieslabel);
-            this.AddQueueMoviespanel.Location = new System.Drawing.Point(141, 329);
+            this.AddQueueMoviespanel.Location = new System.Drawing.Point(90, 329);
             this.AddQueueMoviespanel.Margin = new System.Windows.Forms.Padding(2);
             this.AddQueueMoviespanel.Name = "AddQueueMoviespanel";
-            this.AddQueueMoviespanel.Size = new System.Drawing.Size(41, 28);
+            this.AddQueueMoviespanel.Size = new System.Drawing.Size(70, 55);
             this.AddQueueMoviespanel.TabIndex = 14;
             // 
             // AddAddQueueMoviesbutton
@@ -2871,6 +2288,7 @@
             this.AddAddQueueMoviesbutton.TabIndex = 4;
             this.AddAddQueueMoviesbutton.Text = "Agregar";
             this.AddAddQueueMoviesbutton.UseVisualStyleBackColor = true;
+            this.AddAddQueueMoviesbutton.Click += new System.EventHandler(this.AddAddQueueMoviesbutton_Click);
             // 
             // InsertMovienameAddQueueMoviescomboBox
             // 
@@ -2923,10 +2341,10 @@
             this.SeePlaylistMoviespanel.Controls.Add(this.SeeSeePlaylistMoviesbutton);
             this.SeePlaylistMoviespanel.Controls.Add(this.BackSeePlaylistMoviesbutton);
             this.SeePlaylistMoviespanel.Controls.Add(this.SeePlaylistMovieslabel);
-            this.SeePlaylistMoviespanel.Location = new System.Drawing.Point(86, 327);
+            this.SeePlaylistMoviespanel.Location = new System.Drawing.Point(86, 16);
             this.SeePlaylistMoviespanel.Margin = new System.Windows.Forms.Padding(2);
             this.SeePlaylistMoviespanel.Name = "SeePlaylistMoviespanel";
-            this.SeePlaylistMoviespanel.Size = new System.Drawing.Size(38, 34);
+            this.SeePlaylistMoviespanel.Size = new System.Drawing.Size(57, 51);
             this.SeePlaylistMoviespanel.TabIndex = 18;
             // 
             // ResultSeePlaylistMoviesrichTextBox
@@ -2967,6 +2385,7 @@
             this.SeeSeePlaylistMoviesbutton.TabIndex = 2;
             this.SeeSeePlaylistMoviesbutton.Text = "Ver";
             this.SeeSeePlaylistMoviesbutton.UseVisualStyleBackColor = true;
+            this.SeeSeePlaylistMoviesbutton.Click += new System.EventHandler(this.SeeSeePlaylistMoviesbutton_Click);
             // 
             // BackSeePlaylistMoviesbutton
             // 
@@ -3029,10 +2448,10 @@
             this.SeeMoviespanel.Controls.Add(this.SeeMoviesrichTextBox);
             this.SeeMoviespanel.Controls.Add(this.SeeMovieslabel);
             this.SeeMoviespanel.Controls.Add(this.BackSeeMoviesbutton);
-            this.SeeMoviespanel.Location = new System.Drawing.Point(22, 268);
+            this.SeeMoviespanel.Location = new System.Drawing.Point(22, 270);
             this.SeeMoviespanel.Margin = new System.Windows.Forms.Padding(2);
             this.SeeMoviespanel.Name = "SeeMoviespanel";
-            this.SeeMoviespanel.Size = new System.Drawing.Size(33, 46);
+            this.SeeMoviespanel.Size = new System.Drawing.Size(33, 44);
             this.SeeMoviespanel.TabIndex = 6;
             // 
             // SeeMoviesrichTextBox
@@ -3077,10 +2496,10 @@
             this.CreatePlaylistMoviespanel.Controls.Add(this.InsertPlaylistNameCreatePlaylistMovieslabel);
             this.CreatePlaylistMoviespanel.Controls.Add(this.BackCreatePlaylistMoviesbutton);
             this.CreatePlaylistMoviespanel.Controls.Add(this.CreatePlaylistMovieslabel);
-            this.CreatePlaylistMoviespanel.Location = new System.Drawing.Point(26, 215);
+            this.CreatePlaylistMoviespanel.Location = new System.Drawing.Point(265, 331);
             this.CreatePlaylistMoviespanel.Margin = new System.Windows.Forms.Padding(2);
             this.CreatePlaylistMoviespanel.Name = "CreatePlaylistMoviespanel";
-            this.CreatePlaylistMoviespanel.Size = new System.Drawing.Size(29, 45);
+            this.CreatePlaylistMoviespanel.Size = new System.Drawing.Size(71, 35);
             this.CreatePlaylistMoviespanel.TabIndex = 15;
             // 
             // MessageCreatePlaylistMovieslabel
@@ -3093,6 +2512,7 @@
             this.MessageCreatePlaylistMovieslabel.Size = new System.Drawing.Size(124, 13);
             this.MessageCreatePlaylistMovieslabel.TabIndex = 7;
             this.MessageCreatePlaylistMovieslabel.Text = "Playlist creada con éxito.";
+            this.MessageCreatePlaylistMovieslabel.Visible = false;
             // 
             // CreateCreatePlaylistMoviesbutton
             // 
@@ -3103,6 +2523,7 @@
             this.CreateCreatePlaylistMoviesbutton.TabIndex = 6;
             this.CreateCreatePlaylistMoviesbutton.Text = "Crear";
             this.CreateCreatePlaylistMoviesbutton.UseVisualStyleBackColor = true;
+            this.CreateCreatePlaylistMoviesbutton.Click += new System.EventHandler(this.CreateCreatePlaylistMoviesbutton_Click);
             // 
             // InsertPlaylistNameCreatePlaylistMoviestextBox
             // 
@@ -3175,10 +2596,10 @@
             this.AddPlaylistMoviespanel.Controls.Add(this.InsertMovieNameAddPlaylistMovieslabel);
             this.AddPlaylistMoviespanel.Controls.Add(this.BackAddPlaylistMoviesbutton);
             this.AddPlaylistMoviespanel.Controls.Add(this.AddPlaylistMovieslabel);
-            this.AddPlaylistMoviespanel.Location = new System.Drawing.Point(28, 160);
+            this.AddPlaylistMoviespanel.Location = new System.Drawing.Point(18, 123);
             this.AddPlaylistMoviespanel.Margin = new System.Windows.Forms.Padding(2);
             this.AddPlaylistMoviespanel.Name = "AddPlaylistMoviespanel";
-            this.AddPlaylistMoviespanel.Size = new System.Drawing.Size(31, 46);
+            this.AddPlaylistMoviespanel.Size = new System.Drawing.Size(37, 47);
             this.AddPlaylistMoviespanel.TabIndex = 16;
             // 
             // InsertPlaylistNameAddPlaylistMoviescomboBox
@@ -3208,6 +2629,7 @@
             this.AddAddPlaylistMoviesbutton.TabIndex = 4;
             this.AddAddPlaylistMoviesbutton.Text = "Agregar";
             this.AddAddPlaylistMoviesbutton.UseVisualStyleBackColor = true;
+            this.AddAddPlaylistMoviesbutton.Click += new System.EventHandler(this.AddAddPlaylistMoviesbutton_Click);
             // 
             // InsertPlaylistNameAddPlaylistMovieslabel
             // 
@@ -3269,10 +2691,10 @@
             this.InformationMoviespanel.Controls.Add(this.InsertMovieNameInformationMovieslabel);
             this.InformationMoviespanel.Controls.Add(this.InformationMovieslabel);
             this.InformationMoviespanel.Controls.Add(this.BackInformationMoviesbutton);
-            this.InformationMoviespanel.Location = new System.Drawing.Point(25, 99);
+            this.InformationMoviespanel.Location = new System.Drawing.Point(362, 326);
             this.InformationMoviespanel.Margin = new System.Windows.Forms.Padding(2);
             this.InformationMoviespanel.Name = "InformationMoviespanel";
-            this.InformationMoviespanel.Size = new System.Drawing.Size(35, 50);
+            this.InformationMoviespanel.Size = new System.Drawing.Size(98, 54);
             this.InformationMoviespanel.TabIndex = 3;
             // 
             // ResultInformationMoviesrichTextBox
@@ -3293,6 +2715,7 @@
             this.CategoriesInformationMoviesbutton.TabIndex = 11;
             this.CategoriesInformationMoviesbutton.Text = "Categorías";
             this.CategoriesInformationMoviesbutton.UseVisualStyleBackColor = true;
+            this.CategoriesInformationMoviesbutton.Click += new System.EventHandler(this.CategoriesInformationMoviesbutton_Click);
             // 
             // StudioInformationMoviesbutton
             // 
@@ -3303,6 +2726,7 @@
             this.StudioInformationMoviesbutton.TabIndex = 10;
             this.StudioInformationMoviesbutton.Text = "Estudio";
             this.StudioInformationMoviesbutton.UseVisualStyleBackColor = true;
+            this.StudioInformationMoviesbutton.Click += new System.EventHandler(this.StudioInformationMoviesbutton_Click);
             // 
             // YearInformationMoviesbutton
             // 
@@ -3313,6 +2737,7 @@
             this.YearInformationMoviesbutton.TabIndex = 9;
             this.YearInformationMoviesbutton.Text = "Año";
             this.YearInformationMoviesbutton.UseVisualStyleBackColor = true;
+            this.YearInformationMoviesbutton.Click += new System.EventHandler(this.YearInformationMoviesbutton_Click);
             // 
             // DescriptionInformationMoviesbutton
             // 
@@ -3323,6 +2748,7 @@
             this.DescriptionInformationMoviesbutton.TabIndex = 8;
             this.DescriptionInformationMoviesbutton.Text = "Descripción";
             this.DescriptionInformationMoviesbutton.UseVisualStyleBackColor = true;
+            this.DescriptionInformationMoviesbutton.Click += new System.EventHandler(this.DescriptionInformationMoviesbutton_Click);
             // 
             // QualificationInformationMoviesbutton
             // 
@@ -3333,6 +2759,7 @@
             this.QualificationInformationMoviesbutton.TabIndex = 7;
             this.QualificationInformationMoviesbutton.Text = "Calificación";
             this.QualificationInformationMoviesbutton.UseVisualStyleBackColor = true;
+            this.QualificationInformationMoviesbutton.Click += new System.EventHandler(this.QualificationInformationMoviesbutton_Click);
             // 
             // ReproductionsInformationMoviesbutton
             // 
@@ -3343,6 +2770,7 @@
             this.ReproductionsInformationMoviesbutton.TabIndex = 6;
             this.ReproductionsInformationMoviesbutton.Text = "Reproducciones";
             this.ReproductionsInformationMoviesbutton.UseVisualStyleBackColor = true;
+            this.ReproductionsInformationMoviesbutton.Click += new System.EventHandler(this.ReproductionsInformationMoviesbutton_Click);
             // 
             // DurationInformationMoviesbutton
             // 
@@ -3353,6 +2781,7 @@
             this.DurationInformationMoviesbutton.TabIndex = 5;
             this.DurationInformationMoviesbutton.Text = "Duración";
             this.DurationInformationMoviesbutton.UseVisualStyleBackColor = true;
+            this.DurationInformationMoviesbutton.Click += new System.EventHandler(this.DurationInformationMoviesbutton_Click);
             // 
             // ActorInformationMoviesbutton
             // 
@@ -3363,6 +2792,7 @@
             this.ActorInformationMoviesbutton.TabIndex = 4;
             this.ActorInformationMoviesbutton.Text = "Actores";
             this.ActorInformationMoviesbutton.UseVisualStyleBackColor = true;
+            this.ActorInformationMoviesbutton.Click += new System.EventHandler(this.ActorInformationMoviesbutton_Click);
             // 
             // InsertMovieNameInformationMoviescomboBox
             // 
@@ -3419,7 +2849,7 @@
             this.QualifyMoviespanel.Location = new System.Drawing.Point(24, 53);
             this.QualifyMoviespanel.Margin = new System.Windows.Forms.Padding(2);
             this.QualifyMoviespanel.Name = "QualifyMoviespanel";
-            this.QualifyMoviespanel.Size = new System.Drawing.Size(36, 36);
+            this.QualifyMoviespanel.Size = new System.Drawing.Size(56, 42);
             this.QualifyMoviespanel.TabIndex = 21;
             // 
             // QualifyQualifyMoviesbutton
@@ -3431,6 +2861,7 @@
             this.QualifyQualifyMoviesbutton.TabIndex = 6;
             this.QualifyQualifyMoviesbutton.Text = "Calificar";
             this.QualifyQualifyMoviesbutton.UseVisualStyleBackColor = true;
+            this.QualifyQualifyMoviesbutton.Click += new System.EventHandler(this.QualifyQualifyMoviesbutton_Click);
             // 
             // InsertQualificationQualifyMoviescomboBox
             // 
@@ -3503,10 +2934,10 @@
             this.PlayMoviespanel.Controls.Add(this.InsertMovieNamePlayMovieslabel);
             this.PlayMoviespanel.Controls.Add(this.BackPlayMoviesbutton);
             this.PlayMoviespanel.Controls.Add(this.PlayMovieslabel);
-            this.PlayMoviespanel.Location = new System.Drawing.Point(22, 4);
+            this.PlayMoviespanel.Location = new System.Drawing.Point(421, 23);
             this.PlayMoviespanel.Margin = new System.Windows.Forms.Padding(2);
             this.PlayMoviespanel.Name = "PlayMoviespanel";
-            this.PlayMoviespanel.Size = new System.Drawing.Size(38, 43);
+            this.PlayMoviespanel.Size = new System.Drawing.Size(56, 46);
             this.PlayMoviespanel.TabIndex = 15;
             // 
             // MessagePlayMovieslabel
@@ -3530,6 +2961,7 @@
             this.PlayPlayMoviesbutton.TabIndex = 4;
             this.PlayPlayMoviesbutton.Text = "Reproducir";
             this.PlayPlayMoviesbutton.UseVisualStyleBackColor = true;
+            this.PlayPlayMoviesbutton.Click += new System.EventHandler(this.PlayPlayMoviesbutton_Click);
             // 
             // InsertMovieNamePlayMoviescomboBox
             // 
@@ -4951,53 +4383,633 @@
             this.WelcomeLabel.TabIndex = 0;
             this.WelcomeLabel.Text = "Bienvenido a Spotflix";
             // 
+            // ADCpanel
+            // 
+            this.ADCpanel.Controls.Add(this.SeeProfilespanel);
+            this.ADCpanel.Controls.Add(this.ChangeProfilepanel);
+            this.ADCpanel.Controls.Add(this.CreateProfilepanel);
+            this.ADCpanel.Controls.Add(this.CreateUserpanel);
+            this.ADCpanel.Controls.Add(this.ExitADCbutton);
+            this.ADCpanel.Controls.Add(this.ViewProfilesbutton);
+            this.ADCpanel.Controls.Add(this.ChangeProfilebutton);
+            this.ADCpanel.Controls.Add(this.CreareProfilebutton);
+            this.ADCpanel.Controls.Add(this.CreateUserbutton);
+            this.ADCpanel.Controls.Add(this.ADClabel);
+            this.ADCpanel.Location = new System.Drawing.Point(37, 33);
+            this.ADCpanel.Margin = new System.Windows.Forms.Padding(2);
+            this.ADCpanel.Name = "ADCpanel";
+            this.ADCpanel.Size = new System.Drawing.Size(52, 43);
+            this.ADCpanel.TabIndex = 5;
+            // 
+            // SeeProfilespanel
+            // 
+            this.SeeProfilespanel.Controls.Add(this.SeeProfilesrichTextBox);
+            this.SeeProfilespanel.Controls.Add(this.BackSeeProfilesbutton);
+            this.SeeProfilespanel.Controls.Add(this.SeeProfileslabel);
+            this.SeeProfilespanel.Location = new System.Drawing.Point(484, 40);
+            this.SeeProfilespanel.Margin = new System.Windows.Forms.Padding(2);
+            this.SeeProfilespanel.Name = "SeeProfilespanel";
+            this.SeeProfilespanel.Size = new System.Drawing.Size(67, 71);
+            this.SeeProfilespanel.TabIndex = 15;
+            // 
+            // SeeProfilesrichTextBox
+            // 
+            this.SeeProfilesrichTextBox.Location = new System.Drawing.Point(169, 98);
+            this.SeeProfilesrichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SeeProfilesrichTextBox.Name = "SeeProfilesrichTextBox";
+            this.SeeProfilesrichTextBox.Size = new System.Drawing.Size(256, 168);
+            this.SeeProfilesrichTextBox.TabIndex = 3;
+            this.SeeProfilesrichTextBox.Text = "";
+            this.SeeProfilesrichTextBox.Click += new System.EventHandler(this.ViewProfilesbutton_Click);
+            // 
+            // BackSeeProfilesbutton
+            // 
+            this.BackSeeProfilesbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackSeeProfilesbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackSeeProfilesbutton.Name = "BackSeeProfilesbutton";
+            this.BackSeeProfilesbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackSeeProfilesbutton.TabIndex = 1;
+            this.BackSeeProfilesbutton.Text = "Volver";
+            this.BackSeeProfilesbutton.UseVisualStyleBackColor = true;
+            this.BackSeeProfilesbutton.Click += new System.EventHandler(this.BackSeeProfilesbutton_Click);
+            // 
+            // SeeProfileslabel
+            // 
+            this.SeeProfileslabel.AutoSize = true;
+            this.SeeProfileslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SeeProfileslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.SeeProfileslabel.Location = new System.Drawing.Point(177, 15);
+            this.SeeProfileslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SeeProfileslabel.Name = "SeeProfileslabel";
+            this.SeeProfileslabel.Size = new System.Drawing.Size(252, 31);
+            this.SeeProfileslabel.TabIndex = 0;
+            this.SeeProfileslabel.Text = "Perfiles por Usuario";
+            // 
+            // ChangeProfilepanel
+            // 
+            this.ChangeProfilepanel.Controls.Add(this.ChangeProfileSearchbutton);
+            this.ChangeProfilepanel.Controls.Add(this.FailProfileChangelabel);
+            this.ChangeProfilepanel.Controls.Add(this.PrivacyChangedChangeProfilelabel);
+            this.ChangeProfilepanel.Controls.Add(this.UseranemChangedChangeProfilelabel);
+            this.ChangeProfilepanel.Controls.Add(this.ChangePbutton);
+            this.ChangeProfilepanel.Controls.Add(this.BackChangeProfilebutton);
+            this.ChangeProfilepanel.Controls.Add(this.InsertNewPrivacyChangeProfiletextBox);
+            this.ChangeProfilepanel.Controls.Add(this.InsertNewUsernameChangeProfiletextBox);
+            this.ChangeProfilepanel.Controls.Add(this.InsertChooseChangeProfiletextBox);
+            this.ChangeProfilepanel.Controls.Add(this.InsertProfileChangeProfiletextBox);
+            this.ChangeProfilepanel.Controls.Add(this.InsertUsernameChangeProfiletextBox);
+            this.ChangeProfilepanel.Controls.Add(this.InsertNewPrivacyChangeProfilelabel);
+            this.ChangeProfilepanel.Controls.Add(this.InsertNewUsernameChangeProfilelabel);
+            this.ChangeProfilepanel.Controls.Add(this.InsertChooseChangeProfilelabel);
+            this.ChangeProfilepanel.Controls.Add(this.InsertProfileChangeProfilelabel);
+            this.ChangeProfilepanel.Controls.Add(this.InsertUsernameChangeProfilelabel);
+            this.ChangeProfilepanel.Controls.Add(this.ChangeProfilelabel);
+            this.ChangeProfilepanel.Location = new System.Drawing.Point(51, 33);
+            this.ChangeProfilepanel.Margin = new System.Windows.Forms.Padding(2);
+            this.ChangeProfilepanel.Name = "ChangeProfilepanel";
+            this.ChangeProfilepanel.Size = new System.Drawing.Size(19, 24);
+            this.ChangeProfilepanel.TabIndex = 11;
+            // 
+            // ChangeProfileSearchbutton
+            // 
+            this.ChangeProfileSearchbutton.Location = new System.Drawing.Point(340, 189);
+            this.ChangeProfileSearchbutton.Name = "ChangeProfileSearchbutton";
+            this.ChangeProfileSearchbutton.Size = new System.Drawing.Size(75, 23);
+            this.ChangeProfileSearchbutton.TabIndex = 16;
+            this.ChangeProfileSearchbutton.Text = "Buscar perfil";
+            this.ChangeProfileSearchbutton.UseVisualStyleBackColor = true;
+            this.ChangeProfileSearchbutton.Click += new System.EventHandler(this.ChangePbutton_Click);
+            // 
+            // FailProfileChangelabel
+            // 
+            this.FailProfileChangelabel.AutoSize = true;
+            this.FailProfileChangelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.FailProfileChangelabel.Location = new System.Drawing.Point(281, 339);
+            this.FailProfileChangelabel.Name = "FailProfileChangelabel";
+            this.FailProfileChangelabel.Size = new System.Drawing.Size(105, 13);
+            this.FailProfileChangelabel.TabIndex = 15;
+            this.FailProfileChangelabel.Text = "No existe dicho perfil";
+            this.FailProfileChangelabel.Visible = false;
+            // 
+            // PrivacyChangedChangeProfilelabel
+            // 
+            this.PrivacyChangedChangeProfilelabel.AutoSize = true;
+            this.PrivacyChangedChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.PrivacyChangedChangeProfilelabel.Location = new System.Drawing.Point(281, 318);
+            this.PrivacyChangedChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PrivacyChangedChangeProfilelabel.Name = "PrivacyChangedChangeProfilelabel";
+            this.PrivacyChangedChangeProfilelabel.Size = new System.Drawing.Size(160, 13);
+            this.PrivacyChangedChangeProfilelabel.TabIndex = 14;
+            this.PrivacyChangedChangeProfilelabel.Text = "Privacidad modificada con éxito.";
+            this.PrivacyChangedChangeProfilelabel.Visible = false;
+            // 
+            // UseranemChangedChangeProfilelabel
+            // 
+            this.UseranemChangedChangeProfilelabel.AutoSize = true;
+            this.UseranemChangedChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.UseranemChangedChangeProfilelabel.Location = new System.Drawing.Point(281, 294);
+            this.UseranemChangedChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.UseranemChangedChangeProfilelabel.Name = "UseranemChangedChangeProfilelabel";
+            this.UseranemChangedChangeProfilelabel.Size = new System.Drawing.Size(199, 13);
+            this.UseranemChangedChangeProfilelabel.TabIndex = 13;
+            this.UseranemChangedChangeProfilelabel.Text = "Nombre de usuario modificado con éxito.";
+            this.UseranemChangedChangeProfilelabel.Visible = false;
+            // 
+            // ChangePbutton
+            // 
+            this.ChangePbutton.Location = new System.Drawing.Point(339, 266);
+            this.ChangePbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.ChangePbutton.Name = "ChangePbutton";
+            this.ChangePbutton.Size = new System.Drawing.Size(68, 19);
+            this.ChangePbutton.TabIndex = 12;
+            this.ChangePbutton.Text = "Modificar";
+            this.ChangePbutton.UseVisualStyleBackColor = true;
+            this.ChangePbutton.Visible = false;
+            this.ChangePbutton.Click += new System.EventHandler(this.ChangePbutton_Click);
+            // 
+            // BackChangeProfilebutton
+            // 
+            this.BackChangeProfilebutton.Location = new System.Drawing.Point(535, 337);
+            this.BackChangeProfilebutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackChangeProfilebutton.Name = "BackChangeProfilebutton";
+            this.BackChangeProfilebutton.Size = new System.Drawing.Size(56, 19);
+            this.BackChangeProfilebutton.TabIndex = 11;
+            this.BackChangeProfilebutton.Text = "Volver";
+            this.BackChangeProfilebutton.UseVisualStyleBackColor = true;
+            this.BackChangeProfilebutton.Click += new System.EventHandler(this.BackChangeProfilebutton_Click);
+            // 
+            // InsertNewPrivacyChangeProfiletextBox
+            // 
+            this.InsertNewPrivacyChangeProfiletextBox.Location = new System.Drawing.Point(339, 241);
+            this.InsertNewPrivacyChangeProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertNewPrivacyChangeProfiletextBox.Name = "InsertNewPrivacyChangeProfiletextBox";
+            this.InsertNewPrivacyChangeProfiletextBox.Size = new System.Drawing.Size(76, 20);
+            this.InsertNewPrivacyChangeProfiletextBox.TabIndex = 10;
+            this.InsertNewPrivacyChangeProfiletextBox.Visible = false;
+            // 
+            // InsertNewUsernameChangeProfiletextBox
+            // 
+            this.InsertNewUsernameChangeProfiletextBox.Location = new System.Drawing.Point(339, 217);
+            this.InsertNewUsernameChangeProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertNewUsernameChangeProfiletextBox.Name = "InsertNewUsernameChangeProfiletextBox";
+            this.InsertNewUsernameChangeProfiletextBox.Size = new System.Drawing.Size(76, 20);
+            this.InsertNewUsernameChangeProfiletextBox.TabIndex = 9;
+            this.InsertNewUsernameChangeProfiletextBox.Visible = false;
+            // 
+            // InsertChooseChangeProfiletextBox
+            // 
+            this.InsertChooseChangeProfiletextBox.Location = new System.Drawing.Point(339, 161);
+            this.InsertChooseChangeProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertChooseChangeProfiletextBox.Name = "InsertChooseChangeProfiletextBox";
+            this.InsertChooseChangeProfiletextBox.Size = new System.Drawing.Size(76, 20);
+            this.InsertChooseChangeProfiletextBox.TabIndex = 8;
+            // 
+            // InsertProfileChangeProfiletextBox
+            // 
+            this.InsertProfileChangeProfiletextBox.Location = new System.Drawing.Point(339, 132);
+            this.InsertProfileChangeProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertProfileChangeProfiletextBox.Name = "InsertProfileChangeProfiletextBox";
+            this.InsertProfileChangeProfiletextBox.Size = new System.Drawing.Size(76, 20);
+            this.InsertProfileChangeProfiletextBox.TabIndex = 7;
+            // 
+            // InsertUsernameChangeProfiletextBox
+            // 
+            this.InsertUsernameChangeProfiletextBox.Location = new System.Drawing.Point(339, 106);
+            this.InsertUsernameChangeProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertUsernameChangeProfiletextBox.Name = "InsertUsernameChangeProfiletextBox";
+            this.InsertUsernameChangeProfiletextBox.Size = new System.Drawing.Size(76, 20);
+            this.InsertUsernameChangeProfiletextBox.TabIndex = 6;
+            // 
+            // InsertNewPrivacyChangeProfilelabel
+            // 
+            this.InsertNewPrivacyChangeProfilelabel.AutoSize = true;
+            this.InsertNewPrivacyChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertNewPrivacyChangeProfilelabel.Location = new System.Drawing.Point(100, 245);
+            this.InsertNewPrivacyChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertNewPrivacyChangeProfilelabel.Name = "InsertNewPrivacyChangeProfilelabel";
+            this.InsertNewPrivacyChangeProfilelabel.Size = new System.Drawing.Size(130, 13);
+            this.InsertNewPrivacyChangeProfilelabel.TabIndex = 5;
+            this.InsertNewPrivacyChangeProfilelabel.Text = "¿Será privado?(true/false)";
+            this.InsertNewPrivacyChangeProfilelabel.Visible = false;
+            // 
+            // InsertNewUsernameChangeProfilelabel
+            // 
+            this.InsertNewUsernameChangeProfilelabel.AutoSize = true;
+            this.InsertNewUsernameChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertNewUsernameChangeProfilelabel.Location = new System.Drawing.Point(100, 220);
+            this.InsertNewUsernameChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertNewUsernameChangeProfilelabel.Name = "InsertNewUsernameChangeProfilelabel";
+            this.InsertNewUsernameChangeProfilelabel.Size = new System.Drawing.Size(188, 13);
+            this.InsertNewUsernameChangeProfilelabel.TabIndex = 4;
+            this.InsertNewUsernameChangeProfilelabel.Text = "¿Cuál es el nuevo nombre de usuario?";
+            this.InsertNewUsernameChangeProfilelabel.Visible = false;
+            // 
+            // InsertChooseChangeProfilelabel
+            // 
+            this.InsertChooseChangeProfilelabel.AutoSize = true;
+            this.InsertChooseChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertChooseChangeProfilelabel.Location = new System.Drawing.Point(97, 164);
+            this.InsertChooseChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertChooseChangeProfilelabel.Name = "InsertChooseChangeProfilelabel";
+            this.InsertChooseChangeProfilelabel.Size = new System.Drawing.Size(216, 13);
+            this.InsertChooseChangeProfilelabel.TabIndex = 3;
+            this.InsertChooseChangeProfilelabel.Text = "¿Qué desea modificar? (Usuario/Privacidad)";
+            // 
+            // InsertProfileChangeProfilelabel
+            // 
+            this.InsertProfileChangeProfilelabel.AutoSize = true;
+            this.InsertProfileChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertProfileChangeProfilelabel.Location = new System.Drawing.Point(100, 134);
+            this.InsertProfileChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertProfileChangeProfilelabel.Name = "InsertProfileChangeProfilelabel";
+            this.InsertProfileChangeProfilelabel.Size = new System.Drawing.Size(141, 13);
+            this.InsertProfileChangeProfilelabel.TabIndex = 2;
+            this.InsertProfileChangeProfilelabel.Text = "¿Qué perfil desea modificar?";
+            // 
+            // InsertUsernameChangeProfilelabel
+            // 
+            this.InsertUsernameChangeProfilelabel.AutoSize = true;
+            this.InsertUsernameChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertUsernameChangeProfilelabel.Location = new System.Drawing.Point(100, 110);
+            this.InsertUsernameChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertUsernameChangeProfilelabel.Name = "InsertUsernameChangeProfilelabel";
+            this.InsertUsernameChangeProfilelabel.Size = new System.Drawing.Size(205, 13);
+            this.InsertUsernameChangeProfilelabel.TabIndex = 1;
+            this.InsertUsernameChangeProfilelabel.Text = "¿A qué usuario desea modificarle el perfil?";
+            // 
+            // ChangeProfilelabel
+            // 
+            this.ChangeProfilelabel.AutoSize = true;
+            this.ChangeProfilelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChangeProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.ChangeProfilelabel.Location = new System.Drawing.Point(200, 18);
+            this.ChangeProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ChangeProfilelabel.Name = "ChangeProfilelabel";
+            this.ChangeProfilelabel.Size = new System.Drawing.Size(193, 31);
+            this.ChangeProfilelabel.TabIndex = 0;
+            this.ChangeProfilelabel.Text = "Modificar Perfil";
+            // 
+            // CreateProfilepanel
+            // 
+            this.CreateProfilepanel.Controls.Add(this.ProfileCreatedlabel);
+            this.CreateProfilepanel.Controls.Add(this.PrivacyProfileCreateProfilelabel);
+            this.CreateProfilepanel.Controls.Add(this.BackCreateProfilebutton);
+            this.CreateProfilepanel.Controls.Add(this.CreatePbutton);
+            this.CreateProfilepanel.Controls.Add(this.PrivacyProfileCreateProfiletextBox);
+            this.CreateProfilepanel.Controls.Add(this.InsertUsernameCreateProfiletextBox);
+            this.CreateProfilepanel.Controls.Add(this.InsertUserCreateProfiletextBox);
+            this.CreateProfilepanel.Controls.Add(this.InsertUsernameCreateProfilelabel);
+            this.CreateProfilepanel.Controls.Add(this.InsertUserCreateProfilelabel);
+            this.CreateProfilepanel.Controls.Add(this.Createprofilelabel);
+            this.CreateProfilepanel.Location = new System.Drawing.Point(91, 315);
+            this.CreateProfilepanel.Margin = new System.Windows.Forms.Padding(2);
+            this.CreateProfilepanel.Name = "CreateProfilepanel";
+            this.CreateProfilepanel.Size = new System.Drawing.Size(56, 37);
+            this.CreateProfilepanel.TabIndex = 0;
+            // 
+            // ProfileCreatedlabel
+            // 
+            this.ProfileCreatedlabel.AutoSize = true;
+            this.ProfileCreatedlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.ProfileCreatedlabel.Location = new System.Drawing.Point(310, 298);
+            this.ProfileCreatedlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ProfileCreatedlabel.Name = "ProfileCreatedlabel";
+            this.ProfileCreatedlabel.Size = new System.Drawing.Size(115, 13);
+            this.ProfileCreatedlabel.TabIndex = 10;
+            this.ProfileCreatedlabel.Text = "Perfil creado con éxito.";
+            this.ProfileCreatedlabel.Visible = false;
+            // 
+            // PrivacyProfileCreateProfilelabel
+            // 
+            this.PrivacyProfileCreateProfilelabel.AutoSize = true;
+            this.PrivacyProfileCreateProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.PrivacyProfileCreateProfilelabel.Location = new System.Drawing.Point(87, 211);
+            this.PrivacyProfileCreateProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PrivacyProfileCreateProfilelabel.Name = "PrivacyProfileCreateProfilelabel";
+            this.PrivacyProfileCreateProfilelabel.Size = new System.Drawing.Size(173, 13);
+            this.PrivacyProfileCreateProfilelabel.TabIndex = 9;
+            this.PrivacyProfileCreateProfilelabel.Text = "¿Será un perfil privado? (true/false)";
+            // 
+            // BackCreateProfilebutton
+            // 
+            this.BackCreateProfilebutton.Location = new System.Drawing.Point(535, 337);
+            this.BackCreateProfilebutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackCreateProfilebutton.Name = "BackCreateProfilebutton";
+            this.BackCreateProfilebutton.Size = new System.Drawing.Size(56, 19);
+            this.BackCreateProfilebutton.TabIndex = 8;
+            this.BackCreateProfilebutton.Text = "Volver";
+            this.BackCreateProfilebutton.UseVisualStyleBackColor = true;
+            this.BackCreateProfilebutton.Click += new System.EventHandler(this.BackCreateProfilebutton_Click);
+            // 
+            // CreatePbutton
+            // 
+            this.CreatePbutton.Location = new System.Drawing.Point(339, 254);
+            this.CreatePbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.CreatePbutton.Name = "CreatePbutton";
+            this.CreatePbutton.Size = new System.Drawing.Size(56, 19);
+            this.CreatePbutton.TabIndex = 7;
+            this.CreatePbutton.Text = "Crear";
+            this.CreatePbutton.UseVisualStyleBackColor = true;
+            this.CreatePbutton.Click += new System.EventHandler(this.CreatePbutton_Click);
+            // 
+            // PrivacyProfileCreateProfiletextBox
+            // 
+            this.PrivacyProfileCreateProfiletextBox.Location = new System.Drawing.Point(328, 209);
+            this.PrivacyProfileCreateProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.PrivacyProfileCreateProfiletextBox.Name = "PrivacyProfileCreateProfiletextBox";
+            this.PrivacyProfileCreateProfiletextBox.Size = new System.Drawing.Size(76, 20);
+            this.PrivacyProfileCreateProfiletextBox.TabIndex = 6;
+            // 
+            // InsertUsernameCreateProfiletextBox
+            // 
+            this.InsertUsernameCreateProfiletextBox.Location = new System.Drawing.Point(328, 180);
+            this.InsertUsernameCreateProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertUsernameCreateProfiletextBox.Name = "InsertUsernameCreateProfiletextBox";
+            this.InsertUsernameCreateProfiletextBox.Size = new System.Drawing.Size(76, 20);
+            this.InsertUsernameCreateProfiletextBox.TabIndex = 5;
+            // 
+            // InsertUserCreateProfiletextBox
+            // 
+            this.InsertUserCreateProfiletextBox.Location = new System.Drawing.Point(328, 153);
+            this.InsertUserCreateProfiletextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertUserCreateProfiletextBox.Name = "InsertUserCreateProfiletextBox";
+            this.InsertUserCreateProfiletextBox.Size = new System.Drawing.Size(76, 20);
+            this.InsertUserCreateProfiletextBox.TabIndex = 4;
+            // 
+            // InsertUsernameCreateProfilelabel
+            // 
+            this.InsertUsernameCreateProfilelabel.AutoSize = true;
+            this.InsertUsernameCreateProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertUsernameCreateProfilelabel.Location = new System.Drawing.Point(87, 182);
+            this.InsertUsernameCreateProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertUsernameCreateProfilelabel.Name = "InsertUsernameCreateProfilelabel";
+            this.InsertUsernameCreateProfilelabel.Size = new System.Drawing.Size(221, 13);
+            this.InsertUsernameCreateProfilelabel.TabIndex = 2;
+            this.InsertUsernameCreateProfilelabel.Text = "¿Cuál será el Username de este nuevo perfil?";
+            // 
+            // InsertUserCreateProfilelabel
+            // 
+            this.InsertUserCreateProfilelabel.AutoSize = true;
+            this.InsertUserCreateProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertUserCreateProfilelabel.Location = new System.Drawing.Point(87, 153);
+            this.InsertUserCreateProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertUserCreateProfilelabel.Name = "InsertUserCreateProfilelabel";
+            this.InsertUserCreateProfilelabel.Size = new System.Drawing.Size(191, 13);
+            this.InsertUserCreateProfilelabel.TabIndex = 1;
+            this.InsertUserCreateProfilelabel.Text = "¿A qué usuario quiere crearle un perfil?";
+            // 
+            // Createprofilelabel
+            // 
+            this.Createprofilelabel.AutoSize = true;
+            this.Createprofilelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Createprofilelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.Createprofilelabel.Location = new System.Drawing.Point(200, 18);
+            this.Createprofilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Createprofilelabel.Name = "Createprofilelabel";
+            this.Createprofilelabel.Size = new System.Drawing.Size(151, 31);
+            this.Createprofilelabel.TabIndex = 0;
+            this.Createprofilelabel.Text = "Crear Perfil";
+            // 
+            // CreateUserpanel
+            // 
+            this.CreateUserpanel.Controls.Add(this.CreateUserAviso2label1);
+            this.CreateUserpanel.Controls.Add(this.CreateUserAvisolabel);
+            this.CreateUserpanel.Controls.Add(this.BackCreateUserbutton);
+            this.CreateUserpanel.Controls.Add(this.CreateUbutton);
+            this.CreateUserpanel.Controls.Add(this.InsertPlanTypetextBox);
+            this.CreateUserpanel.Controls.Add(this.InsertUserPasswordtextBox);
+            this.CreateUserpanel.Controls.Add(this.InsertUserMailtextBox);
+            this.CreateUserpanel.Controls.Add(this.InsertPlanTypelabel);
+            this.CreateUserpanel.Controls.Add(this.InsertPasswordUserlabel);
+            this.CreateUserpanel.Controls.Add(this.InsertUserMaillabel);
+            this.CreateUserpanel.Controls.Add(this.CreateUserlabel);
+            this.CreateUserpanel.Location = new System.Drawing.Point(541, 334);
+            this.CreateUserpanel.Margin = new System.Windows.Forms.Padding(2);
+            this.CreateUserpanel.Name = "CreateUserpanel";
+            this.CreateUserpanel.Size = new System.Drawing.Size(42, 36);
+            this.CreateUserpanel.TabIndex = 6;
+            // 
+            // CreateUserAviso2label1
+            // 
+            this.CreateUserAviso2label1.AutoSize = true;
+            this.CreateUserAviso2label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.CreateUserAviso2label1.Location = new System.Drawing.Point(271, 282);
+            this.CreateUserAviso2label1.Name = "CreateUserAviso2label1";
+            this.CreateUserAviso2label1.Size = new System.Drawing.Size(258, 13);
+            this.CreateUserAviso2label1.TabIndex = 10;
+            this.CreateUserAviso2label1.Text = "Para poder utilizar esta cuenta, debe crearle un perfil.";
+            this.CreateUserAviso2label1.Visible = false;
+            // 
+            // CreateUserAvisolabel
+            // 
+            this.CreateUserAvisolabel.AutoSize = true;
+            this.CreateUserAvisolabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.CreateUserAvisolabel.Location = new System.Drawing.Point(268, 260);
+            this.CreateUserAvisolabel.Name = "CreateUserAvisolabel";
+            this.CreateUserAvisolabel.Size = new System.Drawing.Size(128, 13);
+            this.CreateUserAvisolabel.TabIndex = 9;
+            this.CreateUserAvisolabel.Text = "Usuario creado con exito!";
+            this.CreateUserAvisolabel.Visible = false;
+            // 
+            // BackCreateUserbutton
+            // 
+            this.BackCreateUserbutton.Location = new System.Drawing.Point(535, 337);
+            this.BackCreateUserbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackCreateUserbutton.Name = "BackCreateUserbutton";
+            this.BackCreateUserbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackCreateUserbutton.TabIndex = 8;
+            this.BackCreateUserbutton.Text = "Volver";
+            this.BackCreateUserbutton.UseVisualStyleBackColor = true;
+            this.BackCreateUserbutton.Click += new System.EventHandler(this.BackCreateUserbutton_Click);
+            // 
+            // CreateUbutton
+            // 
+            this.CreateUbutton.Location = new System.Drawing.Point(328, 223);
+            this.CreateUbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.CreateUbutton.Name = "CreateUbutton";
+            this.CreateUbutton.Size = new System.Drawing.Size(56, 19);
+            this.CreateUbutton.TabIndex = 7;
+            this.CreateUbutton.Text = "Crear";
+            this.CreateUbutton.UseVisualStyleBackColor = true;
+            this.CreateUbutton.Click += new System.EventHandler(this.CreateUbutton_Click);
+            // 
+            // InsertPlanTypetextBox
+            // 
+            this.InsertPlanTypetextBox.Location = new System.Drawing.Point(320, 183);
+            this.InsertPlanTypetextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertPlanTypetextBox.Name = "InsertPlanTypetextBox";
+            this.InsertPlanTypetextBox.Size = new System.Drawing.Size(76, 20);
+            this.InsertPlanTypetextBox.TabIndex = 6;
+            // 
+            // InsertUserPasswordtextBox
+            // 
+            this.InsertUserPasswordtextBox.Location = new System.Drawing.Point(320, 162);
+            this.InsertUserPasswordtextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertUserPasswordtextBox.Name = "InsertUserPasswordtextBox";
+            this.InsertUserPasswordtextBox.Size = new System.Drawing.Size(76, 20);
+            this.InsertUserPasswordtextBox.TabIndex = 5;
+            // 
+            // InsertUserMailtextBox
+            // 
+            this.InsertUserMailtextBox.Location = new System.Drawing.Point(320, 141);
+            this.InsertUserMailtextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertUserMailtextBox.Name = "InsertUserMailtextBox";
+            this.InsertUserMailtextBox.Size = new System.Drawing.Size(76, 20);
+            this.InsertUserMailtextBox.TabIndex = 4;
+            // 
+            // InsertPlanTypelabel
+            // 
+            this.InsertPlanTypelabel.AutoSize = true;
+            this.InsertPlanTypelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertPlanTypelabel.Location = new System.Drawing.Point(70, 188);
+            this.InsertPlanTypelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertPlanTypelabel.Name = "InsertPlanTypelabel";
+            this.InsertPlanTypelabel.Size = new System.Drawing.Size(246, 13);
+            this.InsertPlanTypelabel.TabIndex = 3;
+            this.InsertPlanTypelabel.Text = "¿Qué plan desea para este usuario?(premium/free)";
+            // 
+            // InsertPasswordUserlabel
+            // 
+            this.InsertPasswordUserlabel.AutoSize = true;
+            this.InsertPasswordUserlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertPasswordUserlabel.Location = new System.Drawing.Point(128, 164);
+            this.InsertPasswordUserlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertPasswordUserlabel.Name = "InsertPasswordUserlabel";
+            this.InsertPasswordUserlabel.Size = new System.Drawing.Size(112, 13);
+            this.InsertPasswordUserlabel.TabIndex = 2;
+            this.InsertPasswordUserlabel.Text = "Ingrese la contraseña:";
+            // 
+            // InsertUserMaillabel
+            // 
+            this.InsertUserMaillabel.AutoSize = true;
+            this.InsertUserMaillabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertUserMaillabel.Location = new System.Drawing.Point(128, 144);
+            this.InsertUserMaillabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertUserMaillabel.Name = "InsertUserMaillabel";
+            this.InsertUserMaillabel.Size = new System.Drawing.Size(131, 13);
+            this.InsertUserMaillabel.TabIndex = 1;
+            this.InsertUserMaillabel.Text = "Ingrese el mail del usuario:";
+            // 
+            // CreateUserlabel
+            // 
+            this.CreateUserlabel.AutoSize = true;
+            this.CreateUserlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateUserlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.CreateUserlabel.Location = new System.Drawing.Point(200, 15);
+            this.CreateUserlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CreateUserlabel.Name = "CreateUserlabel";
+            this.CreateUserlabel.Size = new System.Drawing.Size(183, 31);
+            this.CreateUserlabel.TabIndex = 0;
+            this.CreateUserlabel.Text = "Crear Usuario";
+            // 
+            // ExitADCbutton
+            // 
+            this.ExitADCbutton.Location = new System.Drawing.Point(248, 273);
+            this.ExitADCbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.ExitADCbutton.Name = "ExitADCbutton";
+            this.ExitADCbutton.Size = new System.Drawing.Size(84, 26);
+            this.ExitADCbutton.TabIndex = 5;
+            this.ExitADCbutton.Text = "Salir";
+            this.ExitADCbutton.UseVisualStyleBackColor = true;
+            this.ExitADCbutton.Click += new System.EventHandler(this.ExitADCbutton_Click);
+            // 
+            // ViewProfilesbutton
+            // 
+            this.ViewProfilesbutton.Location = new System.Drawing.Point(248, 230);
+            this.ViewProfilesbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.ViewProfilesbutton.Name = "ViewProfilesbutton";
+            this.ViewProfilesbutton.Size = new System.Drawing.Size(84, 35);
+            this.ViewProfilesbutton.TabIndex = 4;
+            this.ViewProfilesbutton.Text = "Ver Perfiles por Usuario";
+            this.ViewProfilesbutton.UseVisualStyleBackColor = true;
+            this.ViewProfilesbutton.Click += new System.EventHandler(this.ViewProfilesbutton_Click);
+            // 
+            // ChangeProfilebutton
+            // 
+            this.ChangeProfilebutton.Location = new System.Drawing.Point(248, 199);
+            this.ChangeProfilebutton.Margin = new System.Windows.Forms.Padding(2);
+            this.ChangeProfilebutton.Name = "ChangeProfilebutton";
+            this.ChangeProfilebutton.Size = new System.Drawing.Size(84, 26);
+            this.ChangeProfilebutton.TabIndex = 3;
+            this.ChangeProfilebutton.Text = "Modificar Perfil";
+            this.ChangeProfilebutton.UseVisualStyleBackColor = true;
+            this.ChangeProfilebutton.Click += new System.EventHandler(this.ChangeProfilebutton_Click);
+            // 
+            // CreareProfilebutton
+            // 
+            this.CreareProfilebutton.Location = new System.Drawing.Point(248, 168);
+            this.CreareProfilebutton.Margin = new System.Windows.Forms.Padding(2);
+            this.CreareProfilebutton.Name = "CreareProfilebutton";
+            this.CreareProfilebutton.Size = new System.Drawing.Size(84, 26);
+            this.CreareProfilebutton.TabIndex = 2;
+            this.CreareProfilebutton.Text = "Crear Perfil";
+            this.CreareProfilebutton.UseVisualStyleBackColor = true;
+            this.CreareProfilebutton.Click += new System.EventHandler(this.CreareProfilebutton_Click);
+            // 
+            // CreateUserbutton
+            // 
+            this.CreateUserbutton.Location = new System.Drawing.Point(248, 137);
+            this.CreateUserbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.CreateUserbutton.Name = "CreateUserbutton";
+            this.CreateUserbutton.Size = new System.Drawing.Size(84, 26);
+            this.CreateUserbutton.TabIndex = 1;
+            this.CreateUserbutton.Text = "Crear Usuario";
+            this.CreateUserbutton.UseVisualStyleBackColor = true;
+            this.CreateUserbutton.Click += new System.EventHandler(this.CreateUserbutton_Click);
+            // 
+            // ADClabel
+            // 
+            this.ADClabel.AutoSize = true;
+            this.ADClabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ADClabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.ADClabel.Location = new System.Drawing.Point(125, 7);
+            this.ADClabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ADClabel.Name = "ADClabel";
+            this.ADClabel.Size = new System.Drawing.Size(338, 31);
+            this.ADClabel.TabIndex = 0;
+            this.ADClabel.Text = "Administración de Cuentas";
+            // 
             // SpotflixForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(753, 445);
+            this.ClientSize = new System.Drawing.Size(631, 445);
             this.Controls.Add(this.WelcomePanel);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SpotflixForm";
             this.Text = "Spotflix";
             this.WelcomePanel.ResumeLayout(false);
             this.WelcomePanel.PerformLayout();
-            this.ADCpanel.ResumeLayout(false);
-            this.ADCpanel.PerformLayout();
-            this.SeeProfilespanel.ResumeLayout(false);
-            this.SeeProfilespanel.PerformLayout();
-            this.ChangeProfilepanel.ResumeLayout(false);
-            this.ChangeProfilepanel.PerformLayout();
-            this.CreateProfilepanel.ResumeLayout(false);
-            this.CreateProfilepanel.PerformLayout();
-            this.CreateUserpanel.ResumeLayout(false);
-            this.CreateUserpanel.PerformLayout();
             this.LoginSesionpanel.ResumeLayout(false);
             this.LoginSesionpanel.PerformLayout();
             this.LoginSesionProfilepanel.ResumeLayout(false);
             this.LoginSesionProfilepanel.PerformLayout();
+            this.MainMenupanel.ResumeLayout(false);
+            this.MainMenupanel.PerformLayout();
+            this.MoviesMainMenupanel.ResumeLayout(false);
+            this.MoviesMainMenupanel.PerformLayout();
             this.Songspanel.ResumeLayout(false);
             this.Songspanel.PerformLayout();
             this.PlaySongspanel.ResumeLayout(false);
             this.PlaySongspanel.PerformLayout();
+            this.InformationSongspanel.ResumeLayout(false);
+            this.InformationSongspanel.PerformLayout();
             this.SeeQueueSongspanel.ResumeLayout(false);
             this.SeeQueueSongspanel.PerformLayout();
             this.AddToQueueSongspanel.ResumeLayout(false);
             this.AddToQueueSongspanel.PerformLayout();
+            this.SeeFavouriteSongspanel.ResumeLayout(false);
+            this.SeeFavouriteSongspanel.PerformLayout();
+            this.SeePlaylistSongspanel.ResumeLayout(false);
+            this.SeePlaylistSongspanel.PerformLayout();
             this.SearchSongspanel.ResumeLayout(false);
             this.SearchSongspanel.PerformLayout();
             this.Genderpanel.ResumeLayout(false);
             this.Genderpanel.PerformLayout();
             this.Evaluationpanel.ResumeLayout(false);
             this.Evaluationpanel.PerformLayout();
-            this.InformationSongspanel.ResumeLayout(false);
-            this.InformationSongspanel.PerformLayout();
             this.Artistpanel.ResumeLayout(false);
             this.Artistpanel.PerformLayout();
-            this.SeePlaylistSongspanel.ResumeLayout(false);
-            this.SeePlaylistSongspanel.PerformLayout();
-            this.SeeFavouriteSongspanel.ResumeLayout(false);
-            this.SeeFavouriteSongspanel.PerformLayout();
             this.Keywordpanel.ResumeLayout(false);
             this.Keywordpanel.PerformLayout();
             this.QualifySongspanel.ResumeLayout(false);
@@ -5010,10 +5022,6 @@
             this.CreatePlaylistSongspanel.PerformLayout();
             this.SuggestionsSongspanel.ResumeLayout(false);
             this.SuggestionsSongspanel.PerformLayout();
-            this.MainMenupanel.ResumeLayout(false);
-            this.MainMenupanel.PerformLayout();
-            this.MoviesMainMenupanel.ResumeLayout(false);
-            this.MoviesMainMenupanel.PerformLayout();
             this.SeeQueueMoviespanel.ResumeLayout(false);
             this.SeeQueueMoviespanel.PerformLayout();
             this.SelectFavouriteMoviespanel.ResumeLayout(false);
@@ -5062,6 +5070,16 @@
             this.FollowPlaylistSongspanel.PerformLayout();
             this.FollowProfilepanel.ResumeLayout(false);
             this.FollowProfilepanel.PerformLayout();
+            this.ADCpanel.ResumeLayout(false);
+            this.ADCpanel.PerformLayout();
+            this.SeeProfilespanel.ResumeLayout(false);
+            this.SeeProfilespanel.PerformLayout();
+            this.ChangeProfilepanel.ResumeLayout(false);
+            this.ChangeProfilepanel.PerformLayout();
+            this.CreateProfilepanel.ResumeLayout(false);
+            this.CreateProfilepanel.PerformLayout();
+            this.CreateUserpanel.ResumeLayout(false);
+            this.CreateUserpanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
