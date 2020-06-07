@@ -29,10 +29,39 @@
         private void InitializeComponent()
         {
             this.WelcomePanel = new System.Windows.Forms.Panel();
-            this.LoginSesionpanel = new System.Windows.Forms.Panel();
-            this.LoginSesionProfilepanel = new System.Windows.Forms.Panel();
-            this.BackLoginSesionProfilebutton = new System.Windows.Forms.Button();
             this.MainMenupanel = new System.Windows.Forms.Panel();
+            this.JoinPartypanel = new System.Windows.Forms.Panel();
+            this.PartyMoviespanel = new System.Windows.Forms.Panel();
+            this.Message2PartyMovieslabel = new System.Windows.Forms.Label();
+            this.Message1PartyMovieslabel = new System.Windows.Forms.Label();
+            this.BackPartyMoviesbutton = new System.Windows.Forms.Button();
+            this.GoPartyMoviesbutton = new System.Windows.Forms.Button();
+            this.InsertProfilePartyMoviescomboBox = new System.Windows.Forms.ComboBox();
+            this.InsertProfilePartyMovieslabel = new System.Windows.Forms.Label();
+            this.PartyMovieslabel = new System.Windows.Forms.Label();
+            this.PartySongspanel = new System.Windows.Forms.Panel();
+            this.StopPartySongsbutton = new System.Windows.Forms.Button();
+            this.Message2PartySongslabel = new System.Windows.Forms.Label();
+            this.Message1PartySongslabel = new System.Windows.Forms.Label();
+            this.BackPartySongsbutton = new System.Windows.Forms.Button();
+            this.GoPartySongsbutton = new System.Windows.Forms.Button();
+            this.InsertProfilePartySongscomboBox = new System.Windows.Forms.ComboBox();
+            this.InsertProfilePartySongslabel = new System.Windows.Forms.Label();
+            this.PartySongslabel = new System.Windows.Forms.Label();
+            this.BackJoinPartybutton = new System.Windows.Forms.Button();
+            this.JoinPartySongsbutton = new System.Windows.Forms.Button();
+            this.JoinPartyMoviesbutton = new System.Windows.Forms.Button();
+            this.JoinPartylabel = new System.Windows.Forms.Label();
+            this.InteligentSuggestionspanel = new System.Windows.Forms.Panel();
+            this.SuggestionsMoviespanel = new System.Windows.Forms.Panel();
+            this.BackSuggestionsMoviesbutton = new System.Windows.Forms.Button();
+            this.SuggestionsMoviesrichTextBox = new System.Windows.Forms.RichTextBox();
+            this.SuggestionsMovieslabel2 = new System.Windows.Forms.Label();
+            this.SuggestionsMovieslabel1 = new System.Windows.Forms.Label();
+            this.BackInteligentSuggestionsbutton = new System.Windows.Forms.Button();
+            this.SongsInteligentSuggestionsbutton = new System.Windows.Forms.Button();
+            this.MoviesInteligentSuggestionsbutton = new System.Windows.Forms.Button();
+            this.InteligentSuggestionslabel = new System.Windows.Forms.Label();
             this.MoviesMainMenupanel = new System.Windows.Forms.Panel();
             this.Songspanel = new System.Windows.Forms.Panel();
             this.PlaySongspanel = new System.Windows.Forms.Panel();
@@ -261,39 +290,14 @@
             this.PlayMoviesbutton = new System.Windows.Forms.Button();
             this.BackMoviesMainMenubutton = new System.Windows.Forms.Button();
             this.MoviesMainMenulabel = new System.Windows.Forms.Label();
-            this.JoinPartypanel = new System.Windows.Forms.Panel();
-            this.PartyMoviespanel = new System.Windows.Forms.Panel();
-            this.Message2PartyMovieslabel = new System.Windows.Forms.Label();
-            this.Message1PartyMovieslabel = new System.Windows.Forms.Label();
-            this.BackPartyMoviesbutton = new System.Windows.Forms.Button();
-            this.GoPartyMoviesbutton = new System.Windows.Forms.Button();
-            this.InsertProfilePartyMoviescomboBox = new System.Windows.Forms.ComboBox();
-            this.InsertProfilePartyMovieslabel = new System.Windows.Forms.Label();
-            this.PartyMovieslabel = new System.Windows.Forms.Label();
-            this.PartySongspanel = new System.Windows.Forms.Panel();
-            this.StopPartySongsbutton = new System.Windows.Forms.Button();
-            this.Message2PartySongslabel = new System.Windows.Forms.Label();
-            this.Message1PartySongslabel = new System.Windows.Forms.Label();
-            this.BackPartySongsbutton = new System.Windows.Forms.Button();
-            this.GoPartySongsbutton = new System.Windows.Forms.Button();
-            this.InsertProfilePartySongscomboBox = new System.Windows.Forms.ComboBox();
-            this.InsertProfilePartySongslabel = new System.Windows.Forms.Label();
-            this.PartySongslabel = new System.Windows.Forms.Label();
-            this.BackJoinPartybutton = new System.Windows.Forms.Button();
-            this.JoinPartySongsbutton = new System.Windows.Forms.Button();
-            this.JoinPartyMoviesbutton = new System.Windows.Forms.Button();
-            this.JoinPartylabel = new System.Windows.Forms.Label();
-            this.InteligentSuggestionspanel = new System.Windows.Forms.Panel();
-            this.SuggestionsMoviespanel = new System.Windows.Forms.Panel();
-            this.BackSuggestionsMoviesbutton = new System.Windows.Forms.Button();
-            this.SuggestionsMoviesrichTextBox = new System.Windows.Forms.RichTextBox();
-            this.SuggestionsMovieslabel2 = new System.Windows.Forms.Label();
-            this.SuggestionsMovieslabel1 = new System.Windows.Forms.Label();
-            this.BackInteligentSuggestionsbutton = new System.Windows.Forms.Button();
-            this.SongsInteligentSuggestionsbutton = new System.Windows.Forms.Button();
-            this.MoviesInteligentSuggestionsbutton = new System.Windows.Forms.Button();
-            this.InteligentSuggestionslabel = new System.Windows.Forms.Label();
             this.Followpanel = new System.Windows.Forms.Panel();
+            this.FollowProfilepanel = new System.Windows.Forms.Panel();
+            this.BackFollowProfilebutton = new System.Windows.Forms.Button();
+            this.FollowFollowProfilebutton = new System.Windows.Forms.Button();
+            this.ProfileFollowedFollowProfilelabel = new System.Windows.Forms.Label();
+            this.InsertProfileFollowProfilelabel = new System.Windows.Forms.Label();
+            this.FollowProfilelabel = new System.Windows.Forms.Label();
+            this.InsertProfileFollowProfilecomboBox = new System.Windows.Forms.ComboBox();
             this.FollowActorpanel = new System.Windows.Forms.Panel();
             this.BackFollowActorbutton = new System.Windows.Forms.Button();
             this.FollowFollowActorbutton = new System.Windows.Forms.Button();
@@ -329,14 +333,6 @@
             this.PlaylistFollowedFollowPlaylistSongslabel = new System.Windows.Forms.Label();
             this.InsertPlaylistFollowPlaylistSongslabel = new System.Windows.Forms.Label();
             this.FollowPlaylistSongslabel = new System.Windows.Forms.Label();
-            this.FollowProfilepanel = new System.Windows.Forms.Panel();
-            this.BackFollowProfilebutton = new System.Windows.Forms.Button();
-            this.FollowFollowProfilebutton = new System.Windows.Forms.Button();
-            this.ProfileFollowedFollowProfilelabel = new System.Windows.Forms.Label();
-            this.FailedFollowFollowProfilelabel = new System.Windows.Forms.Label();
-            this.InsertProfileFollowProfilelabel = new System.Windows.Forms.Label();
-            this.FollowProfilelabel = new System.Windows.Forms.Label();
-            this.InsertProfileFollowProfilecomboBox = new System.Windows.Forms.ComboBox();
             this.BackFollowbutton = new System.Windows.Forms.Button();
             this.FollowAlbumFollowbutton = new System.Windows.Forms.Button();
             this.FollowActorFollowbutton = new System.Windows.Forms.Button();
@@ -353,10 +349,13 @@
             this.FollowMainMenubutton = new System.Windows.Forms.Button();
             this.MainMenulabel2 = new System.Windows.Forms.Label();
             this.MainMenulabel1 = new System.Windows.Forms.Label();
+            this.LoginSesionpanel = new System.Windows.Forms.Panel();
+            this.LoginSesionProfilepanel = new System.Windows.Forms.Panel();
             this.LoginSesionProfilebutton = new System.Windows.Forms.Button();
             this.LoginSesionProfilelabel2 = new System.Windows.Forms.Label();
             this.LoginSesionProfilelabel1 = new System.Windows.Forms.Label();
             this.LoginSesionInsertProfilecomboBox = new System.Windows.Forms.ComboBox();
+            this.BackLoginSesionProfilebutton = new System.Windows.Forms.Button();
             this.FailedLoginSesionlabel = new System.Windows.Forms.Label();
             this.BackLoginSesionbutton = new System.Windows.Forms.Button();
             this.LoginSesionbutton = new System.Windows.Forms.Button();
@@ -421,10 +420,16 @@
             this.CreareProfilebutton = new System.Windows.Forms.Button();
             this.CreateUserbutton = new System.Windows.Forms.Button();
             this.ADClabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.WelcomePanel.SuspendLayout();
-            this.LoginSesionpanel.SuspendLayout();
-            this.LoginSesionProfilepanel.SuspendLayout();
             this.MainMenupanel.SuspendLayout();
+            this.JoinPartypanel.SuspendLayout();
+            this.PartyMoviespanel.SuspendLayout();
+            this.PartySongspanel.SuspendLayout();
+            this.InteligentSuggestionspanel.SuspendLayout();
+            this.SuggestionsMoviespanel.SuspendLayout();
             this.MoviesMainMenupanel.SuspendLayout();
             this.Songspanel.SuspendLayout();
             this.PlaySongspanel.SuspendLayout();
@@ -455,18 +460,15 @@
             this.InformationMoviespanel.SuspendLayout();
             this.QualifyMoviespanel.SuspendLayout();
             this.PlayMoviespanel.SuspendLayout();
-            this.JoinPartypanel.SuspendLayout();
-            this.PartyMoviespanel.SuspendLayout();
-            this.PartySongspanel.SuspendLayout();
-            this.InteligentSuggestionspanel.SuspendLayout();
-            this.SuggestionsMoviespanel.SuspendLayout();
             this.Followpanel.SuspendLayout();
+            this.FollowProfilepanel.SuspendLayout();
             this.FollowActorpanel.SuspendLayout();
             this.FollowArtistpanel.SuspendLayout();
             this.FollowAlbumpanel.SuspendLayout();
             this.FollowPlaylistMoviespanel.SuspendLayout();
             this.FollowPlaylistSongspanel.SuspendLayout();
-            this.FollowProfilepanel.SuspendLayout();
+            this.LoginSesionpanel.SuspendLayout();
+            this.LoginSesionProfilepanel.SuspendLayout();
             this.ADCpanel.SuspendLayout();
             this.SeeProfilespanel.SuspendLayout();
             this.ChangeProfilepanel.SuspendLayout();
@@ -477,6 +479,7 @@
             // WelcomePanel
             // 
             this.WelcomePanel.BackColor = System.Drawing.SystemColors.ControlText;
+            this.WelcomePanel.Controls.Add(this.MainMenupanel);
             this.WelcomePanel.Controls.Add(this.LoginSesionpanel);
             this.WelcomePanel.Controls.Add(this.LoginAdminbutton);
             this.WelcomePanel.Controls.Add(this.ADCbutton);
@@ -491,54 +494,11 @@
             this.WelcomePanel.TabIndex = 0;
             this.WelcomePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.WelcomePanel_Paint);
             // 
-            // LoginSesionpanel
-            // 
-            this.LoginSesionpanel.Controls.Add(this.LoginSesionProfilepanel);
-            this.LoginSesionpanel.Controls.Add(this.FailedLoginSesionlabel);
-            this.LoginSesionpanel.Controls.Add(this.BackLoginSesionbutton);
-            this.LoginSesionpanel.Controls.Add(this.LoginSesionbutton);
-            this.LoginSesionpanel.Controls.Add(this.InsertPasswordLoginSesiontextBox);
-            this.LoginSesionpanel.Controls.Add(this.InsertMailLoginSesiontextBox);
-            this.LoginSesionpanel.Controls.Add(this.InsertPasswordLoginSesionlabel);
-            this.LoginSesionpanel.Controls.Add(this.InsertMailLoginSesionlabel);
-            this.LoginSesionpanel.Controls.Add(this.LoginSesionlabel);
-            this.LoginSesionpanel.Location = new System.Drawing.Point(467, 210);
-            this.LoginSesionpanel.Margin = new System.Windows.Forms.Padding(2);
-            this.LoginSesionpanel.Name = "LoginSesionpanel";
-            this.LoginSesionpanel.Size = new System.Drawing.Size(75, 88);
-            this.LoginSesionpanel.TabIndex = 4;
-            this.LoginSesionpanel.Visible = false;
-            // 
-            // LoginSesionProfilepanel
-            // 
-            this.LoginSesionProfilepanel.Controls.Add(this.BackLoginSesionProfilebutton);
-            this.LoginSesionProfilepanel.Controls.Add(this.MainMenupanel);
-            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilebutton);
-            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilelabel2);
-            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilelabel1);
-            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionInsertProfilecomboBox);
-            this.LoginSesionProfilepanel.Location = new System.Drawing.Point(489, 135);
-            this.LoginSesionProfilepanel.Margin = new System.Windows.Forms.Padding(2);
-            this.LoginSesionProfilepanel.Name = "LoginSesionProfilepanel";
-            this.LoginSesionProfilepanel.Size = new System.Drawing.Size(77, 86);
-            this.LoginSesionProfilepanel.TabIndex = 9;
-            // 
-            // BackLoginSesionProfilebutton
-            // 
-            this.BackLoginSesionProfilebutton.Location = new System.Drawing.Point(535, 337);
-            this.BackLoginSesionProfilebutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackLoginSesionProfilebutton.Name = "BackLoginSesionProfilebutton";
-            this.BackLoginSesionProfilebutton.Size = new System.Drawing.Size(56, 19);
-            this.BackLoginSesionProfilebutton.TabIndex = 3;
-            this.BackLoginSesionProfilebutton.Text = "Volver";
-            this.BackLoginSesionProfilebutton.UseVisualStyleBackColor = true;
-            this.BackLoginSesionProfilebutton.Click += new System.EventHandler(this.BackLoginSesionProfilebutton_Click);
-            // 
             // MainMenupanel
             // 
-            this.MainMenupanel.Controls.Add(this.MoviesMainMenupanel);
             this.MainMenupanel.Controls.Add(this.JoinPartypanel);
             this.MainMenupanel.Controls.Add(this.InteligentSuggestionspanel);
+            this.MainMenupanel.Controls.Add(this.MoviesMainMenupanel);
             this.MainMenupanel.Controls.Add(this.Followpanel);
             this.MainMenupanel.Controls.Add(this.LogoutMainMenubutton);
             this.MainMenupanel.Controls.Add(this.MoviesMainMenubutton);
@@ -548,11 +508,385 @@
             this.MainMenupanel.Controls.Add(this.FollowMainMenubutton);
             this.MainMenupanel.Controls.Add(this.MainMenulabel2);
             this.MainMenupanel.Controls.Add(this.MainMenulabel1);
-            this.MainMenupanel.Location = new System.Drawing.Point(416, 255);
+            this.MainMenupanel.Location = new System.Drawing.Point(498, 120);
             this.MainMenupanel.Margin = new System.Windows.Forms.Padding(2);
             this.MainMenupanel.Name = "MainMenupanel";
-            this.MainMenupanel.Size = new System.Drawing.Size(61, 69);
+            this.MainMenupanel.Size = new System.Drawing.Size(55, 48);
             this.MainMenupanel.TabIndex = 4;
+            // 
+            // JoinPartypanel
+            // 
+            this.JoinPartypanel.Controls.Add(this.PartyMoviespanel);
+            this.JoinPartypanel.Controls.Add(this.PartySongspanel);
+            this.JoinPartypanel.Controls.Add(this.BackJoinPartybutton);
+            this.JoinPartypanel.Controls.Add(this.JoinPartySongsbutton);
+            this.JoinPartypanel.Controls.Add(this.JoinPartyMoviesbutton);
+            this.JoinPartypanel.Controls.Add(this.JoinPartylabel);
+            this.JoinPartypanel.Location = new System.Drawing.Point(472, 310);
+            this.JoinPartypanel.Margin = new System.Windows.Forms.Padding(2);
+            this.JoinPartypanel.Name = "JoinPartypanel";
+            this.JoinPartypanel.Size = new System.Drawing.Size(64, 47);
+            this.JoinPartypanel.TabIndex = 8;
+            // 
+            // PartyMoviespanel
+            // 
+            this.PartyMoviespanel.Controls.Add(this.Message2PartyMovieslabel);
+            this.PartyMoviespanel.Controls.Add(this.Message1PartyMovieslabel);
+            this.PartyMoviespanel.Controls.Add(this.BackPartyMoviesbutton);
+            this.PartyMoviespanel.Controls.Add(this.GoPartyMoviesbutton);
+            this.PartyMoviespanel.Controls.Add(this.InsertProfilePartyMoviescomboBox);
+            this.PartyMoviespanel.Controls.Add(this.InsertProfilePartyMovieslabel);
+            this.PartyMoviespanel.Controls.Add(this.PartyMovieslabel);
+            this.PartyMoviespanel.Location = new System.Drawing.Point(17, 18);
+            this.PartyMoviespanel.Margin = new System.Windows.Forms.Padding(2);
+            this.PartyMoviespanel.Name = "PartyMoviespanel";
+            this.PartyMoviespanel.Size = new System.Drawing.Size(28, 31);
+            this.PartyMoviespanel.TabIndex = 4;
+            // 
+            // Message2PartyMovieslabel
+            // 
+            this.Message2PartyMovieslabel.AutoSize = true;
+            this.Message2PartyMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.Message2PartyMovieslabel.Location = new System.Drawing.Point(106, 298);
+            this.Message2PartyMovieslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Message2PartyMovieslabel.Name = "Message2PartyMovieslabel";
+            this.Message2PartyMovieslabel.Size = new System.Drawing.Size(383, 13);
+            this.Message2PartyMovieslabel.TabIndex = 6;
+            this.Message2PartyMovieslabel.Text = "Para salir de la party, cierre la ventana donde se está reproduciendo la película" +
+    ".";
+            this.Message2PartyMovieslabel.Visible = false;
+            // 
+            // Message1PartyMovieslabel
+            // 
+            this.Message1PartyMovieslabel.AutoSize = true;
+            this.Message1PartyMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.Message1PartyMovieslabel.Location = new System.Drawing.Point(106, 256);
+            this.Message1PartyMovieslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Message1PartyMovieslabel.Name = "Message1PartyMovieslabel";
+            this.Message1PartyMovieslabel.Size = new System.Drawing.Size(301, 13);
+            this.Message1PartyMovieslabel.TabIndex = 5;
+            this.Message1PartyMovieslabel.Text = "En estos momentos, el perfil seleccionado está viendo: Tarzán";
+            this.Message1PartyMovieslabel.Visible = false;
+            // 
+            // BackPartyMoviesbutton
+            // 
+            this.BackPartyMoviesbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackPartyMoviesbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackPartyMoviesbutton.Name = "BackPartyMoviesbutton";
+            this.BackPartyMoviesbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackPartyMoviesbutton.TabIndex = 4;
+            this.BackPartyMoviesbutton.Text = "Volver";
+            this.BackPartyMoviesbutton.UseVisualStyleBackColor = true;
+            this.BackPartyMoviesbutton.Click += new System.EventHandler(this.BackPartyMoviesbutton_Click);
+            // 
+            // GoPartyMoviesbutton
+            // 
+            this.GoPartyMoviesbutton.Location = new System.Drawing.Point(312, 195);
+            this.GoPartyMoviesbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.GoPartyMoviesbutton.Name = "GoPartyMoviesbutton";
+            this.GoPartyMoviesbutton.Size = new System.Drawing.Size(56, 19);
+            this.GoPartyMoviesbutton.TabIndex = 3;
+            this.GoPartyMoviesbutton.Text = "Unirse";
+            this.GoPartyMoviesbutton.UseVisualStyleBackColor = true;
+            this.GoPartyMoviesbutton.Click += new System.EventHandler(this.GoPartyMoviesbutton_Click);
+            // 
+            // InsertProfilePartyMoviescomboBox
+            // 
+            this.InsertProfilePartyMoviescomboBox.FormattingEnabled = true;
+            this.InsertProfilePartyMoviescomboBox.Location = new System.Drawing.Point(300, 144);
+            this.InsertProfilePartyMoviescomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertProfilePartyMoviescomboBox.Name = "InsertProfilePartyMoviescomboBox";
+            this.InsertProfilePartyMoviescomboBox.Size = new System.Drawing.Size(92, 21);
+            this.InsertProfilePartyMoviescomboBox.TabIndex = 2;
+            // 
+            // InsertProfilePartyMovieslabel
+            // 
+            this.InsertProfilePartyMovieslabel.AutoSize = true;
+            this.InsertProfilePartyMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertProfilePartyMovieslabel.Location = new System.Drawing.Point(135, 146);
+            this.InsertProfilePartyMovieslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertProfilePartyMovieslabel.Name = "InsertProfilePartyMovieslabel";
+            this.InsertProfilePartyMovieslabel.Size = new System.Drawing.Size(135, 13);
+            this.InsertProfilePartyMovieslabel.TabIndex = 1;
+            this.InsertProfilePartyMovieslabel.Text = "¿A qué perfil quiere unirse?";
+            // 
+            // PartyMovieslabel
+            // 
+            this.PartyMovieslabel.AutoSize = true;
+            this.PartyMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PartyMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.PartyMovieslabel.Location = new System.Drawing.Point(199, 18);
+            this.PartyMovieslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PartyMovieslabel.Name = "PartyMovieslabel";
+            this.PartyMovieslabel.Size = new System.Drawing.Size(194, 31);
+            this.PartyMovieslabel.TabIndex = 0;
+            this.PartyMovieslabel.Text = "Party Películas";
+            // 
+            // PartySongspanel
+            // 
+            this.PartySongspanel.Controls.Add(this.StopPartySongsbutton);
+            this.PartySongspanel.Controls.Add(this.Message2PartySongslabel);
+            this.PartySongspanel.Controls.Add(this.Message1PartySongslabel);
+            this.PartySongspanel.Controls.Add(this.BackPartySongsbutton);
+            this.PartySongspanel.Controls.Add(this.GoPartySongsbutton);
+            this.PartySongspanel.Controls.Add(this.InsertProfilePartySongscomboBox);
+            this.PartySongspanel.Controls.Add(this.InsertProfilePartySongslabel);
+            this.PartySongspanel.Controls.Add(this.PartySongslabel);
+            this.PartySongspanel.Location = new System.Drawing.Point(447, 310);
+            this.PartySongspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.PartySongspanel.Name = "PartySongspanel";
+            this.PartySongspanel.Size = new System.Drawing.Size(118, 62);
+            this.PartySongspanel.TabIndex = 7;
+            // 
+            // StopPartySongsbutton
+            // 
+            this.StopPartySongsbutton.Location = new System.Drawing.Point(312, 293);
+            this.StopPartySongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.StopPartySongsbutton.Name = "StopPartySongsbutton";
+            this.StopPartySongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.StopPartySongsbutton.TabIndex = 14;
+            this.StopPartySongsbutton.Text = "Stop";
+            this.StopPartySongsbutton.UseVisualStyleBackColor = true;
+            this.StopPartySongsbutton.Visible = false;
+            this.StopPartySongsbutton.Click += new System.EventHandler(this.GoPartySongsbutton_Click);
+            // 
+            // Message2PartySongslabel
+            // 
+            this.Message2PartySongslabel.AutoSize = true;
+            this.Message2PartySongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.Message2PartySongslabel.Location = new System.Drawing.Point(106, 298);
+            this.Message2PartySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Message2PartySongslabel.Name = "Message2PartySongslabel";
+            this.Message2PartySongslabel.Size = new System.Drawing.Size(176, 13);
+            this.Message2PartySongslabel.TabIndex = 13;
+            this.Message2PartySongslabel.Text = "Para salir de la party, presione Stop.";
+            this.Message2PartySongslabel.Visible = false;
+            // 
+            // Message1PartySongslabel
+            // 
+            this.Message1PartySongslabel.AutoSize = true;
+            this.Message1PartySongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.Message1PartySongslabel.Location = new System.Drawing.Point(106, 256);
+            this.Message1PartySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Message1PartySongslabel.Name = "Message1PartySongslabel";
+            this.Message1PartySongslabel.Size = new System.Drawing.Size(383, 13);
+            this.Message1PartySongslabel.TabIndex = 12;
+            this.Message1PartySongslabel.Text = "En estos momentos, el perfil seleccionado está escuchando: Coronao de El Alfa";
+            this.Message1PartySongslabel.Visible = false;
+            // 
+            // BackPartySongsbutton
+            // 
+            this.BackPartySongsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackPartySongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackPartySongsbutton.Name = "BackPartySongsbutton";
+            this.BackPartySongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackPartySongsbutton.TabIndex = 11;
+            this.BackPartySongsbutton.Text = "Volver";
+            this.BackPartySongsbutton.UseVisualStyleBackColor = true;
+            this.BackPartySongsbutton.Click += new System.EventHandler(this.BackPartySongsbutton_Click);
+            // 
+            // GoPartySongsbutton
+            // 
+            this.GoPartySongsbutton.Location = new System.Drawing.Point(312, 195);
+            this.GoPartySongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.GoPartySongsbutton.Name = "GoPartySongsbutton";
+            this.GoPartySongsbutton.Size = new System.Drawing.Size(56, 19);
+            this.GoPartySongsbutton.TabIndex = 10;
+            this.GoPartySongsbutton.Text = "Unirse";
+            this.GoPartySongsbutton.UseVisualStyleBackColor = true;
+            this.GoPartySongsbutton.Click += new System.EventHandler(this.GoPartySongsbutton_Click);
+            // 
+            // InsertProfilePartySongscomboBox
+            // 
+            this.InsertProfilePartySongscomboBox.FormattingEnabled = true;
+            this.InsertProfilePartySongscomboBox.Location = new System.Drawing.Point(300, 144);
+            this.InsertProfilePartySongscomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertProfilePartySongscomboBox.Name = "InsertProfilePartySongscomboBox";
+            this.InsertProfilePartySongscomboBox.Size = new System.Drawing.Size(92, 21);
+            this.InsertProfilePartySongscomboBox.TabIndex = 9;
+            // 
+            // InsertProfilePartySongslabel
+            // 
+            this.InsertProfilePartySongslabel.AutoSize = true;
+            this.InsertProfilePartySongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertProfilePartySongslabel.Location = new System.Drawing.Point(135, 146);
+            this.InsertProfilePartySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertProfilePartySongslabel.Name = "InsertProfilePartySongslabel";
+            this.InsertProfilePartySongslabel.Size = new System.Drawing.Size(135, 13);
+            this.InsertProfilePartySongslabel.TabIndex = 8;
+            this.InsertProfilePartySongslabel.Text = "¿A qué perfil quiere unirse?";
+            // 
+            // PartySongslabel
+            // 
+            this.PartySongslabel.AutoSize = true;
+            this.PartySongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PartySongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.PartySongslabel.Location = new System.Drawing.Point(199, 18);
+            this.PartySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PartySongslabel.Name = "PartySongslabel";
+            this.PartySongslabel.Size = new System.Drawing.Size(214, 31);
+            this.PartySongslabel.TabIndex = 7;
+            this.PartySongslabel.Text = "Party Canciones";
+            // 
+            // BackJoinPartybutton
+            // 
+            this.BackJoinPartybutton.Location = new System.Drawing.Point(535, 332);
+            this.BackJoinPartybutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackJoinPartybutton.Name = "BackJoinPartybutton";
+            this.BackJoinPartybutton.Size = new System.Drawing.Size(56, 19);
+            this.BackJoinPartybutton.TabIndex = 3;
+            this.BackJoinPartybutton.Text = "Volver";
+            this.BackJoinPartybutton.UseVisualStyleBackColor = true;
+            this.BackJoinPartybutton.Click += new System.EventHandler(this.BackJoinPartybutton_Click);
+            // 
+            // JoinPartySongsbutton
+            // 
+            this.JoinPartySongsbutton.Location = new System.Drawing.Point(310, 169);
+            this.JoinPartySongsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.JoinPartySongsbutton.Name = "JoinPartySongsbutton";
+            this.JoinPartySongsbutton.Size = new System.Drawing.Size(80, 29);
+            this.JoinPartySongsbutton.TabIndex = 2;
+            this.JoinPartySongsbutton.Text = "de Canciones";
+            this.JoinPartySongsbutton.UseVisualStyleBackColor = true;
+            this.JoinPartySongsbutton.Click += new System.EventHandler(this.JoinPartySongsbutton_Click);
+            // 
+            // JoinPartyMoviesbutton
+            // 
+            this.JoinPartyMoviesbutton.Location = new System.Drawing.Point(182, 169);
+            this.JoinPartyMoviesbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.JoinPartyMoviesbutton.Name = "JoinPartyMoviesbutton";
+            this.JoinPartyMoviesbutton.Size = new System.Drawing.Size(79, 25);
+            this.JoinPartyMoviesbutton.TabIndex = 1;
+            this.JoinPartyMoviesbutton.Text = "de Películas";
+            this.JoinPartyMoviesbutton.UseVisualStyleBackColor = true;
+            this.JoinPartyMoviesbutton.Click += new System.EventHandler(this.JoinPartyMoviesbutton_Click);
+            // 
+            // JoinPartylabel
+            // 
+            this.JoinPartylabel.AutoSize = true;
+            this.JoinPartylabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JoinPartylabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.JoinPartylabel.Location = new System.Drawing.Point(164, 18);
+            this.JoinPartylabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.JoinPartylabel.Name = "JoinPartylabel";
+            this.JoinPartylabel.Size = new System.Drawing.Size(246, 31);
+            this.JoinPartylabel.TabIndex = 0;
+            this.JoinPartylabel.Text = "Unirme a una Party";
+            // 
+            // InteligentSuggestionspanel
+            // 
+            this.InteligentSuggestionspanel.Controls.Add(this.SuggestionsMoviespanel);
+            this.InteligentSuggestionspanel.Controls.Add(this.BackInteligentSuggestionsbutton);
+            this.InteligentSuggestionspanel.Controls.Add(this.SongsInteligentSuggestionsbutton);
+            this.InteligentSuggestionspanel.Controls.Add(this.MoviesInteligentSuggestionsbutton);
+            this.InteligentSuggestionspanel.Controls.Add(this.InteligentSuggestionslabel);
+            this.InteligentSuggestionspanel.Location = new System.Drawing.Point(472, 65);
+            this.InteligentSuggestionspanel.Margin = new System.Windows.Forms.Padding(2);
+            this.InteligentSuggestionspanel.Name = "InteligentSuggestionspanel";
+            this.InteligentSuggestionspanel.Size = new System.Drawing.Size(58, 39);
+            this.InteligentSuggestionspanel.TabIndex = 19;
+            // 
+            // SuggestionsMoviespanel
+            // 
+            this.SuggestionsMoviespanel.Controls.Add(this.BackSuggestionsMoviesbutton);
+            this.SuggestionsMoviespanel.Controls.Add(this.SuggestionsMoviesrichTextBox);
+            this.SuggestionsMoviespanel.Controls.Add(this.SuggestionsMovieslabel2);
+            this.SuggestionsMoviespanel.Controls.Add(this.SuggestionsMovieslabel1);
+            this.SuggestionsMoviespanel.Location = new System.Drawing.Point(450, 257);
+            this.SuggestionsMoviespanel.Margin = new System.Windows.Forms.Padding(2);
+            this.SuggestionsMoviespanel.Name = "SuggestionsMoviespanel";
+            this.SuggestionsMoviespanel.Size = new System.Drawing.Size(48, 51);
+            this.SuggestionsMoviespanel.TabIndex = 4;
+            // 
+            // BackSuggestionsMoviesbutton
+            // 
+            this.BackSuggestionsMoviesbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackSuggestionsMoviesbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackSuggestionsMoviesbutton.Name = "BackSuggestionsMoviesbutton";
+            this.BackSuggestionsMoviesbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackSuggestionsMoviesbutton.TabIndex = 3;
+            this.BackSuggestionsMoviesbutton.Text = "Volver";
+            this.BackSuggestionsMoviesbutton.UseVisualStyleBackColor = true;
+            this.BackSuggestionsMoviesbutton.Click += new System.EventHandler(this.BackSuggestionsMoviesbutton_Click);
+            // 
+            // SuggestionsMoviesrichTextBox
+            // 
+            this.SuggestionsMoviesrichTextBox.Location = new System.Drawing.Point(218, 132);
+            this.SuggestionsMoviesrichTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.SuggestionsMoviesrichTextBox.Name = "SuggestionsMoviesrichTextBox";
+            this.SuggestionsMoviesrichTextBox.Size = new System.Drawing.Size(161, 100);
+            this.SuggestionsMoviesrichTextBox.TabIndex = 2;
+            this.SuggestionsMoviesrichTextBox.Text = "";
+            // 
+            // SuggestionsMovieslabel2
+            // 
+            this.SuggestionsMovieslabel2.AutoSize = true;
+            this.SuggestionsMovieslabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SuggestionsMovieslabel2.ForeColor = System.Drawing.SystemColors.Window;
+            this.SuggestionsMovieslabel2.Location = new System.Drawing.Point(44, 56);
+            this.SuggestionsMovieslabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SuggestionsMovieslabel2.Name = "SuggestionsMovieslabel2";
+            this.SuggestionsMovieslabel2.Size = new System.Drawing.Size(577, 17);
+            this.SuggestionsMovieslabel2.TabIndex = 1;
+            this.SuggestionsMovieslabel2.Text = "En base a lo que usted sigue y ha visto, esta es una lista de películas que podrí" +
+    "a gustarle:";
+            // 
+            // SuggestionsMovieslabel1
+            // 
+            this.SuggestionsMovieslabel1.AutoSize = true;
+            this.SuggestionsMovieslabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SuggestionsMovieslabel1.ForeColor = System.Drawing.SystemColors.Window;
+            this.SuggestionsMovieslabel1.Location = new System.Drawing.Point(145, 15);
+            this.SuggestionsMovieslabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SuggestionsMovieslabel1.Name = "SuggestionsMovieslabel1";
+            this.SuggestionsMovieslabel1.Size = new System.Drawing.Size(318, 31);
+            this.SuggestionsMovieslabel1.TabIndex = 0;
+            this.SuggestionsMovieslabel1.Text = "Sugerencias de Películas";
+            // 
+            // BackInteligentSuggestionsbutton
+            // 
+            this.BackInteligentSuggestionsbutton.Location = new System.Drawing.Point(535, 332);
+            this.BackInteligentSuggestionsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackInteligentSuggestionsbutton.Name = "BackInteligentSuggestionsbutton";
+            this.BackInteligentSuggestionsbutton.Size = new System.Drawing.Size(56, 19);
+            this.BackInteligentSuggestionsbutton.TabIndex = 3;
+            this.BackInteligentSuggestionsbutton.Text = "Volver";
+            this.BackInteligentSuggestionsbutton.UseVisualStyleBackColor = true;
+            this.BackInteligentSuggestionsbutton.Click += new System.EventHandler(this.BackInteligentSuggestionsbutton_Click);
+            // 
+            // SongsInteligentSuggestionsbutton
+            // 
+            this.SongsInteligentSuggestionsbutton.Location = new System.Drawing.Point(266, 190);
+            this.SongsInteligentSuggestionsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.SongsInteligentSuggestionsbutton.Name = "SongsInteligentSuggestionsbutton";
+            this.SongsInteligentSuggestionsbutton.Size = new System.Drawing.Size(84, 36);
+            this.SongsInteligentSuggestionsbutton.TabIndex = 2;
+            this.SongsInteligentSuggestionsbutton.Text = "Sugerencias de Canciones";
+            this.SongsInteligentSuggestionsbutton.UseVisualStyleBackColor = true;
+            this.SongsInteligentSuggestionsbutton.Click += new System.EventHandler(this.SongsInteligentSuggestionsbutton_Click);
+            // 
+            // MoviesInteligentSuggestionsbutton
+            // 
+            this.MoviesInteligentSuggestionsbutton.Location = new System.Drawing.Point(266, 136);
+            this.MoviesInteligentSuggestionsbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.MoviesInteligentSuggestionsbutton.Name = "MoviesInteligentSuggestionsbutton";
+            this.MoviesInteligentSuggestionsbutton.Size = new System.Drawing.Size(84, 40);
+            this.MoviesInteligentSuggestionsbutton.TabIndex = 1;
+            this.MoviesInteligentSuggestionsbutton.Text = "Sugerencias de Películas";
+            this.MoviesInteligentSuggestionsbutton.UseVisualStyleBackColor = true;
+            this.MoviesInteligentSuggestionsbutton.Click += new System.EventHandler(this.MoviesInteligentSuggestionsbutton_Click);
+            // 
+            // InteligentSuggestionslabel
+            // 
+            this.InteligentSuggestionslabel.AutoSize = true;
+            this.InteligentSuggestionslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InteligentSuggestionslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InteligentSuggestionslabel.Location = new System.Drawing.Point(143, 18);
+            this.InteligentSuggestionslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InteligentSuggestionslabel.Name = "InteligentSuggestionslabel";
+            this.InteligentSuggestionslabel.Size = new System.Drawing.Size(312, 31);
+            this.InteligentSuggestionslabel.TabIndex = 0;
+            this.InteligentSuggestionslabel.Text = "Sugerencias Inteligentes";
             // 
             // MoviesMainMenupanel
             // 
@@ -3161,380 +3495,14 @@
             this.MoviesMainMenulabel.TabIndex = 0;
             this.MoviesMainMenulabel.Text = "Películas";
             // 
-            // JoinPartypanel
-            // 
-            this.JoinPartypanel.Controls.Add(this.PartyMoviespanel);
-            this.JoinPartypanel.Controls.Add(this.PartySongspanel);
-            this.JoinPartypanel.Controls.Add(this.BackJoinPartybutton);
-            this.JoinPartypanel.Controls.Add(this.JoinPartySongsbutton);
-            this.JoinPartypanel.Controls.Add(this.JoinPartyMoviesbutton);
-            this.JoinPartypanel.Controls.Add(this.JoinPartylabel);
-            this.JoinPartypanel.Location = new System.Drawing.Point(104, 162);
-            this.JoinPartypanel.Margin = new System.Windows.Forms.Padding(2);
-            this.JoinPartypanel.Name = "JoinPartypanel";
-            this.JoinPartypanel.Size = new System.Drawing.Size(45, 31);
-            this.JoinPartypanel.TabIndex = 8;
-            // 
-            // PartyMoviespanel
-            // 
-            this.PartyMoviespanel.Controls.Add(this.Message2PartyMovieslabel);
-            this.PartyMoviespanel.Controls.Add(this.Message1PartyMovieslabel);
-            this.PartyMoviespanel.Controls.Add(this.BackPartyMoviesbutton);
-            this.PartyMoviespanel.Controls.Add(this.GoPartyMoviesbutton);
-            this.PartyMoviespanel.Controls.Add(this.InsertProfilePartyMoviescomboBox);
-            this.PartyMoviespanel.Controls.Add(this.InsertProfilePartyMovieslabel);
-            this.PartyMoviespanel.Controls.Add(this.PartyMovieslabel);
-            this.PartyMoviespanel.Location = new System.Drawing.Point(447, 34);
-            this.PartyMoviespanel.Margin = new System.Windows.Forms.Padding(2);
-            this.PartyMoviespanel.Name = "PartyMoviespanel";
-            this.PartyMoviespanel.Size = new System.Drawing.Size(106, 82);
-            this.PartyMoviespanel.TabIndex = 4;
-            // 
-            // Message2PartyMovieslabel
-            // 
-            this.Message2PartyMovieslabel.AutoSize = true;
-            this.Message2PartyMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.Message2PartyMovieslabel.Location = new System.Drawing.Point(106, 298);
-            this.Message2PartyMovieslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Message2PartyMovieslabel.Name = "Message2PartyMovieslabel";
-            this.Message2PartyMovieslabel.Size = new System.Drawing.Size(383, 13);
-            this.Message2PartyMovieslabel.TabIndex = 6;
-            this.Message2PartyMovieslabel.Text = "Para salir de la party, cierre la ventana donde se está reproduciendo la película" +
-    ".";
-            // 
-            // Message1PartyMovieslabel
-            // 
-            this.Message1PartyMovieslabel.AutoSize = true;
-            this.Message1PartyMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.Message1PartyMovieslabel.Location = new System.Drawing.Point(106, 256);
-            this.Message1PartyMovieslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Message1PartyMovieslabel.Name = "Message1PartyMovieslabel";
-            this.Message1PartyMovieslabel.Size = new System.Drawing.Size(301, 13);
-            this.Message1PartyMovieslabel.TabIndex = 5;
-            this.Message1PartyMovieslabel.Text = "En estos momentos, el perfil seleccionado está viendo: Tarzán";
-            // 
-            // BackPartyMoviesbutton
-            // 
-            this.BackPartyMoviesbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackPartyMoviesbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackPartyMoviesbutton.Name = "BackPartyMoviesbutton";
-            this.BackPartyMoviesbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackPartyMoviesbutton.TabIndex = 4;
-            this.BackPartyMoviesbutton.Text = "Volver";
-            this.BackPartyMoviesbutton.UseVisualStyleBackColor = true;
-            this.BackPartyMoviesbutton.Click += new System.EventHandler(this.BackPartyMoviesbutton_Click);
-            // 
-            // GoPartyMoviesbutton
-            // 
-            this.GoPartyMoviesbutton.Location = new System.Drawing.Point(312, 195);
-            this.GoPartyMoviesbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.GoPartyMoviesbutton.Name = "GoPartyMoviesbutton";
-            this.GoPartyMoviesbutton.Size = new System.Drawing.Size(56, 19);
-            this.GoPartyMoviesbutton.TabIndex = 3;
-            this.GoPartyMoviesbutton.Text = "Unirse";
-            this.GoPartyMoviesbutton.UseVisualStyleBackColor = true;
-            // 
-            // InsertProfilePartyMoviescomboBox
-            // 
-            this.InsertProfilePartyMoviescomboBox.FormattingEnabled = true;
-            this.InsertProfilePartyMoviescomboBox.Location = new System.Drawing.Point(300, 144);
-            this.InsertProfilePartyMoviescomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertProfilePartyMoviescomboBox.Name = "InsertProfilePartyMoviescomboBox";
-            this.InsertProfilePartyMoviescomboBox.Size = new System.Drawing.Size(92, 21);
-            this.InsertProfilePartyMoviescomboBox.TabIndex = 2;
-            // 
-            // InsertProfilePartyMovieslabel
-            // 
-            this.InsertProfilePartyMovieslabel.AutoSize = true;
-            this.InsertProfilePartyMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertProfilePartyMovieslabel.Location = new System.Drawing.Point(135, 146);
-            this.InsertProfilePartyMovieslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertProfilePartyMovieslabel.Name = "InsertProfilePartyMovieslabel";
-            this.InsertProfilePartyMovieslabel.Size = new System.Drawing.Size(135, 13);
-            this.InsertProfilePartyMovieslabel.TabIndex = 1;
-            this.InsertProfilePartyMovieslabel.Text = "¿A qué perfil quiere unirse?";
-            // 
-            // PartyMovieslabel
-            // 
-            this.PartyMovieslabel.AutoSize = true;
-            this.PartyMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PartyMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.PartyMovieslabel.Location = new System.Drawing.Point(199, 18);
-            this.PartyMovieslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.PartyMovieslabel.Name = "PartyMovieslabel";
-            this.PartyMovieslabel.Size = new System.Drawing.Size(194, 31);
-            this.PartyMovieslabel.TabIndex = 0;
-            this.PartyMovieslabel.Text = "Party Películas";
-            // 
-            // PartySongspanel
-            // 
-            this.PartySongspanel.Controls.Add(this.StopPartySongsbutton);
-            this.PartySongspanel.Controls.Add(this.Message2PartySongslabel);
-            this.PartySongspanel.Controls.Add(this.Message1PartySongslabel);
-            this.PartySongspanel.Controls.Add(this.BackPartySongsbutton);
-            this.PartySongspanel.Controls.Add(this.GoPartySongsbutton);
-            this.PartySongspanel.Controls.Add(this.InsertProfilePartySongscomboBox);
-            this.PartySongspanel.Controls.Add(this.InsertProfilePartySongslabel);
-            this.PartySongspanel.Controls.Add(this.PartySongslabel);
-            this.PartySongspanel.Location = new System.Drawing.Point(28, 30);
-            this.PartySongspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.PartySongspanel.Name = "PartySongspanel";
-            this.PartySongspanel.Size = new System.Drawing.Size(105, 71);
-            this.PartySongspanel.TabIndex = 7;
-            // 
-            // StopPartySongsbutton
-            // 
-            this.StopPartySongsbutton.Location = new System.Drawing.Point(312, 293);
-            this.StopPartySongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.StopPartySongsbutton.Name = "StopPartySongsbutton";
-            this.StopPartySongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.StopPartySongsbutton.TabIndex = 14;
-            this.StopPartySongsbutton.Text = "Stop";
-            this.StopPartySongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // Message2PartySongslabel
-            // 
-            this.Message2PartySongslabel.AutoSize = true;
-            this.Message2PartySongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.Message2PartySongslabel.Location = new System.Drawing.Point(106, 298);
-            this.Message2PartySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Message2PartySongslabel.Name = "Message2PartySongslabel";
-            this.Message2PartySongslabel.Size = new System.Drawing.Size(176, 13);
-            this.Message2PartySongslabel.TabIndex = 13;
-            this.Message2PartySongslabel.Text = "Para salir de la party, presione Stop.";
-            // 
-            // Message1PartySongslabel
-            // 
-            this.Message1PartySongslabel.AutoSize = true;
-            this.Message1PartySongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.Message1PartySongslabel.Location = new System.Drawing.Point(106, 256);
-            this.Message1PartySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Message1PartySongslabel.Name = "Message1PartySongslabel";
-            this.Message1PartySongslabel.Size = new System.Drawing.Size(383, 13);
-            this.Message1PartySongslabel.TabIndex = 12;
-            this.Message1PartySongslabel.Text = "En estos momentos, el perfil seleccionado está escuchando: Coronao de El Alfa";
-            // 
-            // BackPartySongsbutton
-            // 
-            this.BackPartySongsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackPartySongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackPartySongsbutton.Name = "BackPartySongsbutton";
-            this.BackPartySongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackPartySongsbutton.TabIndex = 11;
-            this.BackPartySongsbutton.Text = "Volver";
-            this.BackPartySongsbutton.UseVisualStyleBackColor = true;
-            this.BackPartySongsbutton.Click += new System.EventHandler(this.BackPartySongsbutton_Click);
-            // 
-            // GoPartySongsbutton
-            // 
-            this.GoPartySongsbutton.Location = new System.Drawing.Point(312, 195);
-            this.GoPartySongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.GoPartySongsbutton.Name = "GoPartySongsbutton";
-            this.GoPartySongsbutton.Size = new System.Drawing.Size(56, 19);
-            this.GoPartySongsbutton.TabIndex = 10;
-            this.GoPartySongsbutton.Text = "Unirse";
-            this.GoPartySongsbutton.UseVisualStyleBackColor = true;
-            // 
-            // InsertProfilePartySongscomboBox
-            // 
-            this.InsertProfilePartySongscomboBox.FormattingEnabled = true;
-            this.InsertProfilePartySongscomboBox.Location = new System.Drawing.Point(300, 144);
-            this.InsertProfilePartySongscomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertProfilePartySongscomboBox.Name = "InsertProfilePartySongscomboBox";
-            this.InsertProfilePartySongscomboBox.Size = new System.Drawing.Size(92, 21);
-            this.InsertProfilePartySongscomboBox.TabIndex = 9;
-            // 
-            // InsertProfilePartySongslabel
-            // 
-            this.InsertProfilePartySongslabel.AutoSize = true;
-            this.InsertProfilePartySongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertProfilePartySongslabel.Location = new System.Drawing.Point(135, 146);
-            this.InsertProfilePartySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertProfilePartySongslabel.Name = "InsertProfilePartySongslabel";
-            this.InsertProfilePartySongslabel.Size = new System.Drawing.Size(135, 13);
-            this.InsertProfilePartySongslabel.TabIndex = 8;
-            this.InsertProfilePartySongslabel.Text = "¿A qué perfil quiere unirse?";
-            // 
-            // PartySongslabel
-            // 
-            this.PartySongslabel.AutoSize = true;
-            this.PartySongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PartySongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.PartySongslabel.Location = new System.Drawing.Point(199, 18);
-            this.PartySongslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.PartySongslabel.Name = "PartySongslabel";
-            this.PartySongslabel.Size = new System.Drawing.Size(214, 31);
-            this.PartySongslabel.TabIndex = 7;
-            this.PartySongslabel.Text = "Party Canciones";
-            // 
-            // BackJoinPartybutton
-            // 
-            this.BackJoinPartybutton.Location = new System.Drawing.Point(535, 332);
-            this.BackJoinPartybutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackJoinPartybutton.Name = "BackJoinPartybutton";
-            this.BackJoinPartybutton.Size = new System.Drawing.Size(56, 19);
-            this.BackJoinPartybutton.TabIndex = 3;
-            this.BackJoinPartybutton.Text = "Volver";
-            this.BackJoinPartybutton.UseVisualStyleBackColor = true;
-            this.BackJoinPartybutton.Click += new System.EventHandler(this.BackJoinPartybutton_Click);
-            // 
-            // JoinPartySongsbutton
-            // 
-            this.JoinPartySongsbutton.Location = new System.Drawing.Point(310, 169);
-            this.JoinPartySongsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.JoinPartySongsbutton.Name = "JoinPartySongsbutton";
-            this.JoinPartySongsbutton.Size = new System.Drawing.Size(80, 29);
-            this.JoinPartySongsbutton.TabIndex = 2;
-            this.JoinPartySongsbutton.Text = "de Canciones";
-            this.JoinPartySongsbutton.UseVisualStyleBackColor = true;
-            this.JoinPartySongsbutton.Click += new System.EventHandler(this.JoinPartySongsbutton_Click);
-            // 
-            // JoinPartyMoviesbutton
-            // 
-            this.JoinPartyMoviesbutton.Location = new System.Drawing.Point(182, 169);
-            this.JoinPartyMoviesbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.JoinPartyMoviesbutton.Name = "JoinPartyMoviesbutton";
-            this.JoinPartyMoviesbutton.Size = new System.Drawing.Size(79, 25);
-            this.JoinPartyMoviesbutton.TabIndex = 1;
-            this.JoinPartyMoviesbutton.Text = "de Películas";
-            this.JoinPartyMoviesbutton.UseVisualStyleBackColor = true;
-            this.JoinPartyMoviesbutton.Click += new System.EventHandler(this.JoinPartyMoviesbutton_Click);
-            // 
-            // JoinPartylabel
-            // 
-            this.JoinPartylabel.AutoSize = true;
-            this.JoinPartylabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JoinPartylabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.JoinPartylabel.Location = new System.Drawing.Point(164, 18);
-            this.JoinPartylabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.JoinPartylabel.Name = "JoinPartylabel";
-            this.JoinPartylabel.Size = new System.Drawing.Size(246, 31);
-            this.JoinPartylabel.TabIndex = 0;
-            this.JoinPartylabel.Text = "Unirme a una Party";
-            // 
-            // InteligentSuggestionspanel
-            // 
-            this.InteligentSuggestionspanel.Controls.Add(this.SuggestionsMoviespanel);
-            this.InteligentSuggestionspanel.Controls.Add(this.BackInteligentSuggestionsbutton);
-            this.InteligentSuggestionspanel.Controls.Add(this.SongsInteligentSuggestionsbutton);
-            this.InteligentSuggestionspanel.Controls.Add(this.MoviesInteligentSuggestionsbutton);
-            this.InteligentSuggestionspanel.Controls.Add(this.InteligentSuggestionslabel);
-            this.InteligentSuggestionspanel.Location = new System.Drawing.Point(413, 172);
-            this.InteligentSuggestionspanel.Margin = new System.Windows.Forms.Padding(2);
-            this.InteligentSuggestionspanel.Name = "InteligentSuggestionspanel";
-            this.InteligentSuggestionspanel.Size = new System.Drawing.Size(63, 55);
-            this.InteligentSuggestionspanel.TabIndex = 19;
-            // 
-            // SuggestionsMoviespanel
-            // 
-            this.SuggestionsMoviespanel.Controls.Add(this.BackSuggestionsMoviesbutton);
-            this.SuggestionsMoviespanel.Controls.Add(this.SuggestionsMoviesrichTextBox);
-            this.SuggestionsMoviespanel.Controls.Add(this.SuggestionsMovieslabel2);
-            this.SuggestionsMoviespanel.Controls.Add(this.SuggestionsMovieslabel1);
-            this.SuggestionsMoviespanel.Location = new System.Drawing.Point(2, 298);
-            this.SuggestionsMoviespanel.Margin = new System.Windows.Forms.Padding(2);
-            this.SuggestionsMoviespanel.Name = "SuggestionsMoviespanel";
-            this.SuggestionsMoviespanel.Size = new System.Drawing.Size(61, 61);
-            this.SuggestionsMoviespanel.TabIndex = 4;
-            // 
-            // BackSuggestionsMoviesbutton
-            // 
-            this.BackSuggestionsMoviesbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackSuggestionsMoviesbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackSuggestionsMoviesbutton.Name = "BackSuggestionsMoviesbutton";
-            this.BackSuggestionsMoviesbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackSuggestionsMoviesbutton.TabIndex = 3;
-            this.BackSuggestionsMoviesbutton.Text = "Volver";
-            this.BackSuggestionsMoviesbutton.UseVisualStyleBackColor = true;
-            this.BackSuggestionsMoviesbutton.Click += new System.EventHandler(this.BackSuggestionsMoviesbutton_Click);
-            // 
-            // SuggestionsMoviesrichTextBox
-            // 
-            this.SuggestionsMoviesrichTextBox.Location = new System.Drawing.Point(218, 132);
-            this.SuggestionsMoviesrichTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.SuggestionsMoviesrichTextBox.Name = "SuggestionsMoviesrichTextBox";
-            this.SuggestionsMoviesrichTextBox.Size = new System.Drawing.Size(161, 100);
-            this.SuggestionsMoviesrichTextBox.TabIndex = 2;
-            this.SuggestionsMoviesrichTextBox.Text = "";
-            // 
-            // SuggestionsMovieslabel2
-            // 
-            this.SuggestionsMovieslabel2.AutoSize = true;
-            this.SuggestionsMovieslabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SuggestionsMovieslabel2.ForeColor = System.Drawing.SystemColors.Window;
-            this.SuggestionsMovieslabel2.Location = new System.Drawing.Point(44, 56);
-            this.SuggestionsMovieslabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SuggestionsMovieslabel2.Name = "SuggestionsMovieslabel2";
-            this.SuggestionsMovieslabel2.Size = new System.Drawing.Size(577, 17);
-            this.SuggestionsMovieslabel2.TabIndex = 1;
-            this.SuggestionsMovieslabel2.Text = "En base a lo que usted sigue y ha visto, esta es una lista de películas que podrí" +
-    "a gustarle:";
-            // 
-            // SuggestionsMovieslabel1
-            // 
-            this.SuggestionsMovieslabel1.AutoSize = true;
-            this.SuggestionsMovieslabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SuggestionsMovieslabel1.ForeColor = System.Drawing.SystemColors.Window;
-            this.SuggestionsMovieslabel1.Location = new System.Drawing.Point(145, 15);
-            this.SuggestionsMovieslabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SuggestionsMovieslabel1.Name = "SuggestionsMovieslabel1";
-            this.SuggestionsMovieslabel1.Size = new System.Drawing.Size(318, 31);
-            this.SuggestionsMovieslabel1.TabIndex = 0;
-            this.SuggestionsMovieslabel1.Text = "Sugerencias de Películas";
-            // 
-            // BackInteligentSuggestionsbutton
-            // 
-            this.BackInteligentSuggestionsbutton.Location = new System.Drawing.Point(535, 332);
-            this.BackInteligentSuggestionsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackInteligentSuggestionsbutton.Name = "BackInteligentSuggestionsbutton";
-            this.BackInteligentSuggestionsbutton.Size = new System.Drawing.Size(56, 19);
-            this.BackInteligentSuggestionsbutton.TabIndex = 3;
-            this.BackInteligentSuggestionsbutton.Text = "Volver";
-            this.BackInteligentSuggestionsbutton.UseVisualStyleBackColor = true;
-            this.BackInteligentSuggestionsbutton.Click += new System.EventHandler(this.BackInteligentSuggestionsbutton_Click);
-            // 
-            // SongsInteligentSuggestionsbutton
-            // 
-            this.SongsInteligentSuggestionsbutton.Location = new System.Drawing.Point(266, 190);
-            this.SongsInteligentSuggestionsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.SongsInteligentSuggestionsbutton.Name = "SongsInteligentSuggestionsbutton";
-            this.SongsInteligentSuggestionsbutton.Size = new System.Drawing.Size(84, 36);
-            this.SongsInteligentSuggestionsbutton.TabIndex = 2;
-            this.SongsInteligentSuggestionsbutton.Text = "Sugerencias de Canciones";
-            this.SongsInteligentSuggestionsbutton.UseVisualStyleBackColor = true;
-            this.SongsInteligentSuggestionsbutton.Click += new System.EventHandler(this.SongsInteligentSuggestionsbutton_Click);
-            // 
-            // MoviesInteligentSuggestionsbutton
-            // 
-            this.MoviesInteligentSuggestionsbutton.Location = new System.Drawing.Point(266, 136);
-            this.MoviesInteligentSuggestionsbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.MoviesInteligentSuggestionsbutton.Name = "MoviesInteligentSuggestionsbutton";
-            this.MoviesInteligentSuggestionsbutton.Size = new System.Drawing.Size(84, 40);
-            this.MoviesInteligentSuggestionsbutton.TabIndex = 1;
-            this.MoviesInteligentSuggestionsbutton.Text = "Sugerencias de Películas";
-            this.MoviesInteligentSuggestionsbutton.UseVisualStyleBackColor = true;
-            this.MoviesInteligentSuggestionsbutton.Click += new System.EventHandler(this.MoviesInteligentSuggestionsbutton_Click);
-            // 
-            // InteligentSuggestionslabel
-            // 
-            this.InteligentSuggestionslabel.AutoSize = true;
-            this.InteligentSuggestionslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InteligentSuggestionslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InteligentSuggestionslabel.Location = new System.Drawing.Point(143, 18);
-            this.InteligentSuggestionslabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InteligentSuggestionslabel.Name = "InteligentSuggestionslabel";
-            this.InteligentSuggestionslabel.Size = new System.Drawing.Size(312, 31);
-            this.InteligentSuggestionslabel.TabIndex = 0;
-            this.InteligentSuggestionslabel.Text = "Sugerencias Inteligentes";
-            // 
             // Followpanel
             // 
+            this.Followpanel.Controls.Add(this.FollowProfilepanel);
             this.Followpanel.Controls.Add(this.FollowActorpanel);
             this.Followpanel.Controls.Add(this.FollowArtistpanel);
             this.Followpanel.Controls.Add(this.FollowAlbumpanel);
             this.Followpanel.Controls.Add(this.FollowPlaylistMoviespanel);
             this.Followpanel.Controls.Add(this.FollowPlaylistSongspanel);
-            this.Followpanel.Controls.Add(this.FollowProfilepanel);
             this.Followpanel.Controls.Add(this.BackFollowbutton);
             this.Followpanel.Controls.Add(this.FollowAlbumFollowbutton);
             this.Followpanel.Controls.Add(this.FollowActorFollowbutton);
@@ -3543,11 +3511,92 @@
             this.Followpanel.Controls.Add(this.FollowPlaylistSongsFollowbutton);
             this.Followpanel.Controls.Add(this.FollowProfileFollowbutton);
             this.Followpanel.Controls.Add(this.Followlabel);
-            this.Followpanel.Location = new System.Drawing.Point(482, 122);
+            this.Followpanel.Location = new System.Drawing.Point(20, 19);
             this.Followpanel.Margin = new System.Windows.Forms.Padding(2);
             this.Followpanel.Name = "Followpanel";
-            this.Followpanel.Size = new System.Drawing.Size(42, 33);
+            this.Followpanel.Size = new System.Drawing.Size(24, 31);
             this.Followpanel.TabIndex = 8;
+            // 
+            // FollowProfilepanel
+            // 
+            this.FollowProfilepanel.Controls.Add(this.label1);
+            this.FollowProfilepanel.Controls.Add(this.BackFollowProfilebutton);
+            this.FollowProfilepanel.Controls.Add(this.FollowFollowProfilebutton);
+            this.FollowProfilepanel.Controls.Add(this.ProfileFollowedFollowProfilelabel);
+            this.FollowProfilepanel.Controls.Add(this.InsertProfileFollowProfilelabel);
+            this.FollowProfilepanel.Controls.Add(this.FollowProfilelabel);
+            this.FollowProfilepanel.Controls.Add(this.InsertProfileFollowProfilecomboBox);
+            this.FollowProfilepanel.Location = new System.Drawing.Point(18, 15);
+            this.FollowProfilepanel.Margin = new System.Windows.Forms.Padding(2);
+            this.FollowProfilepanel.Name = "FollowProfilepanel";
+            this.FollowProfilepanel.Size = new System.Drawing.Size(35, 31);
+            this.FollowProfilepanel.TabIndex = 1;
+            // 
+            // BackFollowProfilebutton
+            // 
+            this.BackFollowProfilebutton.Location = new System.Drawing.Point(535, 332);
+            this.BackFollowProfilebutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackFollowProfilebutton.Name = "BackFollowProfilebutton";
+            this.BackFollowProfilebutton.Size = new System.Drawing.Size(56, 19);
+            this.BackFollowProfilebutton.TabIndex = 6;
+            this.BackFollowProfilebutton.Text = "Volver";
+            this.BackFollowProfilebutton.UseVisualStyleBackColor = true;
+            this.BackFollowProfilebutton.Click += new System.EventHandler(this.BackFollowProfilebutton_Click);
+            // 
+            // FollowFollowProfilebutton
+            // 
+            this.FollowFollowProfilebutton.Location = new System.Drawing.Point(304, 195);
+            this.FollowFollowProfilebutton.Margin = new System.Windows.Forms.Padding(2);
+            this.FollowFollowProfilebutton.Name = "FollowFollowProfilebutton";
+            this.FollowFollowProfilebutton.Size = new System.Drawing.Size(56, 19);
+            this.FollowFollowProfilebutton.TabIndex = 5;
+            this.FollowFollowProfilebutton.Text = "Seguir";
+            this.FollowFollowProfilebutton.UseVisualStyleBackColor = true;
+            this.FollowFollowProfilebutton.Click += new System.EventHandler(this.FollowFollowProfilebutton_Click);
+            // 
+            // ProfileFollowedFollowProfilelabel
+            // 
+            this.ProfileFollowedFollowProfilelabel.AutoSize = true;
+            this.ProfileFollowedFollowProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.ProfileFollowedFollowProfilelabel.Location = new System.Drawing.Point(277, 225);
+            this.ProfileFollowedFollowProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ProfileFollowedFollowProfilelabel.Name = "ProfileFollowedFollowProfilelabel";
+            this.ProfileFollowedFollowProfilelabel.Size = new System.Drawing.Size(119, 13);
+            this.ProfileFollowedFollowProfilelabel.TabIndex = 3;
+            this.ProfileFollowedFollowProfilelabel.Text = "Perfil seguido con éxito.";
+            this.ProfileFollowedFollowProfilelabel.Visible = false;
+            // 
+            // InsertProfileFollowProfilelabel
+            // 
+            this.InsertProfileFollowProfilelabel.AutoSize = true;
+            this.InsertProfileFollowProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertProfileFollowProfilelabel.Location = new System.Drawing.Point(158, 158);
+            this.InsertProfileFollowProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.InsertProfileFollowProfilelabel.Name = "InsertProfileFollowProfilelabel";
+            this.InsertProfileFollowProfilelabel.Size = new System.Drawing.Size(127, 13);
+            this.InsertProfileFollowProfilelabel.TabIndex = 1;
+            this.InsertProfileFollowProfilelabel.Text = "¿Qué perfil desea seguir?";
+            // 
+            // FollowProfilelabel
+            // 
+            this.FollowProfilelabel.AutoSize = true;
+            this.FollowProfilelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FollowProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.FollowProfilelabel.Location = new System.Drawing.Point(208, 15);
+            this.FollowProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.FollowProfilelabel.Name = "FollowProfilelabel";
+            this.FollowProfilelabel.Size = new System.Drawing.Size(161, 31);
+            this.FollowProfilelabel.TabIndex = 0;
+            this.FollowProfilelabel.Text = "Seguir Perfil";
+            // 
+            // InsertProfileFollowProfilecomboBox
+            // 
+            this.InsertProfileFollowProfilecomboBox.FormattingEnabled = true;
+            this.InsertProfileFollowProfilecomboBox.Location = new System.Drawing.Point(297, 158);
+            this.InsertProfileFollowProfilecomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.InsertProfileFollowProfilecomboBox.Name = "InsertProfileFollowProfilecomboBox";
+            this.InsertProfileFollowProfilecomboBox.Size = new System.Drawing.Size(92, 21);
+            this.InsertProfileFollowProfilecomboBox.TabIndex = 8;
             // 
             // FollowActorpanel
             // 
@@ -3557,10 +3606,10 @@
             this.FollowActorpanel.Controls.Add(this.ActorFollowedFollowActorlabel);
             this.FollowActorpanel.Controls.Add(this.InsertActorFollowActorlabel);
             this.FollowActorpanel.Controls.Add(this.FollowActorlabel);
-            this.FollowActorpanel.Location = new System.Drawing.Point(26, 294);
+            this.FollowActorpanel.Location = new System.Drawing.Point(36, 306);
             this.FollowActorpanel.Margin = new System.Windows.Forms.Padding(2);
             this.FollowActorpanel.Name = "FollowActorpanel";
-            this.FollowActorpanel.Size = new System.Drawing.Size(60, 71);
+            this.FollowActorpanel.Size = new System.Drawing.Size(54, 40);
             this.FollowActorpanel.TabIndex = 19;
             // 
             // BackFollowActorbutton
@@ -3583,6 +3632,7 @@
             this.FollowFollowActorbutton.TabIndex = 17;
             this.FollowFollowActorbutton.Text = "Seguir";
             this.FollowFollowActorbutton.UseVisualStyleBackColor = true;
+            this.FollowFollowActorbutton.Click += new System.EventHandler(this.FollowFollowActorbutton_Click);
             // 
             // InsertActorFollowActorcomboBox
             // 
@@ -3603,6 +3653,7 @@
             this.ActorFollowedFollowActorlabel.Size = new System.Drawing.Size(121, 13);
             this.ActorFollowedFollowActorlabel.TabIndex = 15;
             this.ActorFollowedFollowActorlabel.Text = "Actor seguido con éxito.";
+            this.ActorFollowedFollowActorlabel.Visible = false;
             // 
             // InsertActorFollowActorlabel
             // 
@@ -3635,10 +3686,10 @@
             this.FollowArtistpanel.Controls.Add(this.ArtistFollowedFollowArtistlabel);
             this.FollowArtistpanel.Controls.Add(this.InsertArtistFollowArtistlabel);
             this.FollowArtistpanel.Controls.Add(this.FollowArtistlabel);
-            this.FollowArtistpanel.Location = new System.Drawing.Point(21, 158);
+            this.FollowArtistpanel.Location = new System.Drawing.Point(18, 151);
             this.FollowArtistpanel.Margin = new System.Windows.Forms.Padding(2);
             this.FollowArtistpanel.Name = "FollowArtistpanel";
-            this.FollowArtistpanel.Size = new System.Drawing.Size(53, 50);
+            this.FollowArtistpanel.Size = new System.Drawing.Size(72, 52);
             this.FollowArtistpanel.TabIndex = 13;
             // 
             // BackFollowArtistbutton
@@ -3661,6 +3712,7 @@
             this.FollowFollowArtistbutton.TabIndex = 17;
             this.FollowFollowArtistbutton.Text = "Seguir";
             this.FollowFollowArtistbutton.UseVisualStyleBackColor = true;
+            this.FollowFollowArtistbutton.Click += new System.EventHandler(this.FollowFollowArtistbutton_Click);
             // 
             // InsertArtistFollowArtistcomboBox
             // 
@@ -3681,6 +3733,7 @@
             this.ArtistFollowedFollowArtistlabel.Size = new System.Drawing.Size(125, 13);
             this.ArtistFollowedFollowArtistlabel.TabIndex = 15;
             this.ArtistFollowedFollowArtistlabel.Text = "Artista seguido con éxito.";
+            this.ArtistFollowedFollowArtistlabel.Visible = false;
             // 
             // InsertArtistFollowArtistlabel
             // 
@@ -3713,10 +3766,10 @@
             this.FollowAlbumpanel.Controls.Add(this.AlbumFollowedFollowAlbumlabel);
             this.FollowAlbumpanel.Controls.Add(this.InsertAlbumFollowAlbumlabel);
             this.FollowAlbumpanel.Controls.Add(this.FollowAlbumlabel);
-            this.FollowAlbumpanel.Location = new System.Drawing.Point(24, 223);
+            this.FollowAlbumpanel.Location = new System.Drawing.Point(38, 236);
             this.FollowAlbumpanel.Margin = new System.Windows.Forms.Padding(2);
             this.FollowAlbumpanel.Name = "FollowAlbumpanel";
-            this.FollowAlbumpanel.Size = new System.Drawing.Size(58, 55);
+            this.FollowAlbumpanel.Size = new System.Drawing.Size(52, 48);
             this.FollowAlbumpanel.TabIndex = 12;
             // 
             // BackFollowAlbumbutton
@@ -3739,6 +3792,7 @@
             this.FollowFollowAlbumbutton.TabIndex = 11;
             this.FollowFollowAlbumbutton.Text = "Seguir";
             this.FollowFollowAlbumbutton.UseVisualStyleBackColor = true;
+            this.FollowFollowAlbumbutton.Click += new System.EventHandler(this.FollowFollowAlbumbutton_Click);
             // 
             // InsertAlbumFollowAlbumcomboBox
             // 
@@ -3759,6 +3813,7 @@
             this.AlbumFollowedFollowAlbumlabel.Size = new System.Drawing.Size(125, 13);
             this.AlbumFollowedFollowAlbumlabel.TabIndex = 9;
             this.AlbumFollowedFollowAlbumlabel.Text = "Álbum seguido con éxito.";
+            this.AlbumFollowedFollowAlbumlabel.Visible = false;
             // 
             // InsertAlbumFollowAlbumlabel
             // 
@@ -3785,16 +3840,17 @@
             // 
             // FollowPlaylistMoviespanel
             // 
+            this.FollowPlaylistMoviespanel.Controls.Add(this.label3);
             this.FollowPlaylistMoviespanel.Controls.Add(this.FollowFollowPlaylistMoviesbutton);
             this.FollowPlaylistMoviespanel.Controls.Add(this.InsertPlaylistFollowPlaylistMoviescomboBox);
             this.FollowPlaylistMoviespanel.Controls.Add(this.PlaylistFollowedFollowPlaylistMovieslabel);
             this.FollowPlaylistMoviespanel.Controls.Add(this.InsertPlaylistFollowPlaylistMovieslabel);
             this.FollowPlaylistMoviespanel.Controls.Add(this.FollowPlaylistMovieslabel);
             this.FollowPlaylistMoviespanel.Controls.Add(this.BackFollowPlaylistMoviesbutton);
-            this.FollowPlaylistMoviespanel.Location = new System.Drawing.Point(539, 251);
+            this.FollowPlaylistMoviespanel.Location = new System.Drawing.Point(456, 137);
             this.FollowPlaylistMoviespanel.Margin = new System.Windows.Forms.Padding(2);
             this.FollowPlaylistMoviespanel.Name = "FollowPlaylistMoviespanel";
-            this.FollowPlaylistMoviespanel.Size = new System.Drawing.Size(52, 57);
+            this.FollowPlaylistMoviespanel.Size = new System.Drawing.Size(82, 85);
             this.FollowPlaylistMoviespanel.TabIndex = 7;
             // 
             // FollowFollowPlaylistMoviesbutton
@@ -3806,6 +3862,7 @@
             this.FollowFollowPlaylistMoviesbutton.TabIndex = 11;
             this.FollowFollowPlaylistMoviesbutton.Text = "Seguir";
             this.FollowFollowPlaylistMoviesbutton.UseVisualStyleBackColor = true;
+            this.FollowFollowPlaylistMoviesbutton.Click += new System.EventHandler(this.FollowFollowPlaylistMoviesbutton_Click);
             // 
             // InsertPlaylistFollowPlaylistMoviescomboBox
             // 
@@ -3826,6 +3883,7 @@
             this.PlaylistFollowedFollowPlaylistMovieslabel.Size = new System.Drawing.Size(128, 13);
             this.PlaylistFollowedFollowPlaylistMovieslabel.TabIndex = 9;
             this.PlaylistFollowedFollowPlaylistMovieslabel.Text = "Playlist seguida con éxito.";
+            this.PlaylistFollowedFollowPlaylistMovieslabel.Visible = false;
             // 
             // InsertPlaylistFollowPlaylistMovieslabel
             // 
@@ -3863,16 +3921,17 @@
             // 
             // FollowPlaylistSongspanel
             // 
+            this.FollowPlaylistSongspanel.Controls.Add(this.label2);
             this.FollowPlaylistSongspanel.Controls.Add(this.FollowFollowPlaylistSongsbutton);
             this.FollowPlaylistSongspanel.Controls.Add(this.BackFollowPlaylistSongsbutton);
             this.FollowPlaylistSongspanel.Controls.Add(this.InsertPlaylistFollowPlaylistSongscomboBox);
             this.FollowPlaylistSongspanel.Controls.Add(this.PlaylistFollowedFollowPlaylistSongslabel);
             this.FollowPlaylistSongspanel.Controls.Add(this.InsertPlaylistFollowPlaylistSongslabel);
             this.FollowPlaylistSongspanel.Controls.Add(this.FollowPlaylistSongslabel);
-            this.FollowPlaylistSongspanel.Location = new System.Drawing.Point(11, 75);
+            this.FollowPlaylistSongspanel.Location = new System.Drawing.Point(18, 64);
             this.FollowPlaylistSongspanel.Margin = new System.Windows.Forms.Padding(2);
             this.FollowPlaylistSongspanel.Name = "FollowPlaylistSongspanel";
-            this.FollowPlaylistSongspanel.Size = new System.Drawing.Size(73, 67);
+            this.FollowPlaylistSongspanel.Size = new System.Drawing.Size(74, 75);
             this.FollowPlaylistSongspanel.TabIndex = 7;
             // 
             // FollowFollowPlaylistSongsbutton
@@ -3884,6 +3943,7 @@
             this.FollowFollowPlaylistSongsbutton.TabIndex = 6;
             this.FollowFollowPlaylistSongsbutton.Text = "Seguir";
             this.FollowFollowPlaylistSongsbutton.UseVisualStyleBackColor = true;
+            this.FollowFollowPlaylistSongsbutton.Click += new System.EventHandler(this.FollowFollowPlaylistSongsbutton_Click);
             // 
             // BackFollowPlaylistSongsbutton
             // 
@@ -3915,6 +3975,7 @@
             this.PlaylistFollowedFollowPlaylistSongslabel.Size = new System.Drawing.Size(128, 13);
             this.PlaylistFollowedFollowPlaylistSongslabel.TabIndex = 2;
             this.PlaylistFollowedFollowPlaylistSongslabel.Text = "Playlist seguida con éxito.";
+            this.PlaylistFollowedFollowPlaylistSongslabel.Visible = false;
             // 
             // InsertPlaylistFollowPlaylistSongslabel
             // 
@@ -3938,96 +3999,6 @@
             this.FollowPlaylistSongslabel.Size = new System.Drawing.Size(359, 31);
             this.FollowPlaylistSongslabel.TabIndex = 0;
             this.FollowPlaylistSongslabel.Text = "Seguir Playlist de Canciones";
-            // 
-            // FollowProfilepanel
-            // 
-            this.FollowProfilepanel.Controls.Add(this.BackFollowProfilebutton);
-            this.FollowProfilepanel.Controls.Add(this.FollowFollowProfilebutton);
-            this.FollowProfilepanel.Controls.Add(this.ProfileFollowedFollowProfilelabel);
-            this.FollowProfilepanel.Controls.Add(this.FailedFollowFollowProfilelabel);
-            this.FollowProfilepanel.Controls.Add(this.InsertProfileFollowProfilelabel);
-            this.FollowProfilepanel.Controls.Add(this.FollowProfilelabel);
-            this.FollowProfilepanel.Controls.Add(this.InsertProfileFollowProfilecomboBox);
-            this.FollowProfilepanel.Location = new System.Drawing.Point(13, 0);
-            this.FollowProfilepanel.Margin = new System.Windows.Forms.Padding(2);
-            this.FollowProfilepanel.Name = "FollowProfilepanel";
-            this.FollowProfilepanel.Size = new System.Drawing.Size(75, 60);
-            this.FollowProfilepanel.TabIndex = 1;
-            // 
-            // BackFollowProfilebutton
-            // 
-            this.BackFollowProfilebutton.Location = new System.Drawing.Point(535, 332);
-            this.BackFollowProfilebutton.Margin = new System.Windows.Forms.Padding(2);
-            this.BackFollowProfilebutton.Name = "BackFollowProfilebutton";
-            this.BackFollowProfilebutton.Size = new System.Drawing.Size(56, 19);
-            this.BackFollowProfilebutton.TabIndex = 6;
-            this.BackFollowProfilebutton.Text = "Volver";
-            this.BackFollowProfilebutton.UseVisualStyleBackColor = true;
-            this.BackFollowProfilebutton.Click += new System.EventHandler(this.BackFollowProfilebutton_Click);
-            // 
-            // FollowFollowProfilebutton
-            // 
-            this.FollowFollowProfilebutton.Location = new System.Drawing.Point(304, 195);
-            this.FollowFollowProfilebutton.Margin = new System.Windows.Forms.Padding(2);
-            this.FollowFollowProfilebutton.Name = "FollowFollowProfilebutton";
-            this.FollowFollowProfilebutton.Size = new System.Drawing.Size(56, 19);
-            this.FollowFollowProfilebutton.TabIndex = 5;
-            this.FollowFollowProfilebutton.Text = "Seguir";
-            this.FollowFollowProfilebutton.UseVisualStyleBackColor = true;
-            // 
-            // ProfileFollowedFollowProfilelabel
-            // 
-            this.ProfileFollowedFollowProfilelabel.AutoSize = true;
-            this.ProfileFollowedFollowProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.ProfileFollowedFollowProfilelabel.Location = new System.Drawing.Point(277, 225);
-            this.ProfileFollowedFollowProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ProfileFollowedFollowProfilelabel.Name = "ProfileFollowedFollowProfilelabel";
-            this.ProfileFollowedFollowProfilelabel.Size = new System.Drawing.Size(119, 13);
-            this.ProfileFollowedFollowProfilelabel.TabIndex = 3;
-            this.ProfileFollowedFollowProfilelabel.Text = "Perfil seguido con éxito.";
-            // 
-            // FailedFollowFollowProfilelabel
-            // 
-            this.FailedFollowFollowProfilelabel.AutoSize = true;
-            this.FailedFollowFollowProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.FailedFollowFollowProfilelabel.Location = new System.Drawing.Point(266, 244);
-            this.FailedFollowFollowProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.FailedFollowFollowProfilelabel.Name = "FailedFollowFollowProfilelabel";
-            this.FailedFollowFollowProfilelabel.Size = new System.Drawing.Size(138, 13);
-            this.FailedFollowFollowProfilelabel.TabIndex = 2;
-            this.FailedFollowFollowProfilelabel.Text = "El perfil ingresado no existe.";
-            // 
-            // InsertProfileFollowProfilelabel
-            // 
-            this.InsertProfileFollowProfilelabel.AutoSize = true;
-            this.InsertProfileFollowProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertProfileFollowProfilelabel.Location = new System.Drawing.Point(158, 158);
-            this.InsertProfileFollowProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.InsertProfileFollowProfilelabel.Name = "InsertProfileFollowProfilelabel";
-            this.InsertProfileFollowProfilelabel.Size = new System.Drawing.Size(127, 13);
-            this.InsertProfileFollowProfilelabel.TabIndex = 1;
-            this.InsertProfileFollowProfilelabel.Text = "¿Qué perfil desea seguir?";
-            // 
-            // FollowProfilelabel
-            // 
-            this.FollowProfilelabel.AutoSize = true;
-            this.FollowProfilelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FollowProfilelabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.FollowProfilelabel.Location = new System.Drawing.Point(208, 15);
-            this.FollowProfilelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.FollowProfilelabel.Name = "FollowProfilelabel";
-            this.FollowProfilelabel.Size = new System.Drawing.Size(161, 31);
-            this.FollowProfilelabel.TabIndex = 0;
-            this.FollowProfilelabel.Text = "Seguir Perfil";
-            // 
-            // InsertProfileFollowProfilecomboBox
-            // 
-            this.InsertProfileFollowProfilecomboBox.FormattingEnabled = true;
-            this.InsertProfileFollowProfilecomboBox.Location = new System.Drawing.Point(297, 158);
-            this.InsertProfileFollowProfilecomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.InsertProfileFollowProfilecomboBox.Name = "InsertProfileFollowProfilecomboBox";
-            this.InsertProfileFollowProfilecomboBox.Size = new System.Drawing.Size(92, 21);
-            this.InsertProfileFollowProfilecomboBox.TabIndex = 8;
             // 
             // BackFollowbutton
             // 
@@ -4208,6 +4179,37 @@
             this.MainMenulabel1.TabIndex = 0;
             this.MainMenulabel1.Text = "Bienvenido";
             // 
+            // LoginSesionpanel
+            // 
+            this.LoginSesionpanel.Controls.Add(this.LoginSesionProfilepanel);
+            this.LoginSesionpanel.Controls.Add(this.FailedLoginSesionlabel);
+            this.LoginSesionpanel.Controls.Add(this.BackLoginSesionbutton);
+            this.LoginSesionpanel.Controls.Add(this.LoginSesionbutton);
+            this.LoginSesionpanel.Controls.Add(this.InsertPasswordLoginSesiontextBox);
+            this.LoginSesionpanel.Controls.Add(this.InsertMailLoginSesiontextBox);
+            this.LoginSesionpanel.Controls.Add(this.InsertPasswordLoginSesionlabel);
+            this.LoginSesionpanel.Controls.Add(this.InsertMailLoginSesionlabel);
+            this.LoginSesionpanel.Controls.Add(this.LoginSesionlabel);
+            this.LoginSesionpanel.Location = new System.Drawing.Point(584, 405);
+            this.LoginSesionpanel.Margin = new System.Windows.Forms.Padding(2);
+            this.LoginSesionpanel.Name = "LoginSesionpanel";
+            this.LoginSesionpanel.Size = new System.Drawing.Size(45, 29);
+            this.LoginSesionpanel.TabIndex = 4;
+            this.LoginSesionpanel.Visible = false;
+            // 
+            // LoginSesionProfilepanel
+            // 
+            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilebutton);
+            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilelabel2);
+            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionProfilelabel1);
+            this.LoginSesionProfilepanel.Controls.Add(this.LoginSesionInsertProfilecomboBox);
+            this.LoginSesionProfilepanel.Controls.Add(this.BackLoginSesionProfilebutton);
+            this.LoginSesionProfilepanel.Location = new System.Drawing.Point(494, 318);
+            this.LoginSesionProfilepanel.Margin = new System.Windows.Forms.Padding(2);
+            this.LoginSesionProfilepanel.Name = "LoginSesionProfilepanel";
+            this.LoginSesionProfilepanel.Size = new System.Drawing.Size(96, 43);
+            this.LoginSesionProfilepanel.TabIndex = 9;
+            // 
             // LoginSesionProfilebutton
             // 
             this.LoginSesionProfilebutton.Location = new System.Drawing.Point(268, 197);
@@ -4251,6 +4253,17 @@
             this.LoginSesionInsertProfilecomboBox.Size = new System.Drawing.Size(121, 21);
             this.LoginSesionInsertProfilecomboBox.TabIndex = 5;
             // 
+            // BackLoginSesionProfilebutton
+            // 
+            this.BackLoginSesionProfilebutton.Location = new System.Drawing.Point(535, 337);
+            this.BackLoginSesionProfilebutton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackLoginSesionProfilebutton.Name = "BackLoginSesionProfilebutton";
+            this.BackLoginSesionProfilebutton.Size = new System.Drawing.Size(56, 19);
+            this.BackLoginSesionProfilebutton.TabIndex = 3;
+            this.BackLoginSesionProfilebutton.Text = "Volver";
+            this.BackLoginSesionProfilebutton.UseVisualStyleBackColor = true;
+            this.BackLoginSesionProfilebutton.Click += new System.EventHandler(this.BackLoginSesionProfilebutton_Click);
+            // 
             // FailedLoginSesionlabel
             // 
             this.FailedLoginSesionlabel.AutoSize = true;
@@ -4265,7 +4278,7 @@
             // 
             // BackLoginSesionbutton
             // 
-            this.BackLoginSesionbutton.Location = new System.Drawing.Point(535, 337);
+            this.BackLoginSesionbutton.Location = new System.Drawing.Point(510, 388);
             this.BackLoginSesionbutton.Margin = new System.Windows.Forms.Padding(2);
             this.BackLoginSesionbutton.Name = "BackLoginSesionbutton";
             this.BackLoginSesionbutton.Size = new System.Drawing.Size(56, 19);
@@ -4362,7 +4375,7 @@
             // Loginbutton
             // 
             this.Loginbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loginbutton.Location = new System.Drawing.Point(186, 117);
+            this.Loginbutton.Location = new System.Drawing.Point(192, 128);
             this.Loginbutton.Margin = new System.Windows.Forms.Padding(2);
             this.Loginbutton.Name = "Loginbutton";
             this.Loginbutton.Size = new System.Drawing.Size(179, 59);
@@ -4398,7 +4411,7 @@
             this.ADCpanel.Location = new System.Drawing.Point(37, 33);
             this.ADCpanel.Margin = new System.Windows.Forms.Padding(2);
             this.ADCpanel.Name = "ADCpanel";
-            this.ADCpanel.Size = new System.Drawing.Size(52, 43);
+            this.ADCpanel.Size = new System.Drawing.Size(42, 60);
             this.ADCpanel.TabIndex = 5;
             // 
             // SeeProfilespanel
@@ -4969,6 +4982,36 @@
             this.ADClabel.TabIndex = 0;
             this.ADClabel.Text = "Administración de Cuentas";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(153, 250);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(287, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Si no sale nadie es porque no hay ningun otro perfil creado.";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.Window;
+            this.label2.Location = new System.Drawing.Point(189, 251);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(235, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Si no sale nada, aun no se crea ninguna playlist.";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.Window;
+            this.label3.Location = new System.Drawing.Point(224, 248);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(253, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Si no sale nada, aun no hay ninguna playlist creada.";
+            // 
             // SpotflixForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4980,12 +5023,18 @@
             this.Text = "Spotflix";
             this.WelcomePanel.ResumeLayout(false);
             this.WelcomePanel.PerformLayout();
-            this.LoginSesionpanel.ResumeLayout(false);
-            this.LoginSesionpanel.PerformLayout();
-            this.LoginSesionProfilepanel.ResumeLayout(false);
-            this.LoginSesionProfilepanel.PerformLayout();
             this.MainMenupanel.ResumeLayout(false);
             this.MainMenupanel.PerformLayout();
+            this.JoinPartypanel.ResumeLayout(false);
+            this.JoinPartypanel.PerformLayout();
+            this.PartyMoviespanel.ResumeLayout(false);
+            this.PartyMoviespanel.PerformLayout();
+            this.PartySongspanel.ResumeLayout(false);
+            this.PartySongspanel.PerformLayout();
+            this.InteligentSuggestionspanel.ResumeLayout(false);
+            this.InteligentSuggestionspanel.PerformLayout();
+            this.SuggestionsMoviespanel.ResumeLayout(false);
+            this.SuggestionsMoviespanel.PerformLayout();
             this.MoviesMainMenupanel.ResumeLayout(false);
             this.MoviesMainMenupanel.PerformLayout();
             this.Songspanel.ResumeLayout(false);
@@ -5046,18 +5095,10 @@
             this.QualifyMoviespanel.PerformLayout();
             this.PlayMoviespanel.ResumeLayout(false);
             this.PlayMoviespanel.PerformLayout();
-            this.JoinPartypanel.ResumeLayout(false);
-            this.JoinPartypanel.PerformLayout();
-            this.PartyMoviespanel.ResumeLayout(false);
-            this.PartyMoviespanel.PerformLayout();
-            this.PartySongspanel.ResumeLayout(false);
-            this.PartySongspanel.PerformLayout();
-            this.InteligentSuggestionspanel.ResumeLayout(false);
-            this.InteligentSuggestionspanel.PerformLayout();
-            this.SuggestionsMoviespanel.ResumeLayout(false);
-            this.SuggestionsMoviespanel.PerformLayout();
             this.Followpanel.ResumeLayout(false);
             this.Followpanel.PerformLayout();
+            this.FollowProfilepanel.ResumeLayout(false);
+            this.FollowProfilepanel.PerformLayout();
             this.FollowActorpanel.ResumeLayout(false);
             this.FollowActorpanel.PerformLayout();
             this.FollowArtistpanel.ResumeLayout(false);
@@ -5068,8 +5109,10 @@
             this.FollowPlaylistMoviespanel.PerformLayout();
             this.FollowPlaylistSongspanel.ResumeLayout(false);
             this.FollowPlaylistSongspanel.PerformLayout();
-            this.FollowProfilepanel.ResumeLayout(false);
-            this.FollowProfilepanel.PerformLayout();
+            this.LoginSesionpanel.ResumeLayout(false);
+            this.LoginSesionpanel.PerformLayout();
+            this.LoginSesionProfilepanel.ResumeLayout(false);
+            this.LoginSesionProfilepanel.PerformLayout();
             this.ADCpanel.ResumeLayout(false);
             this.ADCpanel.PerformLayout();
             this.SeeProfilespanel.ResumeLayout(false);
@@ -5175,7 +5218,6 @@
         private System.Windows.Forms.Button BackFollowProfilebutton;
         private System.Windows.Forms.Button FollowFollowProfilebutton;
         private System.Windows.Forms.Label ProfileFollowedFollowProfilelabel;
-        private System.Windows.Forms.Label FailedFollowFollowProfilelabel;
         private System.Windows.Forms.Label InsertProfileFollowProfilelabel;
         private System.Windows.Forms.Label FollowProfilelabel;
         private System.Windows.Forms.Panel FollowPlaylistSongspanel;
@@ -5479,6 +5521,9 @@
         private System.Windows.Forms.ComboBox InsertSongNameQualifySongscomboBox;
         private System.Windows.Forms.ComboBox InsertSongNameAddToPlaylistSongscomboBox;
         private System.Windows.Forms.ComboBox InsertPlaylistNameAddToPlaylistSongscomboBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
 

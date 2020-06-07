@@ -62,7 +62,7 @@ namespace Interfaz_Gráfica_Entrega_3
         List<Actor> actorsL = new List<Actor>();
         List<Actor> actorsA = new List<Actor>();
         List<Actor> actorsB = new List<Actor>();
-        
+        string prf = "";
         public SpotflixForm()
         {
 
@@ -162,6 +162,7 @@ namespace Interfaz_Gráfica_Entrega_3
                 MainMenupanel.Show();
                 MainMenupanel.BringToFront();
                 MainMenupanel.Dock = DockStyle.Fill;
+                MainMenulabel1.Text = "Bienvenido Admin!";
             }
         }
 
@@ -223,7 +224,8 @@ namespace Interfaz_Gráfica_Entrega_3
                     {
                         if (profile3.GetUserName() == asw5)
                         {
-                            MainMenulabel1.Text += " " + asw5;
+                            prf = asw5;
+                            MainMenulabel1.Text = "Bienvenido " + asw5;
                             break;
                         }
                     }
@@ -286,6 +288,7 @@ namespace Interfaz_Gráfica_Entrega_3
                 FollowProfilepanel.Show();
                 FollowProfilepanel.BringToFront();
                 FollowProfilepanel.Dock = DockStyle.Fill;
+                InsertProfileFollowProfilecomboBox.Items.Remove(prf);
             }
         }
 
@@ -343,6 +346,9 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Seguir Artista")
             {
+                InsertArtistFollowArtistcomboBox.Items.Add("Soda stereo");
+                InsertArtistFollowArtistcomboBox.Items.Add("Wos");
+                InsertArtistFollowArtistcomboBox.Items.Add("The Beatles");
                 FollowArtistpanel.Show();
                 FollowArtistpanel.BringToFront();
                 FollowArtistpanel.Dock = DockStyle.Fill;
@@ -363,6 +369,11 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Seguir Actor")
             {
+                InsertActorFollowActorcomboBox.Items.Add("Donald Glover");
+                InsertActorFollowActorcomboBox.Items.Add("Beyonce");
+                InsertActorFollowActorcomboBox.Items.Add("Scarlett Johannson");
+                InsertActorFollowActorcomboBox.Items.Add("Robert Downley Jr");
+                InsertActorFollowActorcomboBox.Items.Add("Florence Pugh");
                 FollowActorpanel.Show();
                 FollowActorpanel.BringToFront();
                 FollowActorpanel.Dock = DockStyle.Fill;
@@ -383,6 +394,9 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Seguir Álbum")
             {
+                InsertAlbumFollowAlbumcomboBox.Items.Add("Doble Vida");
+                InsertAlbumFollowAlbumcomboBox.Items.Add("Caravana");
+                InsertAlbumFollowAlbumcomboBox.Items.Add("Let It Be");
                 FollowAlbumpanel.Show();
                 FollowAlbumpanel.BringToFront();
                 FollowAlbumpanel.Dock = DockStyle.Fill;
@@ -423,6 +437,17 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Sugerencias de Películas")
             {
+                foreach (KeyValuePair<string, List<Profile>> h in Users)
+                {
+                    foreach (Profile profile3 in h.Value)
+                    {
+                        if (profile3.GetUserName() == prf)
+                        {
+                            SuggestionsMoviesrichTextBox.Text += profile.SuggestionMovie();
+                            break;
+                        }
+                    }
+                }
                 SuggestionsMoviespanel.Show();
                 SuggestionsMoviespanel.BringToFront();
                 SuggestionsMoviespanel.Dock = DockStyle.Fill;
@@ -443,6 +468,17 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Sugerencias de Canciones")
             {
+                foreach (KeyValuePair<string, List<Profile>> h in Users)
+                {
+                    foreach (Profile profile3 in h.Value)
+                    {
+                        if (profile3.GetUserName() == prf)
+                        {
+                            SuggestionsSongsrichTextBox.Text += profile3.SuggestionSong();
+                            break;
+                        }
+                    }
+                }
                 SuggestionsSongspanel.Show();
                 SuggestionsSongspanel.BringToFront();
                 SuggestionsSongspanel.Dock = DockStyle.Fill;
@@ -483,6 +519,13 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "de Películas")
             {
+                List<string> nombresprofiles = new List<string>();
+                foreach (Profile f in profile.GetFollowProfiles())
+                {
+
+                    nombresprofiles.Add(f.GetUserName());
+                    InsertProfilePartyMoviescomboBox.Items.Add(f.GetUserName());
+                }
                 PartyMoviespanel.Show();
                 PartyMoviespanel.BringToFront();
                 PartyMoviespanel.Dock = DockStyle.Fill;
@@ -503,6 +546,13 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "de Canciones")
             {
+                List<string> nombresprofiles = new List<string>();
+                foreach (Profile f in profile.GetFollowProfiles())
+                {
+                    
+                    nombresprofiles.Add(f.GetUserName());
+                    InsertProfilePartySongscomboBox.Items.Add(f.GetUserName());
+                }
                 PartySongspanel.Show();
                 PartySongspanel.BringToFront();
                 PartySongspanel.Dock = DockStyle.Fill;
@@ -1422,6 +1472,7 @@ namespace Interfaz_Gráfica_Entrega_3
                     List<Profile> ListOfProfiles = new List<Profile>();
                     ListOfProfiles.Add(profile2);
                     ProfileCreatedlabel.Show();
+                    InsertProfileFollowProfilecomboBox.Items.Add(profile);
                     Users.Add(username1, ListOfProfiles);
                 }
                 if (n > 0)
@@ -1433,6 +1484,7 @@ namespace Interfaz_Gráfica_Entrega_3
                             if (a.Key == username1)
                             {
                                 Profile profile1 = new Profile(profile, privacy);
+                                InsertProfileFollowProfilecomboBox.Items.Add(profile);
                                 a.Value.Add(profile1);
                             }
                         }
@@ -1444,6 +1496,7 @@ namespace Interfaz_Gráfica_Entrega_3
                         List<Profile> ListOfProfiles = new List<Profile>();
                         ListOfProfiles.Add(profile2);
                         ProfileCreatedlabel.Show();
+                        InsertProfileFollowProfilecomboBox.Items.Add(profile);
                         Users.Add(username1, ListOfProfiles);
                     }
                 }
@@ -1526,6 +1579,7 @@ namespace Interfaz_Gráfica_Entrega_3
                 PlaylistSongs playlist = new PlaylistSongs(PLname, PLprivacy, PLsongs);
                 l_pl.Add(playlist);
                 MessageCreatePlaylistSongslabel.Show();
+                InsertPlaylistFollowPlaylistSongscomboBox.Items.Add(PLname);
             }
         }
 
@@ -1956,6 +2010,7 @@ namespace Interfaz_Gráfica_Entrega_3
                 PlaylistMovies playlist = new PlaylistMovies(PLname, PLprivacy, PLmovie);
                 l_plm.Add(playlist);
                 MessageCreatePlaylistMovieslabel.Show();
+                InsertPlaylistFollowPlaylistMoviescomboBox.Items.Add(PLname);
             }
         }
 
@@ -2205,6 +2260,147 @@ namespace Interfaz_Gráfica_Entrega_3
                         
                     }
                 }
+            }
+        }
+
+        private void FollowFollowProfilebutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if(b.Text == "Seguir")
+            {
+                string perfil = InsertProfileFollowProfilecomboBox.Text;
+                foreach (KeyValuePair<string, List<Profile>> h in Users)
+                {
+                    foreach (Profile l in h.Value)
+                    {
+                        if (l.GetUserName() == perfil)
+                        {
+                            profile.AddProfile(l);
+                            ProfileFollowedFollowProfilelabel.Show();
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void FollowFollowPlaylistSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if(b.Text == "Seguir")
+            {
+                string playlistsong = InsertPlaylistFollowPlaylistSongscomboBox.Text;
+                foreach (PlaylistSongs playlistSongs in l_pl)
+                {
+                    if (playlistSongs.getName() == playlistsong)
+                    {
+                        profile.AddPlaylistSong(playlistSongs);
+                        PlaylistFollowedFollowPlaylistSongslabel.Show();
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void FollowFollowPlaylistMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if(b.Text == "Seguir")
+            {
+                string playlistmovie = InsertPlaylistFollowPlaylistMoviescomboBox.Text;
+                foreach (PlaylistMovies playlistMovies in l_plm)
+                {
+                    if (playlistMovies.GetName() == playlistmovie)
+                    {
+                        profile.AddPlaylistMovie(playlistMovies);
+                        PlaylistFollowedFollowPlaylistMovieslabel.Show();
+                        break;
+                    }
+
+                }
+            }
+        }
+
+        private void FollowFollowArtistbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Seguir")
+            {
+                string artist = InsertArtistFollowArtistcomboBox.Text;
+                foreach (Artist artist1 in l_artist)
+                {
+                    if (artist1.getName() == artist)
+                    {
+                        profile.AddArtist(artist1);
+                        ArtistFollowedFollowArtistlabel.Show();
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void FollowFollowActorbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Seguir")
+            {
+                string actor = InsertActorFollowActorcomboBox.Text;
+                foreach (Actor actor2 in actors)
+                {
+                    if (actor2.GetName() == actor)
+                    {
+                        profile.AddActor(actor2);
+                        ActorFollowedFollowActorlabel.Show();
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void FollowFollowAlbumbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Seguir")
+            {
+                string album = InsertAlbumFollowAlbumcomboBox.Text;
+                foreach (Album album1 in l_album)
+                {
+                    if (album1.getName() == album)
+                    {
+                        profile.AddAlbum(album1);
+                        AlbumFollowedFollowAlbumlabel.Show();
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void GoPartySongsbutton_Click(object sender, EventArgs e)
+        {
+
+            Button b = (Button)sender;
+            if (b.Text == "Unirse")
+            {
+                Message1PartySongslabel.Show();
+                Message2PartySongslabel.Show();
+                StopPartySongsbutton.Show();
+                profile.JoinPartySong("El Alfa El Jefe x Lil Pump - Coronao Now (Video Oficial).wav");
+                if (b.Text == "stop")
+                {
+                    WindowsMediaPlayer wmp = new WindowsMediaPlayer();
+                    wmp.controls.pause();
+                }
+            }
+        }
+
+        private void GoPartyMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Unirse")
+            {
+                Message1PartyMovieslabel.Show();
+                Message2PartyMovieslabel.Show();
+                profile.JoinPartyMovie("tarzan-trailer");
             }
         }
     }
