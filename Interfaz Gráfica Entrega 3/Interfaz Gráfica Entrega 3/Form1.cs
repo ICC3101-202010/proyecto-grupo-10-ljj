@@ -2403,6 +2403,16 @@ namespace Interfaz_Gráfica_Entrega_3
                 profile.JoinPartyMovie("tarzan-trailer");
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void QualificationMoviespanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 
