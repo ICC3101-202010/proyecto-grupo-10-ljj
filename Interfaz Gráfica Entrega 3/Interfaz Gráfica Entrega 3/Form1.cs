@@ -2454,6 +2454,7 @@ namespace Interfaz_Gráfica_Entrega_3
                 profile.JoinPartyMovie("tarzan-trailer");
             }
         }
+<<<<<<< HEAD
 	    private void button4_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
@@ -2871,6 +2872,18 @@ namespace Interfaz_Gráfica_Entrega_3
         }
 
         
+=======
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void QualificationMoviespanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+>>>>>>> aed2edbefcd342b26fc5d56a8f9be22b7c8c64c0
     }
 }
 
