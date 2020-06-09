@@ -22,9 +22,9 @@ namespace Interfaz_Gráfica_Entrega_3
         List<Songs> l_songs = new List<Songs>();
         List<PlaylistSongs> l_pl = new List<PlaylistSongs>();
         // CANCIONES!!!
-        Songs CiudadDeLaFuria = new Songs("Ciudad de la furia", "Soda stereo", "Gustavo Cerati", "Rock", "desconocido", 1988, "letra jeje", "5:46", true, false);
-        Songs MelonVino = new Songs("Melon vino", "Wos", "Wos", "Rap", "desconocido", 2019, "letra jeej", "3:03", true, false);
-        Songs LetItBe = new Songs("Let It Be", "The Beatles", "Paul McCartney", "Rock", "desconocido", 1970, "letra jeje", "4:04", false, false);
+        Songs CiudadDeLaFuria = new Songs("Ciudad de la furia", "Soda stereo", "Gustavo Cerati", "Rock", "desconocido", 1988, "Me verás volarPor la ciudad de la furiaDonde nadie sabe de míY yo soy parte de todosNada cambiaráCon un aviso de curvaEn sus caras veo el temorYa no hay fábulas en la ciudad de la furiaMe verás caerComo un ave de presaMe verás caerSobre terrazas desiertasTe desnudaréPor las calles azulesMe refugiaréAntes que todos despierten", "5:46", true, false);
+        Songs MelonVino = new Songs("Melon vino", "Wos", "Wos", "Rap", "desconocido", 2019, "Estoy sentado esperando que se pase el ratoEstas palabras se parecen a mi autorretratoEy, hoy ya no quiero hablar Si las sensaciones que en serio cambiaron mi vidaNo creo que las pueda explicarVoy a amarte y a tocarteSolo te pido que no me apuñales cuando abra mi cuerpo pa' darte un lugarY el mar se va con mis secretos", "3:03", true, false);
+        Songs LetItBe = new Songs("Let It Be", "The Beatles", "Paul McCartney", "Rock", "desconocido", 1970, "When I find myself in times of troubleMother Mary comes to meSpeaking words of wisdom, let it beAnd in my hour of darknessShe is standing right in front of meSpeaking words of wisdom, let it beLet it be, let it beLet it be, let it beWhisper words of wisdom, let it be", "4:04", false, false);
         // ALBUMS!!!
         Album DobleVida = new Album("Doble vida", "Soda stereo", 1988);
         Album Caravana = new Album("Caravana", "Wos", 2019);
@@ -1419,6 +1419,17 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Modificar Perfil")
             {
+                InsertNewUsernameChangeProfiletextBox.Hide();
+                InsertNewUsernameChangeProfilelabel.Hide();
+                InsertNewPrivacyChangeProfilelabel.Hide();
+                InsertNewPrivacyChangeProfiletextBox.Hide();
+                ChangePbutton.Hide();
+                UseranemChangedChangeProfilelabel.Hide();
+                PrivacyChangedChangeProfilelabel.Hide();
+                FailProfileChangelabel.Hide();
+                InsertUsernameChangeProfiletextBox.Clear();
+                InsertProfileChangeProfiletextBox.Clear();
+                c.Clear();
                 ChangeProfilepanel.Show();
                 ChangeProfilepanel.BringToFront();
                 ChangeProfilepanel.Dock = DockStyle.Fill;
@@ -1550,60 +1561,46 @@ namespace Interfaz_Gráfica_Entrega_3
 
         private void ChangePbutton_Click(object sender, EventArgs e)
         {
-            string username2 = "";
-            string profile2 = "";
-            string change = "";
-            string newprofile = "";
-            bool newprivacy = true;
             Button b = (Button)sender;
             if (b.Text == "Buscar perfil")
             {
-                username2 = InsertUsernameChangeProfiletextBox.Text;
-                profile2 = InsertProfileChangeProfiletextBox.Text;
-                change = InsertChooseChangeProfiletextBox.Text;
-                ChangePbutton.Show();
+                UseranemChangedChangeProfilelabel.Hide();
+                PrivacyChangedChangeProfilelabel.Hide();
+                FailProfileChangelabel.Hide();
+                string email2 = InsertUsernameChangeProfiletextBox.Text;
+                string perfil1 = InsertProfileChangeProfiletextBox.Text;
+                string answer = c.Text;
                 foreach (KeyValuePair<string, List<Profile>> a in Users)
                 {
-                    if (Users.ContainsKey(username2))
+                    if (Users.ContainsKey(email2))
                     {
-                        if (change == "Usuario")
+                        if (answer == "Usuario")
                         {
                             InsertNewUsernameChangeProfilelabel.Show();
                             InsertNewUsernameChangeProfiletextBox.Show();
-                            newprofile = InsertNewUsernameChangeProfiletextBox.Text;
-                            if (b.Text == "Modificar")
-                            {
-                                foreach (Profile c in a.Value)
-                                {
-                                    c.ChangeUsername(newprofile);
-                                }
-                                UseranemChangedChangeProfilelabel.Show();
-                                break;
-                            }
-
+                            ChangePbutton.Show();
+                            FailProfileChangelabel.Hide();
+                            InsertNewPrivacyChangeProfiletextBox.Hide();
+                            InsertNewPrivacyChangeProfilelabel.Hide();
+                            break;
                         }
-                        if (change == "Privacidad")
+                        if (answer == "Privacidad")
                         {
-
-                            InsertNewUsernameChangeProfilelabel.Show();
+                            InsertNewPrivacyChangeProfilelabel.Show();
                             InsertNewPrivacyChangeProfiletextBox.Show();
-                            newprivacy = Convert.ToBoolean(InsertNewPrivacyChangeProfiletextBox.Text);
-                            if (b.Text == "Modificar")
-                            {
-                                foreach (Profile c in a.Value)
-                                {
-                                    c.ChangePrivacy(newprivacy);
-                                }
-                                PrivacyChangedChangeProfilelabel.Show();
-                                break;
-                            }
+                            ChangePbutton.Show();
+                            FailProfileChangelabel.Hide();
+                            InsertNewUsernameChangeProfilelabel.Hide();
+                            InsertNewUsernameChangeProfiletextBox.Hide();
+                            break;
+
                         }
                     }
                     else
                     {
                         FailProfileChangelabel.Show();
-
                     }
+                    
                 }
             }
         }
@@ -1743,7 +1740,7 @@ namespace Interfaz_Gráfica_Entrega_3
         private void StopPlaySongsbutton_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            if (b.Text == "Parar")
+            if (b.Text == "Stop")
             {
                 foreach (var song in l_songs)
                 {
@@ -2454,7 +2451,6 @@ namespace Interfaz_Gráfica_Entrega_3
                 profile.JoinPartyMovie("tarzan-trailer");
             }
         }
-<<<<<<< HEAD
 	    private void button4_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
@@ -2527,7 +2523,7 @@ namespace Interfaz_Gráfica_Entrega_3
         private void CharacteristicsSearchMoviesbutton_Click_1(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            if (b.Text == "Característicasw de la persona")
+            if (b.Text == "Características de la persona")
             {
                 InsertCharacteristicCharacteristicMoviestextBox.Clear();
                 InsertCharacteristicCharacteristicMoviescomboBox.Items.Clear();
@@ -2711,7 +2707,7 @@ namespace Interfaz_Gráfica_Entrega_3
         private void CategorieSearchMoviesbutton_Click_1(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            if (b.Text == "Persona")
+            if (b.Text == "Categoría")
             {
                 ResultCategorieMoviesrichTextBox.Clear();
                 InsertCategorieNameCategorieMoviestextBox.Clear();
@@ -2793,7 +2789,7 @@ namespace Interfaz_Gráfica_Entrega_3
         {
         }
 
-        private void SearchQualificationMoviesbutton_Click(object sender, EventArgs e)
+        private void SearchQualificationMoviesbutton_Click_1(object sender, EventArgs e)
         {
             List<Movies> moviesSearched = new List<Movies>();
             int min = Convert.ToInt32(InsertMinQualificationMoviescomboBox.Text);
@@ -2871,19 +2867,58 @@ namespace Interfaz_Gráfica_Entrega_3
 
         }
 
-        
-=======
+        private void BackResolutionMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Volver")
+            {
+                ResolutionMoviespanel.Hide();
+            }
+        }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void ChangePbutton_Click_1(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Modificar")
+            {
+                string email2 = InsertUsernameChangeProfiletextBox.Text;
+                string answer = c.Text;
+                foreach (KeyValuePair<string, List<Profile>> a in Users)
+                {
+                    if (Users.ContainsKey(email2))
+                    {
+                        if (answer == "Usuario")
+                        {
+                            InsertNewUsernameChangeProfilelabel.Show();
+                            InsertNewUsernameChangeProfiletextBox.Show();
+                            string username3 = InsertNewUsernameChangeProfiletextBox.Text;
+                            foreach (Profile c in a.Value)
+                            {
+                                c.ChangeUsername(username3);
+                            }
+                            UseranemChangedChangeProfilelabel.Show();
+                        }
+                        if (answer == "Privacidad")
+                        {
+                            InsertNewPrivacyChangeProfilelabel.Show();
+                            InsertNewPrivacyChangeProfiletextBox.Show();
+                            bool privacy3 = Convert.ToBoolean(InsertNewPrivacyChangeProfiletextBox.Text);
+                            foreach (Profile c in a.Value)
+                            {
+                                c.ChangePrivacy(privacy3);
+                            }
+                            PrivacyChangedChangeProfilelabel.Show();
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void InsertNewPrivacyChangeProfilelabel_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void QualificationMoviespanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
->>>>>>> aed2edbefcd342b26fc5d56a8f9be22b7c8c64c0
     }
 }
 
