@@ -2454,17 +2454,7 @@ namespace Interfaz_Gráfica_Entrega_3
                 profile.JoinPartyMovie("tarzan-trailer");
             }
         }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void QualificationMoviespanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-	private void button4_Click(object sender, EventArgs e)
+	    private void button4_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
             if (b.Text == "Resolución")
@@ -2482,7 +2472,7 @@ namespace Interfaz_Gráfica_Entrega_3
 
         }
 
-        private void SearchPersonMoviesbutton_Click(object sender, EventArgs e)
+        private void SearchPersonMoviesbutton_Click_1(object sender, EventArgs e)
         {
             Button b = (Button)sender;
             if (b.Text == "Buscar")
@@ -2516,7 +2506,7 @@ namespace Interfaz_Gráfica_Entrega_3
             }
         }
 
-        private void PersonSearchMoviesbutton_Click(object sender, EventArgs e)
+        private void PersonSearchMoviesbutton_Click_1(object sender, EventArgs e)
         {
             Button b = (Button)sender;
             if (b.Text == "Persona")
@@ -2533,7 +2523,7 @@ namespace Interfaz_Gráfica_Entrega_3
 
         }
 
-        private void CharacteristicsSearchMoviesbutton_Click(object sender, EventArgs e)
+        private void CharacteristicsSearchMoviesbutton_Click_1(object sender, EventArgs e)
         {
             Button b = (Button)sender;
             if (b.Text == "Característicasw de la persona")
@@ -2563,7 +2553,7 @@ namespace Interfaz_Gráfica_Entrega_3
 
         }
 
-        private void SearchCharacteristicsMoviesbutton_Click(object sender, EventArgs e)
+        private void SearchCharacteristicsMoviesbutton_Click_1(object sender, EventArgs e)
         {
             Button b = (Button)sender;
             if (b.Text == "Buscar")
@@ -2684,7 +2674,7 @@ namespace Interfaz_Gráfica_Entrega_3
 
         }
 
-        private void SearchResolutionMoviesbutton_Click(object sender, EventArgs e)
+        private void SearchResolutionMoviesbutton_Click_1(object sender, EventArgs e)
         {
             Button b = (Button)sender;
             if (b.Text == "Buscar")
@@ -2717,7 +2707,7 @@ namespace Interfaz_Gráfica_Entrega_3
             }
         }
 
-        private void CategorieSearchMoviesbutton_Click(object sender, EventArgs e)
+        private void CategorieSearchMoviesbutton_Click_1(object sender, EventArgs e)
         {
             Button b = (Button)sender;
             if (b.Text == "Persona")
@@ -2730,7 +2720,7 @@ namespace Interfaz_Gráfica_Entrega_3
             }
         }
 
-        private void SearchCategorieMoviesbutton_Click(object sender, EventArgs e)
+        private void SearchCategorieMoviesbutton_Click_1(object sender, EventArgs e)
         {
             Button b = (Button)sender;
             if (b.Text == "Buscar")
@@ -2764,7 +2754,7 @@ namespace Interfaz_Gráfica_Entrega_3
             }
         }
 
-        private void QualificationSearchMoviesbutton_Click(object sender, EventArgs e)
+        private void QualificationSearchMoviesbutton_Click_1(object sender, EventArgs e)
         {
             Button b = (Button)sender;
             if (b.Text == "Evaluación")
@@ -2829,6 +2819,58 @@ namespace Interfaz_Gráfica_Entrega_3
                 ResultQualificationMoviesrichTextBox.Text = "No se ha encontrado la busqueda";
             }
         }
+
+        private void BackKeywordMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Volver")
+            {
+                KeywordMoviespanel.Hide();
+            }
+        }
+
+        private void BackPersonMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Volver")
+            {
+                PersonMoviespanel.Hide();
+            }
+        }
+
+        private void BackCharacteristicsMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Volver")
+            {
+                CharacteristicsMoviespanel.Hide();
+            }
+        }
+
+        private void BackQualificationMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Volver")
+            {
+                QualificationMoviespanel.Hide();
+            }
+        }
+
+        private void BackCategorieMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Volver")
+            {
+                CategorieMoviespanel.Hide();
+            }
+        }
+
+        private void AcceptCharacteristicsMoviesbutton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
 
