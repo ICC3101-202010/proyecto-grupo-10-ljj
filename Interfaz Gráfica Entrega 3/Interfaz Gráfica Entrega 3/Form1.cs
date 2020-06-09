@@ -23,7 +23,7 @@ namespace Interfaz_Gráfica_Entrega_3
         List<PlaylistSongs> l_pl = new List<PlaylistSongs>();
         // CANCIONES!!!
         Songs CiudadDeLaFuria = new Songs("Ciudad de la furia", "Soda stereo", "Gustavo Cerati", "Rock", "desconocido", 1988, "letra jeje", "5:46", true, false);
-        Songs MelonVino = new Songs("Melon vino", "Wos", "Wos", "Rap", "desconocido", 2019, "letra jeje", "3:03", true, false);
+        Songs MelonVino = new Songs("Melon vino", "Wos", "Wos", "Rap", "desconocido", 2019, "letra jeej", "3:03", true, false);
         Songs LetItBe = new Songs("Let It Be", "The Beatles", "Paul McCartney", "Rock", "desconocido", 1970, "letra jeje", "4:04", false, false);
         // ALBUMS!!!
         Album DobleVida = new Album("Doble vida", "Soda stereo", 1988);
@@ -62,6 +62,7 @@ namespace Interfaz_Gráfica_Entrega_3
         List<Actor> actorsL = new List<Actor>();
         List<Actor> actorsA = new List<Actor>();
         List<Actor> actorsB = new List<Actor>();
+        WindowsMediaPlayer wmp = new WindowsMediaPlayer();
         string prf = "";
         public SpotflixForm()
         {
@@ -125,7 +126,7 @@ namespace Interfaz_Gráfica_Entrega_3
             actors.Add(RobertDownley);
             actors.Add(FlorencePugh);
             Movies TheLionKing = new Movies("The Lion King", categoriesL, actorsL, "Walt Disney Pictures", 2019, "En la Roca del Rey, el rey Mufasa y la reina Sarabi presentan a su hijo recién nacido, Simba, a sus súbditos.Después de la ceremonia, el hermano menor de Mufasa, Scar, se lamenta de que ya no está en la segunda fila para el trono.El mayordomo de Mufasa, Zazú, llega al lugar, anunciando la llegada del rey.Scar intenta comerse a Zazú, pero se ve frustrado por la llegada de Mufasa, quien le pregunta a Scar por qué estuvo ausente en la presentación de Simba, a la que Scar finge habérsele olvidado.Los hermanos tienen una breve discusión, en la que Scar socava la autoridad de Mufasa, pero deja en claro que no desafiará el liderazgo del rey.Eventualmente, Scar se retira del lugar y Zazú le sugiere a Mufasa que por qué no lo exilia del reino antes de que cause problemas, pero Mufasa se niega a hacer tal cosa, ya que Scar es su hermano.", 108);
-            Movies AvengersEndgame = new Movies("Avengers: Endgame", categoriesA, actorsA, "Marvel Studios", 2019, "Veintitrés días después de que Thanos hubiera usado el Guantelete del Infinito para desintegrar la mitad de toda la vida en el universo, Capitana Marvel rescata a Tony Stark y Nebula, quienes estaban varados en el espacio exterior en la nave Milano I del fallecido Quill y los lleva de regreso a la Tierra hasta el complejo de Los Vengadores, donde los esperan Natasha Romanoff, Bruce Banner, Steve Rogers, Rocket Raccoon, Thor, Pepper Potts y James Rhodes.Mientras estabilizan a Stark y lo ponen al corriente sobre los eventos que sucedieron mientras estuvo en el espacio exterior, el resto de Los Vengadores localizan por medio de Nebula a un Thanos malherido en un planeta al que este llama 'El Jardín' y deciden ir en su búsqueda con el objetivo de recuperar las Gemas del Infinito y revertir los efectos del chasquido.Consiguen reducirlo pero descubren que las gemas ya no están.Thanos revela que destruyó las gemas para evitar que fueran usadas nuevamente.Thor, enfurecido, lo decapita con la Stormbreaker.", 146);
+            Movies AvengersEndgame = new Movies("Avengers Endgame", categoriesA, actorsA, "Marvel Studios", 2019, "Veintitrés días después de que Thanos hubiera usado el Guantelete del Infinito para desintegrar la mitad de toda la vida en el universo, Capitana Marvel rescata a Tony Stark y Nebula, quienes estaban varados en el espacio exterior en la nave Milano I del fallecido Quill y los lleva de regreso a la Tierra hasta el complejo de Los Vengadores, donde los esperan Natasha Romanoff, Bruce Banner, Steve Rogers, Rocket Raccoon, Thor, Pepper Potts y James Rhodes.Mientras estabilizan a Stark y lo ponen al corriente sobre los eventos que sucedieron mientras estuvo en el espacio exterior, el resto de Los Vengadores localizan por medio de Nebula a un Thanos malherido en un planeta al que este llama 'El Jardín' y deciden ir en su búsqueda con el objetivo de recuperar las Gemas del Infinito y revertir los efectos del chasquido.Consiguen reducirlo pero descubren que las gemas ya no están.Thanos revela que destruyó las gemas para evitar que fueran usadas nuevamente.Thor, enfurecido, lo decapita con la Stormbreaker.", 146);
             Movies BlackWidow = new Movies("Black Widow", categoriesB, actorsB, "Marvel Studios", 2019, "Situada 1 año después de los sucesos de Capitán América: Civil War y antes de Avengers: Infinity War, Natasha Romanoff se encuentra sola y obligada a enfrentar una peligrosa conspiración con lazos con su pasado mientras es buscada por la ley.Perseguida por una fuerza que no se detendrá ante nada para derribarla, Romanoff debe lidiar con su historia como espía y las relaciones rotas que dejó a su paso mucho antes de convertirse en Vengadora.", 144);
             movielist.Add(TheLionKing);
             movielist.Add(AvengersEndgame);
@@ -137,6 +138,12 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Iniciar Sesión")
             {
+                FailedLoginSesionlabel.Hide();
+                InsertMailLoginSesiontextBox.Text = "";
+                InsertPasswordLoginSesiontextBox.Text = "";
+                MainMenulabel1.Text = "";
+                LoginSesionProfilelabel1.Text = "Bienvenido";
+                LoginSesionInsertProfilecomboBox.Items.Clear();
                 LoginSesionpanel.Show();
                 LoginSesionpanel.BringToFront();
                 LoginSesionpanel.Dock = DockStyle.Fill;
@@ -159,6 +166,7 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Iniciar Sesión como Administrador")
             {
+                MainMenulabel1.Text = "";
                 MainMenupanel.Show();
                 MainMenupanel.BringToFront();
                 MainMenupanel.Dock = DockStyle.Fill;
@@ -175,10 +183,17 @@ namespace Interfaz_Gráfica_Entrega_3
             {
                 if (user.GetListOfUser().Count > 0)
                 {
+                    FailedLoginSesionlabel.Hide();
+                    
+                    LoginSesionProfilelabel1.Text = "Bienvenido";
+                    LoginSesionInsertProfilecomboBox.Items.Clear();
                     string email22 = "";
                     string password22 = "";
                     email22 = InsertMailLoginSesiontextBox.Text;
                     password22 = InsertPasswordLoginSesiontextBox.Text;
+                    InsertMailLoginSesiontextBox.Text = "";
+                    InsertPasswordLoginSesiontextBox.Text = "";
+                    MainMenulabel1.Text = "";
                     foreach (User u in user.GetListOfUser())
                     {
                         if (email22 == u.GetEmail() && password22 == u.GetPassword())
@@ -213,6 +228,7 @@ namespace Interfaz_Gráfica_Entrega_3
             }
             if (b.Text == "Ingresar")
             {
+                
                 asw5 = LoginSesionInsertProfilecomboBox.Text;
                 MainMenupanel.Show();
                 MainMenupanel.BringToFront();
@@ -285,6 +301,7 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Seguir Perfil")
             {
+                ProfileFollowedFollowProfilelabel.Hide();
                 FollowProfilepanel.Show();
                 FollowProfilepanel.BringToFront();
                 FollowProfilepanel.Dock = DockStyle.Fill;
@@ -306,6 +323,7 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Seguir Playlist de Canciones")
             {
+                PlaylistFollowedFollowPlaylistSongslabel.Hide();
                 FollowPlaylistSongspanel.Show();
                 FollowPlaylistSongspanel.BringToFront();
                 FollowPlaylistSongspanel.Dock = DockStyle.Fill;
@@ -326,6 +344,7 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Seguir Playlist de Películas")
             {
+                PlaylistFollowedFollowPlaylistMovieslabel.Hide();
                 FollowPlaylistMoviespanel.Show();
                 FollowPlaylistMoviespanel.BringToFront();
                 FollowPlaylistMoviespanel.Dock = DockStyle.Fill;
@@ -437,13 +456,14 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Sugerencias de Películas")
             {
+                SuggestionsMoviesrichTextBox.Clear();
                 foreach (KeyValuePair<string, List<Profile>> h in Users)
                 {
                     foreach (Profile profile3 in h.Value)
                     {
                         if (profile3.GetUserName() == prf)
                         {
-                            SuggestionsMoviesrichTextBox.Text += profile.SuggestionMovie();
+                            SuggestionsMoviesrichTextBox.Text += profile.SuggestionSong();
                             break;
                         }
                     }
@@ -468,13 +488,14 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Sugerencias de Canciones")
             {
+                SuggestionsSongsrichTextBox.Clear();
                 foreach (KeyValuePair<string, List<Profile>> h in Users)
                 {
                     foreach (Profile profile3 in h.Value)
                     {
                         if (profile3.GetUserName() == prf)
                         {
-                            SuggestionsSongsrichTextBox.Text += profile3.SuggestionSong();
+                            SuggestionsSongsrichTextBox.Text += profile3.SuggestionMovie();
                             break;
                         }
                     }
@@ -1349,6 +1370,11 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Crear Usuario")
             {
+                CreateUserAvisolabel.Hide();
+                CreateUserAviso2label1.Hide();
+                InsertUserMailtextBox.Text = "";
+                InsertUserPasswordtextBox.Text = "";
+                InsertPlanTypetextBox.Text = "";
                 CreateUserpanel.Show();
                 CreateUserpanel.BringToFront();
                 CreateUserpanel.Dock = DockStyle.Fill;
@@ -1369,6 +1395,10 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Crear Perfil")
             {
+                ProfileCreatedlabel.Hide();
+                InsertUsernameCreateProfiletextBox.Text = "";
+                PrivacyProfileCreateProfiletextBox.Text = "";
+                InsertUserCreateProfiletextBox.Text = "";
                 CreateProfilepanel.Show();
                 CreateProfilepanel.BringToFront();
                 CreateProfilepanel.Dock = DockStyle.Fill;
@@ -1410,6 +1440,8 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Ver Perfiles por Usuario")
             {
+
+                SeeProfilesrichTextBox.Clear();
                 string text = "";
                 SeeProfilespanel.Show();
                 SeeProfilespanel.BringToFront();
@@ -1424,6 +1456,7 @@ namespace Interfaz_Gráfica_Entrega_3
                     }
                 }
                 SeeProfilesrichTextBox.Text += text;
+
             }
         }
 
@@ -1445,13 +1478,20 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Crear")
             {
+                
+                CreateUserAvisolabel.Hide();
+                CreateUserAviso2label1.Hide();
                 username = InsertUserMailtextBox.Text;
                 password = InsertUserPasswordtextBox.Text;
                 plan = InsertPlanTypetextBox.Text;
                 user.CreateUser(plan, username, password);
+                InsertUserMailtextBox.Text = "";
+                InsertUserPasswordtextBox.Text = "";
+                InsertPlanTypetextBox.Text = "";
                 CreateUserAvisolabel.Show();
                 CreateUserAviso2label1.Show();
             }
+            
         }
 
         private void CreatePbutton_Click(object sender, EventArgs e)
@@ -1462,9 +1502,14 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Crear")
             {
+                ProfileCreatedlabel.Hide();
+
                 profile = InsertUsernameCreateProfiletextBox.Text;
                 privacy = Convert.ToBoolean(PrivacyProfileCreateProfiletextBox.Text);
                 username1 = InsertUserCreateProfiletextBox.Text;
+                InsertUsernameCreateProfiletextBox.Text = "";
+                PrivacyProfileCreateProfiletextBox.Text = "";
+                InsertUserCreateProfiletextBox.Text = "";
                 int n = Users.Keys.Count;
                 if (n == 0)
                 {
@@ -1543,7 +1588,7 @@ namespace Interfaz_Gráfica_Entrega_3
                             InsertNewUsernameChangeProfilelabel.Show();
                             InsertNewPrivacyChangeProfiletextBox.Show();
                             newprivacy = Convert.ToBoolean(InsertNewPrivacyChangeProfiletextBox.Text);
-                            if(b.Text == "Modificar")
+                            if (b.Text == "Modificar")
                             {
                                 foreach (Profile c in a.Value)
                                 {
@@ -1557,7 +1602,7 @@ namespace Interfaz_Gráfica_Entrega_3
                     else
                     {
                         FailProfileChangelabel.Show();
-                        
+
                     }
                 }
             }
@@ -1687,7 +1732,7 @@ namespace Interfaz_Gráfica_Entrega_3
                     {
                         song.NumberOfUser();
                         song.Reproduction();
-                        WindowsMediaPlayer wmp = new WindowsMediaPlayer();
+
                         wmp.URL = song.getName() + ".wav";
                         wmp.controls.play();
                     }
@@ -1706,7 +1751,7 @@ namespace Interfaz_Gráfica_Entrega_3
                     {
                         song.NumberOfUser();
                         song.Reproduction();
-                        WindowsMediaPlayer wmp = new WindowsMediaPlayer();
+                        
                         wmp.URL = song.getName() + ".wav";
                         wmp.controls.stop();
                     }
@@ -1950,21 +1995,21 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Por edad")
             {
-
-                string edad = InsertAnswerArtisttextBox.Text;
-                int edad2 = Int16.Parse(edad);
-                int ba = 0;
-                string a = "";
-                foreach (var artist in l_artist)
+                try
                 {
-                    if (artist.getAge() == edad2)
+                    string edad = InsertAnswerArtisttextBox.Text;
+                    int edad2 = Int16.Parse(edad);
+                    string a = "";
+                    foreach (var artist in l_artist)
                     {
-                        a += "tiene esa edad el artista: " + artist.getName();
-                        ResultArtistrichTextBox.Text = a;
-                        ba = 1;
+                        if (artist.getAge() == edad2)
+                        {
+                            a += "tiene esa edad el artista: " + artist.getName();
+                            ResultArtistrichTextBox.Text = a;
+                        }
                     }
                 }
-                if (ba == 0)
+                catch
                 {
                     ResultArtistrichTextBox.Text = "No se encontro un artista";
                 }
@@ -1976,20 +2021,21 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Por género musical")
             {
-                string gene = InsertAnswerArtisttextBox.Text;
-                int be = 0;
-                string a = "";
-                foreach (var artist in l_artist)
+                try
                 {
-                    if (artist.getGender() == gene)
+                    string gene = InsertAnswerArtisttextBox.Text;
+                    string a = "";
+                    foreach (var artist in l_artist)
                     {
-                        a += "ese genero lo toca : " + artist.getName();
-                        ResultArtistrichTextBox.Text = a;
-                        be = 1;
+                        if (artist.getGender() == gene)
+                        {
+                            a += "ese genero lo toca : " + artist.getName();
+                            ResultArtistrichTextBox.Text = a;
 
+                        }
                     }
                 }
-                if (be == 0)
+                catch
                 {
                     ResultArtistrichTextBox.Text = "No se encontro un artista";
                 }
@@ -2270,6 +2316,7 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if(b.Text == "Seguir")
             {
+                ProfileFollowedFollowProfilelabel.Hide();
                 string perfil = InsertProfileFollowProfilecomboBox.Text;
                 foreach (KeyValuePair<string, List<Profile>> h in Users)
                 {
@@ -2291,6 +2338,7 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if(b.Text == "Seguir")
             {
+                PlaylistFollowedFollowPlaylistSongslabel.Hide();
                 string playlistsong = InsertPlaylistFollowPlaylistSongscomboBox.Text;
                 foreach (PlaylistSongs playlistSongs in l_pl)
                 {
@@ -2309,6 +2357,7 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if(b.Text == "Seguir")
             {
+                PlaylistFollowedFollowPlaylistMovieslabel.Hide();
                 string playlistmovie = InsertPlaylistFollowPlaylistMoviescomboBox.Text;
                 foreach (PlaylistMovies playlistMovies in l_plm)
                 {
