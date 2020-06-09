@@ -619,7 +619,7 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Calificar Canción")
             {
-                
+                MessageQualifySongslabel.Hide();
                 InsertQualificationQualifySongscomboBox.Items.Clear();
                 InsertQualificationQualifySongscomboBox.Items.Add("1");
                 InsertQualificationQualifySongscomboBox.Items.Add("2");
@@ -1420,7 +1420,7 @@ namespace Interfaz_Gráfica_Entrega_3
                     text += a.Key + " \n";
                     foreach (Profile d in a.Value)
                     {
-                        text+= "Username: "+ d.GetUserName() + "Privacidad: "+ d.GetPrivacy();
+                        text+= "Username: "+ d.GetUserName() + "Privacidad: "+ d.GetPrivacy() + "\n";
                     }
                 }
                 SeeProfilesrichTextBox.Text += text;
@@ -1593,6 +1593,7 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Calificar")
             {
+                MessageQualifySongslabel.Hide();
                 foreach (var song in l_songs)
                 {
                     if(song.getName() == InsertSongNameQualifySongscomboBox.Text)
@@ -1600,6 +1601,7 @@ namespace Interfaz_Gráfica_Entrega_3
                         string cal = InsertQualificationQualifySongscomboBox.Text;
                         int Cal = Int16.Parse(cal);
                         song.Qualification(Cal);
+                        MessageQualifySongslabel.Show();
                     }
                 }        
             }
