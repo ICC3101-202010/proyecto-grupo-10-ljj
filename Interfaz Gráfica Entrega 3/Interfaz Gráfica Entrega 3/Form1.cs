@@ -1001,6 +1001,7 @@ namespace Interfaz_Gráfica_Entrega_3
                 PlaySongspanel.Show();
                 PlaySongspanel.BringToFront();
                 PlaySongspanel.Dock = DockStyle.Fill;
+                MessagePlaySongslabel.Hide();
             }
         }
 
@@ -1729,33 +1730,13 @@ namespace Interfaz_Gráfica_Entrega_3
                     {
                         song.NumberOfUser();
                         song.Reproduction();
-
-                        wmp.URL = song.getName() + ".wav";
-                        wmp.controls.play();
+                        System.Diagnostics.Process.Start(song.getName() + ".wav");
+                        MessagePlaySongslabel.Show();
                     }
                 }
             }
 
         }
-        private void StopPlaySongsbutton_Click(object sender, EventArgs e)
-        {
-            Button b = (Button)sender;
-            if (b.Text == "Stop")
-            {
-                foreach (var song in l_songs)
-                {
-                    if (InsertNamePlaySongscomboBox.Text == song.getName())
-                    {
-                        song.NumberOfUser();
-                        song.Reproduction();
-                        
-                        wmp.URL = song.getName() + ".wav";
-                        wmp.controls.stop();
-                    }
-                }
-            }
-        }
-
         private void ArtistInformationSongsbutton_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
