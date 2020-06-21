@@ -7,6 +7,7 @@ using WMPLib;
 
 namespace Interfaz_Gráfica_Entrega_3
 {
+    [Serializable]
     public class Profile
     {
         private string username;

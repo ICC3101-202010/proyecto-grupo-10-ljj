@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using WMPLib;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
 
 namespace Interfaz_Gráfica_Entrega_3
@@ -131,6 +134,21 @@ namespace Interfaz_Gráfica_Entrega_3
             movielist.Add(TheLionKing);
             movielist.Add(AvengersEndgame);
             movielist.Add(BlackWidow);
+            try
+            {
+                Users = LoadUsers();
+                l_pl = LoadPls();
+                l_plm = LoadPlm();
+                showUser(Users);              
+                showPlaylistSongs(l_pl);              
+                showPlaylistMovies(l_plm);
+            }
+            catch
+            {
+                SaveUser(Users);
+                SavePlaylistSongs(l_pl);
+                SavePlaylistMovies(l_plm);
+            }
             InitializeComponent();
         }
         private void Loginbutton_Click(object sender, EventArgs e)
@@ -1531,6 +1549,7 @@ namespace Interfaz_Gráfica_Entrega_3
                     ProfileCreatedlabel.Show();
                     InsertProfileFollowProfilecomboBox.Items.Add(profile);
                     Users.Add(username1, ListOfProfiles);
+                    SaveUser(Users);
                 }
                 if (n > 0)
                 {
@@ -1543,6 +1562,7 @@ namespace Interfaz_Gráfica_Entrega_3
                                 Profile profile1 = new Profile(profile, privacy);
                                 InsertProfileFollowProfilecomboBox.Items.Add(profile);
                                 a.Value.Add(profile1);
+                                SaveUser(Users);
                             }
                         }
                         ProfileCreatedlabel.Show();
@@ -1555,6 +1575,7 @@ namespace Interfaz_Gráfica_Entrega_3
                         ProfileCreatedlabel.Show();
                         InsertProfileFollowProfilecomboBox.Items.Add(profile);
                         Users.Add(username1, ListOfProfiles);
+                        SaveUser(Users);
                     }
                 }
             }
@@ -1623,6 +1644,7 @@ namespace Interfaz_Gráfica_Entrega_3
                 l_pl.Add(playlist);
                 MessageCreatePlaylistSongslabel.Show();
                 InsertPlaylistFollowPlaylistSongscomboBox.Items.Add(PLname);
+                SavePlaylistSongs(l_pl);
             }
         }
 
@@ -2037,6 +2059,7 @@ namespace Interfaz_Gráfica_Entrega_3
                 l_plm.Add(playlist);
                 MessageCreatePlaylistMovieslabel.Show();
                 InsertPlaylistFollowPlaylistMoviescomboBox.Items.Add(PLname);
+                SavePlaylistMovies(l_plm);
             }
         }
 
@@ -2899,6 +2922,72 @@ namespace Interfaz_Gráfica_Entrega_3
         private void InsertNewPrivacyChangeProfilelabel_Click(object sender, EventArgs e)
         {
 
+        }
+        static private void SaveUser(Dictionary<string, List<Profile>> Users)
+        {
+            IFormatter formatter = new BinaryFormatter();
+            Stream stream = new FileStream("Users.bin", FileMode.Create, FileAccess.Write, FileShare.None);
+            formatter.Serialize(stream, Users);
+            stream.Close();
+        }
+        static private void SavePlaylistSongs(List<PlaylistSongs> l_pl)
+        {
+            IFormatter formatter = new BinaryFormatter();
+            Stream stream = new FileStream("PlaylistSongs.bin", FileMode.Create, FileAccess.Write, FileShare.None);
+            formatter.Serialize(stream, l_pl);
+            stream.Close();
+        }
+        static private void SavePlaylistMovies(List<PlaylistMovies> l_plm)
+        {
+            IFormatter formatter = new BinaryFormatter();
+            Stream stream = new FileStream("PlaylistMovies.bin", FileMode.Create, FileAccess.Write, FileShare.None);
+            formatter.Serialize(stream, l_plm);
+            stream.Close();
+        }
+        static private Dictionary<string, List<Profile>> LoadUsers()
+        {
+            IFormatter formatter = new BinaryFormatter();
+            Stream stream = new FileStream("Users.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+            Dictionary<string, List<Profile>> Users = (Dictionary<string, List<Profile>>)formatter.Deserialize(stream);
+            stream.Close();
+            return Users;
+        }
+        static private List<PlaylistSongs> LoadPls()
+        {
+            IFormatter formatter = new BinaryFormatter();
+            Stream stream = new FileStream("PlaylistSongs.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+            List<PlaylistSongs> l_pl = (List<PlaylistSongs>)formatter.Deserialize(stream);
+            stream.Close();
+            return l_pl;
+        }
+        static private List<PlaylistMovies> LoadPlm()
+        {
+            IFormatter formatter = new BinaryFormatter();
+            Stream stream = new FileStream("PlaylistMovies.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+            List<PlaylistMovies> l_plm = (List<PlaylistMovies>)formatter.Deserialize(stream);
+            stream.Close();
+            return l_plm;
+        }
+        static public void showUser(Dictionary<string, List<Profile>> Users)
+        {
+            foreach (KeyValuePair<string, List<Profile>> a in Users)
+            {
+                Users.Add(a.Key, a.Value);
+            }
+        }
+        static public void showPlaylistSongs(List<PlaylistSongs> l_pl)
+        {
+            foreach (PlaylistSongs a in l_pl)
+            {
+                l_pl.Add(a);
+            }
+        }
+        static public void showPlaylistMovies(List<PlaylistMovies> l_plm)
+        {
+            foreach (PlaylistMovies a in l_plm)
+            {
+                l_plm.Add(a);
+            }
         }
     }
 }

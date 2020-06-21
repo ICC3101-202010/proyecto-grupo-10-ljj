@@ -7,6 +7,7 @@ using System.Windows.Forms;
 
 namespace Interfaz_Gráfica_Entrega_3
 {
+    [Serializable]
     public class User
     {
         private string plan;

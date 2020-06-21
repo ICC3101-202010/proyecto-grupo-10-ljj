@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaz_Gráfica_Entrega_3
 {
+    [Serializable]
     public class Movies
     {
         private string name;
