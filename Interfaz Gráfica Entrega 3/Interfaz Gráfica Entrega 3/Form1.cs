@@ -3091,6 +3091,32 @@ namespace Interfaz_Gráfica_Entrega_3
                 Importpanel.Dock = DockStyle.Fill;
             }
         }
+
+        private void MainMenupanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        static public void showUser(Dictionary<string, List<Profile>> Users)
+        {
+            foreach (KeyValuePair<string, List<Profile>> a in Users)
+            {
+                Users.Add(a.Key, a.Value);
+            }
+        }
+        static public void showPlaylistSongs(List<PlaylistSongs> l_pl)
+        {
+            foreach (PlaylistSongs a in l_pl)
+            {
+                l_pl.Add(a);
+            }
+        }
+        static public void showPlaylistMovies(List<PlaylistMovies> l_plm)
+        {
+            foreach (PlaylistMovies a in l_plm)
+            {
+                l_plm.Add(a);
+            }
+        }
     }
 }
 
