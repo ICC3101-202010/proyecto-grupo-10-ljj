@@ -11,11 +11,13 @@ using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.Devices;
 
 namespace Interfaz_Gráfica_Entrega_3
 {
     public partial class SpotflixForm : Form
     {
+        Computer mycomputer = new Computer();
         User user = new User("", "", "");
         Profile profile = new Profile("", true);
         Dictionary<string, List<Profile>> Users = new Dictionary<string, List<Profile>>();
@@ -25,9 +27,9 @@ namespace Interfaz_Gráfica_Entrega_3
         List<Songs> l_songs = new List<Songs>();
         List<PlaylistSongs> l_pl = new List<PlaylistSongs>();
         // CANCIONES!!!
-        Songs CiudadDeLaFuria = new Songs("Ciudad de la furia", "Soda stereo", "Gustavo Cerati", "Rock", "desconocido", 1988, "Me verás volarPor la ciudad de la furiaDonde nadie sabe de míY yo soy parte de todosNada cambiaráCon un aviso de curvaEn sus caras veo el temorYa no hay fábulas en la ciudad de la furiaMe verás caerComo un ave de presaMe verás caerSobre terrazas desiertasTe desnudaréPor las calles azulesMe refugiaréAntes que todos despierten", "5:46", true, false);
-        Songs MelonVino = new Songs("Melon vino", "Wos", "Wos", "Rap", "desconocido", 2019, "Estoy sentado esperando que se pase el ratoEstas palabras se parecen a mi autorretratoEy, hoy ya no quiero hablar Si las sensaciones que en serio cambiaron mi vidaNo creo que las pueda explicarVoy a amarte y a tocarteSolo te pido que no me apuñales cuando abra mi cuerpo pa' darte un lugarY el mar se va con mis secretos", "3:03", true, false);
-        Songs LetItBe = new Songs("Let It Be", "The Beatles", "Paul McCartney", "Rock", "desconocido", 1970, "When I find myself in times of troubleMother Mary comes to meSpeaking words of wisdom, let it beAnd in my hour of darknessShe is standing right in front of meSpeaking words of wisdom, let it beLet it be, let it beLet it be, let it beWhisper words of wisdom, let it be", "4:04", false, false);
+        Songs CiudadDeLaFuria = new Songs("Ciudad de la furia", "Soda stereo", "Gustavo Cerati", "Rock", "desconocido", 1988, "Me verás volarPor la ciudad de la furiaDonde nadie sabe de míY yo soy parte de todosNada cambiaráCon un aviso de curvaEn sus caras veo el temorYa no hay fábulas en la ciudad de la furiaMe verás caerComo un ave de presaMe verás caerSobre terrazas desiertasTe desnudaréPor las calles azulesMe refugiaréAntes que todos despierten", "5:46", false);
+        Songs MelonVino = new Songs("Melon vino", "Wos", "Wos", "Rap", "desconocido", 2019, "Estoy sentado esperando que se pase el ratoEstas palabras se parecen a mi autorretratoEy, hoy ya no quiero hablar Si las sensaciones que en serio cambiaron mi vidaNo creo que las pueda explicarVoy a amarte y a tocarteSolo te pido que no me apuñales cuando abra mi cuerpo pa' darte un lugarY el mar se va con mis secretos", "3:03", false);
+        Songs LetItBe = new Songs("Let It Be", "The Beatles", "Paul McCartney", "Rock", "desconocido", 1970, "When I find myself in times of troubleMother Mary comes to meSpeaking words of wisdom, let it beAnd in my hour of darknessShe is standing right in front of meSpeaking words of wisdom, let it beLet it be, let it beLet it be, let it beWhisper words of wisdom, let it be", "4:04", false);
         // ALBUMS!!!
         Album DobleVida = new Album("Doble vida", "Soda stereo", 1988);
         Album Caravana = new Album("Caravana", "Wos", 2019);
@@ -2866,11 +2868,6 @@ namespace Interfaz_Gráfica_Entrega_3
             }
         }
 
-        private void AcceptCharacteristicsMoviesbutton_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BackResolutionMoviesbutton_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
@@ -2968,25 +2965,130 @@ namespace Interfaz_Gráfica_Entrega_3
             stream.Close();
             return l_plm;
         }
-        static public void showUser(Dictionary<string, List<Profile>> Users)
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            foreach (KeyValuePair<string, List<Profile>> a in Users)
+            Button b = (Button)sender;
+            if (b.Text == "Importar")
             {
-                Users.Add(a.Key, a.Value);
+                int year = Int16.Parse(yearimporttextBox.Text);
+                Songs song = new Songs(nameimporttextBox.Text, artistimporttextBox.Text, composerimporttextBox.Text,
+                    genderimporttextBox.Text, studioimporttextBox.Text, year, lyricsimporttextBox.Text, DurationimporttextBox.Text,
+                    false);
+                l_songs.Add(song);
+
             }
         }
-        static public void showPlaylistSongs(List<PlaylistSongs> l_pl)
+
+        private void ImportSongbutton_Click(object sender, EventArgs e)
         {
-            foreach (PlaylistSongs a in l_pl)
+            Button b = (Button)sender;
+            if (b.Text == "Canción")
             {
-                l_pl.Add(a);
+                var resultado = ofd1.ShowDialog();
+                string a = ofd1.FileName;
+                if (resultado == DialogResult.OK)
+                {
+                    mycomputer.FileSystem.CopyFile(ofd1.FileName, @"C:\Users\Joaco Guzman\Desktop\proyecto-grupo-10-ljj\Interfaz Gráfica Entrega 3\Interfaz Gráfica Entrega 3\bin\Debug" + a.Substring(a.LastIndexOf(@"\")));
+                }
+                nameimporttextBox.Clear();
+                artistimporttextBox.Clear();
+                composerimporttextBox.Clear();
+                genderimporttextBox.Clear();
+                studioimporttextBox.Clear();
+                yearimporttextBox.Clear();
+                lyricsimporttextBox.Clear();
+                DurationimporttextBox.Clear();
+                ImportSongpanel.Show();
+                ImportSongpanel.BringToFront();
+                ImportSongpanel.Dock = DockStyle.Fill;
             }
         }
-        static public void showPlaylistMovies(List<PlaylistMovies> l_plm)
+
+        private void ImportMoviebutton_Click(object sender, EventArgs e)
         {
-            foreach (PlaylistMovies a in l_plm)
+            Button b = (Button)sender;
+            if (b.Text == "Pelicula")
             {
-                l_plm.Add(a);
+                var resultado = ofd1.ShowDialog();
+                string a = ofd1.FileName;
+                if (resultado == DialogResult.OK)
+                {
+                    mycomputer.FileSystem.MoveFile(ofd1.FileName, @"C:\Users\Joaco Guzman\Desktop\proyecto-grupo-10-ljj\Interfaz Gráfica Entrega 3\Interfaz Gráfica Entrega 3\bin\Debug" + a.Substring(a.LastIndexOf(@"\")));
+                }
+                nameimportmovietextBox8.Clear();
+                categoriesimportmoviestextBox.Clear();
+                actorsimportmovietextBox.Clear();
+                studioimportmovietextBox6.Clear();
+                YearimportMovietextBox.Clear();
+                DescriptionimportmovietextBox4.Clear();
+                DurationImpportMovietextBox.Clear();
+                ImportMoviepanel.Show();
+                ImportMoviepanel.BringToFront();
+                ImportMoviepanel.Dock = DockStyle.Fill;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Volver")
+            {
+                Importpanel.Hide();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Volver")
+            {
+                ImportSongpanel.Hide();
+            }
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Volver")
+            {
+                ImportMoviepanel.Hide();
+            }
+        }
+
+        private void importmoviebutton5_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Importar")
+            {
+                List<string> categories = new List<string>();
+                List<Actor> actors = new List<Actor>();
+                string[] cat = categoriesimportmoviestextBox.Text.Split(' ');
+                foreach(var c in cat)
+                {
+                    categories.Add(c);
+                }
+                int year = Int16.Parse(YearimportMovietextBox.Text);
+                int duration = Int16.Parse(DurationImpportMovietextBox.Text);
+                Movies movie = new Movies(nameimportmovietextBox8.Text,categories,actors, studioimportmovietextBox6.Text,
+                    year, DescriptionimportmovietextBox4.Text, duration);
+                movielist.Add(movie);
+            }
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Importbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Importar")
+            {
+                Importpanel.Show();
+                Importpanel.BringToFront();
+                Importpanel.Dock = DockStyle.Fill;
             }
         }
     }

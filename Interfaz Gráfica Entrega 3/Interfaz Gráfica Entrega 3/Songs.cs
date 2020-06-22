@@ -26,7 +26,7 @@ namespace Interfaz_Gráfica_Entrega_3
 
 
         public Songs(string name, string artist, string composer, string gender, string studio, int year, string lyrics,
-            string duration, bool download, bool favourite)
+            string duration, bool favourite)
         {
             this.name = name;
             this.artist = artist;
