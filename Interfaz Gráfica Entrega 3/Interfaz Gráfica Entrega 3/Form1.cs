@@ -167,6 +167,7 @@ namespace Interfaz_Gráfica_Entrega_3
                 LoginSesionpanel.Show();
                 LoginSesionpanel.BringToFront();
                 LoginSesionpanel.Dock = DockStyle.Fill;
+                Importbutton.Hide();
             }
         }
 
@@ -191,6 +192,7 @@ namespace Interfaz_Gráfica_Entrega_3
                 MainMenupanel.BringToFront();
                 MainMenupanel.Dock = DockStyle.Fill;
                 MainMenulabel1.Text = "Bienvenido Admin!";
+                Importbutton.Show();
             }
         }
 
@@ -2918,6 +2920,7 @@ namespace Interfaz_Gráfica_Entrega_3
                                 c.ChangeUsername(username3);
                             }
                             UseranemChangedChangeProfilelabel.Show();
+                            break;
                         }
                         if (answer == "Privacidad")
                         {
@@ -2996,7 +2999,7 @@ namespace Interfaz_Gráfica_Entrega_3
                     genderimporttextBox.Text, studioimporttextBox.Text, year, lyricsimporttextBox.Text, DurationimporttextBox.Text,
                     false);
                 l_songs.Add(song);
-
+                MessageImportSonglabel.Show();
             }
         }
 
@@ -3005,11 +3008,12 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Canción")
             {
+                MessageImportSonglabel.Hide();
                 var resultado = ofd1.ShowDialog();
                 string a = ofd1.FileName;
                 if (resultado == DialogResult.OK)
                 {
-                    mycomputer.FileSystem.CopyFile(ofd1.FileName, @"C:\Users\Joaco Guzman\Desktop\proyecto-grupo-10-ljj\Interfaz Gráfica Entrega 3\Interfaz Gráfica Entrega 3\bin\Debug" + a.Substring(a.LastIndexOf(@"\")));
+                    mycomputer.FileSystem.CopyFile(ofd1.FileName, @"C:\Users\jtahu\Desktop\proyecto-grupo-10-ljj\Interfaz Gráfica Entrega 3\Interfaz Gráfica Entrega 3\bin\Debug" + a.Substring(a.LastIndexOf(@"\")));
                 }
                 nameimporttextBox.Clear();
                 artistimporttextBox.Clear();
@@ -3030,11 +3034,12 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Pelicula")
             {
+                MessageImportMovielabel.Hide();
                 var resultado = ofd1.ShowDialog();
                 string a = ofd1.FileName;
                 if (resultado == DialogResult.OK)
                 {
-                    mycomputer.FileSystem.MoveFile(ofd1.FileName, @"C:\Users\Joaco Guzman\Desktop\proyecto-grupo-10-ljj\Interfaz Gráfica Entrega 3\Interfaz Gráfica Entrega 3\bin\Debug" + a.Substring(a.LastIndexOf(@"\")));
+                    mycomputer.FileSystem.CopyFile(ofd1.FileName, @"C:\Users\jtahu\Desktop\proyecto-grupo-10-ljj\Interfaz Gráfica Entrega 3\Interfaz Gráfica Entrega 3\bin\Debug" + a.Substring(a.LastIndexOf(@"\")));
                 }
                 nameimportmovietextBox8.Clear();
                 categoriesimportmoviestextBox.Clear();
@@ -3093,6 +3098,7 @@ namespace Interfaz_Gráfica_Entrega_3
                 Movies movie = new Movies(nameimportmovietextBox8.Text,categories,actors, studioimportmovietextBox6.Text,
                     year, DescriptionimportmovietextBox4.Text, duration);
                 movielist.Add(movie);
+                MessageImportMovielabel.Show();
             }
         }
 
@@ -3281,6 +3287,7 @@ namespace Interfaz_Gráfica_Entrega_3
                 MinMultipleFiltersMoviescomboBox.Items.Clear();
                 MaxMultipleFiltersMoviescomboBox.Items.Clear();
                 CharacteristicMultipleFiltersMoviescomboBox.Items.Clear();
+                CharacteristicMultipleFiltersMoviescomboBox.Text = "";
                 CharacteristicMultipleFiltersMoviestextBox.Clear();
                 ResultMultipleFiltersMoviesrichTextBox.Clear();
                 MinMultipleFiltersMoviescomboBox.Items.Add("1");
@@ -3474,6 +3481,11 @@ namespace Interfaz_Gráfica_Entrega_3
                     ResultMultipleFiltersMoviesrichTextBox.Text = result;
                 }
             }
+        }
+
+        private void Importpanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

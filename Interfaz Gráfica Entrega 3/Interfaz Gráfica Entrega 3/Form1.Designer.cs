@@ -555,6 +555,10 @@
             this.CharacteristicMultipleFiltersMoviescomboBox = new System.Windows.Forms.ComboBox();
             this.CharacteristicMultipleFiltersMoviestextBox = new System.Windows.Forms.TextBox();
             this.CharacteristicMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.MessageImportSonglabel = new System.Windows.Forms.Label();
+            this.MessageImportMovielabel = new System.Windows.Forms.Label();
             this.WelcomePanel.SuspendLayout();
             this.MainMenupanel.SuspendLayout();
             this.Importpanel.SuspendLayout();
@@ -655,11 +659,10 @@
             this.MainMenupanel.Controls.Add(this.SuggestionsMainMenubutton);
             this.MainMenupanel.Controls.Add(this.LogoutMainMenubutton);
             this.MainMenupanel.Controls.Add(this.Importbutton);
-            this.MainMenupanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainMenupanel.Location = new System.Drawing.Point(0, 0);
+            this.MainMenupanel.Location = new System.Drawing.Point(792, 51);
             this.MainMenupanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MainMenupanel.Name = "MainMenupanel";
-            this.MainMenupanel.Size = new System.Drawing.Size(841, 548);
+            this.MainMenupanel.Size = new System.Drawing.Size(37, 32);
             this.MainMenupanel.TabIndex = 4;
             this.MainMenupanel.Visible = false;
             this.MainMenupanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainMenupanel_Paint);
@@ -678,9 +681,12 @@
             this.Importpanel.Name = "Importpanel";
             this.Importpanel.Size = new System.Drawing.Size(27, 32);
             this.Importpanel.TabIndex = 17;
+            this.Importpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.Importpanel_Paint);
             // 
             // ImportMoviepanel
             // 
+            this.ImportMoviepanel.Controls.Add(this.MessageImportMovielabel);
+            this.ImportMoviepanel.Controls.Add(this.label5);
             this.ImportMoviepanel.Controls.Add(this.label16);
             this.ImportMoviepanel.Controls.Add(this.button4);
             this.ImportMoviepanel.Controls.Add(this.DurationImpportMovietextBox);
@@ -708,7 +714,8 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(172, 65);
+            this.label16.ForeColor = System.Drawing.SystemColors.Window;
+            this.label16.Location = new System.Drawing.Point(170, 101);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(522, 17);
@@ -820,7 +827,7 @@
             this.importmoviebutton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.importmoviebutton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.importmoviebutton5.ForeColor = System.Drawing.SystemColors.Window;
-            this.importmoviebutton5.Location = new System.Drawing.Point(375, 422);
+            this.importmoviebutton5.Location = new System.Drawing.Point(377, 389);
             this.importmoviebutton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.importmoviebutton5.Name = "importmoviebutton5";
             this.importmoviebutton5.Size = new System.Drawing.Size(169, 43);
@@ -882,14 +889,16 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.SystemColors.Window;
-            this.label26.Location = new System.Drawing.Point(261, 27);
+            this.label26.Location = new System.Drawing.Point(283, 23);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(266, 38);
+            this.label26.Size = new System.Drawing.Size(260, 38);
             this.label26.TabIndex = 22;
-            this.label26.Text = "Importar Cancion";
+            this.label26.Text = "Importar Película";
             // 
             // ImportSongpanel
             // 
+            this.ImportSongpanel.Controls.Add(this.MessageImportSonglabel);
+            this.ImportSongpanel.Controls.Add(this.label4);
             this.ImportSongpanel.Controls.Add(this.button3);
             this.ImportSongpanel.Controls.Add(this.DurationimporttextBox);
             this.ImportSongpanel.Controls.Add(this.lyricsimporttextBox);
@@ -1038,7 +1047,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.button1.Location = new System.Drawing.Point(383, 438);
+            this.button1.Location = new System.Drawing.Point(383, 413);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(169, 43);
@@ -1197,11 +1206,10 @@
             this.MoviesMainMenupanel.Controls.Add(this.BackMoviesMainMenubutton);
             this.MoviesMainMenupanel.Controls.Add(this.MoviesMainMenulabel);
             this.MoviesMainMenupanel.Controls.Add(this.QualifyMoviespanel);
-            this.MoviesMainMenupanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MoviesMainMenupanel.Location = new System.Drawing.Point(0, 0);
+            this.MoviesMainMenupanel.Location = new System.Drawing.Point(35, 377);
             this.MoviesMainMenupanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MoviesMainMenupanel.Name = "MoviesMainMenupanel";
-            this.MoviesMainMenupanel.Size = new System.Drawing.Size(841, 548);
+            this.MoviesMainMenupanel.Size = new System.Drawing.Size(48, 52);
             this.MoviesMainMenupanel.TabIndex = 6;
             // 
             // SearchMoviespanel
@@ -1220,11 +1228,10 @@
             this.SearchMoviespanel.Controls.Add(this.KeywordSearchMoviesbutton);
             this.SearchMoviespanel.Controls.Add(this.SearchMovieslabel);
             this.SearchMoviespanel.Controls.Add(this.BackSearchMoviesbutton);
-            this.SearchMoviespanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SearchMoviespanel.Location = new System.Drawing.Point(0, 0);
+            this.SearchMoviespanel.Location = new System.Drawing.Point(599, 66);
             this.SearchMoviespanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SearchMoviespanel.Name = "SearchMoviespanel";
-            this.SearchMoviespanel.Size = new System.Drawing.Size(841, 548);
+            this.SearchMoviespanel.Size = new System.Drawing.Size(47, 62);
             this.SearchMoviespanel.TabIndex = 13;
             // 
             // CharacteristicsMoviespanel
@@ -1424,11 +1431,10 @@
             this.MultipleFiltersMoviespanel.Controls.Add(this.MessageMultipleFiltersMovieslabel);
             this.MultipleFiltersMoviespanel.Controls.Add(this.MultipleFiltersMovieslabel);
             this.MultipleFiltersMoviespanel.Controls.Add(this.BackMultipleFiltersMoviesbutton);
-            this.MultipleFiltersMoviespanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MultipleFiltersMoviespanel.Location = new System.Drawing.Point(0, 0);
+            this.MultipleFiltersMoviespanel.Location = new System.Drawing.Point(175, 92);
             this.MultipleFiltersMoviespanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MultipleFiltersMoviespanel.Name = "MultipleFiltersMoviespanel";
-            this.MultipleFiltersMoviespanel.Size = new System.Drawing.Size(841, 548);
+            this.MultipleFiltersMoviespanel.Size = new System.Drawing.Size(73, 37);
             this.MultipleFiltersMoviespanel.TabIndex = 12;
             // 
             // ResultMultipleFiltersMoviesrichTextBox
@@ -5754,7 +5760,7 @@
             this.JoinPartyMainMenubutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.JoinPartyMainMenubutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JoinPartyMainMenubutton.ForeColor = System.Drawing.SystemColors.Window;
-            this.JoinPartyMainMenubutton.Location = new System.Drawing.Point(443, 121);
+            this.JoinPartyMainMenubutton.Location = new System.Drawing.Point(348, 123);
             this.JoinPartyMainMenubutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.JoinPartyMainMenubutton.Name = "JoinPartyMainMenubutton";
             this.JoinPartyMainMenubutton.Size = new System.Drawing.Size(160, 102);
@@ -5838,13 +5844,14 @@
             this.Importbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.Importbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Importbutton.ForeColor = System.Drawing.SystemColors.Window;
-            this.Importbutton.Location = new System.Drawing.Point(237, 126);
+            this.Importbutton.Location = new System.Drawing.Point(333, 239);
             this.Importbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Importbutton.Name = "Importbutton";
             this.Importbutton.Size = new System.Drawing.Size(183, 92);
             this.Importbutton.TabIndex = 16;
             this.Importbutton.Text = "Importar";
             this.Importbutton.UseVisualStyleBackColor = false;
+            this.Importbutton.Visible = false;
             this.Importbutton.Click += new System.EventHandler(this.Importbutton_Click);
             // 
             // ADCpanel
@@ -6171,10 +6178,10 @@
             // 
             this.CreatePbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.CreatePbutton.ForeColor = System.Drawing.SystemColors.Window;
-            this.CreatePbutton.Location = new System.Drawing.Point(449, 313);
+            this.CreatePbutton.Location = new System.Drawing.Point(445, 297);
             this.CreatePbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CreatePbutton.Name = "CreatePbutton";
-            this.CreatePbutton.Size = new System.Drawing.Size(75, 23);
+            this.CreatePbutton.Size = new System.Drawing.Size(88, 39);
             this.CreatePbutton.TabIndex = 7;
             this.CreatePbutton.Text = "Crear";
             this.CreatePbutton.UseVisualStyleBackColor = false;
@@ -6963,6 +6970,48 @@
             this.CharacteristicMultipleFiltersMovieslabel.TabIndex = 30;
             this.CharacteristicMultipleFiltersMovieslabel.Text = "Característica:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.Window;
+            this.label4.Location = new System.Drawing.Point(182, 101);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(519, 17);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "El nombre de la canción debe tener el mismo nombre del archivo que se importa.";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.Window;
+            this.label5.Location = new System.Drawing.Point(207, 70);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(461, 17);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "El nombre de la película debe ser el nombre del archivo que se importa.";
+            // 
+            // MessageImportSonglabel
+            // 
+            this.MessageImportSonglabel.AutoSize = true;
+            this.MessageImportSonglabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.MessageImportSonglabel.Location = new System.Drawing.Point(372, 478);
+            this.MessageImportSonglabel.Name = "MessageImportSonglabel";
+            this.MessageImportSonglabel.Size = new System.Drawing.Size(190, 17);
+            this.MessageImportSonglabel.TabIndex = 23;
+            this.MessageImportSonglabel.Text = "Canción importada con éxito.";
+            // 
+            // MessageImportMovielabel
+            // 
+            this.MessageImportMovielabel.AutoSize = true;
+            this.MessageImportMovielabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.MessageImportMovielabel.Location = new System.Drawing.Point(368, 451);
+            this.MessageImportMovielabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MessageImportMovielabel.Name = "MessageImportMovielabel";
+            this.MessageImportMovielabel.Size = new System.Drawing.Size(188, 17);
+            this.MessageImportMovielabel.TabIndex = 45;
+            this.MessageImportMovielabel.Text = "Película importada con éxito.";
+            // 
             // SpotflixForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -7626,6 +7675,10 @@
         private System.Windows.Forms.Label MinMultipleFiltersMovieslabel;
         private System.Windows.Forms.Label CategorieNameMultipleFiltersMovieslabel;
         private System.Windows.Forms.TextBox CategorieMultipleFiltersMoviestextBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label MessageImportSonglabel;
+        private System.Windows.Forms.Label MessageImportMovielabel;
     }
 }
 
