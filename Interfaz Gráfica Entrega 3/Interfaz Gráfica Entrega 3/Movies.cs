@@ -22,7 +22,6 @@ namespace Interfaz_Gráfica_Entrega_3
         private int users;
         private bool favourite;
         private string resolution;
-        //falta image y file
         public Movies(string name, List<string> categories, List<Actor> actors, string studio, int year, string description, int duration)
         {
             this.name = name;
@@ -53,8 +52,6 @@ namespace Interfaz_Gráfica_Entrega_3
         {
             return reproduction;
         }
-        //Import(file)
-        //Stop(file)
         public string GetStudio()
         {
             return studio;
@@ -75,8 +72,6 @@ namespace Interfaz_Gráfica_Entrega_3
         {
             return resolution;
         }
-        //NumberOfReproduction(reproduction)
-        //NumberOfUsers(users)
         public void Qualification(int q)
         {
             qualificationCount += 1;
@@ -86,7 +81,6 @@ namespace Interfaz_Gráfica_Entrega_3
         {
             return qualification / qualificationCount;
         }
-        //AddImage(image)
         public void AddActors(Actor actor)
         {
             actors.Add(actor);
@@ -95,9 +89,6 @@ namespace Interfaz_Gráfica_Entrega_3
         {
             reproduction = reproduction + 1;
         }
-        //NextMovie(file)
-        //GoForward(file)
-        //GoBackwards(file)
         public static string ShowOptions(List<string> options)
         {
             int i = 0;

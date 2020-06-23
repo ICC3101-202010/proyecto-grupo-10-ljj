@@ -717,11 +717,31 @@ namespace Interfaz_Gráfica_Entrega_3
         private void KeywordSearchSongsbutton_Click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            if (b.Text == "Por palabras clave")
+            if (b.Text == "Múltiples Filtros")
             {
-                Keywordpanel.Show();
-                Keywordpanel.BringToFront();
-                Keywordpanel.Dock = DockStyle.Fill;
+                MultipleFiltersSongspanel.Show();
+                MultipleFiltersSongspanel.BringToFront();
+                MultipleFiltersSongspanel.Dock = DockStyle.Fill;
+                GradeMultipleFiltersSongscomboBox.Items.Clear();
+                GradeMultipleFiltersSongscomboBox.Text = "";
+                ConditionMultipleFiltersSongscomboBox.Items.Clear();
+                ConditionMultipleFiltersSongscomboBox.Text = "";
+                GenderNameMultipleFiltersSongstextBox.Clear();
+                ArtistNameOrAgeMultipleFiltersSongstextBox.Clear();
+                ResultMultipleFiltersSongsrichTextBox.Clear();
+                GradeMultipleFiltersSongscomboBox.Items.Add("1");
+                GradeMultipleFiltersSongscomboBox.Items.Add("2");
+                GradeMultipleFiltersSongscomboBox.Items.Add("3");
+                GradeMultipleFiltersSongscomboBox.Items.Add("4");
+                GradeMultipleFiltersSongscomboBox.Items.Add("5");
+                GradeMultipleFiltersSongscomboBox.Items.Add("6");
+                GradeMultipleFiltersSongscomboBox.Items.Add("7");
+                GradeMultipleFiltersSongscomboBox.Items.Add("8");
+                GradeMultipleFiltersSongscomboBox.Items.Add("9");
+                GradeMultipleFiltersSongscomboBox.Items.Add("10");
+                ConditionMultipleFiltersSongscomboBox.Items.Add("Mayores");
+                ConditionMultipleFiltersSongscomboBox.Items.Add("Menores");
+                ConditionMultipleFiltersSongscomboBox.Items.Add("Iguales");
             }
         }
 
@@ -730,7 +750,7 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Volver")
             {
-                Keywordpanel.Hide();
+                MultipleFiltersSongspanel.Hide();
 
             }
         }
@@ -2828,7 +2848,7 @@ namespace Interfaz_Gráfica_Entrega_3
             Button b = (Button)sender;
             if (b.Text == "Volver")
             {
-                KeywordMoviespanel.Hide();
+                MultipleFiltersMoviespanel.Hide();
             }
         }
 
@@ -3115,6 +3135,344 @@ namespace Interfaz_Gráfica_Entrega_3
             foreach (PlaylistMovies a in l_plm)
             {
                 l_plm.Add(a);
+            }
+        }
+
+        private void Keywordpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void SearchMultipleFiltersSongsbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Buscar")
+            {
+                ResultMultipleFiltersSongsrichTextBox.Clear();
+                List<Songs> l_search = new List<Songs>();
+                if (GradeMultipleFiltersSongscomboBox.Text != "" && ConditionMultipleFiltersSongscomboBox.Text != "")
+                {
+                    int grade = Convert.ToInt32(GradeMultipleFiltersSongscomboBox.Text);
+                    string condition = ConditionMultipleFiltersSongscomboBox.Text;
+                    if (condition == "Mayores")
+                    {
+                        foreach (Songs song in l_songs)
+                        {
+                            if (song.getQualification() > grade)
+                            {
+                                if (l_search.Contains(song) == false)
+                                {
+                                    l_search.Add(song);
+                                }
+                            }
+                        }
+                    }
+                    if (condition == "Menores")
+                    {
+                        foreach (Songs song in l_songs)
+                        {
+                            if (song.getQualification() < grade)
+                            {
+                                if (l_search.Contains(song) == false)
+                                {
+                                    l_search.Add(song);
+                                }
+                            }
+                        }
+                    }
+                    if (condition == "Iguales")
+                    {
+                        foreach (Songs song in l_songs)
+                        {
+                            if (song.getQualification() == grade)
+                            {
+                                if (l_search.Contains(song) == false)
+                                {
+                                    l_search.Add(song);
+                                }
+                            }
+                        }
+                    }
+                }
+                if (GenderNameMultipleFiltersSongstextBox.Text != "")
+                {
+                    string gen = GenderNameMultipleFiltersSongstextBox.Text;
+                    foreach (Songs s in l_songs)
+                    {
+                        if (gen == s.getGender())
+                        {
+                            if (l_search.Contains(s) == false)
+                            {
+                                l_search.Add(s);
+                            }
+                        }
+                    }
+                }
+                if (ArtistNameOrAgeMultipleFiltersSongstextBox.Text != "")
+                {
+                    string noa = ArtistNameOrAgeMultipleFiltersSongstextBox.Text;
+                    foreach (Artist artist in l_artist)
+                    {
+                        try
+                        {
+                            if (Convert.ToInt32(noa) == artist.getAge())
+                            {
+                                foreach (Songs song in l_songs)
+                                {
+                                    if (artist.getName() == song.getArtist())
+                                    {
+                                        if (l_search.Contains(song) == false)
+                                        {
+                                            l_search.Add(song);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        catch
+                        {
+                            if (noa == artist.getGender())
+                            {
+                                foreach (Songs song in l_songs)
+                                {
+                                    if (artist.getName() == song.getArtist())
+                                    {
+                                        if (l_search.Contains(song) == false)
+                                        {
+                                            l_search.Add(song);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                if (l_search.Count == 0)
+                {
+                    ResultMultipleFiltersSongsrichTextBox.Text = "No se encontraron canciones.";
+                }
+                if (l_search.Count > 0)
+                {
+                    string result = "";
+                    foreach (Songs song in l_search)
+                    {
+                        result += song.getName() + "\n";
+                    }
+                    ResultMultipleFiltersSongsrichTextBox.Text = result;
+                }
+            }
+        }
+
+        private void InsertNamePlaySongscomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void KeywordSearchMoviesbutton_Click_1(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Múltiples Filtros")
+            {
+                MultipleFiltersMoviespanel.Show();
+                MultipleFiltersMoviespanel.BringToFront();
+                MultipleFiltersMoviespanel.Dock = DockStyle.Fill;
+                PersonMultipleFiltersMoviestextBox.Clear();
+                ResolutionMultipleFiltersMoviestextBox.Clear();
+                CategorieMultipleFiltersMoviestextBox.Clear();
+                MinMultipleFiltersMoviescomboBox.Items.Clear();
+                MaxMultipleFiltersMoviescomboBox.Items.Clear();
+                CharacteristicMultipleFiltersMoviescomboBox.Items.Clear();
+                CharacteristicMultipleFiltersMoviestextBox.Clear();
+                ResultMultipleFiltersMoviesrichTextBox.Clear();
+                MinMultipleFiltersMoviescomboBox.Items.Add("1");
+                MinMultipleFiltersMoviescomboBox.Items.Add("2");
+                MinMultipleFiltersMoviescomboBox.Items.Add("3");
+                MinMultipleFiltersMoviescomboBox.Items.Add("4");
+                MinMultipleFiltersMoviescomboBox.Items.Add("5");
+                MinMultipleFiltersMoviescomboBox.Items.Add("6");
+                MinMultipleFiltersMoviescomboBox.Items.Add("7");
+                MinMultipleFiltersMoviescomboBox.Items.Add("8");
+                MinMultipleFiltersMoviescomboBox.Items.Add("9");
+                MinMultipleFiltersMoviescomboBox.Items.Add("10");
+                MaxMultipleFiltersMoviescomboBox.Items.Add("1");
+                MaxMultipleFiltersMoviescomboBox.Items.Add("2");
+                MaxMultipleFiltersMoviescomboBox.Items.Add("3");
+                MaxMultipleFiltersMoviescomboBox.Items.Add("4");
+                MaxMultipleFiltersMoviescomboBox.Items.Add("5");
+                MaxMultipleFiltersMoviescomboBox.Items.Add("6");
+                MaxMultipleFiltersMoviescomboBox.Items.Add("7");
+                MaxMultipleFiltersMoviescomboBox.Items.Add("8");
+                MaxMultipleFiltersMoviescomboBox.Items.Add("9");
+                MaxMultipleFiltersMoviescomboBox.Items.Add("10");
+                CharacteristicMultipleFiltersMoviescomboBox.Items.Add("Nombre");
+                CharacteristicMultipleFiltersMoviescomboBox.Items.Add("Biografía");
+                CharacteristicMultipleFiltersMoviescomboBox.Items.Add("Participación en películas");
+                CharacteristicMultipleFiltersMoviescomboBox.Items.Add("Sexo");
+                CharacteristicMultipleFiltersMoviescomboBox.Items.Add("Edad");
+            }
+        }
+        private void SearchMultipleFiltersMoviesbutton_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Buscar")
+            {
+                ResultMultipleFiltersMoviesrichTextBox.Clear();
+                List<Movies> l_search = new List<Movies>();
+                if (PersonMultipleFiltersMoviestextBox.Text != "")
+                {
+                    string name = PersonMultipleFiltersMoviestextBox.Text;
+                    foreach (Movies movie in movielist)
+                    {
+                        foreach (Actor actor in movie.GetActors())
+                        {
+                            if (name == actor.GetName())
+                            {
+                                if (l_search.Contains(movie) == false)
+                                {
+                                    l_search.Add(movie);
+                                }
+                            }
+                        }
+                    }
+                }
+                if (CategorieMultipleFiltersMoviestextBox.Text != "")
+                {
+                    string categorie = CategorieMultipleFiltersMoviestextBox.Text;
+                    foreach (Movies movie in movielist)
+                    {
+                        foreach (string c in movie.GetCategories())
+                        {
+                            if (categorie == c)
+                            {
+                                if (l_search.Contains(movie) == false)
+                                {
+                                    l_search.Add(movie);
+                                }
+                            }
+                        }
+                    }
+                }
+                if (MinMultipleFiltersMoviescomboBox.Text != "" && MaxMultipleFiltersMoviescomboBox.Text != "")
+                {
+                    int min = Convert.ToInt32(MinMultipleFiltersMoviescomboBox.Text);
+                    int max = Convert.ToInt32(MaxMultipleFiltersMoviescomboBox.Text);
+                    foreach (Movies movie in movielist)
+                    {
+                        if (min <= movie.GetQualification() && movie.GetQualification() <= max)
+                        {
+                            if (l_search.Contains(movie) == false)
+                            {
+                                l_search.Add(movie);
+                            }
+                        }
+                    }
+                }
+                if (CharacteristicMultipleFiltersMoviescomboBox.Text != "" && CharacteristicMultipleFiltersMoviestextBox.Text != "")
+                {
+                    string charac = CharacteristicMultipleFiltersMoviestextBox.Text;
+                    if (CharacteristicMultipleFiltersMoviescomboBox.Text == "Nombre")
+                    {
+                        foreach (Movies movie in movielist)
+                        {
+                            foreach (Actor actor in movie.GetActors())
+                            {
+                                if (charac == actor.GetName())
+                                {
+                                    if (l_search.Contains(movie) == false)
+                                    {
+                                        l_search.Add(movie);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (CharacteristicMultipleFiltersMoviescomboBox.Text == "Biografía")
+                    {
+                        foreach (Movies movie in movielist)
+                        {
+                            foreach (Actor actor in movie.GetActors())
+                            {
+                                if (charac == actor.GetBiography())
+                                {
+                                    if (l_search.Contains(movie) == false)
+                                    {
+                                        l_search.Add(movie);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (CharacteristicMultipleFiltersMoviescomboBox.Text == "Participación en películas")
+                    {
+                        foreach (Movies movie in movielist)
+                        {
+                            foreach (Actor actor in movie.GetActors())
+                            {
+                                foreach (string p in actor.GetParticipation())
+                                {
+                                    if (charac == p)
+                                    {
+                                        if (l_search.Contains(movie) == false)
+                                        {
+                                            l_search.Add(movie);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (CharacteristicMultipleFiltersMoviescomboBox.Text == "Sexo")
+                    {
+                        foreach (Movies movie in movielist)
+                        {
+                            foreach (Actor actor in movie.GetActors())
+                            {
+                                if (charac == actor.GetGender())
+                                {
+                                    if (l_search.Contains(movie) == false)
+                                    {
+                                        l_search.Add(movie);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (CharacteristicMultipleFiltersMoviescomboBox.Text == "Edad")
+                    {
+                        try
+                        {
+                            foreach (Movies movie in movielist)
+                            {
+                                foreach (Actor actor in movie.GetActors())
+                                {
+                                    if (Convert.ToInt32(charac) == actor.GetAge())
+                                    {
+                                        if (l_search.Contains(movie) == false)
+                                        {
+                                            l_search.Add(movie);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        catch
+                        {
+                            ResultMultipleFiltersMoviesrichTextBox.Text = "Ocurrió un error inesperado.";
+                        }
+                    }
+                }
+                if (l_search.Count() == 0)
+                {
+                    ResultMultipleFiltersMoviesrichTextBox.Text = "No se encontraron películas.";
+                }
+                if (l_search.Count() > 0)
+                {
+                    string result = "";
+                    foreach (Movies movie in l_search)
+                    {
+                        result += movie.GetName() + "\n";
+                    }
+                    ResultMultipleFiltersMoviesrichTextBox.Text = result;
+                }
             }
         }
     }
