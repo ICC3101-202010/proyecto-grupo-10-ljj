@@ -32,6 +32,8 @@
             this.MainMenupanel = new System.Windows.Forms.Panel();
             this.Importpanel = new System.Windows.Forms.Panel();
             this.ImportMoviepanel = new System.Windows.Forms.Panel();
+            this.MessageImportMovielabel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.DurationImpportMovietextBox = new System.Windows.Forms.TextBox();
@@ -51,6 +53,8 @@
             this.categoriesimportmoviestextBox = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.ImportSongpanel = new System.Windows.Forms.Panel();
+            this.MessageImportSonglabel = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.DurationimporttextBox = new System.Windows.Forms.TextBox();
             this.lyricsimporttextBox = new System.Windows.Forms.TextBox();
@@ -93,6 +97,24 @@
             this.SearchResolutionMoviesbutton = new System.Windows.Forms.Button();
             this.ResolutionMovieslabel = new System.Windows.Forms.Label();
             this.MultipleFiltersMoviespanel = new System.Windows.Forms.Panel();
+            this.CharacteristicMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
+            this.CharacteristicMultipleFiltersMoviestextBox = new System.Windows.Forms.TextBox();
+            this.CharacteristicMultipleFiltersMoviescomboBox = new System.Windows.Forms.ComboBox();
+            this.MinMultipleFiltersMoviescomboBox = new System.Windows.Forms.ComboBox();
+            this.MaxMultipleFiltersMoviescomboBox = new System.Windows.Forms.ComboBox();
+            this.MaxMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
+            this.MinMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
+            this.CategorieNameMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
+            this.CategorieMultipleFiltersMoviestextBox = new System.Windows.Forms.TextBox();
+            this.TypeMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
+            this.ResolutionMultipleFiltersMoviestextBox = new System.Windows.Forms.TextBox();
+            this.PersonNameMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
+            this.PersonMultipleFiltersMoviestextBox = new System.Windows.Forms.TextBox();
+            this.CharacteristicsPersonMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
+            this.PersonMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
+            this.ResolutionMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
+            this.EvaluationMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
+            this.CategorieMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
             this.ResultMultipleFiltersMoviesrichTextBox = new System.Windows.Forms.RichTextBox();
             this.SearchMultipleFiltersMoviesbutton = new System.Windows.Forms.Button();
             this.MessageMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
@@ -231,13 +253,6 @@
             this.InsertSongNameQualifySongslabel = new System.Windows.Forms.Label();
             this.BackQualifySongsbutton = new System.Windows.Forms.Button();
             this.QualifySongslabel = new System.Windows.Forms.Label();
-            this.AddToFavouriteSongspanel = new System.Windows.Forms.Panel();
-            this.MessageAddToFavouriteSongslabel = new System.Windows.Forms.Label();
-            this.AddAddToFavouriteSongsbutton = new System.Windows.Forms.Button();
-            this.InsertSongNameAddToFavouriteSongslabel = new System.Windows.Forms.Label();
-            this.InsertSongNameAddToFavouriteSongscomboBox = new System.Windows.Forms.ComboBox();
-            this.BackAddToFavouriteSongsbutton = new System.Windows.Forms.Button();
-            this.AddToFavouriteSongslabe = new System.Windows.Forms.Label();
             this.SeeQueueSongspanel = new System.Windows.Forms.Panel();
             this.ResultSeeQueueSongsrichTextBox = new System.Windows.Forms.RichTextBox();
             this.SeeQueueSongslabel = new System.Windows.Forms.Label();
@@ -251,11 +266,29 @@
             this.PlaySongslabel = new System.Windows.Forms.Label();
             this.SearchSongspanel = new System.Windows.Forms.Panel();
             this.MultipleFiltersSongspanel = new System.Windows.Forms.Panel();
+            this.ConditionMultipleFiltersSongslabel = new System.Windows.Forms.Label();
+            this.GradeMultipleFiltersSOngslabel = new System.Windows.Forms.Label();
+            this.ConditionMultipleFiltersSongscomboBox = new System.Windows.Forms.ComboBox();
+            this.GradeMultipleFiltersSongscomboBox = new System.Windows.Forms.ComboBox();
+            this.ArtistNameOrAgeMultipleFIltersSongslabel = new System.Windows.Forms.Label();
+            this.GenderNameMultipleFiltersSongslabel = new System.Windows.Forms.Label();
+            this.GenderNameMultipleFiltersSongstextBox = new System.Windows.Forms.TextBox();
+            this.ArtistNameOrAgeMultipleFiltersSongstextBox = new System.Windows.Forms.TextBox();
+            this.ArtistMultipleFIltersSongslabel = new System.Windows.Forms.Label();
+            this.GenderMultipleFiltersSongslabel = new System.Windows.Forms.Label();
+            this.EvaluationMultipleFiltersSongslabel = new System.Windows.Forms.Label();
             this.ResultMultipleFiltersSongsrichTextBox = new System.Windows.Forms.RichTextBox();
             this.SearchMultipleFiltersSongsbutton = new System.Windows.Forms.Button();
             this.MessageMultipleFiltersSongslabel = new System.Windows.Forms.Label();
             this.MultipleFiltersSongslabel = new System.Windows.Forms.Label();
             this.BackMultipleFIltersSongsbutton = new System.Windows.Forms.Button();
+            this.AddToFavouriteSongspanel = new System.Windows.Forms.Panel();
+            this.MessageAddToFavouriteSongslabel = new System.Windows.Forms.Label();
+            this.AddAddToFavouriteSongsbutton = new System.Windows.Forms.Button();
+            this.InsertSongNameAddToFavouriteSongslabel = new System.Windows.Forms.Label();
+            this.InsertSongNameAddToFavouriteSongscomboBox = new System.Windows.Forms.ComboBox();
+            this.BackAddToFavouriteSongsbutton = new System.Windows.Forms.Button();
+            this.AddToFavouriteSongslabe = new System.Windows.Forms.Label();
             this.Genderpanel = new System.Windows.Forms.Panel();
             this.MessageGenderlabel = new System.Windows.Forms.Label();
             this.SearchGenderbutton = new System.Windows.Forms.Button();
@@ -264,9 +297,6 @@
             this.InsertGenderGenderlabel = new System.Windows.Forms.Label();
             this.BackGenderbutton = new System.Windows.Forms.Button();
             this.Genderlabel = new System.Windows.Forms.Label();
-            this.Artistpanel = new System.Windows.Forms.Panel();
-            this.Message2label = new System.Windows.Forms.Label();
-            this.Message1label = new System.Windows.Forms.Label();
             this.Evaluationpanel = new System.Windows.Forms.Panel();
             this.InsertSignEvaluationlabel = new System.Windows.Forms.Label();
             this.InsertQualificationEvaluationlabel = new System.Windows.Forms.Label();
@@ -276,6 +306,9 @@
             this.SearchEvaluationbutton = new System.Windows.Forms.Button();
             this.BackEvaluationbutton = new System.Windows.Forms.Button();
             this.Evaluationlabel = new System.Windows.Forms.Label();
+            this.Artistpanel = new System.Windows.Forms.Panel();
+            this.Message2label = new System.Windows.Forms.Label();
+            this.Message1label = new System.Windows.Forms.Label();
             this.InsertAnswerArtisttextBox = new System.Windows.Forms.TextBox();
             this.ResultArtistrichTextBox = new System.Windows.Forms.RichTextBox();
             this.GenderArtistbutton = new System.Windows.Forms.Button();
@@ -526,39 +559,6 @@
             this.LogoWelcomepictureBox = new System.Windows.Forms.PictureBox();
             this.ofd1 = new System.Windows.Forms.OpenFileDialog();
             this.fbd1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.EvaluationMultipleFiltersSongslabel = new System.Windows.Forms.Label();
-            this.GenderMultipleFiltersSongslabel = new System.Windows.Forms.Label();
-            this.ArtistMultipleFIltersSongslabel = new System.Windows.Forms.Label();
-            this.ArtistNameOrAgeMultipleFiltersSongstextBox = new System.Windows.Forms.TextBox();
-            this.GenderNameMultipleFiltersSongstextBox = new System.Windows.Forms.TextBox();
-            this.GenderNameMultipleFiltersSongslabel = new System.Windows.Forms.Label();
-            this.ArtistNameOrAgeMultipleFIltersSongslabel = new System.Windows.Forms.Label();
-            this.GradeMultipleFiltersSongscomboBox = new System.Windows.Forms.ComboBox();
-            this.ConditionMultipleFiltersSongscomboBox = new System.Windows.Forms.ComboBox();
-            this.GradeMultipleFiltersSOngslabel = new System.Windows.Forms.Label();
-            this.ConditionMultipleFiltersSongslabel = new System.Windows.Forms.Label();
-            this.CategorieMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
-            this.EvaluationMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
-            this.ResolutionMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
-            this.PersonMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
-            this.CharacteristicsPersonMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
-            this.PersonMultipleFiltersMoviestextBox = new System.Windows.Forms.TextBox();
-            this.PersonNameMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
-            this.TypeMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
-            this.ResolutionMultipleFiltersMoviestextBox = new System.Windows.Forms.TextBox();
-            this.CategorieNameMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
-            this.CategorieMultipleFiltersMoviestextBox = new System.Windows.Forms.TextBox();
-            this.MinMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
-            this.MaxMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
-            this.MaxMultipleFiltersMoviescomboBox = new System.Windows.Forms.ComboBox();
-            this.MinMultipleFiltersMoviescomboBox = new System.Windows.Forms.ComboBox();
-            this.CharacteristicMultipleFiltersMoviescomboBox = new System.Windows.Forms.ComboBox();
-            this.CharacteristicMultipleFiltersMoviestextBox = new System.Windows.Forms.TextBox();
-            this.CharacteristicMultipleFiltersMovieslabel = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.MessageImportSonglabel = new System.Windows.Forms.Label();
-            this.MessageImportMovielabel = new System.Windows.Forms.Label();
             this.WelcomePanel.SuspendLayout();
             this.MainMenupanel.SuspendLayout();
             this.Importpanel.SuspendLayout();
@@ -585,14 +585,14 @@
             this.QualifyMoviespanel.SuspendLayout();
             this.Songspanel.SuspendLayout();
             this.QualifySongspanel.SuspendLayout();
-            this.AddToFavouriteSongspanel.SuspendLayout();
             this.SeeQueueSongspanel.SuspendLayout();
             this.PlaySongspanel.SuspendLayout();
             this.SearchSongspanel.SuspendLayout();
             this.MultipleFiltersSongspanel.SuspendLayout();
+            this.AddToFavouriteSongspanel.SuspendLayout();
             this.Genderpanel.SuspendLayout();
-            this.Artistpanel.SuspendLayout();
             this.Evaluationpanel.SuspendLayout();
+            this.Artistpanel.SuspendLayout();
             this.AddToQueueSongspanel.SuspendLayout();
             this.InformationSongspanel.SuspendLayout();
             this.AddToPlaylistSongspanel.SuspendLayout();
@@ -710,6 +710,28 @@
             this.ImportMoviepanel.Name = "ImportMoviepanel";
             this.ImportMoviepanel.Size = new System.Drawing.Size(151, 133);
             this.ImportMoviepanel.TabIndex = 18;
+            // 
+            // MessageImportMovielabel
+            // 
+            this.MessageImportMovielabel.AutoSize = true;
+            this.MessageImportMovielabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.MessageImportMovielabel.Location = new System.Drawing.Point(368, 451);
+            this.MessageImportMovielabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MessageImportMovielabel.Name = "MessageImportMovielabel";
+            this.MessageImportMovielabel.Size = new System.Drawing.Size(188, 17);
+            this.MessageImportMovielabel.TabIndex = 45;
+            this.MessageImportMovielabel.Text = "Película importada con éxito.";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.Window;
+            this.label5.Location = new System.Drawing.Point(207, 70);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(461, 17);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "El nombre de la película debe ser el nombre del archivo que se importa.";
             // 
             // label16
             // 
@@ -923,6 +945,26 @@
             this.ImportSongpanel.Name = "ImportSongpanel";
             this.ImportSongpanel.Size = new System.Drawing.Size(151, 133);
             this.ImportSongpanel.TabIndex = 19;
+            // 
+            // MessageImportSonglabel
+            // 
+            this.MessageImportSonglabel.AutoSize = true;
+            this.MessageImportSonglabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.MessageImportSonglabel.Location = new System.Drawing.Point(372, 478);
+            this.MessageImportSonglabel.Name = "MessageImportSonglabel";
+            this.MessageImportSonglabel.Size = new System.Drawing.Size(190, 17);
+            this.MessageImportSonglabel.TabIndex = 23;
+            this.MessageImportSonglabel.Text = "Canción importada con éxito.";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.Window;
+            this.label4.Location = new System.Drawing.Point(182, 101);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(519, 17);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "El nombre de la canción debe tener el mismo nombre del archivo que se importa.";
             // 
             // button3
             // 
@@ -1436,6 +1478,179 @@
             this.MultipleFiltersMoviespanel.Name = "MultipleFiltersMoviespanel";
             this.MultipleFiltersMoviespanel.Size = new System.Drawing.Size(73, 37);
             this.MultipleFiltersMoviespanel.TabIndex = 12;
+            // 
+            // CharacteristicMultipleFiltersMovieslabel
+            // 
+            this.CharacteristicMultipleFiltersMovieslabel.AutoSize = true;
+            this.CharacteristicMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharacteristicMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.CharacteristicMultipleFiltersMovieslabel.Location = new System.Drawing.Point(318, 364);
+            this.CharacteristicMultipleFiltersMovieslabel.Name = "CharacteristicMultipleFiltersMovieslabel";
+            this.CharacteristicMultipleFiltersMovieslabel.Size = new System.Drawing.Size(126, 24);
+            this.CharacteristicMultipleFiltersMovieslabel.TabIndex = 30;
+            this.CharacteristicMultipleFiltersMovieslabel.Text = "Característica:";
+            // 
+            // CharacteristicMultipleFiltersMoviestextBox
+            // 
+            this.CharacteristicMultipleFiltersMoviestextBox.Location = new System.Drawing.Point(389, 392);
+            this.CharacteristicMultipleFiltersMoviestextBox.Name = "CharacteristicMultipleFiltersMoviestextBox";
+            this.CharacteristicMultipleFiltersMoviestextBox.Size = new System.Drawing.Size(132, 22);
+            this.CharacteristicMultipleFiltersMoviestextBox.TabIndex = 29;
+            // 
+            // CharacteristicMultipleFiltersMoviescomboBox
+            // 
+            this.CharacteristicMultipleFiltersMoviescomboBox.FormattingEnabled = true;
+            this.CharacteristicMultipleFiltersMoviescomboBox.Location = new System.Drawing.Point(246, 391);
+            this.CharacteristicMultipleFiltersMoviescomboBox.Name = "CharacteristicMultipleFiltersMoviescomboBox";
+            this.CharacteristicMultipleFiltersMoviescomboBox.Size = new System.Drawing.Size(124, 24);
+            this.CharacteristicMultipleFiltersMoviescomboBox.TabIndex = 28;
+            // 
+            // MinMultipleFiltersMoviescomboBox
+            // 
+            this.MinMultipleFiltersMoviescomboBox.FormattingEnabled = true;
+            this.MinMultipleFiltersMoviescomboBox.Location = new System.Drawing.Point(376, 296);
+            this.MinMultipleFiltersMoviescomboBox.Name = "MinMultipleFiltersMoviescomboBox";
+            this.MinMultipleFiltersMoviescomboBox.Size = new System.Drawing.Size(66, 24);
+            this.MinMultipleFiltersMoviescomboBox.TabIndex = 27;
+            // 
+            // MaxMultipleFiltersMoviescomboBox
+            // 
+            this.MaxMultipleFiltersMoviescomboBox.FormattingEnabled = true;
+            this.MaxMultipleFiltersMoviescomboBox.Location = new System.Drawing.Point(457, 295);
+            this.MaxMultipleFiltersMoviescomboBox.Name = "MaxMultipleFiltersMoviescomboBox";
+            this.MaxMultipleFiltersMoviescomboBox.Size = new System.Drawing.Size(72, 24);
+            this.MaxMultipleFiltersMoviescomboBox.TabIndex = 26;
+            // 
+            // MaxMultipleFiltersMovieslabel
+            // 
+            this.MaxMultipleFiltersMovieslabel.AutoSize = true;
+            this.MaxMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaxMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.MaxMultipleFiltersMovieslabel.Location = new System.Drawing.Point(471, 267);
+            this.MaxMultipleFiltersMovieslabel.Name = "MaxMultipleFiltersMovieslabel";
+            this.MaxMultipleFiltersMovieslabel.Size = new System.Drawing.Size(51, 24);
+            this.MaxMultipleFiltersMovieslabel.TabIndex = 25;
+            this.MaxMultipleFiltersMovieslabel.Text = "Máx:";
+            // 
+            // MinMultipleFiltersMovieslabel
+            // 
+            this.MinMultipleFiltersMovieslabel.AutoSize = true;
+            this.MinMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MinMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.MinMultipleFiltersMovieslabel.Location = new System.Drawing.Point(385, 267);
+            this.MinMultipleFiltersMovieslabel.Name = "MinMultipleFiltersMovieslabel";
+            this.MinMultipleFiltersMovieslabel.Size = new System.Drawing.Size(46, 24);
+            this.MinMultipleFiltersMovieslabel.TabIndex = 23;
+            this.MinMultipleFiltersMovieslabel.Text = "Mín:";
+            // 
+            // CategorieNameMultipleFiltersMovieslabel
+            // 
+            this.CategorieNameMultipleFiltersMovieslabel.AutoSize = true;
+            this.CategorieNameMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategorieNameMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.CategorieNameMultipleFiltersMovieslabel.Location = new System.Drawing.Point(140, 266);
+            this.CategorieNameMultipleFiltersMovieslabel.Name = "CategorieNameMultipleFiltersMovieslabel";
+            this.CategorieNameMultipleFiltersMovieslabel.Size = new System.Drawing.Size(84, 24);
+            this.CategorieNameMultipleFiltersMovieslabel.TabIndex = 21;
+            this.CategorieNameMultipleFiltersMovieslabel.Text = "Nombre:";
+            // 
+            // CategorieMultipleFiltersMoviestextBox
+            // 
+            this.CategorieMultipleFiltersMoviestextBox.Location = new System.Drawing.Point(128, 293);
+            this.CategorieMultipleFiltersMoviestextBox.Name = "CategorieMultipleFiltersMoviestextBox";
+            this.CategorieMultipleFiltersMoviestextBox.Size = new System.Drawing.Size(100, 22);
+            this.CategorieMultipleFiltersMoviestextBox.TabIndex = 20;
+            // 
+            // TypeMultipleFiltersMovieslabel
+            // 
+            this.TypeMultipleFiltersMovieslabel.AutoSize = true;
+            this.TypeMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TypeMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.TypeMultipleFiltersMovieslabel.Location = new System.Drawing.Point(365, 188);
+            this.TypeMultipleFiltersMovieslabel.Name = "TypeMultipleFiltersMovieslabel";
+            this.TypeMultipleFiltersMovieslabel.Size = new System.Drawing.Size(175, 24);
+            this.TypeMultipleFiltersMovieslabel.TabIndex = 19;
+            this.TypeMultipleFiltersMovieslabel.Text = "Tipo (ej. 1366x768):";
+            // 
+            // ResolutionMultipleFiltersMoviestextBox
+            // 
+            this.ResolutionMultipleFiltersMoviestextBox.Location = new System.Drawing.Point(372, 214);
+            this.ResolutionMultipleFiltersMoviestextBox.Name = "ResolutionMultipleFiltersMoviestextBox";
+            this.ResolutionMultipleFiltersMoviestextBox.Size = new System.Drawing.Size(150, 22);
+            this.ResolutionMultipleFiltersMoviestextBox.TabIndex = 18;
+            // 
+            // PersonNameMultipleFiltersMovieslabel
+            // 
+            this.PersonNameMultipleFiltersMovieslabel.AutoSize = true;
+            this.PersonNameMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PersonNameMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.PersonNameMultipleFiltersMovieslabel.Location = new System.Drawing.Point(134, 188);
+            this.PersonNameMultipleFiltersMovieslabel.Name = "PersonNameMultipleFiltersMovieslabel";
+            this.PersonNameMultipleFiltersMovieslabel.Size = new System.Drawing.Size(84, 24);
+            this.PersonNameMultipleFiltersMovieslabel.TabIndex = 17;
+            this.PersonNameMultipleFiltersMovieslabel.Text = "Nombre:";
+            // 
+            // PersonMultipleFiltersMoviestextBox
+            // 
+            this.PersonMultipleFiltersMoviestextBox.Location = new System.Drawing.Point(122, 215);
+            this.PersonMultipleFiltersMoviestextBox.Name = "PersonMultipleFiltersMoviestextBox";
+            this.PersonMultipleFiltersMoviestextBox.Size = new System.Drawing.Size(100, 22);
+            this.PersonMultipleFiltersMoviestextBox.TabIndex = 16;
+            // 
+            // CharacteristicsPersonMultipleFiltersMovieslabel
+            // 
+            this.CharacteristicsPersonMultipleFiltersMovieslabel.AutoSize = true;
+            this.CharacteristicsPersonMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharacteristicsPersonMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.CharacteristicsPersonMultipleFiltersMovieslabel.Location = new System.Drawing.Point(43, 389);
+            this.CharacteristicsPersonMultipleFiltersMovieslabel.Name = "CharacteristicsPersonMultipleFiltersMovieslabel";
+            this.CharacteristicsPersonMultipleFiltersMovieslabel.Size = new System.Drawing.Size(188, 24);
+            this.CharacteristicsPersonMultipleFiltersMovieslabel.TabIndex = 14;
+            this.CharacteristicsPersonMultipleFiltersMovieslabel.Text = "Caract. de la persona";
+            // 
+            // PersonMultipleFiltersMovieslabel
+            // 
+            this.PersonMultipleFiltersMovieslabel.AutoSize = true;
+            this.PersonMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PersonMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.PersonMultipleFiltersMovieslabel.Location = new System.Drawing.Point(38, 215);
+            this.PersonMultipleFiltersMovieslabel.Name = "PersonMultipleFiltersMovieslabel";
+            this.PersonMultipleFiltersMovieslabel.Size = new System.Drawing.Size(80, 24);
+            this.PersonMultipleFiltersMovieslabel.TabIndex = 13;
+            this.PersonMultipleFiltersMovieslabel.Text = "Persona";
+            // 
+            // ResolutionMultipleFiltersMovieslabel
+            // 
+            this.ResolutionMultipleFiltersMovieslabel.AutoSize = true;
+            this.ResolutionMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResolutionMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.ResolutionMultipleFiltersMovieslabel.Location = new System.Drawing.Point(270, 212);
+            this.ResolutionMultipleFiltersMovieslabel.Name = "ResolutionMultipleFiltersMovieslabel";
+            this.ResolutionMultipleFiltersMovieslabel.Size = new System.Drawing.Size(105, 24);
+            this.ResolutionMultipleFiltersMovieslabel.TabIndex = 12;
+            this.ResolutionMultipleFiltersMovieslabel.Text = "Resolución";
+            // 
+            // EvaluationMultipleFiltersMovieslabel
+            // 
+            this.EvaluationMultipleFiltersMovieslabel.AutoSize = true;
+            this.EvaluationMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EvaluationMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.EvaluationMultipleFiltersMovieslabel.Location = new System.Drawing.Point(267, 290);
+            this.EvaluationMultipleFiltersMovieslabel.Name = "EvaluationMultipleFiltersMovieslabel";
+            this.EvaluationMultipleFiltersMovieslabel.Size = new System.Drawing.Size(103, 24);
+            this.EvaluationMultipleFiltersMovieslabel.TabIndex = 11;
+            this.EvaluationMultipleFiltersMovieslabel.Text = "Evaluación";
+            // 
+            // CategorieMultipleFiltersMovieslabel
+            // 
+            this.CategorieMultipleFiltersMovieslabel.AutoSize = true;
+            this.CategorieMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategorieMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.CategorieMultipleFiltersMovieslabel.Location = new System.Drawing.Point(37, 291);
+            this.CategorieMultipleFiltersMovieslabel.Name = "CategorieMultipleFiltersMovieslabel";
+            this.CategorieMultipleFiltersMovieslabel.Size = new System.Drawing.Size(90, 24);
+            this.CategorieMultipleFiltersMovieslabel.TabIndex = 10;
+            this.CategorieMultipleFiltersMovieslabel.Text = "Categoría";
             // 
             // ResultMultipleFiltersMoviesrichTextBox
             // 
@@ -3123,88 +3338,6 @@
             this.QualifySongslabel.TabIndex = 0;
             this.QualifySongslabel.Text = "Calificar Canción";
             // 
-            // AddToFavouriteSongspanel
-            // 
-            this.AddToFavouriteSongspanel.Controls.Add(this.MessageAddToFavouriteSongslabel);
-            this.AddToFavouriteSongspanel.Controls.Add(this.AddAddToFavouriteSongsbutton);
-            this.AddToFavouriteSongspanel.Controls.Add(this.InsertSongNameAddToFavouriteSongslabel);
-            this.AddToFavouriteSongspanel.Controls.Add(this.InsertSongNameAddToFavouriteSongscomboBox);
-            this.AddToFavouriteSongspanel.Controls.Add(this.BackAddToFavouriteSongsbutton);
-            this.AddToFavouriteSongspanel.Controls.Add(this.AddToFavouriteSongslabe);
-            this.AddToFavouriteSongspanel.Location = new System.Drawing.Point(772, 217);
-            this.AddToFavouriteSongspanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.AddToFavouriteSongspanel.Name = "AddToFavouriteSongspanel";
-            this.AddToFavouriteSongspanel.Size = new System.Drawing.Size(49, 50);
-            this.AddToFavouriteSongspanel.TabIndex = 10;
-            // 
-            // MessageAddToFavouriteSongslabel
-            // 
-            this.MessageAddToFavouriteSongslabel.AutoSize = true;
-            this.MessageAddToFavouriteSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.MessageAddToFavouriteSongslabel.Location = new System.Drawing.Point(305, 298);
-            this.MessageAddToFavouriteSongslabel.Name = "MessageAddToFavouriteSongslabel";
-            this.MessageAddToFavouriteSongslabel.Size = new System.Drawing.Size(242, 17);
-            this.MessageAddToFavouriteSongslabel.TabIndex = 5;
-            this.MessageAddToFavouriteSongslabel.Text = "La canción se añadió correctamente.";
-            this.MessageAddToFavouriteSongslabel.Visible = false;
-            // 
-            // AddAddToFavouriteSongsbutton
-            // 
-            this.AddAddToFavouriteSongsbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.AddAddToFavouriteSongsbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddAddToFavouriteSongsbutton.ForeColor = System.Drawing.SystemColors.Window;
-            this.AddAddToFavouriteSongsbutton.Location = new System.Drawing.Point(368, 210);
-            this.AddAddToFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.AddAddToFavouriteSongsbutton.Name = "AddAddToFavouriteSongsbutton";
-            this.AddAddToFavouriteSongsbutton.Size = new System.Drawing.Size(107, 48);
-            this.AddAddToFavouriteSongsbutton.TabIndex = 4;
-            this.AddAddToFavouriteSongsbutton.Text = "Agregar";
-            this.AddAddToFavouriteSongsbutton.UseVisualStyleBackColor = false;
-            this.AddAddToFavouriteSongsbutton.Click += new System.EventHandler(this.AddAddToFavouriteSongsbutton_Click);
-            // 
-            // InsertSongNameAddToFavouriteSongslabel
-            // 
-            this.InsertSongNameAddToFavouriteSongslabel.AutoSize = true;
-            this.InsertSongNameAddToFavouriteSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.InsertSongNameAddToFavouriteSongslabel.Location = new System.Drawing.Point(247, 165);
-            this.InsertSongNameAddToFavouriteSongslabel.Name = "InsertSongNameAddToFavouriteSongslabel";
-            this.InsertSongNameAddToFavouriteSongslabel.Size = new System.Drawing.Size(150, 17);
-            this.InsertSongNameAddToFavouriteSongslabel.TabIndex = 3;
-            this.InsertSongNameAddToFavouriteSongslabel.Text = "Nombre de la canción:";
-            // 
-            // InsertSongNameAddToFavouriteSongscomboBox
-            // 
-            this.InsertSongNameAddToFavouriteSongscomboBox.FormattingEnabled = true;
-            this.InsertSongNameAddToFavouriteSongscomboBox.Location = new System.Drawing.Point(428, 165);
-            this.InsertSongNameAddToFavouriteSongscomboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.InsertSongNameAddToFavouriteSongscomboBox.Name = "InsertSongNameAddToFavouriteSongscomboBox";
-            this.InsertSongNameAddToFavouriteSongscomboBox.Size = new System.Drawing.Size(121, 24);
-            this.InsertSongNameAddToFavouriteSongscomboBox.TabIndex = 2;
-            // 
-            // BackAddToFavouriteSongsbutton
-            // 
-            this.BackAddToFavouriteSongsbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.BackAddToFavouriteSongsbutton.ForeColor = System.Drawing.SystemColors.Window;
-            this.BackAddToFavouriteSongsbutton.Location = new System.Drawing.Point(753, 512);
-            this.BackAddToFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BackAddToFavouriteSongsbutton.Name = "BackAddToFavouriteSongsbutton";
-            this.BackAddToFavouriteSongsbutton.Size = new System.Drawing.Size(75, 23);
-            this.BackAddToFavouriteSongsbutton.TabIndex = 1;
-            this.BackAddToFavouriteSongsbutton.Text = "Volver";
-            this.BackAddToFavouriteSongsbutton.UseVisualStyleBackColor = false;
-            this.BackAddToFavouriteSongsbutton.Click += new System.EventHandler(this.BackAddToFavouriteSongsbutton_Click);
-            // 
-            // AddToFavouriteSongslabe
-            // 
-            this.AddToFavouriteSongslabe.AutoSize = true;
-            this.AddToFavouriteSongslabe.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddToFavouriteSongslabe.ForeColor = System.Drawing.SystemColors.Window;
-            this.AddToFavouriteSongslabe.Location = new System.Drawing.Point(180, 20);
-            this.AddToFavouriteSongslabe.Name = "AddToFavouriteSongslabe";
-            this.AddToFavouriteSongslabe.Size = new System.Drawing.Size(411, 38);
-            this.AddToFavouriteSongslabe.TabIndex = 0;
-            this.AddToFavouriteSongslabe.Text = "Añadir Canción a Favoritos";
-            // 
             // SeeQueueSongspanel
             // 
             this.SeeQueueSongspanel.Controls.Add(this.ResultSeeQueueSongsrichTextBox);
@@ -3380,6 +3513,109 @@
             this.MultipleFiltersSongspanel.TabIndex = 7;
             this.MultipleFiltersSongspanel.Paint += new System.Windows.Forms.PaintEventHandler(this.Keywordpanel_Paint);
             // 
+            // ConditionMultipleFiltersSongslabel
+            // 
+            this.ConditionMultipleFiltersSongslabel.AutoSize = true;
+            this.ConditionMultipleFiltersSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.ConditionMultipleFiltersSongslabel.Location = new System.Drawing.Point(190, 181);
+            this.ConditionMultipleFiltersSongslabel.Name = "ConditionMultipleFiltersSongslabel";
+            this.ConditionMultipleFiltersSongslabel.Size = new System.Drawing.Size(188, 24);
+            this.ConditionMultipleFiltersSongslabel.TabIndex = 18;
+            this.ConditionMultipleFiltersSongslabel.Text = "Condición de la nota:";
+            // 
+            // GradeMultipleFiltersSOngslabel
+            // 
+            this.GradeMultipleFiltersSOngslabel.AutoSize = true;
+            this.GradeMultipleFiltersSOngslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.GradeMultipleFiltersSOngslabel.Location = new System.Drawing.Point(404, 181);
+            this.GradeMultipleFiltersSOngslabel.Name = "GradeMultipleFiltersSOngslabel";
+            this.GradeMultipleFiltersSOngslabel.Size = new System.Drawing.Size(54, 24);
+            this.GradeMultipleFiltersSOngslabel.TabIndex = 17;
+            this.GradeMultipleFiltersSOngslabel.Text = "Nota:";
+            // 
+            // ConditionMultipleFiltersSongscomboBox
+            // 
+            this.ConditionMultipleFiltersSongscomboBox.FormattingEnabled = true;
+            this.ConditionMultipleFiltersSongscomboBox.Location = new System.Drawing.Point(232, 214);
+            this.ConditionMultipleFiltersSongscomboBox.Name = "ConditionMultipleFiltersSongscomboBox";
+            this.ConditionMultipleFiltersSongscomboBox.Size = new System.Drawing.Size(121, 30);
+            this.ConditionMultipleFiltersSongscomboBox.TabIndex = 16;
+            // 
+            // GradeMultipleFiltersSongscomboBox
+            // 
+            this.GradeMultipleFiltersSongscomboBox.FormattingEnabled = true;
+            this.GradeMultipleFiltersSongscomboBox.Location = new System.Drawing.Point(394, 214);
+            this.GradeMultipleFiltersSongscomboBox.Name = "GradeMultipleFiltersSongscomboBox";
+            this.GradeMultipleFiltersSongscomboBox.Size = new System.Drawing.Size(75, 30);
+            this.GradeMultipleFiltersSongscomboBox.TabIndex = 15;
+            // 
+            // ArtistNameOrAgeMultipleFIltersSongslabel
+            // 
+            this.ArtistNameOrAgeMultipleFIltersSongslabel.AutoSize = true;
+            this.ArtistNameOrAgeMultipleFIltersSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.ArtistNameOrAgeMultipleFIltersSongslabel.Location = new System.Drawing.Point(190, 364);
+            this.ArtistNameOrAgeMultipleFIltersSongslabel.Name = "ArtistNameOrAgeMultipleFIltersSongslabel";
+            this.ArtistNameOrAgeMultipleFIltersSongslabel.Size = new System.Drawing.Size(300, 24);
+            this.ArtistNameOrAgeMultipleFIltersSongslabel.TabIndex = 14;
+            this.ArtistNameOrAgeMultipleFIltersSongslabel.Text = "Edad o Género Musical del Artista:";
+            // 
+            // GenderNameMultipleFiltersSongslabel
+            // 
+            this.GenderNameMultipleFiltersSongslabel.AutoSize = true;
+            this.GenderNameMultipleFiltersSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.GenderNameMultipleFiltersSongslabel.Location = new System.Drawing.Point(224, 275);
+            this.GenderNameMultipleFiltersSongslabel.Name = "GenderNameMultipleFiltersSongslabel";
+            this.GenderNameMultipleFiltersSongslabel.Size = new System.Drawing.Size(250, 24);
+            this.GenderNameMultipleFiltersSongslabel.TabIndex = 13;
+            this.GenderNameMultipleFiltersSongslabel.Text = "Nombre del género musical:";
+            // 
+            // GenderNameMultipleFiltersSongstextBox
+            // 
+            this.GenderNameMultipleFiltersSongstextBox.Location = new System.Drawing.Point(231, 304);
+            this.GenderNameMultipleFiltersSongstextBox.Name = "GenderNameMultipleFiltersSongstextBox";
+            this.GenderNameMultipleFiltersSongstextBox.Size = new System.Drawing.Size(220, 28);
+            this.GenderNameMultipleFiltersSongstextBox.TabIndex = 12;
+            // 
+            // ArtistNameOrAgeMultipleFiltersSongstextBox
+            // 
+            this.ArtistNameOrAgeMultipleFiltersSongstextBox.Location = new System.Drawing.Point(228, 395);
+            this.ArtistNameOrAgeMultipleFiltersSongstextBox.Name = "ArtistNameOrAgeMultipleFiltersSongstextBox";
+            this.ArtistNameOrAgeMultipleFiltersSongstextBox.Size = new System.Drawing.Size(223, 28);
+            this.ArtistNameOrAgeMultipleFiltersSongstextBox.TabIndex = 11;
+            // 
+            // ArtistMultipleFIltersSongslabel
+            // 
+            this.ArtistMultipleFIltersSongslabel.AutoSize = true;
+            this.ArtistMultipleFIltersSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ArtistMultipleFIltersSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.ArtistMultipleFIltersSongslabel.Location = new System.Drawing.Point(91, 393);
+            this.ArtistMultipleFIltersSongslabel.Name = "ArtistMultipleFIltersSongslabel";
+            this.ArtistMultipleFIltersSongslabel.Size = new System.Drawing.Size(60, 24);
+            this.ArtistMultipleFIltersSongslabel.TabIndex = 10;
+            this.ArtistMultipleFIltersSongslabel.Text = "Artista";
+            // 
+            // GenderMultipleFiltersSongslabel
+            // 
+            this.GenderMultipleFiltersSongslabel.AutoSize = true;
+            this.GenderMultipleFiltersSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenderMultipleFiltersSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.GenderMultipleFiltersSongslabel.Location = new System.Drawing.Point(81, 310);
+            this.GenderMultipleFiltersSongslabel.Name = "GenderMultipleFiltersSongslabel";
+            this.GenderMultipleFiltersSongslabel.Size = new System.Drawing.Size(90, 24);
+            this.GenderMultipleFiltersSongslabel.TabIndex = 9;
+            this.GenderMultipleFiltersSongslabel.Text = "Categoría";
+            // 
+            // EvaluationMultipleFiltersSongslabel
+            // 
+            this.EvaluationMultipleFiltersSongslabel.AutoSize = true;
+            this.EvaluationMultipleFiltersSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EvaluationMultipleFiltersSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.EvaluationMultipleFiltersSongslabel.Location = new System.Drawing.Point(85, 214);
+            this.EvaluationMultipleFiltersSongslabel.Name = "EvaluationMultipleFiltersSongslabel";
+            this.EvaluationMultipleFiltersSongslabel.Size = new System.Drawing.Size(103, 24);
+            this.EvaluationMultipleFiltersSongslabel.TabIndex = 8;
+            this.EvaluationMultipleFiltersSongslabel.Text = "Evaluación";
+            // 
             // ResultMultipleFiltersSongsrichTextBox
             // 
             this.ResultMultipleFiltersSongsrichTextBox.BackColor = System.Drawing.Color.Yellow;
@@ -3438,6 +3674,88 @@
             this.BackMultipleFIltersSongsbutton.Text = "Volver";
             this.BackMultipleFIltersSongsbutton.UseVisualStyleBackColor = false;
             this.BackMultipleFIltersSongsbutton.Click += new System.EventHandler(this.BackKeywordbutton_Click);
+            // 
+            // AddToFavouriteSongspanel
+            // 
+            this.AddToFavouriteSongspanel.Controls.Add(this.MessageAddToFavouriteSongslabel);
+            this.AddToFavouriteSongspanel.Controls.Add(this.AddAddToFavouriteSongsbutton);
+            this.AddToFavouriteSongspanel.Controls.Add(this.InsertSongNameAddToFavouriteSongslabel);
+            this.AddToFavouriteSongspanel.Controls.Add(this.InsertSongNameAddToFavouriteSongscomboBox);
+            this.AddToFavouriteSongspanel.Controls.Add(this.BackAddToFavouriteSongsbutton);
+            this.AddToFavouriteSongspanel.Controls.Add(this.AddToFavouriteSongslabe);
+            this.AddToFavouriteSongspanel.Location = new System.Drawing.Point(772, 217);
+            this.AddToFavouriteSongspanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AddToFavouriteSongspanel.Name = "AddToFavouriteSongspanel";
+            this.AddToFavouriteSongspanel.Size = new System.Drawing.Size(49, 50);
+            this.AddToFavouriteSongspanel.TabIndex = 10;
+            // 
+            // MessageAddToFavouriteSongslabel
+            // 
+            this.MessageAddToFavouriteSongslabel.AutoSize = true;
+            this.MessageAddToFavouriteSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.MessageAddToFavouriteSongslabel.Location = new System.Drawing.Point(305, 298);
+            this.MessageAddToFavouriteSongslabel.Name = "MessageAddToFavouriteSongslabel";
+            this.MessageAddToFavouriteSongslabel.Size = new System.Drawing.Size(242, 17);
+            this.MessageAddToFavouriteSongslabel.TabIndex = 5;
+            this.MessageAddToFavouriteSongslabel.Text = "La canción se añadió correctamente.";
+            this.MessageAddToFavouriteSongslabel.Visible = false;
+            // 
+            // AddAddToFavouriteSongsbutton
+            // 
+            this.AddAddToFavouriteSongsbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.AddAddToFavouriteSongsbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddAddToFavouriteSongsbutton.ForeColor = System.Drawing.SystemColors.Window;
+            this.AddAddToFavouriteSongsbutton.Location = new System.Drawing.Point(368, 210);
+            this.AddAddToFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AddAddToFavouriteSongsbutton.Name = "AddAddToFavouriteSongsbutton";
+            this.AddAddToFavouriteSongsbutton.Size = new System.Drawing.Size(107, 48);
+            this.AddAddToFavouriteSongsbutton.TabIndex = 4;
+            this.AddAddToFavouriteSongsbutton.Text = "Agregar";
+            this.AddAddToFavouriteSongsbutton.UseVisualStyleBackColor = false;
+            this.AddAddToFavouriteSongsbutton.Click += new System.EventHandler(this.AddAddToFavouriteSongsbutton_Click);
+            // 
+            // InsertSongNameAddToFavouriteSongslabel
+            // 
+            this.InsertSongNameAddToFavouriteSongslabel.AutoSize = true;
+            this.InsertSongNameAddToFavouriteSongslabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.InsertSongNameAddToFavouriteSongslabel.Location = new System.Drawing.Point(247, 165);
+            this.InsertSongNameAddToFavouriteSongslabel.Name = "InsertSongNameAddToFavouriteSongslabel";
+            this.InsertSongNameAddToFavouriteSongslabel.Size = new System.Drawing.Size(150, 17);
+            this.InsertSongNameAddToFavouriteSongslabel.TabIndex = 3;
+            this.InsertSongNameAddToFavouriteSongslabel.Text = "Nombre de la canción:";
+            // 
+            // InsertSongNameAddToFavouriteSongscomboBox
+            // 
+            this.InsertSongNameAddToFavouriteSongscomboBox.FormattingEnabled = true;
+            this.InsertSongNameAddToFavouriteSongscomboBox.Location = new System.Drawing.Point(428, 165);
+            this.InsertSongNameAddToFavouriteSongscomboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.InsertSongNameAddToFavouriteSongscomboBox.Name = "InsertSongNameAddToFavouriteSongscomboBox";
+            this.InsertSongNameAddToFavouriteSongscomboBox.Size = new System.Drawing.Size(121, 24);
+            this.InsertSongNameAddToFavouriteSongscomboBox.TabIndex = 2;
+            // 
+            // BackAddToFavouriteSongsbutton
+            // 
+            this.BackAddToFavouriteSongsbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BackAddToFavouriteSongsbutton.ForeColor = System.Drawing.SystemColors.Window;
+            this.BackAddToFavouriteSongsbutton.Location = new System.Drawing.Point(753, 512);
+            this.BackAddToFavouriteSongsbutton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BackAddToFavouriteSongsbutton.Name = "BackAddToFavouriteSongsbutton";
+            this.BackAddToFavouriteSongsbutton.Size = new System.Drawing.Size(75, 23);
+            this.BackAddToFavouriteSongsbutton.TabIndex = 1;
+            this.BackAddToFavouriteSongsbutton.Text = "Volver";
+            this.BackAddToFavouriteSongsbutton.UseVisualStyleBackColor = false;
+            this.BackAddToFavouriteSongsbutton.Click += new System.EventHandler(this.BackAddToFavouriteSongsbutton_Click);
+            // 
+            // AddToFavouriteSongslabe
+            // 
+            this.AddToFavouriteSongslabe.AutoSize = true;
+            this.AddToFavouriteSongslabe.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddToFavouriteSongslabe.ForeColor = System.Drawing.SystemColors.Window;
+            this.AddToFavouriteSongslabe.Location = new System.Drawing.Point(180, 20);
+            this.AddToFavouriteSongslabe.Name = "AddToFavouriteSongslabe";
+            this.AddToFavouriteSongslabe.Size = new System.Drawing.Size(411, 38);
+            this.AddToFavouriteSongslabe.TabIndex = 0;
+            this.AddToFavouriteSongslabe.Text = "Añadir Canción a Favoritos";
             // 
             // Genderpanel
             // 
@@ -3531,42 +3849,6 @@
             this.Genderlabel.Size = new System.Drawing.Size(246, 38);
             this.Genderlabel.TabIndex = 0;
             this.Genderlabel.Text = "Género Musical";
-            // 
-            // Artistpanel
-            // 
-            this.Artistpanel.Controls.Add(this.Message2label);
-            this.Artistpanel.Controls.Add(this.Message1label);
-            this.Artistpanel.Controls.Add(this.InsertAnswerArtisttextBox);
-            this.Artistpanel.Controls.Add(this.ResultArtistrichTextBox);
-            this.Artistpanel.Controls.Add(this.GenderArtistbutton);
-            this.Artistpanel.Controls.Add(this.AgeArtistbutton);
-            this.Artistpanel.Controls.Add(this.BackArtistbutton);
-            this.Artistpanel.Controls.Add(this.Artistlabel);
-            this.Artistpanel.Location = new System.Drawing.Point(595, 336);
-            this.Artistpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Artistpanel.Name = "Artistpanel";
-            this.Artistpanel.Size = new System.Drawing.Size(53, 56);
-            this.Artistpanel.TabIndex = 2;
-            // 
-            // Message2label
-            // 
-            this.Message2label.AutoSize = true;
-            this.Message2label.ForeColor = System.Drawing.SystemColors.Window;
-            this.Message2label.Location = new System.Drawing.Point(221, 271);
-            this.Message2label.Name = "Message2label";
-            this.Message2label.Size = new System.Drawing.Size(258, 17);
-            this.Message2label.TabIndex = 7;
-            this.Message2label.Text = "Ingrese el género solicitado aquí arriba:";
-            // 
-            // Message1label
-            // 
-            this.Message1label.AutoSize = true;
-            this.Message1label.ForeColor = System.Drawing.SystemColors.Window;
-            this.Message1label.Location = new System.Drawing.Point(221, 148);
-            this.Message1label.Name = "Message1label";
-            this.Message1label.Size = new System.Drawing.Size(243, 17);
-            this.Message1label.TabIndex = 6;
-            this.Message1label.Text = "Ingrese la edad solicitada aquí abajo:";
             // 
             // Evaluationpanel
             // 
@@ -3671,6 +3953,42 @@
             this.Evaluationlabel.Size = new System.Drawing.Size(177, 38);
             this.Evaluationlabel.TabIndex = 0;
             this.Evaluationlabel.Text = "Evaluación";
+            // 
+            // Artistpanel
+            // 
+            this.Artistpanel.Controls.Add(this.Message2label);
+            this.Artistpanel.Controls.Add(this.Message1label);
+            this.Artistpanel.Controls.Add(this.InsertAnswerArtisttextBox);
+            this.Artistpanel.Controls.Add(this.ResultArtistrichTextBox);
+            this.Artistpanel.Controls.Add(this.GenderArtistbutton);
+            this.Artistpanel.Controls.Add(this.AgeArtistbutton);
+            this.Artistpanel.Controls.Add(this.BackArtistbutton);
+            this.Artistpanel.Controls.Add(this.Artistlabel);
+            this.Artistpanel.Location = new System.Drawing.Point(595, 336);
+            this.Artistpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Artistpanel.Name = "Artistpanel";
+            this.Artistpanel.Size = new System.Drawing.Size(53, 56);
+            this.Artistpanel.TabIndex = 2;
+            // 
+            // Message2label
+            // 
+            this.Message2label.AutoSize = true;
+            this.Message2label.ForeColor = System.Drawing.SystemColors.Window;
+            this.Message2label.Location = new System.Drawing.Point(221, 271);
+            this.Message2label.Name = "Message2label";
+            this.Message2label.Size = new System.Drawing.Size(258, 17);
+            this.Message2label.TabIndex = 7;
+            this.Message2label.Text = "Ingrese el género solicitado aquí arriba:";
+            // 
+            // Message1label
+            // 
+            this.Message1label.AutoSize = true;
+            this.Message1label.ForeColor = System.Drawing.SystemColors.Window;
+            this.Message1label.Location = new System.Drawing.Point(221, 148);
+            this.Message1label.Name = "Message1label";
+            this.Message1label.Size = new System.Drawing.Size(243, 17);
+            this.Message1label.TabIndex = 6;
+            this.Message1label.Text = "Ingrese la edad solicitada aquí abajo:";
             // 
             // InsertAnswerArtisttextBox
             // 
@@ -4661,7 +4979,7 @@
             // SuggestionsSongsrichTextBox
             // 
             this.SuggestionsSongsrichTextBox.BackColor = System.Drawing.Color.Yellow;
-            this.SuggestionsSongsrichTextBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.SuggestionsSongsrichTextBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.SuggestionsSongsrichTextBox.Location = new System.Drawing.Point(196, 118);
             this.SuggestionsSongsrichTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SuggestionsSongsrichTextBox.Name = "SuggestionsSongsrichTextBox";
@@ -4720,7 +5038,7 @@
             // SuggestionsMoviesrichTextBox
             // 
             this.SuggestionsMoviesrichTextBox.BackColor = System.Drawing.Color.Yellow;
-            this.SuggestionsMoviesrichTextBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.SuggestionsMoviesrichTextBox.ForeColor = System.Drawing.SystemColors.ControlText;
             this.SuggestionsMoviesrichTextBox.Location = new System.Drawing.Point(199, 130);
             this.SuggestionsMoviesrichTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SuggestionsMoviesrichTextBox.Name = "SuggestionsMoviesrichTextBox";
@@ -6694,324 +7012,6 @@
             // 
             this.ofd1.FileName = "openFileDialog1";
             // 
-            // EvaluationMultipleFiltersSongslabel
-            // 
-            this.EvaluationMultipleFiltersSongslabel.AutoSize = true;
-            this.EvaluationMultipleFiltersSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EvaluationMultipleFiltersSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.EvaluationMultipleFiltersSongslabel.Location = new System.Drawing.Point(85, 214);
-            this.EvaluationMultipleFiltersSongslabel.Name = "EvaluationMultipleFiltersSongslabel";
-            this.EvaluationMultipleFiltersSongslabel.Size = new System.Drawing.Size(103, 24);
-            this.EvaluationMultipleFiltersSongslabel.TabIndex = 8;
-            this.EvaluationMultipleFiltersSongslabel.Text = "Evaluación";
-            // 
-            // GenderMultipleFiltersSongslabel
-            // 
-            this.GenderMultipleFiltersSongslabel.AutoSize = true;
-            this.GenderMultipleFiltersSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GenderMultipleFiltersSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.GenderMultipleFiltersSongslabel.Location = new System.Drawing.Point(81, 310);
-            this.GenderMultipleFiltersSongslabel.Name = "GenderMultipleFiltersSongslabel";
-            this.GenderMultipleFiltersSongslabel.Size = new System.Drawing.Size(90, 24);
-            this.GenderMultipleFiltersSongslabel.TabIndex = 9;
-            this.GenderMultipleFiltersSongslabel.Text = "Categoría";
-            // 
-            // ArtistMultipleFIltersSongslabel
-            // 
-            this.ArtistMultipleFIltersSongslabel.AutoSize = true;
-            this.ArtistMultipleFIltersSongslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ArtistMultipleFIltersSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.ArtistMultipleFIltersSongslabel.Location = new System.Drawing.Point(91, 393);
-            this.ArtistMultipleFIltersSongslabel.Name = "ArtistMultipleFIltersSongslabel";
-            this.ArtistMultipleFIltersSongslabel.Size = new System.Drawing.Size(60, 24);
-            this.ArtistMultipleFIltersSongslabel.TabIndex = 10;
-            this.ArtistMultipleFIltersSongslabel.Text = "Artista";
-            // 
-            // ArtistNameOrAgeMultipleFiltersSongstextBox
-            // 
-            this.ArtistNameOrAgeMultipleFiltersSongstextBox.Location = new System.Drawing.Point(228, 395);
-            this.ArtistNameOrAgeMultipleFiltersSongstextBox.Name = "ArtistNameOrAgeMultipleFiltersSongstextBox";
-            this.ArtistNameOrAgeMultipleFiltersSongstextBox.Size = new System.Drawing.Size(223, 28);
-            this.ArtistNameOrAgeMultipleFiltersSongstextBox.TabIndex = 11;
-            // 
-            // GenderNameMultipleFiltersSongstextBox
-            // 
-            this.GenderNameMultipleFiltersSongstextBox.Location = new System.Drawing.Point(231, 304);
-            this.GenderNameMultipleFiltersSongstextBox.Name = "GenderNameMultipleFiltersSongstextBox";
-            this.GenderNameMultipleFiltersSongstextBox.Size = new System.Drawing.Size(220, 28);
-            this.GenderNameMultipleFiltersSongstextBox.TabIndex = 12;
-            // 
-            // GenderNameMultipleFiltersSongslabel
-            // 
-            this.GenderNameMultipleFiltersSongslabel.AutoSize = true;
-            this.GenderNameMultipleFiltersSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.GenderNameMultipleFiltersSongslabel.Location = new System.Drawing.Point(224, 275);
-            this.GenderNameMultipleFiltersSongslabel.Name = "GenderNameMultipleFiltersSongslabel";
-            this.GenderNameMultipleFiltersSongslabel.Size = new System.Drawing.Size(250, 24);
-            this.GenderNameMultipleFiltersSongslabel.TabIndex = 13;
-            this.GenderNameMultipleFiltersSongslabel.Text = "Nombre del género musical:";
-            // 
-            // ArtistNameOrAgeMultipleFIltersSongslabel
-            // 
-            this.ArtistNameOrAgeMultipleFIltersSongslabel.AutoSize = true;
-            this.ArtistNameOrAgeMultipleFIltersSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.ArtistNameOrAgeMultipleFIltersSongslabel.Location = new System.Drawing.Point(190, 364);
-            this.ArtistNameOrAgeMultipleFIltersSongslabel.Name = "ArtistNameOrAgeMultipleFIltersSongslabel";
-            this.ArtistNameOrAgeMultipleFIltersSongslabel.Size = new System.Drawing.Size(300, 24);
-            this.ArtistNameOrAgeMultipleFIltersSongslabel.TabIndex = 14;
-            this.ArtistNameOrAgeMultipleFIltersSongslabel.Text = "Edad o Género Musical del Artista:";
-            // 
-            // GradeMultipleFiltersSongscomboBox
-            // 
-            this.GradeMultipleFiltersSongscomboBox.FormattingEnabled = true;
-            this.GradeMultipleFiltersSongscomboBox.Location = new System.Drawing.Point(394, 214);
-            this.GradeMultipleFiltersSongscomboBox.Name = "GradeMultipleFiltersSongscomboBox";
-            this.GradeMultipleFiltersSongscomboBox.Size = new System.Drawing.Size(75, 30);
-            this.GradeMultipleFiltersSongscomboBox.TabIndex = 15;
-            // 
-            // ConditionMultipleFiltersSongscomboBox
-            // 
-            this.ConditionMultipleFiltersSongscomboBox.FormattingEnabled = true;
-            this.ConditionMultipleFiltersSongscomboBox.Location = new System.Drawing.Point(232, 214);
-            this.ConditionMultipleFiltersSongscomboBox.Name = "ConditionMultipleFiltersSongscomboBox";
-            this.ConditionMultipleFiltersSongscomboBox.Size = new System.Drawing.Size(121, 30);
-            this.ConditionMultipleFiltersSongscomboBox.TabIndex = 16;
-            // 
-            // GradeMultipleFiltersSOngslabel
-            // 
-            this.GradeMultipleFiltersSOngslabel.AutoSize = true;
-            this.GradeMultipleFiltersSOngslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.GradeMultipleFiltersSOngslabel.Location = new System.Drawing.Point(404, 181);
-            this.GradeMultipleFiltersSOngslabel.Name = "GradeMultipleFiltersSOngslabel";
-            this.GradeMultipleFiltersSOngslabel.Size = new System.Drawing.Size(54, 24);
-            this.GradeMultipleFiltersSOngslabel.TabIndex = 17;
-            this.GradeMultipleFiltersSOngslabel.Text = "Nota:";
-            // 
-            // ConditionMultipleFiltersSongslabel
-            // 
-            this.ConditionMultipleFiltersSongslabel.AutoSize = true;
-            this.ConditionMultipleFiltersSongslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.ConditionMultipleFiltersSongslabel.Location = new System.Drawing.Point(190, 181);
-            this.ConditionMultipleFiltersSongslabel.Name = "ConditionMultipleFiltersSongslabel";
-            this.ConditionMultipleFiltersSongslabel.Size = new System.Drawing.Size(188, 24);
-            this.ConditionMultipleFiltersSongslabel.TabIndex = 18;
-            this.ConditionMultipleFiltersSongslabel.Text = "Condición de la nota:";
-            // 
-            // CategorieMultipleFiltersMovieslabel
-            // 
-            this.CategorieMultipleFiltersMovieslabel.AutoSize = true;
-            this.CategorieMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CategorieMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.CategorieMultipleFiltersMovieslabel.Location = new System.Drawing.Point(37, 291);
-            this.CategorieMultipleFiltersMovieslabel.Name = "CategorieMultipleFiltersMovieslabel";
-            this.CategorieMultipleFiltersMovieslabel.Size = new System.Drawing.Size(90, 24);
-            this.CategorieMultipleFiltersMovieslabel.TabIndex = 10;
-            this.CategorieMultipleFiltersMovieslabel.Text = "Categoría";
-            // 
-            // EvaluationMultipleFiltersMovieslabel
-            // 
-            this.EvaluationMultipleFiltersMovieslabel.AutoSize = true;
-            this.EvaluationMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EvaluationMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.EvaluationMultipleFiltersMovieslabel.Location = new System.Drawing.Point(267, 290);
-            this.EvaluationMultipleFiltersMovieslabel.Name = "EvaluationMultipleFiltersMovieslabel";
-            this.EvaluationMultipleFiltersMovieslabel.Size = new System.Drawing.Size(103, 24);
-            this.EvaluationMultipleFiltersMovieslabel.TabIndex = 11;
-            this.EvaluationMultipleFiltersMovieslabel.Text = "Evaluación";
-            // 
-            // ResolutionMultipleFiltersMovieslabel
-            // 
-            this.ResolutionMultipleFiltersMovieslabel.AutoSize = true;
-            this.ResolutionMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResolutionMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.ResolutionMultipleFiltersMovieslabel.Location = new System.Drawing.Point(270, 212);
-            this.ResolutionMultipleFiltersMovieslabel.Name = "ResolutionMultipleFiltersMovieslabel";
-            this.ResolutionMultipleFiltersMovieslabel.Size = new System.Drawing.Size(105, 24);
-            this.ResolutionMultipleFiltersMovieslabel.TabIndex = 12;
-            this.ResolutionMultipleFiltersMovieslabel.Text = "Resolución";
-            // 
-            // PersonMultipleFiltersMovieslabel
-            // 
-            this.PersonMultipleFiltersMovieslabel.AutoSize = true;
-            this.PersonMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PersonMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.PersonMultipleFiltersMovieslabel.Location = new System.Drawing.Point(38, 215);
-            this.PersonMultipleFiltersMovieslabel.Name = "PersonMultipleFiltersMovieslabel";
-            this.PersonMultipleFiltersMovieslabel.Size = new System.Drawing.Size(80, 24);
-            this.PersonMultipleFiltersMovieslabel.TabIndex = 13;
-            this.PersonMultipleFiltersMovieslabel.Text = "Persona";
-            // 
-            // CharacteristicsPersonMultipleFiltersMovieslabel
-            // 
-            this.CharacteristicsPersonMultipleFiltersMovieslabel.AutoSize = true;
-            this.CharacteristicsPersonMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CharacteristicsPersonMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.CharacteristicsPersonMultipleFiltersMovieslabel.Location = new System.Drawing.Point(43, 389);
-            this.CharacteristicsPersonMultipleFiltersMovieslabel.Name = "CharacteristicsPersonMultipleFiltersMovieslabel";
-            this.CharacteristicsPersonMultipleFiltersMovieslabel.Size = new System.Drawing.Size(188, 24);
-            this.CharacteristicsPersonMultipleFiltersMovieslabel.TabIndex = 14;
-            this.CharacteristicsPersonMultipleFiltersMovieslabel.Text = "Caract. de la persona";
-            // 
-            // PersonMultipleFiltersMoviestextBox
-            // 
-            this.PersonMultipleFiltersMoviestextBox.Location = new System.Drawing.Point(122, 215);
-            this.PersonMultipleFiltersMoviestextBox.Name = "PersonMultipleFiltersMoviestextBox";
-            this.PersonMultipleFiltersMoviestextBox.Size = new System.Drawing.Size(100, 22);
-            this.PersonMultipleFiltersMoviestextBox.TabIndex = 16;
-            // 
-            // PersonNameMultipleFiltersMovieslabel
-            // 
-            this.PersonNameMultipleFiltersMovieslabel.AutoSize = true;
-            this.PersonNameMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PersonNameMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.PersonNameMultipleFiltersMovieslabel.Location = new System.Drawing.Point(134, 188);
-            this.PersonNameMultipleFiltersMovieslabel.Name = "PersonNameMultipleFiltersMovieslabel";
-            this.PersonNameMultipleFiltersMovieslabel.Size = new System.Drawing.Size(84, 24);
-            this.PersonNameMultipleFiltersMovieslabel.TabIndex = 17;
-            this.PersonNameMultipleFiltersMovieslabel.Text = "Nombre:";
-            // 
-            // TypeMultipleFiltersMovieslabel
-            // 
-            this.TypeMultipleFiltersMovieslabel.AutoSize = true;
-            this.TypeMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TypeMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.TypeMultipleFiltersMovieslabel.Location = new System.Drawing.Point(365, 188);
-            this.TypeMultipleFiltersMovieslabel.Name = "TypeMultipleFiltersMovieslabel";
-            this.TypeMultipleFiltersMovieslabel.Size = new System.Drawing.Size(175, 24);
-            this.TypeMultipleFiltersMovieslabel.TabIndex = 19;
-            this.TypeMultipleFiltersMovieslabel.Text = "Tipo (ej. 1366x768):";
-            // 
-            // ResolutionMultipleFiltersMoviestextBox
-            // 
-            this.ResolutionMultipleFiltersMoviestextBox.Location = new System.Drawing.Point(372, 214);
-            this.ResolutionMultipleFiltersMoviestextBox.Name = "ResolutionMultipleFiltersMoviestextBox";
-            this.ResolutionMultipleFiltersMoviestextBox.Size = new System.Drawing.Size(150, 22);
-            this.ResolutionMultipleFiltersMoviestextBox.TabIndex = 18;
-            // 
-            // CategorieNameMultipleFiltersMovieslabel
-            // 
-            this.CategorieNameMultipleFiltersMovieslabel.AutoSize = true;
-            this.CategorieNameMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CategorieNameMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.CategorieNameMultipleFiltersMovieslabel.Location = new System.Drawing.Point(140, 266);
-            this.CategorieNameMultipleFiltersMovieslabel.Name = "CategorieNameMultipleFiltersMovieslabel";
-            this.CategorieNameMultipleFiltersMovieslabel.Size = new System.Drawing.Size(84, 24);
-            this.CategorieNameMultipleFiltersMovieslabel.TabIndex = 21;
-            this.CategorieNameMultipleFiltersMovieslabel.Text = "Nombre:";
-            // 
-            // CategorieMultipleFiltersMoviestextBox
-            // 
-            this.CategorieMultipleFiltersMoviestextBox.Location = new System.Drawing.Point(128, 293);
-            this.CategorieMultipleFiltersMoviestextBox.Name = "CategorieMultipleFiltersMoviestextBox";
-            this.CategorieMultipleFiltersMoviestextBox.Size = new System.Drawing.Size(100, 22);
-            this.CategorieMultipleFiltersMoviestextBox.TabIndex = 20;
-            // 
-            // MinMultipleFiltersMovieslabel
-            // 
-            this.MinMultipleFiltersMovieslabel.AutoSize = true;
-            this.MinMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MinMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.MinMultipleFiltersMovieslabel.Location = new System.Drawing.Point(385, 267);
-            this.MinMultipleFiltersMovieslabel.Name = "MinMultipleFiltersMovieslabel";
-            this.MinMultipleFiltersMovieslabel.Size = new System.Drawing.Size(46, 24);
-            this.MinMultipleFiltersMovieslabel.TabIndex = 23;
-            this.MinMultipleFiltersMovieslabel.Text = "Mín:";
-            // 
-            // MaxMultipleFiltersMovieslabel
-            // 
-            this.MaxMultipleFiltersMovieslabel.AutoSize = true;
-            this.MaxMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MaxMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.MaxMultipleFiltersMovieslabel.Location = new System.Drawing.Point(471, 267);
-            this.MaxMultipleFiltersMovieslabel.Name = "MaxMultipleFiltersMovieslabel";
-            this.MaxMultipleFiltersMovieslabel.Size = new System.Drawing.Size(51, 24);
-            this.MaxMultipleFiltersMovieslabel.TabIndex = 25;
-            this.MaxMultipleFiltersMovieslabel.Text = "Máx:";
-            // 
-            // MaxMultipleFiltersMoviescomboBox
-            // 
-            this.MaxMultipleFiltersMoviescomboBox.FormattingEnabled = true;
-            this.MaxMultipleFiltersMoviescomboBox.Location = new System.Drawing.Point(457, 295);
-            this.MaxMultipleFiltersMoviescomboBox.Name = "MaxMultipleFiltersMoviescomboBox";
-            this.MaxMultipleFiltersMoviescomboBox.Size = new System.Drawing.Size(72, 24);
-            this.MaxMultipleFiltersMoviescomboBox.TabIndex = 26;
-            // 
-            // MinMultipleFiltersMoviescomboBox
-            // 
-            this.MinMultipleFiltersMoviescomboBox.FormattingEnabled = true;
-            this.MinMultipleFiltersMoviescomboBox.Location = new System.Drawing.Point(376, 296);
-            this.MinMultipleFiltersMoviescomboBox.Name = "MinMultipleFiltersMoviescomboBox";
-            this.MinMultipleFiltersMoviescomboBox.Size = new System.Drawing.Size(66, 24);
-            this.MinMultipleFiltersMoviescomboBox.TabIndex = 27;
-            // 
-            // CharacteristicMultipleFiltersMoviescomboBox
-            // 
-            this.CharacteristicMultipleFiltersMoviescomboBox.FormattingEnabled = true;
-            this.CharacteristicMultipleFiltersMoviescomboBox.Location = new System.Drawing.Point(246, 391);
-            this.CharacteristicMultipleFiltersMoviescomboBox.Name = "CharacteristicMultipleFiltersMoviescomboBox";
-            this.CharacteristicMultipleFiltersMoviescomboBox.Size = new System.Drawing.Size(124, 24);
-            this.CharacteristicMultipleFiltersMoviescomboBox.TabIndex = 28;
-            // 
-            // CharacteristicMultipleFiltersMoviestextBox
-            // 
-            this.CharacteristicMultipleFiltersMoviestextBox.Location = new System.Drawing.Point(389, 392);
-            this.CharacteristicMultipleFiltersMoviestextBox.Name = "CharacteristicMultipleFiltersMoviestextBox";
-            this.CharacteristicMultipleFiltersMoviestextBox.Size = new System.Drawing.Size(132, 22);
-            this.CharacteristicMultipleFiltersMoviestextBox.TabIndex = 29;
-            // 
-            // CharacteristicMultipleFiltersMovieslabel
-            // 
-            this.CharacteristicMultipleFiltersMovieslabel.AutoSize = true;
-            this.CharacteristicMultipleFiltersMovieslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CharacteristicMultipleFiltersMovieslabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.CharacteristicMultipleFiltersMovieslabel.Location = new System.Drawing.Point(318, 364);
-            this.CharacteristicMultipleFiltersMovieslabel.Name = "CharacteristicMultipleFiltersMovieslabel";
-            this.CharacteristicMultipleFiltersMovieslabel.Size = new System.Drawing.Size(126, 24);
-            this.CharacteristicMultipleFiltersMovieslabel.TabIndex = 30;
-            this.CharacteristicMultipleFiltersMovieslabel.Text = "Característica:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.Window;
-            this.label4.Location = new System.Drawing.Point(182, 101);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(519, 17);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "El nombre de la canción debe tener el mismo nombre del archivo que se importa.";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.Window;
-            this.label5.Location = new System.Drawing.Point(207, 70);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(461, 17);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "El nombre de la película debe ser el nombre del archivo que se importa.";
-            // 
-            // MessageImportSonglabel
-            // 
-            this.MessageImportSonglabel.AutoSize = true;
-            this.MessageImportSonglabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.MessageImportSonglabel.Location = new System.Drawing.Point(372, 478);
-            this.MessageImportSonglabel.Name = "MessageImportSonglabel";
-            this.MessageImportSonglabel.Size = new System.Drawing.Size(190, 17);
-            this.MessageImportSonglabel.TabIndex = 23;
-            this.MessageImportSonglabel.Text = "Canción importada con éxito.";
-            // 
-            // MessageImportMovielabel
-            // 
-            this.MessageImportMovielabel.AutoSize = true;
-            this.MessageImportMovielabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.MessageImportMovielabel.Location = new System.Drawing.Point(368, 451);
-            this.MessageImportMovielabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.MessageImportMovielabel.Name = "MessageImportMovielabel";
-            this.MessageImportMovielabel.Size = new System.Drawing.Size(188, 17);
-            this.MessageImportMovielabel.TabIndex = 45;
-            this.MessageImportMovielabel.Text = "Película importada con éxito.";
-            // 
             // SpotflixForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -7073,8 +7073,6 @@
             this.Songspanel.PerformLayout();
             this.QualifySongspanel.ResumeLayout(false);
             this.QualifySongspanel.PerformLayout();
-            this.AddToFavouriteSongspanel.ResumeLayout(false);
-            this.AddToFavouriteSongspanel.PerformLayout();
             this.SeeQueueSongspanel.ResumeLayout(false);
             this.SeeQueueSongspanel.PerformLayout();
             this.PlaySongspanel.ResumeLayout(false);
@@ -7083,12 +7081,14 @@
             this.SearchSongspanel.PerformLayout();
             this.MultipleFiltersSongspanel.ResumeLayout(false);
             this.MultipleFiltersSongspanel.PerformLayout();
+            this.AddToFavouriteSongspanel.ResumeLayout(false);
+            this.AddToFavouriteSongspanel.PerformLayout();
             this.Genderpanel.ResumeLayout(false);
             this.Genderpanel.PerformLayout();
-            this.Artistpanel.ResumeLayout(false);
-            this.Artistpanel.PerformLayout();
             this.Evaluationpanel.ResumeLayout(false);
             this.Evaluationpanel.PerformLayout();
+            this.Artistpanel.ResumeLayout(false);
+            this.Artistpanel.PerformLayout();
             this.AddToQueueSongspanel.ResumeLayout(false);
             this.AddToQueueSongspanel.PerformLayout();
             this.InformationSongspanel.ResumeLayout(false);
