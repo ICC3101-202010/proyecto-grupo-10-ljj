@@ -12,6 +12,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
 using Microsoft.VisualBasic.Devices;
+using System.Drawing.Design;
 
 namespace Interfaz_Gráfica_Entrega_3
 {
@@ -21,6 +22,7 @@ namespace Interfaz_Gráfica_Entrega_3
         User user = new User("", "", "");
         Profile profile = new Profile("", true);
         Dictionary<string, List<Profile>> Users = new Dictionary<string, List<Profile>>();
+        List<User> ListOfUser = new List<User>();
         //REQUISITOS CANCIONES
         List<Artist> l_artist = new List<Artist>();
         List<Album> l_album = new List<Album>();
@@ -68,10 +70,10 @@ namespace Interfaz_Gráfica_Entrega_3
         List<Actor> actorsA = new List<Actor>();
         List<Actor> actorsB = new List<Actor>();
         WindowsMediaPlayer wmp = new WindowsMediaPlayer();
+        
         string prf = "";
         public SpotflixForm()
         {
-
             l_songs.Add(CiudadDeLaFuria);
             l_songs.Add(MelonVino);
             l_songs.Add(LetItBe);
@@ -138,16 +140,20 @@ namespace Interfaz_Gráfica_Entrega_3
             movielist.Add(BlackWidow);
             try
             {
+                
                 Users = LoadUsers();
                 l_pl = LoadPls();
                 l_plm = LoadPlm();
-                showUser(Users);              
+                ListOfUser = LoadUsers2();
+                showUser(Users);
+                showUser2(ListOfUser);
                 showPlaylistSongs(l_pl);              
                 showPlaylistMovies(l_plm);
             }
             catch
             {
                 SaveUser(Users);
+                SaveUser2(ListOfUser);
                 SavePlaylistSongs(l_pl);
                 SavePlaylistMovies(l_plm);
             }
@@ -1544,6 +1550,7 @@ namespace Interfaz_Gráfica_Entrega_3
                 InsertPlanTypetextBox.Text = "";
                 CreateUserAvisolabel.Show();
                 CreateUserAviso2label1.Show();
+                SaveUser2(user.GetListOfUser());
             }
             
         }
@@ -2943,6 +2950,13 @@ namespace Interfaz_Gráfica_Entrega_3
         {
 
         }
+        static public void SaveUser2(List<User> ListOfUser)
+        {
+            IFormatter formatter = new BinaryFormatter();
+            Stream stream = new FileStream("Users2.bin", FileMode.Create, FileAccess.Write, FileShare.None);
+            formatter.Serialize(stream, ListOfUser);
+            stream.Close();
+        }
         static private void SaveUser(Dictionary<string, List<Profile>> Users)
         {
             IFormatter formatter = new BinaryFormatter();
@@ -2963,6 +2977,14 @@ namespace Interfaz_Gráfica_Entrega_3
             Stream stream = new FileStream("PlaylistMovies.bin", FileMode.Create, FileAccess.Write, FileShare.None);
             formatter.Serialize(stream, l_plm);
             stream.Close();
+        }
+        static private List<User> LoadUsers2()
+        {
+            IFormatter formatter = new BinaryFormatter();
+            Stream stream = new FileStream("Users2.bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+            List<User> ListOfUser = (List<User>)formatter.Deserialize(stream);
+            stream.Close();
+            return ListOfUser;
         }
         static private Dictionary<string, List<Profile>> LoadUsers()
         {
@@ -3122,12 +3144,21 @@ namespace Interfaz_Gráfica_Entrega_3
         {
 
         }
+        static public void showUser2(List<User> ListOfUser)
+        {
+            foreach (User a in ListOfUser)
+            {
+                ListOfUser.Add(a);
+            }
+
+        }
         static public void showUser(Dictionary<string, List<Profile>> Users)
         {
             foreach (KeyValuePair<string, List<Profile>> a in Users)
             {
                 Users.Add(a.Key, a.Value);
             }
+            
         }
         static public void showPlaylistSongs(List<PlaylistSongs> l_pl)
         {
